@@ -73,7 +73,9 @@
         },
         {
           "description": "12세기에 건설된 부하라의 상징적인 첨탑입니다. 굽은 벽돌 무늬와 높이 솟은 실루엣이 특징이며, 실크로드 시대의 종교 건축 기술을 보여줍니다.",
-          "imageSearch": "Kalyan Minaret Bukhara travel landmark"
+          "imageSearch": "Kalyan Minaret Bukhara travel landmark",
+          "userPhoto": "/codex/user-photos/bukhara-poi-kalyan.jpg",
+          "userPhotoCaption": "제공 사진: 부하라 포이 칼랸 복합단지 전경"
         },
         {
           "description": "연못을 중심으로 마드라사와 숙소, 찻집이 둘러선 역사 공간입니다. 건조한 오아시스 도시에서 물이 생활과 교류의 중심이었다는 사실을 느낄 수 있습니다.",
@@ -82,6 +84,20 @@
         {
           "description": "화려한 문양의 정문이 눈에 띄는 17세기 마드라사입니다. 정면에 표현된 새와 동물 형상을 관찰하며 이슬람권 장식 미술의 지역적 다양성을 살펴보세요.",
           "imageSearch": "Nadir Divan Begi Madrasah travel landmark"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/codex/user-photos/uzbekistan-map.jpg",
+          "caption": "우즈베키스탄 위치 안내도 — 사용자 제공 자료"
+        },
+        {
+          "src": "/codex/user-photos/uzbekistan-route.jpg",
+          "caption": "타슈켄트·사마르칸트·부하라 이동 경로 — 사용자 제공 자료"
+        },
+        {
+          "src": "/codex/user-photos/islamic-tilework.jpg",
+          "caption": "중앙아시아 이슬람 건축의 청색 타일 장식 — 건물 미확인"
         }
       ]
     },
