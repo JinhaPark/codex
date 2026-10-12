@@ -24,7 +24,17 @@
         "인천국제공항 제2여객터미널",
         "타슈켄트 국제공항"
       ],
-      "hotelKo": "다니엘 힐 호텔"
+      "hotelKo": "다니엘 힐 호텔",
+      "placeDetails": [
+        {
+          "description": "인천에서 중앙아시아로 향하는 출발점입니다. 제2여객터미널은 국제선 탑승 시설이 모여 있어 출국 수속과 보안 검색을 여유 있게 마치는 것이 좋습니다.",
+          "imageSearch": "Incheon International Airport Terminal 2 travel landmark"
+        },
+        {
+          "description": "우즈베키스탄 수도로 들어가는 관문입니다. 도착 후 입국 심사와 수하물 수령을 거쳐 숙소로 이동하며, 현지 시각과 통신 상태를 확인해 두세요.",
+          "imageSearch": "Tashkent International Airport travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-13",
@@ -55,7 +65,25 @@
         "라비하우즈",
         "나디르 디반베기 마드라사"
       ],
-      "hotelKo": "사히드 자라프샨 호텔"
+      "hotelKo": "사히드 자라프샨 호텔",
+      "placeDetails": [
+        {
+          "description": "부하라 통치자의 궁전이자 요새였던 거대한 흙벽돌 성채입니다. 도시 위로 솟은 성벽과 관문에서 오아시스 도시의 방어 체계와 정치적 중심지를 살펴볼 수 있습니다.",
+          "imageSearch": "Ark of Bukhara travel landmark"
+        },
+        {
+          "description": "12세기에 건설된 부하라의 상징적인 첨탑입니다. 굽은 벽돌 무늬와 높이 솟은 실루엣이 특징이며, 실크로드 시대의 종교 건축 기술을 보여줍니다.",
+          "imageSearch": "Kalyan Minaret Bukhara travel landmark"
+        },
+        {
+          "description": "연못을 중심으로 마드라사와 숙소, 찻집이 둘러선 역사 공간입니다. 건조한 오아시스 도시에서 물이 생활과 교류의 중심이었다는 사실을 느낄 수 있습니다.",
+          "imageSearch": "Lyabi Hauz Bukhara travel landmark"
+        },
+        {
+          "description": "화려한 문양의 정문이 눈에 띄는 17세기 마드라사입니다. 정면에 표현된 새와 동물 형상을 관찰하며 이슬람권 장식 미술의 지역적 다양성을 살펴보세요.",
+          "imageSearch": "Nadir Divan Begi Madrasah travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-14",
@@ -86,7 +114,25 @@
         "시토라이 모히 호사 궁전",
         "레기스탄 광장"
       ],
-      "hotelKo": "오리엔트 스타 호텔"
+      "hotelKo": "오리엔트 스타 호텔",
+      "placeDetails": [
+        {
+          "description": "9~10세기 사마니 왕조의 영묘로 정교한 구운 벽돌 배열이 돋보입니다. 단순한 입방체와 돔의 조화 속에서 중앙아시아 초기 이슬람 건축의 아름다움을 볼 수 있습니다.",
+          "imageSearch": "Ismail Samani Mausoleum travel landmark"
+        },
+        {
+          "description": "예언자 욥과 관련된 전승이 깃든 성지로 알려져 있습니다. 서로 다른 시대에 덧붙여진 건물의 지붕과 돔을 비교하면 부하라 건축의 변화를 읽을 수 있습니다.",
+          "imageSearch": "Chashma Ayub Mausoleum travel landmark"
+        },
+        {
+          "description": "부하라 에미르의 여름 별궁입니다. 유럽풍 실내 장식과 중앙아시아 전통 문양이 혼합되어 있어 근대 왕실 문화의 취향과 교류를 엿볼 수 있습니다.",
+          "imageSearch": "Sitorai Mokhi Khosa Palace travel landmark"
+        },
+        {
+          "description": "사마르칸트의 대표 광장으로 세 개의 마드라사가 마주 서 있습니다. 티무르 왕조 시대의 거대한 정문, 청색 타일, 기하학적 문양이 장관을 이룹니다.",
+          "imageSearch": "Registan Square travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-15",
@@ -119,7 +165,29 @@
         "울루그벡 천문대",
         "구르에미르 영묘"
       ],
-      "hotelKo": "다니엘 힐 호텔"
+      "hotelKo": "다니엘 힐 호텔",
+      "placeDetails": [
+        {
+          "description": "사마르칸트의 중심 광장입니다. 울루그벡·셰르도르·틸랴코리 마드라사의 정면을 비교하면 수세기에 걸친 건축 양식과 장식의 변화를 발견할 수 있습니다.",
+          "imageSearch": "Registan Square travel landmark"
+        },
+        {
+          "description": "티무르 시대에 세워진 대규모 모스크 유적입니다. 거대한 입구와 돔은 제국의 위세를 드러내며, 건축물의 균열과 복원 흔적도 살펴볼 만합니다.",
+          "imageSearch": "Bibi-Khanym Mosque travel landmark"
+        },
+        {
+          "description": "고대 사마르칸트가 자리했던 아프라시압 유적의 역사를 소개하는 박물관입니다. 벽화와 출토품은 실크로드를 통한 외교와 문화 교류를 보여줍니다.",
+          "imageSearch": "Afrasiab Museum Samarkand travel landmark"
+        },
+        {
+          "description": "15세기 울루그벡이 세운 천문대의 유적입니다. 지하에 남은 거대한 관측 장치의 일부를 통해 당시 천문학의 높은 수준과 정밀 관측의 중요성을 이해할 수 있습니다.",
+          "imageSearch": "Ulugh Beg Observatory travel landmark"
+        },
+        {
+          "description": "티무르와 그 일족의 영묘로 푸른 돔과 화려한 실내 장식이 특징입니다. 왕조의 권위가 건축에 어떻게 표현되는지 살펴보기에 좋은 장소입니다.",
+          "imageSearch": "Gur-e-Amir travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-16",
@@ -145,7 +213,25 @@
         "하즈라티 이맘 단지",
         "마나스 국제공항"
       ],
-      "hotelKo": "다마스 인터내셔널 호텔"
+      "hotelKo": "다마스 인터내셔널 호텔",
+      "placeDetails": [
+        {
+          "description": "흰색 대리석 외관과 푸른 돔이 인상적인 현대 모스크입니다. 역사 유적이 많은 타슈켄트에서 전통 이슬람 건축 요소가 현대적으로 재해석된 모습을 볼 수 있습니다.",
+          "imageSearch": "Minor Mosque Tashkent travel landmark"
+        },
+        {
+          "description": "티무르의 기마상이 있는 타슈켄트 중심 광장입니다. 넓은 가로와 공공건물에서 현대 우즈베키스탄의 국가 정체성과 수도의 도시계획을 느낄 수 있습니다.",
+          "imageSearch": "Amir Timur Square travel landmark"
+        },
+        {
+          "description": "모스크와 마드라사 등이 모인 타슈켄트의 종교·학문 중심지입니다. 서예와 필사본 전통을 생각하며 건물 배치와 장식 요소를 관찰해 보세요.",
+          "imageSearch": "Hazrati Imam Complex travel landmark"
+        },
+        {
+          "description": "키르기스스탄 수도 비슈케크의 국제공항입니다. 우즈베키스탄의 오아시스 도시를 떠나 톈산산맥을 품은 산악 국가로 이동하는 경유 지점입니다.",
+          "imageSearch": "Manas International Airport travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-17",
@@ -171,7 +257,25 @@
         "이식쿨 호수",
         "촐폰아타"
       ],
-      "hotelKo": "카르벤 포시즌스 촐폰아타 호텔"
+      "hotelKo": "카르벤 포시즌스 촐폰아타 호텔",
+      "placeDetails": [
+        {
+          "description": "이식쿨 호숫가에 자리한 문화·종교 복합 공간입니다. 여러 종교와 사상에 관한 조형물을 한곳에서 볼 수 있어 중앙아시아의 다양한 문화적 접점을 생각하게 합니다.",
+          "imageSearch": "Rukh Ordo Cultural Center travel landmark"
+        },
+        {
+          "description": "넓은 야외 암반에 동물과 사람의 형상이 새겨진 유적입니다. 사슴과 산양 등의 도상을 관찰하며 고대 유목 사회의 신앙과 생활을 상상해 볼 수 있습니다.",
+          "imageSearch": "Cholpon Ata Petroglyphs travel landmark"
+        },
+        {
+          "description": "톈산산맥 사이의 거대한 고산 호수입니다. 지각 운동으로 형성된 분지에 물이 고여 있으며, 푸른 호수와 주변 설산의 대비가 인상적입니다.",
+          "imageSearch": "Issyk Kul Lake travel landmark"
+        },
+        {
+          "description": "이식쿨 북쪽 기슭의 휴양 도시입니다. 호수 풍경과 암각화 유적을 함께 만날 수 있으며, 산악 지형과 호수 주변 관광문화가 공존합니다.",
+          "imageSearch": "Cholpon Ata travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-18",
@@ -195,7 +299,21 @@
         "코르다이 국경",
         "알마티"
       ],
-      "hotelKo": "가든 파크 인"
+      "hotelKo": "가든 파크 인",
+      "placeDetails": [
+        {
+          "description": "비슈케크 남쪽의 톈산산맥 고산 계곡입니다. 급경사 산비탈과 하천, 빙하가 깎아낸 지형을 보며 산맥의 융기와 침식 작용을 살펴볼 수 있습니다.",
+          "imageSearch": "Ala Archa National Park travel landmark"
+        },
+        {
+          "description": "키르기스스탄과 카자흐스탄 사이의 육로 국경 통과 지점입니다. 출입국 절차와 대기시간은 변동될 수 있으므로 여권과 소지품을 미리 확인하세요.",
+          "imageSearch": "Korday Border Crossing travel landmark"
+        },
+        {
+          "description": "톈산산맥 북쪽 기슭의 카자흐스탄 최대 도시입니다. 나무가 우거진 거리와 산의 배경이 어우러지며, 시장과 공원에서 도시의 일상을 엿볼 수 있습니다.",
+          "imageSearch": "Almaty travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-19",
@@ -219,7 +337,21 @@
         "루나 캐니언",
         "블랙 캐니언"
       ],
-      "hotelKo": "가든 파크 인"
+      "hotelKo": "가든 파크 인",
+      "placeDetails": [
+        {
+          "description": "강물의 침식과 풍화가 만든 장대한 협곡입니다. 붉은빛을 띠는 퇴적층과 기암절벽을 보며 지층의 퇴적, 지반 융기, 침식이 남긴 흔적을 관찰해 보세요.",
+          "imageSearch": "Charyn Canyon travel landmark"
+        },
+        {
+          "description": "달 표면을 연상시키는 색감과 침식 지형으로 알려진 협곡 구간입니다. 표면의 색과 질감, 깎여 나간 사면을 비교하며 지질 환경의 차이를 살펴보세요.",
+          "imageSearch": "Luna Canyon Kazakhstan travel landmark"
+        },
+        {
+          "description": "차른 일대의 어두운 암벽이 돋보이는 협곡 구간입니다. 주변의 붉은 협곡과 색조를 비교하되, 암석의 색만으로 성분이나 형성 시기를 단정하지 않는 것이 좋습니다.",
+          "imageSearch": "Black Canyon Charyn travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-20",
@@ -247,7 +379,29 @@
         "그린 바자르",
         "아르바트 거리"
       ],
-      "hotelKo": "기내 숙박"
+      "hotelKo": "기내 숙박",
+      "placeDetails": [
+        {
+          "description": "알마티 근교 산악 휴양지입니다. 산림과 계곡을 가까이에서 느낄 수 있으며, 일정상 심불락 케이블카 정비에 따른 대체 방문지로 예정되어 있습니다.",
+          "imageSearch": "Oi Qaragai travel landmark"
+        },
+        {
+          "description": "알마티의 역사적인 도심 공원입니다. 전쟁 기념 시설과 젠코프 성당이 가까이 있어 도시의 근현대사와 공공공간의 역할을 함께 살펴볼 수 있습니다.",
+          "imageSearch": "Panfilov Park Almaty travel landmark"
+        },
+        {
+          "description": "알마티 판필로프 공원 안의 화려한 정교회 성당입니다. 다채로운 외관과 목조 구조가 특징으로, 도시의 러시아 제국·소비에트 시대 역사를 떠올리게 합니다.",
+          "imageSearch": "Ascension Cathedral Almaty travel landmark"
+        },
+        {
+          "description": "견과류, 말린 과일, 향신료와 식료품이 가득한 전통 시장입니다. 중앙아시아 식문화와 상업의 활기를 느끼고 현지 상품의 종류를 살펴보기에 좋습니다.",
+          "imageSearch": "Green Bazaar Almaty travel landmark"
+        },
+        {
+          "description": "알마티 중심가의 보행자 거리로 거리 공연과 상점, 카페가 어우러집니다. 여행 마지막 날 도시의 분위기를 느끼며 산책하기 좋은 장소입니다.",
+          "imageSearch": "Arbat Street Almaty travel landmark"
+        }
+      ]
     },
     {
       "date": "2026-10-21",
@@ -267,7 +421,13 @@
       "placesKo": [
         "인천국제공항"
       ],
-      "hotelKo": "—"
+      "hotelKo": "—",
+      "placeDetails": [
+        {
+          "description": "중앙아시아 3개국 여행을 마치고 돌아오는 도착 지점입니다. 입국 절차와 수하물 수령을 마친 뒤 사진과 기록을 정리하며 여행을 마무리하세요.",
+          "imageSearch": "Incheon International Airport travel landmark"
+        }
+      ]
     }
   ],
   "essentials": [
