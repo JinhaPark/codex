@@ -1,0 +1,161 @@
+{
+  "trip": {
+    "start": "2026-10-12",
+    "end": "2026-10-21"
+  },
+  "days": [
+    {
+      "date": "2026-10-12",
+      "country": "Uzbekistan",
+      "city": "Seoul → Tashkent",
+      "summary": "Incheon Terminal 2 meet 13:30; OZ573 16:35 departure; Tashkent arrival 20:00.",
+      "hotel": "Daniel Hill Hotel",
+      "places": [
+        "Incheon International Airport Terminal 2",
+        "Tashkent International Airport"
+      ],
+      "guide": "Tashkent is an ancient oasis city reshaped by Soviet-era planning."
+    },
+    {
+      "date": "2026-10-13",
+      "country": "Uzbekistan",
+      "city": "Tashkent → Bukhara",
+      "summary": "08:37 train from Tashkent, 14:35 arrival Bukhara. Ark Fortress, Kalyan Minaret, Lyabi-Hauz, Nadir Divan-Begi madrasa, bazaars and evening walk.",
+      "hotel": "Sahid Zarafshon Hotel",
+      "places": [
+        "Ark of Bukhara",
+        "Kalyan Minaret Bukhara",
+        "Lyabi Hauz Bukhara",
+        "Nadir Divan Begi Madrasah"
+      ],
+      "guide": "Bukhara was a major Silk Road commercial, intellectual and religious center; look for domes, fired-brick geometry and caravan trade infrastructure."
+    },
+    {
+      "date": "2026-10-14",
+      "country": "Uzbekistan",
+      "city": "Bukhara → Samarkand",
+      "summary": "Ismail Samani Mausoleum, Chashma-Ayub, Sitorai Mokhi-Khosa; 16:55 train, 19:13 arrival Samarkand. Registan by night.",
+      "hotel": "Orient Star Hotel",
+      "places": [
+        "Ismail Samani Mausoleum",
+        "Chashma Ayub Mausoleum",
+        "Sitorai Mokhi Khosa Palace",
+        "Registan Square"
+      ],
+      "guide": "The Samanid Mausoleum is celebrated for intricate brickwork; Samarkand's Timurid monuments reveal monumental urban design."
+    },
+    {
+      "date": "2026-10-15",
+      "country": "Uzbekistan",
+      "city": "Samarkand → Tashkent",
+      "summary": "Registan, Bibi-Khanym Mosque, Afrasiyab Museum, Ulugh Beg Observatory, Gur-e-Amir. 19:23 train; Tashkent 23:06.",
+      "hotel": "Daniel Hill Hotel",
+      "places": [
+        "Registan Square",
+        "Bibi-Khanym Mosque",
+        "Afrasiab Museum Samarkand",
+        "Ulugh Beg Observatory",
+        "Gur-e-Amir"
+      ],
+      "guide": "Ulugh Beg was a 15th-century astronomer; Samarkand was a key Timurid imperial and scientific center."
+    },
+    {
+      "date": "2026-10-16",
+      "country": "Uzbekistan → Kyrgyzstan",
+      "city": "Tashkent → Bishkek",
+      "summary": "Minor Mosque, Amir Timur Square, Broadway Street, Hazrati Imam; HY777 departs 15:20, Bishkek arrival 17:30.",
+      "hotel": "Damas International Hotel",
+      "places": [
+        "Minor Mosque Tashkent",
+        "Amir Timur Square",
+        "Hazrati Imam Complex",
+        "Manas International Airport"
+      ],
+      "guide": "The route transitions from Central Asian oasis settlements to the foothills of the Tian Shan."
+    },
+    {
+      "date": "2026-10-17",
+      "country": "Kyrgyzstan",
+      "city": "Bishkek → Cholpon-Ata",
+      "summary": "Approx. 4-hour drive. Rukh Ordo, petroglyphs, Issyk-Kul lake cruise, Vermet outdoor hot springs. Bring swimwear.",
+      "hotel": "Karven 4 Seasons Cholpon Ata Hotel",
+      "places": [
+        "Rukh Ordo Cultural Center",
+        "Cholpon Ata Petroglyphs",
+        "Issyk Kul Lake",
+        "Cholpon Ata"
+      ],
+      "guide": "Issyk-Kul occupies a tectonic basin in the Tian Shan. Petroglyphs record long-standing human activity in the region."
+    },
+    {
+      "date": "2026-10-18",
+      "country": "Kyrgyzstan → Kazakhstan",
+      "city": "Cholpon-Ata → Bishkek → Almaty",
+      "summary": "Return to Bishkek, Ala-Archa National Park (about one-hour trek), cross Korday border and continue to Almaty.",
+      "hotel": "Garden Park Inn",
+      "places": [
+        "Ala Archa National Park",
+        "Korday Border Crossing",
+        "Almaty"
+      ],
+      "guide": "The Tian Shan mountains reflect active crustal deformation; allow time for border procedures."
+    },
+    {
+      "date": "2026-10-19",
+      "country": "Kazakhstan",
+      "city": "Almaty → Charyn Canyon → Almaty",
+      "summary": "Excursion to Charyn Canyon, Luna Canyon and Black Canyon; return to Almaty.",
+      "hotel": "Garden Park Inn",
+      "places": [
+        "Charyn Canyon",
+        "Luna Canyon Kazakhstan",
+        "Black Canyon Charyn"
+      ],
+      "guide": "Charyn Canyon exposes sedimentary layers carved by river erosion, uplift and weathering. Rock colors alone do not determine mineral identity."
+    },
+    {
+      "date": "2026-10-20",
+      "country": "Kazakhstan",
+      "city": "Almaty → Incheon",
+      "summary": "Oi Qaragai Aktas replaces Shymbulak cable car (maintenance Oct 12–Nov 9). Panfilov Park, Zenkov Cathedral, Green Bazaar, Arbat Street. OZ578 22:10 departure.",
+      "hotel": "Overnight flight",
+      "places": [
+        "Oi Qaragai",
+        "Panfilov Park Almaty",
+        "Ascension Cathedral Almaty",
+        "Green Bazaar Almaty",
+        "Arbat Street Almaty"
+      ],
+      "guide": "Almaty sits near the Trans-Ili Alatau range. Note the Shymbulak maintenance substitution in the itinerary."
+    },
+    {
+      "date": "2026-10-21",
+      "country": "Korea",
+      "city": "Incheon",
+      "summary": "Arrive Incheon at 07:30.",
+      "hotel": "—",
+      "places": [
+        "Incheon International Airport"
+      ],
+      "guide": "End of the ten-day journey."
+    }
+  ],
+  "essentials": [
+    {
+      "title": "Connectivity",
+      "body": "Download offline maps before remote mountain and canyon excursions. Map links require internet."
+    },
+    {
+      "title": "Border crossing",
+      "body": "Carry your passport and allow for variable processing time at Korday."
+    },
+    {
+      "title": "Weather",
+      "body": "Mountain weather can change quickly; bring a warm layer, comfortable shoes and water."
+    },
+    {
+      "title": "Hot springs",
+      "body": "Bring swimwear for the Oct 17 outdoor hot springs."
+    }
+  ]
+}
