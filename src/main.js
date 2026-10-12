@@ -15,7 +15,8 @@ const d=data.days[day];
 root.innerHTML=`<header><div class="eyebrow">실크로드 여행기 · 2026.10.12—21</div><h1>중앙아시아 <em>탄탄탄</em></h1><p>우즈베키스탄 · 키르기스스탄 · 카자흐스탄</p></header>
 <nav aria-label="여행 메뉴"><button data-tab="days" class="${tab==='days'?'active':''}">일정</button><button data-tab="guide" class="${tab==='guide'?'active':''}">여행 해설</button><button data-tab="list" class="${tab==='list'?'active':''}">준비물</button></nav>
 <main>${tab==='days'?`<div class="days">${data.days.map((x,i)=>`<button data-day="${i}" class="${day===i?'selected':''}"><small>${esc(date(x.date))}</small><strong>${i+1}</strong></button>`).join('')}</div>
-<section><div class="eyebrow">${day+1}일차 · ${esc(d.countryKo)}</div><h2>${esc(d.cityKo)}</h2><p class="summary">${esc(d.summaryKo)}</p>${[2,3,7].includes(day)?`<figure class="travel-photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(day===7?'Charyn Canyon, Kazakhstan 01.jpg':'Registan Samarkand.jpg')}?width=1000" alt="관광지 사진"><figcaption>${day===7?'차른 협곡 · Bgag, CC0':'레기스탄 광장 · Euyasik, CC BY-SA 3.0'} · Wikimedia Commons</figcaption></figure>`:''}<article><h3>오늘의 일정</h3>${d.summaryKo.split(/(?<=\.)\s+/).map(x=>`<p>• ${esc(x)}</p>`).join('')}</article><article><h3>숙소</h3><p>${esc(d.hotelKo||d.hotel)}</p>${d.hotel!=='—'&&d.hotel!=='Overnight flight'?`<a target="_blank" rel="noopener" href="${maps(d.hotel)}">구글 지도에서 숙소 찾기 ↗</a>`:''}</article><article><h3>방문지와 지도</h3>${d.places.map((p,i)=>`<a class="place" href="${maps(p)}" target="_blank" rel="noopener">📍 ${esc((d.placesKo||[])[i]||p)} ↗</a>`).join('')}</article><article class="note"><h3>역사와 지질 이야기</h3><p>${esc(d.guideKo)}</p></article><article class="note"><h3>여행 관찰 포인트</h3><p>${esc(d.tipKo)}</p></article></section><div class="pager"><button data-prev ${day===0?'disabled':''}>← 이전 날</button><button data-next ${day===9?'disabled':''}>다음 날 →</button></div>`:tab==='guide'?`<h2>여행 해설</h2><article><h3>우즈베키스탄 · 실크로드</h3><p>부하라와 사마르칸트는 실크로드 교역과 학문의 중심지였습니다. 벽돌 아치, 청색 타일과 천문대 유적을 비교해 보세요.</p></article><article><h3>키르기스스탄 · 톈산산맥</h3><p>이식쿨 호수는 톈산산맥의 지각 분지에 자리합니다. 주변 산맥에는 융기와 침식의 흔적이 남아 있습니다.</p></article><article><h3>카자흐스탄 · 차른 협곡</h3><p>차른 협곡의 퇴적층은 과거 환경을 기록하며 하천 침식과 풍화가 오늘날의 협곡을 형성했습니다.</p></article>${data.essentials.map(e=>`<details><summary>${esc(e.title)}</summary><p>${esc(e.body)}</p></details>`).join('')}`:`<h2>여행 준비물</h2><p>체크 상태는 이 기기에 저장됩니다.</p><article>${checklist.map((x,i)=>`<label class="check"><input type="checkbox" data-check="${i}" ${checks()[i]?'checked':''}><span>${esc(x)}</span></label>`).join('')}</article>`}</main><footer>중앙아시아 탄탄탄 · ${navigator.onLine?'온라인':'오프라인'}<p>현지 상황에 따라 일정이 변경될 수 있습니다.</p></footer>`;
+<section><div class="eyebrow">${day+1}일차 · ${esc(d.countryKo)}</div><h2>${esc(d.cityKo)}</h2><p class="summary">${esc(d.summaryKo)}</p>${[2,3,7].includes(day)?`<figure class="travel-photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(day===7?'Charyn Canyon, Kazakhstan 01.jpg':'Registan Samarkand.jpg')}?width=1000" alt="관광지 사진"><figcaption>${day===7?'차른 협곡 · Bgag, CC0':'레기스탄 광장 · Euyasik, CC BY-SA 3.0'} · Wikimedia Commons</figcaption></figure>`:''}<article><h3>오늘의 일정</h3>${d.summaryKo.split(/(?<=\.)\s+/).map(x=>`<p>• ${esc(x)}</p>`).join('')}</article><article><h3>숙소</h3><p>${esc(d.hotelKo||d.hotel)}</p>${d.hotel!=='—'&&d.hotel!=='Overnight flight'?`<a target="_blank" rel="noopener" href="${maps(d.hotel)}">구글 지도에서 숙소 찾기 ↗</a>`:''}</article><article><h3>방문지와 지도</h3>${d.places.map((p,i)=>`<div class="destination-card"><div class="destination-photo" data-image-query="${esc((d.placeDetails||[])[i]?.imageSearch||p)}"><span>사진 불러오는 중…</span></div><div class="destination-body"><h4>${esc((d.placesKo||[])[i]||p)}</h4><p>${esc((d.placeDetails||[])[i]?.description||"방문지에 대한 상세 설명을 준비하고 있습니다.")}</p><a href="${maps(p)}" target="_blank" rel="noopener">구글 지도에서 위치 보기 ↗</a></div></div>`).join('')}</article><article class="note"><h3>역사와 지질 이야기</h3><p>${esc(d.guideKo)}</p></article><article class="note"><h3>여행 관찰 포인트</h3><p>${esc(d.tipKo)}</p></article></section><div class="pager"><button data-prev ${day===0?'disabled':''}>← 이전 날</button><button data-next ${day===9?'disabled':''}>다음 날 →</button></div>`:tab==='guide'?`<h2>여행 해설</h2><article><h3>우즈베키스탄 · 실크로드</h3><p>부하라와 사마르칸트는 실크로드 교역과 학문의 중심지였습니다. 벽돌 아치, 청색 타일과 천문대 유적을 비교해 보세요.</p></article><article><h3>키르기스스탄 · 톈산산맥</h3><p>이식쿨 호수는 톈산산맥의 지각 분지에 자리합니다. 주변 산맥에는 융기와 침식의 흔적이 남아 있습니다.</p></article><article><h3>카자흐스탄 · 차른 협곡</h3><p>차른 협곡의 퇴적층은 과거 환경을 기록하며 하천 침식과 풍화가 오늘날의 협곡을 형성했습니다.</p></article>${data.essentials.map(e=>`<details><summary>${esc(e.title)}</summary><p>${esc(e.body)}</p></details>`).join('')}`:`<h2>여행 준비물</h2><p>체크 상태는 이 기기에 저장됩니다.</p><article>${checklist.map((x,i)=>`<label class="check"><input type="checkbox" data-check="${i}" ${checks()[i]?'checked':''}><span>${esc(x)}</span></label>`).join('')}</article>`}</main><footer>중앙아시아 탄탄탄 · ${navigator.onLine?'온라인':'오프라인'}<p>현지 상황에 따라 일정이 변경될 수 있습니다.</p></footer>`;
+loadDestinationPhotos();
 root.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;render()});
 root.querySelectorAll('[data-day]').forEach(b=>b.onclick=()=>{day=Number(b.dataset.day);render()});
 root.querySelector('[data-prev]')?.addEventListener('click',()=>{day--;render()});
@@ -24,3 +25,33 @@ root.querySelectorAll('[data-check]').forEach(b=>b.onchange=()=>{let x=checks();
 }
 render();addEventListener('online',render);addEventListener('offline',render);
 if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw.js').catch(()=>{}));
+
+// Wikimedia Commons openly licensed destination photographs. Loaded lazily and cached by browser.
+const imageCache=new Map();
+async function loadImage(el){
+ const query=el.dataset.imageQuery;if(!query)return;
+ try{
+  let info=imageCache.get(query);
+  if(!info){
+   const url=new URL('https://commons.wikimedia.org/w/api.php');
+   url.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:'filetype:bitmap '+query,gsrnamespace:'6',gsrlimit:'6',prop:'imageinfo',iiprop:'url|extmetadata',iiurlwidth:'640',format:'json',origin:'*'}).toString();
+   const res=await fetch(url);if(!res.ok)throw Error('Image search unavailable');
+   const data=await res.json();
+   const pages=Object.values(data.query?.pages||{});
+   const found=pages.find(p=>p.imageinfo?.[0]?.thumburl&&/\\.(jpe?g|png|webp)$/i.test(p.title));
+   if(!found)throw Error('No photo');
+   info={src:found.imageinfo[0].thumburl,source:found.imageinfo[0].descriptionurl||'https://commons.wikimedia.org',title:found.title.replace(/^File:/,'')};imageCache.set(query,info);
+  }
+  if(!el.isConnected)return;
+  const img=document.createElement('img');img.loading='lazy';img.alt=el.closest('.destination-card')?.querySelector('h4')?.textContent||'여행지 사진';img.src=info.src;
+  img.onerror=()=>{el.textContent='사진을 불러오지 못했습니다';};
+  el.replaceChildren(img);
+  const credit=document.createElement('a');credit.className='photo-credit';credit.href=info.source;credit.target='_blank';credit.rel='noopener';credit.textContent='사진: Wikimedia Commons ↗';el.append(credit);
+ }catch(e){if(el.isConnected)el.textContent='사진을 불러올 수 없습니다 · 설명은 오프라인에서도 볼 수 있습니다';}
+}
+function loadDestinationPhotos(){
+ const els=[...root.querySelectorAll('[data-image-query]')];
+ if(!('IntersectionObserver' in window)){els.forEach(loadImage);return}
+ const obs=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){obs.unobserve(entry.target);loadImage(entry.target)}}},{rootMargin:'250px'});
+ els.forEach(el=>obs.observe(el));
+}
