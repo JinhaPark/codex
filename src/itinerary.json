@@ -14,7 +14,12 @@
         "Incheon International Airport Terminal 2",
         "Tashkent International Airport"
       ],
-      "guide": "Tashkent is an ancient oasis city reshaped by Soviet-era planning."
+      "guide": "Tashkent is an ancient oasis city reshaped by Soviet-era planning.",
+      "cityKo": "인천 → 타슈켄트",
+      "summaryKo": "인천공항 제2터미널 13:30 집결. 아시아나항공 OZ573편 16:35 출발, 타슈켄트 현지시간 20:00 도착. 입국 수속 후 호텔로 이동합니다.",
+      "guideKo": "타슈켄트는 실크로드 오아시스 도시로 성장했으며, 오늘날에는 소비에트 시기 도시계획과 현대적인 중앙아시아 수도의 풍경이 공존합니다.",
+      "tipKo": "첫날은 시차와 비행 피로를 고려해 무리하지 않는 것이 좋습니다.",
+      "countryKo": "우즈베키스탄"
     },
     {
       "date": "2026-10-13",
@@ -28,7 +33,17 @@
         "Lyabi Hauz Bukhara",
         "Nadir Divan Begi Madrasah"
       ],
-      "guide": "Bukhara was a major Silk Road commercial, intellectual and religious center; look for domes, fired-brick geometry and caravan trade infrastructure."
+      "guide": "Bukhara was a major Silk Road commercial, intellectual and religious center; look for domes, fired-brick geometry and caravan trade infrastructure.",
+      "cityKo": "타슈켄트 → 부하라",
+      "summaryKo": "08:37 열차로 타슈켄트를 출발해 14:35 부하라에 도착합니다. 아르크 성채, 칼랸 미나레트, 라비하우즈, 나디르 디반베기 마드라사, 돔형 바자르를 둘러보고 야간 산책을 합니다.",
+      "guideKo": "부하라는 사막 오아시스의 교역·학문 중심지였습니다. 아르크 성채는 통치 권력의 중심, 칼랸 미나레트는 도시의 상징이며 라비하우즈의 연못은 건조한 기후에서 물과 공공공간의 중요성을 보여줍니다.",
+      "tipKo": "미나레트의 벽돌 무늬, 바자르의 교차형 돔, 야간 조명의 색감에 주목해 보세요.",
+      "countryKo": "우즈베키스탄",
+      "photo": {
+        "file": "Ark fortress in Bukhara.jpg",
+        "credit": "Stomac · CC BY-SA 2.0 FR",
+        "caption": "부하라 아르크 성채 — 오아시스 도시의 권력 중심"
+      }
     },
     {
       "date": "2026-10-14",
@@ -42,7 +57,17 @@
         "Sitorai Mokhi Khosa Palace",
         "Registan Square"
       ],
-      "guide": "The Samanid Mausoleum is celebrated for intricate brickwork; Samarkand's Timurid monuments reveal monumental urban design."
+      "guide": "The Samanid Mausoleum is celebrated for intricate brickwork; Samarkand's Timurid monuments reveal monumental urban design.",
+      "cityKo": "부하라 → 사마르칸트",
+      "summaryKo": "이스마일 사마니 영묘, 차슈마 아유브, 시토라이 모히 호사 궁전을 방문합니다. 16:55 열차로 출발해 19:13 사마르칸트에 도착한 뒤 레기스탄 야경을 감상합니다.",
+      "guideKo": "사마니 영묘는 9~10세기 무렵의 정교한 벽돌 건축을 대표합니다. 사마르칸트는 티무르 왕조의 수도로 발전했고 레기스탄 광장은 세 개의 마드라사가 둘러싼 기념비적 공간입니다.",
+      "tipKo": "낮과 밤의 레기스탄은 분위기가 크게 다릅니다. 광장 전체 구도와 타일 문양을 각각 촬영해 보세요.",
+      "countryKo": "우즈베키스탄",
+      "photo": {
+        "file": "RegistanSquare Samarkand.jpg",
+        "credit": "Gustavo Jeronimo / MrPanyGoff · CC BY 2.0",
+        "caption": "사마르칸트 레기스탄 광장 — 세 개의 마드라사가 만드는 공간"
+      }
     },
     {
       "date": "2026-10-15",
@@ -57,7 +82,17 @@
         "Ulugh Beg Observatory",
         "Gur-e-Amir"
       ],
-      "guide": "Ulugh Beg was a 15th-century astronomer; Samarkand was a key Timurid imperial and scientific center."
+      "guide": "Ulugh Beg was a 15th-century astronomer; Samarkand was a key Timurid imperial and scientific center.",
+      "cityKo": "사마르칸트 → 타슈켄트",
+      "summaryKo": "레기스탄, 비비하눔 모스크, 아프라시압 박물관, 울루그벡 천문대, 구르에미르를 탐방합니다. 19:23 열차 출발, 23:06 타슈켄트 도착 예정입니다.",
+      "guideKo": "울루그벡은 15세기 천문 관측과 항성표 제작을 후원한 군주이자 학자였습니다. 아프라시압 유적은 이 도시의 티무르 왕조 이전 역사를 보여주며 구르에미르는 티무르 가문의 영묘입니다.",
+      "tipKo": "천문대의 거대한 관측 장치 흔적과 구르에미르 돔의 비례를 비교해 보세요.",
+      "countryKo": "우즈베키스탄",
+      "photo": {
+        "file": "RegistanSquare Samarkand.jpg",
+        "credit": "Gustavo Jeronimo / MrPanyGoff · CC BY 2.0",
+        "caption": "사마르칸트 레기스탄 광장 — 세 개의 마드라사가 만드는 공간"
+      }
     },
     {
       "date": "2026-10-16",
@@ -71,7 +106,12 @@
         "Hazrati Imam Complex",
         "Manas International Airport"
       ],
-      "guide": "The route transitions from Central Asian oasis settlements to the foothills of the Tian Shan."
+      "guide": "The route transitions from Central Asian oasis settlements to the foothills of the Tian Shan.",
+      "cityKo": "타슈켄트 → 비슈케크",
+      "summaryKo": "미노르 모스크, 아미르 티무르 광장, 브로드웨이 거리, 하즈라티 이맘 단지를 둘러봅니다. HY777편 15:20 출발, 비슈케크 17:30 도착 예정입니다.",
+      "guideKo": "우즈베키스탄의 역사 도시에서 키르기스스탄의 산악 국가로 이동하는 날입니다. 타슈켄트의 종교 건축과 근현대 기념공간을 비교할 수 있습니다.",
+      "tipKo": "국제선 이동일이므로 여권과 항공편 시간을 별도로 확인하세요.",
+      "countryKo": "우즈베키스탄 → 키르기스스탄"
     },
     {
       "date": "2026-10-17",
@@ -85,7 +125,12 @@
         "Issyk Kul Lake",
         "Cholpon Ata"
       ],
-      "guide": "Issyk-Kul occupies a tectonic basin in the Tian Shan. Petroglyphs record long-standing human activity in the region."
+      "guide": "Issyk-Kul occupies a tectonic basin in the Tian Shan. Petroglyphs record long-standing human activity in the region.",
+      "cityKo": "비슈케크 → 촐폰아타",
+      "summaryKo": "차량으로 약 4시간 이동합니다. 루흐 오르도 문화센터, 암각화 유적, 이식쿨 호수 유람선, 베르메트 야외 온천을 방문합니다. 수영복을 준비하세요.",
+      "guideKo": "이식쿨은 톈산산맥 사이의 거대한 산간 호수로, 지각 운동으로 만들어진 분지에 자리합니다. 촐폰아타 암각화는 선사·고대 사람들이 남긴 동물과 생활 장면을 전합니다.",
+      "tipKo": "호수 주변의 산 능선과 퇴적 지형을 관찰하고, 온천용 수영복과 수건을 챙기세요.",
+      "countryKo": "키르기스스탄"
     },
     {
       "date": "2026-10-18",
@@ -98,7 +143,12 @@
         "Korday Border Crossing",
         "Almaty"
       ],
-      "guide": "The Tian Shan mountains reflect active crustal deformation; allow time for border procedures."
+      "guide": "The Tian Shan mountains reflect active crustal deformation; allow time for border procedures.",
+      "cityKo": "촐폰아타 → 알마티",
+      "summaryKo": "비슈케크 방향으로 돌아와 알라아르차 국립공원에서 약 1시간 트레킹합니다. 코르다이 국경을 통과해 카자흐스탄 알마티로 이동합니다.",
+      "guideKo": "알라아르차는 톈산산맥의 고산 계곡으로 빙하 침식과 하천 작용이 만든 경관을 보여줍니다. 산맥은 인도판과 유라시아판의 장기적인 충돌과 관련된 광역 지각 변형의 영향을 받습니다.",
+      "tipKo": "고도와 날씨 변화에 대비하고 국경 통과 대기시간은 유동적이라는 점을 기억하세요.",
+      "countryKo": "키르기스스탄 → 카자흐스탄"
     },
     {
       "date": "2026-10-19",
@@ -111,7 +161,12 @@
         "Luna Canyon Kazakhstan",
         "Black Canyon Charyn"
       ],
-      "guide": "Charyn Canyon exposes sedimentary layers carved by river erosion, uplift and weathering. Rock colors alone do not determine mineral identity."
+      "guide": "Charyn Canyon exposes sedimentary layers carved by river erosion, uplift and weathering. Rock colors alone do not determine mineral identity.",
+      "cityKo": "알마티 → 차른 협곡 → 알마티",
+      "summaryKo": "차른 협곡, 루나 캐니언, 블랙 캐니언을 둘러본 뒤 알마티로 돌아옵니다.",
+      "guideKo": "차른 협곡은 강의 침식, 지반 융기, 풍화가 오랜 시간 결합해 형성한 지형입니다. 층층이 드러난 퇴적층은 서로 다른 시기의 퇴적 환경을 암시하며, 붉은빛은 일부 암석의 철 산화물과 관련될 수 있습니다.",
+      "tipKo": "협곡 가장자리의 낙석과 급경사에 주의하세요. 암석의 색만으로 정확한 광물 조성을 단정할 수는 없습니다.",
+      "countryKo": "카자흐스탄"
     },
     {
       "date": "2026-10-20",
@@ -126,7 +181,12 @@
         "Green Bazaar Almaty",
         "Arbat Street Almaty"
       ],
-      "guide": "Almaty sits near the Trans-Ili Alatau range. Note the Shymbulak maintenance substitution in the itinerary."
+      "guide": "Almaty sits near the Trans-Ili Alatau range. Note the Shymbulak maintenance substitution in the itinerary.",
+      "cityKo": "알마티 → 귀국 항공편",
+      "summaryKo": "심불락 케이블카 정비(10월 12일~11월 9일)로 오이 카라가이 악타스 일정으로 대체됩니다. 판필로프 공원, 젠코프 성당, 그린 바자르, 아르바트 거리를 방문한 뒤 OZ578편 22:10 출발 예정입니다.",
+      "guideKo": "알마티는 트랜스일리 알라타우 산기슭에 자리한 도시입니다. 젠코프 성당은 목조 건축으로 알려져 있으며, 그린 바자르는 지역 식문화와 상업을 체험하기 좋은 곳입니다.",
+      "tipKo": "케이블카 대체 일정은 현지 상황에 따라 달라질 수 있으니 가이드 안내를 우선하세요.",
+      "countryKo": "카자흐스탄"
     },
     {
       "date": "2026-10-21",
@@ -137,25 +197,30 @@
       "places": [
         "Incheon International Airport"
       ],
-      "guide": "End of the ten-day journey."
+      "guide": "End of the ten-day journey.",
+      "cityKo": "인천 도착",
+      "summaryKo": "인천공항 07:30 도착 예정입니다. 10일간의 중앙아시아 3개국 여행을 마무리합니다.",
+      "guideKo": "오아시스 도시의 실크로드 건축, 톈산의 산악 지형, 차른 협곡의 퇴적 지층을 하나의 여행에서 비교해 볼 수 있습니다.",
+      "tipKo": "사진을 도시·건축·지질·음식으로 분류해 정리하면 여행 기록을 남기기 좋습니다.",
+      "countryKo": "대한민국"
     }
   ],
   "essentials": [
     {
-      "title": "Connectivity",
-      "body": "Download offline maps before remote mountain and canyon excursions. Map links require internet."
+      "title": "통신과 지도",
+      "body": "산악·협곡 지역으로 가기 전에 오프라인 지도를 내려받으세요. 구글 지도 검색 링크는 인터넷 연결이 필요합니다."
     },
     {
-      "title": "Border crossing",
-      "body": "Carry your passport and allow for variable processing time at Korday."
+      "title": "국경 이동",
+      "body": "코르다이 국경 통과 시 여권을 준비하고 대기시간 변동을 고려하세요."
     },
     {
-      "title": "Weather",
-      "body": "Mountain weather can change quickly; bring a warm layer, comfortable shoes and water."
+      "title": "산악 날씨",
+      "body": "톈산 지역은 기온과 날씨가 빠르게 바뀔 수 있어 방풍·보온 의류와 물이 필요합니다."
     },
     {
-      "title": "Hot springs",
-      "body": "Bring swimwear for the Oct 17 outdoor hot springs."
+      "title": "온천 준비",
+      "body": "10월 17일 야외 온천 일정에 수영복을 준비하세요."
     }
   ]
 }
