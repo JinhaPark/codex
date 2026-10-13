@@ -24,7 +24,7 @@ const placeNames=['인천국제공항 제2여객터미널','타슈켄트 국제�
 const maps=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s);
 const date=s=>new Date(s+'T12:00:00Z').toLocaleDateString('ko-KR',{month:'short',day:'numeric',weekday:'short',timeZone:'UTC'});
 const checks=()=>{try{return JSON.parse(localStorage.getItem('central-asia-checks')||'{}')}catch{return {}}};
-const travelPhrases=[['Assalomu alaykum','아살로무 알라이쿰','안녕하세요'],['Vaalaykum assalom','바알라이쿰 아살롬','인사에 대한 답'],['Salom','살롬','안녕'],['Rahmat','라흐마트','감사합니다'],['Iltimos','일티모스','부탁합니다'],['Ha / Yo‘q','하 / 요크','예 / 아니요'],['Kechirasiz','케치라시즈','실례합니다'],['Bu qancha turadi?','부 칸차 투라디?','얼마예요?'],['Hojatxona qayerda?','호자트호나 카예르다?','화장실이 어디예요?']];
+const travelPhrases=[['Assalomu alaykum','아살로무 알라이쿰','안녕하세요'],['Vaalaykum assalom','바알라이쿰 아살롬','인사에 대한 답'],['Salom','살롬','안녕'],['Rahmat','라흐마트','감사합니다'],['Iltimos','일티모스','부탁합니다'],['Ha / Yo‘q','하 / 요크','예 / 아니요'],['Kechirasiz','케치라시즈','실례합니다'],['Bu qancha turadi?','부 칸차 투라디?','얼마예요?'],['Juda qimmat!','주다 킴마트!','너무 비싸요!'],['Hojatxona qayerda?','호자트호나 카예르다?','화장실이 어디예요?']];
 const checklist=['여권과 여행 서류','여행자 보험','결제 카드와 현금','충전기와 보조배터리','편한 운동화','산악 지역용 보온 의류','온천용 수영복','선크림과 물','오프라인 지도','항공편과 열차 시간 재확인'];
 function render(){
 const d=data.days[day];
