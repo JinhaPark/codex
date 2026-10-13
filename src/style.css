@@ -9,3 +9,10 @@
 .destination-body h4{margin:0 0 8px;font-size:19px;color:#193943}
 .destination-body p{line-height:1.75;margin:0 0 12px;word-break:keep-all;color:#45575b}
 .destination-body a{font-size:13px;font-weight:600;text-decoration:none}
+
+nav{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav button{flex:1 0 auto;white-space:nowrap}
+.fx-panel{display:flex;flex-direction:column;gap:12px}
+.fx-panel label{font-weight:700;font-size:14px}
+.fx-panel select,.fx-panel input{box-sizing:border-box;width:100%;min-height:48px;border:1px solid #b9c9c6;border-radius:10px;padding:10px 12px;font:inherit;background:#fff;color:#142e39}
+.fx-result{font-size:clamp(25px,7vw,36px);font-weight:800;color:#183e44;padding:15px 0;letter-spacing:-.04em}
+.fx-caption{font-size:12px;line-height:1.6;color:#65736f}
