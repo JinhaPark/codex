@@ -29,3 +29,44 @@ nav{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-s
 .phrase-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:12px}.phrase-table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.5;min-width:340px}.phrase-table th,.phrase-table td{text-align:left;padding:11px 8px;border-bottom:1px solid #dce5df;vertical-align:top}.phrase-table th{background:#e8eee9;color:#193943;font-weight:700;white-space:nowrap}.phrase-table tr:nth-child(even){background:#f7f9f7}.phrase-table td:first-child{font-weight:600;word-break:normal}.phrases p{font-size:13px;line-height:1.6}
 
 .research{margin:18px 0 24px}.research>p{line-height:1.65;color:#51635f}.research-topic{margin:10px 0;border:1px solid #d8e3df;border-radius:12px;overflow:hidden;background:#fff}.research-topic>summary{padding:16px 14px;font-weight:750;line-height:1.5;cursor:pointer;background:#eef4f1;color:#1b4449}.research-body{padding:4px 15px 16px}.research-body>p{line-height:1.85;margin:14px 0;word-break:keep-all}.research-note{padding:12px;background:#f1f6f3;border-radius:8px}.research-sources{display:flex;flex-direction:column;gap:7px;border-top:1px solid #e3ebe7;padding-top:12px;font-size:13px}.research-sources a{overflow-wrap:anywhere}
+
+/* Mobile-first reading layout: preserve Korean word boundaries and avoid clipping */
+html{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:0;overflow-wrap:break-word}
+#app,main,main>section,article,details,.destination-card,.research,.architecture-guide{min-width:0;max-width:100%}
+main{width:100%;max-width:760px;padding:24px clamp(16px,4.5vw,28px) 64px}
+header{padding:34px clamp(20px,5vw,36px) 30px}
+header h1{font-size:clamp(39px,10vw,68px);line-height:1.12;overflow-wrap:normal;word-break:keep-all}
+header p{font-size:14px;line-height:1.7}
+h2{font-family:inherit;font-size:clamp(25px,6.5vw,34px);line-height:1.35;letter-spacing:-.025em;word-break:keep-all}
+h3{font-size:18px;line-height:1.5;word-break:keep-all}
+p,li,summary,.destination-body p{line-height:1.85;overflow-wrap:break-word;word-break:keep-all}
+article{padding:clamp(17px,4.4vw,25px);margin:16px 0}
+.summary{font-size:16px;line-height:1.9}
+nav{justify-content:flex-start;overscroll-behavior-x:contain}
+nav button{padding:15px 16px;font-size:14px;min-height:48px}
+.destination-photo{min-height:0}
+.destination-body{padding:18px 17px 21px}
+.destination-body h4{line-height:1.45;word-break:keep-all}
+.research-topic,.architecture-city{padding:0}
+.research-topic>summary,.architecture-city>summary{display:block;padding:17px 16px;line-height:1.65;word-break:keep-all}
+.research-body{padding:5px 17px 19px}
+.research-body>p{line-height:1.95;margin:15px 0}
+.research-sources a,.architecture-guide a{overflow-wrap:anywhere;word-break:break-word}
+.architecture-guide{margin:22px 0 28px}
+.architecture-intro{font-size:15px;line-height:1.9;color:#425b5d}
+.architecture-city{margin:12px 0;border:1px solid #d9e5df;border-radius:13px;overflow:hidden;background:#fff}
+.architecture-city>summary{background:#eaf1ec;cursor:pointer;list-style-position:inside}
+.city-name{display:block;font-weight:800;font-size:18px;color:#193d43}
+.city-name small{font-size:12px;font-weight:500;color:#667b79}
+.city-subtitle{display:block;font-size:13px;font-weight:500;color:#4d6a65;margin-top:3px}
+.architecture-city-body{padding:5px 17px 20px}
+.architecture-city-body>p{font-size:15px;color:#435b5c}
+.architecture-site{padding:17px 0;border-top:1px solid #e3e9e4}
+.architecture-site h4{margin:0 0 8px;font-size:16px;line-height:1.55;color:#193d43;word-break:keep-all}
+.architecture-site h4 small{display:block;font-size:12px;font-weight:500;color:#6b7c7a}
+.architecture-site p{margin:0;font-size:15px;line-height:1.9;color:#394f51}
+.architecture-footnote{font-size:13px;line-height:1.8;color:#60736e}
+.phrase-scroll{max-width:100%}
+@media(max-width:420px){.phrase-table{min-width:0;font-size:12px;table-layout:fixed}.phrase-table th,.phrase-table td{padding:10px 6px;overflow-wrap:anywhere;word-break:break-word}.phrase-table td:first-child{min-width:0}.phrase-table th:nth-child(1){width:37%}.phrase-table th:nth-child(2){width:34%}.phrase-table th:nth-child(3){width:29%}}
+@media(min-width:700px){header{padding:48px max(28px,calc((100vw - 760px)/2)) 42px}main{padding-top:35px}}
