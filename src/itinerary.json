@@ -40,7 +40,7 @@
       "date": "2026-10-13",
       "country": "Uzbekistan",
       "city": "Tashkent → Bukhara",
-      "summary": "08:37 train from Tashkent, 14:35 arrival Bukhara. Ark Fortress, Kalyan Minaret, Lyabi-Hauz, Nadir Divan-Begi madrasa, bazaars and evening walk.",
+      "summary": "08:30 train from Tashkent, 14:30 arrival Bukhara (6 hours). Ark Fortress, Kalyan Minaret, Lyabi-Hauz, Nadir Divan-Begi madrasa, bazaars and evening walk.",
       "hotel": "Sahid Zarafshon Hotel",
       "places": [
         "Ark of Bukhara",
@@ -50,7 +50,7 @@
       ],
       "guide": "Bukhara was a major Silk Road commercial, intellectual and religious center; look for domes, fired-brick geometry and caravan trade infrastructure.",
       "cityKo": "타슈켄트 → 부하라",
-      "summaryKo": "08:37 열차로 타슈켄트를 출발해 14:35 부하라에 도착합니다. 아르크 성채, 칼랸 미나레트, 라비하우즈, 나디르 디반베기 마드라사, 돔형 바자르를 둘러보고 야간 산책을 합니다.",
+      "summaryKo": "08:30 열차로 타슈켄트를 출발해 14:30 부하라에 도착합니다(이동 6시간). 아르크 성채, 칼랸 미나레트, 라비하우즈, 나디르 디반베기 마드라사, 돔형 바자르를 둘러보고 야간 산책을 합니다.",
       "guideKo": "부하라는 사막 오아시스의 교역·학문 중심지였습니다. 아르크 성채는 통치 권력의 중심, 칼랸 미나레트는 도시의 상징이며 라비하우즈의 연못은 건조한 기후에서 물과 공공공간의 중요성을 보여줍니다.",
       "tipKo": "미나레트의 벽돌 무늬, 바자르의 교차형 돔, 야간 조명의 색감에 주목해 보세요.",
       "countryKo": "우즈베키스탄",
@@ -446,6 +446,10 @@
     {
       "title": "온천 준비",
       "body": "10월 17일 야외 온천 일정에 수영복을 준비하세요."
+    },
+    {
+      "title": "현지 여행 회화",
+      "body": "우즈베크어: Assalomu alaykum(아살로무 알라이쿰, 안녕하세요·정중한 인사), Vaalaykum assalom(바알라이쿰 아살롬, 인사에 대한 답), Salom(살롬, 안녕), Rahmat(라흐마트, 감사합니다), Iltimos(일티모스, 부탁합니다·제발), Ha(하, 예), Yo‘q(요크, 아니요), Kechirasiz(케치라시즈, 실례합니다·죄송합니다), Bu qancha turadi?(부 칸차 투라디?, 이거 얼마예요?), Hojatxona qayerda?(호자트호나 카예르다?, 화장실이 어디예요?). 튀르키예어: Merhaba(메르하바, 안녕하세요). 메르하바는 튀르키예어 표현이므로 우즈베키스탄에서는 아살로무 알라이쿰 또는 살롬을 사용하세요."
     }
   ]
 }
