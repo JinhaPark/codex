@@ -70,3 +70,24 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .phrase-scroll{max-width:100%}
 @media(max-width:420px){.phrase-table{min-width:0;font-size:12px;table-layout:fixed}.phrase-table th,.phrase-table td{padding:10px 6px;overflow-wrap:anywhere;word-break:break-word}.phrase-table td:first-child{min-width:0}.phrase-table th:nth-child(1){width:37%}.phrase-table th:nth-child(2){width:34%}.phrase-table th:nth-child(3){width:29%}}
 @media(min-width:700px){header{padding:48px max(28px,calc((100vw - 760px)/2)) 42px}main{padding-top:35px}}
+
+/* Bukhara long-form reading, optimized for narrow phones */
+.bukhara-history{margin:24px 0 32px;max-width:100%;min-width:0}
+.bukhara-history h3{font-size:clamp(21px,5.7vw,27px);line-height:1.45;letter-spacing:-.03em;word-break:keep-all;margin-bottom:12px}
+.bukhara-intro{font-size:15px;line-height:1.9;color:#3d5858;word-break:keep-all}
+.bukhara-count{font-size:12px;color:#637a73;line-height:1.7;margin:12px 0 20px}
+.bukhara-chapters{display:grid;gap:11px;min-width:0}
+.bukhara-chapter{background:#fff;border:1px solid #dce6df;border-radius:14px;overflow:hidden;min-width:0}
+.bukhara-chapter>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 16px;font-weight:750;color:#193c43;font-size:16px;line-height:1.55;word-break:keep-all}
+.bukhara-chapter>summary::-webkit-details-marker{display:none}
+.bukhara-chapter>summary:after{content:'+';flex:0 0 auto;font-size:22px;color:#63847a;font-weight:400}
+.bukhara-chapter[open]>summary:after{content:'−'}
+.bukhara-chapter[open]>summary{background:#edf3ee;border-bottom:1px solid #e0e8e1}
+.bukhara-chapter-body{padding:7px 17px 21px;min-width:0}
+.bukhara-chapter-body p{margin:16px 0;font-size:15.5px;line-height:2.05;letter-spacing:-.012em;word-break:keep-all;overflow-wrap:break-word}
+.bukhara-chapter-body p:last-child{margin-bottom:3px}
+.bukhara-references{margin-top:22px;padding:17px;background:#f0f3ef;border-radius:13px}
+.bukhara-references h4{margin:0 0 8px}
+.bukhara-references p{font-size:13px;line-height:1.8}
+.bukhara-references a{display:block;margin:10px 0;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:390px){.bukhara-chapter>summary{padding:15px 13px;font-size:15px}.bukhara-chapter-body{padding:6px 14px 19px}.bukhara-chapter-body p{font-size:15px;line-height:2}}
