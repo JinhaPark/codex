@@ -1,0 +1,387 @@
+{
+  "retrievedAt": "2026-10-17",
+  "referenceYear": 2024,
+  "source": "World Bank WDI (source 2)",
+  "indicators": {
+    "SP.POP.TOTL": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/SP.POP.TOTL?date=2024&format=json&source=2",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 50,
+          "total": 5,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "SP.POP.TOTL",
+              "value": "Population, total"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 20592571,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "SP.POP.TOTL",
+              "value": "Population, total"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 7221868,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "SP.POP.TOTL",
+              "value": "Population, total"
+            },
+            "country": {
+              "id": "TJ",
+              "value": "Tajikistan"
+            },
+            "countryiso3code": "TJK",
+            "date": "2024",
+            "value": 10590927,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "SP.POP.TOTL",
+              "value": "Population, total"
+            },
+            "country": {
+              "id": "TM",
+              "value": "Turkmenistan"
+            },
+            "countryiso3code": "TKM",
+            "date": "2024",
+            "value": 7494498,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "SP.POP.TOTL",
+              "value": "Population, total"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 36361859,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          }
+        ]
+      ]
+    },
+    "NY.GDP.MKTP.CD": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/NY.GDP.MKTP.CD?date=2024&format=json&source=2",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 50,
+          "total": 5,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "NY.GDP.MKTP.CD",
+              "value": "GDP (current US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 291480274648.826,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.MKTP.CD",
+              "value": "GDP (current US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 18161630698.9052,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.MKTP.CD",
+              "value": "GDP (current US$)"
+            },
+            "country": {
+              "id": "TJ",
+              "value": "Tajikistan"
+            },
+            "countryiso3code": "TJK",
+            "date": "2024",
+            "value": 14425113699.7925,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.MKTP.CD",
+              "value": "GDP (current US$)"
+            },
+            "country": {
+              "id": "TM",
+              "value": "Turkmenistan"
+            },
+            "countryiso3code": "TKM",
+            "date": "2024",
+            "value": 44249447717.2312,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.MKTP.CD",
+              "value": "GDP (current US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 121356065241.228,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          }
+        ]
+      ]
+    },
+    "NY.GDP.PCAP.CD": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/NY.GDP.PCAP.CD?date=2024&format=json&source=2",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 50,
+          "total": 5,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.CD",
+              "value": "GDP per capita (current US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 14154.6324958076,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.CD",
+              "value": "GDP per capita (current US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 2514.81066933171,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.CD",
+              "value": "GDP per capita (current US$)"
+            },
+            "country": {
+              "id": "TJ",
+              "value": "Tajikistan"
+            },
+            "countryiso3code": "TJK",
+            "date": "2024",
+            "value": 1362.02559981695,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.CD",
+              "value": "GDP per capita (current US$)"
+            },
+            "country": {
+              "id": "TM",
+              "value": "Turkmenistan"
+            },
+            "countryiso3code": "TKM",
+            "date": "2024",
+            "value": 5904.25772576512,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.CD",
+              "value": "GDP per capita (current US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 3337.45492058664,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          }
+        ]
+      ]
+    },
+    "BX.TRF.PWKR.DT.GD.ZS": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&source=2",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 50,
+          "total": 5,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "BX.TRF.PWKR.DT.GD.ZS",
+              "value": "Personal remittances, received (% of GDP)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 0.08260553410117,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "BX.TRF.PWKR.DT.GD.ZS",
+              "value": "Personal remittances, received (% of GDP)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 17.6042447290407,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "BX.TRF.PWKR.DT.GD.ZS",
+              "value": "Personal remittances, received (% of GDP)"
+            },
+            "country": {
+              "id": "TJ",
+              "value": "Tajikistan"
+            },
+            "countryiso3code": "TJK",
+            "date": "2024",
+            "value": 47.1531186167275,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "BX.TRF.PWKR.DT.GD.ZS",
+              "value": "Personal remittances, received (% of GDP)"
+            },
+            "country": {
+              "id": "TM",
+              "value": "Turkmenistan"
+            },
+            "countryiso3code": "TKM",
+            "date": "2024",
+            "value": null,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "BX.TRF.PWKR.DT.GD.ZS",
+              "value": "Personal remittances, received (% of GDP)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 13.6616648886765,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          }
+        ]
+      ]
+    }
+  }
+}
