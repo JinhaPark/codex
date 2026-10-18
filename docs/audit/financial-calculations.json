@@ -1,0 +1,64 @@
+{
+  "fx": {
+    "effectiveDate": "2026-10-17",
+    "retrievedAt": "2026-10-18",
+    "usdKgs": 87.45,
+    "krwKgs": 0.0656,
+    "usdKrw": 1333.0792682926829,
+    "kgsKrw": 15.243902439024389,
+    "source": "키르기스스탄 중앙은행(NBKR) 공식 환율의 교차환산",
+    "urls": [
+      "https://www.nbkr.kg/getservice.jsp?lang=ENG",
+      "https://www.nbkr.kg/XML/weekly.xml"
+    ]
+  },
+  "countries": [
+    {
+      "name": "우즈베키스탄",
+      "year": 2024,
+      "populationMan": 3636.1859,
+      "gdpTrillionKrw": 161.7772546546553,
+      "gdpPerCapitaManKrw": 444.9091963495452,
+      "remittancesPct": 13.6616648886765
+    },
+    {
+      "name": "키르기스스탄",
+      "year": 2024,
+      "populationMan": 722.1868,
+      "gdpTrillionKrw": 24.210893363098474,
+      "gdpPerCapitaManKrw": 335.2441966967348,
+      "remittancesPct": 17.6042447290407
+    },
+    {
+      "name": "카자흐스탄",
+      "year": 2024,
+      "populationMan": 2059.2571,
+      "gdpTrillionKrw": 388.5663112506072,
+      "gdpPerCapitaManKrw": 1886.9247130463027,
+      "remittancesPct": 0.08260553410117
+    }
+  ],
+  "kumtor": {
+    "year": 2025,
+    "productionKg": 12081,
+    "revenueUsd": 1434600000,
+    "taxesMandatoryPaymentsUsd": 246507000,
+    "reportedDividendUsd": 300000000,
+    "kyrgyzGdpUsd": 22625000000,
+    "gdpStatus": "IMF 2026 Article IV의 2025년 추계",
+    "revenuePublishedAt": "2026-03-13",
+    "dividendPublishedAt": "2026-04-09",
+    "dividendNote": "2025년 실적 발표에 포함된 배당액. 실제 지급 시점과 정부 현금수입 인식 시점은 별도 미확인.",
+    "goldValueAddedPct2025": null,
+    "goldStructuralReference": {
+      "percent": 6.5,
+      "publication": "IMF 2025/082",
+      "referenceYear": null
+    },
+    "revenueTrillionKrw": 1.9124355182926829,
+    "gdpTrillionKrw": 30.16091844512195,
+    "revenueGdpPct": 6.340773480662984,
+    "taxesEokKrw": 3286.1337118902434,
+    "dividendEokKrw": 3999.237804878049
+  }
+}

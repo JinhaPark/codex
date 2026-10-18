@@ -1,11 +1,10 @@
-// 숫자는 원단위로 보존하고 화면에서만 단위 변환·반올림합니다.
 export default {
   "metadata": {
     "year": 2024,
     "source": "World Bank WDI",
-    "retrievedAt": "2026-10-17",
+    "retrievedAt": "2026-10-18",
     "sourceUpdatedAt": "2026-10-08",
-    "snapshotPath": "data/wdi-2024-2026-10-17.json",
+    "snapshotPath": "data/wdi-2024-2026-10-18.json",
     "units": {
       "population": "persons",
       "gdpUsd": "current USD",
@@ -19,44 +18,8 @@ export default {
       "remittancesPctGdp": "BX.TRF.PWKR.DT.GD.ZS"
     }
   },
-  "intro": "중앙아시아 5개국 비교이며 이번 여행 방문국은 우즈베키스탄·키르기스스탄·카자흐스탄입니다. 수치는 반올림했으며 구매력 차이를 반영하지 않습니다. 1인당 GDP는 평균 임금이나 가계소득이 아닙니다.",
-  "alternateTurkmenistan": {
-    "year": 2024,
-    "gdpUsd": 68700000000,
-    "gdpPerCapitaUsd": 9166,
-    "source": "세계은행 투르크메니스탄 국가 개요",
-    "url": "https://www.worldbank.org/en/country/turkmenistan/overview",
-    "retrievedAt": "2026-10-17"
-  },
+  "intro": "세 나라 사람들은 무엇을 생산하고 어떻게 돈을 벌까요? 광물 수출의 외화, 제조업의 부가가치, 국내 서비스 매출, 해외 근로자의 송금은 서로 다른 소득 경로입니다. 세 나라 모두 제조업을 가지고 있습니다.",
   "countries": [
-    {
-      "iso3": "KAZ",
-      "name": "카자흐스탄",
-      "year": 2024,
-      "population": 20592571,
-      "gdpUsd": 291480274648.826,
-      "gdpPerCapitaUsd": 14154.6324958076,
-      "remittancesPctGdp": 0.08260553410117,
-      "source": "World Bank WDI",
-      "retrievedAt": "2026-10-17",
-      "sourceUpdatedAt": "2026-10-08",
-      "industries": "석유·우라늄·구리·금속·금융",
-      "description": "대규모 원유·광물 수출과 금융·물류·제조업 병행. 국제유가와 송유관 경로에 민감"
-    },
-    {
-      "iso3": "TKM",
-      "name": "투르크메니스탄",
-      "year": 2024,
-      "population": 7494498,
-      "gdpUsd": 44249447717.2312,
-      "gdpPerCapitaUsd": 5904.25772576512,
-      "remittancesPctGdp": null,
-      "source": "World Bank WDI",
-      "retrievedAt": "2026-10-17",
-      "sourceUpdatedAt": "2026-10-08",
-      "industries": "천연가스·석유화학·비료·면화",
-      "description": "가스 수출에 집중된 국가주도 경제. 수출시장 편중과 통계 투명성이 과제"
-    },
     {
       "iso3": "UZB",
       "name": "우즈베키스탄",
@@ -66,9 +29,9 @@ export default {
       "gdpPerCapitaUsd": 3337.45492058664,
       "remittancesPctGdp": 13.6616648886765,
       "source": "World Bank WDI",
-      "retrievedAt": "2026-10-17",
+      "retrievedAt": "2026-10-18",
       "sourceUpdatedAt": "2026-10-08",
-      "industries": "금·구리·자동차·섬유·화학·농업",
+      "industries": "금·구리, 면사·의류, 자동차·가전, 식품",
       "description": "최대 인구와 내수시장, 광업과 제조업 다각화. 전력·용수·일자리 확대가 과제"
     },
     {
@@ -80,80 +43,118 @@ export default {
       "gdpPerCapitaUsd": 2514.81066933171,
       "remittancesPctGdp": 17.6042447290407,
       "source": "World Bank WDI",
-      "retrievedAt": "2026-10-17",
+      "retrievedAt": "2026-10-18",
       "sourceUpdatedAt": "2026-10-08",
-      "industries": "금광·상업·관광·수력·농축산",
+      "industries": "금, 봉제의류, 도매·운송, 관광·농축산",
       "description": "서비스와 재수출·송금이 중요. 산악 물류와 금값·해외 노동시장 변동에 노출"
     },
     {
-      "iso3": "TJK",
-      "name": "타지키스탄",
+      "iso3": "KAZ",
+      "name": "카자흐스탄",
       "year": 2024,
-      "population": 10590927,
-      "gdpUsd": 14425113699.7925,
-      "gdpPerCapitaUsd": 1362.02559981695,
-      "remittancesPctGdp": 47.1531186167275,
+      "population": 20592571,
+      "gdpUsd": 291480274648.826,
+      "gdpPerCapitaUsd": 14154.6324958076,
+      "remittancesPctGdp": 0.08260553410117,
       "source": "World Bank WDI",
-      "retrievedAt": "2026-10-17",
+      "retrievedAt": "2026-10-18",
       "sourceUpdatedAt": "2026-10-08",
-      "industries": "수력·알루미늄·금·안티몬·농업",
-      "description": "수력발전 잠재력이 크고 송금 의존도가 높음. 산악 교통·전력 계절성이 제약"
+      "industries": "원유·우라늄·금속, 금융·통신·항공, 정유·자동차",
+      "description": "대규모 원유·광물 수출과 금융·물류·제조업 병행. 국제유가와 송유관 경로에 민감"
     }
   ],
   "chapters": [
-    {
-      "title": "인구와 시장",
-      "kind": "market"
-    },
-    {
-      "title": "자원과 제조업",
-      "body": "카자흐스탄은 원유·우라늄·금속, 투르크메니스탄은 천연가스, 우즈베키스탄은 금·구리와 자동차·섬유·화학이 특징입니다. 키르기스스탄은 금광과 서비스업, 타지키스탄은 수력·알루미늄·광업이 중요합니다."
-    },
-    {
-      "title": "물·전력·농업",
-      "body": "우즈베키스탄과 투르크메니스탄의 관개농업은 아무다리야·시르다리야 유역의 물 공급에 크게 의존합니다. 키르기스스탄과 타지키스탄의 상류 수력발전 운영은 하류의 농업용수 수요와 계절별 조정이 필요합니다."
-    },
-    {
-      "title": "해외 송금 의존도",
-      "kind": "remittances"
-    },
-    {
-      "title": "철도·물류",
-      "body": "카자흐스탄은 중국–유럽 육상교역과 원유 수송의 핵심 통로입니다. 우즈베키스탄은 역내 철도 교차점이지만 이중 내륙국이라 운송비가 높습니다. 중국–키르기스스탄–우즈베키스탄 철도는 건설 중인 사업으로 기존 운행 노선과 구별해야 합니다."
-    },
-    {
-      "title": "중장기 산업 과제",
-      "body": "카자흐스탄은 자원 의존 축소, 우즈베키스탄은 제조업 생산성·민간 일자리, 투르크메니스탄은 가스 수출 다변화, 키르기스스탄은 전력·관광·물류, 타지키스탄은 수력발전의 산업화와 송금 의존 완화가 주요 과제입니다."
-    },
-    {
-      "title": "통계 주의사항",
-      "kind": "statistics"
-    }
+    [
+      "카자흐스탄: 수출 외화와 국내 서비스",
+      [
+        "원유·우라늄·구리 등은 해외 판매로 외화를 벌고, 정유·제련은 원료를 가공합니다. 기계 생산과 자동차 조립도 존재합니다. 다만 조립 생산액 전체가 국내 부가가치는 아니며 수입 부품의 몫을 구분해야 합니다. 자원 가격과 수송 경로의 변화는 수출뿐 아니라 세입·투자에도 영향을 줍니다.",
+        "Kaspi.kz는 소비자의 결제·쇼핑·대출과 가맹점의 판매를 연결해 거래 서비스 수수료와 금융수익을 얻습니다. Halyk Bank는 가계·기업의 예금을 모아 대출하고 결제·송금 서비스를 제공합니다. Air Astana는 여객·화물 운송, Kazakhtelecom은 가정과 기업의 통신·데이터 연결을 판매합니다. 이들 서비스의 소득은 광물 수출액과 별개이며 알마티의 사무실·상점·공항에서 관찰할 수 있습니다."
+      ]
+    ],
+    [
+      "우즈베키스탄: 원료에서 완제품과 일자리로",
+      [
+        "금·구리 수출과 함께 면화를 면사로 방적하고 직물·의류로 가공하는 공장이 고용과 수출을 만듭니다. UzAuto Motors는 Chevrolet 자동차를 생산하고, Artel은 냉장고·세탁기 같은 가전을 만듭니다. 과일·채소의 저장·통조림·음료 등 식품가공도 농촌 생산과 도시 소비를 연결합니다.",
+        "이 과정에서 원료 공급자, 공장 노동자, 부품·포장업체와 유통업체가 각각 소득을 얻습니다. 큰 내수시장은 생산을 뒷받침하지만 전력의 안정성, 기술·자본과 수입 부품 조달이 생산성을 좌우합니다. 세 나라의 제조업 다각화 순위는 같은 정의의 비교 지표 없이 단정하지 않습니다. 타슈켄트 거리의 자동차는 소비재이자 국내 산업을 읽는 단서입니다. 내륙국에 둘러싸인 이중 내륙국이어서 철도·국경 통관과 운송비도 수출 경쟁력에 영향을 줍니다."
+      ]
+    ],
+    [
+      "키르기스스탄: 생산·재판매·송금의 구분",
+      [
+        "금광업 외에 국내 봉제업체가 직물을 재단·봉제해 의류를 생산하고 역내 시장에 판매합니다. 도르도이·카라수 시장에서 중국 등 외국산 의류·신발·직물·생활잡화를 도매로 재판매하는 활동과는 구별해야 합니다. 후자는 운송·창고·통관·상점의 소득을 만들지만 재수출 상품 가격 전체가 국내에서 생산된 가치는 아닙니다.",
+        "관광의 숙박·식당·운송, 농축산물 생산·가공도 일자리입니다. 해외 근로자의 송금은 가계 소비와 외화 유입을 지탱하지만 국내 생산이나 모든 가구의 소득과 같지 않습니다. 러시아 등 목적지의 고용·환율 변화에 노출되며 봉제업을 검증 없이 국가 최대 수출산업이라고 부르지 않습니다."
+      ]
+    ],
+    [
+      "쿰토르: 큰 매출과 GDP 기여는 다릅니다",
+      [
+        "2025년 쿰토르의 금 생산은 12.081톤입니다. 생산량은 판매량·매장량과 다릅니다. 운영사가 발표한 연매출은 아래 원화 환산으로 약 1.91조 원이며, 같은 해 IMF 명목 GDP 추계와 비교하면 약 6.3%입니다. 이는 기업의 매출/GDP라는 규모 비교이지 GDP에 대한 부가가치 기여율이 아닙니다.",
+        "운영사는 세금·의무납부금과 배당도 발표했습니다. 국유기업의 납부·배당은 재정상 중요하지만 기업 매출에 더해 GDP로 합산할 수 없습니다. IMF의 2025년 구조 분석은 금광업의 GDP 비중을 약 6.5%로 서술하나 해당 문장의 통계 기준연도는 분명하지 않습니다. 이를 2025년 쿰토르 또는 금 산업의 확정 기여율로 사용하지 않습니다."
+      ]
+    ]
   ],
   "sources": [
     {
       "name": "세계은행 WDI 인구 — 2024년, SP.POP.TOTL",
-      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/SP.POP.TOTL?date=2024&format=json&source=2"
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/SP.POP.TOTL?date=2024&format=json&source=2"
     },
     {
       "name": "세계은행 WDI 명목 GDP — 2024년, NY.GDP.MKTP.CD",
-      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/NY.GDP.MKTP.CD?date=2024&format=json&source=2"
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.MKTP.CD?date=2024&format=json&source=2"
     },
     {
       "name": "세계은행 WDI 1인당 명목 GDP — 2024년, NY.GDP.PCAP.CD",
-      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/NY.GDP.PCAP.CD?date=2024&format=json&source=2"
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.PCAP.CD?date=2024&format=json&source=2"
     },
     {
       "name": "세계은행 WDI 개인 송금 수입/GDP — 2024년, BX.TRF.PWKR.DT.GD.ZS",
-      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;TKM;KGZ;TJK/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&source=2"
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&source=2"
     },
     {
-      "name": "세계은행 투르크메니스탄 국가 개요",
-      "url": "https://www.worldbank.org/en/country/turkmenistan/overview"
+      "name": "Kaspi.kz 2025 연차보고서",
+      "url": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000008/kspi-20251231.htm"
     },
     {
-      "name": "세계은행 The Road Home and Abroad: Enhancing TVET for Youths and Migration in Central Asia (2025) — 본문 1–3쪽, 우즈베키스탄·키르기스스탄·타지키스탄의 고용·이주 참고",
-      "url": "https://documents1.worldbank.org/curated/en/099063025094197983/pdf/P500986-7d2be0d0-1f17-427a-afed-a0f0d69097a9.pdf"
+      "name": "Halyk Bank 2025 연차보고서",
+      "url": "https://halykbank.kz/storage/app/media/Investoram/2026/HalykBank_AR_2025_merged.pdf"
+    },
+    {
+      "name": "Air Astana 2025 실적",
+      "url": "https://ir.airastana.com/en/about-us/company-news/results-for-the-fourth-quarter-and-full-year-ended-31-december-2025"
+    },
+    {
+      "name": "Kazakhtelecom 2024 연차보고서",
+      "url": "https://ar2024.telecom.kz/en/telecommunications-market-overview-for-2024.html"
+    },
+    {
+      "name": "UzAuto Motors 아사카 공장",
+      "url": "https://uzautomotors.com/asaka"
+    },
+    {
+      "name": "Artel 기업 소개",
+      "url": "https://artelelectronics.com/en/about-company?hl=en-US"
+    },
+    {
+      "name": "세계은행 WITS 키르기스스탄 2023 직물·의류 교역",
+      "url": "https://wits.worldbank.org/CountryProfile/en/Country/KGZ/Year/2023/TradeFlow/EXPIMP/Partner/All/Product/50-63_TextCloth"
+    },
+    {
+      "name": "쿰토르 2025 실적 상세 발표 · 2026-03-13",
+      "url": "https://www.kumtor.kg/en/2026-zhyldyn-13-martyndagy-maalymattyk-bildir%D2%AF%D2%AF/"
+    },
+    {
+      "name": "쿰토르 감사 확인·배당 발표 · 2026-04-09",
+      "url": "https://www.kumtor.kg/en/video-kumt%D3%A9rd%D2%AFn-otchetu-el-aralyk-auditor-ernst-young-tarabynan-tastyktaldy/"
+    },
+    {
+      "name": "IMF 2026 Article IV · 2025 GDP 추계",
+      "url": "https://www.imf.org/en/news/articles/2026/06/04/pr26185-kyrgyz-republic-imf-executive-board-concludes-2026-article-iv-consultation"
+    },
+    {
+      "name": "IMF 2025/082 노동시장 구조 분석",
+      "url": "https://meetings.imf.org/-/media/Files/Publications/Selected-Issues-Papers/2025/English/SIPEA2025082.ashx"
     }
-  ]
+  ],
+  "id": "economy",
+  "title": "4. 경제"
 };

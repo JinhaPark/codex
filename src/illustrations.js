@@ -8,7 +8,7 @@ const escape = value => String(value).replace(/[&<>"']/g, character => ({
 export function renderIllustration(placement) {
   const art = illustrations.find(item => item.placement === placement);
   if (!art) return '';
-  const base = `${import.meta.env.BASE_URL}illustrations/`;
+  const base = `${(import.meta.env?.BASE_URL || '/codex/')}illustrations/`;
   const standard = art.variants.find(variant => variant.width === 800) || art.variants.at(-1);
   const srcset = art.variants.map(variant => `${base}${variant.file} ${variant.width}w`).join(', ');
   const portrait = art.height > art.width;

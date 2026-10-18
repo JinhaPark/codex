@@ -1,89 +1,55 @@
 import economy from './central-asia-economy.js';
+import { fx, kumtor, revenueToGdpPct, toKrw } from './research-data.js';
 
-const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
+export const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 }[char]));
-
 export function formatEconomyNumber(value, divisor = 1, digits = 0) {
   if (!Number.isFinite(value)) return '자료 없음';
-  return new Intl.NumberFormat('ko-KR', {
-    minimumFractionDigits: digits,
-    maximumFractionDigits: digits
-  }).format(value / divisor);
+  return new Intl.NumberFormat('ko-KR', {minimumFractionDigits: digits, maximumFractionDigits: digits}).format(value / divisor);
 }
-
+export function renderSources(sources) {
+  return `<details class="source-notes"><summary>출처와 기준일</summary><div class="bukhara-references">${sources.map(source => {
+    const [name, url] = Array.isArray(source) ? source : [source.name, source.url];
+    return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)} ↗</a>`;
+  }).join('')}</div><p>자료 확인: 2026-10-18. 발표연도와 통계 기준연도는 다를 수 있습니다.</p></details>`;
+}
+export function renderFxNote() {
+  return `<p class="data-note">원화 환산: NBKR ${fx.effectiveDate} 공식 환율을 교차 적용했습니다. 같은 원자료에 같은 환율을 적용한 명목 비교이며 현지 구매력이나 실제 환전액을 뜻하지 않습니다. <a href="${fx.urls[0]}" target="_blank" rel="noopener noreferrer">환율 출처 ↗</a></p>`;
+}
 function renderCountryRow(country) {
-  return `<tr>
-    <th scope="row">${escapeHtml(country.name)}</th>
-    <td>${formatEconomyNumber(country.population, 10_000)}</td>
-    <td>${formatEconomyNumber(country.gdpUsd, 100_000_000)}</td>
-    <td>${formatEconomyNumber(country.gdpPerCapitaUsd)}</td>
-  </tr>`;
+  const cell = (label, value) => `<td data-label="${label}">${value}</td>`;
+  return `<tr><th scope="row">${escapeHtml(country.name)}</th>${
+    cell('인구 (만 명)', formatEconomyNumber(country.population, 10000, 1)) +
+    cell('명목 GDP (조 원)', formatEconomyNumber(toKrw(country.gdpUsd, 'USD'), 1e12, 1)) +
+    cell('1인당 GDP (만 원/명)', formatEconomyNumber(toKrw(country.gdpPerCapitaUsd, 'USD'), 10000, 1)) +
+    cell('송금 수입/GDP (%)', formatEconomyNumber(country.remittancesPctGdp, 1, 2)) +
+    cell('주요 산업·상품', escapeHtml(country.industries))}</tr>`;
 }
-
-function chapterBody(chapter, data) {
-  const { metadata, countries } = data;
-  const find = iso3 => countries.find(country => country.iso3 === iso3);
-  if (chapter.kind === 'market') {
-    const kazakhstan = find('KAZ');
-    const uzbekistan = find('UZB');
-    const ratio = Number.isFinite(kazakhstan.gdpUsd) && uzbekistan.gdpUsd > 0
-      ? formatEconomyNumber(kazakhstan.gdpUsd / uzbekistan.gdpUsd, 1, 1)
-      : '자료 없음';
-    return `우즈베키스탄 인구 약 ${formatEconomyNumber(uzbekistan.population, 10_000)}만 명은 5개국 중 최대입니다. 카자흐스탄은 인구 약 ${formatEconomyNumber(kazakhstan.population, 10_000)}만 명이지만 GDP가 우즈베키스탄의 약 ${ratio}배입니다. 인구 규모는 노동공급과 내수시장 잠재력, 1인당 GDP는 생산액을 인구로 나눈 값이지 실제 개인 임금은 아닙니다.`;
-  }
-  if (chapter.kind === 'remittances') {
-    const values = ['TJK', 'KGZ', 'UZB', 'KAZ', 'TKM'].map(iso3 => {
-      const country = find(iso3);
-      return `${country.name} ${Number.isFinite(country.remittancesPctGdp)
-        ? formatEconomyNumber(country.remittancesPctGdp, 1, 1) + '%'
-        : '자료 없음'}`;
-    }).join(', ');
-    return `${metadata.year}년 세계은행 개인 송금 수입/GDP: ${values}. 자료 없음은 0%를 뜻하지 않습니다. 송금은 소비와 외화 유입을 지탱하지만 해외 고용·환율 변동에 취약합니다.`;
-  }
-  if (chapter.kind === 'statistics') {
-    return `자료는 추후 개정될 수 있으며, 기준연도(${metadata.year}년)와 조회일(${metadata.retrievedAt})은 다릅니다. 투르크메니스탄의 출처 간 차이는 표 아래에 별도로 표시했습니다. 반올림된 표의 GDP와 인구로 계산한 1인당 GDP는 원자료의 1인당 GDP를 반올림한 값과 다를 수 있습니다.`;
-  }
-  return chapter.body;
-}
-
-function renderDetails(title, body) {
-  return `<details class="bukhara-chapter">
-    <summary>${escapeHtml(title)}</summary>
-    <div class="bukhara-chapter-body"><p>${escapeHtml(body)}</p></div>
+export function renderKumtor(data = kumtor) {
+  const money = (value, divisor, digits) => formatEconomyNumber(toKrw(value, 'USD'), divisor, digits);
+  return `<details class="data-details"><summary>쿰토르 2025 실적과 GDP 비교 · 계산 근거</summary>
+    <dl class="facts-grid">
+    <dt>연간 금 생산량</dt><dd>${formatEconomyNumber(data.productionKg / 1000, 1, 3)}톤</dd>
+    <dt>연매출</dt><dd>약 ${money(data.revenueUsd, 1e12, 2)}조 원</dd>
+    <dt>키르기스스탄 명목 GDP</dt><dd>약 ${money(data.kyrgyzGdpUsd, 1e12, 2)}조 원</dd>
+    <dt>매출/GDP · 부가가치 기여율 아님</dt><dd>${formatEconomyNumber(revenueToGdpPct(data), 1, 2)}%</dd>
+    <dt>세금·의무납부금</dt><dd>약 ${money(data.taxesMandatoryPaymentsUsd, 1e8, 0)}억 원</dd>
+    <dt>실적 발표에 포함된 배당액</dt><dd>약 ${money(data.reportedDividendUsd, 1e8, 0)}억 원</dd></dl>
+    <p>${escapeHtml(data.dividendNote)} GDP는 ${escapeHtml(data.gdpStatus)}입니다. 회사 실적 발표는 2026-03-13, 감사·배당 발표는 2026-04-09입니다.</p>
+    <p>매출은 중간투입 비용을 차감하기 전 판매수입이며 수출액과도 같지 않습니다. 2025년 금 산업의 비교 가능한 확정 부가가치 기여율은 확인하지 못했습니다.</p>
   </details>`;
 }
-
 export function renderEconomy(data = economy) {
-  const { metadata, countries, alternateTurkmenistan: alternate } = data;
-  const turkmenistan = countries.find(country => country.iso3 === 'TKM');
-  const statisticalNote = `투르크메니스탄: ${metadata.year}년 WDI는 GDP 약 ${formatEconomyNumber(turkmenistan.gdpUsd, 100_000_000)}억 미 달러·1인당 ${formatEconomyNumber(turkmenistan.gdpPerCapitaUsd)}미 달러, 세계은행 국가 개요는 ${alternate.year}년 GDP ${formatEconomyNumber(alternate.gdpUsd, 100_000_000)}억 미 달러·1인당 ${formatEconomyNumber(alternate.gdpPerCapitaUsd)}미 달러를 제시합니다(${alternate.retrievedAt} 확인). 표에는 WDI 값을 일관되게 사용했습니다. 출처 간 차이의 원인은 확인되지 않았습니다.`;
-
-  return `<section class="bukhara-history" id="central-asia-economy">
-    <h3>중앙아시아 5개국 경제·산업 비교 (${metadata.year})</h3>
-    <p class="bukhara-intro">${escapeHtml(data.intro)}</p>
-    <p>통계 기준연도: ${metadata.year}년 · ${escapeHtml(metadata.source)} 조회일: ${escapeHtml(metadata.retrievedAt)} · 자료 갱신일: ${escapeHtml(metadata.sourceUpdatedAt)}</p>
-    <div style="overflow-x:auto">
-      <table style="width:100%;min-width:520px">
-        <caption>${metadata.year}년 중앙아시아 5개국 인구·명목 GDP 비교</caption>
-        <thead><tr>
-          <th scope="col">국가</th>
-          <th scope="col">인구(만 명)</th>
-          <th scope="col">명목 GDP(억 미 달러)</th>
-          <th scope="col">1인당 명목 GDP(미 달러/명)</th>
-        </tr></thead>
-        <tbody>${countries.map(renderCountryRow).join('')}</tbody>
-      </table>
-    </div>
-    <p class="bukhara-intro">${escapeHtml(statisticalNote)}</p>
-    <p>산업 특징 요약 · 산업별 비중 순위가 아닙니다.</p>
-    <div class="bukhara-chapters">
-      ${countries.map(country => renderDetails(`${country.name} — ${country.industries}`, country.description)).join('')}
-      ${data.chapters.map(chapter => renderDetails(chapter.title, chapterBody(chapter, data))).join('')}
-    </div>
-    <div class="bukhara-references">
-      <h4>출처</h4>
-      ${data.sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)} ↗</a>`).join('')}
-    </div>
+  const { metadata, countries } = data;
+  return `<section class="bukhara-history core-section" id="economy" data-core-section="economy">
+    <span id="central-asia-economy"></span><h3>${escapeHtml(data.title)}</h3><p class="bukhara-intro">${escapeHtml(data.intro)}</p>
+    <div class="bukhara-chapters">${data.chapters.map(([title, paragraphs]) => `<details class="bukhara-chapter"><summary>${escapeHtml(title)}</summary><div class="bukhara-chapter-body">${paragraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('')}</div></details>`).join('')}</div>
+    <table class="economy-table"><caption>${metadata.year}년 3국 경제 비교 · 세계은행 WDI</caption>
+      <thead><tr><th scope="col">국가</th><th scope="col">인구<br>(만 명)</th><th scope="col">명목 GDP<br>(조 원)</th><th scope="col">1인당 GDP<br>(만 원/명)</th><th scope="col">송금 수입/GDP<br>(%)</th><th scope="col">주요 산업·상품</th></tr></thead>
+      <tbody>${countries.map(renderCountryRow).join('')}</tbody></table>
+    <p class="data-note">1인당 GDP는 개인 평균임금이나 가계소득이 아닙니다. 송금 비율은 개인 송금 수입/GDP이며 모든 가구의 수급률이 아닙니다. 산업 목록은 규모 순위가 아닙니다.</p>
+    <p class="data-note">통계 ${metadata.year}년 · WDI 갱신 ${metadata.sourceUpdatedAt} · 조회 ${metadata.retrievedAt}. 아래 쿰토르 실적은 2025년으로 비교표와 기준연도가 다릅니다.</p>
+    ${renderKumtor()}${renderFxNote()}${renderSources(data.sources)}
   </section>`;
 }

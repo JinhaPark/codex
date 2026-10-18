@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-18T15:42:53.889Z",
+  "browser": "153.0.8010.0",
+  "viewports": [
+    375,
+    390,
+    430
+  ],
+  "dayStatesPerViewport": 10,
+  "tabCount": 4,
+  "uniqueIllustrations": 23,
+  "decodedAssetUrls": 63,
+  "duplicateIllustrationPlacements": [],
+  "mapLinks": 40,
+  "javascriptErrors": [],
+  "narrativeWords": {
+    "geography": 335,
+    "history": 1036,
+    "resources": 261,
+    "economy": 336,
+    "education": 478
+  },
+  "economyCountries": 3,
+  "krwUnits": true,
+  "economyDisplayedValuesMatchSourceCalculations": true,
+  "checklistPersistence": true,
+  "uzbekVoiceUnavailableFallback": true,
+  "fxFixtureConversion": "500 KGS → 7,622 KRW",
+  "offlineVisitedGuideAndImage": true,
+  "cacheUpgradeFixture": "v5 cache name/current app → v6; old cache removed",
+  "unrelatedOriginCachePreserved": true,
+  "screenshots": [
+    "economy-375.png",
+    "education-375.png",
+    "economy-390.png",
+    "education-390.png",
+    "economy-430.png",
+    "education-430.png"
+  ],
+  "limits": [
+    "Local production build, not deployed PR",
+    "FX tested with deterministic fixture; live rate service not tested",
+    "PWA migration used controlled cache-name fixture, not historical deployed bundle",
+    "Previously unvisited external links/assets are not guaranteed offline"
+  ]
+}

@@ -179,7 +179,7 @@
     "id": "arabic-manuscript-pencil",
     "original": "IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg",
     "style": "colored-pencil",
-    "placement": "uzbekistan:2:0",
+    "placement": "tashkent:7:0",
     "caption": "아랍 문자 필사본 — 검정·붉은 필기와 제본",
     "alt": "전시대 위에 펼쳐진 필사본의 누런 종이와 검정·붉은 아랍 문자 필기를 그린 색연필화",
     "sourceWidth": 1080,
@@ -287,8 +287,8 @@
     "original": "IMG_7B1EB00F-DC20-4F6C-9477-4C826E74FA78.jpeg",
     "style": "colored-pencil",
     "placement": "day:1:tip",
-    "caption": "접시에 담긴 여행의 맛",
-    "alt": "검은 식판의 분홍 종이컵에 담긴 노릇한 음식과 초록색 채소를 가까이서 그린 색연필화",
+    "caption": "깨가 뿌려진 갈색 반찬과 잎채소를 담은 식판",
+    "alt": "검은 식판에 담긴 깨가 뿌려진 갈색 반찬과 초록색 잎채소, 얇게 썬 마늘을 가까이서 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
     "width": 1080,
@@ -315,14 +315,15 @@
         "quality": 72,
         "file": "travel-meal-tray-pencil-1080.webp"
       }
-    ]
+    ],
+    "captionProvenance": "그림에서 관찰되는 식재료의 색과 형태만 설명; 요리명·식당·촬영지는 미확인"
   },
   {
     "id": "white-honey-jar-pencil",
     "original": "IMG_3ED8DFE7-C3BB-4C0F-B4C0-A06642AA85A2.jpeg",
     "style": "colored-pencil",
     "placement": "shopping:honey:white",
-    "caption": "이식쿨→비슈케크 이동 중 구입한 흰색 용기 꿀 — 500솜",
+    "caption": "이식쿨→비슈케크 이동 중 구입한 흰색 용기 꿀 — 구입가 환산 약 7,600원",
     "alt": "버스 좌석을 배경으로 손에 든 흰색 뚜껑의 무상표 꿀 용기를 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -350,14 +351,22 @@
         "quality": 74,
         "file": "white-honey-jar-pencil-1080.webp"
       }
-    ]
+    ],
+    "purchasePrice": {
+      "amount": 500,
+      "currency": "KGS",
+      "source": "사용자 제공 구입가",
+      "krwPerKgs": 15.243902439024389,
+      "exchangeRateDate": "2026-10-17",
+      "exchangeRateSource": "https://www.nbkr.kg/XML/weekly.xml"
+    }
   },
   {
     "id": "suusamyr-honey-pencil",
     "original": "IMG_E6498561-22A6-472B-85A7-DFBF57A45744.jpeg",
     "style": "colored-pencil",
     "placement": "shopping:honey:yellow",
-    "caption": "수우사미르 산악 야생화꿀 180g — 구입가 400솜",
+    "caption": "수우사미르 산악 야생화꿀 180g — 구입가 환산 약 6,100원",
     "alt": "초록색 키릴 문자 라벨과 노란 뚜껑이 있는 호박색 꿀 제품을 손에 든 모습을 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -385,7 +394,15 @@
         "quality": 72,
         "file": "suusamyr-honey-pencil-1080.webp"
       }
-    ]
+    ],
+    "purchasePrice": {
+      "amount": 400,
+      "currency": "KGS",
+      "source": "사용자 제공 구입가",
+      "krwPerKgs": 15.243902439024389,
+      "exchangeRateDate": "2026-10-17",
+      "exchangeRateSource": "https://www.nbkr.kg/XML/weekly.xml"
+    }
   },
   {
     "id": "bukhara-ark-walls-pencil",
@@ -496,7 +513,7 @@
     "id": "bukhara-spice-stall-pencil",
     "original": "IMG_8852.jpeg",
     "style": "colored-pencil",
-    "placement": "uzbekistan:1:1",
+    "placement": "geography:1:1",
     "caption": "부하라 향신료 가게 — 진열된 향신료와 차 시음",
     "alt": "색색의 향신료 자루가 놓인 나무 진열대에서 찻주전자를 든 사람이 손님에게 차를 건네는 색연필화",
     "sourceWidth": 1152,
