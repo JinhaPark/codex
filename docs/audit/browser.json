@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T16:13:26.012Z",
+  "checkedAt": "2026-10-18T16:26:26.934Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -210,7 +210,8 @@
   "fxFixtureConversion": "500 KGS → 7,622 KRW",
   "offlineVisitedGuideAndImage": true,
   "offlineEditedMinaret": true,
-  "cacheUpgradeFixture": "v6 cache name/current app → v7; old cache removed",
+  "offlineReflectionEdits": true,
+  "cacheUpgradeFixture": "v7 cache name/current app → v8; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",

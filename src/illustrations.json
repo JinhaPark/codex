@@ -4,8 +4,8 @@
     "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
     "style": "watercolor",
     "placement": "geography:1:0",
-    "caption": "설산 앞 농경지와 전신주가 이어지는 산간 풍경",
-    "alt": "눈 덮인 산봉우리 아래 가을빛 농경지와 전신주가 이어지는 풍경",
+    "caption": "설산 아래 가을빛 농경지",
+    "alt": "눈 덮인 산봉우리와 푸른 하늘 아래 주황빛 농경지와 마른 풀, 돌이 이어지는 풍경",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
     "width": 1080,
@@ -14,25 +14,28 @@
       {
         "width": 480,
         "height": 640,
-        "bytes": 103244,
+        "bytes": 103532,
         "quality": 84,
         "file": "mountain-orchards-watercolor-480.webp"
       },
       {
         "width": 800,
         "height": 1067,
-        "bytes": 237314,
-        "quality": 82,
+        "bytes": 249148,
+        "quality": 84,
         "file": "mountain-orchards-watercolor-800.webp"
       },
       {
         "width": 1080,
         "height": 1440,
-        "bytes": 261066,
-        "quality": 72,
+        "bytes": 246802,
+        "quality": 74,
         "file": "mountain-orchards-watercolor-1080.webp"
       }
-    ]
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-reflection-and-utility-removal"
   },
   {
     "id": "bukhara-poi-kalyan-watercolor",
@@ -225,26 +228,29 @@
       {
         "width": 480,
         "height": 640,
-        "bytes": 112404,
+        "bytes": 117134,
         "quality": 84,
         "file": "street-classic-car-pencil-480.webp"
       },
       {
         "width": 800,
         "height": 1067,
-        "bytes": 235326,
+        "bytes": 233400,
         "quality": 78,
         "file": "street-classic-car-pencil-800.webp"
       },
       {
         "width": 1086,
         "height": 1448,
-        "bytes": 316960,
-        "quality": 72,
+        "bytes": 250172,
+        "quality": 58,
         "file": "street-classic-car-pencil-1086.webp"
       }
     ],
-    "captionProvenance": "사용자가 제공한 촬영 도시 및 원본의 Москвич 배지; 세부 모델·연식 미확정"
+    "captionProvenance": "사용자가 제공한 촬영 도시 및 원본의 Москвич 배지; 세부 모델·연식 미확정",
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-window-reflection-cleanup"
   },
   {
     "id": "travel-steak-table-pencil",
