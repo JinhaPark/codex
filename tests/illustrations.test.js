@@ -5,7 +5,10 @@ import test from 'node:test';
 const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
 
 test('published illustration variants are complete WebP files with the recorded sizes', () => {
-  assert.equal(artwork.length, 23);
+  assert.ok(artwork.length > 0);
+  const expectedFiles = artwork.flatMap(art => art.variants.map(v => v.file)).sort();
+  assert.equal(new Set(expectedFiles).size, expectedFiles.length);
+  assert.deepEqual(fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).sort(), expectedFiles);
   for (const art of artwork) {
     assert.ok(art.variants.length >= 1 && art.variants.length <= 3);
     assert.equal(new Set(art.variants.map(v => v.width)).size, art.variants.length);
@@ -34,6 +37,7 @@ test('each subject has one editorial placement, Korean caption and descriptive K
     assert.equal(new Set(artwork.map(art => art[field])).size, artwork.length, field);
   }
   for (const art of artwork) {
+    assert.doesNotMatch(art.caption + art.alt, /사진을? 바탕|사용자 제공|AI로? 생성|재해석|그린 수채화|그린 색연필화/);
     assert.match(art.caption, /[가-힣]/);
     assert.match(art.alt, /[가-힣]/);
     assert.ok(art.alt.length > 15);
@@ -42,4 +46,29 @@ test('each subject has one editorial placement, Korean caption and descriptive K
   assert.ok(!artwork.some(art => art.original === 'IMG_8981(1).jpeg'), 'Exclude the identical duplicate');
   assert.ok(!artwork.some(art => art.id === 'garden-eaves-watercolor'), 'Remove the requested garden photograph');
   assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('garden-eaves-watercolor-')), 'Remove its published assets');
+});
+
+test('shared renderer emits only the manifest caption', () => {
+  const renderer = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8');
+  assert.ok(renderer.includes('<figcaption>${escape(art.caption)}</figcaption>'));
+  assert.doesNotMatch(renderer, /사진을 바탕|사용자 제공|AI로? 생성|재해석/);
+});
+
+
+test('destination audit covers the itinerary and only links published, identified subjects', () => {
+  const coverage = JSON.parse(fs.readFileSync(new URL('../docs/audit/destination-images.json', import.meta.url)));
+  const itinerary = JSON.parse(fs.readFileSync(new URL('../src/itinerary.json', import.meta.url)));
+  const names = new Set(coverage.map(row => row.place));
+  assert.equal(names.size, coverage.length);
+  for (const day of itinerary.days) for (const place of day.placesKo) {
+    assert.ok(names.has(place.startsWith('인천국제공항') ? '인천국제공항' : place), place);
+  }
+  const ids = new Set(artwork.map(art => art.id));
+  for (const row of coverage) {
+    assert.ok(['확보', '부분 확보', '장소 확인 필요', '누락', '선택 사항'].includes(row.classification));
+    for (const id of row.imageIds) assert.ok(ids.has(id), row.place + ': ' + id);
+    if (['확보', '부분 확보'].includes(row.classification)) assert.ok(row.imageIds.length > 0, row.place);
+    if (row.classification === '누락') assert.deepEqual(row.imageIds, [], row.place);
+  }
+  for (const id of ids) assert.ok(coverage.some(row => row.imageIds.includes(id)), 'Account for ' + id);
 });

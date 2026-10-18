@@ -15,7 +15,7 @@ export function renderIllustration(placement) {
   const sizes = portrait ? '(max-width: 430px) calc(100vw - 90px), 360px' : '(max-width: 760px) calc(100vw - 90px), 668px';
   return `<figure class="journal-illustration${portrait ? ' journal-illustration--portrait' : ''}" data-illustration="${escape(art.id)}">
     <img src="${escape(base + standard.file)}" srcset="${escape(srcset)}" sizes="${sizes}" width="${art.width}" height="${art.height}" alt="${escape(art.alt)}" loading="lazy" decoding="async">
-    <figcaption>${escape(art.caption)}<small>사진을 바탕으로 그린 ${art.style === 'watercolor' ? '수채화' : '색연필화'}</small></figcaption>
+    <figcaption>${escape(art.caption)}</figcaption>
   </figure>`;
 }
 

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T15:42:53.889Z",
+  "checkedAt": "2026-10-18T16:05:08.321Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -10,6 +10,187 @@
   "dayStatesPerViewport": 10,
   "tabCount": 4,
   "uniqueIllustrations": 23,
+  "illustrationLocations": {
+    "bukhara-market-sunset-watercolor": {
+      "state": "day:1",
+      "placement": "day:1:places",
+      "headings": [
+        "방문지와 지도"
+      ]
+    },
+    "travel-meal-tray-pencil": {
+      "state": "day:1",
+      "placement": "day:1:tip",
+      "headings": [
+        "여행 관찰 포인트"
+      ]
+    },
+    "lyabi-hauz-evening-watercolor": {
+      "state": "day:2",
+      "placement": "day:2:places",
+      "headings": [
+        "방문지와 지도"
+      ]
+    },
+    "travel-steak-table-pencil": {
+      "state": "day:4",
+      "placement": "day:4:places",
+      "headings": [
+        "방문지와 지도"
+      ]
+    },
+    "street-classic-car-pencil": {
+      "state": "day:4",
+      "placement": "day:4:tip",
+      "headings": [
+        "여행 관찰 포인트"
+      ]
+    },
+    "cholponata-balbal-pencil": {
+      "state": "day:5",
+      "placement": "day:5:places",
+      "headings": [
+        "방문지와 지도"
+      ]
+    },
+    "autumn-birch-walk-watercolor": {
+      "state": "day:6",
+      "placement": "day:6:tip",
+      "headings": [
+        "여행 관찰 포인트"
+      ]
+    },
+    "mountain-orchards-watercolor": {
+      "state": "guide",
+      "placement": "geography:1:0",
+      "headings": [
+        "1. 지리·기후·생활양식",
+        "오아시스의 집과 계절 목초지"
+      ]
+    },
+    "bukhara-spice-stall-pencil": {
+      "state": "guide",
+      "placement": "geography:1:1",
+      "headings": [
+        "1. 지리·기후·생활양식",
+        "오아시스의 집과 계절 목초지"
+      ]
+    },
+    "issyk-kul-cruise-tian-shan-watercolor": {
+      "state": "guide",
+      "placement": "geography:2:0",
+      "headings": [
+        "1. 지리·기후·생활양식",
+        "이식쿨과 알마티의 서로 다른 산록"
+      ]
+    },
+    "bukhara-kalyan-minaret-pencil": {
+      "state": "guide",
+      "placement": "bukhara:4:1",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "5. 카라한 왕조와 칼랸 미나레트"
+      ]
+    },
+    "bukhara-poi-kalyan-watercolor": {
+      "state": "guide",
+      "placement": "bukhara:7:1",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "8. 샤이바니 왕조: 오늘날 옛 시가지의 골격"
+      ]
+    },
+    "lyabi-hauz-portal-watercolor": {
+      "state": "guide",
+      "placement": "bukhara:8:0",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "9. 17세기 라비하우즈: 물·상업·교육의 만남"
+      ]
+    },
+    "bukhara-ark-walls-pencil": {
+      "state": "guide",
+      "placement": "bukhara:10:0",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "11. 부하라 칸국과 에미르국: 궁정과 권력"
+      ]
+    },
+    "registan-travel-portrait-watercolor": {
+      "state": "guide",
+      "placement": "samarkand:9:0",
+      "headings": [
+        "사마르칸트",
+        "레기스탄의 세 마드라사"
+      ]
+    },
+    "arabic-manuscript-pencil": {
+      "state": "guide",
+      "placement": "tashkent:7:0",
+      "headings": [
+        "타슈켄트",
+        "하즈라티 이맘과 종교 학문"
+      ]
+    },
+    "cholponata-petroglyph-field-watercolor": {
+      "state": "guide",
+      "placement": "cholponata:2:0",
+      "headings": [
+        "촐폰아타",
+        "암각화의 시간층"
+      ]
+    },
+    "rukh-ordo-garden-pencil": {
+      "state": "guide",
+      "placement": "cholponata:9:0",
+      "headings": [
+        "촐폰아타",
+        "루흐 오르도 문화센터의 상징"
+      ]
+    },
+    "uzbek-tilework-pencil": {
+      "state": "guide",
+      "placement": "comparative:0:0",
+      "headings": [
+        "이슬람 건축 읽기 — 벽돌·타일·곡선",
+        "재료에서 공간으로"
+      ]
+    },
+    "registan-gilded-ceiling-pencil": {
+      "state": "guide",
+      "placement": "comparative:0:6",
+      "headings": [
+        "이슬람 건축 읽기 — 벽돌·타일·곡선",
+        "재료에서 공간으로"
+      ]
+    },
+    "samarkand-turquoise-dome-pencil": {
+      "state": "guide",
+      "placement": "architecture:Samarkand:intro",
+      "headings": [
+        "우즈베키스탄 이슬람 건축 유산",
+        "사마르칸트 Samarkand청색 타일의 도시"
+      ]
+    },
+    "suusamyr-honey-pencil": {
+      "state": "fx",
+      "placement": "shopping:honey:yellow",
+      "headings": [
+        "쇼핑 · 키르기스스탄 꼬냑과 꿀",
+        "꿀 · 직접 구입한 제품 비교"
+      ]
+    },
+    "white-honey-jar-pencil": {
+      "state": "fx",
+      "placement": "shopping:honey:white",
+      "headings": [
+        "쇼핑 · 키르기스스탄 꼬냑과 꿀",
+        "꿀 · 직접 구입한 제품 비교"
+      ]
+    }
+  },
+  "captionsMatchManifest": true,
+  "allIllustrationsCheckedAtEveryViewport": true,
   "decodedAssetUrls": 63,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,

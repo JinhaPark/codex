@@ -52,3 +52,15 @@
 | cholponata-petroglyph-field-watercolor | `cholponata:2:0` | 수채화 | 480×222 / 39.9; 800×370 / 105.6 | 촐폰아타 암각화 야외박물관 — 바위 들판과 답사로 |
 | cholponata-balbal-pencil | `day:5:places` | 색연필화 | 370×800 / 124.2 | 촐폰아타 암각화 야외박물관의 발발(Balbal) 인물 석상 |
 | issyk-kul-cruise-tian-shan-watercolor | `geography:2:0` | 수채화 | 480×360 / 37.1; 800×600 / 103.8; 1200×900 / 207.8 | 이식쿨호 유람선에서 바라본 톈산산맥의 설산 능선 |
+
+
+## 여행지별 누락 점검 후속 (2026-10-18)
+
+최신 main cab4dab에서 별도 브랜치 audit/destination-images-20261018로 조사했다.
+전체 방문지별 표·원본 대응·사진 요청 번호·재개 절차는 [destination-images.md](destination-images.md), 기계 판독 대응은 destination-images.json에 있다.
+관광지30곳: 확보6·부분확보2·장소확인필요2·누락20. 선택사항 및 미확인 그림은 별도 행으로 기록했다.
+공통 렌더러의 제작 설명 small을 제거하고 모든 alt에서 제작/화풍 문구를 정리했다. 식탁·꿀 가격은 기존 본문에 보존하고 캡션에서 생략했다.
+위 작품별 표의 캡션은 이전 감사 당시 값이다. 현재 캡션은 src/illustrations.json 및 새 여행지별 현황표가 기준이다.
+기존23점·63개 WebP는 변경하지 않았으며 새 이미지는 아직0점이다. 고유 업로드19개를 실제 확인했으며 미처리 장소미확인2점이 남았다.
+`python3 scripts/verify-image-assets.py`의 실제63개 전체 디코딩·크기·바이트·비율·메타데이터·해시 검증 통과.
+manifest/실제 디렉터리 집합 비교와 전체 ID 도달 검사를 추가해 새 자산 추가 시에도 누락·여분·중복을 감지한다.

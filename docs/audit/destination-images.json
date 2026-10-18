@@ -1,0 +1,473 @@
+[
+  {
+    "place": "인천국제공항",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-12 인천 → 타슈켄트",
+      "2026-10-21 인천 도착"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "타슈켄트 국제공항",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-12 인천 → 타슈켄트"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "부하라 아르크 성채",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-13 타슈켄트 → 부하라"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-ark-walls-pencil"
+    ],
+    "needed": "없음"
+  },
+  {
+    "place": "칼랸 미나레트",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-13 타슈켄트 → 부하라"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-kalyan-minaret-pencil",
+      "bukhara-poi-kalyan-watercolor"
+    ],
+    "needed": "없음"
+  },
+  {
+    "place": "라비하우즈",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-13 타슈켄트 → 부하라"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "lyabi-hauz-evening-watercolor",
+      "lyabi-hauz-portal-watercolor"
+    ],
+    "needed": "없음"
+  },
+  {
+    "place": "나디르 디반베기 마드라사",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-13 타슈켄트 → 부하라"
+    ],
+    "classification": "장소 확인 필요",
+    "imageIds": [],
+    "needed": "라비하우즈 아치 사진 IMG_8854.jpeg는 마드라사 정면이라고 확정할 수 없음. 새·동물 문양의 정면 사진 필요",
+    "requestNumber": 11
+  },
+  {
+    "place": "이스마일 사마니 영묘",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-14 부하라 → 사마르칸트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 1
+  },
+  {
+    "place": "차슈마 아유브 영묘",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-14 부하라 → 사마르칸트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 2
+  },
+  {
+    "place": "시토라이 모히 호사 궁전",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-14 부하라 → 사마르칸트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 3
+  },
+  {
+    "place": "레기스탄 광장",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-14 부하라 → 사마르칸트",
+      "2026-10-15 사마르칸트 → 타슈켄트"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "registan-travel-portrait-watercolor",
+      "registan-gilded-ceiling-pencil",
+      "samarkand-turquoise-dome-pencil"
+    ],
+    "needed": "없음; 개별 전각명은 미확정"
+  },
+  {
+    "place": "비비하눔 모스크",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-15 사마르칸트 → 타슈켄트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 4
+  },
+  {
+    "place": "아프라시압 박물관",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-15 사마르칸트 → 타슈켄트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 5
+  },
+  {
+    "place": "울루그벡 천문대",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-15 사마르칸트 → 타슈켄트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 6
+  },
+  {
+    "place": "구르에미르 영묘",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-15 사마르칸트 → 타슈켄트"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 7
+  },
+  {
+    "place": "타슈켄트 미노르 모스크",
+    "country": "우즈베키스탄 → 키르기스스탄",
+    "visits": [
+      "2026-10-16 타슈켄트 → 비슈케크"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 8
+  },
+  {
+    "place": "아미르 티무르 광장",
+    "country": "우즈베키스탄 → 키르기스스탄",
+    "visits": [
+      "2026-10-16 타슈켄트 → 비슈케크"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 9
+  },
+  {
+    "place": "하즈라티 이맘 단지",
+    "country": "우즈베키스탄 → 키르기스스탄",
+    "visits": [
+      "2026-10-16 타슈켄트 → 비슈케크"
+    ],
+    "classification": "장소 확인 필요",
+    "imageIds": [],
+    "needed": "필사본 사진 IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg의 실제 촬영 장소 확인 또는 단지 전경",
+    "requestNumber": 12
+  },
+  {
+    "place": "마나스 국제공항",
+    "country": "우즈베키스탄 → 키르기스스탄",
+    "visits": [
+      "2026-10-16 타슈켄트 → 비슈케크"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "루흐 오르도 문화센터",
+    "country": "키르기스스탄",
+    "visits": [
+      "2026-10-17 비슈케크 → 촐폰아타"
+    ],
+    "classification": "부분 확보",
+    "imageIds": [
+      "rukh-ordo-garden-pencil"
+    ],
+    "needed": "조각 정원 확보. 단지 입구·전체 배치 또는 주요 건물 사진 추가 가능",
+    "requestNumber": 13
+  },
+  {
+    "place": "촐폰아타 암각화",
+    "country": "키르기스스탄",
+    "visits": [
+      "2026-10-17 비슈케크 → 촐폰아타"
+    ],
+    "classification": "부분 확보",
+    "imageIds": [
+      "cholponata-petroglyph-field-watercolor",
+      "cholponata-balbal-pencil"
+    ],
+    "needed": "야외박물관 들판과 발발 확보. 바위의 암각 문양이 보이는 근접 사진 필요",
+    "requestNumber": 14
+  },
+  {
+    "place": "이식쿨 호수",
+    "country": "키르기스스탄",
+    "visits": [
+      "2026-10-17 비슈케크 → 촐폰아타"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "issyk-kul-cruise-tian-shan-watercolor"
+    ],
+    "needed": "없음"
+  },
+  {
+    "place": "촐폰아타",
+    "country": "키르기스스탄",
+    "visits": [
+      "2026-10-17 비슈케크 → 촐폰아타"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "알라아르차 국립공원",
+    "country": "키르기스스탄 → 카자흐스탄",
+    "visits": [
+      "2026-10-18 촐폰아타 → 알마티"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 16
+  },
+  {
+    "place": "코르다이 국경",
+    "country": "키르기스스탄 → 카자흐스탄",
+    "visits": [
+      "2026-10-18 촐폰아타 → 알마티"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "알마티",
+    "country": "키르기스스탄 → 카자흐스탄",
+    "visits": [
+      "2026-10-18 촐폰아타 → 알마티"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [],
+    "needed": "이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님"
+  },
+  {
+    "place": "차른 협곡",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-19 알마티 → 차른 협곡 → 알마티"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 17
+  },
+  {
+    "place": "루나 캐니언",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-19 알마티 → 차른 협곡 → 알마티"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 18
+  },
+  {
+    "place": "블랙 캐니언",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-19 알마티 → 차른 협곡 → 알마티"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 19
+  },
+  {
+    "place": "오이 카라가이",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-20 알마티 → 귀국 항공편"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 20
+  },
+  {
+    "place": "판필로프 공원",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-20 알마티 → 귀국 항공편"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 21
+  },
+  {
+    "place": "젠코프 승천 성당",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-20 알마티 → 귀국 항공편"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 22
+  },
+  {
+    "place": "그린 바자르",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-20 알마티 → 귀국 항공편"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 23
+  },
+  {
+    "place": "아르바트 거리",
+    "country": "카자흐스탄",
+    "visits": [
+      "2026-10-20 알마티 → 귀국 항공편"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 24
+  },
+  {
+    "place": "부하라 돔형 바자르",
+    "country": "우즈베키스탄",
+    "visits": [
+      "2026-10-13 타슈켄트 → 부하라 (일정 요약)"
+    ],
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-market-sunset-watercolor"
+    ],
+    "needed": "없음; 개별 돔 시장명은 미확정"
+  },
+  {
+    "place": "브로드웨이 거리",
+    "country": "우즈베키스탄 → 키르기스스탄",
+    "visits": [
+      "2026-10-16 타슈켄트 → 비슈케크 (일정 요약)"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 10
+  },
+  {
+    "place": "베르메트 야외 온천",
+    "country": "키르기스스탄",
+    "visits": [
+      "2026-10-17 비슈케크 → 촐폰아타 (일정 요약)"
+    ],
+    "classification": "누락",
+    "imageIds": [],
+    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "requestNumber": 15
+  },
+  {
+    "place": "Karven Four Seasons 리조트",
+    "country": "보조 항목",
+    "visits": [],
+    "classification": "선택 사항",
+    "imageIds": [
+      "autumn-birch-walk-watercolor"
+    ],
+    "needed": "숙박 보조: 자작나무길 확보"
+  },
+  {
+    "place": "비슈케크 SB bar",
+    "country": "보조 항목",
+    "visits": [],
+    "classification": "선택 사항",
+    "imageIds": [
+      "travel-steak-table-pencil"
+    ],
+    "needed": "식사 보조: 식탁 확보"
+  },
+  {
+    "place": "꿀 구입·향신료·식판·거리 차량",
+    "country": "보조 항목",
+    "visits": [],
+    "classification": "선택 사항",
+    "imageIds": [
+      "white-honey-jar-pencil",
+      "suusamyr-honey-pencil",
+      "bukhara-spice-stall-pencil",
+      "travel-meal-tray-pencil",
+      "street-classic-car-pencil"
+    ],
+    "needed": "쇼핑·식사·거리 보조: 관광지 확보로 대체하지 않음"
+  },
+  {
+    "place": "촬영지 미확인 산간 농경지",
+    "country": "미확인",
+    "visits": [],
+    "classification": "장소 확인 필요",
+    "imageIds": [
+      "mountain-orchards-watercolor"
+    ],
+    "needed": "사진의 촬영 장소를 사용자 설명으로 확인; 확인 전 특정 관광지에 배정하지 않음"
+  },
+  {
+    "place": "장소 미확인 청색 타일 아치",
+    "country": "미확인",
+    "visits": [],
+    "classification": "장소 확인 필요",
+    "imageIds": [
+      "uzbek-tilework-pencil"
+    ],
+    "needed": "사진의 촬영 장소를 사용자 설명으로 확인; 확인 전 특정 관광지에 배정하지 않음"
+  },
+  {
+    "place": "촬영지 미확인 아랍 문자 필사본",
+    "country": "미확인",
+    "visits": [],
+    "classification": "장소 확인 필요",
+    "imageIds": [
+      "arabic-manuscript-pencil"
+    ],
+    "needed": "사진의 촬영 장소를 사용자 설명으로 확인; 확인 전 특정 관광지에 배정하지 않음"
+  }
+]

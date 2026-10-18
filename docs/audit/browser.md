@@ -45,3 +45,12 @@
 ## 인계 후 PWA 회귀 재실행
 
 2026-10-18T15:42:53.889Z, Chromium153.0.8010.0, 같은 JS/CSS 번들에서 전체 검사를 재통과했다. `public/sw.js`의 정리 범위를 여행 가이드 캐시로 제한한 뒤 통제 v5→v6 업데이트를 수행했다. 이전 가이드 캐시의 삭제, 현재 캐시의 유지와 함께 `other-site-v1`의 `/other-site/` 응답 본문이 그대로 남는 것을 확인했다. 결과 JSON의 `unrelatedOriginCachePreserved`가 true다. 별도 Node 회귀 검사에서는 타 캐시 응답을 사용하지 않는 것과 저장 promise의 fetch-event 수명 연장을 확인했다. 375px 경제·교육 스크린샷도 다시 육안 확인했다. 실제 기기·새 배포·과거 번들 마이그레이션의 한계는 그대로다.
+
+
+## 방문지 이미지 점검 브랜치 재검증
+
+2026-10-18T16:05:08.321Z, Chromium153.0.8010.0, 로컬 프로덕션 빌드(index-BIBvgtHW.js / index-DhzJzpNS.css).
+375·390·430px 각각 모든 그림을 다시 표시해 비율과 화면 내 경계를 검사했다. 전체23개 ID가 각1회 접근되며63개 파생본 URL은 모두 디코딩되었다.
+각 figcaption이 manifest.caption과 정확히 일치하고 제작 문구가 없음을 검사했다. 실제 접근 탭·일차·펼침 제목을 browser.json의 illustrationLocations에 기록했다.
+여행지 대응JSON에서 참조하는 모든 ID가 실제 화면에 도달함도 검사했다. 기존 준비물 저장·지도40링크·탭·환율fixture·오프라인 방문 콘텐츠·캐시 격리 회귀 통과.
+실제 iPhone Safari는 미검증이며, 위 로컬 Chromium 결과로 대체하지 않는다. 이번 브랜치는 미병합·미배포다.
