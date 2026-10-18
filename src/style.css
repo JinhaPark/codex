@@ -91,3 +91,10 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .bukhara-references p{font-size:13px;line-height:1.8}
 .bukhara-references a{display:block;margin:10px 0;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
 @media(max-width:390px){.bukhara-chapter>summary{padding:15px 13px;font-size:15px}.bukhara-chapter-body{padding:6px 14px 19px}.bukhara-chapter-body p{font-size:15px;line-height:2}}
+/* Photo-based journal artwork: retain the full image and reserve its intrinsic ratio. */
+.journal-illustration{margin:26px 0 30px;padding:10px;background:#f8f5ee;border:1px solid #e5dfd2;border-radius:5px;min-width:0;max-width:100%}
+.journal-illustration img{display:block;width:100%;height:auto;max-width:100%;background:#f7f4eb;border-radius:2px}
+.journal-illustration--portrait{width:min(100%,360px);margin-left:auto;margin-right:auto}
+.journal-illustration figcaption{padding:12px 5px 4px;color:#46564f;font-size:13px;line-height:1.75;text-align:center;word-break:keep-all}
+.journal-illustration figcaption small{display:block;margin-top:4px;color:#6c736b;font-size:11px;font-weight:400}
+@media(max-width:390px){.journal-illustration{padding:7px;margin-top:21px;margin-bottom:25px}.journal-illustration figcaption{font-size:12px}}

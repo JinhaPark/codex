@@ -1,0 +1,422 @@
+[
+  {
+    "id": "mountain-orchards-watercolor",
+    "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
+    "style": "watercolor",
+    "placement": "geography:1:0",
+    "caption": "설산 아래 펼쳐진 가을 농경지",
+    "alt": "눈 덮인 산봉우리 아래 가을빛 농경지와 전신주가 이어지는 풍경을 그린 수채화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 103244,
+        "quality": 84,
+        "file": "mountain-orchards-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 237314,
+        "quality": 82,
+        "file": "mountain-orchards-watercolor-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 261066,
+        "quality": 72,
+        "file": "mountain-orchards-watercolor-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-poi-kalyan-watercolor",
+    "original": "IMG_8706.jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:7:1",
+    "caption": "돔과 미나레트가 어우러진 부하라",
+    "alt": "부하라 포이칼랸 건축군의 청록색 돔과 칼랸 미나레트, 중정과 주변 시가지를 내려다본 수채화",
+    "sourceWidth": 1334,
+    "sourceHeight": 750,
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "bytes": 53448,
+        "quality": 84,
+        "file": "bukhara-poi-kalyan-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 450,
+        "bytes": 131210,
+        "quality": 84,
+        "file": "bukhara-poi-kalyan-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 675,
+        "bytes": 234386,
+        "quality": 82,
+        "file": "bukhara-poi-kalyan-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "autumn-birch-walk-watercolor",
+    "original": "IMG_8995.jpeg",
+    "style": "watercolor",
+    "placement": "day:6:tip",
+    "caption": "노랗게 물든 가로수길",
+    "alt": "건물 옆 벽돌 보행로를 따라 흰 줄기의 가로수가 노랗게 물든 풍경을 그린 수채화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 124352,
+        "quality": 84,
+        "file": "autumn-birch-walk-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 235842,
+        "quality": 76,
+        "file": "autumn-birch-walk-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 340092,
+        "quality": 72,
+        "file": "autumn-birch-walk-watercolor-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "garden-eaves-watercolor",
+    "original": "IMG_09063467-BC85-4186-9B48-68F1C3066FCA.jpeg",
+    "style": "watercolor",
+    "placement": "day:5:places",
+    "caption": "처마 아래로 스며드는 가을빛",
+    "alt": "무늬가 새겨진 처마와 새·늑대 벽화, 노란 나무와 잔디 정원을 그린 수채화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 105084,
+        "quality": 84,
+        "file": "garden-eaves-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 234254,
+        "quality": 82,
+        "file": "garden-eaves-watercolor-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 257316,
+        "quality": 72,
+        "file": "garden-eaves-watercolor-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "rukh-ordo-garden-pencil",
+    "original": "IMG_8981.jpeg",
+    "style": "colored-pencil",
+    "placement": "cholponata:9:0",
+    "caption": "산을 배경으로 조각이 놓인 문화공간",
+    "alt": "산과 키 큰 나무를 배경으로 종이 걸린 정자와 여러 조각, 종교 건물이 놓인 정원을 그린 색연필화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 128224,
+        "quality": 84,
+        "file": "rukh-ordo-garden-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 245614,
+        "quality": 74,
+        "file": "rukh-ordo-garden-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 385512,
+        "quality": 72,
+        "file": "rukh-ordo-garden-pencil-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "uzbek-tilework-pencil",
+    "original": "IMG_8704.jpeg",
+    "style": "colored-pencil",
+    "placement": "comparative:0:0",
+    "caption": "아치와 벽면을 채운 청색 기하학 문양",
+    "alt": "청색과 황토색 타일이 첨두 아치와 벽면을 덮은 건축물 앞을 관람객이 걷는 모습을 그린 색연필화",
+    "sourceWidth": 1334,
+    "sourceHeight": 750,
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "bytes": 48880,
+        "quality": 84,
+        "file": "uzbek-tilework-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 450,
+        "bytes": 132338,
+        "quality": 84,
+        "file": "uzbek-tilework-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 675,
+        "bytes": 240056,
+        "quality": 82,
+        "file": "uzbek-tilework-pencil-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "arabic-manuscript-pencil",
+    "original": "IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg",
+    "style": "colored-pencil",
+    "placement": "uzbekistan:2:0",
+    "caption": "펼쳐진 필사본에 남은 문자",
+    "alt": "전시대 위에 펼쳐진 필사본의 누런 종이와 검정·붉은 아랍 문자 필기를 그린 색연필화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 91750,
+        "quality": 84,
+        "file": "arabic-manuscript-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 247306,
+        "quality": 84,
+        "file": "arabic-manuscript-pencil-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 248220,
+        "quality": 72,
+        "file": "arabic-manuscript-pencil-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "street-classic-car-pencil",
+    "original": "IMG_8943.jpeg",
+    "style": "colored-pencil",
+    "placement": "day:4:tip",
+    "caption": "버스 창밖으로 본 거리 풍경",
+    "alt": "가로수가 늘어선 도로에서 크림색 자동차를 버스 창문 너머로 내려다본 색연필화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 112404,
+        "quality": 84,
+        "file": "street-classic-car-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 235326,
+        "quality": 78,
+        "file": "street-classic-car-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 316960,
+        "quality": 72,
+        "file": "street-classic-car-pencil-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "travel-steak-table-pencil",
+    "original": "IMG_8951.jpeg",
+    "style": "colored-pencil",
+    "placement": "day:5:tip",
+    "caption": "여행 중 마주한 한 끼",
+    "alt": "나무 도마 위 뼈가 붙은 구운 고기와 소스, 감자와 샐러드가 놓인 식탁을 그린 색연필화",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 54574,
+        "quality": 84,
+        "file": "travel-steak-table-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 154462,
+        "quality": 84,
+        "file": "travel-steak-table-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 238740,
+        "quality": 78,
+        "file": "travel-steak-table-pencil-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "travel-meal-tray-pencil",
+    "original": "IMG_7B1EB00F-DC20-4F6C-9477-4C826E74FA78.jpeg",
+    "style": "colored-pencil",
+    "placement": "day:1:tip",
+    "caption": "접시에 담긴 여행의 맛",
+    "alt": "검은 식판의 분홍 종이컵에 담긴 노릇한 음식과 초록색 채소를 가까이서 그린 색연필화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 110564,
+        "quality": 84,
+        "file": "travel-meal-tray-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 249360,
+        "quality": 80,
+        "file": "travel-meal-tray-pencil-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 299800,
+        "quality": 72,
+        "file": "travel-meal-tray-pencil-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "white-honey-jar-pencil",
+    "original": "IMG_3ED8DFE7-C3BB-4C0F-B4C0-A06642AA85A2.jpeg",
+    "style": "colored-pencil",
+    "placement": "shopping:honey:white",
+    "caption": "여행길에 구입한 흰색 꿀 용기",
+    "alt": "버스 좌석을 배경으로 손에 든 흰색 뚜껑의 무상표 꿀 용기를 그린 색연필화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 77038,
+        "quality": 84,
+        "file": "white-honey-jar-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 229300,
+        "quality": 84,
+        "file": "white-honey-jar-pencil-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 232426,
+        "quality": 74,
+        "file": "white-honey-jar-pencil-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "suusamyr-honey-pencil",
+    "original": "IMG_E6498561-22A6-472B-85A7-DFBF57A45744.jpeg",
+    "style": "colored-pencil",
+    "placement": "shopping:honey:yellow",
+    "caption": "수우사미르 야생화꿀",
+    "alt": "초록색 키릴 문자 라벨과 노란 뚜껑이 있는 호박색 꿀 제품을 손에 든 모습을 그린 색연필화",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 102520,
+        "quality": 84,
+        "file": "suusamyr-honey-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 248076,
+        "quality": 82,
+        "file": "suusamyr-honey-pencil-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 274770,
+        "quality": 72,
+        "file": "suusamyr-honey-pencil-1080.webp"
+      }
+    ]
+  }
+]

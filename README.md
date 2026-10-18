@@ -18,4 +18,6 @@ The app includes local checklist storage, offline caching after the first succes
 
 ## 사진 출처 및 운영 정책
 
-현재 관광지 사진은 **Wikimedia Commons**에서 장소명으로 검색해 불러옵니다. Google Places API는 사용하지 않습니다. 사진에는 Commons 원본 링크를 표시하며, 장소와 사진의 일치 여부는 자동 검색 특성상 추가 검증이 필요합니다. 네트워크 연결이 없거나 검색 결과가 없는 경우 한국어 설명을 대신 표시합니다. 향후 Google Places API 연동 시 서버 측 키 보호와 이용 약관 검토가 필요합니다.
+사용자가 제공한 여행 사진을 바탕으로 수채화·색연필 일러스트 12점을 제작했습니다. 원본 사진은 저장소에 포함하지 않으며, 게시용 WebP에는 EXIF·GPS 등 사진 메타데이터가 없습니다. 외부 사진 검색이나 새 API 키 없이 장별 본문·일정·쇼핑 화면에서 반응형으로 표시합니다.
+
+이미지는 여행의 시각적 기록이며, 필사본 문자나 제품 라벨의 정확한 판독 자료는 아닙니다. [사진별 배치·크기·용량 및 검증 결과](docs/illustrated-journal.md)를 참고하세요.
