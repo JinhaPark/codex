@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T18:09:01.969Z",
+  "checkedAt": "2026-10-18T18:24:40.531Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -156,12 +156,12 @@
         "소그드 상인과 세계의 교차로"
       ]
     },
-    "samarkand-bibi-khanym-watercolor": {
+    "samarkand-gur-emir-watercolor": {
       "state": "guide",
-      "placement": "samarkand:6:0",
+      "placement": "samarkand:7:0",
       "headings": [
         "사마르칸트",
-        "비비하눔 모스크의 야망과 구조"
+        "구르에미르와 왕조의 기억"
       ]
     },
     "ulughbeg-meridian-pencil": {
@@ -300,7 +300,7 @@
   "offlineReflectionEdits": true,
   "offlineNewMuseumPhotos": true,
   "offlineNewSitesAndHotel": true,
-  "cacheUpgradeFixture": "v9 cache name/current app → v10; old cache removed",
+  "cacheUpgradeFixture": "v10 cache name/current app → v11; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",

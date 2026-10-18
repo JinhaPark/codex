@@ -1098,41 +1098,42 @@
     "revision": "2026-10-18-user-foreground-and-orientation-edit"
   },
   {
-    "id": "samarkand-bibi-khanym-watercolor",
+    "id": "samarkand-gur-emir-watercolor",
     "original": "IMG_8908.jpeg",
     "style": "watercolor",
-    "placement": "samarkand:6:0",
-    "caption": "사마르칸트 비비하눔 모스크 — 청록색 돔과 미나레트",
-    "alt": "청록색의 세로 골이 있는 큰 돔과 기하학 타일 무늬의 미나레트, 아치형 외벽과 앞쪽 관람객",
+    "placement": "samarkand:7:0",
+    "caption": "사마르칸트 구르에미르 영묘 — 세로 주름 돔과 미나레트",
+    "alt": "세로 주름과 청록색 타일로 덮인 큰 돔, 오른쪽의 기하학 무늬 미나레트와 아치형 외벽, 앞쪽 벽돌 담장",
     "sourceWidth": 1152,
     "sourceHeight": 1536,
     "width": 1086,
     "height": 1448,
     "variants": [
       {
+        "file": "samarkand-gur-emir-watercolor-480.webp",
         "width": 480,
         "height": 640,
-        "bytes": 111640,
-        "quality": 88,
-        "file": "samarkand-bibi-khanym-watercolor-480.webp"
+        "bytes": 112368,
+        "quality": 88
       },
       {
+        "file": "samarkand-gur-emir-watercolor-800.webp",
         "width": 800,
         "height": 1067,
-        "bytes": 241660,
-        "quality": 84,
-        "file": "samarkand-bibi-khanym-watercolor-800.webp"
+        "bytes": 231904,
+        "quality": 84
       },
       {
+        "file": "samarkand-gur-emir-watercolor-1086.webp",
         "width": 1086,
         "height": 1448,
-        "bytes": 249652,
-        "quality": 72,
-        "file": "samarkand-bibi-khanym-watercolor-1086.webp"
+        "bytes": 241080,
+        "quality": 74
       }
     ],
     "generatedWidth": 1086,
-    "generatedHeight": 1448
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-gur-emir-identification-foreground-cleanup"
   },
   {
     "id": "bukhara-chashma-ayub-watercolor",

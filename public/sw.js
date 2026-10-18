@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v10-sites-feathers';
+const CACHE = 'ca26-pages-v11-gur-emir-cleanup';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

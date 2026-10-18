@@ -75,6 +75,10 @@ test('destination audit covers the itinerary and only links published, identifie
     if (['확보', '부분 확보'].includes(row.classification)) assert.ok(row.imageIds.length > 0, row.place);
     if (row.classification === '누락') assert.deepEqual(row.imageIds, [], row.place);
   }
+  const gurEmir = artwork.find(art => art.original === 'IMG_8908.jpeg');
+  assert.equal(gurEmir.id, 'samarkand-gur-emir-watercolor', 'Correct the previously mistaken Bibi-Khanym identification');
+  assert.ok(coverage.find(row => row.place === '구르에미르 영묘').imageIds.includes(gurEmir.id));
+  assert.equal(coverage.find(row => row.place === '비비하눔 모스크').classification, '누락');
   for (const id of ids) assert.ok(coverage.some(row => row.imageIds.includes(id)), 'Account for ' + id);
 });
 

@@ -148,3 +148,16 @@ IMG_8936(1)은 기존IMG_8936과 바이트가 같으나 공개된 기존 작품�
 | hotel-pool-garden-watercolor · IMG_8888.jpeg | `travel:lodging:view` · 숙소에서 내려다본 수영장과 정원 | 1152×1536 → 1086×1448 | hotel-pool-garden-watercolor-480.webp · 480×640 · 140,664B · q88<br>hotel-pool-garden-watercolor-800.webp · 800×1067 · 235,746B · q78<br>hotel-pool-garden-watercolor-1086.webp · 1086×1448 · 303,800B · q72 |
 
 표준800px본은 모두250KB 이하. 호텔 전경의 최대1086px본303,800B는 촘촘한 잎과 수영장 경계의 세부 손실을 줄이기 위해 q72를 유지한 예외이며, 모바일 기본 표준본은235,746B다. 원본JPEG와 생성PNG, 촬영/위치 메타데이터는 저장소 밖에만 보관한다. 호텔명은 촬영일 부재로 미확정이다. 사람 제거와 깃털 표현의 의도적 변경 범위는 destination-images.md 최신 절을 따른다.
+
+
+## 구르에미르 식별 정정·하단 인물/유리 덮개 제거
+
+IMG_8908 기존1점 교체: samarkand-bibi-khanym-watercolor → samarkand-gur-emir-watercolor. 기존3파일 삭제·새3파일 추가로 총34점96WebP 유지, 전체17,177,968B. 내장imagegen에 기존 수채화와 원본을 직접 참조했고 돔의 눈에 보이는 주름 수·구도는 강제로 바꾸지 않았다. 입력1152×1536, 실제 수정본1086×1448, 배치samarkand:7:0. 캡션: 사마르칸트 구르에미르 영묘 — 세로 주름 돔과 미나레트. Alt: 세로 주름과 청록색 타일로 덮인 큰 돔, 오른쪽의 기하학 무늬 미나레트와 아치형 외벽, 앞쪽 벽돌 담장.
+
+| 파일 | 픽셀 | 바이트 | 품질 |
+|---|---|---|---|
+| samarkand-gur-emir-watercolor-480.webp | 480×640 | 112,368 | 88 |
+| samarkand-gur-emir-watercolor-800.webp | 800×1067 | 231,904 | 84 |
+| samarkand-gur-emir-watercolor-1086.webp | 1086×1448 | 241,080 | 74 |
+
+모든 새 파생본250KB 이하, 표준800px본231,904B. 원본·실제 수정본 비확대, 종횡비 유지, 메타데이터 제거. 원본JPEG와 생성PNG는 커밋하지 않는다. 제거로 드러난 단순한 면은 편집 처리이며 역사적 복원 증거로 사용하지 않는다. 장소·64주름 출처는 destination-images.md 최신 절을 따른다.
