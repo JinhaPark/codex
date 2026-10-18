@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v6-three-country-guide';
+const CACHE = 'ca26-pages-v7-minaret-refresh';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

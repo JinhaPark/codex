@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T16:09:01.243Z",
+  "checkedAt": "2026-10-18T16:13:26.012Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -209,7 +209,8 @@
   "uzbekVoiceUnavailableFallback": true,
   "fxFixtureConversion": "500 KGS → 7,622 KRW",
   "offlineVisitedGuideAndImage": true,
-  "cacheUpgradeFixture": "v5 cache name/current app → v6; old cache removed",
+  "offlineEditedMinaret": true,
+  "cacheUpgradeFixture": "v6 cache name/current app → v7; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",

@@ -445,7 +445,7 @@
     "style": "colored-pencil",
     "placement": "bukhara:4:1",
     "caption": "부하라 칼랸 미나레트 — 벽돌로 만든 기하학 장식 띠",
-    "alt": "다양한 벽돌 무늬의 칼랸 미나레트와 오른쪽 타일 입구, 광장의 관람객",
+    "alt": "벽돌 장식 띠의 칼랸 미나레트와 왼쪽 돔 건물, 오른쪽 청색 타일 입구, 앞쪽의 석재 광장",
     "sourceWidth": 1152,
     "sourceHeight": 1536,
     "width": 1086,
@@ -454,25 +454,28 @@
       {
         "width": 480,
         "height": 640,
-        "bytes": 92946,
+        "bytes": 83948,
         "quality": 84,
         "file": "bukhara-kalyan-minaret-pencil-480.webp"
       },
       {
         "width": 800,
         "height": 1067,
-        "bytes": 238902,
-        "quality": 82,
+        "bytes": 227260,
+        "quality": 84,
         "file": "bukhara-kalyan-minaret-pencil-800.webp"
       },
       {
         "width": 1086,
         "height": 1448,
-        "bytes": 261254,
-        "quality": 68,
+        "bytes": 240660,
+        "quality": 74,
         "file": "bukhara-kalyan-minaret-pencil-1086.webp"
       }
-    ]
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-plaza-cleanup"
   },
   {
     "id": "bukhara-market-sunset-watercolor",
