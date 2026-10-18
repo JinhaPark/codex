@@ -75,9 +75,11 @@
     "visits": [
       "2026-10-14 부하라 → 사마르칸트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-samani-watercolor"
+    ],
+    "needed": "사진 추가 반영 완료; 실제 표시 위치는 최신 현황표 참조",
     "requestNumber": 1
   },
   {
@@ -134,9 +136,11 @@
     "visits": [
       "2026-10-15 사마르칸트 → 타슈켄트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "afrasiyab-envoys-pencil"
+    ],
+    "needed": "사진 추가 반영 완료; 실제 표시 위치는 최신 현황표 참조",
     "requestNumber": 5
   },
   {
@@ -145,9 +149,13 @@
     "visits": [
       "2026-10-15 사마르칸트 → 타슈켄트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "ulughbeg-meridian-pencil",
+      "ulughbeg-year-exhibit-photo",
+      "ulughbeg-statue-pencil"
+    ],
+    "needed": "사진 추가 반영 완료; 실제 표시 위치는 최신 현황표 참조",
     "requestNumber": 6
   },
   {
@@ -167,9 +175,11 @@
     "visits": [
       "2026-10-16 타슈켄트 → 비슈케크"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "tashkent-minor-ceiling-pencil"
+    ],
+    "needed": "사진 추가 반영 완료; 실제 표시 위치는 최신 현황표 참조",
     "requestNumber": 8
   },
   {
@@ -469,5 +479,29 @@
       "arabic-manuscript-pencil"
     ],
     "needed": "사진의 촬영 장소를 사용자 설명으로 확인; 확인 전 특정 관광지에 배정하지 않음"
+  },
+  {
+    "place": "유골함 전시(촬영 박물관 미확인)",
+    "country": "미확인",
+    "visits": [
+      "촬영 전시관·출토지·연대 미확인"
+    ],
+    "classification": "장소 확인 필요",
+    "imageIds": [
+      "zoroastrian-ossuary-pencil"
+    ],
+    "needed": "조로아스터교 유골함이라는 사용자 설명을 기록; 촬영 박물관명·전시 라벨 확인 가능하면 보완"
+  },
+  {
+    "place": "아랄해 축소 전시자료",
+    "country": "전시자료",
+    "visits": [
+      "전시관 미확인; 아랄해 실제 방문을 뜻하지 않음"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [
+      "aral-sea-exhibit-photo"
+    ],
+    "needed": "관개·염류 설명의 보조 자료; 관광지 누락 수에 포함하지 않음"
   }
 ]

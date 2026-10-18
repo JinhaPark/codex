@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T16:26:26.934Z",
+  "checkedAt": "2026-10-18T16:54:51.690Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 23,
+  "uniqueIllustrations": 31,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -84,6 +84,30 @@
         "이식쿨과 알마티의 서로 다른 산록"
       ]
     },
+    "zoroastrian-ossuary-pencil": {
+      "state": "guide",
+      "placement": "history:0:2",
+      "headings": [
+        "2. 역사",
+        "오아시스와 초원이 함께 만든 교역망"
+      ]
+    },
+    "aral-sea-exhibit-photo": {
+      "state": "guide",
+      "placement": "resources:0:1",
+      "headings": [
+        "3. 자원·에너지",
+        "우즈베키스탄: 관개와 가스에서 전환으로"
+      ]
+    },
+    "bukhara-samani-watercolor": {
+      "state": "guide",
+      "placement": "bukhara:3:0",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "4. 사만 왕조: 부하라의 첫 번째 황금기"
+      ]
+    },
     "bukhara-kalyan-minaret-pencil": {
       "state": "guide",
       "placement": "bukhara:4:1",
@@ -116,6 +140,38 @@
         "11. 부하라 칸국과 에미르국: 궁정과 권력"
       ]
     },
+    "afrasiyab-envoys-pencil": {
+      "state": "guide",
+      "placement": "samarkand:1:0",
+      "headings": [
+        "사마르칸트",
+        "소그드 상인과 세계의 교차로"
+      ]
+    },
+    "ulughbeg-meridian-pencil": {
+      "state": "guide",
+      "placement": "samarkand:8:0",
+      "headings": [
+        "사마르칸트",
+        "울루그베크와 천문학의 도시"
+      ]
+    },
+    "ulughbeg-year-exhibit-photo": {
+      "state": "guide",
+      "placement": "samarkand:8:1",
+      "headings": [
+        "사마르칸트",
+        "울루그베크와 천문학의 도시"
+      ]
+    },
+    "ulughbeg-statue-pencil": {
+      "state": "guide",
+      "placement": "samarkand:8:2",
+      "headings": [
+        "사마르칸트",
+        "울루그베크와 천문학의 도시"
+      ]
+    },
     "registan-travel-portrait-watercolor": {
       "state": "guide",
       "placement": "samarkand:9:0",
@@ -130,6 +186,14 @@
       "headings": [
         "타슈켄트",
         "하즈라티 이맘과 종교 학문"
+      ]
+    },
+    "tashkent-minor-ceiling-pencil": {
+      "state": "guide",
+      "placement": "tashkent:10:0",
+      "headings": [
+        "타슈켄트",
+        "미노르 모스크와 현대 이슬람 건축"
       ]
     },
     "cholponata-petroglyph-field-watercolor": {
@@ -191,14 +255,14 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 63,
+  "decodedAssetUrls": 87,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
   "narrativeWords": {
     "geography": 335,
     "history": 1036,
-    "resources": 261,
+    "resources": 311,
     "economy": 336,
     "education": 478
   },
@@ -211,7 +275,8 @@
   "offlineVisitedGuideAndImage": true,
   "offlineEditedMinaret": true,
   "offlineReflectionEdits": true,
-  "cacheUpgradeFixture": "v7 cache name/current app → v8; old cache removed",
+  "offlineNewMuseumPhotos": true,
+  "cacheUpgradeFixture": "v8 cache name/current app → v9; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",

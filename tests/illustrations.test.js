@@ -41,7 +41,7 @@ test('each subject has one editorial placement, Korean caption and descriptive K
     assert.match(art.caption, /[가-힣]/);
     assert.match(art.alt, /[가-힣]/);
     assert.ok(art.alt.length > 15);
-    assert.ok(['watercolor', 'colored-pencil'].includes(art.style));
+    assert.ok(['watercolor', 'colored-pencil', 'documentary-photo'].includes(art.style));
   }
   assert.ok(!artwork.some(art => art.original === 'IMG_8981(1).jpeg'), 'Exclude the identical duplicate');
   assert.ok(!artwork.some(art => art.id === 'garden-eaves-watercolor'), 'Remove the requested garden photograph');
@@ -86,5 +86,16 @@ test('summary-only tourist visits and unresolved places remain explicit', () => 
   }
   for (const id of ['mountain-orchards-watercolor','uzbek-tilework-pencil','arabic-manuscript-pencil']) {
     assert.ok(!rows.some(r => r.classification === '확보' && r.imageIds.includes(id)));
+  }
+});
+
+
+test('museum numeric and map panels stay documentary photographs', () => {
+  const ids = ['aral-sea-exhibit-photo','ulughbeg-year-exhibit-photo'];
+  assert.deepEqual(artwork.filter(a => a.style === 'documentary-photo').map(a => a.id).sort(), ids.sort());
+  for (const id of ids) {
+    const art = artwork.find(a => a.id === id);
+    assert.equal(art.sourceKind, 'museum-panel-photo');
+    assert.equal(art.generatedWidth, undefined, 'Do not synthesize numeric exhibits');
   }
 });

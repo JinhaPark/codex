@@ -796,5 +796,305 @@
         "file": "issyk-kul-cruise-tian-shan-watercolor-1200.webp"
       }
     ]
+  },
+  {
+    "id": "tashkent-minor-ceiling-pencil",
+    "original": "IMG_8936(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "tashkent:10:0",
+    "caption": "타슈켄트 미노르 모스크 — 청색·금빛 원형 천장",
+    "alt": "청색과 금빛 방사형 문양의 돔 천장과 둘레의 흰 아치 창을 올려다본 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 145106,
+        "quality": 88,
+        "file": "tashkent-minor-ceiling-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 246158,
+        "quality": 76,
+        "file": "tashkent-minor-ceiling-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 353674,
+        "quality": 72,
+        "file": "tashkent-minor-ceiling-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "zoroastrian-ossuary-pencil",
+    "original": "IMG_8907.jpeg",
+    "style": "colored-pencil",
+    "placement": "history:0:2",
+    "caption": "유골함 전시 — 토제 용기와 내부 유골",
+    "alt": "가로로 놓인 갈색 토제 유골함 안에 두개골과 여러 뼈가 드러나 있는 박물관 전시",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 32538,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 108298,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 234846,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "originalWidth": 1152,
+    "originalHeight": 1536,
+    "sourceOrientation": "90-degrees-counterclockwise",
+    "revision": "2026-10-18-user-foreground-and-orientation-edit"
+  },
+  {
+    "id": "bukhara-samani-watercolor",
+    "original": "IMG_8866.jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:3:0",
+    "caption": "부하라 이스마일 사마니 영묘 — 돔과 벽돌 장식",
+    "alt": "중앙 돔과 촘촘한 벽돌 장식의 이스마일 사마니 영묘 앞에 관람객과 붉은 꽃밭이 있는 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 141644,
+        "quality": 88,
+        "file": "bukhara-samani-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 234312,
+        "quality": 78,
+        "file": "bukhara-samani-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 308382,
+        "quality": 72,
+        "file": "bukhara-samani-watercolor-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "aral-sea-exhibit-photo",
+    "original": "IMG_8881.jpeg",
+    "style": "documentary-photo",
+    "placement": "resources:0:1",
+    "caption": "아랄해 축소 전시 — 연도별 수면 지도와 드러난 호저",
+    "alt": "1957·1982·2000·2017년 아랄해 지도와 수면 비교 영상, 마른 호저의 선박이 배치된 전시판",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 42072,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 99582,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 187840,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-1200.webp"
+      }
+    ],
+    "sourceKind": "museum-panel-photo"
+  },
+  {
+    "id": "afrasiyab-envoys-pencil",
+    "original": "IMG_8902.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:1:0",
+    "caption": "아프라시압 벽화 — 깃털 관모의 인물들",
+    "alt": "갈색과 푸른 안료가 남은 훼손된 아프라시압 벽화의 인물 윤곽과 깃털 관모, 오른쪽 격자",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 72954,
+        "quality": 88,
+        "file": "afrasiyab-envoys-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 206650,
+        "quality": 88,
+        "file": "afrasiyab-envoys-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 243060,
+        "quality": 76,
+        "file": "afrasiyab-envoys-pencil-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "revision": "2026-10-18-user-foreground-and-orientation-edit"
+  },
+  {
+    "id": "ulughbeg-meridian-pencil",
+    "original": "IMG_8890.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:8:0",
+    "caption": "울루그벡 천문대 — 지하 자오선 관측기의 곡선 눈금",
+    "alt": "벽돌 아치 아래 깊은 도랑으로 내려가는 곡선 석재 눈금과 계단, 끝쪽의 밝은 아치 창",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 134374,
+        "quality": 88,
+        "file": "ulughbeg-meridian-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 233042,
+        "quality": 78,
+        "file": "ulughbeg-meridian-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 307292,
+        "quality": 72,
+        "file": "ulughbeg-meridian-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "ulughbeg-year-exhibit-photo",
+    "original": "IMG_8893.jpeg",
+    "style": "documentary-photo",
+    "placement": "samarkand:8:1",
+    "caption": "울루그벡 천문대 전시 — 행성 운동과 1년 길이 비교",
+    "alt": "천문서 표제면과 행성 연간 운동, 1년 길이, 황도 경사를 비교한 수치표가 있는 세로 전시판",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1152,
+    "height": 1536,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 26556,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 71050,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-800.webp"
+      },
+      {
+        "width": 1152,
+        "height": 1536,
+        "bytes": 149614,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-1152.webp"
+      }
+    ],
+    "sourceKind": "museum-panel-photo"
+  },
+  {
+    "id": "ulughbeg-statue-pencil",
+    "original": "IMG_8889.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:8:2",
+    "caption": "사마르칸트 울루그벡 동상 — 앉은 모습과 명판",
+    "alt": "청색 타일 벽 앞의 앉아 있는 울루그벡 동상과 이름이 새겨진 받침대, 주변의 포장 바닥",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 126350,
+        "quality": 88,
+        "file": "ulughbeg-statue-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 248376,
+        "quality": 82,
+        "file": "ulughbeg-statue-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 272028,
+        "quality": 72,
+        "file": "ulughbeg-statue-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-user-foreground-and-orientation-edit"
   }
 ]
