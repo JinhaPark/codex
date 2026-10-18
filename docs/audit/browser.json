@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T18:24:40.531Z",
+  "checkedAt": "2026-10-18T19:32:18.809Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 34,
+  "uniqueIllustrations": 43,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -25,6 +25,13 @@
         "여행 관찰 포인트"
       ]
     },
+    "hotel-pool-garden-watercolor": {
+      "state": "day:2",
+      "placement": "day:2:hotel",
+      "headings": [
+        "숙소"
+      ]
+    },
     "lyabi-hauz-evening-watercolor": {
       "state": "day:2",
       "placement": "day:2:places",
@@ -34,9 +41,9 @@
     },
     "travel-steak-table-pencil": {
       "state": "day:4",
-      "placement": "day:4:places",
+      "placement": "day:4:dinner",
       "headings": [
-        "방문지와 지도"
+        "저녁 식사 · 비슈케크 SB bar"
       ]
     },
     "street-classic-car-pencil": {
@@ -204,12 +211,68 @@
         "하즈라티 이맘과 종교 학문"
       ]
     },
+    "hazrati-imam-portrait-watercolor": {
+      "state": "guide",
+      "placement": "tashkent:7:detail",
+      "headings": [
+        "타슈켄트",
+        "하즈라티 이맘과 종교 학문"
+      ]
+    },
+    "tashkent-amir-temur-watercolor": {
+      "state": "guide",
+      "placement": "tashkent:8:0",
+      "headings": [
+        "타슈켄트",
+        "독립과 아미르 티무르의 재해석"
+      ]
+    },
+    "tashkent-independence-fountains-watercolor": {
+      "state": "guide",
+      "placement": "tashkent:9:0",
+      "headings": [
+        "타슈켄트",
+        "현대 경제와 도시의 확장"
+      ]
+    },
     "tashkent-minor-ceiling-pencil": {
       "state": "guide",
       "placement": "tashkent:10:0",
       "headings": [
         "타슈켄트",
         "미노르 모스크와 현대 이슬람 건축"
+      ]
+    },
+    "tashkent-minor-portrait-watercolor": {
+      "state": "guide",
+      "placement": "tashkent:10:detail",
+      "headings": [
+        "타슈켄트",
+        "미노르 모스크와 현대 이슬람 건축"
+      ]
+    },
+    "tashkent-broadway-watercolor": {
+      "state": "guide",
+      "placement": "tashkent:11:detail",
+      "headings": [
+        "타슈켄트",
+        "현장 답사: 옛 도시와 새 도시"
+      ]
+    },
+    "ala-archa-valley-watercolor": {
+      "state": "guide",
+      "placement": "bishkek:10:0",
+      "headings": [
+        "비슈케크",
+        "알라아르차: 수도 옆의 산악 자연"
+      ]
+    },
+    "ala-archa-summit-watercolor": {
+      "state": "guide",
+      "placement": "bishkek:10:detail",
+      "headings": [
+        "비슈케크",
+        "알라아르차: 수도 옆의 산악 자연"
       ]
     },
     "cholponata-petroglyph-field-watercolor": {
@@ -220,9 +283,25 @@
         "암각화의 시간층"
       ]
     },
+    "cholponata-petroglyph-detail-pencil": {
+      "state": "guide",
+      "placement": "cholponata:2:detail",
+      "headings": [
+        "촐폰아타",
+        "암각화의 시간층"
+      ]
+    },
     "rukh-ordo-garden-pencil": {
       "state": "guide",
       "placement": "cholponata:9:0",
+      "headings": [
+        "촐폰아타",
+        "루흐 오르도 문화센터의 상징"
+      ]
+    },
+    "rukh-ordo-lakeside-watercolor": {
+      "state": "guide",
+      "placement": "cholponata:9:detail",
       "headings": [
         "촐폰아타",
         "루흐 오르도 문화센터의 상징"
@@ -252,13 +331,6 @@
         "사마르칸트 Samarkand청색 타일의 도시"
       ]
     },
-    "hotel-pool-garden-watercolor": {
-      "state": "guide",
-      "placement": "travel:lodging:view",
-      "headings": [
-        "숙소에서 본 풍경"
-      ]
-    },
     "suusamyr-honey-pencil": {
       "state": "fx",
       "placement": "shopping:honey:yellow",
@@ -278,7 +350,7 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 96,
+  "decodedAssetUrls": 114,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
@@ -300,9 +372,15 @@
   "offlineReflectionEdits": true,
   "offlineNewMuseumPhotos": true,
   "offlineNewSitesAndHotel": true,
-  "cacheUpgradeFixture": "v10 cache name/current app → v11; old cache removed",
+  "offlineAllGuideIllustrations": true,
+  "offlineSamarkandHotel": true,
+  "offlineArrivalDinner": true,
+  "cacheUpgradeFixture": "v12 cache name/current app → v13; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
+    "bukhara-poi-kalyan-watercolor-375.png",
+    "tashkent-minor-portrait-watercolor-375.png",
+    "cholponata-petroglyph-detail-pencil-375.png",
     "economy-375.png",
     "education-375.png",
     "economy-390.png",

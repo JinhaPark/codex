@@ -19,7 +19,11 @@ test('published illustration variants are complete WebP files with the recorded 
       assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
       assert.equal(bytes.readUInt32LE(4) + 8, bytes.length, 'Complete RIFF payload');
       assert.ok(variant.width <= art.sourceWidth, 'Do not enlarge the source photograph');
-      assert.ok(Math.abs(variant.width / variant.height - art.sourceWidth / art.sourceHeight) < 0.002);
+      assert.ok(variant.height <= art.sourceHeight, 'Do not enlarge either source dimension');
+      assert.ok(variant.width <= (art.editInputWidth || art.sourceWidth) && variant.height <= (art.editInputHeight || art.sourceHeight), 'Do not enlarge an existing edit target');
+      const actualRatio = (art.generatedWidth || art.width) / (art.generatedHeight || art.height);
+      assert.ok(Math.abs(variant.height - Math.round(variant.width / actualRatio)) <= (art.generatedWidth ? 0 : 1), 'Preserve decoded artwork ratio with pixel rounding');
+      assert.ok(Math.abs((actualRatio / (art.sourceWidth / art.sourceHeight)) - 1) < 0.003, 'Keep the original framing within generator canvas rounding');
       // Inspect actual WebP chunks rather than arbitrary compressed pixel bytes.
       for (let offset = 12; offset + 8 <= bytes.length;) {
         const chunk = bytes.toString('ascii', offset, offset + 4);
@@ -79,6 +83,13 @@ test('destination audit covers the itinerary and only links published, identifie
   assert.equal(gurEmir.id, 'samarkand-gur-emir-watercolor', 'Correct the previously mistaken Bibi-Khanym identification');
   assert.ok(coverage.find(row => row.place === '구르에미르 영묘').imageIds.includes(gurEmir.id));
   assert.equal(coverage.find(row => row.place === '비비하눔 모스크').classification, '누락');
+  const minorExterior = artwork.find(art => art.original === 'IMG_9014.jpeg');
+  assert.equal(minorExterior.id, 'tashkent-minor-portrait-watercolor', 'Do not misidentify the white Minor facade as Bibi-Khanym');
+  assert.ok(coverage.find(row => row.place === '타슈켄트 미노르 모스크').imageIds.includes(minorExterior.id));
+  const arrivalDinner = artwork.find(art => art.id === 'travel-steak-table-pencil');
+  assert.equal(arrivalDinner.placement, 'day:4:dinner');
+  assert.equal(itinerary.days[4].date, '2026-10-16');
+  assert.match(itinerary.days[4].dinnerKo.title, /SB bar/);
   for (const id of ids) assert.ok(coverage.some(row => row.imageIds.includes(id)), 'Account for ' + id);
 });
 

@@ -161,3 +161,37 @@ IMG_8908 기존1점 교체: samarkand-bibi-khanym-watercolor → samarkand-gur-e
 | samarkand-gur-emir-watercolor-1086.webp | 1086×1448 | 241,080 | 74 |
 
 모든 새 파생본250KB 이하, 표준800px본231,904B. 원본·실제 수정본 비확대, 종횡비 유지, 메타데이터 제거. 원본JPEG와 생성PNG는 커밋하지 않는다. 제거로 드러난 단순한 면은 편집 처리이며 역사적 복원 증거로 사용하지 않는다. 장소·64주름 출처는 destination-images.md 최신 절을 따른다.
+
+
+## 추가 사진10장: 새9점·포이칼랸1점 교체
+
+총43점114파일19,821,900B. 원본·입력 크기와 실제 변환 크기, 배치·캡션·alt·세부 지시는 photo-batch-20261018-late.md 및 manifest에 기록한다. small 원본370×800의4장은 확대 없이 각1파일만 게시한다. 포이칼랸은 원본이1334×750의인터넷캡처에서1536×1152의IMG_8800으로 바뀌고, 변환본1448×1086 및 게시1200×900의4:3이 된다. 실제 그림 비율 변경에 맞춰 width/height·srcset을 갱신했다.
+
+| ID · 원본 | 배치 · 캡션 | 입력 → 변환 | 파일 · 픽셀 · 바이트 · q |
+|---|---|---|---|
+| tashkent-amir-temur-watercolor · IMG_8939.jpeg | `tashkent:8:0` · 타슈켄트 아미르 티무르 광장 — 기마상과 호텔 우즈베키스탄 | 1536×1152 → 1448×1086 | tashkent-amir-temur-watercolor-480.webp · 480×360 · 76,462B · q88<br>tashkent-amir-temur-watercolor-800.webp · 800×600 · 201,176B · q88<br>tashkent-amir-temur-watercolor-1200.webp · 1200×900 · 241,270B · q76 |
+| tashkent-independence-fountains-watercolor · IMG_8938.jpeg | `tashkent:9:0` · 타슈켄트 독립광장 — 분수 너머 흰색 행정건물 | 1536×1152 → 1448×1086 | tashkent-independence-fountains-watercolor-480.webp · 480×360 · 74,686B · q88<br>tashkent-independence-fountains-watercolor-800.webp · 800×600 · 195,290B · q88<br>tashkent-independence-fountains-watercolor-1200.webp · 1200×900 · 232,884B · q76 |
+| bukhara-poi-kalyan-watercolor · IMG_8800.jpeg | `bukhara:7:1` · 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 | 1536×1152 → 1448×1086 | bukhara-poi-kalyan-watercolor-480.webp · 480×360 · 45,506B · q88<br>bukhara-poi-kalyan-watercolor-800.webp · 800×600 · 118,266B · q88<br>bukhara-poi-kalyan-watercolor-1200.webp · 1200×900 · 229,986B · q88 |
+| tashkent-minor-portrait-watercolor · IMG_9014.jpeg | `tashkent:10:detail` · 타슈켄트 미노르 모스크 — 흰색 정면과 꽃밭 | 370×800 → 853×1844 | tashkent-minor-portrait-watercolor-370.webp · 370×800 · 125,014B · q88 |
+| rukh-ordo-lakeside-watercolor · IMG_8979.jpeg | `cholponata:9:detail` · 촐폰아타 루흐 오르도 — 호숫가 아치와 조각 정원 | 1536×1152 → 1448×1086 | rukh-ordo-lakeside-watercolor-480.webp · 480×360 · 54,562B · q88<br>rukh-ordo-lakeside-watercolor-800.webp · 800×600 · 138,656B · q88<br>rukh-ordo-lakeside-watercolor-1200.webp · 1200×900 · 234,490B · q86 |
+| ala-archa-valley-watercolor · IMG_9019.jpeg | `bishkek:10:0` · 알라아르차 국립공원 — 숲 너머의 계곡과 설산 | 1536×1152 → 1448×1086 | ala-archa-valley-watercolor-480.webp · 480×360 · 79,722B · q88<br>ala-archa-valley-watercolor-800.webp · 800×600 · 218,558B · q88<br>ala-archa-valley-watercolor-1200.webp · 1200×900 · 252,638B · q72 |
+| hazrati-imam-portrait-watercolor · IMG_9013.jpeg | `tashkent:7:detail` · 타슈켄트 하즈라티 이맘 단지 — 타일 아치 입구 | 370×800 → 853×1844 | hazrati-imam-portrait-watercolor-370.webp · 370×800 · 133,238B · q88 |
+| cholponata-petroglyph-detail-pencil · IMG_9057.jpeg | `cholponata:2:detail` · 촐폰아타 암각화 — 활과 뿔 달린 동물의 새김선 | 370×800 → 853×1844 | cholponata-petroglyph-detail-pencil-370.webp · 370×800 · 149,964B · q88 |
+| tashkent-broadway-watercolor · IMG_9059.jpeg | `tashkent:11:detail` · 타슈켄트 브로드웨이 거리 — 나무와 샹들리에 장식 | 370×800 → 853×1844 | tashkent-broadway-watercolor-370.webp · 370×800 · 152,274B · q88 |
+| ala-archa-summit-watercolor · IMG_9064.jpeg | `bishkek:10:detail` · 알라아르차 케이블카 상부에서 본 설산 | 800×370 → 1846×852 | ala-archa-summit-watercolor-480.webp · 480×222 · 29,706B · q88<br>ala-archa-summit-watercolor-800.webp · 800×369 · 78,628B · q88 |
+
+표준본은 새/교체 모두250KB 이하. 계곡 최대1200px본252,638B는 작은 가지·바위 세부 손실을 줄이려고 q72를 유지한 예외이고, 표준800px본218,558B다. 파노라마 입력과 실제 생성 캔버스의 미세 비율 차이는 그대로 두고 매 변형의 실제 계산 높이·양축 비확대·픽셀 반올림을 검사한다. EXIF/GPS/XMP/ICC를 제거했다. 원본JPEG/생성PNG는 커밋하지 않는다. 호텔 전경은 재생성 없이 캡션과 배치만 day:2:hotel로 바꿨다.
+
+
+## 후속4점 인물·군중·손 제거: 최종 규격
+
+43점114WebP 유지, 최종19,860,388B. 기존4점의8파일만 교체하고 caption은 유지, 인물 설명 alt는 관찰 가능한 건축·광장 대상으로 갱신했다. 기존 승인작을 편집 입력으로 사용했으며 편집 입력의 폭·높이도 넘지 않게 제한했다.
+
+| ID | 편집 입력 → 수정본 | 배치 | 파일 · 픽셀 · 바이트 · q |
+|---|---|---|---|
+| tashkent-minor-portrait-watercolor | 370×800 → 853×1844 | `tashkent:10:detail` | tashkent-minor-portrait-watercolor-370.webp · 370×800 · 139,086B · q88 |
+| hazrati-imam-portrait-watercolor | 370×800 → 853×1844 | `tashkent:7:detail` | hazrati-imam-portrait-watercolor-370.webp · 370×800 · 134,368B · q88 |
+| tashkent-amir-temur-watercolor | 1200×900 → 1448×1086 | `tashkent:8:0` | tashkent-amir-temur-watercolor-480.webp · 480×360 · 73,644B · q88<br>tashkent-amir-temur-watercolor-800.webp · 800×600 · 185,012B · q88<br>tashkent-amir-temur-watercolor-1200.webp · 1200×900 · 249,014B · q80 |
+| travel-steak-table-pencil | 1200×900 → 1448×1086 | `day:4:dinner` | travel-steak-table-pencil-480.webp · 480×360 · 65,638B · q88<br>travel-steak-table-pencil-800.webp · 800×600 · 179,710B · q88<br>travel-steak-table-pencil-1200.webp · 1200×900 · 236,952B · q78 |
+
+이번4점의 표준본·최대본 모두250KB 이하. 메타데이터 제거·실제 디코딩·입력과 편집 대상 양 축 비확대·실제 수정본 비율의 픽셀 반올림 검증을 유지했다. 원본 및 수정PNG는 커밋하지 않는다. 전체 캡션에 제작 문구를 붙이지 않았다.
