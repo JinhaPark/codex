@@ -54,3 +54,7 @@
 각 figcaption이 manifest.caption과 정확히 일치하고 제작 문구가 없음을 검사했다. 실제 접근 탭·일차·펼침 제목을 browser.json의 illustrationLocations에 기록했다.
 여행지 대응JSON에서 참조하는 모든 ID가 실제 화면에 도달함도 검사했다. 기존 준비물 저장·지도40링크·탭·환율fixture·오프라인 방문 콘텐츠·캐시 격리 회귀 통과.
 실제 iPhone Safari는 미검증이며, 위 로컬 Chromium 결과로 대체하지 않는다. 이번 브랜치는 미병합·미배포다.
+
+## 동일 PR 추가 회귀
+
+2026-10-18T16:09:01.243Z, Chromium153.0.8010.0, 로컬 JS index-DC-zKZPm.js / CSS index-DhzJzpNS.css에서 재통과했다. 기존 전체375·390·430px 검증에 공통 figcaption small 부재와 세로 사진 높이가812px 뷰포트를 넘지 않는 조건을 추가했다. 테스트13/13, build, Pillow63개 실제 디코딩·규격·용량·메타데이터·비중복 검사도 통과했다. alt 문법 보완과 인천공항 국가 정정만 추가되었고 기존 사진 요청 번호는 유지한다. 실제 iPhone Safari·현장 네트워크·라이브 환율·이번 PR 배포는 미검증이다.

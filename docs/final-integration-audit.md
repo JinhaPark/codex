@@ -166,3 +166,7 @@
 후속 검증: `npm test` 10/10, `npm run build` 통과. Chromium 153에서 375·390·430px 전체 회귀를 다시 실행해 통과했다(`browser.json` 2026-10-18T15:42:53.889Z). 기존 23점·63개 WebP, 지도40개, 경제표12수치, 준비물·음성 fallback·환율 fixture·오프라인 확인에 더해, v5→v6 통제 업데이트에서 타 사이트 캐시 내용이 보존되는 것을 실제 브라우저에서 확인했다. 375px 경제·교육 스크린샷도 육안 확인했다. JS/CSS 번들명은 기존 작업 브랜치 빌드와 동일하며 변경된 배포 자산은 `sw.js`다.
 
 실제 iPhone Safari 및 병합 후 새 배포 검증, 과거 배포 번들 전체의 마이그레이션, 보류된 경제·교육 통계는 여전히 미완료다. 병합과 배포는 실행하지 않는다. 후속 커밋의 PR CI 결과는 GitHub Actions에서 별도로 확인한다.
+
+## K. 관광지 이미지 후속 PR
+
+이전 절의 PR #1 미병합 기록은 당시 관측이다. 재조회한 main은 cab4dabc8dda97a182d0571be05e329e5f571dc0이고 해당 SHA의 Pages 배포는 성공했다. 관광지30곳의 [현황표·사진 요청 번호·인계](audit/destination-images.md)는 [PR #2](https://github.com/JinhaPark/codex/pull/2)의 audit/destination-images-20261018 브랜치에 있다. 같은 PR의 기존 구현을 보존하며 기존 업로드 추가 대조와 alt·검증을 보강했다. 새 사진·장소 확인 대기이며 main 병합·배포는 하지 않는다.

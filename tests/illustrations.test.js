@@ -48,10 +48,15 @@ test('each subject has one editorial placement, Korean caption and descriptive K
   assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('garden-eaves-watercolor-')), 'Remove its published assets');
 });
 
-test('shared renderer emits only the manifest caption', () => {
-  const renderer = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8');
-  assert.ok(renderer.includes('<figcaption>${escape(art.caption)}</figcaption>'));
-  assert.doesNotMatch(renderer, /사진을 바탕|사용자 제공|AI로? 생성|재해석/);
+test('shared renderer emits only the manifest caption', async () => {
+  const source = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8')
+    .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`);
+  const { renderIllustration } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+  for (const art of artwork) {
+    const html = renderIllustration(art.placement);
+    assert.match(html, /<figcaption>[^<]+<\/figcaption>/);
+    assert.doesNotMatch(html.match(/<figcaption>(.*?)<\/figcaption>/s)[1], /사진을?\s*바탕|사용자\s*제공|AI로?\s*생성|재해석|변환한/);
+  }
 });
 
 
@@ -71,4 +76,15 @@ test('destination audit covers the itinerary and only links published, identifie
     if (row.classification === '누락') assert.deepEqual(row.imageIds, [], row.place);
   }
   for (const id of ids) assert.ok(coverage.some(row => row.imageIds.includes(id)), 'Account for ' + id);
+});
+
+
+test('summary-only tourist visits and unresolved places remain explicit', () => {
+  const rows = JSON.parse(fs.readFileSync(new URL('../docs/audit/destination-images.json', import.meta.url)));
+  for (const place of ['부하라 돔형 바자르', '브로드웨이 거리', '베르메트 야외 온천']) {
+    assert.equal(rows.filter(r => r.place === place).length, 1, place);
+  }
+  for (const id of ['mountain-orchards-watercolor','uzbek-tilework-pencil','arabic-manuscript-pencil']) {
+    assert.ok(!rows.some(r => r.classification === '확보' && r.imageIds.includes(id)));
+  }
 });
