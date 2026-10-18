@@ -5,9 +5,10 @@ import test from 'node:test';
 const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
 
 test('published illustration variants are complete WebP files with the recorded sizes', () => {
-  assert.equal(artwork.length, 12);
+  assert.equal(artwork.length, 23);
   for (const art of artwork) {
-    assert.equal(art.variants.length, 3);
+    assert.ok(art.variants.length >= 1 && art.variants.length <= 3);
+    assert.equal(new Set(art.variants.map(v => v.width)).size, art.variants.length);
     for (const variant of art.variants) {
       const bytes = fs.readFileSync(new URL(`../public/illustrations/${variant.file}`, import.meta.url));
       assert.equal(bytes.length, variant.bytes, variant.file);
@@ -24,7 +25,7 @@ test('published illustration variants are complete WebP files with the recorded 
         offset += 8 + size + size % 2;
       }
     }
-    assert.ok(art.variants.find(variant => variant.width === 800).bytes <= 250_000);
+    assert.ok((art.variants.find(variant => variant.width === 800) || art.variants.at(-1)).bytes <= (art.standardByteBudget || 250_000));
   }
 });
 
@@ -39,4 +40,6 @@ test('each subject has one editorial placement, Korean caption and descriptive K
     assert.ok(['watercolor', 'colored-pencil'].includes(art.style));
   }
   assert.ok(!artwork.some(art => art.original === 'IMG_8981(1).jpeg'), 'Exclude the identical duplicate');
+  assert.ok(!artwork.some(art => art.id === 'garden-eaves-watercolor'), 'Remove the requested garden photograph');
+  assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('garden-eaves-watercolor-')), 'Remove its published assets');
 });

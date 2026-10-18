@@ -4,7 +4,7 @@
     "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
     "style": "watercolor",
     "placement": "geography:1:0",
-    "caption": "설산 아래 펼쳐진 가을 농경지",
+    "caption": "설산 앞 농경지와 전신주가 이어지는 산간 풍경",
     "alt": "눈 덮인 산봉우리 아래 가을빛 농경지와 전신주가 이어지는 풍경을 그린 수채화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -39,8 +39,8 @@
     "original": "IMG_8706.jpeg",
     "style": "watercolor",
     "placement": "bukhara:7:1",
-    "caption": "돔과 미나레트가 어우러진 부하라",
-    "alt": "부하라 포이칼랸 건축군의 청록색 돔과 칼랸 미나레트, 중정과 주변 시가지를 내려다본 수채화",
+    "caption": "부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크",
+    "alt": "부하라 포이칼랸의 미리아랍 마드라사 청록색 돔과 칼랸 미나레트·모스크, 중정을 내려다본 수채화",
     "sourceWidth": 1334,
     "sourceHeight": 750,
     "width": 1200,
@@ -74,8 +74,8 @@
     "original": "IMG_8995.jpeg",
     "style": "watercolor",
     "placement": "day:6:tip",
-    "caption": "노랗게 물든 가로수길",
-    "alt": "건물 옆 벽돌 보행로를 따라 흰 줄기의 가로수가 노랗게 물든 풍경을 그린 수채화",
+    "caption": "Karven Four Seasons 리조트의 자작나무길",
+    "alt": "Karven Four Seasons 리조트 건물 옆 보행로에 자작나무가 노랗게 물든 풍경을 그린 수채화",
     "sourceWidth": 1152,
     "sourceHeight": 1536,
     "width": 1086,
@@ -102,50 +102,16 @@
         "quality": 72,
         "file": "autumn-birch-walk-watercolor-1086.webp"
       }
-    ]
-  },
-  {
-    "id": "garden-eaves-watercolor",
-    "original": "IMG_09063467-BC85-4186-9B48-68F1C3066FCA.jpeg",
-    "style": "watercolor",
-    "placement": "day:5:places",
-    "caption": "처마 아래로 스며드는 가을빛",
-    "alt": "무늬가 새겨진 처마와 새·늑대 벽화, 노란 나무와 잔디 정원을 그린 수채화",
-    "sourceWidth": 1080,
-    "sourceHeight": 1440,
-    "width": 1080,
-    "height": 1440,
-    "variants": [
-      {
-        "width": 480,
-        "height": 640,
-        "bytes": 105084,
-        "quality": 84,
-        "file": "garden-eaves-watercolor-480.webp"
-      },
-      {
-        "width": 800,
-        "height": 1067,
-        "bytes": 234254,
-        "quality": 82,
-        "file": "garden-eaves-watercolor-800.webp"
-      },
-      {
-        "width": 1080,
-        "height": 1440,
-        "bytes": 257316,
-        "quality": 72,
-        "file": "garden-eaves-watercolor-1080.webp"
-      }
-    ]
+    ],
+    "captionProvenance": "사용자가 제공한 숙소명과 수종"
   },
   {
     "id": "rukh-ordo-garden-pencil",
     "original": "IMG_8981.jpeg",
     "style": "colored-pencil",
     "placement": "cholponata:9:0",
-    "caption": "산을 배경으로 조각이 놓인 문화공간",
-    "alt": "산과 키 큰 나무를 배경으로 종이 걸린 정자와 여러 조각, 종교 건물이 놓인 정원을 그린 색연필화",
+    "caption": "촐폰아타 루흐 오르도 문화센터의 조각 정원",
+    "alt": "촐폰아타 루흐 오르도 문화센터에서 산과 키 큰 나무, 종이 걸린 정자와 종교 건물, 조각을 함께 그린 색연필화",
     "sourceWidth": 1152,
     "sourceHeight": 1536,
     "width": 1086,
@@ -214,7 +180,7 @@
     "original": "IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg",
     "style": "colored-pencil",
     "placement": "uzbekistan:2:0",
-    "caption": "펼쳐진 필사본에 남은 문자",
+    "caption": "아랍 문자 필사본 — 검정·붉은 필기와 제본",
     "alt": "전시대 위에 펼쳐진 필사본의 누런 종이와 검정·붉은 아랍 문자 필기를 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -249,8 +215,8 @@
     "original": "IMG_8943.jpeg",
     "style": "colored-pencil",
     "placement": "day:4:tip",
-    "caption": "버스 창밖으로 본 거리 풍경",
-    "alt": "가로수가 늘어선 도로에서 크림색 자동차를 버스 창문 너머로 내려다본 색연필화",
+    "caption": "타슈켄트 거리 — 모스크비치(Moskvich) 세단",
+    "alt": "타슈켄트의 가로수길에서 크림색 모스크비치 세단을 버스 창문 너머로 내려다본 색연필화",
     "sourceWidth": 1152,
     "sourceHeight": 1536,
     "width": 1086,
@@ -277,15 +243,16 @@
         "quality": 72,
         "file": "street-classic-car-pencil-1086.webp"
       }
-    ]
+    ],
+    "captionProvenance": "사용자가 제공한 촬영 도시 및 원본의 Москвич 배지; 세부 모델·연식 미확정"
   },
   {
     "id": "travel-steak-table-pencil",
     "original": "IMG_8951.jpeg",
     "style": "colored-pencil",
-    "placement": "day:5:tip",
-    "caption": "여행 중 마주한 한 끼",
-    "alt": "나무 도마 위 뼈가 붙은 구운 고기와 소스, 감자와 샐러드가 놓인 식탁을 그린 색연필화",
+    "placement": "day:4:places",
+    "caption": "비슈케크 SB bar — 토마호크 스테이크, 1인 한화 약 3만 원",
+    "alt": "비슈케크 SB bar에서 먹은 토마호크 스테이크와 소스, 샐러드가 놓인 식탁을 그린 색연필화",
     "sourceWidth": 1536,
     "sourceHeight": 1152,
     "width": 1200,
@@ -312,7 +279,8 @@
         "quality": 78,
         "file": "travel-steak-table-pencil-1200.webp"
       }
-    ]
+    ],
+    "captionProvenance": "사용자가 제공한 식당·메뉴·당시 원화 환산 가격"
   },
   {
     "id": "travel-meal-tray-pencil",
@@ -354,7 +322,7 @@
     "original": "IMG_3ED8DFE7-C3BB-4C0F-B4C0-A06642AA85A2.jpeg",
     "style": "colored-pencil",
     "placement": "shopping:honey:white",
-    "caption": "여행길에 구입한 흰색 꿀 용기",
+    "caption": "이식쿨→비슈케크 이동 중 구입한 흰색 용기 꿀 — 500솜",
     "alt": "버스 좌석을 배경으로 손에 든 흰색 뚜껑의 무상표 꿀 용기를 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -389,7 +357,7 @@
     "original": "IMG_E6498561-22A6-472B-85A7-DFBF57A45744.jpeg",
     "style": "colored-pencil",
     "placement": "shopping:honey:yellow",
-    "caption": "수우사미르 야생화꿀",
+    "caption": "수우사미르 산악 야생화꿀 180g — 구입가 400솜",
     "alt": "초록색 키릴 문자 라벨과 노란 뚜껑이 있는 호박색 꿀 제품을 손에 든 모습을 그린 색연필화",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
@@ -416,6 +384,390 @@
         "bytes": 274770,
         "quality": 72,
         "file": "suusamyr-honey-pencil-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-ark-walls-pencil",
+    "original": "IMG_8790(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:10:0",
+    "caption": "부하라 아르크 성채 — 벽돌 성벽과 돌출 보루",
+    "alt": "햇빛을 받은 아르크 성채의 둥근 벽돌 성벽과 돌출된 탑, 나무와 광장을 그린 색연필화",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 69466,
+        "quality": 84,
+        "file": "bukhara-ark-walls-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 203148,
+        "quality": 84,
+        "file": "bukhara-ark-walls-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 270374,
+        "quality": 68,
+        "file": "bukhara-ark-walls-pencil-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-kalyan-minaret-pencil",
+    "original": "IMG_8818.jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:4:1",
+    "caption": "부하라 칼랸 미나레트 — 벽돌로 만든 기하학 장식 띠",
+    "alt": "다양한 벽돌 무늬의 칼랸 미나레트와 오른쪽 타일 입구, 광장의 관람객을 그린 색연필화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 92946,
+        "quality": 84,
+        "file": "bukhara-kalyan-minaret-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 238902,
+        "quality": 82,
+        "file": "bukhara-kalyan-minaret-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 261254,
+        "quality": 68,
+        "file": "bukhara-kalyan-minaret-pencil-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-market-sunset-watercolor",
+    "original": "IMG_8844(1).jpeg",
+    "style": "watercolor",
+    "placement": "day:1:places",
+    "caption": "부하라 돔 시장 — 일몰 무렵의 광장",
+    "alt": "돔형 시장과 멀리 보이는 미나레트 뒤로 노을이 비치고 사람들이 광장을 걷는 모습을 그린 수채화",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 44532,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 112358,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 213502,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-spice-stall-pencil",
+    "original": "IMG_8852.jpeg",
+    "style": "colored-pencil",
+    "placement": "uzbekistan:1:1",
+    "caption": "부하라 향신료 가게 — 진열된 향신료와 차 시음",
+    "alt": "색색의 향신료 자루가 놓인 나무 진열대에서 찻주전자를 든 사람이 손님에게 차를 건네는 색연필화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 113988,
+        "quality": 84,
+        "file": "bukhara-spice-stall-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 241446,
+        "quality": 80,
+        "file": "bukhara-spice-stall-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 278668,
+        "quality": 68,
+        "file": "bukhara-spice-stall-pencil-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "lyabi-hauz-evening-watercolor",
+    "original": "IMG_8853(1).jpeg",
+    "style": "watercolor",
+    "placement": "day:2:places",
+    "caption": "부하라 라비하우즈 — 연못가 식탁과 저녁 분수",
+    "alt": "라비하우즈 연못의 분수와 맞은편 건물, 앞쪽 나무 의자와 식탁, 방문객을 그린 수채화",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 60398,
+        "quality": 84,
+        "file": "lyabi-hauz-evening-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 154978,
+        "quality": 84,
+        "file": "lyabi-hauz-evening-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 239938,
+        "quality": 78,
+        "file": "lyabi-hauz-evening-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "lyabi-hauz-portal-watercolor",
+    "original": "IMG_8854.jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:8:0",
+    "caption": "부하라 라비하우즈 연못 — 분수와 아치형 입구",
+    "alt": "부하라 라비하우즈 연못의 분수와 맞은편 타일 장식 아치형 입구, 연못가 식탁을 그린 수채화",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 62430,
+        "quality": 84,
+        "file": "lyabi-hauz-portal-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 162714,
+        "quality": 84,
+        "file": "lyabi-hauz-portal-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 230736,
+        "quality": 76,
+        "file": "lyabi-hauz-portal-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "registan-gilded-ceiling-pencil",
+    "original": "IMG_8931(2).jpeg",
+    "style": "colored-pencil",
+    "placement": "comparative:0:6",
+    "caption": "레기스탄의 청색·금빛 천장 장식",
+    "alt": "중앙의 둥근 청색 천장에 금빛 식물 문양과 별 모양 장식이 겹겹이 펼쳐진 모습을 그린 색연필화",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 169010,
+        "quality": 84,
+        "file": "registan-gilded-ceiling-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 316698,
+        "quality": 68,
+        "file": "registan-gilded-ceiling-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 484398,
+        "quality": 68,
+        "file": "registan-gilded-ceiling-pencil-1086.webp"
+      }
+    ],
+    "standardByteBudget": 350000,
+    "compressionNote": "복잡한 천장 문양을 보존하기 위해 800px 파일 약 317KB 허용"
+  },
+  {
+    "id": "registan-travel-portrait-watercolor",
+    "original": "IMG_9009(1).jpeg",
+    "style": "watercolor",
+    "placement": "samarkand:9:0",
+    "caption": "레기스탄 광장 — 세 마드라사를 배경으로",
+    "alt": "레기스탄의 세 마드라사와 돔, 미나레트를 배경으로 베이지색 옷과 검은 가방의 여행자가 서 있는 수채화",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "width": 800,
+    "height": 370,
+    "variants": [
+      {
+        "width": 480,
+        "height": 222,
+        "bytes": 37978,
+        "quality": 84,
+        "file": "registan-travel-portrait-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 370,
+        "bytes": 101420,
+        "quality": 84,
+        "file": "registan-travel-portrait-watercolor-800.webp"
+      }
+    ]
+  },
+  {
+    "id": "samarkand-turquoise-dome-pencil",
+    "original": "IMG_9012.jpeg",
+    "style": "colored-pencil",
+    "placement": "architecture:Samarkand:intro",
+    "caption": "레기스탄 — 나무 사이로 보이는 청록색 돔",
+    "alt": "타일로 장식한 첨두 아치 위 청록색 돔과 앞쪽 나무, 목재 지지대, 돌바닥과 화분을 그린 색연필화",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 131634,
+        "quality": 84,
+        "file": "samarkand-turquoise-dome-pencil-370.webp"
+      }
+    ]
+  },
+  {
+    "id": "cholponata-petroglyph-field-watercolor",
+    "original": "IMG_9011(1).jpeg",
+    "style": "watercolor",
+    "placement": "cholponata:2:0",
+    "caption": "촐폰아타 암각화 야외박물관 — 바위 들판과 답사로",
+    "alt": "촐폰아타 암각화 야외박물관의 바위 들판과 마른 풀, 답사로의 방문객, 뒤편 산과 가을나무를 그린 수채화",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "width": 800,
+    "height": 370,
+    "variants": [
+      {
+        "width": 480,
+        "height": 222,
+        "bytes": 39858,
+        "quality": 84,
+        "file": "cholponata-petroglyph-field-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 370,
+        "bytes": 105590,
+        "quality": 84,
+        "file": "cholponata-petroglyph-field-watercolor-800.webp"
+      }
+    ]
+  },
+  {
+    "id": "cholponata-balbal-pencil",
+    "original": "IMG_9007(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "day:5:places",
+    "caption": "촐폰아타 암각화 야외박물관의 발발(Balbal) 인물 석상",
+    "alt": "촐폰아타 암각화 야외박물관에서 눈과 긴 코가 새겨진 발발 인물 석상, 바위 들판과 산을 그린 색연필화",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 124228,
+        "quality": 84,
+        "file": "cholponata-balbal-pencil-370.webp"
+      }
+    ],
+    "captionSources": [
+      "https://e-museum.kz/en/exhibit/68da7f7b36ce7968f-en/",
+      "https://commons.wikimedia.org/wiki/File:Petroglyph_Museum_of_Cholpon-Ata_02.jpg"
+    ]
+  },
+  {
+    "id": "issyk-kul-cruise-tian-shan-watercolor",
+    "original": "IMG_8980.jpeg",
+    "style": "watercolor",
+    "placement": "geography:2:0",
+    "caption": "이식쿨호 유람선에서 바라본 톈산산맥의 설산 능선",
+    "alt": "이식쿨호 유람선에서 본 푸른 호수와 수평선 너머 톈산산맥의 눈 덮인 능선, 오른쪽 호숫가를 그린 수채화",
+    "sourceWidth": 4032,
+    "sourceHeight": 3024,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 37134,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 103836,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 207794,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-1200.webp"
       }
     ]
   }
