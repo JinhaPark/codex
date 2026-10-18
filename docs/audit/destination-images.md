@@ -153,3 +153,7 @@ Pages Actions [39142365237](https://github.com/JinhaPark/codex/actions/runs/3914
 - 브랜치 `audit/destination-images-20261018`의 이 문서를 포함한 최신 커밋이 재개 지점이다. 정확한 SHA는 `git log -1` 또는 PR head로 확인한다.
 - 다음 작업은 요청 번호1–24 사진 입력, IMG_8932/IMG_8936 장소 확인, 미확인 기존 산간 풍경·필사본·아치의 촬영 장소 확인이다.
   사진이 없으면 변환만 대기한다. 앱이 닫힌 뒤 대화 전체가 계속 실행된다고 보장하지 않는다.
+
+구현·검증 커밋: `c6a26c1e260307ecf1f37ca70b532d630a2a0553`. 검토 PR: [#2](https://github.com/JinhaPark/codex/pull/2).
+이 구현 커밋의 GitHub PR 검증 [39143496472](https://github.com/JinhaPark/codex/actions/runs/39143496472)은 completed/success다.
+이후 문서 인계 커밋이 추가될 수 있으므로 재개 시 같은 PR의 최신 head를 기준으로 한다. main 병합·배포는 하지 않았다.
