@@ -1,0 +1,1015 @@
+{
+  "checkedDate": "2026-10-18",
+  "method": "One GET per unique HTTPS literal in recursively imported JS/JSON from src/main.js; 6 workers, 12-second timeout; dynamic map URLs excluded. Response body read capped at 200KB.",
+  "files": [
+    "src/bukhara-history.js",
+    "src/central-asia-economy.js",
+    "src/central-asia-education.js",
+    "src/central-asia-geography-climate.js",
+    "src/central-asia-history.js",
+    "src/central-asia-power-datacenters.js",
+    "src/education-data.js",
+    "src/history-almaty.js",
+    "src/history-bishkek.js",
+    "src/history-cholponata.js",
+    "src/history-samarkand.js",
+    "src/history-tashkent.js",
+    "src/illustrations.js",
+    "src/illustrations.json",
+    "src/islamic-architecture-comparative.js",
+    "src/itinerary.json",
+    "src/main.js",
+    "src/render-economy.js",
+    "src/render-education.js",
+    "src/render-guide.js",
+    "src/research-data.js",
+    "src/style.css",
+    "src/uzbekistan-architecture.js"
+  ],
+  "results": [
+    {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&source=2",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.343899+00:00",
+      "status": 200,
+      "finalUrl": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&source=2",
+      "contentType": "application/json;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.MKTP.CD?date=2024&format=json&source=2",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.346150+00:00",
+      "status": 200,
+      "finalUrl": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.MKTP.CD?date=2024&format=json&source=2",
+      "contentType": "application/json;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.PCAP.CD?date=2024&format=json&source=2",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.347165+00:00",
+      "status": 200,
+      "finalUrl": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.PCAP.CD?date=2024&format=json&source=2",
+      "contentType": "application/json;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/SE.ADT.LITR.ZS?format=json&per_page=1000",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.350050+00:00",
+      "status": 200,
+      "finalUrl": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/SE.ADT.LITR.ZS?format=json&per_page=1000",
+      "contentType": "application/json;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/SP.POP.TOTL?date=2024&format=json&source=2",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.353607+00:00",
+      "status": 200,
+      "finalUrl": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/SP.POP.TOTL?date=2024&format=json&source=2",
+      "contentType": "application/json;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://ar2024.telecom.kz/en/telecommunications-market-overview-for-2024.html",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:44.355647+00:00",
+      "status": 200,
+      "finalUrl": "https://ar2024.telecom.kz/en/telecommunications-market-overview-for-2024.html",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Integrated Annual Report Kazakhtelecom JSC / 2024"
+    },
+    {
+      "url": "https://ar2025.kegoc.kz/en/electricity-balance.html",
+      "files": [
+        "src/central-asia-power-datacenters.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:50.239101+00:00",
+      "status": null,
+      "state": "timeout-or-network-error",
+      "error": "<urlopen error timed out>",
+      "review": "직접 GET 시간초과지만 같은 날 웹 검색 도구에서 2025 보고서 실제 본문 열람 성공. 영구 단절 아님."
+    },
+    {
+      "url": "https://artelelectronics.com/en/about-company?hl=en-US",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:50.245299+00:00",
+      "status": 200,
+      "finalUrl": "https://artelelectronics.com/en/about-company?hl=en-US",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "About Artel Electronics — Home Appliance Manufacturer in Uzbekistan"
+    },
+    {
+      "url": "https://cognac.kg/",
+      "files": [
+        "src/main.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:50.260759+00:00",
+      "status": 200,
+      "finalUrl": "https://cognac.kg/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Главная - Cognac Kg"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Petroglyph_Museum_of_Cholpon-Ata_02.jpg",
+      "files": [
+        "src/illustrations.json"
+      ],
+      "checkedAt": "2026-10-18T14:50:50.262389+00:00",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Petroglyph_Museum_of_Cholpon-Ata_02.jpg",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "File:Petroglyph Museum of Cholpon-Ata 02.jpg - Wikimedia Commons"
+    },
+    {
+      "url": "https://documents1.worldbank.org/curated/en/099022824155511451/pdf/P173250-ad71e03d-6335-4530-b2fa-dc0dd0e51758.pdf",
+      "files": [
+        "src/central-asia-power-datacenters.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:50.263045+00:00",
+      "status": 200,
+      "finalUrl": "https://documents1.worldbank.org/curated/en/099022824155511451/pdf/P173250-ad71e03d-6335-4530-b2fa-dc0dd0e51758.pdf",
+      "contentType": "application/pdf;charset=utf-8",
+      "state": "ok"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41467-017-00336-7",
+      "files": [
+        "src/central-asia-geography-climate.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.746049+00:00",
+      "status": 200,
+      "finalUrl": "https://www.nature.com/articles/s41467-017-00336-7?error=cookies_not_supported&code=ab2b407f-db8b-431b-9e15-e34e7fa5a45a",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Genome re-sequencing reveals the history of apple and supports a two-stage model for fruit enlargement | Nature Communications"
+    },
+    {
+      "url": "https://e-history.kz/en/chronology/event/116",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.739765+00:00",
+      "status": 200,
+      "finalUrl": "https://e-history.kz/en/chronology/event/116",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "List (1411-1468) ► E-history.kz"
+    },
+    {
+      "url": "https://e-history.kz/en/history-of-kazakhstan/show/9607",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:54.972354+00:00",
+      "status": 200,
+      "finalUrl": "https://e-history.kz/en/history-of-kazakhstan/show/9607",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Collectivization in Kazakhstan: Historical aspects"
+    },
+    {
+      "url": "https://e-history.kz/ru/news/show/3933",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.740667+00:00",
+      "status": 200,
+      "finalUrl": "https://e-history.kz/ru/news/show/3933",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "70 лет быть главным"
+    },
+    {
+      "url": "https://e-museum.kz/en/exhibit/68da7f7b36ce7968f-en/",
+      "files": [
+        "src/illustrations.json"
+      ],
+      "checkedAt": "2026-10-18T14:50:57.138394+00:00",
+      "status": 200,
+      "finalUrl": "https://e-museum.kz/en/exhibit/68da7f7b36ce7968f-en/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Balbal Stone - e-museum.kz"
+    },
+    {
+      "url": "https://eabr.org/upload/iblock/2ea/EDB_2026_Power-sector-of-CA_Report_EN.pdf",
+      "files": [
+        "src/central-asia-power-datacenters.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:57.795213+00:00",
+      "status": 403,
+      "state": "access-blocked",
+      "error": "HTTP Error 403: Forbidden",
+      "review": "직접 GET403이나 같은 날 웹 검색 도구에서 117쪽 PDF 실제 본문 열람 성공. 접근경로 차이."
+    },
+    {
+      "url": "https://edu.gov.kg/posts/3232/",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:50:58.663345+00:00",
+      "status": 200,
+      "finalUrl": "https://edu.gov.kg/posts/3232/",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "2024-2025-ОКУУ ЖЫЛЫНА ЖОЖдорго КАБЫЛ АЛУУ ҮЧҮН ГРАНТТЫК ОРУНДАР 10 МИҢГЕ ЧЕЙИН КӨБӨЙТҮЛДҮ"
+    },
+    {
+      "url": "https://halykbank.kz/storage/app/media/Investoram/2026/HalykBank_AR_2025_merged.pdf",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:05.364683+00:00",
+      "status": 200,
+      "finalUrl": "https://halykbank.kz/storage/app/media/Investoram/2026/HalykBank_AR_2025_merged.pdf",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://hess.copernicus.org/articles/22/6279/2018/",
+      "files": [
+        "src/central-asia-geography-climate.js"
+      ],
+      "checkedAt": "2026-10-18T14:53:01.945500+00:00",
+      "status": 200,
+      "finalUrl": "https://hess.copernicus.org/articles/22/6279/2018/",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "HESS - New profiling and mooring records help to assess variability of Lake Issyk-Kul and reveal unknown features of its thermohaline structure"
+    },
+    {
+      "url": "https://ich.unesco.org/en/RL/shashmaqom-music-00089",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:54:08.538058+00:00",
+      "status": 200,
+      "finalUrl": "https://ich.unesco.org/en/RL/shashmaqom-music-00089",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Shashmaqom music - UNESCO Intangible Cultural Heritage"
+    },
+    {
+      "url": "https://ir.airastana.com/en/about-us/company-news/results-for-the-fourth-quarter-and-full-year-ended-31-december-2025",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:08.314187+00:00",
+      "status": 200,
+      "finalUrl": "https://ir.airastana.com/en/about-us/company-news/results-for-the-fourth-quarter-and-full-year-ended-31-december-2025",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Air Astana"
+    },
+    {
+      "url": "https://jinhapark.github.io/codex/",
+      "files": [
+        "deployed-site"
+      ],
+      "checkedAt": "2026-10-18T14:51:08.337223+00:00",
+      "status": 200,
+      "finalUrl": "https://jinhapark.github.io/codex/",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "중앙아시아 탄탄탄 | 2026 여행기",
+      "bundles": [
+        "/codex/assets/index-DdziztQz.js",
+        "/codex/assets/index-D6h_GDLF.css"
+      ],
+      "htmlSha256": "2dee33480f66ee510090509bebed0eb17a009d09da2d4e97322419231acfe2d3"
+    },
+    {
+      "url": "https://kaktus.media/doc/548694_skolko_nyjno_zarabatyvat_chtoby_jit_odnomy_v_bishkeke_v_2026_gody.html",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:08.339279+00:00",
+      "status": 200,
+      "finalUrl": "https://kaktus.media/doc/548694_skolko_nyjno_zarabatyvat_chtoby_jit_odnomy_v_bishkeke_v_2026_gody.html",
+      "contentType": "text/html;charset=utf-8",
+      "state": "ok",
+      "title": "Сколько нужно зарабатывать, чтобы жить одному в Бишкеке в 2026 году"
+    },
+    {
+      "url": "https://ksma.edu.kg/ru/faculties/pharmacy",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:09.142818+00:00",
+      "status": 200,
+      "finalUrl": "https://ksma.edu.kg/ru/faculties/pharmacy",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Фармация"
+    },
+    {
+      "url": "https://latest.currency-api.pages.dev/v1/currencies/krw.json",
+      "files": [
+        "src/main.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:14.268620+00:00",
+      "status": 200,
+      "finalUrl": "https://latest.currency-api.pages.dev/v1/currencies/krw.json",
+      "contentType": "application/json",
+      "state": "ok"
+    },
+    {
+      "url": "https://meetings.imf.org/-/media/Files/Publications/Selected-Issues-Papers/2025/English/SIPEA2025082.ashx",
+      "files": [
+        "src/education-data.js",
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:15.451141+00:00",
+      "status": 200,
+      "finalUrl": "https://meetings.imf.org/-/media/files/publications/selected-issues-papers/2025/english/sipea2025082.pdf",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://pop.kgma.kg/ru/divisions/offices-sectors/student-campus",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:15.456357+00:00",
+      "status": 502,
+      "state": "http-error",
+      "error": "HTTP Error 502: Bad Gateway",
+      "review": "502; 해당 공식 미러 검색 색인에서 요금표 확인했으나 현재 직접 페이지 불안정. 최신 요금 적용연도 미표시."
+    },
+    {
+      "url": "https://sammuseum.uz/museums/item/69-muzej-afrasiab",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:16.836433+00:00",
+      "status": 200,
+      "finalUrl": "https://sammuseum.uz/museums/item/69-muzej-afrasiab",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Музей Афрасиаб - Музеи Самарканда - Виртуальный тур 3D"
+    },
+    {
+      "url": "https://stat.gov.kg/media/publicationarchive/0a378f38-836c-4859-892a-6bef0f14133b.pdf",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:17.779283+00:00",
+      "status": 200,
+      "finalUrl": "https://stat.gov.kg/media/publicationarchive/0a378f38-836c-4859-892a-6bef0f14133b.pdf",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://stat.uz/img/news/olij-talim-lotin_p44563.pdf",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:18.947517+00:00",
+      "status": 200,
+      "finalUrl": "https://stat.uz/img/news/olij-talim-lotin_p44563.pdf",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://tilingsearch.mit.edu/HTML/data156/F22.html",
+      "files": [
+        "src/islamic-architecture-comparative.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:20.892139+00:00",
+      "status": 200,
+      "finalUrl": "https://tilingsearch.mit.edu/HTML/data156/F22.html",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "data156/F22"
+    },
+    {
+      "url": "https://uzautomotors.com/asaka",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:23.561786+00:00",
+      "status": 200,
+      "finalUrl": "https://uzautomotors.com/asaka",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "UZAUTO MOTORS - MDHdagi eng yirik avtomobil ishlab chiqaruvchi kompaniya!"
+    },
+    {
+      "url": "https://whc.unesco.org/document/153859",
+      "files": [
+        "src/bukhara-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:26.093006+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/document/153859",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1442/",
+      "files": [
+        "src/history-cholponata.js"
+      ],
+      "checkedAt": "2026-10-18T14:54:08.537026+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/1442/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1490/",
+      "files": [
+        "src/central-asia-geography-climate.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:26.181838+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/1490/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Western Tien-Shan - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/320/",
+      "files": [
+        "src/islamic-architecture-comparative.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:28.047035+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/320/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Works of Antoni Gaudí - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/602",
+      "files": [
+        "src/bukhara-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:28.074349+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/602",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Historic Centre of Bukhara - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/602/",
+      "files": [
+        "src/render-guide.js",
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:28.983549+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/602/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Historic Centre of Bukhara - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/603",
+      "files": [
+        "src/history-samarkand.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:32.639323+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/603",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Samarkand – Crossroad of Cultures - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/603/",
+      "files": [
+        "src/render-guide.js",
+        "src/islamic-architecture-comparative.js",
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:32.653492+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/list/603/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Samarkand – Crossroad of Cultures - UNESCO World Heritage Centre"
+    },
+    {
+      "url": "https://whc.unesco.org/en/urban-heritage-atlas/samarkand/",
+      "files": [
+        "src/history-samarkand.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:32.678806+00:00",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/urban-heritage-atlas/samarkand/",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "World Heritage Centre - Urban Heritage Atlas: Understanding attributes of historic cities and settlements| Samarkand - Crossroad of Cultures (Uzbekistan)"
+    },
+    {
+      "url": "https://wits.worldbank.org/CountryProfile/en/Country/KGZ/Year/2023/TradeFlow/EXPIMP/Partner/All/Product/50-63_TextCloth",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:32.722901+00:00",
+      "status": 200,
+      "finalUrl": "https://wits.worldbank.org/CountryProfile/en/Country/KGZ/Year/2023/TradeFlow/EXPIMP/Partner/All/Product/50-63_TextCloth",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Kyrgyz Republic Textiles and Clothing Exports, Imports, Tariffs by country & region 2023 | WITS Data"
+    },
+    {
+      "url": "https://www.auca.kg/en/financial_aid/",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:32.743854+00:00",
+      "status": 200,
+      "finalUrl": "https://www.auca.kg/en/financial_aid/",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "American University of Central Asia - AUCA - Financial Aid"
+    },
+    {
+      "url": "https://www.auca.kg/en/tuition_payment/",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:33.088696+00:00",
+      "status": 200,
+      "finalUrl": "https://www.auca.kg/en/tuition_payment/",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "American University of Central Asia - AUCA - Tuition Payment"
+    },
+    {
+      "url": "https://www.bishkek.gov.kg/en/history",
+      "files": [
+        "src/history-bishkek.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:40.439383+00:00",
+      "status": 200,
+      "finalUrl": "https://www.bishkek.gov.kg/en/history",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "History of the city | Bishkek City Hall"
+    },
+    {
+      "url": "https://www.britannica.com/place/Almaty-Kazakhstan",
+      "files": [
+        "src/history-almaty.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:40.553160+00:00",
+      "status": 200,
+      "finalUrl": "https://www.britannica.com/place/Almaty-Kazakhstan",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Almaty | City, Kazakhstan, Population, Map, & History | Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/place/Bishkek",
+      "files": [
+        "src/history-bishkek.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:40.554342+00:00",
+      "status": 200,
+      "finalUrl": "https://www.britannica.com/place/Bishkek",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Bishkek | Population, Map, Pronunciation & Facts | Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/place/Tashkent",
+      "files": [
+        "src/history-tashkent.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:40.697105+00:00",
+      "status": 200,
+      "finalUrl": "https://www.britannica.com/place/Tashkent",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "Tashkent | History, Map, Pronunciation & Facts | Britannica"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/urban-history/article/since-its-about-to-be-a-capital-managing-urban-growth-and-pasturage-in-early-soviet-bishkek/D07A799F11A5CEC1869DC3A93738FB65",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.741680+00:00",
+      "status": 200,
+      "finalUrl": "https://www.cambridge.org/core/journals/urban-history/article/since-its-about-to-be-a-capital-managing-urban-growth-and-pasturage-in-early-soviet-bishkek/D07A799F11A5CEC1869DC3A93738FB65",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "‘Since it’s about to be a capital’: managing urban growth and pasturage in early Soviet Bishkek | Urban History | Cambridge Core"
+    },
+    {
+      "url": "https://www.cpc.ru/EN/about/Pages/default.aspx",
+      "files": [
+        "src/central-asia-power-datacenters.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:41.296187+00:00",
+      "status": 200,
+      "finalUrl": "https://www.cpc.ru/EN/about/Pages/default.aspx",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "About"
+    },
+    {
+      "url": "https://www.demirbank.kg/ru/news/educationloan",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:46.470071+00:00",
+      "status": 200,
+      "finalUrl": "https://www.demirbank.kg/ru/news/educationloan",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Образовательный кредит от DemirBank — 0% без переплат!"
+    },
+    {
+      "url": "https://www.gov.kz/org/almaty/activities/27965",
+      "files": [
+        "src/history-almaty.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:46.548898+00:00",
+      "status": 200,
+      "finalUrl": "https://www.gov.kz/org/almaty/activities/27965",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "GOV.KZ - Единая платформа цифровых ресурсов государственных органов (ЕПЦР ГО)"
+    },
+    {
+      "url": "https://www.gov.kz/org/sci/press/news/details/999766?lang=ru",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:47.354322+00:00",
+      "status": 200,
+      "finalUrl": "https://www.gov.kz/org/sci/press/news/details/999766?lang=ru",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "GOV.KZ - Единая платформа цифровых ресурсов государственных органов (ЕПЦР ГО)"
+    },
+    {
+      "url": "https://www.imf.org/en/news/articles/2026/06/04/pr26185-kyrgyz-republic-imf-executive-board-concludes-2026-article-iv-consultation",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:47.358634+00:00",
+      "status": 200,
+      "finalUrl": "https://www.imf.org/en/news/articles/2026/06/04/pr26185-kyrgyz-republic-imf-executive-board-concludes-2026-article-iv-consultation",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "IMF Executive Board Concludes 2026 Article IV Consultation with Kyrgyz Republic"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/afrasiab-ii-wall-paintings-2/",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:49.456416+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iranicaonline.org/articles/afrasiab-ii-wall-paintings-2/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "AFRĀSIĀB ii. Wall Paintings - Encyclopaedia Iranica"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/bukhara-i/",
+      "files": [
+        "src/bukhara-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:49.558091+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iranicaonline.org/articles/bukhara-i/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "BUKHARA i. In Pre-Islamic Times - Encyclopaedia Iranica"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/bukhara-ii/",
+      "files": [
+        "src/bukhara-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:54.290292+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iranicaonline.org/articles/bukhara-ii/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "BUKHARA ii. From the Arab Invasions to the Mongols - Encyclopaedia Iranica"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/bukhara-iii/",
+      "files": [
+        "src/bukhara-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:54.829846+00:00",
+      "status": 200,
+      "finalUrl": "https://www.iranicaonline.org/articles/bukhara-iii/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "BUKHARA iii. After the Mongol Invasion - Encyclopaedia Iranica"
+    },
+    {
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002569032",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:57.274678+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002569032",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "아프라시압 高句麗 사절에 대한 새 논란 검토 - 高句麗 사신 사행(使行) 부정론에 대한 비판적 고찰(Ⅰ)"
+    },
+    {
+      "url": "https://www.knu.kg/ky/ru/archives/27192",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:57.354184+00:00",
+      "status": 200,
+      "finalUrl": "https://www.knu.kg/ky/ru/archives/27192",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Абитуриент — 2026 (Жайкы кабыл алуу — Летний прием) &#8212; КНУ имени Ж.Баласагына"
+    },
+    {
+      "url": "https://www.krsu.kg/obuchayushhimsya/platnye-obrazovatelnye-uslugi/",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:57.384547+00:00",
+      "status": 200,
+      "finalUrl": "https://www.krsu.kg/obuchayushhimsya/platnye-obrazovatelnye-uslugi/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "Платные образовательные услуги в КРСУ имени Б.Н. Ельцина"
+    },
+    {
+      "url": "https://www.kumtor.kg/en/2026-zhyldyn-13-martyndagy-maalymattyk-bildir%D2%AF%D2%AF/",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:51:57.407638+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kumtor.kg/en/2026-zhyldyn-13-martyndagy-maalymattyk-bildir%D2%AF%D2%AF/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "NUMBERS OVER RUMORS: KGC’S NET PROFIT IN 2025 EXCEEDED USD 706 MILLION | Kumtor Gold Company"
+    },
+    {
+      "url": "https://www.kumtor.kg/en/video-kumt%D3%A9rd%D2%AFn-otchetu-el-aralyk-auditor-ernst-young-tarabynan-tastyktaldy/",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:02.798808+00:00",
+      "status": 200,
+      "finalUrl": "https://www.kumtor.kg/en/video-kumt%D3%A9rd%D2%AFn-otchetu-el-aralyk-auditor-ernst-young-tarabynan-tastyktaldy/",
+      "contentType": "text/html; charset=UTF-8",
+      "state": "ok",
+      "title": "VIDEO REPORT — KUMTOR’S REPORTING HAS BEEN CONFIRMED BY ERNST &#038; YOUNG INTERNATIONAL AUDIT | Kumtor Gold Company"
+    },
+    {
+      "url": "https://www.metmuseum.org/es/essays/the-art-of-the-timurid-period-ca-1370-1507",
+      "files": [
+        "src/islamic-architecture-comparative.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:02.800672+00:00",
+      "status": 200,
+      "finalUrl": "https://www.metmuseum.org/es/essays/the-art-of-the-timurid-period-ca-1370-1507",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "The Art of the Timurid Period (ca. 1370–1507) - The Metropolitan Museum of Art"
+    },
+    {
+      "url": "https://www.metmuseum.org/ko/essays/the-art-of-the-timurid-period-ca-1370-1507",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:05.306126+00:00",
+      "status": 200,
+      "finalUrl": "https://www.metmuseum.org/ko/essays/the-art-of-the-timurid-period-ca-1370-1507",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "The Art of the Timurid Period (ca. 1370–1507) - The Metropolitan Museum of Art"
+    },
+    {
+      "url": "https://www.nbkr.kg/XML/weekly.xml",
+      "files": [
+        "src/research-data.js",
+        "src/illustrations.json",
+        "src/illustrations.json"
+      ],
+      "checkedAt": "2026-10-18T14:52:05.597681+00:00",
+      "status": 200,
+      "finalUrl": "https://www.nbkr.kg/XML/weekly.xml",
+      "contentType": "application/xml",
+      "state": "ok"
+    },
+    {
+      "url": "https://www.nbkr.kg/getservice.jsp?lang=ENG",
+      "files": [
+        "src/research-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:07.227859+00:00",
+      "status": 200,
+      "finalUrl": "https://www.nbkr.kg/getservice.jsp?lang=ENG",
+      "contentType": "text/html;charset=UTF-8",
+      "state": "ok",
+      "title": "National Bank of the Kyrgyz Republic"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/kazakhstan_8c403c04-en.html",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:08.619826+00:00",
+      "status": 200,
+      "finalUrl": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/kazakhstan_8c403c04-en.html",
+      "contentType": "text/html;charset=utf-8",
+      "state": "ok",
+      "title": "PISA 2022 Results (Volume I and II) ‑ Country Notes: Kazakhstan | OECD"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/uzbekistan_2bb94bf1-en.html",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:08.803510+00:00",
+      "status": 200,
+      "finalUrl": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/uzbekistan_2bb94bf1-en.html",
+      "contentType": "text/html;charset=utf-8",
+      "state": "ok",
+      "title": "PISA 2022 Results (Volume I and II) ‑ Country Notes: Uzbekistan | OECD"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1367912006002033",
+      "files": [
+        "src/central-asia-geography-climate.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.745347+00:00",
+      "status": 200,
+      "finalUrl": "https://www.sciencedirect.com/science/article/abs/pii/S1367912006002033",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "Site Unavailable"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000008/kspi-20251231.htm",
+      "files": [
+        "src/central-asia-economy.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:08.836584+00:00",
+      "status": 200,
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000008/kspi-20251231.htm",
+      "contentType": "text/html",
+      "state": "ok",
+      "title": "20-F"
+    },
+    {
+      "url": "https://www.stat.gov.kg/media/publicationarchive/79a0d0de-2105-40a2-8ff2-ca18d27d89e0.pdf",
+      "files": [
+        "src/education-data.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:10.051425+00:00",
+      "status": 200,
+      "finalUrl": "https://www.stat.gov.kg/media/publicationarchive/79a0d0de-2105-40a2-8ff2-ca18d27d89e0.pdf",
+      "contentType": "application/pdf",
+      "state": "ok"
+    },
+    {
+      "url": "https://www.unesco.org/en/countries/kg",
+      "files": [
+        "src/history-bishkek.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:12.517977+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/countries/kg",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Kyrgyzstan | UNESCO"
+    },
+    {
+      "url": "https://www.unesco.org/en/countries/kz",
+      "files": [
+        "src/history-almaty.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:12.573464+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/countries/kz",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Kazakhstan | UNESCO"
+    },
+    {
+      "url": "https://www.unesco.org/en/countries/uz/lists-and-nominations",
+      "files": [
+        "src/history-tashkent.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:14.344648+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/countries/uz/lists-and-nominations",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Uzbekistan - Lists and Nominations | UNESCO"
+    },
+    {
+      "url": "https://www.unesco.org/en/mab/issyk-kul",
+      "files": [
+        "src/central-asia-geography-climate.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:17.959804+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/mab/issyk-kul",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Issyk-Kul - Man and the Biosphere Programme (MAB)"
+    },
+    {
+      "url": "https://www.unesco.org/en/memory-world/collection-documents-mount-mugh",
+      "files": [
+        "src/history-samarkand.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:18.192497+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/memory-world/collection-documents-mount-mugh",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "Collection of documents from Mount Mugh - Memory of the World"
+    },
+    {
+      "url": "https://www.unesco.org/en/silk-roads/about-silk-roads",
+      "files": [
+        "src/central-asia-history.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:18.289817+00:00",
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/silk-roads/about-silk-roads",
+      "contentType": "text/html; charset=utf-8",
+      "state": "ok",
+      "title": "About the Silk Roads | UNESCO"
+    },
+    {
+      "url": "https://www.worldbank.org/en/programs/kambarata-1-hpp/faqs",
+      "files": [
+        "src/central-asia-power-datacenters.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:54.738254+00:00",
+      "status": 200,
+      "finalUrl": "https://www.worldbank.org/en/programs/kambarata-1-hpp/faqs",
+      "contentType": "text/html;charset=utf-8",
+      "state": "ok",
+      "title": "FAQ"
+    },
+    {
+      "url": "https://www2.customs.go.kr/busan/cm/cntnts/cntntsView.do?cntntsId=829&mi=7139",
+      "files": [
+        "src/main.js"
+      ],
+      "checkedAt": "2026-10-18T14:52:18.388223+00:00",
+      "status": 502,
+      "state": "http-error",
+      "error": "HTTP Error 502: Bad Gateway",
+      "review": "502; 관세청 공식 도메인이지만 이 직접 검사에서 현재 본문 수신 실패. 영구404로 간주하지 않음."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "url": "https://www.britannica.com/place/Lake-Issyk-Kul",
+      "status": 404,
+      "action": "Replaced with https://www.unesco.org/en/mab/issyk-kul"
+    },
+    {
+      "url": "https://en.unesco.org/silkroad/silk-road-themes/cities-silk-roads",
+      "status": 200,
+      "issue": "Redirect to programme homepage",
+      "action": "Replaced with https://whc.unesco.org/en/list/1442/"
+    },
+    {
+      "url": "https://www.worldbank.org/en/region/eca/brief/water-in-central-asia",
+      "status": 404,
+      "action": "Replaced before recursive scan with direct irrigation report and Kambarata FAQ"
+    }
+  ],
+  "liveDeploymentInterpretation": "HTTP200 and asset names match previously verified main e3423e7246c2118cc641b35220cba04359459ab8 build; HTML does not expose a git SHA. New branch not yet deployed."
+}

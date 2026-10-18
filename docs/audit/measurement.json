@@ -1,0 +1,2770 @@
+{
+  "baseline": "e3423e7246c2118cc641b35220cba04359459ab8",
+  "measuredAt": "2026-10-18T14:56:15.103Z",
+  "status": "final audited working tree",
+  "method": {
+    "words": "정규화한 본문 공백 분리 어절",
+    "characters": "공백 제외 Unicode code points",
+    "included": "실제로 import 연결된 설명 모듈 intro/chapter body/note/site description, 일정 guideKo/tipKo/placeDetails.description, 회화 제외 essentials, guide 정적 설명",
+    "excluded": "제목, 소스코드, JSON 키, URL·출처 목록, 이미지 캡션·메타데이터, 표·통계 메타데이터, 일정 시간표, 쇼핑/회화 UI",
+    "classification": "원래 장의 주제와 명시적 제목 규칙에 따라 5주제로 대응; 혼합 문단은 주된 화두 하나에 배정. core/detail/itinerary/practical 별도 기록",
+    "ledger": "action/target은 자동 후보, finalAction/reason/destination/evidenceFile은 전문 검토 후 정한 장별 편집 정책 적용 결과. 모든 개별 주장의 독립 사실 검증을 뜻하지 않음"
+  },
+  "total": {
+    "before": {
+      "words": 16113,
+      "characters": 55422,
+      "paragraphs": 371
+    },
+    "after": {
+      "words": 8225,
+      "characters": 28958,
+      "paragraphs": 234
+    },
+    "wordReductionPct": 48.95426053497176,
+    "characterReductionPct": 47.749990978311864
+  },
+  "sections": {
+    "geography": {
+      "before": {
+        "words": 2536,
+        "characters": 8546,
+        "paragraphs": 65
+      },
+      "after": {
+        "words": 1514,
+        "characters": 5094,
+        "paragraphs": 42
+      },
+      "wordReductionPct": 40.29968454258675,
+      "characterReductionPct": 40.39316639363445
+    },
+    "history": {
+      "before": {
+        "words": 10850,
+        "characters": 36943,
+        "paragraphs": 232
+      },
+      "after": {
+        "words": 5499,
+        "characters": 19500,
+        "paragraphs": 163
+      },
+      "wordReductionPct": 49.31797235023041,
+      "characterReductionPct": 47.215981376715476
+    },
+    "resources": {
+      "before": {
+        "words": 1691,
+        "characters": 6137,
+        "paragraphs": 45
+      },
+      "after": {
+        "words": 261,
+        "characters": 936,
+        "paragraphs": 7
+      },
+      "wordReductionPct": 84.56534594914253,
+      "characterReductionPct": 84.74824832980283
+    },
+    "economy": {
+      "before": {
+        "words": 912,
+        "characters": 3373,
+        "paragraphs": 26
+      },
+      "after": {
+        "words": 473,
+        "characters": 1713,
+        "paragraphs": 12
+      },
+      "wordReductionPct": 48.135964912280706,
+      "characterReductionPct": 49.214349243996445
+    },
+    "education": {
+      "before": {
+        "words": 124,
+        "characters": 423,
+        "paragraphs": 3
+      },
+      "after": {
+        "words": 478,
+        "characters": 1715,
+        "paragraphs": 10
+      },
+      "wordReductionPct": -285.48387096774195,
+      "characterReductionPct": -305.43735224586294
+    }
+  },
+  "mainSections": {
+    "geography": {
+      "words": 335,
+      "characters": 1159,
+      "paragraphs": 7,
+      "wordSharePct": 13.695829926410466
+    },
+    "history": {
+      "words": 1036,
+      "characters": 3877,
+      "paragraphs": 25,
+      "wordSharePct": 42.354865085854456
+    },
+    "resources": {
+      "words": 261,
+      "characters": 936,
+      "paragraphs": 7,
+      "wordSharePct": 10.670482420278004
+    },
+    "economy": {
+      "words": 336,
+      "characters": 1259,
+      "paragraphs": 9,
+      "wordSharePct": 13.736713000817662
+    },
+    "education": {
+      "words": 478,
+      "characters": 1715,
+      "paragraphs": 10,
+      "wordSharePct": 19.54210956663941
+    }
+  },
+  "mainTotal": {
+    "words": 2446,
+    "characters": 8946,
+    "paragraphs": 58
+  },
+  "scopeTotals": {
+    "core": {
+      "before": {
+        "words": 2473,
+        "characters": 9119,
+        "paragraphs": 67
+      },
+      "after": {
+        "words": 2446,
+        "characters": 8946,
+        "paragraphs": 58
+      },
+      "wordReductionPct": 1.0917913465426587,
+      "characterReductionPct": 1.897137844061847
+    },
+    "detail": {
+      "before": {
+        "words": 11688,
+        "characters": 39646,
+        "paragraphs": 245
+      },
+      "after": {
+        "words": 3821,
+        "characters": 13334,
+        "paragraphs": 117
+      },
+      "wordReductionPct": 67.30835044490075,
+      "characterReductionPct": 66.36735105685315
+    },
+    "itinerary": {
+      "before": {
+        "words": 1910,
+        "characters": 6522,
+        "paragraphs": 55
+      },
+      "after": {
+        "words": 1916,
+        "characters": 6543,
+        "paragraphs": 55
+      },
+      "wordReductionPct": -0.3141361256544517,
+      "characterReductionPct": -0.3219871205151881
+    },
+    "practical": {
+      "before": {
+        "words": 42,
+        "characters": 135,
+        "paragraphs": 4
+      },
+      "after": {
+        "words": 42,
+        "characters": 135,
+        "paragraphs": 4
+      },
+      "wordReductionPct": 0,
+      "characterReductionPct": 0
+    }
+  },
+  "afterParagraphs": [
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "geography",
+      "scope": "core",
+      "text": "사막·초원·설산·오아시스는 사람들의 생활을 어떻게 형성했을까요? 산맥이 물의 분포를 바꾸고, 물과 풀을 이용하는 방식이 농업·목축·주거를 갈라놓았습니다.",
+      "words": 15,
+      "characters": 71,
+      "sha256": "2b9226fe3162aceb40e6e1b25bc29c7f144aec7c50d7e06d5f14f657a6a62b3f"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "산맥에서 시작되는 물의 지도",
+      "section": "geography",
+      "scope": "core",
+      "text": "우즈베키스탄의 키질쿰 사막과 낮은 분지, 카자흐스탄의 초원·반사막, 키르기스스탄의 톈산산맥과 고산 분지는 연결된 지형입니다. 톈산은 오래된 조산대가 인도판과 유라시아판 충돌의 영향을 받아 다시 융기한 산맥입니다. 단층운동은 높은 능선과 분지를 만들었고 지금도 지진 위험을 남깁니다. 알마티 산록의 선상지와 차른 협곡은 각각 산지에서 내려온 퇴적물의 축적과 하천의 침식을 보여줍니다.",
+      "words": 46,
+      "characters": 168,
+      "sha256": "ad18ce06ce05c12de1b6f8aff473458a4e326863426922334c1c15df7c1c00af"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "산맥에서 시작되는 물의 지도",
+      "section": "geography",
+      "scope": "core",
+      "text": "바다에서 멀어 여름과 겨울의 기온 차가 크지만, 모든 곳이 같은 건조기후는 아닙니다. 습한 공기가 산을 오르며 식는 사면에는 비와 눈이 더 내리고, 산을 넘은 바람의 하강측에는 비그늘이 생깁니다. 고도가 높을수록 대체로 서늘해지며 사면 방향과 계절에 따라 강수도 달라집니다. 산의 눈과 빙하에서 비롯된 하천이 건조한 평야에 물을 공급하므로 사막과 농경지가 바로 이웃할 수 있습니다.",
+      "words": 53,
+      "characters": 161,
+      "sha256": "d8f0d629f7a8a733be4859b04c51c0766d9190a4162e2a8c2f342e3ce970c89f"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "오아시스의 집과 계절 목초지",
+      "section": "geography",
+      "scope": "core",
+      "text": "자라프샨 수계의 사마르칸트·부하라에서는 수로를 유지하는 공동 노동이 정주농업과 시장을 지탱했습니다. 곡물·채소·과일을 재배하는 오아시스와 가축·털·가죽을 공급하는 초원은 교환 관계였습니다. 카자흐 초원과 키르기스 산지의 계절 이동은 물과 풀을 따라 여름의 높은 목초지와 겨울 거처를 잇는 방식이며, 오늘날 주민 모두가 이동생활을 한다는 뜻은 아닙니다.",
+      "words": 41,
+      "characters": 156,
+      "sha256": "5c72dd8e43c5836d9408d627894029057ef5db65e130d41634150a0fcba5ea9b"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "오아시스의 집과 계절 목초지",
+      "section": "geography",
+      "scope": "core",
+      "text": "이동·조립이 가능한 유르트와 보온성 있는 펠트는 목축 생활에 적합했고, 오아시스의 중정·두꺼운 벽·그늘진 골목은 강한 일사에 대응했습니다. 육류·유제품과 저장식품, 밀가루 음식은 생산·보관 조건과 연결되지만 음식과 복식을 기후만으로 설명할 수는 없습니다. 팔로브의 공동 식사, 차 문화, 만티와 라그만에는 교역·종교·가족 의례와 여러 민족의 교류가 함께 담깁니다. 시장에서는 식재료의 원산지와 가공 방식을, 산길에서는 목초지와 영구 취락의 높이 차이를 살펴볼 수 있습니다.",
+      "words": 57,
+      "characters": 208,
+      "sha256": "1db45255ed4f34b5d17995d04a1969a3de1412652d25ccecc7d5e3447ab62c01"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "이식쿨과 알마티의 서로 다른 산록",
+      "section": "geography",
+      "scope": "core",
+      "text": "이식쿨은 톈산 사이 지각 분지에 놓인 큰 호수로, 강물이 들어오지만 바다로 빠져나가는 하천이 없는 폐쇄성 수계입니다. 물이 증발하면서 염류가 남아 담수보다 짜집니다. 깊고 큰 수체의 열 저장·혼합과 염분 등이 함께 작용해 겨울에도 호수 전체가 보통 얼지 않습니다. 얕은 연안의 국지적 결빙 가능성까지 부정하거나, 염분이나 온천 하나만을 원인으로 단정해서는 안 됩니다. 유람선에서 보이는 설산과 푸른 수면은 고도와 물의 열적 특성이 만드는 대비입니다.",
+      "words": 61,
+      "characters": 191,
+      "sha256": "8f56eb90181d2ea230db7ada7f4d6071589236dce0248b374ffe60feff1ec16e"
+    },
+    {
+      "file": "central-asia-geography-climate.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "이식쿨과 알마티의 서로 다른 산록",
+      "section": "geography",
+      "scope": "core",
+      "text": "알마티는 카자흐스탄 전체의 건조한 초원을 대표하는 곳이 아니라 톈산 북록의 물을 받는 도시입니다. 주변 산지의 야생 사과 Malus sieversii는 재배사과의 주요 조상 계통으로 유전적 다양성이 중요합니다. 이후 유라시아 전파와 다른 야생종과의 교잡도 작용했으므로 모든 사과가 알마티 시내 한 지점에서 나왔다고 할 수 없습니다. 비슈케크에서 알라아르차로 오를 때의 식생 변화, 알마티 산록의 과수원과 겨울 기온역전은 같은 산맥이 서로 다른 생활 조건을 만드는 사례입니다.",
+      "words": 62,
+      "characters": 204,
+      "sha256": "01deaa1efdf3b8e7781424a0f2f6b906f7d90b20cde7983217c46b0017e5b189"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "core",
+      "text": "실크로드와 여러 제국의 변화를 거쳐 오늘날 세 나라는 어떻게 형성되었을까요? 오아시스와 초원은 서로 다른 생활 기반을 가졌지만 교역·정복·혼인·신앙을 통해 연결되었습니다. 지금의 국경과 민족 이름을 고대에 그대로 대입하지 않는 것이 출발점입니다.",
+      "words": 30,
+      "characters": 108,
+      "sha256": "f61c7fbcb0c59d741d037f2cf1b3e7c8c73c20c80de7e47c5fd1429cd7ade4bc"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "오아시스와 초원이 함께 만든 교역망",
+      "section": "history",
+      "scope": "core",
+      "text": "자라프샨 유역의 소그디아와 아무다리야 상류의 박트리아는 오늘날 국경을 가로지르는 고대 문화권입니다. 박트리아에는 이란·그리스·인도계 전통이 만났고, 소그디아의 사마르칸트·부하라는 관개농업의 잉여와 공방·시장을 바탕으로 성장했습니다. 오아시스는 대상의 휴식처만이 아니라 식량을 생산하고 세금을 걷고 물품을 가공하는 도시였습니다.",
+      "words": 33,
+      "characters": 150,
+      "sha256": "20c074b890cc0c6c786943ee5fddedd66a230241e146dd4f08abbacfa22250a3"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "오아시스와 초원이 함께 만든 교역망",
+      "section": "history",
+      "scope": "core",
+      "text": "특히 4~8세기 소그드 상인들은 중국에서 이란·인도·서아시아에 이르는 교역을 중개했습니다. 외지의 친족 공동체, 신용과 언어 능력은 먼 거리를 잇는 기반이었습니다. 상품은 중간 시장에서 여러 번 거래됐으며 전쟁·통행세·계절에 따라 길이 바뀌었습니다. 실크로드는 고정된 한 도로도, 언제나 평화로운 교류 공간도 아니었습니다.",
+      "words": 38,
+      "characters": 143,
+      "sha256": "e014440bcd7508da1288a09b80d5b85851ae33bee2a729d439f56969aa27b106"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.0.paragraphs.2.0",
+      "title": "오아시스와 초원이 함께 만든 교역망",
+      "section": "history",
+      "scope": "core",
+      "text": "비단·말·유리·금속·향료와 함께 문자·음악·제지 기술과 불교·조로아스터교·마니교·동방 기독교가 이동했습니다. 목축민은 말·가축·운송과 군사력을, 농경도시는 곡물·직물·수공품을 제공했습니다. 유목과 정주는 상호의존했지만 징세·약탈·노예화도 존재했습니다. 부하라의 시장과 사마르칸트의 성곽을 함께 보면 교역의 번영과 이를 통제하는 권력이 분리되지 않았음을 알 수 있습니다.",
+      "words": 34,
+      "characters": 173,
+      "sha256": "67d42a51bef5e652f7ee2e0d20b10026fe0d9b16c67ca280157d8b1bd89169b6"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "아프라시압 벽화: 보이는 사실과 고구려 사절 해석",
+      "section": "history",
+      "scope": "core",
+      "text": "아프라시압(Afrasiab·Afrosiyob)은 사마르칸트 북쪽의 고대 도시 유적입니다. 오늘날의 레기스탄보다 앞선 소그드 도시의 성벽·주거·공방이 있었으며, 1220년 몽골 정복 뒤 중심 시가지는 남서쪽으로 이동했습니다. 1965년 도로 공사 중 발견된 7세기 벽화는 흔히 궁전의 ‘사절의 방’ 벽화로 불립니다. 건물의 정확한 성격과 회화의 연대·장면 해석에는 논의가 남습니다.",
+      "words": 42,
+      "characters": 171,
+      "sha256": "e3ba442620cafb9c085ccc2f3041af788da8a8f0626f9234c27c56001591685d"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "아프라시압 벽화: 보이는 사실과 고구려 사절 해석",
+      "section": "history",
+      "scope": "core",
+      "text": "서벽에는 예물을 든 여러 집단과 소그드어 명문이 남아 있습니다. 명문은 왕 바르후만과 차가니안·차치 방면의 사절을 해석하는 근거가 됩니다. 북벽의 중국 관련 장면, 남벽의 의례 행렬, 훼손이 심한 동벽의 인도 관련 해석은 방 전체가 국제적 세계관을 담았다는 점을 보여줍니다. 다만 네 벽을 하나의 실제 행사 기록으로 연결하는 것은 별도의 해석입니다.",
+      "words": 49,
+      "characters": 147,
+      "sha256": "a96c904fc00729e93fee3ccfb6432980a62ea0053f8db34f0d86cd4f2a750829"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.1.paragraphs.2.0",
+      "title": "아프라시압 벽화: 보이는 사실과 고구려 사절 해석",
+      "section": "history",
+      "scope": "core",
+      "text": "서벽 끝의 두 인물에게서는 깃털 장식 관모와 긴 옷, 허리의 칼 등을 관찰할 수 있습니다. 두 깃털을 꽂은 절풍 계열 관모와 고구려 복식의 유사성 때문에 고구려 사절로 보는 해석이 널리 알려졌습니다. 그러나 관모가 보인다는 관찰과 인물의 국적·파견자·방문 경로가 확인됐다는 주장은 다릅니다. 이 두 사람의 신원을 직접 적은 명문은 확인되지 않습니다.",
+      "words": 50,
+      "characters": 146,
+      "sha256": "5be1555d0ffbae673da626cf09a253eb0a0bf0cc4402d86c0011ceeec66f0ce3"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.1.paragraphs.3.0",
+      "title": "아프라시압 벽화: 보이는 사실과 고구려 사절 해석",
+      "section": "history",
+      "scope": "core",
+      "text": "실제 사절 방문설은 당시 고구려·당·튀르크 세력의 외교 관계와 초원 경로의 가능성을 검토합니다. 다른 논의는 중국계 외국인 도상의 활용이나 왕권이 표현한 상징적 국제질서를 강조합니다. 한국 연구에는 모본설을 비판하고 실견 가능성을 주장한 논문도 있습니다. 현지 박물관의 사절 설명, 한국의 복식·사행 연구, 국제 미술사 연구를 함께 읽어야 하며 고구려 사절의 실제 방문을 확정된 사실로 쓰지는 않습니다.",
+      "words": 53,
+      "characters": 173,
+      "sha256": "10f4693e1fae5b6e8014f371751da3df3c898e44901db491b126569484decccc"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.1.paragraphs.4.0",
+      "title": "아프라시압 벽화: 보이는 사실과 고구려 사절 해석",
+      "section": "history",
+      "scope": "core",
+      "text": "이 벽화의 가치는 한국과 연결된 인물이 있다는 흥미에 그치지 않습니다. 소그드 왕권이 서로 다른 복식·언어·예물을 통해 자신을 넓은 외교망 속에 배치했다는 물질적 증거입니다. 아프라시압 박물관에서는 먼저 남아 있는 관모·행렬·명문을 보고, 그다음 복원도와 설명의 추정을 구별하면 교역도시가 국제질서를 어떻게 이해했는지 읽을 수 있습니다.",
+      "words": 42,
+      "characters": 147,
+      "sha256": "9e69fbd68808b5ceebb3ec73c15adaf15c30853fa255aaa2be20362e9523157a"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "튀르크화와 이슬람화는 같은 사건이 아닙니다",
+      "section": "history",
+      "scope": "core",
+      "text": "6세기 이후 튀르크계 정치세력의 확장은 초원과 오아시스의 관계를 바꾸었습니다. 7~8세기 아랍 군대의 진출과 8세기 초 쿠타이바의 원정은 이슬람 지배의 기반을 넓혔지만 즉각적인 전면 개종이나 언어 교체를 뜻하지 않았습니다. 통치자·상인·학자·수피 공동체가 여러 세기에 걸쳐 종교와 사회 규범을 바꾸었습니다.",
+      "words": 37,
+      "characters": 135,
+      "sha256": "e1757cf17262b0a8c4b2739796b93d199170b284c4a7ef868650fa1834d9e224"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "튀르크화와 이슬람화는 같은 사건이 아닙니다",
+      "section": "history",
+      "scope": "core",
+      "text": "9~10세기 사만 왕조는 부하라를 수도로 삼고 이슬람 학문과 신페르시아어 문화를 후원했습니다. 아랍어는 종교·학술의 언어로, 페르시아어는 문학·궁정과 도시 문화의 언어로 중요했습니다. 이븐 시나의 성장 배경과 이맘 알부하리의 하디스 수집은 도시를 넘어 이동한 지식망을 보여줍니다. 부하라 인근 나크쉬반디야 수피 전통도 훗날 광범위하게 확산됐습니다.",
+      "words": 41,
+      "characters": 154,
+      "sha256": "700171fafb79312ac39584fa9f2d1ec6a2ba96aa611c857193e2344f613b207a"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.2.paragraphs.2.0",
+      "title": "튀르크화와 이슬람화는 같은 사건이 아닙니다",
+      "section": "history",
+      "scope": "core",
+      "text": "10세기 말 사만 왕조의 중심지를 장악한 카라한 왕조는 튀르크계 이슬람 왕조였습니다. 통치집단이 바뀌어도 페르시아어 문화와 관개·시장·학문 기반은 이어졌습니다. 1127년 칼랸 미나레트의 벽돌 장식은 이 후원의 흔적입니다. 현대 우즈베크어·카자흐어·키르기스어가 튀르크어족이라는 사실과 부하라·사마르칸트의 이란계 언어 유산은 모순되지 않습니다. 언어·신앙·정치적 소속은 서로 다른 속도로 변했습니다. 부하라·사마르칸트와 연결된 샤시마콤 음악 역시 오늘날 국경을 넘어 전해진 도시 문화유산입니다.",
+      "words": 53,
+      "characters": 223,
+      "sha256": "184422c4386b1e4a58eb0f8d341df8a3f0558094643a39d385f4b0fc0b57c2e5"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "몽골 정복에서 티무르 왕조의 수도로",
+      "section": "history",
+      "scope": "core",
+      "text": "1220년 몽골군의 부하라·사마르칸트 정복은 약탈·파괴·인구 이동을 낳았습니다. 이후 제국의 교통·통행 질서 아래 교역이 재편됐지만 이를 파괴의 비용을 지우는 ‘평화’로만 설명할 수는 없습니다. 차가타이 울루스의 정치질서와 그 분열 속에서 튀르크어를 쓰는 몽골계 집단과 이슬람 도시 문화가 더욱 결합했습니다.",
+      "words": 37,
+      "characters": 136,
+      "sha256": "f28e8c3accf254ee7c2ad9fce5a47eb0b26c15f83f43bae22c14edf2374acdde"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.3.paragraphs.1.0",
+      "title": "몽골 정복에서 티무르 왕조의 수도로",
+      "section": "history",
+      "scope": "core",
+      "text": "1370년 권력을 장악한 티무르는 사마르칸트를 수도로 삼았습니다. 칭기즈칸의 직계 후손이 아니었던 그는 아미르라는 지위와 혼인·명목상 칸을 통해 정통성을 보완했습니다. 이란계 행정·궁정문화와 튀르크·몽골 군사 전통이 결합한 제국이며 현대 민족국가와 같지 않습니다. 원정의 자원과 강제로 이동시킨 장인들은 기념건축을 가능하게 했습니다.",
+      "words": 38,
+      "characters": 149,
+      "sha256": "392429885bcf80dd603d3edcd61a70b996f55c59899258d62a5e4012dee21d96"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.3.paragraphs.2.0",
+      "title": "몽골 정복에서 티무르 왕조의 수도로",
+      "section": "history",
+      "scope": "core",
+      "text": "비비하눔은 제국의 권위를 드러낸 거대한 금요 모스크, 구르에미르는 왕조의 기억을 조직한 영묘입니다. 울루그베크는 15세기 마드라사와 천문대를 후원하며 수학자·관측자들과 천문표를 편찬했습니다. 이슬람권 학문은 종교학에 한정되지 않았습니다. 지하에 남은 관측 장치는 지식이 정밀한 기구와 집단 작업에 의존했음을 보여줍니다.",
+      "words": 36,
+      "characters": 143,
+      "sha256": "b436b25da27f574c728f6a57f369ebf06476c93e23aff7aa18f23130d5b376e6"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.3.paragraphs.3.0",
+      "title": "몽골 정복에서 티무르 왕조의 수도로",
+      "section": "history",
+      "scope": "core",
+      "text": "레기스탄의 울루그베크 마드라사는 15세기, 셰르도르와 틸라코리는 17세기 건물입니다. 완성된 광장을 티무르 한 사람의 설계로 보면 두 세기의 차이가 사라집니다. 부하라의 포이칼랸도 12세기 첨탑과 16세기 모스크·마드라사가 결합된 공간입니다. 16세기 샤이바니 세력의 집권과 뒤이은 후원은 오늘날 부하라 옛 시가지의 골격을 만들었습니다. 두 도시에서는 건축의 크기보다 누가 언제 무엇을 위해 지었는지를 비교하는 것이 중요합니다.",
+      "words": 51,
+      "characters": 189,
+      "sha256": "e71b0b3725c503f6473febfac9ea3be0bb0ff25111b11250ab639fa050137caf"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "카자흐 초원과 키르기스 산악사회",
+      "section": "history",
+      "scope": "core",
+      "text": "카자흐 초원의 정치질서는 목초지·이동로·교역도시를 둘러싼 튀르크·몽골계 집단의 연합과 분열 속에서 형성되었습니다. 15세기 중엽 케레이와 자니베크를 중심으로 카자흐 칸국이 등장했고, 이후 여러 지역 연합과 권력 관계가 변화했습니다. 칸국의 영역과 구성원을 오늘날 카자흐스탄 국경·국민과 동일시할 수는 없습니다.",
+      "words": 35,
+      "characters": 139,
+      "sha256": "17fc4abadc2adef79915b94ce70d63cb250f4ee69c0cdfd172df4c6a2c6e4f78"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.4.paragraphs.1.0",
+      "title": "카자흐 초원과 키르기스 산악사회",
+      "section": "history",
+      "scope": "core",
+      "text": "18~19세기 러시아 제국은 보호관계·요새·행정 개편과 이주를 통해 초원 지배를 확대했습니다. 토지 이용과 이동로가 재편되면서 목축민의 자율성이 줄었습니다. 1854년 베르니 요새에서 성장한 알마티는 1929년 당시 카자흐 자치공화국의 수도가 되었고, 1936년 연방공화국 승격 이후에도 수도 기능을 이어갔습니다. 1997년 수도 이전 뒤에는 금융·교육·문화 중심지로 남았습니다.",
+      "words": 42,
+      "characters": 171,
+      "sha256": "3a9199ec67a6dba792941f8f44d3e641095e66ce29347adea29718b76af5c9db"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.4.paragraphs.2.0",
+      "title": "카자흐 초원과 키르기스 산악사회",
+      "section": "history",
+      "scope": "core",
+      "text": "키르기스라는 이름의 오래된 기록과 오늘날 톈산 키르기스인의 형성 사이에는 이동·혼합·정치적 재편의 긴 과정이 있습니다. 예니세이 지역의 옛 집단과 현대 주민을 단일 혈통의 직선으로 연결하지 않습니다. 산악사회는 계절 목축과 계곡 농업·교역을 함께 이용했고, 마나스 서사시는 공동체 기억을 전하지만 사건의 동시대 연대기와는 다릅니다.",
+      "words": 41,
+      "characters": 145,
+      "sha256": "4c36397395d6c46476ec034fe3db35145e0982e0e27b35e48e10566940d1071e"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.4.paragraphs.3.0",
+      "title": "카자흐 초원과 키르기스 산악사회",
+      "section": "history",
+      "scope": "core",
+      "text": "19세기 코칸드 칸국의 요새와 과세망, 이어진 러시아 제국의 확장이 추이·이식쿨 지역을 바꾸었습니다. 피슈페크는 코칸드 요새에서 러시아 정착도시로 재편됐고 소련 시기 프룬제로 불렸습니다. 1916년 전시 동원과 토지 갈등을 배경으로 일어난 봉기, 탄압과 중국 방면 피난은 우르쿤이라는 비극의 기억으로 남았습니다. 촐폰아타의 암각화·발발 석상·현대 휴양시설은 서로 다른 시대의 흔적이며 모두 같은 민족·연대의 유산은 아닙니다.",
+      "words": 51,
+      "characters": 187,
+      "sha256": "4921c7292f6a6665e3818048d2b6397ce1ca8e5260a1ef3aa9ad79ec8b07c8a8"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "제국의 연결망, 소련의 재편, 독립국가",
+      "section": "history",
+      "scope": "core",
+      "text": "러시아군은 1865년 타슈켄트, 1868년 사마르칸트를 점령했고 부하라 에미르국은 보호국적 지배 아래 내부 통치 일부를 유지했습니다. 철도는 오아시스를 제국 시장에 묶었으며 면화 생산과 러시아 공산품 유통을 확대했습니다. 관개와 운송의 발전은 식민지적 원료 공급체계, 토지·정치권리의 불평등과 함께 설명해야 합니다.",
+      "words": 37,
+      "characters": 140,
+      "sha256": "12202e01f405d00ab82f5b030bc9916706f4bc705224ef8394b480307783696a"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.5.paragraphs.1.0",
+      "title": "제국의 연결망, 소련의 재편, 독립국가",
+      "section": "history",
+      "scope": "core",
+      "text": "1920년대부터 진행된 소련의 민족별 영토 획정은 언어·정착·경제와 정치적 협상의 복합적 결과였습니다. 우즈베크 공화국, 카자흐·키르기스 자치단위와 이후의 연방공화국은 오늘날 국가의 제도적 기반이 됐습니다. 국경을 단순히 임의의 선이라고 하거나 고대부터 고정된 민족 경계였다고 보는 설명은 모두 부족합니다.",
+      "words": 35,
+      "characters": 137,
+      "sha256": "a4e6736a6a76d214026ca67d7c858334cb344d37d4944fd74b4a7afb2a2b4b42"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.5.paragraphs.2.0",
+      "title": "제국의 연결망, 소련의 재편, 독립국가",
+      "section": "history",
+      "scope": "core",
+      "text": "학교·문자교육·대학·보건·산업과 도시 기반시설이 확대됐지만 강제 집단화와 종교 탄압, 정치적 숙청도 일어났습니다. 카자흐스탄에서는 가축 징발과 강제 정착이 1930년대 초 대기근과 대규모 피난을 낳았습니다. 고려인 등 여러 집단의 강제이주, 전시 공장 이전과 산업화는 도시 인구를 다층적으로 만들었습니다. 근대화의 성과가 강제성과 희생을 정당화하지는 않습니다.",
+      "words": 41,
+      "characters": 161,
+      "sha256": "35535c9ccf9eec3b592a03ae8a39f845b773b20e5a6cd146dd1b1c6e8f32d1f1"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.5.paragraphs.3.0",
+      "title": "제국의 연결망, 소련의 재편, 독립국가",
+      "section": "history",
+      "scope": "core",
+      "text": "러시아어의 공적 역할과 토착 언어의 표준화, 종교시설 폐쇄·전용은 생활과 기억을 바꾸었습니다. 타슈켄트의 1966년 지진 뒤 재건, 제정기 가로망 위에 확장된 소련기 비슈케크, 알마티의 공공건축은 이 시기의 흔적입니다. 모스크가 오래됐다는 사실만으로 현재의 종교 실천이나 국가 제도를 추정할 수는 없습니다.",
+      "words": 38,
+      "characters": 134,
+      "sha256": "7de0a12fde10d5c58051876964427e13cabd87f236f2230ebec7624f60a0794c"
+    },
+    {
+      "file": "central-asia-history.js",
+      "path": "chapters.5.paragraphs.4.0",
+      "title": "제국의 연결망, 소련의 재편, 독립국가",
+      "section": "history",
+      "scope": "core",
+      "text": "1991년 독립 뒤 세 나라는 소련 공화국의 경계를 계승하면서 국어·통화·제도와 국가 상징을 재구성했습니다. 우즈베키스탄의 티무르, 키르기스스탄의 마나스, 카자흐스탄의 칸국 기억은 현대 국가 정체성에 새 의미를 얻었습니다. 시장 전환과 대외 개방의 속도, 대통령 권력과 정치 경쟁의 경로는 서로 달랐습니다. 오늘의 국가는 고대 왕조의 단순한 부활이 아니라 소련의 유산과 독립 이후 선택이 결합한 결과입니다.",
+      "words": 52,
+      "characters": 176,
+      "sha256": "ff0004f31b5df0558b7b279d42d714f45f76b897a910e03a141678453d44a018"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "resources",
+      "scope": "core",
+      "text": "물·광물·화석연료가 풍부해도 필요한 곳에 필요한 때 공급되는 것은 아닙니다. 매장된 자원, 실제 생산량, 운송·송전 능력과 계절 수요를 구분해야 기회와 제약이 보입니다.",
+      "words": 21,
+      "characters": 74,
+      "sha256": "b4d66d952a2b6289eb6bc93cc9b04e9b309e321cc460abe9f24f2915bb4fb719"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "우즈베키스탄: 관개와 가스에서 전환으로",
+      "section": "resources",
+      "scope": "core",
+      "text": "나보이의 금, 구리·우라늄 광업과 천연가스는 수출·산업의 기반입니다. 발전은 가스에 크게 의존하므로 연료 생산뿐 아니라 겨울 난방 수요, 발전소와 송전망의 상태가 전력 공급을 좌우합니다. 태양광·풍력 설비를 늘려도 변동 출력을 조정할 계통·저장·예비전원이 필요합니다. 설비용량은 순간 최대출력이며 연간 발전량과 같은 수치가 아닙니다.",
+      "words": 39,
+      "characters": 148,
+      "sha256": "3985ef734a0b7db4ebbe1dca889a105870f9d30c0718e87e638a3a90a09fcccc"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "우즈베키스탄: 관개와 가스에서 전환으로",
+      "section": "resources",
+      "scope": "core",
+      "text": "아무다리야·시르다리야 수계와 관개망은 건조한 평야의 농업을 지탱합니다. 부하라 주변에서는 증발이 크고 배수가 불량하면 관개수가 남긴 염류와 상승한 지하수가 토양을 악화시킵니다. 염분을 씻어내는 물 공급만 늘리면 해결되는 문제가 아니며 배수·관개 효율·작물 선택을 함께 관리해야 합니다. 아랄해 축소는 유역의 대규모 취수 누적을 보여줍니다.",
+      "words": 41,
+      "characters": 149,
+      "sha256": "a9d159158f458fe920055aef5fc5ece9d40ca322915736933c843c00db877857"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "키르기스스탄: 수력 잠재력과 겨울 공급",
+      "section": "resources",
+      "scope": "core",
+      "text": "적설·빙하와 산악 하천은 수력의 기반이며 나린강의 토크토굴 저수지·발전소 등이 중요합니다. 높은 낙차는 발전 잠재력을 주지만 실제 공급은 유량·저수량·설비·송전망에 제한됩니다. 겨울 난방 전력 수요와 여름 하류 농업용수 수요는 시기가 달라 상·하류의 저수지 운영 조정이 필요합니다.",
+      "words": 34,
+      "characters": 124,
+      "sha256": "0b16492b271cb51558205f70da3a934a436f58a91e9f198b0fefe01dadfa49fd"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "키르기스스탄: 수력 잠재력과 겨울 공급",
+      "section": "resources",
+      "scope": "core",
+      "text": "가뭄과 적설 변동, 빙하의 장기 변화는 물 공급의 안정성을 흔듭니다. 수력 비중이 높다는 사실은 전력 자급이나 연중 무정전을 뜻하지 않으며 수입·화력·계통 보강이 보완 역할을 합니다. 금광업 역시 고산 도로와 전력·물에 의존하고 광미·수질 관리가 필요합니다. 쿰토르의 생산·매출 규모는 경제 섹션에서 구분해 설명합니다.",
+      "words": 41,
+      "characters": 138,
+      "sha256": "de2a463a9cc91ae503e2faa5dbdd3112f12a77ca64eed89acb9b6998afc71b96"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "카자흐스탄: 자원 산지와 소비지 사이",
+      "section": "resources",
+      "scope": "core",
+      "text": "서부의 원유·가스, 남부·중부 등의 우라늄과 금속, 북부·중부의 석탄은 서로 다른 개발·수송망을 이용합니다. 원유는 카스피해 파이프라인 컨소시엄(CPC)의 러시아 흑해 방면 노선 등으로 수출되므로 항만·송유관의 운영과 경로 위험이 외화 수입에 영향을 줍니다. 우라늄 생산량이 많다는 사실과 국내 원전 발전량은 별개입니다.",
+      "words": 38,
+      "characters": 142,
+      "sha256": "6151cd3b0b6bd6b530d5358e8871d39762f3a9de662d8aff3848a1c18ed089c0"
+    },
+    {
+      "file": "central-asia-power-datacenters.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "카자흐스탄: 자원 산지와 소비지 사이",
+      "section": "resources",
+      "scope": "core",
+      "text": "전력은 석탄의 역할이 크고 북부 발전지와 남부 수요지 사이 송전, 서부 계통의 연결이 과제입니다. 원자력 도입과 재생에너지 확대는 연료·탄소·안정적 공급의 선택인 동시에 건설비·기간·폐기물·계통 투자 문제입니다. 계획·건설 중인 설비를 가동 중 공급으로 합산하지 않습니다. 자원 수출의 이익은 오염 관리와 국내 전력망의 신뢰성을 함께 개선할 때 생활 여건으로 이어집니다.",
+      "words": 47,
+      "characters": 161,
+      "sha256": "db9de82a3af5c848132f745a292b0b2a8b9e9a6acdb095d4f08a80a1f2c00223"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "economy",
+      "scope": "core",
+      "text": "세 나라 사람들은 무엇을 생산하고 어떻게 돈을 벌까요? 광물 수출의 외화, 제조업의 부가가치, 국내 서비스 매출, 해외 근로자의 송금은 서로 다른 소득 경로입니다. 세 나라 모두 제조업을 가지고 있습니다.",
+      "words": 29,
+      "characters": 86,
+      "sha256": "8695cbf03831f45d710a03915a9840fe0c2d2c3ba0cfb3f3205285edcce7e8e8"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "카자흐스탄: 수출 외화와 국내 서비스",
+      "section": "economy",
+      "scope": "core",
+      "text": "원유·우라늄·구리 등은 해외 판매로 외화를 벌고, 정유·제련은 원료를 가공합니다. 기계 생산과 자동차 조립도 존재합니다. 다만 조립 생산액 전체가 국내 부가가치는 아니며 수입 부품의 몫을 구분해야 합니다. 자원 가격과 수송 경로의 변화는 수출뿐 아니라 세입·투자에도 영향을 줍니다.",
+      "words": 36,
+      "characters": 122,
+      "sha256": "2c7ad123d7fab081762dfc79ce7e34228ad9e87780522fdecb5dd71eb14af84c"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "카자흐스탄: 수출 외화와 국내 서비스",
+      "section": "economy",
+      "scope": "core",
+      "text": "Kaspi.kz는 소비자의 결제·쇼핑·대출과 가맹점의 판매를 연결해 거래 서비스 수수료와 금융수익을 얻습니다. Halyk Bank는 가계·기업의 예금을 모아 대출하고 결제·송금 서비스를 제공합니다. Air Astana는 여객·화물 운송, Kazakhtelecom은 가정과 기업의 통신·데이터 연결을 판매합니다. 이들 서비스의 소득은 광물 수출액과 별개이며 알마티의 사무실·상점·공항에서 관찰할 수 있습니다.",
+      "words": 41,
+      "characters": 187,
+      "sha256": "805b7641fffcc03427c8d7ebda00d53d98c29f6c44d3d63d6700632280e5a214"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "우즈베키스탄: 원료에서 완제품과 일자리로",
+      "section": "economy",
+      "scope": "core",
+      "text": "금·구리 수출과 함께 면화를 면사로 방적하고 직물·의류로 가공하는 공장이 고용과 수출을 만듭니다. UzAuto Motors는 Chevrolet 자동차를 생산하고, Artel은 냉장고·세탁기 같은 가전을 만듭니다. 과일·채소의 저장·통조림·음료 등 식품가공도 농촌 생산과 도시 소비를 연결합니다.",
+      "words": 31,
+      "characters": 134,
+      "sha256": "571e72c73555a1e192d2389f8e77a5c70698762e3855ff22a464ca7a9cc0fd3f"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "우즈베키스탄: 원료에서 완제품과 일자리로",
+      "section": "economy",
+      "scope": "core",
+      "text": "이 과정에서 원료 공급자, 공장 노동자, 부품·포장업체와 유통업체가 각각 소득을 얻습니다. 큰 내수시장은 생산을 뒷받침하지만 전력의 안정성, 기술·자본과 수입 부품 조달이 생산성을 좌우합니다. 세 나라의 제조업 다각화 순위는 같은 정의의 비교 지표 없이 단정하지 않습니다. 타슈켄트 거리의 자동차는 소비재이자 국내 산업을 읽는 단서입니다. 내륙국에 둘러싸인 이중 내륙국이어서 철도·국경 통관과 운송비도 수출 경쟁력에 영향을 줍니다.",
+      "words": 54,
+      "characters": 188,
+      "sha256": "37e8e0ee37a0f1bdbff3cb291ba036c421e4ad23708e1944549f833e1d117150"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "키르기스스탄: 생산·재판매·송금의 구분",
+      "section": "economy",
+      "scope": "core",
+      "text": "금광업 외에 국내 봉제업체가 직물을 재단·봉제해 의류를 생산하고 역내 시장에 판매합니다. 도르도이·카라수 시장에서 중국 등 외국산 의류·신발·직물·생활잡화를 도매로 재판매하는 활동과는 구별해야 합니다. 후자는 운송·창고·통관·상점의 소득을 만들지만 재수출 상품 가격 전체가 국내에서 생산된 가치는 아닙니다.",
+      "words": 34,
+      "characters": 138,
+      "sha256": "1c75525ed5bce9497f56efb68da76ff94f137e9200ee515fe9c2f62ea12db105"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "키르기스스탄: 생산·재판매·송금의 구분",
+      "section": "economy",
+      "scope": "core",
+      "text": "관광의 숙박·식당·운송, 농축산물 생산·가공도 일자리입니다. 해외 근로자의 송금은 가계 소비와 외화 유입을 지탱하지만 국내 생산이나 모든 가구의 소득과 같지 않습니다. 러시아 등 목적지의 고용·환율 변화에 노출되며 봉제업을 검증 없이 국가 최대 수출산업이라고 부르지 않습니다.",
+      "words": 34,
+      "characters": 121,
+      "sha256": "efa01e8e1a7fdf9795c017fc4ce065a57c8f136762eae990892b7f64fb76c2d1"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "쿰토르: 큰 매출과 GDP 기여는 다릅니다",
+      "section": "economy",
+      "scope": "core",
+      "text": "2025년 쿰토르의 금 생산은 12.081톤입니다. 생산량은 판매량·매장량과 다릅니다. 운영사가 발표한 연매출은 아래 원화 환산으로 약 1.91조 원이며, 같은 해 IMF 명목 GDP 추계와 비교하면 약 6.3%입니다. 이는 기업의 매출/GDP라는 규모 비교이지 GDP에 대한 부가가치 기여율이 아닙니다.",
+      "words": 36,
+      "characters": 135,
+      "sha256": "c96869a1f92db1b2d32b4cc21b5a172d1e0e8a9de0675a03ab2ba7c5875ead62"
+    },
+    {
+      "file": "central-asia-economy.js",
+      "path": "chapters.3.paragraphs.1.0",
+      "title": "쿰토르: 큰 매출과 GDP 기여는 다릅니다",
+      "section": "economy",
+      "scope": "core",
+      "text": "운영사는 세금·의무납부금과 배당도 발표했습니다. 국유기업의 납부·배당은 재정상 중요하지만 기업 매출에 더해 GDP로 합산할 수 없습니다. IMF의 2025년 구조 분석은 금광업의 GDP 비중을 약 6.5%로 서술하나 해당 문장의 통계 기준연도는 분명하지 않습니다. 이를 2025년 쿰토르 또는 금 산업의 확정 기여율로 사용하지 않습니다.",
+      "words": 41,
+      "characters": 148,
+      "sha256": "d2c7add1341185fe6bffc8c1ea2bd776a11708f2ef8ca8d13aa6b3c6acb3de8c"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "education",
+      "scope": "core",
+      "text": "학교에 갈 수 있다는 사실과 충분히 배우고 학비를 감당할 수 있다는 사실은 다릅니다. 소련 시대에 확산된 보편교육 위에서 대학 진학 수요가 커졌지만, 유료 정원과 도시의 주거비는 가족의 부담을 높입니다.",
+      "words": 29,
+      "characters": 85,
+      "sha256": "d90e03b31ecb47b5e2a8c192eccead19c3d952e1e9942089d02dad5a9bd977e5"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "교육의 확대와 학습 성취의 간격",
+      "section": "education",
+      "scope": "core",
+      "text": "2024/25학년도 키르기스스탄의 대학 재학생은 57개 기관에서 23만 1천 명을 넘었고, 약 88%가 유료 계약제였습니다. 이는 전체 재학생 기준으로, 그해 신입생이나 입학시험 응시자의 비율이 아닙니다. 같은 학년도 카자흐스탄 학부생은 약 62만 4,500명, 우즈베키스탄 고등교육 재학생은 약 143만 2,800명입니다. 교육단계와 인구 규모가 달라 인원만으로 진학률이나 교육열의 순위를 매길 수 없습니다.",
+      "words": 48,
+      "characters": 182,
+      "sha256": "7f8ad7c1a7eb89f9ee86ec8efaa124a0897c12dd8c39e6dd253f89650cf86a62"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "교육의 확대와 학습 성취의 간격",
+      "section": "education",
+      "scope": "core",
+      "text": "성인 문자해득률은 세계은행·UNESCO UIS 자료에서 카자흐스탄 99.7%와 키르기스스탄 99.2%(각 2009년), 우즈베키스탄 100%(2022년)로 높게 나타납니다. 관측연도가 오래되거나 서로 달라 오늘날의 동일연도 비교로 읽어서는 안 됩니다. 기초 문해력은 복잡한 문제를 푸는 능력과도 다릅니다. PISA 2022에서 수학 기초수준인 2단계 이상을 달성한 15세 재학생은 카자흐스탄 50%, 우즈베키스탄 19%였으며 OECD 평균은 69%였습니다. 키르기스스탄은 이 조사에 참여하지 않아 같은 표로 비교하지 않습니다.",
+      "words": 56,
+      "characters": 239,
+      "sha256": "90324834264a9df084b263b17a24ee9797705254978c15f20e7d9ea6fbae1036"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.0.paragraphs.2.0",
+      "title": "교육의 확대와 학습 성취의 간격",
+      "section": "education",
+      "scope": "core",
+      "text": "도시·농촌의 학교 여건과 대학까지의 거리, 가구의 주거비 부담은 교육 접근성을 함께 살펴볼 이유입니다. 다만 이 자료만으로 지역 격차의 크기를 계산할 수는 없습니다. 대학 정원 확대가 곧 충분한 학습 성취나 양질의 일자리로 이어지는 것도 아닙니다. IMF의 키르기스 노동시장 분석은 교육과 일자리에서 요구하는 기술의 불일치를 지적합니다.",
+      "words": 44,
+      "characters": 145,
+      "sha256": "fe69d660c737d8563cc8624fa78bfdd75cffbe090f2fb2a9938847fd620c7853"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "등록금보다 더 커질 수 있는 주거비",
+      "section": "education",
+      "scope": "core",
+      "text": "키르기스 대학의 학비를 일률적으로 연 200만~230만 원이라고 할 수는 없습니다. 공식 공시를 확인한 세 대학의 네 전공 사례는 연 82.3~182.9만 원이며, 학년도·전공·국적·학년 조건이 다릅니다. 2025년 전국 평균 월급은 약 67.7만 원으로, 이 등록금은 평균 월급 약 1.2~2.7개월분입니다. 평균 월급은 소기업을 제외한 기업·기관의 세전 발생임금으로, 학생 부모의 실수령액이나 가구소득이 아닙니다.",
+      "words": 49,
+      "characters": 185,
+      "sha256": "d37b8e8e53140dcb0bf04db73f3ad08a982e197e2b30f23af86c571d933a94b0"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "등록금보다 더 커질 수 있는 주거비",
+      "section": "education",
+      "scope": "core",
+      "text": "비슈케크의 원룸·스튜디오 임대 예산은 월 38.1~53.4만 원으로 잡을 수 있습니다. 이는 2026년 현지 언론이 제시한 절약형 독립 거주 추정이며, 2025년 전국 평균 월급의 약 56~79%에 해당합니다. 서로 다른 연도·지역·모집단의 비교이므로 특정 근로자의 실제 부담률은 아닙니다. 반면 KSMA 기숙사 게시 요금은 월 1.4~3.0만 원이지만 기준연도가 없고 입사 가능 여부도 별도 확인해야 합니다.",
+      "words": 51,
+      "characters": 179,
+      "sha256": "5e137d948d7dee4949fe663138e62dfaa15e68dad5920d6459932abea592d14c"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.1.paragraphs.2.0",
+      "title": "등록금보다 더 커질 수 있는 주거비",
+      "section": "education",
+      "scope": "core",
+      "text": "약학 등록금과 12개월의 주거·식료품·대중교통·통신비를 합산하면 기숙사 시나리오는 연 342.1~443.6만 원, 원룸 시나리오는 공공요금을 더해 818.6~1,138.7만 원입니다. 학생 지출조사 결과가 아니라 서로 다른 출처를 조합한 조건부 계산입니다. 보증금·교재·의료·의복·예비비도 빠져 있어 완전한 생활비로 볼 수 없습니다. 같은 학비라도 부모와 동거하는지, 기숙사에 입사하는지에 따라 필요한 현금이 크게 달라집니다.",
+      "words": 45,
+      "characters": 194,
+      "sha256": "447442e819479fd52c8942a9ade0b9614c51d24cab3dc99a9f797956e69150a1"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "가계의 비용 조달과 학업 지속",
+      "section": "education",
+      "scope": "core",
+      "text": "국가 지원 정원은 등록금 부담을 줄이는 통로입니다. 키르기스 교육부는 2024/25학년도 지원 입학정원을 최대 1만 명으로 발표했지만 이는 계획 정원이지 실제 수혜자 수가 아닙니다. AUCA는 성적·재정 필요 등에 따른 장학·감면과 학기별 납부 규정을 안내합니다. 한 대학의 제도를 전국 대학생의 이용률로 일반화하거나 학기 납부를 월별 무이자 분할납부로 해석해서는 안 됩니다.",
+      "words": 48,
+      "characters": 163,
+      "sha256": "be83412295bb7df7b89c01ac6b0f1bc2859bcf46416111b7f5463b5ba5c7b377"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "가계의 비용 조달과 학업 지속",
+      "section": "education",
+      "scope": "core",
+      "text": "가족 소득·저축, 부모와의 동거, 기숙사는 학생에게 필요한 현금을 줄이거나 마련하는 방식입니다. 해외 근로자 송금도 일부 가계의 재원이 될 수 있지만 모든 대학생 가구가 송금을 받는 것은 아닙니다. 교육기관 제휴 대출 상품은 확인되나 일반 대학생에게 적용되는 자격·금리와 전국 이용률은 확인되지 않았습니다. 재학 중 취업 역시 가능한 조달 경로이지만 그 비중을 추정하지 않습니다.",
+      "words": 51,
+      "characters": 162,
+      "sha256": "a410db07e4ee62c24738f8aa9dea8487db28400942200ec7f2aff1556335693d"
+    },
+    {
+      "file": "central-asia-education.js",
+      "path": "chapters.2.paragraphs.2.0",
+      "title": "가계의 비용 조달과 학업 지속",
+      "section": "education",
+      "scope": "core",
+      "text": "비용 부담이 학업 지속을 어렵게 할 수 있다는 설명과 실제 중도탈락의 원인이 입증되었다는 주장은 구별해야 합니다. 동일 입학 집단의 전국 졸업률, 휴학·자퇴·미납 제적 사유, 재학 중 취업률과 졸업 후 취업률을 비교할 자료는 이번 조사에서 확인하지 못했습니다. 따라서 “대학생 상당수가 졸업 전에 취업한다”는 단정은 사용하지 않습니다. 한 해 입학생과 다른 집단인 그해 졸업생을 나누어 중도탈락률을 만드는 것도 부정확합니다.",
+      "words": 57,
+      "characters": 181,
+      "sha256": "d353ebefdcabddd208783ad03c5aad0fa1f00ea6e340ee3e46b12baf4e11a825"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "아르크·포이칼랸·라비하우즈와 골목을 연결해 물·교역·신앙·통치의 관계를 읽습니다. 왕조와 교역망의 공통 배경은 종합 역사 해설에서 확인할 수 있습니다.",
+      "words": 16,
+      "characters": 69,
+      "sha256": "7d3286b6f6c2c6d95a0afbc4a4445682ad27fd72cdc31dbed47f94ba6ca6cb01"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "1. 사막 한가운데 도시가 생긴 이유",
+      "section": "history",
+      "scope": "detail",
+      "text": "부하라는 자라프샨강의 관개망이 공급한 물로 농경지·정원과 인구를 유지한 오아시스 도시입니다. 운하 관리와 물 배분은 식량·세금·권력의 기반이었습니다. 유네스코가 평가하는 2천 년 이상의 도시 역사와 현존 건물의 연대는 구별해야 합니다. 오늘날 대형 마드라사와 시장 건물은 주로 16~17세기에 조성됐습니다.",
+      "words": 36,
+      "characters": 136,
+      "sha256": "fea4b47c26a44ee64d34aba5f03d8324b68dc7d2b26597eb5a9de5946c621e44"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "1. 사막 한가운데 도시가 생긴 이유",
+      "section": "history",
+      "scope": "detail",
+      "text": "아르크 성채의 통치 공간, 성벽 안의 모스크·마드라사·거주지, 시장과 골목이 서로 연결됐습니다. 골목의 그늘과 물 저장시설은 기념건축 사이에 주민의 생활을 유지했습니다.",
+      "words": 20,
+      "characters": 75,
+      "sha256": "9d2662d1ad9ba95a27b452eb6d20376b7f24a21196ac63f3d2384c09885b4a5a"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "2. 이슬람 이전의 소그디아나와 교역망",
+      "section": "history",
+      "scope": "detail",
+      "text": "부하라는 이란어파 소그드어가 쓰이던 소그디아의 교역도시였습니다. 상인들은 중간 시장과 외지 공동체를 통해 물품·정보·신용을 연결했습니다. 비단 외에도 말·직물·금속품·유리와 종교·기술이 이동했습니다. 교역망 전체의 형성은 종합 역사 해설에서 다룹니다.",
+      "words": 26,
+      "characters": 115,
+      "sha256": "3d99e178965849988d7ad8620df7cede27bb08c6ef4e6cc5e372e70948011a03"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.1.paragraphs.1.0",
+      "title": "2. 이슬람 이전의 소그디아나와 교역망",
+      "section": "history",
+      "scope": "detail",
+      "text": "이슬람 이전에는 조로아스터교 계열 신앙과 지역 제의 등 여러 전통이 있었습니다. 후대의 이슬람 도시 경관을 고대에 소급할 수 없으며, 사원에 관한 전설과 고고학적 증거도 구별해야 합니다.",
+      "words": 26,
+      "characters": 79,
+      "sha256": "232f74242ccb3579db41a7992203d26b8949392248c10c7c094a65c132dd5a8f"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "3. 아랍 정복과 이슬람화: 단번에 바뀌지 않은 사회",
+      "section": "history",
+      "scope": "detail",
+      "text": "8세기 초 쿠타이바 이븐 무슬림의 원정으로 아랍 지배가 강화됐지만 개종과 언어 변화는 여러 세대에 걸쳤습니다. 예배·행정의 변화에는 정치적 압력, 유인책과 상인·학자의 활동이 함께 작용했습니다.",
+      "words": 24,
+      "characters": 85,
+      "sha256": "4d570555fe3e64c17fec8c31d176ebb0729923ca093fbdecff9a86cf96cf31ab"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.2.paragraphs.1.0",
+      "title": "3. 아랍 정복과 이슬람화: 단번에 바뀌지 않은 사회",
+      "section": "history",
+      "scope": "detail",
+      "text": "아랍어의 종교·학술 권위와 페르시아어의 일상·문학 문화는 공존했습니다. 이후 튀르크계 왕조의 지배도 이 다언어 환경을 즉시 없애지는 않았습니다. 오늘날 부하라의 우즈베크어·타지크어 문화는 이러한 긴 교류의 배경에서 이해할 수 있습니다.",
+      "words": 28,
+      "characters": 104,
+      "sha256": "0e677eab30116794523329f999a194f8b707d6e63b5dbd929bfef6132ff875c8"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "4. 사만 왕조: 부하라의 첫 번째 황금기",
+      "section": "history",
+      "scope": "detail",
+      "text": "9~10세기 사만 왕조의 수도 부하라는 이슬람 학문과 신페르시아어 문학을 후원했습니다. 인근에서 성장한 이븐 시나의 교육과 도서관 이용은 도시를 연결한 지식망의 한 사례입니다. 10세기 말 카라한 왕조의 집권 이후에도 학문·시장·관개 기반이 이어졌습니다.",
+      "words": 31,
+      "characters": 112,
+      "sha256": "3b660d3565a1f996ba72051e5bf3cc1e7ba82d5f362bdf5aed7c228733ed5916"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.3.paragraphs.1.0",
+      "title": "4. 사만 왕조: 부하라의 첫 번째 황금기",
+      "section": "history",
+      "scope": "detail",
+      "text": "이스마일 사마니 영묘에서는 입방체와 돔의 결합, 벽돌을 돌려 쌓아 만든 기하학 무늬를 볼 수 있습니다. 같은 벽돌이 하중을 받으며 장식의 음영도 만듭니다. 청색 유약 타일이 화려한 후대 건축과 재료 사용을 비교할 수 있는 유적입니다.",
+      "words": 34,
+      "characters": 97,
+      "sha256": "5275701b1665c7d91bd81fcaf3effe32ded0b95a8d5031a1aea538dd0b2b411b"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "5. 카라한 왕조와 칼랸 미나레트",
+      "section": "history",
+      "scope": "detail",
+      "text": "1127년 카라한 왕조 시대에 세운 칼랸 미나레트는 약 46m 높이로, 종교시설의 위치와 도시의 위상을 드러냈습니다. 가늘어지는 몸체와 상부 갤러리는 벽돌 장식과 구조를 함께 살펴볼 부분입니다.",
+      "words": 25,
+      "characters": 84,
+      "sha256": "31308fc98c801ab896d3956d094a46265b0d935094908a1c3aaa5581ce60fcdd"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.4.paragraphs.1.0",
+      "title": "5. 카라한 왕조와 칼랸 미나레트",
+      "section": "history",
+      "scope": "detail",
+      "text": "여러 장식 띠는 벽돌 배열만으로 서로 다른 무늬를 만듭니다. 칭기즈칸이 아름다움에 감탄해 탑을 살렸다는 이야기는 전승이며, 동시대 기록으로 확정된 사건처럼 설명하지 않습니다. 몽골 침입에서 부하라의 유일한 생존 건물이었다는 주장도 피해야 합니다.",
+      "words": 31,
+      "characters": 107,
+      "sha256": "453e33c260f0a93b772b807aa4016a8cf07456a457a08388ec56d12ea0cd515c"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "6. 1220년 몽골 정복과 도시의 재편",
+      "section": "history",
+      "scope": "detail",
+      "text": "1220년 몽골 정복은 약탈·파괴·인구 이동을 일으켰지만 부하라의 모든 도시 기능이 사라진 것은 아닙니다. 이후 교역·종교 활동이 회복되며 새로운 정치질서에 적응했습니다.",
+      "words": 20,
+      "characters": 76,
+      "sha256": "cfedc2077a22c95f0439f4e9eef052c5b8b697f627ee84a61e96acc4209058f4"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.5.paragraphs.1.0",
+      "title": "6. 1220년 몽골 정복과 도시의 재편",
+      "section": "history",
+      "scope": "detail",
+      "text": "14세기 후반 부하라는 티무르의 지배권에 들어갔으나 제국의 수도는 사마르칸트였습니다. 부하라의 역할은 종교교육과 지역 교역의 중심이라는 점에서 구별됩니다.",
+      "words": 17,
+      "characters": 70,
+      "sha256": "e2b343edacd00f528c1d6228c78e6b57a5f39c36fa09df518b0679ebd5619bda"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "7. 티무르 시대: 수도는 아니지만 중요한 학문의 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "15세기 울루그베크가 부하라에 세운 마드라사는 티무르 왕조의 교육 후원을 보여줍니다. 마드라사는 법학·신학·언어 등을 배우는 시설이자 학생의 거주 공간이며, 후원자와 종교 권위가 만나는 곳이었습니다.",
+      "words": 23,
+      "characters": 89,
+      "sha256": "d5676a3f472a86dd4d93d0d098dd358d97f791bd1e889ce0e25ff0a18cc87a67"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.6.paragraphs.1.0",
+      "title": "7. 티무르 시대: 수도는 아니지만 중요한 학문의 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "정면의 이완·타일뿐 아니라 안뜰과 학생 방의 배치를 함께 보십시오. 사마르칸트와 건축 어휘를 공유하면서도 규모·건립 시기와 도시에서의 역할은 달랐습니다.",
+      "words": 18,
+      "characters": 68,
+      "sha256": "08d1c920405c12c32770c7064ccb48614eaf14de802096cba007e4cf92163678"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "8. 샤이바니 왕조: 오늘날 옛 시가지의 골격",
+      "section": "history",
+      "scope": "detail",
+      "text": "16세기 샤이바니 세력과 뒤이은 통치자들의 후원으로 모스크·마드라사·시장 건설이 확대됐습니다. 현재 옛 시가지의 골격은 이때부터 17세기에 걸친 재편의 결과입니다.",
+      "words": 18,
+      "characters": 74,
+      "sha256": "a0515b59db242a340682f999ae689a0fa8c3db835c42939195e1ffa277a30560"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.7.paragraphs.1.0",
+      "title": "8. 샤이바니 왕조: 오늘날 옛 시가지의 골격",
+      "section": "history",
+      "scope": "detail",
+      "text": "포이칼랸에는 12세기 미나레트와 16세기 칼랸 모스크·미리아랍 마드라사가 함께 있습니다. 사진 한 장에 담겨도 같은 시대에 지어진 건축군은 아닙니다.",
+      "words": 18,
+      "characters": 66,
+      "sha256": "320db5e1686439c6ea820983be67484c70a3a6404b8dd7c9ab36aca3523c9c4b"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.7.paragraphs.2.0",
+      "title": "8. 샤이바니 왕조: 오늘날 옛 시가지의 골격",
+      "section": "history",
+      "scope": "detail",
+      "text": "타키 사라폰과 타키 틸팍푸루숀 같은 돔형 시장의 이름은 환전과 모자 거래 등 옛 상업 활동을 기억합니다. 돔 아래의 그늘과 통로는 교역의 실용적 기반이었습니다. 유네스코가 평가하는 도시 조직은 이런 시장·광장·골목과 종교시설의 연결까지 포함합니다.",
+      "words": 32,
+      "characters": 107,
+      "sha256": "7405559a975a66bb6fa39002e267e16a12845240fd400d756f962210a431613e"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "9. 17세기 라비하우즈: 물·상업·교육의 만남",
+      "section": "history",
+      "scope": "detail",
+      "text": "라비하우즈는 17세기 연못을 중심으로 마드라사와 상업·휴식 공간이 결합한 장소입니다. ‘하우즈’는 물을 담는 연못을 뜻합니다. 건조한 도시에서 저장수는 생활 기반이었으나 전통 연못을 언제나 깨끗한 식수원이었다고 미화할 수는 없습니다.",
+      "words": 27,
+      "characters": 104,
+      "sha256": "894910d739a43b03ec8243115a228a70decb4cd54e6f2385e3a4e57d0af14c03"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.8.paragraphs.1.0",
+      "title": "9. 17세기 라비하우즈: 물·상업·교육의 만남",
+      "section": "history",
+      "scope": "detail",
+      "text": "나디르 디반베기 마드라사 정면의 새·동물 도상은 이슬람 미술의 표현이 시대와 시설의 기능에 따라 달랐음을 보여줍니다. 현재의 카페·산책로와 과거 물 관리의 역할도 구별해 보십시오.",
+      "words": 23,
+      "characters": 78,
+      "sha256": "8fd296078813492f69aabae6fd8c8ef8d2fdcb42e6bd8ac5d4926731c08a875a"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "10. 부하라의 종교적 권위와 수피즘",
+      "section": "history",
+      "scope": "detail",
+      "text": "이맘 알부하리의 하디스 연구는 부하라에서만 이뤄진 일이 아니라 여러 도시를 여행하며 지식을 모은 활동입니다. 부하라 인근의 나크쉬반디야 수피 전통도 스승과 제자의 전승을 통해 넓게 확산됐습니다.",
+      "words": 25,
+      "characters": 84,
+      "sha256": "3c6222510d42723bb51b9909f64e34f965eaa2683ddc838723fd7c598d654a12"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.9.paragraphs.1.0",
+      "title": "10. 부하라의 종교적 권위와 수피즘",
+      "section": "history",
+      "scope": "detail",
+      "text": "통치자의 종교시설 후원은 정치적 권위와 연결됐지만 주민의 신앙 실천은 다양했습니다. 현재의 마드라사도 정규 교육기관·박물관·관광시설 등 용도가 다르므로 현장 안내를 확인해야 합니다.",
+      "words": 21,
+      "characters": 81,
+      "sha256": "55fcc95d0202aabfae397a5ce6ff11f76fa225aa736898a885c2776a7ea1a0c2"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "11. 부하라 칸국과 에미르국: 궁정과 권력",
+      "section": "history",
+      "scope": "detail",
+      "text": "아르크 성채는 여러 세기에 걸쳐 증축된 궁정·행정·방어 공간입니다. 높은 성벽 안 통치자의 영역과 바깥 시장·주거지의 관계가 부하라 권력의 공간적 구성을 보여줍니다. 현존 성벽과 건물을 모두 고대 원형으로 설명할 수는 없습니다.",
+      "words": 30,
+      "characters": 98,
+      "sha256": "980806eb6a7fde0bae465655f9cb67b7473ab96ea6f01479b6770383724de7c7"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.10.paragraphs.1.0",
+      "title": "11. 부하라 칸국과 에미르국: 궁정과 권력",
+      "section": "history",
+      "scope": "detail",
+      "text": "18세기 후반부터 망기트 왕조가 에미르국을 이끌었습니다. 후기 통치자의 시토라이 모히 호사 여름 궁전에는 전통 장식과 러시아·유럽풍 실내 요소가 함께 보입니다. 아르크와 비교하면 통치 공간이 방어·행정뿐 아니라 휴양과 과시로 확대된 모습을 읽을 수 있습니다.",
+      "words": 33,
+      "characters": 112,
+      "sha256": "0c9795ef61050fbc2525c7a2333228f64726096ab8014693074e5fcb85652bc5"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "12. 러시아 제국의 팽창과 보호국",
+      "section": "history",
+      "scope": "detail",
+      "text": "1868년 패전 뒤 부하라 에미르국은 러시아의 보호국적 지배 아래 놓였으나 에미르의 내부 통치 일부는 유지됐습니다. 일반 식민 행정도시로 즉시 편입된 타슈켄트와 구별되는 점입니다. 철도·면화 거래·러시아 공산품은 외부 시장과의 연결과 의존을 함께 키웠습니다.",
+      "words": 32,
+      "characters": 113,
+      "sha256": "a990f25306a8b1285db504e06362f67307dfc49c9cec2e1b3a8c0bcca75d6eb9"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.11.paragraphs.1.0",
+      "title": "12. 러시아 제국의 팽창과 보호국",
+      "section": "history",
+      "scope": "detail",
+      "text": "19세기 말~20세기 초 자디드 지식인들은 새 학교·인쇄물과 토론을 통해 교육·사회 개혁을 주장했습니다. 부하라 근대사는 종교시설의 지속뿐 아니라 이런 내부 변화와 갈등도 포함합니다.",
+      "words": 22,
+      "characters": 81,
+      "sha256": "d5471b5935f44c144e53b0d81a0767a715b39007db5aa5bcf9bb4e154c19e550"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.12.paragraphs.0.0",
+      "title": "13. 1920년의 정권 붕괴와 소비에트 시대",
+      "section": "history",
+      "scope": "detail",
+      "text": "1920년 붉은 군대와 지역 혁명세력의 활동 속에 에미르국이 붕괴했고, 전투와 폭격은 아르크 등에도 피해를 줬습니다. 부하라 인민소비에트공화국 수립 후 1920년대 중반 영토 획정을 거쳐 우즈베크 공화국으로 재편됐습니다.",
+      "words": 27,
+      "characters": 97,
+      "sha256": "8573119378472eb8e8c4eefdf9138bbc9f4bfd7a288f65d8dce9a7a6d396bc44"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.12.paragraphs.1.0",
+      "title": "13. 1920년의 정권 붕괴와 소비에트 시대",
+      "section": "history",
+      "scope": "detail",
+      "text": "소련 시대에는 학교·보건·교통이 확대되는 한편 종교기관이 폐쇄·전용되기도 했습니다. 유산의 조사·보존도 이뤄졌으므로 파괴나 근대화 한쪽으로만 평가하기 어렵습니다. 관개 확대와 염류화는 자원·에너지 해설에서 다룹니다.",
+      "words": 22,
+      "characters": 99,
+      "sha256": "f700915958a9c91a5bcee5c80da6cdbde041dab8f336032984585442b7ee1a1c"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.13.paragraphs.0.0",
+      "title": "14. 독립 이후: 세계유산과 살아 있는 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "부하라 역사 지구는 1993년 세계유산에 등재됐습니다. 보존 대상은 기념건축 외관뿐 아니라 골목·시장·광장과 재료·기술이 연결된 도시 조직입니다.",
+      "words": 16,
+      "characters": 66,
+      "sha256": "95bd37d6db1952daf80171137c134eb69a8a351512802b5cf56a287b563cfb64"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.13.paragraphs.1.0",
+      "title": "14. 독립 이후: 세계유산과 살아 있는 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "관광은 소득을 제공하지만 과도한 신축·재료 교체는 진정성을 해칠 수 있습니다. 지하수·염분에 따른 손상과 주민의 주거·상업 수요도 관리해야 합니다. 새 타일의 선명한 색이 곧 보존의 성공을 뜻하지는 않습니다.",
+      "words": 27,
+      "characters": 90,
+      "sha256": "d7c54c430b1a474027bc9fa843c3a594eb01a1c079c0afa967778ab3251b6264"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.14.paragraphs.0.0",
+      "title": "15. 현장에서 읽는 부하라: 하루 답사법",
+      "section": "history",
+      "scope": "detail",
+      "text": "아르크에서 궁정과 도시의 경계를 보고, 포이칼랸에서 12세기 첨탑과 16세기 건물을 비교한 뒤 돔형 시장과 라비하우즈로 걸으면 권력·신앙·교역·물의 연결을 확인할 수 있습니다.",
+      "words": 21,
+      "characters": 78,
+      "sha256": "8dee1e180a30e2ce480f3409b027dda67102257f69caad5c046de06a4406517d"
+    },
+    {
+      "file": "bukhara-history.js",
+      "path": "chapters.14.paragraphs.1.0",
+      "title": "15. 현장에서 읽는 부하라: 하루 답사법",
+      "section": "history",
+      "scope": "detail",
+      "text": "다음 날 사마니 영묘의 벽돌, 차슈마 아유브의 샘 전승, 시토라이 모히 호사의 실내 장식을 비교해 보십시오. 차슈마 아유브의 ‘욥의 샘’ 이야기는 지역의 종교적 전승이며 성경 본문이 부하라 방문을 증명하는 것은 아닙니다.",
+      "words": 31,
+      "characters": 93,
+      "sha256": "2621c099d04e0a9f04fdac102a258124648dbb76d1bf7909d53bfd24c36c24d9"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "소그디아나의 국제 교역도시에서 티무르 제국의 수도, 천문학과 청색 타일의 도시로 이어지는 역사",
+      "words": 12,
+      "characters": 41,
+      "sha256": "53d12b6ef48217bfca2cbc73cf7bad283d14b5cec9a2ce3d2fcd29a3968cc02f"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "제라프샨 오아시스와 아프라시압",
+      "section": "history",
+      "scope": "detail",
+      "text": "자라프샨 유역의 농업과 교역을 바탕으로 성장한 고대 사마르칸트는 오늘날 아프라시압 유적에 해당합니다. 성벽·궁정·주거·공방은 행정과 생산이 결합한 도시의 흔적입니다. 물길과 방어에 유리한 입지를, 남서쪽 티무르 시대 시가지와 지도에서 비교할 수 있습니다.",
+      "words": 30,
+      "characters": 113,
+      "sha256": "5cf239c1636eaade996be56b865d5d2ab3d30aeb719fcf221c359af6e4223f3c"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "소그드 상인과 세계의 교차로",
+      "section": "history",
+      "scope": "detail",
+      "text": "아프라시압 박물관의 7세기 벽화에서는 사절의 복식·예물·행렬과 소그드어 명문을 볼 수 있습니다. 서벽 두 인물의 깃털 관모는 고구려 사절 해석의 근거지만 실제 방문의 확증은 아닙니다. 장면별 사실과 학술적 논의는 종합 역사 해설의 아프라시압 항목에서 자세히 다룹니다.",
+      "words": 35,
+      "characters": 115,
+      "sha256": "7706b924ca609909b1e151aedf06ba12c3a2dad7ff637aed75af5c2fb6215a8b"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "이슬람화와 도시 문화의 변용",
+      "section": "history",
+      "scope": "detail",
+      "text": "8세기 이후 이슬람이 확산되면서 모스크·학교와 종교 후원이 도시의 공간을 바꾸었습니다. 이란계 소그드어 전통, 페르시아어 문화, 아랍어 학문과 튀르크계 정치세력이 장기간 상호작용했습니다. 소그드어를 페르시아어의 한 갈래로 보거나 주민의 언어가 정복 직후 일제히 바뀌었다고 설명해서는 안 됩니다.",
+      "words": 35,
+      "characters": 130,
+      "sha256": "a7ca5e36b49bf4eca8a53801f622b983155c09af721d72b783a7ea37aa885ca7"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "종이 제작과 기술 교류",
+      "section": "history",
+      "scope": "detail",
+      "text": "사마르칸트의 종이 제작은 필사본·행정 문서와 교육을 뒷받침했습니다. 751년 탈라스 전투의 포로가 제지술을 한 번에 전파했다는 이야기는 복합적인 기술 확산을 단순화합니다. 오늘날 공방 시연에서는 원료와 제작 단계를 볼 수 있지만 고대 공정을 그대로 재현한다고 단정하기는 어렵습니다.",
+      "words": 35,
+      "characters": 123,
+      "sha256": "7568531990bfa15d8358ecb48bc3a02728f8688169ee366a21f5b0431dce33c2"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "1220년 몽골 정복과 도시의 이동",
+      "section": "history",
+      "scope": "detail",
+      "text": "1220년 몽골 정복으로 아프라시압이 큰 피해를 입은 뒤 중심 시가지는 남서쪽으로 이동했습니다. 고대 유적, 티무르 시대 도시, 러시아 시대 확장 구역을 구분하면 같은 이름의 도시가 장소와 경계를 바꿔 온 과정을 읽을 수 있습니다.",
+      "words": 33,
+      "characters": 97,
+      "sha256": "609b9dcbd34e6839c47a0cf81a3b321cba02c211390732086dcdbffe89c63e6a"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "티무르와 제국의 수도",
+      "section": "history",
+      "scope": "detail",
+      "text": "티무르는 사마르칸트에 원정의 자원과 장인을 집중시켜 수도의 모스크·영묘·정원을 건설했습니다. 정복지에서 강제로 이동시킨 사람들의 기술도 동원됐습니다. 이란·중앙아시아 미술 전통이 결합한 기념건축을 볼 때 후원자의 권력과 제작자의 노동을 함께 고려해야 합니다.",
+      "words": 29,
+      "characters": 116,
+      "sha256": "ae5c0fb02c1d2572b4dadaf49c9430382abbe70673ee74bfe383ac618f7d1d98"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "비비하눔 모스크의 야망과 구조",
+      "section": "history",
+      "scope": "detail",
+      "text": "비비하눔은 티무르 시대 제국의 권위를 드러낸 대형 금요 모스크입니다. 거대한 입구와 돔은 기술적 야망과 구조적 부담을 함께 보여줍니다. 아내와 건축가에 관한 낭만적 이야기는 전승입니다. 지진·손상·복원을 거친 현재의 외관에서 원재료와 후대 보수 부분을 구분해 보는 것이 중요합니다.",
+      "words": 36,
+      "characters": 122,
+      "sha256": "a22536dc0f7be4b7fb7135f617a46a97bec0496693508fc05a22a6e9ec2c37d2"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "구르에미르와 왕조의 기억",
+      "section": "history",
+      "scope": "detail",
+      "text": "구르에미르는 티무르와 울루그베크 등 왕실 인물들의 영묘입니다. 청색 늑골형 돔과 금빛 내부 장식은 왕조의 기억과 권위를 표현합니다. 방문객이 보는 기념 표석과 실제 지하 매장 공간은 구별됩니다. 외부의 큰 실루엣과 내부의 정교한 표면을 비교해 보십시오.",
+      "words": 34,
+      "characters": 108,
+      "sha256": "9f944bf4158b29ea87c589ede98d04cf266e868a9a5d5926c75e82c6bb83c108"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "울루그베크와 천문학의 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "울루그베크 천문대에는 대형 자오선 관측장치의 지하 부분이 남아 있습니다. 천문표는 통치자 한 사람의 취미가 아니라 수학자·관측자·필사자와 후원이 결합한 작업의 결과였습니다. 남은 곡선 구조는 천체 위치를 정밀하게 측정하기 위해 필요했던 기구의 규모를 보여줍니다.",
+      "words": 32,
+      "characters": 115,
+      "sha256": "f7eb68db419a10d3070c6986319b0ad70897cd1b444d20079fc11f5b2726df9f"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "레기스탄의 세 마드라사",
+      "section": "history",
+      "scope": "detail",
+      "text": "레기스탄은 15세기 울루그베크 마드라사와 17세기 셰르도르·틸라코리가 둘러싼 광장입니다. 한 번에 완성된 티무르의 설계가 아닙니다. 셰르도르의 동물·태양 얼굴, 틸라코리의 금빛 실내, 울루그베크의 기하학 문양을 비교하면 시대별 후원을 볼 수 있습니다. 마드라사는 교육과 학생 거주, 예배 기능을 함께 담았습니다.",
+      "words": 37,
+      "characters": 138,
+      "sha256": "ea8697e2ce431aabafc93aea27ee0a8ffec01639c623cbd49f935eb5db9a5264"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "샤히진다와 성지의 형성",
+      "section": "history",
+      "scope": "detail",
+      "text": "샤히진다는 계단과 좁은 길을 따라 여러 시대의 영묘가 이어진 장소입니다. 성인의 기억과 왕실 후원이 겹치며 순례 공간을 형성했습니다. 영묘마다 유약 타일·모자이크·서예와 돔의 비례를 비교할 수 있습니다. 기도·추모 동선과 관람 동선이 겹치므로 현장 이용자를 배려해야 합니다.",
+      "words": 35,
+      "characters": 119,
+      "sha256": "726c7a5afd635b24310bcd32bfceae74561c6f6c1e99124c5adb27cce19fdf01"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "러시아 제국·소비에트 시대·오늘의 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "러시아 제국 시대 확장 구역에는 유럽식 가로망이 조성됐고, 소련 시대 산업·학교·교통과 종교시설의 용도 변화가 도시를 재편했습니다. 독립 이후 관광·복원은 소득을 늘렸지만 신축 규모·재료 교체와 주민 생활의 보존이라는 과제를 낳았습니다. 세계유산의 가치는 새롭게 단장한 외관만으로 평가할 수 없습니다.",
+      "words": 37,
+      "characters": 132,
+      "sha256": "a069392f3c7468765281100f8de77fa70862a9035ce51258dc0c57a247524c58"
+    },
+    {
+      "file": "history-samarkand.js",
+      "path": "chapters.12.paragraphs.0.0",
+      "title": "현장 답사: 세 시대를 겹쳐 보기",
+      "section": "history",
+      "scope": "detail",
+      "text": "아프라시압에서 고대 도시의 위치와 벽화를, 비비하눔·구르에미르에서 티무르의 권력과 왕조 기억을, 천문대에서 관측 기술을 살펴보십시오. 레기스탄에서는 세 건물의 건립 시대를 구별하면 됩니다. 각 장소의 질문을 달리하면 닮은 청색 돔과 타일도 서로 다른 역사적 기능을 보여줍니다.",
+      "words": 34,
+      "characters": 121,
+      "sha256": "ac5189f87bfdee95b61f8aae70da4bdfc1b88e3ec828b29a417cf178c6fc9b99"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "고대 차치 오아시스에서 러시아령 투르키스탄의 중심, 1966년 대지진 이후의 소비에트 도시, 독립국 수도까지",
+      "words": 13,
+      "characters": 48,
+      "sha256": "11fbe1e280bd00ff4407dbb3c0e568f1209b8038a33f2be8a3c57ae27cfb1e60"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "치르치크강의 오아시스",
+      "section": "geography",
+      "scope": "detail",
+      "text": "타슈켄트는 치르치크강과 시르다리야 수계에 연결되는 오아시스 도시입니다. 강에서 갈라진 관개수로가 정원과 농경지, 정착지를 유지했습니다. 고대에는 차치 또는 샤시라는 이름과 연결되며, 중앙아시아의 농경 오아시스와 북쪽 초원 지역을 잇는 위치가 중요했습니다. 오늘날 넓은 대로와 지하철을 보더라도 도시의 출발점에는 물을 확보하고 분배하는 문제가 있었습니다.",
+      "words": 41,
+      "characters": 157,
+      "sha256": "3fb24b2921797dbb37454f07c9652c7ff082015bf2e3cde72f36dd3cd3b4f892"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "교역·장인·종교의 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "타슈켄트는 실크로드의 유일한 중심지가 아니라 여러 도시를 연결하는 교통·교역망의 한 거점이었습니다. 직물과 금속제품, 농산물과 가축이 시장에서 교환되었고, 장인과 종교인들이 도시의 구역을 형성했습니다. 이슬람화는 수 세기에 걸쳐 진행되었으며 도시의 언어와 문화도 페르시아어·튀르크어 전통이 교차했습니다. 오래된 마할라 골목과 시장은 이 복합적 역사에 대한 단서를 남깁니다.",
+      "words": 43,
+      "characters": 166,
+      "sha256": "800169c46a070c9126638b779a190479f027e3bba7a7fff39b83a75d3f9cf2d6"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "중세 왕조와 지역 권력",
+      "section": "history",
+      "scope": "detail",
+      "text": "중세 타슈켄트는 여러 튀르크계 왕조와 지역 통치자의 영향 아래 있었습니다. 인접한 오아시스 도시와 초원 정치세력의 관계에 따라 무역과 방어의 중요성이 달라졌습니다. 도시의 역사를 사마르칸트나 부하라의 왕조 연표에 그대로 맞추기보다, 시르다리야 북쪽과 페르가나 방면을 잇는 위치에 주목하는 편이 유익합니다.",
+      "words": 38,
+      "characters": 133,
+      "sha256": "72ec84e516e651e4a96564d5942d4fb402cec071a32f725a08d16af216971d71"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "19세기 러시아 제국의 점령",
+      "section": "history",
+      "scope": "detail",
+      "text": "1865년 러시아군이 타슈켄트를 점령한 뒤 이곳은 러시아령 투르키스탄의 핵심 행정 중심지가 되었습니다. 전통적 구시가지와 러시아식 신시가지가 구분되어 발전했고, 새로운 군사·행정시설과 도로가 만들어졌습니다. 식민 통치는 교통과 상업의 변화를 가져왔지만 지역 주민의 정치적 자율성을 제한했습니다. 도시 공간의 이중 구조는 오늘날에도 역사적으로 중요한 주제입니다.",
+      "words": 41,
+      "characters": 161,
+      "sha256": "595dd2f616ea82b46152147757d1c862ba58e9dc2c61fd34ca87070a1c024b3a"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "혁명과 소비에트 수도",
+      "section": "history",
+      "scope": "detail",
+      "text": "1917년 러시아 혁명 이후 타슈켄트는 정치적 격변의 중심에 섰습니다. 소비에트 체제가 정착하면서 도시의 행정·산업·교육 기능이 확대되었습니다. 1930년 우즈베크 소비에트 공화국의 수도가 사마르칸트에서 타슈켄트로 옮겨졌습니다. 이 변화는 도시가 단순한 지역 교역 거점에서 국가 규모의 계획·교통 중심지로 성장하는 계기가 되었습니다.",
+      "words": 38,
+      "characters": 149,
+      "sha256": "7667471b29791381afacaca0aa3a5927c7af37790f5d3b8c19515a6d4bdb677a"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "1966년 대지진과 재건",
+      "section": "history",
+      "scope": "detail",
+      "text": "1966년 지진은 타슈켄트의 주택과 도시 공간에 큰 피해를 주었습니다. 이후 소비에트 여러 지역의 인력과 자원이 투입되어 주거단지와 넓은 도로, 공공건축이 재건되었습니다. 이 과정은 도시의 외관을 크게 바꾸었고, 다양한 지역 출신의 기술자와 주민이 유입되는 계기가 되었습니다. 오늘날의 대규모 도로망과 건물 배치를 볼 때 지진 이전 도시와 이후 계획도시의 차이를 떠올려 보세요.",
+      "words": 50,
+      "characters": 162,
+      "sha256": "7f0080fd19d04a2e376d326bfdd7097d69da3f5f4e616d88af0858fea02e6bd9"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "지하철과 소비에트 공공미술",
+      "section": "history",
+      "scope": "detail",
+      "text": "타슈켄트 지하철은 중앙아시아의 초기 도시철도 시스템 가운데 하나로, 역마다 대리석과 조명, 장식 패널 등 서로 다른 미적 주제를 보여줍니다. 교통시설을 국가의 기술력과 문화적 성취를 보여주는 공공공간으로 만든 소비에트 시대의 사고가 반영되어 있습니다. 역의 장식은 역사와 문학, 과학에 대한 기억을 시각적으로 표현하기도 합니다. 이용 중에는 현재의 촬영·보안 규정을 확인하세요.",
+      "words": 48,
+      "characters": 164,
+      "sha256": "a8104fdccf97bb5e53e2a098e96618402eb6fd6effcf848c2e63cfb9c69ffaef"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "하즈라티 이맘과 종교 학문",
+      "section": "history",
+      "scope": "detail",
+      "text": "하즈라티 이맘 단지는 타슈켄트의 종교·문화적 중심지 가운데 하나입니다. 모스크와 마드라사, 고문헌 전통을 통해 중앙아시아 이슬람의 학문적 연속성을 볼 수 있습니다. 이곳과 관련해 오래된 쿠란 사본이 알려져 있으나 사본의 정확한 연대와 전승 경로는 학술적 논의의 대상입니다. 건물의 현재 기능과 예배 시간, 방문 예절을 구분하는 것이 좋습니다.",
+      "words": 45,
+      "characters": 147,
+      "sha256": "b44cb7c19b027b550ba5d6aa9a29f37f886635927aaf2d9fe4c0428e1f5734d4"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "독립과 아미르 티무르의 재해석",
+      "section": "history",
+      "scope": "detail",
+      "text": "1991년 독립 이후 타슈켄트는 새로운 국가 정체성을 표현하는 수도로 변모했습니다. 아미르 티무르 광장의 기마상은 역사적 인물을 현대 국가의 상징으로 다시 배치한 사례입니다. 공공광장과 기념물은 과거를 그대로 재현하기보다 현재의 정치·문화적 선택을 반영합니다. 티무르의 실제 활동 무대였던 사마르칸트와 이곳의 기념 방식을 비교해 보세요.",
+      "words": 41,
+      "characters": 148,
+      "sha256": "ad079064e68f481767a4204184c8c728ae2b1cd27780d00c3f3fdf0b37ba7673"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "현대 경제와 도시의 확장",
+      "section": "economy",
+      "scope": "detail",
+      "text": "타슈켄트는 정부기관과 대학, 서비스업, 제조업, 교통망이 집중된 우즈베키스탄의 최대 도시권입니다. 독립 이후 시장경제 개혁과 외국인 투자, 주택 개발이 도시 경관을 바꾸고 있습니다. 동시에 교통 혼잡과 대기질, 물과 에너지 공급 같은 대도시 문제가 중요해졌습니다. 옛 시장과 새 상업지구를 함께 관찰하면 경제 변화가 시민의 생활에 미치는 영향을 볼 수 있습니다.",
+      "words": 48,
+      "characters": 155,
+      "sha256": "b3c94544e6c5143da9a546b32d62a352d1f385d416ba6fd153878ed688f4779f"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "미노르 모스크와 현대 이슬람 건축",
+      "section": "history",
+      "scope": "detail",
+      "text": "미노르 모스크는 현대에 세워진 종교 건축으로 밝은 외벽과 푸른 돔이 특징입니다. 사마르칸트·부하라의 역사적 모스크와 닮은 장식 요소를 사용하지만 건립 시대와 구조, 도시에서의 역할은 다릅니다. 이슬람 건축이 과거의 유물로만 남아 있는 것이 아니라 현재에도 새로운 공간으로 만들어지고 있음을 보여줍니다.",
+      "words": 38,
+      "characters": 131,
+      "sha256": "7a9afea62762c21b2543e1242ba788b3e7f62f6eed5a64927f52a354b2c1a1b3"
+    },
+    {
+      "file": "history-tashkent.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "현장 답사: 옛 도시와 새 도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "하즈라티 이맘에서 종교교육과 필사 전통을 보고, 아미르 티무르 광장에서 독립 이후 국가 정체성의 표현을 읽어 보세요. 미노르 모스크에서는 전통 양식의 현대적 재해석을 관찰할 수 있습니다. 이동 중 지하철과 넓은 도로, 주거단지를 보면 1966년 지진 이후의 도시계획이 왜 타슈켄트의 성격을 결정했는지 이해하기 쉬워집니다.",
+      "words": 42,
+      "characters": 138,
+      "sha256": "5541f888ca9d67b7743f999ceb58cac9d8a6d6184f787d670fc1ca119286763b"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "톈산 산록의 교역 거점에서 제정 러시아의 피슈페크, 소비에트 프룬제, 현대 키르기스스탄의 수도로",
+      "words": 12,
+      "characters": 42,
+      "sha256": "612a648a706c24cdd43f22376d40109b30458abdd1d6c789e38c2a33218bf006"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "추이 계곡과 톈산의 경계",
+      "section": "geography",
+      "scope": "detail",
+      "text": "비슈케크는 톈산산맥 북쪽 추이 계곡에 자리합니다. 산에서 내려오는 물과 넓은 평야는 농업·목축·교역을 연결했습니다. 도시의 남쪽으로 산맥이 솟고 북쪽으로 카자흐스탄과 이어지는 지형은 오늘날 교통망과 도시 확장에도 영향을 줍니다. 비슈케크의 역사를 이해할 때는 고대 거대 왕궁보다 계곡을 따라 움직인 사람과 물자의 흐름에 주목해야 합니다.",
+      "words": 42,
+      "characters": 147,
+      "sha256": "9ab944983e48907b7217a82ce77f6a4f0ce42ac216785620f3cc346b3824ec0c"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "실크로드와 유목민의 이동",
+      "section": "history",
+      "scope": "detail",
+      "text": "이 지역은 농경 오아시스와 유목 목축 세계가 만나는 접경지였습니다. 실크로드는 하나의 포장도로가 아니라 계절과 정치 상황에 따라 바뀌는 여러 이동 경로였고, 상인과 목축민, 사절단이 계곡과 산길을 이용했습니다. 유목 사회에서는 말과 가축, 이동식 거주지와 계절 목초지가 중요했습니다. 도시의 성장도 주변 농업과 목축 생산을 떼어 놓고 설명할 수 없습니다.",
+      "words": 47,
+      "characters": 152,
+      "sha256": "b45b4d5f64c72f3b019d7a8aba87e1943d9c409cc30353c532a78747c5c9e463"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "코칸 칸국과 피슈페크 요새",
+      "section": "history",
+      "scope": "detail",
+      "text": "19세기 초 코칸 칸국은 추이 계곡에 군사·행정 거점을 마련했습니다. 피슈페크라는 이름은 이 시기의 요새와 연결됩니다. 이후 러시아 제국의 팽창 과정에서 요새가 파괴되고 새 정착지가 형성되었습니다. 비슈케크는 사마르칸트처럼 수천 년 동안 같은 장소에 대형 기념건축이 축적된 도시라기보다 근대에 도시 규모와 기능이 크게 바뀐 곳입니다.",
+      "words": 43,
+      "characters": 144,
+      "sha256": "70892916f84e5a133710d88635ee792a99a88f6606d3aad077119075e5216445"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "러시아 제국의 정착도시",
+      "section": "history",
+      "scope": "detail",
+      "text": "19세기 후반 러시아 제국의 지배 아래 도로와 농경지, 새로운 주거구역이 형성되었습니다. 이주민과 현지 주민의 관계는 교역과 협력뿐 아니라 토지 이용을 둘러싼 긴장도 포함했습니다. 도시의 격자형 도로와 녹지 계획은 이후 소비에트 시대의 개발과 결합했습니다. 근대 도시의 형성을 단순한 문명화 과정으로만 보는 것은 식민 지배의 권력관계를 놓치는 설명입니다.",
+      "words": 46,
+      "characters": 153,
+      "sha256": "f432e104d6f519b5c0eedb26b7bc6b4d34fd1114fd99c02f33644c937103a4c8"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "1916년 봉기와 집단적 기억",
+      "section": "history",
+      "scope": "detail",
+      "text": "1916년 중앙아시아의 반란과 탄압, 대규모 피난은 키르기스 역사에서 중요한 상처입니다. 제정 러시아의 전시 동원 정책과 토지 문제, 식민 통치의 긴장이 폭발했으며 많은 주민이 중국 방면으로 피난했습니다. 키르기스 사회에서는 이 비극을 우르쿤이라고 기억합니다. 비슈케크의 현대사를 이해할 때 독립 기념물뿐 아니라 이러한 집단적 기억도 중요합니다.",
+      "words": 43,
+      "characters": 151,
+      "sha256": "274ee9510ba167b3843f1eeada481ce4f1bb0fa39227632296de43213788b923"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "프룬제: 소비에트 수도의 형성",
+      "section": "history",
+      "scope": "detail",
+      "text": "소비에트 시기 도시는 혁명가 미하일 프룬제의 이름을 따 프룬제로 불렸습니다. 키르기스 자치·연방 공화국의 행정 중심지로 성장하면서 학교와 공장, 주거단지, 공원, 문화시설이 조성되었습니다. 소비에트 계획도시 특유의 넓은 대로와 광장, 공공건축이 현재 도심의 기본 골격을 만들었습니다. 도시가 과거의 피슈페크에서 현대의 비슈케크로 바뀌는 핵심 단계입니다.",
+      "words": 42,
+      "characters": 156,
+      "sha256": "107536d6c978d64fd27e6f63f040da5e07a7b81b6049baecb8f9131850e4f518"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "마나스 서사시와 민족 정체성",
+      "section": "history",
+      "scope": "detail",
+      "text": "마나스는 키르기스 민족의 대표적인 구전 서사시로, 영웅과 공동체의 역사적 상상력, 윤리와 사회적 가치를 담습니다. 마나스 이야기는 여러 전승자에 의해 다른 판본으로 구연되어 왔습니다. 수도 공공공간과 국제공항의 이름에 마나스가 등장하는 것은 독립 이후 문화적 정체성을 표현하는 방식입니다. 서사시의 이야기를 현대 역사적 사건의 직접 기록으로 받아들이는 것은 주의해야 합니다.",
+      "words": 47,
+      "characters": 163,
+      "sha256": "9798e37b9236e9ff7f741893fb2c065fbcfd7a0f31279d17d4b2c74a93323bd9"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "독립 이후의 정치적 격변",
+      "section": "history",
+      "scope": "detail",
+      "text": "1991년 독립 이후 비슈케크는 키르기스스탄의 수도가 되었습니다. 2005년과 2010년, 2020년의 정치적 격변은 수도의 광장과 거리에서 중요한 장면을 남겼습니다. 정치적 변화를 민주화의 단선적 성공이나 실패로만 평가하기보다 권력 집중, 지역 간 이해관계, 시민 동원과 제도 변화가 복합적으로 작용한 과정으로 보는 것이 좋습니다.",
+      "words": 40,
+      "characters": 147,
+      "sha256": "ca9740aa6dea1c66a18a1bf9323f25f104bc92cd943d1d97c95f1f86a829eebc"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "종교와 세속적 생활",
+      "section": "history",
+      "scope": "detail",
+      "text": "비슈케크에서는 모스크·공원·대학·문화시설이 함께 도시의 일상을 이룹니다. 이슬람 전통, 목축사회의 관습, 소비에트 시대의 세속적 유산이 겹치지만 신앙 실천은 개인·세대·지역에 따라 다릅니다. 건물의 종교적 외관만으로 주민 전체의 생활방식을 판단하기 어렵습니다.",
+      "words": 28,
+      "characters": 118,
+      "sha256": "86966dbadb9ba92876ec895b79d73b622f89f4f37360e61c7e5900ac48185e8d"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "경제·이주·도시화",
+      "section": "economy",
+      "scope": "detail",
+      "text": "비슈케크에는 행정과 서비스업, 대학, 시장과 교통 기능이 집중되어 있습니다. 국내 농촌에서 수도로 이동하는 인구와 해외 노동이주는 가계경제와 도시 주거에 큰 영향을 줍니다. 도시 외곽의 주거지 확장과 기반시설 공급은 중요한 정책 과제입니다. 전통 시장과 현대 쇼핑시설을 비교하면 키르기스스탄의 경제구조를 생활 수준에서 살펴볼 수 있습니다.",
+      "words": 43,
+      "characters": 147,
+      "sha256": "ecd63460542d37b46dc9effa36ddbf9ff36b4946a3ce5e8066774a689d7212f2"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "알라아르차: 수도 옆의 산악 자연",
+      "section": "geography",
+      "scope": "detail",
+      "text": "비슈케크에서 남쪽으로 이동하면 알라아르차 국립공원의 계곡과 산악 생태계에 도달합니다. 톈산의 융기와 하천·빙하 침식이 만든 지형은 도시와 가까우면서도 전혀 다른 환경입니다. 고도에 따라 식생과 기온이 달라지고 날씨도 빠르게 변합니다. 이곳은 유적지라기보다 키르기스스탄의 자연환경과 산악 관광을 이해하는 중요한 장소입니다.",
+      "words": 37,
+      "characters": 143,
+      "sha256": "a09490b4bfbf85eae2096f27ca66f46a7ed708821fa5ff45b861dde0d072e820"
+    },
+    {
+      "file": "history-bishkek.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "현장 답사: 도시와 산맥을 함께 읽기",
+      "section": "history",
+      "scope": "detail",
+      "text": "알라토 광장과 넓은 대로에서는 소비에트 계획도시의 구조를, 마나스 관련 기념물에서는 독립 이후의 문화적 기억을 읽을 수 있습니다. 남쪽 알라아르차로 이동하면 추이 평야가 급격히 산악 경관으로 바뀝니다. 비슈케크는 추이 계곡, 알마티는 일리 알라타우 북쪽 산록에 있어 두 도시가 같은 계곡에 있다는 설명은 맞지 않습니다.",
+      "words": 43,
+      "characters": 136,
+      "sha256": "69889e9098daa232e704834356ae5b925fb2ddc31ccb0aa464eebb108539ec71"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "이식쿨 호숫가의 암각화·유목문화·실크로드와 현대 휴양산업을 연결하는 지역사",
+      "words": 7,
+      "characters": 35,
+      "sha256": "9faca1d4978892d9328c93e8ac0d6784250c2444da98458bcefbcb128ef74dea"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "이식쿨 분지의 지질과 호수",
+      "section": "geography",
+      "scope": "detail",
+      "text": "촐폰아타는 톈산산맥 사이의 거대한 이식쿨 호수 북쪽 연안에 자리합니다. 이식쿨은 높은 산악 분지에 있는 내륙호로, 주변의 지각 운동과 장기적인 침강·퇴적 과정 속에서 형성되었습니다. 주변 산에서 흘러내리는 하천이 물을 공급하지만 바다로 직접 이어지는 큰 유출구는 없습니다. 호수의 수위와 염분은 유입수와 증발, 기후 변화에 영향을 받습니다.",
+      "words": 44,
+      "characters": 147,
+      "sha256": "5b5ea6100ea3a1b6105cd5f44044e33dae4fbce63c5df5601acdd2539022c6f6"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "왜 ‘따뜻한 호수’인가",
+      "section": "geography",
+      "scope": "detail",
+      "text": "이식쿨이라는 이름은 흔히 ‘따뜻한 호수’로 풀이되며, 높은 고도에도 호수 전체가 쉽게 얼지 않는 특징으로 알려져 있습니다. 이는 호수의 깊이와 물의 순환, 염분, 기후 조건 등이 복합적으로 작용한 결과입니다. 그렇다고 물이 항상 따뜻하다는 뜻은 아닙니다. 가을에는 호숫바람과 수온이 차가울 수 있으므로 여름 휴양지의 이미지만 믿고 수영을 계획해서는 안 됩니다.",
+      "words": 48,
+      "characters": 154,
+      "sha256": "221fefbea5dc41603b0f6ed2d3f020c96d523fe6f78201c1f66cba2717091571"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "암각화의 시간층",
+      "section": "history",
+      "scope": "detail",
+      "text": "촐폰아타 주변 바위에는 산양과 사슴, 사냥 장면 등 여러 시대의 암각화가 남아 있습니다. 제작 시기는 유적과 그림에 따라 달라지며, 모두 같은 시대에 그려진 것으로 이해해서는 안 됩니다. 동물 형상은 사냥과 목축, 의례적 세계관을 연구하는 자료이지만 특정 그림의 의미는 확정하기 어려운 경우가 많습니다. 바위 표면의 검은 산화 피막과 새긴 선의 색 차이를 관찰해 보세요. 야외 유적에서 얼굴을 새긴 발발(Balbal) 석상을 만날 수도 있습니다. 암각화와 석상은 제작 방식과 시대가 다르며, 사진만으로 특정 인물이나 정확한 연대를 정할 수는 없습니다.",
+      "words": 76,
+      "characters": 233,
+      "sha256": "99550f281d536321afb615947257f399224d676f1e78789ddfc4aed5fcbb1a4d"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "고대 유목사회와 목축",
+      "section": "history",
+      "scope": "detail",
+      "text": "톈산의 계곡과 이식쿨 주변 초원은 계절에 따라 목초지가 달라집니다. 이동 목축은 여름의 높은 초지와 겨울의 낮은 지역을 이용하며 가축의 먹이를 확보하는 생활 방식입니다. 말과 양, 소 등 가축은 식량과 이동, 교환에 중요한 역할을 했습니다. 도시의 성벽이나 왕궁이 적게 남았다고 해서 유목 사회의 역사가 단순하거나 기록할 가치가 낮았던 것은 아닙니다.",
+      "words": 49,
+      "characters": 148,
+      "sha256": "25a272b4231f4c4c237a4a7e0cb5615c63878d0485872011ac4ab1acd1fb3dcf"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "실크로드의 호숫길",
+      "section": "history",
+      "scope": "detail",
+      "text": "이식쿨 분지는 톈산의 산길과 동서 교역망에 연결되었습니다. 상인들은 계절과 정치적 안전, 수로와 산길의 상태에 따라 이동 경로를 선택했습니다. 대상이 한 번에 대륙 전체를 횡단하는 대신 중간 거점에서 상품과 정보를 교환하는 경우도 많았습니다. 호수 주변의 교역은 농경 오아시스와 산악 목축 경제를 연결하는 역할을 했습니다.",
+      "words": 43,
+      "characters": 138,
+      "sha256": "a6f23c8b3e20a2330b129646a7c041cb40ce71c3e14a95ac35e5ff6ad0deafde"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "튀르크 문화와 이슬람 전통",
+      "section": "history",
+      "scope": "detail",
+      "text": "키르기스 문화는 튀르크계 언어와 유목 전통, 이슬람 신앙이 오랜 기간 결합하며 형성되었습니다. 종교의 확산은 지역과 시기에 따라 속도가 달랐고 기존의 자연관과 조상 기억, 구전 전통과 상호작용했습니다. 오늘날 촐폰아타는 휴양도시이지만 주변 지역의 전통 음식과 공예, 음악과 이야기에서 이런 문화적 층위를 찾아볼 수 있습니다.",
+      "words": 42,
+      "characters": 140,
+      "sha256": "2ff9b4ce407289996c9e6cf7541a9f0bb88ca84b9aaf4d3cae4b121c67e637c1"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "마나스 서사시와 구전 문화",
+      "section": "history",
+      "scope": "detail",
+      "text": "마나스 서사시는 키르기스 사회에서 역사적 기억과 공동체의 이상을 담는 중요한 구전 문학입니다. 전문 구연자들은 긴 이야기를 기억하고 변형하며 전승했습니다. 구전 서사시는 단순한 오락이 아니라 언어와 가치, 공동체의 연속성을 유지하는 문화적 장치였습니다. 다만 서사시 속 사건을 고고학적으로 확인된 역사와 일대일로 대응시키는 것은 조심해야 합니다.",
+      "words": 43,
+      "characters": 151,
+      "sha256": "169792e88b2fedee73fb9f1bb9246a2ffd04371df5eb142570f5f2ba326b0b5a"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "러시아 제국과 소비에트 시대",
+      "section": "history",
+      "scope": "detail",
+      "text": "19세기 러시아 제국의 중앙아시아 진출과 20세기 소비에트 체제의 확립은 이식쿨 주변의 교통과 행정, 정착 구조를 바꾸었습니다. 도로와 휴양시설, 집단농업과 관광 개발이 진행되면서 전통적 목축 생활에도 변화가 생겼습니다. 소비에트 시대의 휴양지 개발은 오늘날 촐폰아타가 관광 중심지로 알려지는 배경 가운데 하나입니다.",
+      "words": 39,
+      "characters": 139,
+      "sha256": "d31545b66ab8460f27575df99f4f6def8e4c2352b20b949d74f8ffb53b4b94a5"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "현대의 호수 관광과 환경",
+      "section": "economy",
+      "scope": "detail",
+      "text": "촐폰아타는 이식쿨 북안의 대표적인 휴양지로 숙박시설과 해변, 문화시설이 모여 있습니다. 관광은 일자리와 소득을 제공하지만 하수처리, 쓰레기, 해안 개발, 수자원 관리에 부담을 줄 수 있습니다. 호수의 생태와 관광 산업을 지속시키려면 방문객뿐 아니라 지역 주민과 행정기관의 역할이 중요합니다. 자연 경관을 감상할 때 환경 보존 문제도 함께 생각해 보세요.",
+      "words": 46,
+      "characters": 152,
+      "sha256": "f998ebfe32ef5fe9b39e6125fe4a9f0a8bb2557b5f0b91debacd7cc6798852d4"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "루흐 오르도 문화센터의 상징",
+      "section": "history",
+      "scope": "detail",
+      "text": "루흐 오르도는 다양한 종교와 문화의 공존을 주제로 한 현대적 문화공간입니다. 고대 사원 유적이 아니라 오늘날 키르기스스탄이 세계관의 다양성과 문화적 정체성을 어떻게 표현하는지 보여주는 장소입니다. 이식쿨 호수와 톈산산맥을 배경으로 한 조형물의 배치 자체가 경관과 문화적 메시지를 결합합니다.",
+      "words": 36,
+      "characters": 127,
+      "sha256": "371db267c1c12d04b78e4a1f0b77d5b8a5d7eed58151d6b57e7088e1ddb9b339"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "암각화 관람의 윤리",
+      "section": "history",
+      "scope": "detail",
+      "text": "암각화는 풍화와 방문객의 접촉으로 손상되기 쉽습니다. 바위 위에 올라서거나 물을 뿌려 그림을 선명하게 만들고, 손으로 문지르거나 낙서를 하는 행위는 피해야 합니다. 촬영할 때는 주변 경관과 바위의 위치를 함께 기록하면 그림이 놓인 환경을 이해하는 데 도움이 됩니다. 해석이 불확실한 도상은 단정적인 이름보다 형태를 먼저 관찰하는 것이 좋습니다.",
+      "words": 46,
+      "characters": 147,
+      "sha256": "8c06855af577209c6da4705ff4cca791b21cf42b3ba428a16d89b0d951d9a9bb"
+    },
+    {
+      "file": "history-cholponata.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "현장 답사: 호수·바위·사람",
+      "section": "history",
+      "scope": "detail",
+      "text": "촐폰아타에서는 먼저 호수와 산맥의 규모를 관찰하고 암각화 유적에서 과거 주민의 생활과 상징을 살펴보세요. 루흐 오르도에서는 현대적 문화 표현을 비교할 수 있습니다. 고대 암각화와 현대 휴양시설이 가까이 있다는 사실은 이 지역이 오랫동안 사람들이 이용하고 의미를 부여해 온 장소임을 보여줍니다. 이식쿨을 단순한 아름다운 호수가 아닌 역사적 경관으로 읽어 보세요.",
+      "words": 47,
+      "characters": 155,
+      "sha256": "0c9d6b6005d12dcc8fff45340e0e9cb4021853ca70ad85093d2a4725f65705dd"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "톈산 북록의 사과 숲과 교역로에서 러시아 제국의 베르니, 소비에트 수도, 카자흐스탄 경제 중심지까지",
+      "words": 13,
+      "characters": 43,
+      "sha256": "3f9411b9957ddc0b46dc9dc6739835f33083c21f0b9f57c9fc044a521e8bca47"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "톈산 산록과 사과의 땅",
+      "section": "geography",
+      "scope": "detail",
+      "text": "알마티는 톈산산맥 북쪽 기슭의 선상지와 평야에 자리합니다. 산에서 내려오는 하천은 도시의 물과 농업을 지탱했지만 집중호우와 산사태, 토석류 같은 자연재해의 위험도 만듭니다. 도시 이름은 카자흐어의 사과와 관련되며, 주변 산악지역은 야생 사과의 유전적 다양성과 기원을 연구하는 중요한 곳입니다. 현대 대도시의 배경에 있는 산과 물길부터 관찰해 보세요.",
+      "words": 44,
+      "characters": 152,
+      "sha256": "a753b7eb6803446f7b5baf6e7f4f638220ae32bfd435a3a69230beeb0028dccd"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.1.paragraphs.0.0",
+      "title": "고대 교역로와 초원 문화",
+      "section": "history",
+      "scope": "detail",
+      "text": "알마티 주변은 톈산의 산길과 초원, 농경 정착지가 만나는 지역이었습니다. 고대와 중세의 여러 정치세력은 이 교통로를 활용했고, 말과 가축, 직물과 금속제품이 이동했습니다. 유목사회는 계절별 이동과 목축을 기반으로 했으며 정착도시와 끊임없이 교류했습니다. 현대의 도시가 근대에 크게 성장했다고 해서 그 주변에 더 오래된 역사적 활동이 없었다는 뜻은 아닙니다.",
+      "words": 45,
+      "characters": 155,
+      "sha256": "1b4d31e94928c8db3093417b45b965bcacf89ab9290765daf3605422615a6c3c"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.2.paragraphs.0.0",
+      "title": "베르니 요새와 제정 러시아",
+      "section": "history",
+      "scope": "detail",
+      "text": "1854년 러시아 제국은 이 지역에 군사 거점을 설치했고 이후 베르니라는 정착지가 성장했습니다. 제국의 확장은 교통과 농업, 도시 시설을 변화시켰지만 현지 주민의 토지와 정치적 자율성을 둘러싼 갈등도 수반했습니다. 오늘날 알마티의 가로망과 공공건축 일부는 이 근대 도시 형성의 흔적을 이어받았습니다.",
+      "words": 38,
+      "characters": 130,
+      "sha256": "93a1ce73e41e98fa33e25713c8cf7c0ec9fc5ac87b3e03309eb66bcba6d52f1c"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.3.paragraphs.0.0",
+      "title": "지진과 도시 건축",
+      "section": "history",
+      "scope": "detail",
+      "text": "알마티 지역은 지진 위험이 높은 곳으로, 19세기 말과 20세기 초에 큰 지진 피해를 경험했습니다. 지진은 건축 재료와 구조 선택, 도로와 공공시설의 재건에 영향을 주었습니다. 젠코프 승천 성당의 목조 구조를 관찰하면 이 지역에서 건축기술과 지진의 관계를 생각해 볼 수 있습니다. 특정 건물이 살아남은 이유를 하나의 재료나 기술만으로 단순화해서는 안 됩니다.",
+      "words": 49,
+      "characters": 152,
+      "sha256": "ef0f8fa84fcf86fb0993a735aed47a8f1910b54bcf938f1a34576d81ecd7054e"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.4.paragraphs.0.0",
+      "title": "소비에트 시대의 수도",
+      "section": "history",
+      "scope": "detail",
+      "text": "1929년 알마티는 당시 카자흐 자치공화국의 수도가 되었습니다. 이후 행정과 산업, 대학, 문화시설이 집중되며 계획도시로 성장했습니다. 넓은 도로와 공원, 기념비와 주거단지는 소비에트 도시계획의 영향을 보여줍니다. 이 시기의 도시 발전은 교육과 산업의 확대를 가져왔지만 정치적 억압과 중앙집권적 경제체제의 역사도 함께 지니고 있습니다.",
+      "words": 40,
+      "characters": 148,
+      "sha256": "2e5e3544036ebe96c9787fa7ddabed0497a21868d1e2a75ec2134a10f78c1b25"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.5.paragraphs.0.0",
+      "title": "1991년 독립과 수도 이전",
+      "section": "history",
+      "scope": "detail",
+      "text": "카자흐스탄이 1991년 독립한 뒤에도 알마티는 한동안 수도였습니다. 1997년 수도 기능이 아크몰라(오늘날 아스타나)로 이전했지만, 알마티는 여전히 금융과 기업 활동, 대학과 문화의 핵심 중심지입니다. 정치 수도와 경제 중심지가 서로 다른 도시에 자리하는 사례라는 점이 흥미롭습니다. 고층 건물과 오래된 공원을 함께 보면 변화의 층위를 확인할 수 있습니다.",
+      "words": 44,
+      "characters": 156,
+      "sha256": "542ec0440391d53e8a3cebc1b94f93b4e10af09ac26c897cbc273544bf6588da"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.6.paragraphs.0.0",
+      "title": "판필로프 공원과 전쟁 기억",
+      "section": "history",
+      "scope": "detail",
+      "text": "판필로프 공원은 제2차 세계대전 당시 소련군 부대와 관련된 기억을 담은 공간입니다. ‘판필로프의 28인’ 이야기는 소비에트 시대에 널리 전파되었지만 세부 서사와 인물의 행적에는 역사적 논쟁이 있습니다. 기념비는 과거 사건 자체뿐 아니라 후대 사회가 어떤 기억을 공공공간에 남기기로 했는지도 보여줍니다. 공원에서 조형물과 설명문의 표현을 주의 깊게 살펴보세요.",
+      "words": 45,
+      "characters": 156,
+      "sha256": "a29e1fd16eac0564cdafb28054a773ad4f70de81d2dd3d2b9643a86661e8e4a2"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.7.paragraphs.0.0",
+      "title": "젠코프 승천 성당과 종교적 다양성",
+      "section": "history",
+      "scope": "detail",
+      "text": "젠코프 성당은 20세기 초에 건립된 러시아 정교회 건축으로, 화려한 색채와 목재 구조가 특징입니다. 카자흐스탄의 역사에는 이슬람 문화와 러시아 정교회, 여러 공동체의 종교 전통이 함께 존재합니다. 부하라의 모스크·마드라사와 비교하면 서로 다른 신앙이 건축 공간과 장식에 어떻게 표현되는지 이해할 수 있습니다. 실제 예배가 진행되는 공간에서는 관람 예절을 지켜야 합니다.",
+      "words": 47,
+      "characters": 160,
+      "sha256": "0ef0d6bfa768e7fdd575bb28e65e1dd88e29947e9ba1574c1375a2429acb1df7"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.8.paragraphs.0.0",
+      "title": "그린 바자르와 다문화 식문화",
+      "section": "geography",
+      "scope": "detail",
+      "text": "그린 바자르는 알마티의 대표적인 시장으로 과일과 견과류, 향신료, 육류와 유제품 등을 만날 수 있습니다. 카자흐 유목 목축의 음식 전통에 러시아·위구르·우즈베크 등 다양한 공동체의 식문화가 결합되어 있습니다. 시장은 단순한 쇼핑 장소가 아니라 지역 농업과 물류, 소비자의 취향이 만나는 곳입니다. 판매되는 사과와 건과일, 유제품의 종류를 비교해 보세요.",
+      "words": 45,
+      "characters": 153,
+      "sha256": "c8857e7ca52e90a520f207e9303313051dabf168d7412d3528c5f755d9248f96"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.9.paragraphs.0.0",
+      "title": "아르바트 거리와 현대 도시 문화",
+      "section": "history",
+      "scope": "detail",
+      "text": "알마티의 아르바트 거리는 보행자 중심 상업·문화 공간으로 거리 예술과 카페, 상점이 모여 있습니다. 소비에트 시대에 형성된 도심이 독립 이후 소비와 문화산업의 공간으로 변모한 사례입니다. 역사적 기념물만으로 도시를 이해하기 어렵다면 이 거리에서 오늘날 시민들이 시간을 보내는 방식을 관찰해 보세요.",
+      "words": 38,
+      "characters": 129,
+      "sha256": "383f96741b6bf6316eb038b9a5d2fa1657767e1dcc80dc08bb5fa7655db263f4"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.10.paragraphs.0.0",
+      "title": "차른 협곡과 지질학적 시간",
+      "section": "geography",
+      "scope": "detail",
+      "text": "알마티에서 동쪽으로 이동하면 차른강이 오랜 시간 퇴적층을 침식해 만든 차른 협곡을 만납니다. 붉은 ‘성들의 계곡’, 밝은 루나 캐니언, 어두운 블랙 캐니언은 암석의 성분과 풍화, 햇빛의 방향에 따라 경관이 달라집니다. 관광상의 별칭을 정식 지질 단위로 혼동하지 말고 지층의 색과 입자, 침식 형태를 비교해 보세요. 절벽 가장자리에서는 안전거리를 유지해야 합니다.",
+      "words": 48,
+      "characters": 155,
+      "sha256": "d9e75b06dfad249ea7d27a83de78aae2c342bccb7558a81d342215f810b9cba2"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.11.paragraphs.0.0",
+      "title": "도시의 자연재해와 환경 문제",
+      "section": "history",
+      "scope": "detail",
+      "text": "알마티는 산맥과 가까워 아름다운 경관을 얻는 동시에 지진과 산지 재해, 대기오염 등 복합적인 위험을 안고 있습니다. 겨울철 기온역전과 배출원은 공기질에 영향을 줄 수 있습니다. 산악 관광과 도시 확장이 자연환경에 미치는 영향을 고려하면 도시의 경제 성장과 환경 관리가 분리된 문제가 아니라는 점을 이해할 수 있습니다.",
+      "words": 44,
+      "characters": 134,
+      "sha256": "deaac251bc1a26d8cb60021d5c950045f2b48a7e0fbd069a86b750d10582a6d6"
+    },
+    {
+      "file": "history-almaty.js",
+      "path": "chapters.12.paragraphs.0.0",
+      "title": "현장 답사: 옛 수도의 다층적 얼굴",
+      "section": "history",
+      "scope": "detail",
+      "text": "판필로프 공원과 젠코프 성당에서 전쟁 기억과 종교적 다양성을 보고, 그린 바자르에서는 다문화 식문화를 체험해 보세요. 아르바트 거리에서는 현대의 소비·예술 문화를 살펴볼 수 있습니다. 차른 협곡으로 이동하면 같은 여행 일정 안에서 대도시의 역사와 지질학적 시간을 함께 비교할 수 있습니다. 도시의 산맥과 시장, 공공기념물을 하나의 이야기로 연결해 보는 것이 핵심입니다.",
+      "words": 48,
+      "characters": 159,
+      "sha256": "6c56c3337736224ede7e8f01643468313d59acebc8819f68eeaae0dad386da91"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "0.intro.0",
+      "title": "사마르칸트",
+      "section": "history",
+      "scope": "detail",
+      "text": "티무르 제국의 수도이자 실크로드의 문화·학문 중심지입니다. 유네스코 세계유산 ‘사마르칸트—문화의 교차로’로 지정되어 있습니다.",
+      "words": 12,
+      "characters": 59,
+      "sha256": "b29bb6003ef8dd1b608f142657518a385d309bf99a36a1dd8195477c33fdb4d7"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "0.sites.0.description.0",
+      "title": "레기스탄 광장",
+      "section": "history",
+      "scope": "detail",
+      "text": "15세기 울루그베크와 17세기 셰르도르·틸라코리 마드라사가 둘러싼 광장입니다. 건물별 후원 시기와 문양·금빛 내부의 차이는 사마르칸트 상세 해설에서 이어집니다.",
+      "words": 17,
+      "characters": 73,
+      "sha256": "81b03cbc54cd07a808324bc3395bce9d4c0c3d28363290c3d349050022f2c618"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "0.sites.1.description.0",
+      "title": "구르에미르 영묘",
+      "section": "history",
+      "scope": "detail",
+      "text": "아미르 티무르와 왕실 인물들의 묘소입니다. 늑골형 청색 돔과 내부의 금빛 장식이 대조를 이룹니다. 울루그베크도 이곳에 안장되어 있습니다.",
+      "words": 17,
+      "characters": 60,
+      "sha256": "8d5887f2db2e3b00b98480383e4d31748e3ba544df76332c73f1426ee39d2906"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "0.sites.2.description.0",
+      "title": "비비하눔 모스크",
+      "section": "history",
+      "scope": "detail",
+      "text": "티무르가 14세기 말~15세기 초 대규모로 건설한 금요 모스크입니다. 이름과 관련된 사랑 이야기는 전승이며, 건립 목적을 단순히 아내를 기리기 위한 것으로 단정하기 어렵습니다.",
+      "words": 22,
+      "characters": 77,
+      "sha256": "bbf8915d628a771d1ba326c6ccec8fa1d5b8dc17c676059d1fb0759612864ea1"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "0.sites.3.description.0",
+      "title": "울루그베크 천문대",
+      "section": "history",
+      "scope": "detail",
+      "text": "15세기 천문학 연구의 중심지입니다. 거대한 자오선 관측기구의 지하 부분이 남아 있으며, 흔히 육분의 또는 사분의 형태의 관측장치로 설명됩니다.",
+      "words": 18,
+      "characters": 63,
+      "sha256": "684ef8c14d780da6af888297b786ca64a5fbf7b2398ff17aa25251de68985ac8"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "1.intro.0",
+      "title": "부하라",
+      "section": "history",
+      "scope": "detail",
+      "text": "실크로드 교역과 이슬람 학문의 중심지로 발전했습니다. 유네스코 세계유산 ‘부하라 역사 지구’에는 여러 시대의 모스크·마드라사·바자르가 남아 있습니다.",
+      "words": 16,
+      "characters": 68,
+      "sha256": "20c06fb45e74d2b7c85124734d5d2a347f585072660313f9e8fb1413dcedd8be"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "1.sites.0.description.0",
+      "title": "포이칼랸 건축군",
+      "section": "history",
+      "scope": "detail",
+      "text": "1127년 칼랸 미나레트와 16세기 칼랸 모스크·미리아랍 마드라사가 모인 건축군입니다. 같은 광장에 서로 다른 시대의 후원이 남았습니다.",
+      "words": 16,
+      "characters": 61,
+      "sha256": "7111f6f088c55bb8d7c661ccd31085632337d8091a63e5edaaaa3e9942734ce8"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "1.sites.1.description.0",
+      "title": "아르크 성채",
+      "section": "history",
+      "scope": "detail",
+      "text": "여러 세기에 걸쳐 증축된 부하라 통치자의 요새이자 궁정 공간입니다. 오늘날 보이는 건물 전체가 5세기 원형 그대로인 것은 아닙니다. 거대한 성벽과 출입문에서 도시의 권력 구조를 느낄 수 있습니다.",
+      "words": 27,
+      "characters": 83,
+      "sha256": "727f0004bab238bcf3c95524e0fce458d33188a4e6c436f6ae06a235fbcb76ec"
+    },
+    {
+      "file": "uzbekistan-architecture.js",
+      "path": "1.sites.2.description.0",
+      "title": "라비하우즈",
+      "section": "history",
+      "scope": "detail",
+      "text": "역사적인 연못을 중심으로 마드라사·숙소·찻집이 모여 있는 도시의 휴식 공간입니다. 건조한 오아시스 도시에서 물과 공공공간의 중요성을 보여줍니다.",
+      "words": 16,
+      "characters": 65,
+      "sha256": "2efe00b39c3ee75c37e4e3f091ca3b49998e9bfe22722ac6600d857d1644b136"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "intro.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "벽돌 구조와 표면 장식, 피슈타크와 이완을 구별하면 비슷한 청색 건축도 다르게 보입니다.",
+      "words": 12,
+      "characters": 38,
+      "sha256": "8a6035e7dff0fadb16cb81402dc95118c0c67039222d03212ee02c186c897506"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.0.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "사마니 영묘는 벽돌 배열과 음영 자체가 장식이고, 레기스탄은 벽돌 구조 위 유약 타일·모자이크·서예가 큰 정면을 구성합니다. 하중을 받는 벽체와 표면 장식을 구별해 보십시오.",
+      "words": 23,
+      "characters": 75,
+      "sha256": "34d1fcb4f83e0f2291795cd144c8305e31d0b403a79d2d327af71d26a2771960"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.1.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "잘라 맞춘 모자이크 파이앙스와 여러 색의 유약을 쓴 타일은 제작 방식이 다릅니다. 반복·회전·대칭으로 만든 무늬 가운데 일부 격자는 기하학적 쿠파체 서예입니다. 모든 격자무늬를 문자로 읽을 수는 없으므로 실제 명문을 확인해야 합니다.",
+      "words": 31,
+      "characters": 100,
+      "sha256": "59d27297da46d9b4f9b43c95b84640af894671446244f47dc2ba95a4637c8e3c"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.2.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "높은 문형 정면은 피슈타크, 그 안쪽의 한 면이 열린 아치형 홀은 이완입니다. 이완에는 이슬람 이전 이란 건축의 선례가 있습니다. 구르에미르의 늑골형 돔에서는 세로 능선과 외부 실루엣을, 내부에서는 별도의 돔과 공간의 관계를 볼 수 있습니다.",
+      "words": 34,
+      "characters": 102,
+      "sha256": "dc0bfc5d2b300805e5bc220e3bf4aaab981d77ffbf8b31be9b7403d2d928def8"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.3.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "외관의 늑골과 하중을 받는 구조적 리브는 같은 개념이 아닙니다. 고딕 리브 볼트·티무르 시대 돔·가우디의 아치는 곡선이라는 공통점만으로 같은 기술이라 할 수 없습니다. 재료와 하중 전달 방식이 다릅니다.",
+      "words": 27,
+      "characters": 87,
+      "sha256": "0ba79b6b0eb45e80d2d1da2de03c73c5356800c9f9321c342b4f64152a90c2db"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.4.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "구엘 공원의 트렌카디스는 불규칙한 도자기 파편을 곡면에 맞춥니다. 레기스탄의 규칙적 모듈·대칭과 대비되지만, 가우디가 이를 직접 모방했다는 근거는 없습니다. 도자기의 색과 질감을 비교하는 감상과 역사적 영향 관계는 구별해야 합니다.",
+      "words": 28,
+      "characters": 102,
+      "sha256": "47c3da03031398065b50b68f2406937a29f305ee07a84fb3844d6492c755a20e"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.5.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "울루그베크 마드라사는 15세기, 셰르도르·틸라코리는 17세기 건물입니다. 이스파한 나크셰자한 광장이 궁정·시장·모스크를 결합한다면, 레기스탄은 마드라사의 정면이 광장을 둘러싸는 구성이 두드러집니다.",
+      "words": 18,
+      "characters": 93,
+      "sha256": "b129717f9c91d136d553f2d9131b5badb7f53d2e7a8219792541a4a05cb1624b"
+    },
+    {
+      "file": "islamic-architecture-comparative.js",
+      "path": "chapters.0.paragraphs.6.0",
+      "title": "재료에서 공간으로",
+      "section": "history",
+      "scope": "detail",
+      "text": "틸라코리의 금빛 내부와 셰르도르의 동물·태양 도상은 서로 다른 장식 선택을 보여줍니다. 가까이에서는 타일 줄눈과 서예를 살피되 색 차이만으로 제작연대를 단정하지 마십시오. 손상·유약·빛과 복원이 모두 색에 영향을 줍니다.",
+      "words": 27,
+      "characters": 97,
+      "sha256": "01df8f7987eb9cc037280891218f22012cb4e661593f447995e115c66a6e7727"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.0.guideKo.0",
+      "title": "인천 → 타슈켄트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "타슈켄트는 실크로드 오아시스 도시로 성장했으며, 오늘날에는 소비에트 시기 도시계획과 현대적인 중앙아시아 수도의 풍경이 공존합니다.",
+      "words": 14,
+      "characters": 59,
+      "sha256": "c1d7841605e4f411279f05c99bf610fbbe0a2b21dd6ada3e63cebab7d2d83f6b"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.0.tipKo.0",
+      "title": "인천 → 타슈켄트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "첫날은 시차와 비행 피로를 고려해 무리하지 않는 것이 좋습니다.",
+      "words": 9,
+      "characters": 27,
+      "sha256": "00af51a1d3683b45b5a018e9fbe26359fe64c207feeb359f69c78636822a407d"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.0.placeDetails.0.description.0",
+      "title": "인천국제공항 제2여객터미널",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "한국에서 중앙아시아로 떠나는 여정은 실크로드가 연결했던 동서 교역의 길을 현대 항공망으로 따라가는 여행이기도 합니다. 우즈베키스탄의 오아시스 도시, 키르기스스탄의 톈산 산맥, 카자흐스탄의 초원과 협곡은 서로 다른 자연환경 속에서 형성된 문화입니다. 여행 중 도시의 물 관리, 종교 건축, 산악 지형, 소비에트 시대의 흔적을 비교하면 세 나라의 공통점과 차이가 더욱 선명해집니다.",
+      "words": 48,
+      "characters": 164,
+      "sha256": "8e373d4228c654e2ca436923eb6e5513154d64a28f28e267e728a451418e3838"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.0.placeDetails.1.description.0",
+      "title": "타슈켄트 국제공항",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "타슈켄트는 고대 오아시스 도시의 역사와 러시아 제국·소비에트 시대의 도시계획, 독립 이후의 현대적 건축이 중첩된 수도입니다. 1966년 대지진 이후 도시가 크게 재건되면서 넓은 도로와 지하철, 대규모 공공건축이 형성되었습니다. 역사도시 부하라·사마르칸트와 대비되는 현대 중앙아시아의 경제·교통 중심지라는 점에 주목해 보세요.",
+      "words": 37,
+      "characters": 145,
+      "sha256": "15a5e046078850488f04be6e8458f3c1b7f625d98347358e4cdb1fd2071474c9"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.guideKo.0",
+      "title": "타슈켄트 → 부하라",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "부하라는 사막 오아시스의 교역·학문 중심지였습니다. 아르크 성채는 통치 권력의 중심, 칼랸 미나레트는 도시의 상징이며 라비하우즈의 연못은 건조한 기후에서 물과 공공공간의 중요성을 보여줍니다.",
+      "words": 22,
+      "characters": 85,
+      "sha256": "fd7224cee1c6c9593dd6de63884192ff73cd9821a9f40c4940cfa33cbc7e8b56"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.tipKo.0",
+      "title": "타슈켄트 → 부하라",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "타슈켄트–부하라 구간에는 더 빠른 아프로시욥 고속열차(대략 4시간대)도 있습니다. 다만 여행 성수기에는 단체 좌석 확보가 어려워 여행사 측 설명에 따르면 최소 약 2개월 전 참가자 명단 확정과 예약이 필요하므로, 이번 패키지는 약 6시간 걸리는 일반열차를 이용합니다. 열차 안에서는 승무원이 솜사(개당 원화 약 1,110원, NBKR 2026-10-17 기준 환산), 과일, 도시락, 과자, 커피 등을 판매하며, 홍차는 무료로 제공합니다(이번 탑승 열차 기준). 미나레트의 벽돌 무늬, 바자르의 교차형 돔, 야간 조명의 색감에도 주목해 보세요.",
+      "words": 69,
+      "characters": 236,
+      "sha256": "330dd0d6606bf3a6d4519347a458e8bacd77e22a84b24a8b97a4289eee3937de"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.placeDetails.0.description.0",
+      "title": "부하라 아르크 성채",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "아르크 성채는 부하라 통치자의 궁정이자 군사·행정 중심지로 여러 시대에 걸쳐 증축되었습니다. 높은 흙벽돌 성벽과 경사진 진입로는 오아시스 도시에서 통치 권력과 방어시설이 결합한 모습을 보여줍니다. 오늘날 보이는 건물 전체가 고대 원형 그대로는 아니며 전쟁과 재건의 역사가 겹쳐 있습니다. 성문과 주변 광장의 관계를 보면 권력이 도시 공간을 조직한 방식을 읽을 수 있습니다.",
+      "words": 50,
+      "characters": 159,
+      "sha256": "d96362fa2b233ec4aa6806e5ba6badec0877b742b5363f20301f45b4ee43d6c9"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.placeDetails.1.description.0",
+      "title": "칼랸 미나레트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "1127년 건립된 칼랸 미나레트는 약 46m 높이의 첨탑으로, 부하라의 상징입니다. 표면을 둘러싼 벽돌 띠무늬는 햇빛에 따라 그림자가 달라져 섬세한 장식 효과를 냅니다. 인근 칼랸 모스크·미리아랍 마드라사와 함께 포이칼랸 건축군을 이루며, 예배·교육·도시의 상징이 한곳에 모인 사례입니다. 몽골 침입 때 보존되었다는 이야기는 유명하지만 유일한 생존 건물이라는 표현은 정확하지 않습니다.",
+      "words": 47,
+      "characters": 169,
+      "sha256": "b6f94c8317db7a888795e09b105707fe5dbd7061b562170eb2476313448d96b2"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.placeDetails.2.description.0",
+      "title": "라비하우즈",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "라비하우즈는 연못을 중심으로 교육시설과 상업·휴식 공간이 형성된 부하라의 역사적 광장입니다. 건조한 오아시스에서 물은 생존을 위한 자원이자 공동체를 모으는 공간적 중심이었습니다. 주변 마드라사와 찻집, 그늘진 나무를 함께 보면 도시가 기후에 적응한 방식을 이해할 수 있습니다. 밤에는 조명이 분위기를 바꾸지만 낮에는 건물의 벽돌과 타일 장식을 더욱 자세히 관찰할 수 있습니다.",
+      "words": 48,
+      "characters": 163,
+      "sha256": "3414131e12556167504a818bc1afccdfbd2102933fa258dc5a48721b8baf7ff0"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.1.placeDetails.3.description.0",
+      "title": "나디르 디반베기 마드라사",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "나디르 디반베기 마드라사는 17세기 라비하우즈 일대에 건립된 건축물로, 정면의 새와 동물 형상이 포함된 장식이 인상적입니다. 이슬람권의 건축 미술이 추상적인 기하학 문양에만 한정되지 않고 지역과 시대에 따라 다양한 표현을 발전시켰음을 보여줍니다. 건물의 이완이라 부르는 큰 아치형 출입구, 양쪽의 대칭, 색채의 배합을 살펴보세요.",
+      "words": 41,
+      "characters": 144,
+      "sha256": "05858804812e93da4aaadbb9df71be0860ce59078220c910e75e294f755b99b1"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.guideKo.0",
+      "title": "부하라 → 사마르칸트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "사마니 영묘는 9~10세기 무렵의 정교한 벽돌 건축을 대표합니다. 사마르칸트는 티무르 왕조의 수도로 발전했고 레기스탄 광장은 세 개의 마드라사가 둘러싼 기념비적 공간입니다.",
+      "words": 21,
+      "characters": 76,
+      "sha256": "aef098280992f7ffa1fcfd30cb974d04ffeb5f14928cddcf1a9e38a8361a7573"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.tipKo.0",
+      "title": "부하라 → 사마르칸트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "낮과 밤의 레기스탄은 분위기가 크게 다릅니다. 광장 전체 구도와 타일 문양을 각각 촬영해 보세요.",
+      "words": 14,
+      "characters": 41,
+      "sha256": "413111da1af0fb23d385e731204f8aea2f2cd38d2e8faac1a74743a4f69bd6af"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.placeDetails.0.description.0",
+      "title": "이스마일 사마니 영묘",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "이스마일 사마니 영묘는 9~10세기 사만 왕조와 관련된 중앙아시아 초기 이슬람 건축의 걸작입니다. 입방체에 돔을 얹은 간결한 구조이지만, 벽돌을 서로 다른 방향으로 쌓아 짜임새 있는 문양을 만들었습니다. 티무르 시대의 청색 타일 건축과 비교하면 같은 지역에서도 재료와 장식 방식이 시대에 따라 어떻게 달라졌는지 알 수 있습니다. 벽면의 빛과 그림자를 관찰해 보세요.",
+      "words": 49,
+      "characters": 156,
+      "sha256": "bc25b795536ff27274ecb813f1ca41ebb40f8c7359c67e1142c4b098a0335dd6"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.placeDetails.1.description.0",
+      "title": "차슈마 아유브 영묘",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "차슈마 아유브(Chashma-Ayub)는 ‘욥의 샘’이라는 뜻입니다. 구약성경 욥기의 욥은 재산과 가족, 건강을 잃는 극심한 시련 속에서 고통과 신앙의 의미를 묻는 인물입니다. 욥기에는 친구들과의 논쟁과 하느님의 응답, 삶의 회복이 그려집니다. 이슬람에서도 욥은 아유브(Ayyub)라는 예언자로 존경받으며, 인내와 신앙의 상징입니다. 부하라의 지역 전설에서는 가뭄이 들었을 때 욥이 땅을 치자 샘이 솟았다고 전합니다. 이는 현지 전승이지 구약성경에 기록된 부하라의 역사적 사건은 아닙니다. 여러 시대에 걸쳐 증축된 건물에는 원뿔형 지붕과 돔이 함께 나타납니다. 건조한 오아시스 사회에서 샘물이 생존과 치유, 종교적 상징으로 연결된 점을 생각하며 둘러보세요.",
+      "words": 79,
+      "characters": 289,
+      "sha256": "cf295692a2a4b34b7e463730c0265ec33bf6fcc824a9be8c2b74ef2917484b95"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.placeDetails.2.description.0",
+      "title": "시토라이 모히 호사 궁전",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "시토라이 모히 호사 궁전은 부하라 마지막 에미르 시대의 여름 궁전으로, 중앙아시아 전통 장식과 러시아·유럽풍 실내 장식이 결합되어 있습니다. 정교한 석고 조각과 거울 장식, 화려한 천장은 19세기 말~20세기 초 부하라 지배층의 취향과 국제적 교류를 보여줍니다. 오래된 아르크 성채와 비교하면 같은 도시에서도 통치 문화가 크게 달라졌음을 느낄 수 있습니다.",
+      "words": 47,
+      "characters": 153,
+      "sha256": "78eaf2de2acff41c8349ae1c532fab5c7f5f72e20ff9584d9bd0d1fc84e9383d"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.2.placeDetails.3.description.0",
+      "title": "레기스탄 광장",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "레기스탄 광장은 사마르칸트의 상징으로, 울루그베크·셰르도르·틸라코리 세 마드라사가 광장을 둘러싸고 있습니다. 15세기와 17세기에 세워진 건물이 하나의 공간을 이루며, 티무르 시대 이후 학문과 권력의 중심지가 어떻게 변화했는지 보여줍니다. 청색 타일과 거대한 이완, 돔의 비례를 관찰하고 낮과 밤의 색채 차이를 비교해 보세요.",
+      "words": 39,
+      "characters": 144,
+      "sha256": "7ece3d88f25fc6c9e09c2a0ec54e46070d45ac65d9d97cceff24586cc38038fb"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.guideKo.0",
+      "title": "사마르칸트 → 타슈켄트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "울루그벡은 15세기 천문 관측과 항성표 제작을 후원한 군주이자 학자였습니다. 아프라시압 유적은 이 도시의 티무르 왕조 이전 역사를 보여주며 구르에미르는 티무르 가문의 영묘입니다.",
+      "words": 22,
+      "characters": 78,
+      "sha256": "aaf98a9afae46e4a7568d089536f7c529520be84bf151d40e6c722582f38d452"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.tipKo.0",
+      "title": "사마르칸트 → 타슈켄트",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "천문대의 거대한 관측 장치 흔적과 구르에미르 돔의 비례를 비교해 보세요.",
+      "words": 10,
+      "characters": 31,
+      "sha256": "3bcf70e2bfe03a2804ffa40e10a3b09068bdcf9419cfe93d70f1a408a3860fd0"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.placeDetails.0.description.0",
+      "title": "레기스탄 광장",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "레기스탄은 과거 사마르칸트의 공적 행사와 교역이 이루어진 도시 중심 공간이었습니다. 세 마드라사는 서로 다른 시기에 건립되어 건축 양식과 장식의 차이를 보여줍니다. 특히 셰르도르의 동물 형상 장식과 틸라코리의 화려한 내부를 비교하면 이슬람 미술의 다양한 표현을 확인할 수 있습니다. 광장 전체의 대칭처럼 보이는 배치 속에서도 각 건물의 차이가 남아 있습니다.",
+      "words": 48,
+      "characters": 153,
+      "sha256": "d3e588861bd5cbe9d511bc81b24c6d9d0934257dd68293d4f19aee1afbfdec14"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.placeDetails.1.description.0",
+      "title": "비비하눔 모스크",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "비비하눔 모스크는 티무르가 14세기 말부터 추진한 대규모 금요 모스크입니다. 제국의 권위와 신앙을 기념비적 건축으로 표현했으며, 거대한 출입구와 돔이 인상적입니다. 티무르의 아내와 관련된 낭만적 건립 이야기는 역사적 사실로 확정하기보다 전승으로 이해해야 합니다. 일부 구조는 후대에 복원되었으므로 원래 건축과 복원 부분을 구분해 관찰해 보세요.",
+      "words": 42,
+      "characters": 151,
+      "sha256": "fe928bd3200b7a8f8d762dbe2b4d465fb919102287d42fc500a27dade25c0021"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.placeDetails.2.description.0",
+      "title": "아프라시압 박물관",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "아프라시압 박물관은 티무르 시대보다 훨씬 오래된 고대 사마르칸트의 역사를 소개합니다. 소그디아나의 교역망과 외교 관계를 보여주는 벽화에는 여러 지역의 사절단과 복식이 표현되어 있습니다. 이 유적은 사마르칸트가 한 제국의 수도가 되기 전부터 동서 문화가 만나는 국제적 도시였음을 알려줍니다. 벽화의 인물과 복식이 보여주는 문화적 다양성에 주목하세요.",
+      "words": 43,
+      "characters": 152,
+      "sha256": "81f03ce46bd188e7fbed1b6c9a15fde1a9abc404c065fe26389892fd2dcb0e03"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.placeDetails.3.description.0",
+      "title": "울루그벡 천문대",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "울루그베크 천문대는 15세기 통치자이자 천문학자였던 울루그베크가 건립한 관측시설입니다. 거대한 자오선 관측기구를 통해 천체의 위치를 정밀하게 측정했으며, 당시의 천문표 편찬에 기여했습니다. 현재는 지하에 남은 관측기구의 일부가 보존되어 있습니다. 이곳은 중앙아시아가 종교와 교역뿐 아니라 수학·천문학의 발전에도 중요한 역할을 했음을 보여줍니다.",
+      "words": 38,
+      "characters": 155,
+      "sha256": "693aada047c5f19258fb8c5db67f5aeb99b4b5c7a0eebec0c07dedcd5d3426cf"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.3.placeDetails.4.description.0",
+      "title": "구르에미르 영묘",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "구르에미르 영묘에는 아미르 티무르와 왕실 인물들이 안장되어 있습니다. 늑골형 푸른 돔과 금빛 내부 장식은 티무르 시대의 권위와 미적 감각을 잘 드러냅니다. 묘실과 기념 공간의 관계를 살펴보면 왕조의 기억을 건축으로 표현한 방식을 이해할 수 있습니다. 아름다운 장식과 함께 실제 추모 장소라는 의미도 존중하며 관람하세요.",
+      "words": 43,
+      "characters": 136,
+      "sha256": "894ebf80c5593c6cc23dc6b3104d158c450e07a505ebe3b2f10d000a5ec28954"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.guideKo.0",
+      "title": "타슈켄트 → 비슈케크",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "우즈베키스탄의 역사 도시에서 키르기스스탄의 산악 국가로 이동하는 날입니다. 타슈켄트의 종교 건축과 근현대 기념공간을 비교할 수 있습니다.",
+      "words": 16,
+      "characters": 61,
+      "sha256": "3b0fa81c438465941820875965c3e32cff26649dbccfe292cf6400c2954477e1"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.tipKo.0",
+      "title": "타슈켄트 → 비슈케크",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "국제선 이동일이므로 여권과 항공편 시간을 별도로 확인하세요.",
+      "words": 7,
+      "characters": 27,
+      "sha256": "7f3af4dc83bc08f744eb7762dcd3af001c07884645cef69edb411953043a0c00"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.placeDetails.0.description.0",
+      "title": "타슈켄트 미노르 모스크",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "타슈켄트 미노르 모스크는 독립 이후의 현대적 종교 건축으로, 밝은 외벽과 청색 돔이 특징입니다. 부하라·사마르칸트의 역사적 모스크에서 볼 수 있는 이슬람 건축 요소를 현대적으로 재해석했습니다. 오래된 건축을 그대로 복제한 것이 아니라 새로운 시대의 재료와 도시적 요구에 맞추어 설계했다는 점에서 비교할 가치가 있습니다.",
+      "words": 41,
+      "characters": 138,
+      "sha256": "b89cb791f44a3208b390395a92bb55d4c5d46fdacbd7300845fb12041731f272"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.placeDetails.1.description.0",
+      "title": "아미르 티무르 광장",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "아미르 티무르 광장의 기마상은 독립 이후 우즈베키스탄에서 티무르가 국가 역사와 정체성의 상징으로 재해석되는 모습을 보여줍니다. 광장 주변에는 러시아 제국, 소비에트, 독립 이후 시대의 건축 흔적이 겹쳐 있습니다. 한 인물을 기념하는 공공광장이 도시의 정치적 기억을 어떻게 구성하는지 생각하며 살펴보세요.",
+      "words": 38,
+      "characters": 132,
+      "sha256": "18a222754a8255b654b724fb540d431892eb65e4268ea678ebf7de4fc9c9b375"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.placeDetails.2.description.0",
+      "title": "하즈라티 이맘 단지",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "하즈라티 이맘 단지는 타슈켄트의 중요한 이슬람 종교·문화 공간입니다. 모스크와 마드라사, 고문헌 전통을 통해 중앙아시아에서 종교 교육과 필사 문화가 차지했던 비중을 이해할 수 있습니다. 오래된 쿠란 사본과 관련한 이야기가 널리 알려져 있지만 제작 시기와 전승은 학술적 검토 대상입니다. 예배 공간에서는 현장 안내와 복장 규정을 존중하세요.",
+      "words": 44,
+      "characters": 146,
+      "sha256": "af85944535e7a966729ae3338e927182f0aaf736e5c4b3a13fa7a50fe6fd2457"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.4.placeDetails.3.description.0",
+      "title": "마나스 국제공항",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "마나스 국제공항의 이름은 키르기스 민족의 대표적 구전 서사시인 마나스에서 유래했습니다. 이 서사시는 영웅의 모험과 공동체의 역사·가치를 담아 키르기스 문화의 상징으로 여겨집니다. 우즈베키스탄의 도시·오아시스 문화에서 키르기스스탄의 산악·유목 문화로 이동하는 전환점이라는 의미를 생각해 볼 수 있습니다.",
+      "words": 34,
+      "characters": 135,
+      "sha256": "77ec7bac8ee1cc03916b44fbe4a631eb5ca972c2e78d848f1027f4e7d8ddc2d0"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.guideKo.0",
+      "title": "비슈케크 → 촐폰아타",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "이식쿨은 톈산산맥 사이의 거대한 산간 호수로, 지각 운동으로 만들어진 분지에 자리합니다. 촐폰아타 암각화는 선사·고대 사람들이 남긴 동물과 생활 장면을 전합니다.",
+      "words": 20,
+      "characters": 71,
+      "sha256": "ba476d4a12fe404e8047b297b887062f3332e4aa858a0733de93a571ae9fff57"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.tipKo.0",
+      "title": "비슈케크 → 촐폰아타",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "호수 주변의 산 능선과 퇴적 지형을 관찰하고, 온천용 수영복과 수건을 챙기세요.",
+      "words": 11,
+      "characters": 34,
+      "sha256": "6cb90215464371e35cef8e5673de34b2659f118a1e1ac6066051ed04d436b75c"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.placeDetails.0.description.0",
+      "title": "루흐 오르도 문화센터",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "루흐 오르도 문화센터는 이식쿨 호숫가에 자리한 문화·예술 공간으로, 다양한 종교와 세계관의 공존을 주제로 한 전시와 조형물이 있습니다. 키르기스스탄의 문화는 튀르크계 언어, 이슬람 전통, 유목 생활과 소비에트 시대의 유산이 겹쳐 형성되었습니다. 호수와 산맥을 배경으로 한 공간 배치도 자연과 문화의 관계를 보여줍니다.",
+      "words": 40,
+      "characters": 138,
+      "sha256": "8e51359d9baa08572f95eb24b9806bba78088512f1c9c8d9f59bd315b8e022ca"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.placeDetails.1.description.0",
+      "title": "촐폰아타 암각화",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "촐폰아타 암각화는 바위 표면에 새겨진 산양·사슴·사냥 장면 등을 통해 고대 중앙아시아의 생활과 신앙을 짐작하게 합니다. 여러 시대에 걸쳐 제작된 그림이 섞여 있어 하나의 연대로 단정하기 어렵습니다. 동물의 형상은 목축과 사냥의 중요성을 보여주지만 개별 장면의 의미에는 해석의 여지가 있습니다. 문화재 보존을 위해 바위에 손대지 말고 관찰하세요.",
+      "words": 45,
+      "characters": 148,
+      "sha256": "1b2fac3f4b0c8540be80fc0b4325a8940335507f803b904aa233b1a53be18581"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.placeDetails.2.description.0",
+      "title": "이식쿨 호수",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "이식쿨 호수는 톈산산맥 사이의 거대한 고산 내륙호입니다. 이름은 흔히 ‘따뜻한 호수’로 풀이되며, 높은 고도에도 쉽게 얼지 않는 특성으로 알려져 있습니다. 호수 주변은 산악 유목민의 계절 이동과 교역의 공간이기도 했습니다. 호수 분지와 주변 산맥을 함께 바라보면 지각 운동이 만들어 낸 지형의 규모를 느낄 수 있습니다.",
+      "words": 44,
+      "characters": 135,
+      "sha256": "ff562563668edf4165283f02c710041bb80e9b4b85b4baac573e456abdab7272"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.5.placeDetails.3.description.0",
+      "title": "촐폰아타",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "촐폰아타는 이식쿨 북안의 휴양도시로, 오늘날에는 호수 관광과 온천 활동의 거점입니다. 관광도시의 모습 뒤에는 목축과 지역 교역의 역사가 남아 있습니다. 여름과 가을의 기후 차이가 크고 호수의 수온도 낮아질 수 있으므로 유람선과 야외 온천 이용 시 현지 운영 상태와 안전수칙을 확인하세요.",
+      "words": 39,
+      "characters": 122,
+      "sha256": "cb7aae6fa154d7f6beb4c1fd969b3eb7753fbf3c1f4402370198790d2321e04d"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.6.guideKo.0",
+      "title": "촐폰아타 → 알마티",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "알라아르차는 톈산산맥의 고산 계곡으로 빙하 침식과 하천 작용이 만든 경관을 보여줍니다. 산맥은 인도판과 유라시아판의 장기적인 충돌과 관련된 광역 지각 변형의 영향을 받습니다.",
+      "words": 22,
+      "characters": 76,
+      "sha256": "fa7bd31937144c29d52d6ded53ae306541a4f0a28df906d78414e14fbb09a728"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.6.tipKo.0",
+      "title": "촐폰아타 → 알마티",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "고도와 날씨 변화에 대비하고 국경 통과 대기시간은 유동적이라는 점을 기억하세요.",
+      "words": 10,
+      "characters": 35,
+      "sha256": "e6c06078633aaa10fe4c58454944bc33cbc7bf4b55c6de893fdbb237e0e382b2"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.6.placeDetails.0.description.0",
+      "title": "알라아르차 국립공원",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "알라아르차 국립공원은 비슈케크 남쪽 톈산산맥의 가파른 계곡과 침엽수림, 빙하 지형을 가까이서 관찰할 수 있는 곳입니다. 높은 산맥은 지각 운동으로 융기했고 강과 빙하의 침식이 오늘날의 계곡을 만들었습니다. 짧은 트레킹에서도 하천과 암석, 고도에 따른 식생 변화를 볼 수 있습니다. 산악 날씨는 빠르게 바뀔 수 있으므로 무리한 이동을 피하세요.",
+      "words": 46,
+      "characters": 146,
+      "sha256": "42d600ac4ca5443295a410a28f2157acf12768f8677683647760b2890a106d33"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.6.placeDetails.1.description.0",
+      "title": "코르다이 국경",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "코르다이 국경은 키르기스스탄과 카자흐스탄 사이의 주요 육로 통과 지점입니다. 두 국가는 소비에트 연방의 구성 공화국이었다가 1991년 독립했습니다. 산맥과 교통로가 이어져도 국경을 넘으면 법률과 통화, 행정 제도가 달라집니다. 중앙아시아의 현대 국가 형성과 소비에트 시대의 국경 설정이 남긴 영향을 생각해 볼 수 있습니다.",
+      "words": 41,
+      "characters": 140,
+      "sha256": "5ebeb3831a7b13965205faafb3445dcf10c61f7f094fdf548438410b01a4708d"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.6.placeDetails.2.description.0",
+      "title": "알마티",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "알마티는 카자흐스탄의 옛 수도이자 지금도 중요한 경제·문화 중심지입니다. 톈산산맥 북쪽 기슭에 위치해 대도시와 산악 지형이 가까이 공존합니다. 제정 러시아 시대의 도시 형성, 소비에트 도시계획, 독립 이후 상업·금융 중심지로의 변화가 거리와 건축에 남아 있습니다. 이 지역은 야생 사과의 기원과 다양성 연구에서도 중요한 곳입니다.",
+      "words": 42,
+      "characters": 143,
+      "sha256": "a660164d144cebc0803602237a6cabfaa837fcbd4d99bb38268b00c4aedd0753"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.7.guideKo.0",
+      "title": "알마티 → 차른 협곡 → 알마티",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "차른 협곡은 강의 침식, 지반 융기, 풍화가 오랜 시간 결합해 형성한 지형입니다. 층층이 드러난 퇴적층은 서로 다른 시기의 퇴적 환경을 암시하며, 붉은빛은 일부 암석의 철 산화물과 관련될 수 있습니다.",
+      "words": 29,
+      "characters": 84,
+      "sha256": "28ac2f276411863fff17c7bea6062794584123779af37e7d00c9513cca1fa06c"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.7.tipKo.0",
+      "title": "알마티 → 차른 협곡 → 알마티",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "협곡 가장자리의 낙석과 급경사에 주의하세요. 암석의 색만으로 정확한 광물 조성을 단정할 수는 없습니다.",
+      "words": 13,
+      "characters": 45,
+      "sha256": "98e2d2f2b1cdf3e4661621529242fc4b90b192f363669e05eb02f2557473ab6c"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.7.placeDetails.0.description.0",
+      "title": "차른 협곡",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "차른 협곡은 차른강의 침식과 풍화가 오랜 시간 퇴적암층을 깎아 만든 지형입니다. 붉고 황갈색의 암벽이 성곽처럼 솟은 구간은 ‘성들의 계곡’으로 불립니다. 암석의 층리와 색채는 과거 퇴적 환경을 알려주며, 강이 협곡을 깊게 파 내려간 흔적은 지형 변화의 긴 시간을 보여줍니다. 전망대에서는 안전한 지점을 지키며 지층의 경사와 침식 형태를 살펴보세요.",
+      "words": 47,
+      "characters": 148,
+      "sha256": "7325277bd8eae3c67e73cbf342906327dee15e00133f9b3bd53325ad0ec963e6"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.7.placeDetails.1.description.0",
+      "title": "루나 캐니언",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "루나 캐니언은 달 표면을 연상시키는 밝은 색과 부드러운 굴곡의 지형으로 알려져 있습니다. 주변 암석은 퇴적 당시의 입자와 성분, 이후의 풍화 정도에 따라 색과 침식 형태가 달라집니다. ‘달의 협곡’은 관광상의 별칭이며 정식 지질 단위는 아닙니다. 차른 협곡의 붉은 암벽과 비교하면 같은 지역에서도 암석 특성이 경관을 크게 바꾼다는 점을 알 수 있습니다.",
+      "words": 50,
+      "characters": 148,
+      "sha256": "45161014e170ce7e8ad1dfbda4af066080fda9efc9115af73fcaf17740e52eb6"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.7.placeDetails.2.description.0",
+      "title": "블랙 캐니언",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "블랙 캐니언은 차른강이 흐르는 깊은 협곡 구간으로, 어두운 암벽과 가파른 절벽이 인상적입니다. 밝은 루나 캐니언과 비교하면 암석 표면의 색, 그림자, 햇빛의 방향이 지형을 어떻게 다르게 보이게 하는지 알 수 있습니다. 협곡 아래의 강과 위쪽 건조 고원의 대비는 하천 침식의 규모를 보여줍니다. 절벽 가장자리에서는 지정된 관람 지점을 이용하세요.",
+      "words": 47,
+      "characters": 146,
+      "sha256": "d61f489af788e2a29517f0cb4a9ad80d1055076fd1274e5576d3c6244d2624d6"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.guideKo.0",
+      "title": "알마티 → 귀국 항공편",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "알마티는 트랜스일리 알라타우 산기슭에 자리한 도시입니다. 젠코프 성당은 목조 건축으로 알려져 있으며, 그린 바자르는 지역 식문화와 상업을 체험하기 좋은 곳입니다.",
+      "words": 20,
+      "characters": 71,
+      "sha256": "d0a053c4283bc25ff5854aa558f159feb2884db43eae21e7eeb19b9e30101eef"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.tipKo.0",
+      "title": "알마티 → 귀국 항공편",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "케이블카 대체 일정은 현지 상황에 따라 달라질 수 있으니 가이드 안내를 우선하세요.",
+      "words": 12,
+      "characters": 35,
+      "sha256": "524aa2811e3c2f2bc89e93937900c4f8e51d14cb85ccee18c154bcc40a9ae452"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.placeDetails.0.description.0",
+      "title": "오이 카라가이",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "오이 카라가이는 알마티 인근 산악 휴양지로, 숲과 경사면을 활용한 레저·관광시설이 있습니다. 이곳은 고대 유적보다 현대 카자흐스탄의 관광 산업과 산악 여가문화를 보여주는 장소입니다. 톈산산맥의 산록에서는 대도시와 산림 생태계가 가까이 맞닿아 있으며 고도에 따라 기온과 식생이 달라집니다. 기상과 시설 운영은 현장에서 확인하세요.",
+      "words": 40,
+      "characters": 144,
+      "sha256": "052081fad834aad6b0c2b7b62235b75e0b1cddc60bf152daac4c94783538d17d"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.placeDetails.1.description.0",
+      "title": "판필로프 공원",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "판필로프 공원은 알마티 중심부의 역사적 공원으로 제2차 세계대전과 관련된 기념물이 있습니다. ‘판필로프의 28인’ 이야기는 소비에트 시대에 널리 알려졌지만 세부 서사에는 역사적 논쟁이 있습니다. 전쟁의 기억이 기념비와 공공공간을 통해 도시 정체성에 어떻게 남는지 생각해 볼 수 있습니다. 공원 안의 젠코프 성당과 함께 관찰하면 좋습니다.",
+      "words": 43,
+      "characters": 146,
+      "sha256": "582b3f7343a839cb3ee85fb8a7a0510e16b31cfbad371c63cc2b8cc498f7f89b"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.placeDetails.2.description.0",
+      "title": "젠코프 승천 성당",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "젠코프 승천 성당은 20세기 초에 세워진 러시아 정교회 성당으로, 화려한 색채와 목조 구조가 특징입니다. 중앙아시아의 모스크·마드라사와 달리 러시아 제국의 종교·건축 문화가 남아 있는 사례입니다. 지진이 잦은 지역에서 목재 구조와 건축기술이 어떤 역할을 했는지도 흥미로운 관찰 주제입니다. 예배 중에는 사진 촬영과 소음에 주의하세요.",
+      "words": 42,
+      "characters": 145,
+      "sha256": "9d499be862d00a32e9b0fd1e6d2c2133f5ba19dde8be6bd37cfd920a614dc504"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.placeDetails.3.description.0",
+      "title": "그린 바자르",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "그린 바자르는 알마티의 대표적인 전통시장으로 과일과 견과류, 건과일, 향신료, 육류 등을 만날 수 있습니다. 카자흐스탄의 식문화는 유목 목축 전통과 러시아·우즈베크·위구르 등 여러 공동체의 음식이 어우러져 형성되었습니다. 시장은 오래된 교역 전통이 현대 도시의 소비문화로 이어지는 공간입니다. 판매 품목의 원산지와 가격표, 상인들의 언어를 살펴보세요.",
+      "words": 42,
+      "characters": 155,
+      "sha256": "4275071030bb01c6e698e55ffa2e6f148b54a8b7079ed066b0d009a2530f8b55"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.8.placeDetails.4.description.0",
+      "title": "아르바트 거리",
+      "section": "geography",
+      "scope": "itinerary",
+      "text": "아르바트 거리는 알마티의 대표적 보행자 거리로 상점과 카페, 거리 예술이 모여 있습니다. 고대 유적과 달리 오늘날 시민들의 일상과 소비문화, 도시 예술을 관찰하기 좋은 장소입니다. 소비에트 시대의 도시 공간이 독립 이후 상업·관광 중심지로 변화한 모습을 느낄 수 있습니다. 다양한 거리 공연과 상점의 분위기를 살펴보세요.",
+      "words": 43,
+      "characters": 137,
+      "sha256": "54e6a1921c6fcbb215f4b9811690c3ca4efc7285ee299f2ac4e5056dcf52425a"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.9.guideKo.0",
+      "title": "인천 도착",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "오아시스 도시의 실크로드 건축, 톈산의 산악 지형, 차른 협곡의 퇴적 지층을 하나의 여행에서 비교해 볼 수 있습니다.",
+      "words": 17,
+      "characters": 49,
+      "sha256": "b7ed071a2f915a8c01bd150844c1df2205ffe976d15a9cb8fcfa4357ccabbc3f"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.9.tipKo.0",
+      "title": "인천 도착",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "사진을 도시·건축·지질·음식으로 분류해 정리하면 여행 기록을 남기기 좋습니다.",
+      "words": 8,
+      "characters": 36,
+      "sha256": "e8acec75316ea715a64339f6edab81f87ffa665153a3310d54e69e96e6713eb3"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "days.9.placeDetails.0.description.0",
+      "title": "인천국제공항",
+      "section": "history",
+      "scope": "itinerary",
+      "text": "인천국제공항으로 돌아오며 중앙아시아 세 나라의 공통점과 차이를 되짚어 보세요. 우즈베키스탄에서는 실크로드의 오아시스와 이슬람 학문·건축, 키르기스스탄에서는 톈산의 산악 생태와 유목 문화, 카자흐스탄에서는 협곡과 현대 대도시의 모습을 만났습니다. 세 나라는 교역과 소비에트 시대의 역사를 공유하면서도 서로 다른 언어와 국가 정체성, 경제 발전 경로를 갖고 있습니다.",
+      "words": 43,
+      "characters": 161,
+      "sha256": "3fd8ae79a7ff55394cdb865bf51d821bf8c2a91f75e7e6bd624ea2b1962d6770"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "essentials.0.body.0",
+      "title": "통신과 지도",
+      "section": "geography",
+      "scope": "practical",
+      "text": "산악·협곡 지역으로 가기 전에 오프라인 지도를 내려받으세요. 구글 지도 검색 링크는 인터넷 연결이 필요합니다.",
+      "words": 14,
+      "characters": 48,
+      "sha256": "8a42f61afdd8e7501e33a9cf2f18c922148b13f512dcec3c907ae28a3e3fae1b"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "essentials.1.body.0",
+      "title": "국경 이동",
+      "section": "geography",
+      "scope": "practical",
+      "text": "코르다이 국경 통과 시 여권을 준비하고 대기시간 변동을 고려하세요.",
+      "words": 9,
+      "characters": 29,
+      "sha256": "a907da835ec132271a5285296bc09ee18e13dc2543a7d64e5c352f95f4234f7b"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "essentials.2.body.0",
+      "title": "산악 날씨",
+      "section": "geography",
+      "scope": "practical",
+      "text": "톈산 지역은 기온과 날씨가 빠르게 바뀔 수 있어 방풍·보온 의류와 물이 필요합니다.",
+      "words": 12,
+      "characters": 35,
+      "sha256": "1a413bcf8a6dc05110f67b8ece2072edd38c76e3f89049dc6c227bf4265ad4b7"
+    },
+    {
+      "file": "itinerary.json",
+      "path": "essentials.3.body.0",
+      "title": "온천 준비",
+      "section": "geography",
+      "scope": "practical",
+      "text": "10월 17일 야외 온천 일정에 수영복을 준비하세요.",
+      "words": 7,
+      "characters": 23,
+      "sha256": "2dc8d2e031b31e507a7226e7fae5af65ce96230c2f6715c586f95d327ebef9de"
+    },
+    {
+      "file": "render-guide.js",
+      "path": "literalParagraph.0.0",
+      "title": "",
+      "section": "history",
+      "scope": "detail",
+      "text": "자연환경에서 역사, 자원, 경제와 교육으로 이어지는 3국 여행 해설입니다. 주제를 누르면 본문이 펼쳐집니다.",
+      "words": 13,
+      "characters": 48,
+      "sha256": "d340d6cc3e77d649de5250f600394aca1032fa7119f18fe84f1fb45ec4d5cc6a"
+    }
+  ]
+}

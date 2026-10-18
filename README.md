@@ -23,3 +23,19 @@ The app includes local checklist storage, offline caching after the first succes
 이미지는 여행의 시각적 기록이며, 필사본 문자나 제품 라벨의 정확한 판독 자료는 아닙니다. [사진별 배치·크기·용량 및 검증 결과](docs/illustrated-journal.md)를 참고하세요.
 
 [부하라·레기스탄·촐폰아타 추가 12점의 배치와 파일 정보](docs/bukhara-registan-illustrations.md)도 확인할 수 있습니다.
+
+## 3국 통합 해설과 검증
+
+여행 해설은 지리·기후·생활양식 → 역사 → 자원·에너지 → 경제 → 교육 순서입니다. 도시·유적 상세와 일정 기능은 별도로 유지합니다. 경제표는 2024년 WDI 3국 자료이며, 원화 표시는 NBKR 2026-10-17 교차환율을 사용합니다. 교육 비용은 공식 요율과 추정 생활비를 구분한 조건부 시나리오입니다.
+
+- [최종 통합 감사 및 남은 한계](docs/final-integration-audit.md)
+- [본문 측정과 감축률](docs/audit/measurement.md) · [편집 정책](docs/audit/editorial-policy.md)
+- [교육 원자료·조건](docs/audit/education.md) · [이미지 23점 전수 감사](docs/audit/images.md)
+
+```sh
+npm test
+npm run build
+node scripts/measure-guide.mjs
+```
+
+선택적인 브라우저 회귀 검사는 Playwright와 Chromium이 준비된 환경에서 `QA_CHROMIUM=/path/to/chromium node scripts/verify-browser.cjs`로 실행합니다. 프로덕션 의존성을 추가하지 않았습니다. 실제 수행 범위와 로컬 환경 조건은 [브라우저 검증](docs/audit/browser.md)에 기록합니다. PR의 테스트·빌드는 GitHub Actions에서도 실행하며 배포는 승인 후 main 병합 시 기존 Pages workflow가 수행합니다.
