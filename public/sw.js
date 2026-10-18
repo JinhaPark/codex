@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v9-museum-photos';
+const CACHE = 'ca26-pages-v10-sites-feathers';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

@@ -134,3 +134,17 @@ IMG_8936(1)은 기존IMG_8936과 바이트가 같으나 공개된 기존 작품�
 ## 추가 사용자 수정: 전경 제거·유골함 방향
 
 울루그벡 동상 앞 관람객을 모자·머리·몸/옷까지 모두 제거하고 가려진 포장 바닥을 이어 그렸다. 아프라시압 벽화 왼쪽 아래의 현대 관람객 팔·소매·손·손가락을 모두 제거하고 훼손된 회벽 질감으로 정리했다. 없어진 고대 인물이나 문양을 새로 그리지 않도록 지시했다. 유골함은 사용자 요청에 따라90도 방향을 바꾼 가로4:3 배치로 정리해 두개골이 왼쪽, 다른 뼈가 오른쪽으로 놓이고 내부가 위로 보이게 했다. 사진 원래크기1152×1536과 방향 정리 후 기준1536×1152를 manifest에 구분했다. 세 수정본 모두 내장imagegen을 사용했고 원본 파일은 수정하지 않았다. 같은ID·배치·캡션을 유지하며 alt와실제 종횡비를 갱신했다. 이 절이 초기 변환본에서 관람객/손을 유지했다는 기록보다 최신이다.
+
+
+## 추가 사진3장·깃털 명료화
+
+내장 imagegen을 사용했다. 새3점은 수채화, 기존 아프라시압 벽화는 색연필화의 관모 흔적만 보완했다. 새3점9WebP 추가·벽화3WebP 교체 후 총34점96파일, 17,195,568바이트다. 표준본 합계는 6,422,706바이트다. 원본과 실제 변환본의 작은 폭을 넘지 않고 종횡비를 유지했다. EXIF/GPS/XMP/ICC를 제거했다.
+
+| ID · 원본 | 배치 · 캡션 | 입력 → 변환본 | 파일 · 픽셀 · 바이트 · 품질 |
+|---|---|---|---|
+| afrasiyab-envoys-pencil · IMG_8902.jpeg | `samarkand:1:0` · 아프라시압 벽화 — 깃털 관모의 인물들 | 1536×1152 → 1448×1086 | afrasiyab-envoys-pencil-480.webp · 480×360 · 71,852B · q88<br>afrasiyab-envoys-pencil-800.webp · 800×600 · 198,606B · q88<br>afrasiyab-envoys-pencil-1200.webp · 1200×900 · 238,290B · q76 |
+| samarkand-bibi-khanym-watercolor · IMG_8908.jpeg | `samarkand:6:0` · 사마르칸트 비비하눔 모스크 — 청록색 돔과 미나레트 | 1152×1536 → 1086×1448 | samarkand-bibi-khanym-watercolor-480.webp · 480×640 · 111,640B · q88<br>samarkand-bibi-khanym-watercolor-800.webp · 800×1067 · 241,660B · q84<br>samarkand-bibi-khanym-watercolor-1086.webp · 1086×1448 · 249,652B · q72 |
+| bukhara-chashma-ayub-watercolor · IMG_8877.jpeg | `bukhara:14:1` · 부하라 차슈마 아유브 — 원뿔형 지붕과 벽돌 외벽 | 1536×1152 → 1448×1086 | bukhara-chashma-ayub-watercolor-480.webp · 480×360 · 58,750B · q88<br>bukhara-chashma-ayub-watercolor-800.webp · 800×600 · 164,510B · q88<br>bukhara-chashma-ayub-watercolor-1200.webp · 1200×900 · 248,094B · q82 |
+| hotel-pool-garden-watercolor · IMG_8888.jpeg | `travel:lodging:view` · 숙소에서 내려다본 수영장과 정원 | 1152×1536 → 1086×1448 | hotel-pool-garden-watercolor-480.webp · 480×640 · 140,664B · q88<br>hotel-pool-garden-watercolor-800.webp · 800×1067 · 235,746B · q78<br>hotel-pool-garden-watercolor-1086.webp · 1086×1448 · 303,800B · q72 |
+
+표준800px본은 모두250KB 이하. 호텔 전경의 최대1086px본303,800B는 촘촘한 잎과 수영장 경계의 세부 손실을 줄이기 위해 q72를 유지한 예외이며, 모바일 기본 표준본은235,746B다. 원본JPEG와 생성PNG, 촬영/위치 메타데이터는 저장소 밖에만 보관한다. 호텔명은 촬영일 부재로 미확정이다. 사람 제거와 깃털 표현의 의도적 변경 범위는 destination-images.md 최신 절을 따른다.

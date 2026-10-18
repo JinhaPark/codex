@@ -88,9 +88,11 @@
     "visits": [
       "2026-10-14 부하라 → 사마르칸트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-chashma-ayub-watercolor"
+    ],
+    "needed": "사진 추가 반영 완료",
     "requestNumber": 2
   },
   {
@@ -125,9 +127,11 @@
     "visits": [
       "2026-10-15 사마르칸트 → 타슈켄트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "samarkand-bibi-khanym-watercolor"
+    ],
+    "needed": "사진 추가 반영 완료",
     "requestNumber": 4
   },
   {
@@ -402,8 +406,9 @@
     ],
     "classification": "누락",
     "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
-    "requestNumber": 10
+    "needed": "사용자 확인: 별도 사진 없음. 추가 사진 요청 보류; 대응 이미지 없음",
+    "requestNumber": 10,
+    "photoAvailability": "user-has-no-photo"
   },
   {
     "place": "베르메트 야외 온천",
@@ -413,8 +418,9 @@
     ],
     "classification": "누락",
     "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
-    "requestNumber": 15
+    "needed": "사용자 확인: 별도 사진 없음. 추가 사진 요청 보류; 대응 이미지 없음",
+    "requestNumber": 15,
+    "photoAvailability": "user-has-no-photo"
   },
   {
     "place": "Karven Four Seasons 리조트",
@@ -503,5 +509,17 @@
       "aral-sea-exhibit-photo"
     ],
     "needed": "관개·염류 설명의 보조 자료; 관광지 누락 수에 포함하지 않음"
+  },
+  {
+    "place": "호텔 객실에서 본 수영장·정원(호텔명 미확인)",
+    "country": "보조 항목",
+    "visits": [
+      "촬영일 메타데이터 없음; 숙박일·호텔명 미확인"
+    ],
+    "classification": "선택 사항",
+    "imageIds": [
+      "hotel-pool-garden-watercolor"
+    ],
+    "needed": "관광지 누락과 별도 관리. 사용자 메모: 3층 객실·엘리베이터 없음. 호텔명 또는 촬영일 확인 시 숙박 일정에 연결"
   }
 ]

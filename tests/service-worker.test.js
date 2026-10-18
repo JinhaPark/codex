@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source = fs.readFileSync(new URL('../public/sw.js', import.meta.url), 'utf8');
-const current = 'ca26-pages-v9-museum-photos';
+const current = 'ca26-pages-v10-sites-feathers';
 function worker({ put = async () => {}, fetch = async () => new Response('network') } = {}) {
   const stores = new Map(), handlers = {};
   const caches = {
@@ -32,7 +32,7 @@ function worker({ put = async () => {}, fetch = async () => new Response('networ
 
 test('worker upgrade deletes only older travel-guide caches and preserves other sites', async () => {
   const { stores, handlers } = worker();
-  for (const key of ['ca26-pages-v5-bukhara-registan', 'ca26-pages-v6-three-country-guide', 'ca26-pages-v7-minaret-refresh', 'ca26-pages-v8-reflection-cleanup', current, 'other-site-v1']) stores.set(key, new Map());
+  for (const key of ['ca26-pages-v5-bukhara-registan', 'ca26-pages-v6-three-country-guide', 'ca26-pages-v7-minaret-refresh', 'ca26-pages-v8-reflection-cleanup', 'ca26-pages-v9-museum-photos', current, 'other-site-v1']) stores.set(key, new Map());
   let completion;
   handlers.activate({ waitUntil: promise => { completion = promise; } });
   await completion;

@@ -34,5 +34,6 @@ export function renderGuide(essentials = []) {
     ${[samarkand,tashkent,bishkek,cholponata,almaty].map(city=>renderNarrative(city,{id:`history-${city.slug}`,placement:city.slug})).join('')}
     ${renderNarrative(comparative,{id:'architecture-comparative',placement:'comparative'})}
     <section class="architecture-guide" id="architecture-guide"><h3>우즈베키스탄 이슬람 건축 유산</h3>${architecture.map(city=>`<details class="architecture-city"><summary><span class="city-name">${esc(city.city)} <small>${esc(city.en)}</small></span><span class="city-subtitle">${esc(city.subtitle)}</span></summary><div class="architecture-city-body"><p>${esc(city.intro)}</p>${renderIllustration(`architecture:${city.en}:intro`)}${city.sites.map(([name,en,description])=>`<div class="architecture-site"><h4>${esc(name)} <small>${esc(en)}</small></h4><p>${esc(description)}</p></div>`).join('')}</div></details>`).join('')}${renderSources([['UNESCO 사마르칸트','https://whc.unesco.org/en/list/603/'],['UNESCO 부하라','https://whc.unesco.org/en/list/602/']])}</section>
+    <details class="travel-lodging-view"><summary>숙소에서 본 풍경</summary><p>여행 메모: 3층 객실, 엘리베이터 없음. 호텔명은 확인 중입니다.</p>${renderIllustration('travel:lodging:view')}</details>
     ${essentials.filter(e=>e.title!=='현지 여행 회화').map(e=>`<details><summary>${esc(e.title)}</summary><p>${esc(e.body)}</p></details>`).join('')}`;
 }

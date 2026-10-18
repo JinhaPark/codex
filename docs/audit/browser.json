@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T16:54:51.690Z",
+  "checkedAt": "2026-10-18T18:09:01.969Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 31,
+  "uniqueIllustrations": 34,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -140,12 +140,28 @@
         "11. 부하라 칸국과 에미르국: 궁정과 권력"
       ]
     },
+    "bukhara-chashma-ayub-watercolor": {
+      "state": "guide",
+      "placement": "bukhara:14:1",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "15. 현장에서 읽는 부하라: 하루 답사법"
+      ]
+    },
     "afrasiyab-envoys-pencil": {
       "state": "guide",
       "placement": "samarkand:1:0",
       "headings": [
         "사마르칸트",
         "소그드 상인과 세계의 교차로"
+      ]
+    },
+    "samarkand-bibi-khanym-watercolor": {
+      "state": "guide",
+      "placement": "samarkand:6:0",
+      "headings": [
+        "사마르칸트",
+        "비비하눔 모스크의 야망과 구조"
       ]
     },
     "ulughbeg-meridian-pencil": {
@@ -236,6 +252,13 @@
         "사마르칸트 Samarkand청색 타일의 도시"
       ]
     },
+    "hotel-pool-garden-watercolor": {
+      "state": "guide",
+      "placement": "travel:lodging:view",
+      "headings": [
+        "숙소에서 본 풍경"
+      ]
+    },
     "suusamyr-honey-pencil": {
       "state": "fx",
       "placement": "shopping:honey:yellow",
@@ -255,7 +278,7 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 87,
+  "decodedAssetUrls": 96,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
@@ -276,7 +299,8 @@
   "offlineEditedMinaret": true,
   "offlineReflectionEdits": true,
   "offlineNewMuseumPhotos": true,
-  "cacheUpgradeFixture": "v8 cache name/current app → v9; old cache removed",
+  "offlineNewSitesAndHotel": true,
+  "cacheUpgradeFixture": "v9 cache name/current app → v10; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",
