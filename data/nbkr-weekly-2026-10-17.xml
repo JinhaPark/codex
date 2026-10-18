@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<CurrencyRates Name="Weekly Exchange Rates" Date="17.10.2026">
+<Currency ISOCode="GBP">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>116,5490</Value>
+</Currency>
+<Currency ISOCode="DKK">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>13,1549</Value>
+</Currency>
+<Currency ISOCode="INR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,9208</Value>
+</Currency>
+<Currency ISOCode="CAD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>61,7476</Value>
+</Currency>
+<Currency ISOCode="KRW">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0656</Value>
+</Currency>
+<Currency ISOCode="NOK">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>9,2532</Value>
+</Currency>
+<Currency ISOCode="XDR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>118,4077</Value>
+</Currency>
+<Currency ISOCode="SEK">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>8,8387</Value>
+</Currency>
+<Currency ISOCode="CHF">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>106,1093</Value>
+</Currency>
+<Currency ISOCode="JPY">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>5,5346</Value>
+</Currency>
+<Currency ISOCode="AMD">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>2,4192</Value>
+</Currency>
+<Currency ISOCode="BYR">
+<Nominal>100</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,3402</Value>
+</Currency>
+<Currency ISOCode="MDL">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>4,8790</Value>
+</Currency>
+<Currency ISOCode="TJS">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>9,4683</Value>
+</Currency>
+<Currency ISOCode="UAH">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>1,9482</Value>
+</Currency>
+<Currency ISOCode="KWD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>283,7904</Value>
+</Currency>
+<Currency ISOCode="HUF">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>2,7068</Value>
+</Currency>
+<Currency ISOCode="CZK">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>4,0410</Value>
+</Currency>
+<Currency ISOCode="NZD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>49,5798</Value>
+</Currency>
+<Currency ISOCode="PKR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,3159</Value>
+</Currency>
+<Currency ISOCode="AUD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>60,8696</Value>
+</Currency>
+<Currency ISOCode="TRY">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>1,7657</Value>
+</Currency>
+<Currency ISOCode="AZN">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>51,4412</Value>
+</Currency>
+<Currency ISOCode="SGD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>68,3310</Value>
+</Currency>
+<Currency ISOCode="AFN">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>1,3468</Value>
+</Currency>
+<Currency ISOCode="BRL">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>17,1523</Value>
+</Currency>
+<Currency ISOCode="GEL">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>33,6514</Value>
+</Currency>
+<Currency ISOCode="AED">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>23,8108</Value>
+</Currency>
+<Currency ISOCode="MYR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>21,4233</Value>
+</Currency>
+<Currency ISOCode="MNT">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0243</Value>
+</Currency>
+<Currency ISOCode="TWD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>2,6986</Value>
+</Currency>
+<Currency ISOCode="TMT">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>24,9857</Value>
+</Currency>
+<Currency ISOCode="PLN">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>22,5256</Value>
+</Currency>
+<Currency ISOCode="SAR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>23,3032</Value>
+</Currency>
+<Currency ISOCode="BYN">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>29,0618</Value>
+</Currency>
+<Currency ISOCode="OMR">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>227,1370</Value>
+</Currency>
+<Currency ISOCode="HKD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>11,1430</Value>
+</Currency>
+<Currency ISOCode="IDR">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0486</Value>
+</Currency>
+<Currency ISOCode="IRR">
+<Nominal>100</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0049</Value>
+</Currency>
+<Currency ISOCode="UZS">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0728</Value>
+</Currency>
+<Currency ISOCode="BHD">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>231,5023</Value>
+</Currency>
+<Currency ISOCode="VND">
+<Nominal>10</Nominal>
+<ValidFor>7</ValidFor>
+<Value>0,0338</Value>
+</Currency>
+<Currency ISOCode="THB">
+<Nominal>1</Nominal>
+<ValidFor>7</ValidFor>
+<Value>2,6175</Value>
+</Currency>
+</CurrencyRates>

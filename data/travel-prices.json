@@ -1,0 +1,35 @@
+{
+  "source": "사용자 여행 관찰·구매가격 및 기존 온라인 조사 기록",
+  "retrievedAt": "2026-10-18",
+  "fxDate": "2026-10-17",
+  "samsa": {
+    "amount": 10000,
+    "currency": "UZS",
+    "nbkrKgsPer10Uzs": 0.0728
+  },
+  "honey": {
+    "yellow180gKgs": 400,
+    "whiteSmallKgs": 500,
+    "whiteLarge500mlKgs": 900
+  },
+  "brandy200mlKgs": {
+    "bishkek": [
+      262,
+      323
+    ],
+    "kyrgyzstan": [
+      266,
+      316
+    ],
+    "issykKul": [
+      373,
+      373
+    ]
+  },
+  "customs": {
+    "alcoholLitres": 2,
+    "alcoholValueUsd": 400,
+    "source": "https://www2.customs.go.kr/busan/cm/cntnts/cntntsView.do?cntntsId=829&mi=7139",
+    "note": "원화환산은참고. 법적판정은공식외화기준및세관환율."
+  }
+}

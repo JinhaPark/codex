@@ -1,0 +1,11 @@
+{
+  "effectiveDate": "2026-10-17",
+  "retrievedAt": "2026-10-18",
+  "source": "NBKR",
+  "usdKgs": 87.45,
+  "krwKgs": 0.0656,
+  "usdSource": "https://www.nbkr.kg/getservice.jsp?lang=ENG",
+  "krwSource": "https://www.nbkr.kg/XML/weekly.xml",
+  "usdPageSha256": "61d8588b2b1647c21f3894f9552a1fa47b6bc21abfa3aeef560bc2a5f4f416b6",
+  "note": "USD dated17Oct on official daily table; KRW weekly rate effective17Oct. Cross rate USD/KRW=USD/KGS divided by KRW/KGS."
+}
