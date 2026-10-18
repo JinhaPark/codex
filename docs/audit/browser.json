@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T14:56:14.735Z",
+  "checkedAt": "2026-10-18T15:42:53.889Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -29,6 +29,7 @@
   "fxFixtureConversion": "500 KGS → 7,622 KRW",
   "offlineVisitedGuideAndImage": true,
   "cacheUpgradeFixture": "v5 cache name/current app → v6; old cache removed",
+  "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "economy-375.png",
     "education-375.png",
