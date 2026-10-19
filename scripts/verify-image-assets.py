@@ -15,7 +15,11 @@ hashes = set()
 for art in artwork:
     assert art['width'] <= art['sourceWidth']
     actual_ratio = art.get('generatedWidth', art['width']) / art.get('generatedHeight', art['height'])
-    assert abs(actual_ratio / (art['sourceWidth'] / art['sourceHeight']) - 1) < .003, art['id']
+    if art.get('framingEdit') == 'outpaint-top-and-clean-foreground':
+        assert art['original'] == 'IMG_9082.jpeg' and art['id'] == 'samarkand-bibi-khanym-watercolor'
+        assert actual_ratio < art['sourceWidth'] / art['sourceHeight']
+    else:
+        assert abs(actual_ratio / (art['sourceWidth'] / art['sourceHeight']) - 1) < .003, art['id']
     assert art['height'] <= art['sourceHeight']
     for variant in art['variants']:
         path = asset_dir / variant['file']

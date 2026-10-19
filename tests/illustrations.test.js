@@ -23,7 +23,13 @@ test('published illustration variants are complete WebP files with the recorded 
       assert.ok(variant.width <= (art.editInputWidth || art.sourceWidth) && variant.height <= (art.editInputHeight || art.sourceHeight), 'Do not enlarge an existing edit target');
       const actualRatio = (art.generatedWidth || art.width) / (art.generatedHeight || art.height);
       assert.ok(Math.abs(variant.height - Math.round(variant.width / actualRatio)) <= (art.generatedWidth ? 0 : 1), 'Preserve decoded artwork ratio with pixel rounding');
-      assert.ok(Math.abs((actualRatio / (art.sourceWidth / art.sourceHeight)) - 1) < 0.003, 'Keep the original framing within generator canvas rounding');
+      if (art.framingEdit === 'outpaint-top-and-clean-foreground') {
+        assert.equal(art.original, 'IMG_9082.jpeg');
+        assert.equal(art.id, 'samarkand-bibi-khanym-watercolor');
+        assert.ok(actualRatio < art.sourceWidth / art.sourceHeight, 'Requested sky extension adds vertical space');
+      } else {
+        assert.ok(Math.abs((actualRatio / (art.sourceWidth / art.sourceHeight)) - 1) < 0.003, 'Keep the original framing within generator canvas rounding');
+      }
       // Inspect actual WebP chunks rather than arbitrary compressed pixel bytes.
       for (let offset = 12; offset + 8 <= bytes.length;) {
         const chunk = bytes.toString('ascii', offset, offset + 4);
@@ -82,7 +88,15 @@ test('destination audit covers the itinerary and only links published, identifie
   const gurEmir = artwork.find(art => art.original === 'IMG_8908.jpeg');
   assert.equal(gurEmir.id, 'samarkand-gur-emir-watercolor', 'Correct the previously mistaken Bibi-Khanym identification');
   assert.ok(coverage.find(row => row.place === '구르에미르 영묘').imageIds.includes(gurEmir.id));
-  assert.equal(coverage.find(row => row.place === '비비하눔 모스크').classification, '누락');
+  assert.equal(coverage.find(row => row.place === '비비하눔 모스크').classification, '확보');
+  const bibi = artwork.find(a => a.original === 'IMG_9082.jpeg');
+  assert.equal(bibi.placement, 'samarkand:6:detail');
+  const mohi = artwork.find(a => a.id === 'bukhara-sitorai-pool-watercolor');
+  assert.equal(mohi.license, 'CC0-1.0');
+  assert.equal(mohi.creator, 'Bernard Gagnon');
+  assert.equal(mohi.placement, 'bukhara:10:detail');
+  assert.match(mohi.sourceUrl, /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+  assert.ok(!artwork.some(a => a.original === 'IMG_9073.jpeg'), 'Unverified screenshot stays unpublished');
   const minorExterior = artwork.find(art => art.original === 'IMG_9014.jpeg');
   assert.equal(minorExterior.id, 'tashkent-minor-portrait-watercolor', 'Do not misidentify the white Minor facade as Bibi-Khanym');
   assert.ok(coverage.find(row => row.place === '타슈켄트 미노르 모스크').imageIds.includes(minorExterior.id));
