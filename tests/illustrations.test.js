@@ -100,6 +100,11 @@ test('destination audit covers the itinerary and only links published, identifie
   const minorExterior = artwork.find(art => art.original === 'IMG_9014.jpeg');
   assert.equal(minorExterior.id, 'tashkent-minor-portrait-watercolor', 'Do not misidentify the white Minor facade as Bibi-Khanym');
   assert.ok(coverage.find(row => row.place === '타슈켄트 미노르 모스크').imageIds.includes(minorExterior.id));
+  const divan = artwork.find(art => art.original === 'IMG_8860.jpeg');
+  assert.equal(divan.id, 'bukhara-divan-begi-portal-pencil');
+  assert.equal(divan.placement, 'bukhara:8:1');
+  assert.deepEqual(coverage.find(row => row.requestNumber === 11).imageIds, [divan.id]);
+  assert.equal(coverage.find(row => row.requestNumber === 11).classification, '확보');
   const arrivalDinner = artwork.find(art => art.id === 'travel-steak-table-pencil');
   assert.equal(arrivalDinner.placement, 'day:4:dinner');
   assert.equal(itinerary.days[4].date, '2026-10-16');

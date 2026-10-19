@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v15-bibi-mohi';
+const CACHE = 'ca26-pages-v16-combined-guide-images';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
