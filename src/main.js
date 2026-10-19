@@ -49,7 +49,7 @@ root.querySelector('[data-next]')?.addEventListener('click',()=>{day++;render()}
 root.querySelectorAll('[data-speak]').forEach(row=>{const play=()=>speakUzbek(travelPhrases[Number(row.dataset.speak)][0]);row.addEventListener('click',play);row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();play()}})});
 root.querySelectorAll('[data-check]').forEach(b=>b.onchange=()=>{let x=checks();x[b.dataset.check]=b.checked;localStorage.setItem('central-asia-checks',JSON.stringify(x))});
 }
-render();addEventListener('online',render);addEventListener('offline',render);
+render();dispatchEvent(new Event('guide:ready'));addEventListener('online',render);addEventListener('offline',render);
 if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw.js').catch(()=>{}));
 
 // Public exchange-rate data, no API key. Do not silently use stale estimates.
