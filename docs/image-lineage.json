@@ -1,0 +1,2643 @@
+{
+  "schemaVersion": 1,
+  "cacheKeyFormat": "travel-photo-cache-v1",
+  "baselineCommit": "aa628637f93e30dc77417e4457d525734bf19b2a",
+  "skillsBaselineCommit": "9811de55fff4a5262f83c88a7e86f4260c079683",
+  "migrationNote": "현재 manifest의 원본 이름·게시 자산을 이관했습니다. legacy-verified는 게시 변형의 bytes·SHA-256 확인만 뜻하며 시각 검증·사용자 승인·정확한 recipe 캐시 적중을 뜻하지 않습니다. 원본·중간 편집본과 과거 부모 관계는 복구하지 않았습니다. 향후 적용한 스킬 커밋은 각 작업 기록에 추가합니다.",
+  "images": [
+    {
+      "illustrationId": "mountain-orchards-watercolor",
+      "originalName": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1080,
+      "sourceHeight": 1440,
+      "activeRevisionId": "legacy-mountain-orchards-watercolor",
+      "placement": "geography:1:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-mountain-orchards-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-reflection-and-utility-removal",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 103532,
+              "quality": 84,
+              "file": "public/illustrations/mountain-orchards-watercolor-480.webp",
+              "sha256": "1397b08a85c15d92f9dd6689431fa15afa79642f2e0c125304b794e173d38e84"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 249148,
+              "quality": 84,
+              "file": "public/illustrations/mountain-orchards-watercolor-800.webp",
+              "sha256": "496af45133c6d414b87e0c582bac9a9b908a511a818b3d02ef7bbe8b6f981e36"
+            },
+            {
+              "width": 1080,
+              "height": 1440,
+              "bytes": 246802,
+              "quality": 74,
+              "file": "public/illustrations/mountain-orchards-watercolor-1080.webp",
+              "sha256": "b43debc0fdc619d0be45538b846a0fdd489b7f12d511ab3bce548fa1c375f1dd"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-mountain-orchards-watercolor"
+    },
+    {
+      "illustrationId": "bukhara-poi-kalyan-watercolor",
+      "originalName": "IMG_8800.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-bukhara-poi-kalyan-watercolor",
+      "placement": "bukhara:7:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-poi-kalyan-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 45506,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-poi-kalyan-watercolor-480.webp",
+              "sha256": "d5851485444345edf0b431f01cb74a16de707029c638c2a1bede769273279d19"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 118266,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-poi-kalyan-watercolor-800.webp",
+              "sha256": "f2882d95ada903e45b4d6d2796411fd06e61acde527a4746d5d0e77b1ed59bb6"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 229986,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-poi-kalyan-watercolor-1200.webp",
+              "sha256": "70bb37c439d88a138bc3320f5817d0d52062d1f0d0cd26c39766991795ef3f1e"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-poi-kalyan-watercolor"
+    },
+    {
+      "illustrationId": "autumn-birch-walk-watercolor",
+      "originalName": "IMG_8995.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-autumn-birch-walk-watercolor",
+      "placement": "day:6:tip",
+      "revisions": [
+        {
+          "revisionId": "legacy-autumn-birch-walk-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 124352,
+              "quality": 84,
+              "file": "public/illustrations/autumn-birch-walk-watercolor-480.webp",
+              "sha256": "fe25af9d6bec25df8d79f2b69e94835e97226bf2cc225f1b02f6b922bf53745e"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 235842,
+              "quality": 76,
+              "file": "public/illustrations/autumn-birch-walk-watercolor-800.webp",
+              "sha256": "a7feb3eed49c7fb3a230639dcebeef32d8a1dd9662650e26fc94464d36c0246d"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 340092,
+              "quality": 72,
+              "file": "public/illustrations/autumn-birch-walk-watercolor-1086.webp",
+              "sha256": "00ff9ee3f62209bb04be632add553614fa97032e5f60fb4752dae049d998e16c"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-autumn-birch-walk-watercolor"
+    },
+    {
+      "illustrationId": "rukh-ordo-garden-pencil",
+      "originalName": "IMG_8981.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-rukh-ordo-garden-pencil",
+      "placement": "cholponata:9:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-rukh-ordo-garden-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 128224,
+              "quality": 84,
+              "file": "public/illustrations/rukh-ordo-garden-pencil-480.webp",
+              "sha256": "257a6e37c720181a98153b6334e632070e7eb0fc6df71c0a58a3526bb535c4eb"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 245614,
+              "quality": 74,
+              "file": "public/illustrations/rukh-ordo-garden-pencil-800.webp",
+              "sha256": "a15551b84b61c6a85f8488769f5d50fa6a42e1d6fc388366ebefa32091ae8a70"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 385512,
+              "quality": 72,
+              "file": "public/illustrations/rukh-ordo-garden-pencil-1086.webp",
+              "sha256": "e0133e239b4954593b479e878fad1bd842a5a903a2a0fcdcfb6731d868f89401"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil"
+    },
+    {
+      "illustrationId": "uzbek-tilework-pencil",
+      "originalName": "IMG_8704.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1334,
+      "sourceHeight": 750,
+      "activeRevisionId": "legacy-uzbek-tilework-pencil",
+      "placement": "comparative:0:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-uzbek-tilework-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 270,
+              "bytes": 48880,
+              "quality": 84,
+              "file": "public/illustrations/uzbek-tilework-pencil-480.webp",
+              "sha256": "dc8c3aab15bd4ccf43d3cec844ac87d7c716b46e147f3ac0145fc10fa9d98e71"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "bytes": 132338,
+              "quality": 84,
+              "file": "public/illustrations/uzbek-tilework-pencil-800.webp",
+              "sha256": "1b1032addda278a371396a5b53ad0170ce7f76be87649434e3f8d1f6a87fae0b"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "bytes": 240056,
+              "quality": 82,
+              "file": "public/illustrations/uzbek-tilework-pencil-1200.webp",
+              "sha256": "654778eb27601563c18fb002973480325871dbbb9bdf88cd54735f659a7b0448"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil"
+    },
+    {
+      "illustrationId": "arabic-manuscript-pencil",
+      "originalName": "IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1080,
+      "sourceHeight": 1440,
+      "activeRevisionId": "legacy-arabic-manuscript-pencil",
+      "placement": "tashkent:7:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-arabic-manuscript-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 91750,
+              "quality": 84,
+              "file": "public/illustrations/arabic-manuscript-pencil-480.webp",
+              "sha256": "0efe6eefc7ead4294dad161aecd2ce27a721354f919b8565f8484ff3d06c863d"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 247306,
+              "quality": 84,
+              "file": "public/illustrations/arabic-manuscript-pencil-800.webp",
+              "sha256": "d6881c387651f03db4c491eef5a60215b7830ed6b1e77121a9f1be4aaf63823f"
+            },
+            {
+              "width": 1080,
+              "height": 1440,
+              "bytes": 248220,
+              "quality": 72,
+              "file": "public/illustrations/arabic-manuscript-pencil-1080.webp",
+              "sha256": "bab3e111a7c4842abe6d1fd279200fe91ca2d2a74aefdf57ca81982fbc61e253"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-arabic-manuscript-pencil"
+    },
+    {
+      "illustrationId": "street-classic-car-pencil",
+      "originalName": "IMG_8943.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-street-classic-car-pencil",
+      "placement": "day:4:tip",
+      "revisions": [
+        {
+          "revisionId": "legacy-street-classic-car-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-window-reflection-cleanup",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 117134,
+              "quality": 84,
+              "file": "public/illustrations/street-classic-car-pencil-480.webp",
+              "sha256": "91b3bdcb8d9d7e8eacceb9047f0d54367d8690bc6d259d07f8c750ba7ac11aef"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 233400,
+              "quality": 78,
+              "file": "public/illustrations/street-classic-car-pencil-800.webp",
+              "sha256": "95fc86fe7cfbec42ed7db63f1619db885b3a9fc6a4b3f90735686e06a1a898c8"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 250172,
+              "quality": 58,
+              "file": "public/illustrations/street-classic-car-pencil-1086.webp",
+              "sha256": "7bd33fd8e7447d93caadced82af119b4fffdd85cdf6e8cdda59a0adc30b4fb3e"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-street-classic-car-pencil"
+    },
+    {
+      "illustrationId": "travel-steak-table-pencil",
+      "originalName": "IMG_8951.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-travel-steak-table-pencil",
+      "placement": "day:4:dinner",
+      "revisions": [
+        {
+          "revisionId": "legacy-travel-steak-table-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-remove-people-and-arrival-dinner",
+          "variants": [
+            {
+              "file": "public/illustrations/travel-steak-table-pencil-480.webp",
+              "width": 480,
+              "height": 360,
+              "bytes": 65638,
+              "quality": 88,
+              "sha256": "f3264e2d5eabfbeac074dd47e6fb4def1c79ac1de0a1c28ba221b46807dae581"
+            },
+            {
+              "file": "public/illustrations/travel-steak-table-pencil-800.webp",
+              "width": 800,
+              "height": 600,
+              "bytes": 179710,
+              "quality": 88,
+              "sha256": "710050b346df863382c735afb32acbc5bff7185ecb62644afbc4c9affe27040f"
+            },
+            {
+              "file": "public/illustrations/travel-steak-table-pencil-1200.webp",
+              "width": 1200,
+              "height": 900,
+              "bytes": 236952,
+              "quality": 78,
+              "sha256": "4d4a8720315054051c40c87ac0f5a3511b913f6d9cc9d950636e01d56c81be5a"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-travel-steak-table-pencil"
+    },
+    {
+      "illustrationId": "travel-meal-tray-pencil",
+      "originalName": "IMG_7B1EB00F-DC20-4F6C-9477-4C826E74FA78.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1080,
+      "sourceHeight": 1440,
+      "activeRevisionId": "legacy-travel-meal-tray-pencil",
+      "placement": "day:1:tip",
+      "revisions": [
+        {
+          "revisionId": "legacy-travel-meal-tray-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 110564,
+              "quality": 84,
+              "file": "public/illustrations/travel-meal-tray-pencil-480.webp",
+              "sha256": "8cd098e52e3b9a4a2da980eef6da98ec54a35dcfe729b20b3e5f3ab45aecc7a6"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 249360,
+              "quality": 80,
+              "file": "public/illustrations/travel-meal-tray-pencil-800.webp",
+              "sha256": "b8c1e75d21872952b3ccbd9953a9f266cb4a75816edc9655432643ff5dd883ee"
+            },
+            {
+              "width": 1080,
+              "height": 1440,
+              "bytes": 299800,
+              "quality": 72,
+              "file": "public/illustrations/travel-meal-tray-pencil-1080.webp",
+              "sha256": "b5563f0865ef13bc0d1c89b1613c32ec69476c9de9082dab54666c38fb0c8dc2"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-travel-meal-tray-pencil"
+    },
+    {
+      "illustrationId": "white-honey-jar-pencil",
+      "originalName": "IMG_3ED8DFE7-C3BB-4C0F-B4C0-A06642AA85A2.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1080,
+      "sourceHeight": 1440,
+      "activeRevisionId": "legacy-white-honey-jar-pencil",
+      "placement": "shopping:honey:white",
+      "revisions": [
+        {
+          "revisionId": "legacy-white-honey-jar-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 77038,
+              "quality": 84,
+              "file": "public/illustrations/white-honey-jar-pencil-480.webp",
+              "sha256": "77137bddc50e49697d78093bbd671cefd69835456ace75b81da4c69b727722ed"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 229300,
+              "quality": 84,
+              "file": "public/illustrations/white-honey-jar-pencil-800.webp",
+              "sha256": "c5acea3b5b6206408046708b3f1c27237ee5bb1fc781b809c6ec45aa3e546cf0"
+            },
+            {
+              "width": 1080,
+              "height": 1440,
+              "bytes": 232426,
+              "quality": 74,
+              "file": "public/illustrations/white-honey-jar-pencil-1080.webp",
+              "sha256": "4615fcb4496893804127611a71a7d2cf513a4d6182c4b36934affaa611105a43"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-white-honey-jar-pencil"
+    },
+    {
+      "illustrationId": "suusamyr-honey-pencil",
+      "originalName": "IMG_E6498561-22A6-472B-85A7-DFBF57A45744.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1080,
+      "sourceHeight": 1440,
+      "activeRevisionId": "legacy-suusamyr-honey-pencil",
+      "placement": "shopping:honey:yellow",
+      "revisions": [
+        {
+          "revisionId": "legacy-suusamyr-honey-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 102520,
+              "quality": 84,
+              "file": "public/illustrations/suusamyr-honey-pencil-480.webp",
+              "sha256": "78ea27703d6e440dd7236b246d9ea3f1807a9dc5dcccb886a8c1f463204ff87d"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 248076,
+              "quality": 82,
+              "file": "public/illustrations/suusamyr-honey-pencil-800.webp",
+              "sha256": "d3bf6f0ea993137c1f310de0bcac0f521dc2221ea2b7780561dd3bc6f23e2d9d"
+            },
+            {
+              "width": 1080,
+              "height": 1440,
+              "bytes": 274770,
+              "quality": 72,
+              "file": "public/illustrations/suusamyr-honey-pencil-1080.webp",
+              "sha256": "4b5a88c672eb7908e8bd6c2bc42b987650a2b8659475e32ca483e3b116bbbb37"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-suusamyr-honey-pencil"
+    },
+    {
+      "illustrationId": "bukhara-ark-walls-pencil",
+      "originalName": "IMG_8790(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-bukhara-ark-walls-pencil",
+      "placement": "bukhara:10:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-ark-walls-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 69466,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-ark-walls-pencil-480.webp",
+              "sha256": "c3679d2daae818cc95d09bdc78b77b9a80a3525c95d894e719afbf6dc9729782"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 203148,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-ark-walls-pencil-800.webp",
+              "sha256": "cb2fc861df0cb928f168ecac95c0948f038152bd23f496fc84392044e0b107cf"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 270374,
+              "quality": 68,
+              "file": "public/illustrations/bukhara-ark-walls-pencil-1200.webp",
+              "sha256": "57f63323b9b307b6caaaae29bc47c06a67750494495da2ccbd4aa7cd4a9dec78"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-ark-walls-pencil"
+    },
+    {
+      "illustrationId": "bukhara-kalyan-minaret-pencil",
+      "originalName": "IMG_8818.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-bukhara-kalyan-minaret-pencil",
+      "placement": "bukhara:4:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-kalyan-minaret-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-plaza-cleanup",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 83948,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-kalyan-minaret-pencil-480.webp",
+              "sha256": "093ebaa8f91eae05a4a13a0d46984a459e624fb28817b9e9feb8869009748c0e"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 227260,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-kalyan-minaret-pencil-800.webp",
+              "sha256": "6851646941b6383c9f695b77a729cf1a5ca30a2e514031c06af4c07154f73717"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 240660,
+              "quality": 74,
+              "file": "public/illustrations/bukhara-kalyan-minaret-pencil-1086.webp",
+              "sha256": "143cbb6c96e1257c083b23180cb92b7c87061d20cc75af61afd98a5799505bdc"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-kalyan-minaret-pencil"
+    },
+    {
+      "illustrationId": "bukhara-market-sunset-watercolor",
+      "originalName": "IMG_8844(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-bukhara-market-sunset-watercolor",
+      "placement": "day:1:places",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-market-sunset-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 44532,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-market-sunset-watercolor-480.webp",
+              "sha256": "0d8ac578ee3dcc58513eb364b5c7e977f4c1fb31615576d66a3c2391701c34a7"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 112358,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-market-sunset-watercolor-800.webp",
+              "sha256": "c8fee973ac05b8127a1eca2a9c7f45b5ddbbfd710dedc1761c600199b25b74df"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 213502,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-market-sunset-watercolor-1200.webp",
+              "sha256": "db17712a0d549368f70766286f576ebaeb3dbc04a3f37fecccc7f596af366c1e"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-market-sunset-watercolor"
+    },
+    {
+      "illustrationId": "bukhara-spice-stall-pencil",
+      "originalName": "IMG_8852.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-bukhara-spice-stall-pencil",
+      "placement": "geography:1:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-spice-stall-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 113988,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-spice-stall-pencil-480.webp",
+              "sha256": "7c1038e06d1198dbefb80a5d58ac303b7d3c8035ec2baed69d8bea46bc119d8a"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 241446,
+              "quality": 80,
+              "file": "public/illustrations/bukhara-spice-stall-pencil-800.webp",
+              "sha256": "12d14c5504b13121be7b40c4e54b6d91ed108836ae1842639bf32ded8e7fe62a"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 278668,
+              "quality": 68,
+              "file": "public/illustrations/bukhara-spice-stall-pencil-1086.webp",
+              "sha256": "ab5613978f72596ae1dde1ffdd1630acbd6e7e6429c958bf8e932d4a26ca8bac"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-spice-stall-pencil"
+    },
+    {
+      "illustrationId": "lyabi-hauz-evening-watercolor",
+      "originalName": "IMG_8853(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-lyabi-hauz-evening-watercolor",
+      "placement": "day:2:places",
+      "revisions": [
+        {
+          "revisionId": "legacy-lyabi-hauz-evening-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 60398,
+              "quality": 84,
+              "file": "public/illustrations/lyabi-hauz-evening-watercolor-480.webp",
+              "sha256": "019dd32021c27753f8c07cc72da47343c87ffa256f1173b2ed8486ace6491be3"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 154978,
+              "quality": 84,
+              "file": "public/illustrations/lyabi-hauz-evening-watercolor-800.webp",
+              "sha256": "8f8db058abed75e72952666ed6ace822f1baa7c1df1d19dd85f5e34e89752449"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 239938,
+              "quality": 78,
+              "file": "public/illustrations/lyabi-hauz-evening-watercolor-1200.webp",
+              "sha256": "f20c37a881fa834bcacc05a389ddd001a1144b0789983d377f9b5843110c5c75"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-lyabi-hauz-evening-watercolor"
+    },
+    {
+      "illustrationId": "lyabi-hauz-portal-watercolor",
+      "originalName": "IMG_8854.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-lyabi-hauz-portal-watercolor",
+      "placement": "bukhara:8:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-lyabi-hauz-portal-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 62430,
+              "quality": 84,
+              "file": "public/illustrations/lyabi-hauz-portal-watercolor-480.webp",
+              "sha256": "7eb4ae37f0cb72cff641bd2fbca0fef70453b8a828d513020fc3d9f387f6017c"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 162714,
+              "quality": 84,
+              "file": "public/illustrations/lyabi-hauz-portal-watercolor-800.webp",
+              "sha256": "c8782a691317b0f2d35697c10b0f040a0d2791a1e52a4880b904dce522c7eb29"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 230736,
+              "quality": 76,
+              "file": "public/illustrations/lyabi-hauz-portal-watercolor-1200.webp",
+              "sha256": "a4897a95bf6181093eaa15fc8da87400965bb50d56a1d4ca5eba74a6687b9424"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-lyabi-hauz-portal-watercolor"
+    },
+    {
+      "illustrationId": "registan-gilded-ceiling-pencil",
+      "originalName": "IMG_8931(2).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-registan-gilded-ceiling-pencil",
+      "placement": "comparative:0:6",
+      "revisions": [
+        {
+          "revisionId": "legacy-registan-gilded-ceiling-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 169010,
+              "quality": 84,
+              "file": "public/illustrations/registan-gilded-ceiling-pencil-480.webp",
+              "sha256": "be04bd42068b567325f2584de76c7f69257cf76b964e4c8c1c675a31f0399a09"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 316698,
+              "quality": 68,
+              "file": "public/illustrations/registan-gilded-ceiling-pencil-800.webp",
+              "sha256": "6a302b21a8d03c4930db587587b927fd6269aac52167607db8c1a69a78fe57d4"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 484398,
+              "quality": 68,
+              "file": "public/illustrations/registan-gilded-ceiling-pencil-1086.webp",
+              "sha256": "b6a8218c499c7617b6c65c9119e6acee4648579af56168965298c7c18869db46"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-registan-gilded-ceiling-pencil"
+    },
+    {
+      "illustrationId": "registan-travel-portrait-watercolor",
+      "originalName": "IMG_9009(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 800,
+      "sourceHeight": 370,
+      "activeRevisionId": "legacy-registan-travel-portrait-watercolor",
+      "placement": "samarkand:9:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-registan-travel-portrait-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 222,
+              "bytes": 37978,
+              "quality": 84,
+              "file": "public/illustrations/registan-travel-portrait-watercolor-480.webp",
+              "sha256": "ce0d5fe058b677b7bad95f400265a63a2ec56c5c9995d726f8f3e6b047aaa7c3"
+            },
+            {
+              "width": 800,
+              "height": 370,
+              "bytes": 101420,
+              "quality": 84,
+              "file": "public/illustrations/registan-travel-portrait-watercolor-800.webp",
+              "sha256": "1aefa3fc56ac03cf75ca11d3eacb83374e7f9f09afb6c7a7ae3b75a642d5c1dc"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-registan-travel-portrait-watercolor"
+    },
+    {
+      "illustrationId": "samarkand-turquoise-dome-pencil",
+      "originalName": "IMG_9012.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-samarkand-turquoise-dome-pencil",
+      "placement": "architecture:Samarkand:intro",
+      "revisions": [
+        {
+          "revisionId": "legacy-samarkand-turquoise-dome-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 370,
+              "height": 800,
+              "bytes": 131634,
+              "quality": 84,
+              "file": "public/illustrations/samarkand-turquoise-dome-pencil-370.webp",
+              "sha256": "12e671a61258ccdac76123d8d98a279b4d4fc76c1f5d32e6755bfe9b09cbc6fd"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-turquoise-dome-pencil"
+    },
+    {
+      "illustrationId": "cholponata-petroglyph-field-watercolor",
+      "originalName": "IMG_9011(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 800,
+      "sourceHeight": 370,
+      "activeRevisionId": "legacy-cholponata-petroglyph-field-watercolor",
+      "placement": "cholponata:2:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-cholponata-petroglyph-field-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 222,
+              "bytes": 39858,
+              "quality": 84,
+              "file": "public/illustrations/cholponata-petroglyph-field-watercolor-480.webp",
+              "sha256": "5610c7ab64379f6db6cf724919368ff0d85b8f040acfd0a90ea08efa59e2226a"
+            },
+            {
+              "width": 800,
+              "height": 370,
+              "bytes": 105590,
+              "quality": 84,
+              "file": "public/illustrations/cholponata-petroglyph-field-watercolor-800.webp",
+              "sha256": "4f7c6e815b6e054c260f5aa4dcc984857b92fc248aa4bff718e79a136204867b"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-petroglyph-field-watercolor"
+    },
+    {
+      "illustrationId": "cholponata-balbal-pencil",
+      "originalName": "IMG_9007(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-cholponata-balbal-pencil",
+      "placement": "day:5:places",
+      "revisions": [
+        {
+          "revisionId": "legacy-cholponata-balbal-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 370,
+              "height": 800,
+              "bytes": 124228,
+              "quality": 84,
+              "file": "public/illustrations/cholponata-balbal-pencil-370.webp",
+              "sha256": "7a9dae75556514d3d90cd7bd41f6df388cd82a154897f355a553582a3aa9409c"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-balbal-pencil"
+    },
+    {
+      "illustrationId": "issyk-kul-cruise-tian-shan-watercolor",
+      "originalName": "IMG_8980.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "activeRevisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor",
+      "placement": "geography:2:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 37134,
+              "quality": 84,
+              "file": "public/illustrations/issyk-kul-cruise-tian-shan-watercolor-480.webp",
+              "sha256": "8614bbe46ee661be2951de11b8c2aeac41b7afdbd8ff3ea860be975e0f614140"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 103836,
+              "quality": 84,
+              "file": "public/illustrations/issyk-kul-cruise-tian-shan-watercolor-800.webp",
+              "sha256": "18e00b9ee624a4fa059ee40fccced3aa034acdc6755e07ca5a75118401ba7a03"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 207794,
+              "quality": 84,
+              "file": "public/illustrations/issyk-kul-cruise-tian-shan-watercolor-1200.webp",
+              "sha256": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor"
+    },
+    {
+      "illustrationId": "tashkent-minor-ceiling-pencil",
+      "originalName": "IMG_8936(1).jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-tashkent-minor-ceiling-pencil",
+      "placement": "tashkent:10:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-tashkent-minor-ceiling-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 145106,
+              "quality": 88,
+              "file": "public/illustrations/tashkent-minor-ceiling-pencil-480.webp",
+              "sha256": "590d4be427b9dbcaae0491ab3ba072edd64918f8a15a638f7ba720d2b6dfb4e7"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 246158,
+              "quality": 76,
+              "file": "public/illustrations/tashkent-minor-ceiling-pencil-800.webp",
+              "sha256": "f54b849249ed243fcf26f84b62611d9cacf4452a1156a65c05ca782287f471d6"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 353674,
+              "quality": 72,
+              "file": "public/illustrations/tashkent-minor-ceiling-pencil-1086.webp",
+              "sha256": "e246ff2095b04a0b0e86682196395a0191c8b89404a352d5f28a137d7c47677e"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-minor-ceiling-pencil"
+    },
+    {
+      "illustrationId": "zoroastrian-ossuary-pencil",
+      "originalName": "IMG_8907.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-zoroastrian-ossuary-pencil",
+      "placement": "history:0:2",
+      "revisions": [
+        {
+          "revisionId": "legacy-zoroastrian-ossuary-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-user-foreground-and-orientation-edit",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 32538,
+              "quality": 88,
+              "file": "public/illustrations/zoroastrian-ossuary-pencil-480.webp",
+              "sha256": "35419be6c3e74dd2a7f81a9fe7fd67617da08c75b12585d7d660697ea977ca2e"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 108298,
+              "quality": 88,
+              "file": "public/illustrations/zoroastrian-ossuary-pencil-800.webp",
+              "sha256": "a5c4cc50284e2097791699693be71c7ebe6bb0f970829066e703de25ae4b40dc"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 234846,
+              "quality": 88,
+              "file": "public/illustrations/zoroastrian-ossuary-pencil-1200.webp",
+              "sha256": "3f5611a544264c7c8873ee17936a8f9b41d213fd2c76b3f1e360d07209273690"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-zoroastrian-ossuary-pencil"
+    },
+    {
+      "illustrationId": "bukhara-samani-watercolor",
+      "originalName": "IMG_8866.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-bukhara-samani-watercolor",
+      "placement": "bukhara:3:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-samani-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 141644,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-samani-watercolor-480.webp",
+              "sha256": "738f8dacdc8cd4dc569cdeb40e31b7ccb79ccc817cb027cd9636d4cc87e6aa95"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 234312,
+              "quality": 78,
+              "file": "public/illustrations/bukhara-samani-watercolor-800.webp",
+              "sha256": "598186dfd0ac0cfde0d5a8df1471fc3e956a0c2d0a6fb182efdbc6ff5bfaa2b9"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 308382,
+              "quality": 72,
+              "file": "public/illustrations/bukhara-samani-watercolor-1086.webp",
+              "sha256": "d8c44af184cf80ea29f05637daf02d6fc71e818e12c9f78a90eccdfeaa53122a"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-samani-watercolor"
+    },
+    {
+      "illustrationId": "aral-sea-exhibit-photo",
+      "originalName": "IMG_8881.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-aral-sea-exhibit-photo",
+      "placement": "resources:0:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-aral-sea-exhibit-photo",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 42072,
+              "quality": 88,
+              "file": "public/illustrations/aral-sea-exhibit-photo-480.webp",
+              "sha256": "ae1b0625f0b97ee3d94a40c371ec6320e70fc1b3afe12090ab49d3dce8b764f3"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 99582,
+              "quality": 88,
+              "file": "public/illustrations/aral-sea-exhibit-photo-800.webp",
+              "sha256": "88acc3cb552793467bc8c82f0a4666a0153d4318958127734902b9f15524e0f9"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 187840,
+              "quality": 88,
+              "file": "public/illustrations/aral-sea-exhibit-photo-1200.webp",
+              "sha256": "2809c67b22d16213a5f5c1d1608198c61e4e440cc0ca554d91c6183fccfabd52"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-aral-sea-exhibit-photo"
+    },
+    {
+      "illustrationId": "afrasiyab-envoys-pencil",
+      "originalName": "IMG_8902.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-afrasiyab-envoys-pencil",
+      "placement": "samarkand:1:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-afrasiyab-envoys-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-feather-trace-clarity",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 71852,
+              "quality": 88,
+              "file": "public/illustrations/afrasiyab-envoys-pencil-480.webp",
+              "sha256": "82dd2c8b79a8db9b70b6603680b7960c2e60be6bd86f1ce91763ca7af4e68513"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 198606,
+              "quality": 88,
+              "file": "public/illustrations/afrasiyab-envoys-pencil-800.webp",
+              "sha256": "e8320b961bc4d47199332275e971362698a0906170da68dfe4f1a679da60c5e7"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 238290,
+              "quality": 76,
+              "file": "public/illustrations/afrasiyab-envoys-pencil-1200.webp",
+              "sha256": "8fe908215c38178eb734e81b1ab2055289963f84ee62adf0ad03cfa4f4093d3f"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-afrasiyab-envoys-pencil"
+    },
+    {
+      "illustrationId": "ulughbeg-meridian-pencil",
+      "originalName": "IMG_8890.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-ulughbeg-meridian-pencil",
+      "placement": "samarkand:8:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-ulughbeg-meridian-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 134374,
+              "quality": 88,
+              "file": "public/illustrations/ulughbeg-meridian-pencil-480.webp",
+              "sha256": "86adca858c453b65fb8b26890b6b4c1e3768ca0bc850efcc393d572c24bd403c"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 233042,
+              "quality": 78,
+              "file": "public/illustrations/ulughbeg-meridian-pencil-800.webp",
+              "sha256": "13d29c25d7d573ec63a7bd1a8f4326548cc23d2d8289a8afcb461c85e7e83f6d"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 307292,
+              "quality": 72,
+              "file": "public/illustrations/ulughbeg-meridian-pencil-1086.webp",
+              "sha256": "aa47e92b2866ca0147773b7a803b6e1dfd5a7edef1cd32ae222e0d5d759604ee"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-meridian-pencil"
+    },
+    {
+      "illustrationId": "ulughbeg-year-exhibit-photo",
+      "originalName": "IMG_8893.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-ulughbeg-year-exhibit-photo",
+      "placement": "samarkand:8:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-ulughbeg-year-exhibit-photo",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 26556,
+              "quality": 88,
+              "file": "public/illustrations/ulughbeg-year-exhibit-photo-480.webp",
+              "sha256": "1172644196028e378b5c15fc23e1bf724917450de7966c7c8307899d80ca762c"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 71050,
+              "quality": 88,
+              "file": "public/illustrations/ulughbeg-year-exhibit-photo-800.webp",
+              "sha256": "b1046b6e60162355e22319be933983eae2787d2c0889cc4261c0ffe561cd8053"
+            },
+            {
+              "width": 1152,
+              "height": 1536,
+              "bytes": 149614,
+              "quality": 88,
+              "file": "public/illustrations/ulughbeg-year-exhibit-photo-1152.webp",
+              "sha256": "99bf032a79991355741bc80d9708422ac1ed4523012ba756b43b4d17f7df9cc9"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-year-exhibit-photo"
+    },
+    {
+      "illustrationId": "ulughbeg-statue-pencil",
+      "originalName": "IMG_8889.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-ulughbeg-statue-pencil",
+      "placement": "samarkand:8:2",
+      "revisions": [
+        {
+          "revisionId": "legacy-ulughbeg-statue-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-user-foreground-and-orientation-edit",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 126350,
+              "quality": 88,
+              "file": "public/illustrations/ulughbeg-statue-pencil-480.webp",
+              "sha256": "061403e1cb6d33afa6dca6eb38867b7d80de1b5a43c9b4a53b7da6cd6c4ca4ba"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 248376,
+              "quality": 82,
+              "file": "public/illustrations/ulughbeg-statue-pencil-800.webp",
+              "sha256": "710f4cdc69ea1ba3061c0c895dccfe1015b8ac80391f30efa5954b974fc9656d"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 272028,
+              "quality": 72,
+              "file": "public/illustrations/ulughbeg-statue-pencil-1086.webp",
+              "sha256": "4f51d7ca3f4c40311e1191d2cea9294b915a20c67fcb0e7c6b83e99aaeca307e"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-statue-pencil"
+    },
+    {
+      "illustrationId": "samarkand-gur-emir-watercolor",
+      "originalName": "IMG_8908.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-samarkand-gur-emir-watercolor",
+      "placement": "samarkand:7:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-samarkand-gur-emir-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-18-gur-emir-identification-foreground-cleanup",
+          "variants": [
+            {
+              "file": "public/illustrations/samarkand-gur-emir-watercolor-480.webp",
+              "width": 480,
+              "height": 640,
+              "bytes": 112368,
+              "quality": 88,
+              "sha256": "9cf91a2fd6468ca4353cfed8a1db72c5b11dcc679d3bb6b0d5bb6d845df1cdb8"
+            },
+            {
+              "file": "public/illustrations/samarkand-gur-emir-watercolor-800.webp",
+              "width": 800,
+              "height": 1067,
+              "bytes": 231904,
+              "quality": 84,
+              "sha256": "2b456ea0a938af1321170888b4c9653b8a3bd5f7a13796bd99c4ed159b2b1be9"
+            },
+            {
+              "file": "public/illustrations/samarkand-gur-emir-watercolor-1086.webp",
+              "width": 1086,
+              "height": 1448,
+              "bytes": 241080,
+              "quality": 74,
+              "sha256": "06639520bbb491bd6fce4061bfb5793009c8967e78b6ece42d22a329ac4079b2"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-gur-emir-watercolor"
+    },
+    {
+      "illustrationId": "bukhara-chashma-ayub-watercolor",
+      "originalName": "IMG_8877.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-bukhara-chashma-ayub-watercolor",
+      "placement": "bukhara:14:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-chashma-ayub-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 58750,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-chashma-ayub-watercolor-480.webp",
+              "sha256": "48db10e30c826ff3ab06c3208c6ce83199c3564dfc5fa28e3b03880ed98c9403"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 164510,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-chashma-ayub-watercolor-800.webp",
+              "sha256": "1eed3518f54c72ed1322a83ee4c7096e57cf7b88676fb2f1586e41c589c323f3"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 248094,
+              "quality": 82,
+              "file": "public/illustrations/bukhara-chashma-ayub-watercolor-1200.webp",
+              "sha256": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-chashma-ayub-watercolor"
+    },
+    {
+      "illustrationId": "hotel-pool-garden-watercolor",
+      "originalName": "IMG_8888.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "legacy-hotel-pool-garden-watercolor",
+      "placement": "day:2:hotel",
+      "revisions": [
+        {
+          "revisionId": "legacy-hotel-pool-garden-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 140664,
+              "quality": 88,
+              "file": "public/illustrations/hotel-pool-garden-watercolor-480.webp",
+              "sha256": "91444d312e34ede5e56c877a8ecadcb4b74481fd19d29eb5168a6752d0d610eb"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 235746,
+              "quality": 78,
+              "file": "public/illustrations/hotel-pool-garden-watercolor-800.webp",
+              "sha256": "277d6573950de40abfb4bb9a6ae316e98350ffe96149b274191ee53dad46341c"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 303800,
+              "quality": 72,
+              "file": "public/illustrations/hotel-pool-garden-watercolor-1086.webp",
+              "sha256": "ca69def9c815ba47a6b7d6a0c1d677d2cc512df7e16ce8a4fe3a329ad70c1740"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-hotel-pool-garden-watercolor"
+    },
+    {
+      "illustrationId": "tashkent-amir-temur-watercolor",
+      "originalName": "IMG_8939.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-tashkent-amir-temur-watercolor",
+      "placement": "tashkent:8:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-tashkent-amir-temur-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-remove-people-and-arrival-dinner",
+          "variants": [
+            {
+              "file": "public/illustrations/tashkent-amir-temur-watercolor-480.webp",
+              "width": 480,
+              "height": 360,
+              "bytes": 73644,
+              "quality": 88,
+              "sha256": "e75f36f1cdd53592e8e0c10ad2eeaa5801f00b9a59b25a702820a8733cfe5efd"
+            },
+            {
+              "file": "public/illustrations/tashkent-amir-temur-watercolor-800.webp",
+              "width": 800,
+              "height": 600,
+              "bytes": 185012,
+              "quality": 88,
+              "sha256": "5d71b16f4d281b0b61c3dde2e86a76319f2b38935ccf337ab820d975ea4a9536"
+            },
+            {
+              "file": "public/illustrations/tashkent-amir-temur-watercolor-1200.webp",
+              "width": 1200,
+              "height": 900,
+              "bytes": 249014,
+              "quality": 80,
+              "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-amir-temur-watercolor"
+    },
+    {
+      "illustrationId": "tashkent-independence-fountains-watercolor",
+      "originalName": "IMG_8938.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-tashkent-independence-fountains-watercolor",
+      "placement": "tashkent:9:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-tashkent-independence-fountains-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 74686,
+              "quality": 88,
+              "file": "public/illustrations/tashkent-independence-fountains-watercolor-480.webp",
+              "sha256": "6e6fc3e1a283de5ae121a24abe959914843f366c56c8af18de40934028a2c89f"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 195290,
+              "quality": 88,
+              "file": "public/illustrations/tashkent-independence-fountains-watercolor-800.webp",
+              "sha256": "02b8a2425792af530cb181ebfba39ada1a83fdeb70cc2a52a3773d9daf50208e"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 232884,
+              "quality": 76,
+              "file": "public/illustrations/tashkent-independence-fountains-watercolor-1200.webp",
+              "sha256": "9354d037a73017f2b23dc56c338273cde831d674061947f0195ff1c916999783"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-independence-fountains-watercolor"
+    },
+    {
+      "illustrationId": "tashkent-minor-portrait-watercolor",
+      "originalName": "IMG_9014.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-tashkent-minor-portrait-watercolor",
+      "placement": "tashkent:10:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-tashkent-minor-portrait-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-remove-people-and-arrival-dinner",
+          "variants": [
+            {
+              "file": "public/illustrations/tashkent-minor-portrait-watercolor-370.webp",
+              "width": 370,
+              "height": 800,
+              "bytes": 139086,
+              "quality": 88,
+              "sha256": "348abeaaf5cfd1090c5e9639ce6be8d7a93bf2289dea243b87b182d754c68c2f"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-minor-portrait-watercolor"
+    },
+    {
+      "illustrationId": "rukh-ordo-lakeside-watercolor",
+      "originalName": "IMG_8979.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-rukh-ordo-lakeside-watercolor",
+      "placement": "cholponata:9:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-rukh-ordo-lakeside-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 54562,
+              "quality": 88,
+              "file": "public/illustrations/rukh-ordo-lakeside-watercolor-480.webp",
+              "sha256": "dcd4f202f8e3b7e56a24b4cb7dba662444f43c75ebda080f8bd0cfe7c36e4ea4"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 138656,
+              "quality": 88,
+              "file": "public/illustrations/rukh-ordo-lakeside-watercolor-800.webp",
+              "sha256": "1b3b94fd9dbaa7a9e48ed0352448ab971d34ff42e7a58f4ffef4b1b0f3056b12"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 234490,
+              "quality": 86,
+              "file": "public/illustrations/rukh-ordo-lakeside-watercolor-1200.webp",
+              "sha256": "75d03fc818074fc4cf2ca72d76ccf61f0d70911bec1d2153e989ea00501f2b4b"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-rukh-ordo-lakeside-watercolor"
+    },
+    {
+      "illustrationId": "ala-archa-valley-watercolor",
+      "originalName": "IMG_9019.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-ala-archa-valley-watercolor",
+      "placement": "bishkek:10:0",
+      "revisions": [
+        {
+          "revisionId": "legacy-ala-archa-valley-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 79722,
+              "quality": 88,
+              "file": "public/illustrations/ala-archa-valley-watercolor-480.webp",
+              "sha256": "8386f426bb134bce12c3401b7e3254cace2e87bc5a7ca3829f91252907ec3e83"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 218558,
+              "quality": 88,
+              "file": "public/illustrations/ala-archa-valley-watercolor-800.webp",
+              "sha256": "a9f9d192911e4318135535f4a01bdb45f3f7f2cae81dac0e7ea5bb84f68f869e"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 252638,
+              "quality": 72,
+              "file": "public/illustrations/ala-archa-valley-watercolor-1200.webp",
+              "sha256": "edd8e7a1cda0661b3d5826faebb15d823dbb5f5095341cb3123128f72e06cba7"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ala-archa-valley-watercolor"
+    },
+    {
+      "illustrationId": "hazrati-imam-portrait-watercolor",
+      "originalName": "IMG_9013.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-hazrati-imam-portrait-watercolor",
+      "placement": "tashkent:7:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-hazrati-imam-portrait-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-remove-people-and-arrival-dinner",
+          "variants": [
+            {
+              "file": "public/illustrations/hazrati-imam-portrait-watercolor-370.webp",
+              "width": 370,
+              "height": 800,
+              "bytes": 134368,
+              "quality": 88,
+              "sha256": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-hazrati-imam-portrait-watercolor"
+    },
+    {
+      "illustrationId": "cholponata-petroglyph-detail-pencil",
+      "originalName": "IMG_9057.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-cholponata-petroglyph-detail-pencil",
+      "placement": "cholponata:2:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-cholponata-petroglyph-detail-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 370,
+              "height": 800,
+              "bytes": 149964,
+              "quality": 88,
+              "file": "public/illustrations/cholponata-petroglyph-detail-pencil-370.webp",
+              "sha256": "f30d35b00d2c2403e85c16328fdbd701e4731f61e9551fb4900c7880191fa357"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-petroglyph-detail-pencil"
+    },
+    {
+      "illustrationId": "tashkent-broadway-watercolor",
+      "originalName": "IMG_9059.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 370,
+      "sourceHeight": 800,
+      "activeRevisionId": "legacy-tashkent-broadway-watercolor",
+      "placement": "tashkent:11:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-tashkent-broadway-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 370,
+              "height": 800,
+              "bytes": 152274,
+              "quality": 88,
+              "file": "public/illustrations/tashkent-broadway-watercolor-370.webp",
+              "sha256": "d4e3c5a0d85cf82dc014aabb8ac420d90be7394952681024231c0e5c2a1ae2c2"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-broadway-watercolor"
+    },
+    {
+      "illustrationId": "ala-archa-summit-watercolor",
+      "originalName": "IMG_9064.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 800,
+      "sourceHeight": 370,
+      "activeRevisionId": "legacy-ala-archa-summit-watercolor",
+      "placement": "bishkek:10:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-ala-archa-summit-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": null,
+          "variants": [
+            {
+              "width": 480,
+              "height": 222,
+              "bytes": 29706,
+              "quality": 88,
+              "file": "public/illustrations/ala-archa-summit-watercolor-480.webp",
+              "sha256": "bb12ccb353dd53c3a8869ce08f33736e4207f5358ac5942c2e15f907cf5195a1"
+            },
+            {
+              "width": 800,
+              "height": 369,
+              "bytes": 78628,
+              "quality": 88,
+              "file": "public/illustrations/ala-archa-summit-watercolor-800.webp",
+              "sha256": "c8184ee54cf177dd3c31e0e1774fa629165215d78a2a12480eb8b4a5667d6a58"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ala-archa-summit-watercolor"
+    },
+    {
+      "illustrationId": "bukhara-divan-begi-portal-pencil",
+      "originalName": "IMG_8860.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "legacy-bukhara-divan-begi-portal-pencil",
+      "placement": "bukhara:8:1",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-divan-begi-portal-pencil",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-divan-begi",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 85808,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-divan-begi-portal-pencil-480.webp",
+              "sha256": "1ebc02d8c59422c2d73a579573ec67fde619ec1b73905f8f007f9ca9e8c977b8"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 240606,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-divan-begi-portal-pencil-800.webp",
+              "sha256": "a513212e6426eec59b20d19c7540fefcb8e5af1f121f6c6a974980d1add0faec"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 249654,
+              "quality": 60,
+              "file": "public/illustrations/bukhara-divan-begi-portal-pencil-1200.webp",
+              "sha256": "c767ecf7475dd53d55f50ebc50d1298ddef7e36bbd2a60bb370ae01d8e5bdc46"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-divan-begi-portal-pencil"
+    },
+    {
+      "illustrationId": "samarkand-bibi-khanym-watercolor",
+      "originalName": "IMG_9082.jpeg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 800,
+      "sourceHeight": 370,
+      "activeRevisionId": "legacy-samarkand-bibi-khanym-watercolor",
+      "placement": "samarkand:6:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-samarkand-bibi-khanym-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-bibi-mohi",
+          "variants": [
+            {
+              "width": 480,
+              "height": 300,
+              "bytes": 56538,
+              "quality": 88,
+              "file": "public/illustrations/samarkand-bibi-khanym-watercolor-480.webp",
+              "sha256": "ad291ea54264517f1b6f05793d12ddc9ffa91d3fed4da79c8032a8fe039ee163"
+            },
+            {
+              "width": 590,
+              "height": 369,
+              "bytes": 87686,
+              "quality": 88,
+              "file": "public/illustrations/samarkand-bibi-khanym-watercolor-590.webp",
+              "sha256": "0d0cc7b79a8db60537b07d65445a486f7170fb7d16594dc51674c75cc8997ba3"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-bibi-khanym-watercolor"
+    },
+    {
+      "illustrationId": "bukhara-sitorai-pool-watercolor",
+      "originalName": "Harem of Sitorai Mokhi-Khosa Palace 01.jpg",
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceAvailability": "not-recovered",
+      "sourceWidth": 4290,
+      "sourceHeight": 2860,
+      "activeRevisionId": "legacy-bukhara-sitorai-pool-watercolor",
+      "placement": "bukhara:10:detail",
+      "revisions": [
+        {
+          "revisionId": "legacy-bukhara-sitorai-pool-watercolor",
+          "parentRevisionId": null,
+          "historyStatus": "unknown",
+          "operation": "legacy-publication-snapshot",
+          "recipe": null,
+          "recipeKey": null,
+          "outputSha256": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "validation": {
+            "scope": "published-variant-byte-count-and-sha256-only",
+            "visualReview": null
+          },
+          "recordedRevisionLabel": "2026-10-19-bibi-mohi",
+          "variants": [
+            {
+              "width": 480,
+              "height": 320,
+              "bytes": 50176,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-sitorai-pool-watercolor-480.webp",
+              "sha256": "8d8e016d9adeea63be8c690c64938dd7775f55feb2d91271b09452395745f474"
+            },
+            {
+              "width": 800,
+              "height": 533,
+              "bytes": 143838,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-sitorai-pool-watercolor-800.webp",
+              "sha256": "0e6f82e1edfe294d7e6a8c41a2cb6a5ef05842939a4045625e7fa5bbbac91d9b"
+            },
+            {
+              "width": 1200,
+              "height": 800,
+              "bytes": 208568,
+              "quality": 80,
+              "file": "public/illustrations/bukhara-sitorai-pool-watercolor-1200.webp",
+              "sha256": "c1e3bc546e267c4fe0089f45a5d6b95a585a895c228efc84f3da22fcc95189e3"
+            }
+          ],
+          "optimizeKey": null,
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-sitorai-pool-watercolor"
+    }
+  ],
+  "sourceRetentionPolicy": "hash-only-no-original-upload",
+  "lifecyclePolicy": "orchestrator-owned-active-archived-deletion-candidate-deleted"
+}
