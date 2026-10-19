@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-18T19:32:18.809Z",
+  "checkedAt": "2026-10-19T02:44:40.037Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 43,
+  "uniqueIllustrations": 44,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -134,6 +134,14 @@
     "lyabi-hauz-portal-watercolor": {
       "state": "guide",
       "placement": "bukhara:8:0",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "9. 17세기 라비하우즈: 물·상업·교육의 만남"
+      ]
+    },
+    "bukhara-divan-begi-portal-pencil": {
+      "state": "guide",
+      "placement": "bukhara:8:1",
       "headings": [
         "부하라 도시사 심층 해설",
         "9. 17세기 라비하우즈: 물·상업·교육의 만남"
@@ -350,7 +358,7 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 114,
+  "decodedAssetUrls": 117,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
@@ -375,7 +383,7 @@
   "offlineAllGuideIllustrations": true,
   "offlineSamarkandHotel": true,
   "offlineArrivalDinner": true,
-  "cacheUpgradeFixture": "v12 cache name/current app → v13; old cache removed",
+  "cacheUpgradeFixture": "v13 cache name/current app → v14; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "bukhara-poi-kalyan-watercolor-375.png",
@@ -386,7 +394,8 @@
     "economy-390.png",
     "education-390.png",
     "economy-430.png",
-    "education-430.png"
+    "education-430.png",
+    "divan-begi-375.png"
   ],
   "limits": [
     "Local production build, not deployed PR",

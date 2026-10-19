@@ -1494,5 +1494,43 @@
     ],
     "generatedWidth": 1846,
     "generatedHeight": 852
+  },
+  {
+    "id": "bukhara-divan-begi-portal-pencil",
+    "original": "IMG_8860.jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:8:1",
+    "caption": "부하라 나디르 디반베기 마드라사 — 새·사슴·태양 문양",
+    "alt": "비스듬히 올려다본 나디르 디반베기 입구의 아치와 청색 타일 위 새 두 마리, 사슴과 태양 문양",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "revision": "2026-10-19-divan-begi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 85808,
+        "quality": 88,
+        "file": "bukhara-divan-begi-portal-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 240606,
+        "quality": 88,
+        "file": "bukhara-divan-begi-portal-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 249654,
+        "quality": 60,
+        "file": "bukhara-divan-begi-portal-pencil-1200.webp"
+      }
+    ]
   }
 ]
