@@ -18,7 +18,7 @@ function renderNarrative(data, {id = data.id, placement = data.id, core = false}
     <h3>${esc(data.title)}</h3><p class="bukhara-intro">${esc(data.intro)}</p>
     <div class="bukhara-chapters">${data.chapters.map(([title, body], i) => {
       const paragraphs = Array.isArray(body) ? body : body.split(/\n\s*\n/);
-      return `<details class="bukhara-chapter"><summary>${esc(title)}</summary><div class="bukhara-chapter-body">${renderIllustratedParagraphs(paragraphs, placement, i)}</div></details>`;
+      return `<details class="bukhara-chapter"><summary>${esc(title)}</summary><div class="bukhara-chapter-body">${renderIllustratedParagraphs(paragraphs, placement, i)}${renderIllustration(`${placement}:${i}:detail`)}</div></details>`;
     }).join('')}</div>${renderSources(data.sources || [])}</section>`;
 }
 export function renderGuide(essentials = []) {
