@@ -21,7 +21,8 @@ test('KRW conversion uses one dated cross-rate and preserves missing values',()=
  assert.equal(toKrw(100,'USD'),100*87.45/.0656);
  assert.equal(toKrw(null,'USD'),null);assert.equal(formatEconomyNumber(null),'자료 없음');assert.equal(formatEconomyNumber(0),'0');
  const html=renderEconomy();assert.equal((html.match(/scope="row"/g)||[]).length,3);assert.equal((html.match(/scope="col"/g)||[]).length,6);
- for(const c of economy.countries)assert.ok(html.includes(formatEconomyNumber(c.gdpUsd*fx.usdKrw,1e12,1)));
+ for(const c of economy.countries)assert.ok(html.includes(formatEconomyNumber(c.gdpUsd*fx.usdKrw,1e12,0)));
+ assert.ok(html.includes('0.1 미만'), 'small positive remittances must not round to zero');
  assert.ok(html.includes('만 원/명'));assert.ok(!html.includes('투르크메니스탄'));assert.ok(!html.includes('타지키스탄'));
  const changed=structuredClone(economy);changed.countries[0].name='<script>bad</script>';changed.countries[0].gdpUsd=null;
  assert.ok(renderEconomy(changed).includes('&lt;script&gt;'));assert.ok(!renderEconomy(changed).includes('<script>'));assert.ok(renderEconomy(changed).includes('자료 없음'));
@@ -30,5 +31,5 @@ test('Kumtor sales comparison does not masquerade as value added',()=>{
  assert.ok(Math.abs(revenueToGdpPct()-6.340773480662984)<1e-10);
  assert.equal(kumtor.goldValueAddedPct2025,null);assert.equal(kumtor.productionKg,12081);
  const changed={...kumtor,revenueUsd:kumtor.kyrgyzGdpUsd/10};assert.equal(revenueToGdpPct(changed),10);
- assert.ok(renderKumtor(changed).includes('10.00%'));assert.ok(renderKumtor().includes('부가가치 기여율 아님'));
+ assert.ok(renderKumtor(changed).includes('10.0%'));assert.ok(renderKumtor().includes('부가가치 기여율 아님'));
 });

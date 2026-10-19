@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-19T13:58:36.024Z",
+  "checkedAt": "2026-10-19T17:36:50.436Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,20 +9,13 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 49,
+  "uniqueIllustrations": 48,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
       "placement": "day:1:places",
       "headings": [
         "방문지와 지도"
-      ]
-    },
-    "travel-meal-tray-pencil": {
-      "state": "day:1",
-      "placement": "day:1:tip",
-      "headings": [
-        "여행 관찰 포인트"
       ]
     },
     "hotel-pool-garden-watercolor": {
@@ -104,7 +97,7 @@
       "placement": "resources:0:1",
       "headings": [
         "3. 자원·에너지",
-        "우즈베키스탄: 관개와 가스에서 전환으로"
+        "우즈베키스탄: 밭을 적시는 물, 겨울을 나는 가스"
       ]
     },
     "bukhara-samani-watercolor": {
@@ -398,16 +391,16 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 131,
+  "decodedAssetUrls": 128,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
   "narrativeWords": {
-    "geography": 335,
-    "history": 1036,
-    "resources": 311,
-    "economy": 336,
-    "education": 478
+    "geography": 372,
+    "history": 1196,
+    "resources": 358,
+    "economy": 405,
+    "education": 447
   },
   "economyCountries": 3,
   "krwUnits": true,
@@ -423,7 +416,7 @@
   "offlineAllGuideIllustrations": true,
   "offlineSamarkandHotel": true,
   "offlineArrivalDinner": true,
-  "cacheUpgradeFixture": "v15 cache name/current app → v19; old cache removed",
+  "cacheUpgradeFixture": "v15 cache name/current app → v21; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "charyn-canyon-watercolor-375.png",

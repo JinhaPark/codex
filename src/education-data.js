@@ -32,9 +32,12 @@ export const educationData = {
  ],
  monthly:{rent:[25000,35000],dorm:[950,2000],food:[10000,13000],transport:[1000,1500],communication:[500,1500],utilities:[2000,5000]},
  scenario:{tuitionKgs:75000,months:12,excluded:'보증금·교재·의료·의복·여가·예비비; 기숙사 별도 공공요금 여부 미확인'},
- limitations:['동일 코호트의 전국 대학 졸업률·중도탈락 사유·학비 미납 제적률·재학 중 취업률·졸업 후 취업률은 비교 가능한 자료를 확인하지 못했습니다.','전국 중위임금·가구 가처분소득과 학생별 지출을 연결한 자료가 없어 평균임금으로 실제 가계 부담률을 추정하지 않습니다.','기숙사 요금은 공식 게시값이나 기준연도가 없어 현재 계약 요금으로 보장할 수 없습니다.']
+ limitations:['같은 해 입학한 학생들을 추적한 전국 대학 졸업률·중도탈락 사유·학비 미납 제적률·재학 중 취업률·졸업 후 취업률은 비교 가능한 자료를 확인하지 못했습니다.','전국 중위임금·가구 가처분소득과 학생별 지출을 연결한 자료가 없어 평균임금으로 실제 가계 부담률을 추정하지 않습니다.','기숙사 요금은 공식 게시값이나 기준연도가 없어 현재 계약 요금으로 보장할 수 없습니다.']
 };
-export const formatEducationWon = kgs => new Intl.NumberFormat('ko-KR',{maximumFractionDigits:1,minimumFractionDigits:1}).format(kgs * fx.kgsKrw / 10000);
+export const formatEducationWon = kgs => {
+ const amount = kgs * fx.kgsKrw / 10000;
+ return new Intl.NumberFormat('ko-KR', {maximumFractionDigits: Math.abs(amount) < 10 ? 1 : 0}).format(amount);
+};
 export function annualStudentBudget(housing) {
  if (!['dorm','rent'].includes(housing)) throw new RangeError('Unknown housing');
  const d=educationData, m=d.monthly;
