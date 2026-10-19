@@ -22,7 +22,7 @@ function renderNarrative(data, {id = data.id, placement = data.id, core = false}
     <div class="bukhara-chapters">${data.chapters.map(([title, body], i) => {
       const paragraphs = Array.isArray(body) ? body : body.split(/\n\s*\n/);
       return `<details class="bukhara-chapter"><summary>${esc(title)}</summary><div class="bukhara-chapter-body">${renderIllustratedParagraphs(paragraphs, placement, i)}${renderIllustration(`${placement}:${i}:detail`)}</div></details>`;
-    }).join('')}</div>${renderSources(data.sources || [], data.verifiedAt)}</section>`;
+    }).join('')}</div>${data.notes?.length ? `<details class="source-notes"><summary>수치와 해석의 근거 더 보기</summary>${data.notes.map(note => `<p>${esc(note)}</p>`).join('')}</details>` : ''}${renderSources(data.sources || [], data.verifiedAt)}</section>`;
 }
 const kazakhstanEssays = [kazakhstanHistory, kazakhstanPoliticalEconomy, kazakhstanSociety];
 export function renderKazakhstanDeepDives() {
@@ -35,7 +35,7 @@ export function renderKazakhstanDeepDives() {
   </section>`;
 }
 export function renderGuide(essentials = []) {
-  return `<h2>여행 해설</h2><p>자연환경에서 역사, 자원, 경제와 교육으로 이어지는 3국 여행 해설입니다. 주제를 누르면 본문이 펼쳐집니다.</p>
+  return `<h2>여행 해설</h2><p>여행길에서 만나는 풍경과 유적, 시장과 사람들의 생활을 함께 읽습니다. 궁금한 주제를 누르면 해설이 펼쳐지고, 아래에서는 도시별로 찾아보실 수 있습니다.</p>
     <nav class="guide-toc" aria-label="해설 목차"><a href="#geography">1. 지리·기후·생활양식</a><a href="#history">2. 역사</a><a href="#resources">3. 자원·에너지</a><a href="#economy">4. 경제</a><a href="#education">5. 교육</a><a href="#kazakhstan-deep-dives">카자흐스탄 심층 해설</a><a href="#city-guides">도시·유적 찾아보기</a></nav>
     <span id="central-asia-geography-climate"></span>${renderNarrative(geography, {core:true})}
     <span id="silk-road-introduction"></span>${renderNarrative(history, {core:true})}

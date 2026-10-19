@@ -61,11 +61,11 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .city-name small{font-size:12px;font-weight:500;color:#667b79}
 .city-subtitle{display:block;font-size:13px;font-weight:500;color:#4d6a65;margin-top:3px}
 .architecture-city-body{padding:5px 17px 20px}
-.architecture-city-body>p{font-size:15px;color:#435b5c}
+.architecture-city-body>p{font-size:17px;color:#435b5c}
 .architecture-site{padding:17px 0;border-top:1px solid #e3e9e4}
 .architecture-site h4{margin:0 0 8px;font-size:16px;line-height:1.55;color:#193d43;word-break:keep-all}
 .architecture-site h4 small{display:block;font-size:12px;font-weight:500;color:#6b7c7a}
-.architecture-site p{margin:0;font-size:15px;line-height:1.9;color:#394f51}
+.architecture-site p{margin:0;font-size:17px;line-height:1.9;color:#394f51}
 .architecture-footnote{font-size:13px;line-height:1.8;color:#60736e}
 .phrase-scroll{max-width:100%}
 @media(max-width:420px){.phrase-table{min-width:0;font-size:12px;table-layout:fixed}.phrase-table th,.phrase-table td{padding:10px 6px;overflow-wrap:anywhere;word-break:break-word}.phrase-table td:first-child{min-width:0}.phrase-table th:nth-child(1){width:37%}.phrase-table th:nth-child(2){width:34%}.phrase-table th:nth-child(3){width:29%}}
@@ -74,7 +74,7 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 /* Bukhara long-form reading, optimized for narrow phones */
 .bukhara-history{margin:24px 0 32px;max-width:100%;min-width:0}
 .bukhara-history h3{font-size:clamp(21px,5.7vw,27px);line-height:1.45;letter-spacing:-.03em;word-break:keep-all;margin-bottom:12px}
-.bukhara-intro{font-size:15px;line-height:1.9;color:#3d5858;word-break:keep-all}
+.bukhara-intro{font-size:17px;line-height:1.9;color:#3d5858;word-break:keep-all}
 .bukhara-count{font-size:12px;color:#637a73;line-height:1.7;margin:12px 0 20px}
 .bukhara-chapters{display:grid;gap:11px;min-width:0}
 .bukhara-chapter{background:#fff;border:1px solid #dce6df;border-radius:14px;overflow:hidden;min-width:0}
@@ -84,13 +84,13 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .bukhara-chapter[open]>summary:after{content:'−'}
 .bukhara-chapter[open]>summary{background:#edf3ee;border-bottom:1px solid #e0e8e1}
 .bukhara-chapter-body{padding:7px 17px 21px;min-width:0}
-.bukhara-chapter-body p{margin:16px 0;font-size:15.5px;line-height:2.05;letter-spacing:-.012em;word-break:keep-all;overflow-wrap:break-word}
+.bukhara-chapter-body p{margin:16px 0;font-size:17px;line-height:1.95;letter-spacing:normal;word-break:keep-all;overflow-wrap:break-word}
 .bukhara-chapter-body p:last-child{margin-bottom:3px}
 .bukhara-references{margin-top:22px;padding:17px;background:#f0f3ef;border-radius:13px}
 .bukhara-references h4{margin:0 0 8px}
 .bukhara-references p{font-size:13px;line-height:1.8}
 .bukhara-references a{display:block;margin:10px 0;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
-@media(max-width:390px){.bukhara-chapter>summary{padding:15px 13px;font-size:15px}.bukhara-chapter-body{padding:6px 14px 19px}.bukhara-chapter-body p{font-size:15px;line-height:2}}
+@media(max-width:390px){.bukhara-chapter>summary{padding:15px 13px;font-size:16px}.bukhara-chapter-body{padding:6px 14px 19px}.bukhara-chapter-body p{font-size:17px;line-height:1.95}}
 /* Photo-based journal artwork: retain the full image and reserve its intrinsic ratio. */
 .journal-illustration{margin:26px 0 30px;padding:10px;background:#f8f5ee;border:1px solid #e5dfd2;border-radius:5px;min-width:0;max-width:100%}
 .journal-illustration img{display:block;width:100%;height:auto;max-width:100%;background:#f7f4eb;border-radius:2px}

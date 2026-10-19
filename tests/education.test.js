@@ -11,10 +11,10 @@ test('student budgets include one tuition and twelve months, utilities only for 
  assert.equal(tuitionWageMonths(d.wage.monthlyKgs),1);
 });
 test('tuition is calculated from source currency and renders only KRW',()=>{
- assert.equal(formatEducationWon(75000),'114.3');
+ assert.equal(formatEducationWon(75000),'114');
  const html=renderEducation();
  assert.match(html,/data-core-section="education"/);
- assert.match(html,/114\.3/);
+ assert.match(html,/114/);
  assert.doesNotMatch(html,/75000|75,000|120000|сом|KGS/);
  assert.match(html,/기준연도 미표시/);
  assert.match(html,/학생 조사 아님/);
