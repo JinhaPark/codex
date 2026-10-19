@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "16f7e49c9254e6696e87a8c6720dedabeacf5ae5",
+  "skillsCommit": "3873d40c8d66ce016435a76de0573b87b7ec0cbb",
+  "execution": "Three independent asynchronous image workers; parent alone integrates shared files.",
+  "originalRetention": "Hash only; original JPEGs and copies are not published.",
+  "actualIPhoneTest": false,
+  "images": [
+    {
+      "place": "차른 협곡",
+      "requestNumber": 17,
+      "original": "IMG_9190.jpeg",
+      "illustrationId": "charyn-canyon-watercolor",
+      "sourceSha256": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c",
+      "placement": "almaty:10:0",
+      "sourceDimensions": [
+        1536,
+        1152
+      ],
+      "generatedDimensions": [
+        1448,
+        1086
+      ],
+      "framing": "preserve",
+      "recipeKey": "b1b8ff8af3ecf2f1c6825a3faf6a81190239bb7ccf97aefdaf9f1119c79b4e0a",
+      "optimizeKey": "f60ffa9d4357fcc2bcb70729ab4953a1458d84905d35bca49d13087f83ffe4e1",
+      "variants": [
+        {
+          "width": 480,
+          "height": 360,
+          "bytes": 70388,
+          "quality": 88,
+          "sha256": "9fc32e89b87320855b9619722d8f890a373b6e7374cff20e2a2b77e3c422229e",
+          "file": "public/illustrations/charyn-canyon-watercolor-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "bytes": 195870,
+          "quality": 88,
+          "sha256": "6145d910c7e6be516bf92e3100ba4358b37f8f5c07adbcdebc662bc526875d68",
+          "file": "public/illustrations/charyn-canyon-watercolor-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "bytes": 234828,
+          "quality": 76,
+          "sha256": "a93201e741651b4db7889e1ad00300d49adb4cb964410309d134c879056f056a",
+          "file": "public/illustrations/charyn-canyon-watercolor-1200.webp"
+        }
+      ],
+      "visualReview": "Compared original and generated master plus 1200px WebP. Source canyon layered red cliffs, distant horizon, rounded ochre foreground slopes and footpath remain in the same framing and broad positions; light watercolor/pencil treatment matches landscape reference. Shadows are lighter in illustration while retaining their cool color and direction. No invented buildings, people, text, borders, crop or outpainting observed. Generative rendition is illustrative rather than a measured geological record.",
+      "masterArtifactRef": null
+    },
+    {
+      "place": "블랙 캐니언",
+      "requestNumber": 19,
+      "original": "IMG_9223.jpeg",
+      "illustrationId": "black-canyon-watercolor",
+      "sourceSha256": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174",
+      "placement": "almaty:10:1",
+      "sourceDimensions": [
+        1536,
+        1152
+      ],
+      "generatedDimensions": [
+        1448,
+        1086
+      ],
+      "framing": "preserve",
+      "recipeKey": "e74030290ae5e07f4960cc4a34aacc8c0616f111bb4815005bcc3ef2bcada014",
+      "optimizeKey": "a3a854eaee83cefdb4f667991a93d54bb6cbe3f0412c3918ac4efebec9706391",
+      "variants": [
+        {
+          "width": 480,
+          "height": 360,
+          "bytes": 68342,
+          "quality": 88,
+          "sha256": "ee7c4cb3d56af26259ff950776cb74b4bbdac4d5c6d939d7a774cd17dbfefbc1",
+          "file": "public/illustrations/black-canyon-watercolor-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "bytes": 190930,
+          "quality": 88,
+          "sha256": "64099efdaa8973d9a6d6a4b97897b64e5826df1911b1a15e23b7b63c93ee7bba",
+          "file": "public/illustrations/black-canyon-watercolor-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "bytes": 225392,
+          "quality": 76,
+          "sha256": "6e429bf509869e54c1f087ae52ba443b86febf22c05aad16362f8e174961ff34",
+          "file": "public/illustrations/black-canyon-watercolor-1200.webp"
+        }
+      ],
+      "visualReview": "Compared original and generated image, and inspected 1200px WebP. Exact 4:3 framing, cliff edge arrangement, rolling hills, sparse vegetation and foreground post preserved. No text, people or borders introduced. Restrained watercolor/pencil texture matches landscape reference. Natural shadows preserved. Sky has paper/wash texture; illustration is not a scientific reconstruction.",
+      "masterArtifactRef": null
+    },
+    {
+      "place": "루나 캐니언",
+      "requestNumber": 18,
+      "original": "IMG_9255.jpeg",
+      "illustrationId": "lunar-canyon-watercolor",
+      "sourceSha256": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a",
+      "placement": "almaty:10:detail",
+      "sourceDimensions": [
+        1152,
+        1536
+      ],
+      "generatedDimensions": [
+        1086,
+        1448
+      ],
+      "framing": "preserve",
+      "recipeKey": "df07791a2285ef836645e903acf45994d33a2d18af8391b031eb78d60cfb4c51",
+      "optimizeKey": "0be0e34e940e94377de076a4acd527de4ab5fd53a079bb5688b8eba53f563d89",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "bytes": 128912,
+          "quality": 88,
+          "sha256": "790a3c9525813557ce1b078af44601ecba267871699c7f8ec0ffc5a83185b742",
+          "file": "public/illustrations/lunar-canyon-watercolor-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 1067,
+          "bytes": 247596,
+          "quality": 80,
+          "sha256": "df8be30c458d3eb852491ae0b86b681322ec221153bcbc409da893953423a8c1",
+          "file": "public/illustrations/lunar-canyon-watercolor-800.webp"
+        },
+        {
+          "width": 1086,
+          "height": 1448,
+          "bytes": 245342,
+          "quality": 56,
+          "sha256": "65e1e4b7f058a46ffda12d2085f89e285584c522a4d8f943608b9725a2f39dc1",
+          "file": "public/illustrations/lunar-canyon-watercolor-1086.webp"
+        }
+      ],
+      "visualReview": {
+        "passed": true,
+        "framing": "Exact 3:4 retained; all four boundaries and terrain composition preserved.",
+        "subject": "Pale layered canyon, meandering river, gravel bars and autumn trees retained.",
+        "removal": "Tiny lower-left blue tourist removed; no extra people or text.",
+        "reflection": "River blue and ochre natural reflections and ripples retained.",
+        "style": "Restrained watercolor and fine pencil detail compatible with existing Issyk-Kul asset.",
+        "limitations": "Illustration has natural generative simplification; no claim of measured geological reproduction. Maximum width limited to generated 1086 to avoid upscaling."
+      },
+      "masterArtifactRef": null
+    }
+  ],
+  "verification": {
+    "npmTest": {
+      "passed": 25,
+      "failed": 0
+    },
+    "productionBuild": "passed",
+    "pixelAssetAudit": {
+      "artworks": 49,
+      "decodedVariants": 131,
+      "metadataFree": true
+    },
+    "browser": {
+      "passed": true,
+      "browser": "153.0.8010.0",
+      "viewports": [
+        375,
+        390,
+        430
+      ],
+      "uniqueIllustrations": 49,
+      "decodedAssetUrls": 131,
+      "duplicateIllustrationPlacements": [],
+      "javascriptErrors": [],
+      "offlineAllGuideIllustrations": true,
+      "cacheUpgradeFixture": "v15 cache name/current app → v19; old cache removed",
+      "unrelatedOriginCachePreserved": true
+    },
+    "koreanCaptionViewportChecks": 9,
+    "koreanFontInjectedForQA": true,
+    "actualIPhoneTest": false
+  }
+}

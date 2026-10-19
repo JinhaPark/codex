@@ -2636,6 +2636,412 @@
       ],
       "lifecycle": "active",
       "lastPublishedRevisionId": "legacy-bukhara-sitorai-pool-watercolor"
+    },
+    {
+      "illustrationId": "charyn-canyon-watercolor",
+      "originalName": "IMG_9190.jpeg",
+      "sourceId": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c",
+      "sourceSha256": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "charyn-canyon-watercolor-r1-fb23d4589044",
+      "lastPublishedRevisionId": "charyn-canyon-watercolor-r1-fb23d4589044",
+      "placement": "almaty:10:0",
+      "revisions": [
+        {
+          "revisionId": "charyn-canyon-watercolor-r1-fb23d4589044",
+          "illustrationId": "charyn-canyon-watercolor",
+          "sourceId": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheFormatVersion": "travel-photo-cache-v1",
+            "sourceSha256": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "sha256": "e3e2107f38dda61311acb18ae72d53348ef1999a2f381580a194dcca1e53594c"
+              },
+              {
+                "role": "style-reference",
+                "sha256": "496af45133c6d414b87e0c582bac9a9b908a511a818b3d02ef7bbe8b6f981e36"
+              }
+            ],
+            "prompt": "Use case: style-transfer.\nAsset: one landscape illustration for the existing Korean Central Asia travel guide.\nInput 1 is the EDIT TARGET IMG_9190.jpeg, Charyn Canyon, a 1536×1152 landscape photograph. Input 2 is STYLE REFERENCE ONLY mountain-orchards-watercolor-800.webp: use only its restrained watercolor and fine colored-pencil treatment, do not borrow its trees, mountains or composition.\nConvert Input 1 into a delicate, faithful transparent watercolor illustration with fine colored-pencil details and light paper texture.\nFraming: output exactly 4:3 landscape, preserving the entire original framing and camera perspective with no crop, no outpainting, no borders. Keep the sky occupying the same upper part, distant blue-gray horizon, all canyon ridgelines, the horizontal red/tan exposed sediment layers, rounded barren brown foreground hills and winding foreground footpath. Preserve the actual direction of sunlight, deep cool shadows, warm ochre earth tones and the original relative positions and scale of every ridge. Do not exaggerate or redesign the geology. Preserve all visible natural terrain and vegetation. There are no people or text to remove; soften only any evident incidental photographic glass glare without altering terrain.\nStyle: restrained transparent watercolor washes, fine natural colored-pencil contours and rock textures, subtle paper grain, coherent with Input 2. Keep the original photograph's muted warm-earth/cool-shadow palette rather than making it saturated.\nConstraints: no invented trees, buildings, people, rivers or canyon formations; no text, captions, logos, watermark, border, blank paper margins, cropping or sky expansion.",
+            "remove": [
+              "Only any evident incidental photographic glass glare; no distinct occluders observed"
+            ],
+            "preserve": [
+              "Full 4:3 framing",
+              "Canyon ridges and horizontal sediment layers",
+              "Muted earth colors and cool shadows",
+              "Distant horizon and foreground footpath"
+            ],
+            "style": "watercolor",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "settings": {
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "b1b8ff8af3ecf2f1c6825a3faf6a81190239bb7ccf97aefdaf9f1119c79b4e0a",
+          "outputSha256": "fb23d4589044a36cd794128b295244af5c000608584b5e72718a03ed2669998a",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "status": "validated",
+            "visualReview": "Compared original and generated master plus 1200px WebP. Source canyon layered red cliffs, distant horizon, rounded ochre foreground slopes and footpath remain in the same framing and broad positions; light watercolor/pencil treatment matches landscape reference. Shadows are lighter in illustration while retaining their cool color and direction. No invented buildings, people, text, borders, crop or outpainting observed. Generative rendition is illustrative rather than a measured geological record.",
+            "aspectRatioError": 0,
+            "decode": true,
+            "metadataFree": true,
+            "withinSizeLimits": true,
+            "withinByteBudget": true,
+            "actualIPhoneTest": false,
+            "parentVisualReview": "Parent inspected 800px WebP against source and existing landscape style; full framing, subject and natural shadows/reflections retained."
+          },
+          "createdAt": "2026-10-19T13:53:03.110755+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 70388,
+              "quality": 88,
+              "sha256": "9fc32e89b87320855b9619722d8f890a373b6e7374cff20e2a2b77e3c422229e",
+              "file": "public/illustrations/charyn-canyon-watercolor-480.webp"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 195870,
+              "quality": 88,
+              "sha256": "6145d910c7e6be516bf92e3100ba4358b37f8f5c07adbcdebc662bc526875d68",
+              "file": "public/illustrations/charyn-canyon-watercolor-800.webp"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 234828,
+              "quality": 76,
+              "sha256": "a93201e741651b4db7889e1ad00300d49adb4cb964410309d134c879056f056a",
+              "file": "public/illustrations/charyn-canyon-watercolor-1200.webp"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheFormatVersion": "travel-photo-cache-v1",
+            "outputSha256": "fb23d4589044a36cd794128b295244af5c000608584b5e72718a03ed2669998a",
+            "sourceLimits": [
+              1536,
+              1152
+            ],
+            "generatedLimits": [
+              1448,
+              1086
+            ],
+            "editInputLimits": null,
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "quality": 88,
+            "minQuality": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip-exif-xmp-icc",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "f60ffa9d4357fcc2bcb70729ab4953a1458d84905d35bca49d13087f83ffe4e1",
+          "lifecycle": "active",
+          "lifecycleReason": "New verified illustration integrated at a single editorial placement.",
+          "skillsCommit": "3873d40c8d66ce016435a76de0573b87b7ec0cbb",
+          "lifecycleChangedAt": "2026-10-19T13:53:03.110755+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-19T13:53:03.110755+00:00",
+      "lifecycleReason": "신규 변환본 검증 완료 후 가이드 배치에 등록했습니다."
+    },
+    {
+      "illustrationId": "black-canyon-watercolor",
+      "originalName": "IMG_9223.jpeg",
+      "sourceId": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174",
+      "sourceSha256": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "black-canyon-watercolor-r1-cc05e8648bf6",
+      "lastPublishedRevisionId": "black-canyon-watercolor-r1-cc05e8648bf6",
+      "placement": "almaty:10:1",
+      "revisions": [
+        {
+          "revisionId": "black-canyon-watercolor-r1-cc05e8648bf6",
+          "illustrationId": "black-canyon-watercolor",
+          "sourceId": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "keyFormatVersion": "travel-photo-cache-v1",
+            "sourceSha256": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "sha256": "97b672b306bebcc73d1bf9cfad7ccc3856c80c7cc76406970cee99381b637174"
+              },
+              {
+                "role": "style-reference",
+                "sha256": "a9f9d192911e4318135535f4a01bdb45f3f7f2cae81dac0e7ea5bb84f68f869e"
+              }
+            ],
+            "prompt": "Use case: style-transfer.\nAsset: one landscape illustration for an existing Korean travel guide.\nInput 1 is the edit target IMG_9223.jpeg: Black Canyon, Kazakhstan, dark deeply eroded foreground cliff and pale softly folded rolling hills beneath blue sky. Input 2 is style reference only: existing Ala-Archa watercolor; do not copy its scene.\nConvert Input 1 into restrained transparent watercolor washes with fine colored-pencil geological details, matching the reference's light paper texture and natural detail. Keep the exact source 4:3 full-frame composition and perspective, horizon, hill silhouettes, cliff edges and fissures, sparse plants, small post at lower left, natural directional sunlight and deep cliff shadows. Preserve the contrast of pale tan rolling hills and dark gray-brown rocky cliffs. No cropping, outpainting, sky expansion, added mountains, people, text, captions, watermark or border. Remove only obvious intrusive window glare if present, preserving actual sunlight and natural haze. The result must be 4:3 landscape and retain all source framing.",
+            "remove": [
+              "obvious intrusive window glare if present; no unambiguous large window reflection was observed"
+            ],
+            "preserve": [
+              "4:3 full frame",
+              "geology, hill silhouettes, cliff fissures",
+              "small post at lower left",
+              "directional sunlight and shadows"
+            ],
+            "style": "watercolor",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referencedImageCount": 2,
+              "transparent_background": false
+            },
+            "editingRulesVersion": "skills@3873d40c8d66ce016435a76de0573b87b7ec0cbb"
+          },
+          "recipeKey": "e74030290ae5e07f4960cc4a34aacc8c0616f111bb4815005bcc3ef2bcada014",
+          "outputSha256": "cc05e8648bf676d68b41a408246011dfd79f11077abdce6f55959822e9cb5f0a",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "visualReview": "Compared original and generated image, and inspected 1200px WebP. Exact 4:3 framing, cliff edge arrangement, rolling hills, sparse vegetation and foreground post preserved. No text, people or borders introduced. Restrained watercolor/pencil texture matches landscape reference. Natural shadows preserved. Sky has paper/wash texture; illustration is not a scientific reconstruction.",
+            "decode": true,
+            "aspectRatio": true,
+            "upscale": false,
+            "maxBytes": true,
+            "metadataFree": true,
+            "sourceUntouched": true,
+            "parentVisualReview": "Parent inspected 800px WebP against source and existing landscape style; full framing, subject and natural shadows/reflections retained."
+          },
+          "createdAt": "2026-10-19T13:52:33.825843+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 68342,
+              "quality": 88,
+              "sha256": "ee7c4cb3d56af26259ff950776cb74b4bbdac4d5c6d939d7a774cd17dbfefbc1",
+              "file": "public/illustrations/black-canyon-watercolor-480.webp"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 190930,
+              "quality": 88,
+              "sha256": "64099efdaa8973d9a6d6a4b97897b64e5826df1911b1a15e23b7b63c93ee7bba",
+              "file": "public/illustrations/black-canyon-watercolor-800.webp"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 225392,
+              "quality": 76,
+              "sha256": "6e429bf509869e54c1f087ae52ba443b86febf22c05aad16362f8e174961ff34",
+              "file": "public/illustrations/black-canyon-watercolor-1200.webp"
+            }
+          ],
+          "optimizationRecipe": {
+            "keyFormatVersion": "travel-photo-cache-v1",
+            "outputSha256": "cc05e8648bf676d68b41a408246011dfd79f11077abdce6f55959822e9cb5f0a",
+            "sourceDimensions": [
+              1536,
+              1152
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "editInputDimensions": null,
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF/XMP/ICC",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "a3a854eaee83cefdb4f667991a93d54bb6cbe3f0412c3918ac4efebec9706391",
+          "lifecycle": "active",
+          "lifecycleReason": "New verified illustration integrated at a single editorial placement.",
+          "skillsCommit": "3873d40c8d66ce016435a76de0573b87b7ec0cbb",
+          "lifecycleChangedAt": "2026-10-19T13:52:33.825843+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-19T13:52:33.825843+00:00",
+      "lifecycleReason": "신규 변환본 검증 완료 후 가이드 배치에 등록했습니다."
+    },
+    {
+      "illustrationId": "lunar-canyon-watercolor",
+      "originalName": "IMG_9255.jpeg",
+      "sourceId": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a",
+      "sourceSha256": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "lunar-canyon-watercolor-r1-adc9c9b00471",
+      "lastPublishedRevisionId": "lunar-canyon-watercolor-r1-adc9c9b00471",
+      "placement": "almaty:10:detail",
+      "revisions": [
+        {
+          "revisionId": "lunar-canyon-watercolor-r1-adc9c9b00471",
+          "illustrationId": "lunar-canyon-watercolor",
+          "sourceId": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "sha256": "f2e7999b98b14edc161b492ab155c016d2d9af982421163ac4dd8d786059da5a"
+              },
+              {
+                "role": "style-reference",
+                "sha256": "18e00b9ee624a4fa059ee40fccced3aa034acdc6755e07ca5a75118401ba7a03"
+              }
+            ],
+            "prompt": "Use case: style-transfer with precise-object-edit.\nAsset: one illustration for an existing Korean travel guide.\nInput 1 is the edit target IMG_9255.jpeg: the user identifies this scene as Lunar Canyon. Input 2 is style reference only: existing Issyk-Kul watercolor landscape. Do not borrow its subject.\nPrimary request: transform ONLY input 1 into a restrained transparent watercolor with fine colored-pencil detail, matching input 2's natural clarity, delicate paper texture and transparent washes.\nFraming: exact source portrait 3:4 ratio, full uncropped source composition, all four boundaries preserved. No crop, no outpainting, no added sky.\nKeep: exact canyon ridge silhouettes and layered pale ochre cliffs across upper half; meandering blue river through middle and bottom; gravel bars; golden autumn trees and shrubs; real water reflections and ripples; foreground rock edge; original warm late-day light and natural shadows.\nRemove only: the tiny incidental blue-clothed tourist at the lower left edge, replacing locally with the adjacent rocky trail/vegetation. Remove any evident window glare without removing natural sunlight or water reflections.\nConstraints: keep terrain geometry, perspective, horizon, tree masses, river course and their relative positions. Controlled realistic natural hues, subtle paper grain. No invented peaks, buildings, people, readable text, captions, borders or watermark. Preserve exact portrait 3:4 aspect ratio.",
+            "remove": [
+              "tiny incidental blue-clothed tourist at lower left",
+              "evident window glare only"
+            ],
+            "preserve": [
+              "source 3:4 framing",
+              "canyon ridge and layered cliffs",
+              "river course gravel bars water reflections and ripples",
+              "autumn trees",
+              "late-day light shadows"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9255.jpeg",
+                "issyk-kul-cruise-tian-shan-watercolor-800.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "df07791a2285ef836645e903acf45994d33a2d18af8391b031eb78d60cfb4c51",
+          "outputSha256": "adc9c9b004716f35b201fe8f2ab0836432485e6875d8dc649e30055cda1d2bcf",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "parentVisualReview": "Parent inspected 800px WebP against source and existing landscape style; full framing, subject and natural shadows/reflections retained."
+          },
+          "createdAt": "2026-10-19T13:53:11.448621+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 128912,
+              "quality": 88,
+              "sha256": "790a3c9525813557ce1b078af44601ecba267871699c7f8ec0ffc5a83185b742",
+              "file": "public/illustrations/lunar-canyon-watercolor-480.webp"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 247596,
+              "quality": 80,
+              "sha256": "df8be30c458d3eb852491ae0b86b681322ec221153bcbc409da893953423a8c1",
+              "file": "public/illustrations/lunar-canyon-watercolor-800.webp"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 245342,
+              "quality": 56,
+              "sha256": "65e1e4b7f058a46ffda12d2085f89e285584c522a4d8f943608b9725a2f39dc1",
+              "file": "public/illustrations/lunar-canyon-watercolor-1086.webp"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "adc9c9b004716f35b201fe8f2ab0836432485e6875d8dc649e30055cda1d2bcf",
+            "sourceDimensions": [
+              1152,
+              1536
+            ],
+            "generatedDimensions": [
+              1086,
+              1448
+            ],
+            "widths": [
+              480,
+              800,
+              1152
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "0be0e34e940e94377de076a4acd527de4ab5fd53a079bb5688b8eba53f563d89",
+          "lifecycle": "active",
+          "lifecycleReason": "New verified illustration integrated at a single editorial placement.",
+          "skillsCommit": "3873d40c8d66ce016435a76de0573b87b7ec0cbb",
+          "lifecycleChangedAt": "2026-10-19T13:53:11.448621+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-19T13:53:11.448621+00:00",
+      "lifecycleReason": "신규 변환본 검증 완료 후 가이드 배치에 등록했습니다."
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",

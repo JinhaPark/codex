@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-19T05:49:46.977Z",
+  "checkedAt": "2026-10-19T13:58:36.024Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 46,
+  "uniqueIllustrations": 49,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -331,6 +331,30 @@
         "루흐 오르도 문화센터의 상징"
       ]
     },
+    "charyn-canyon-watercolor": {
+      "state": "guide",
+      "placement": "almaty:10:0",
+      "headings": [
+        "알마티",
+        "차른 협곡과 지질학적 시간"
+      ]
+    },
+    "black-canyon-watercolor": {
+      "state": "guide",
+      "placement": "almaty:10:1",
+      "headings": [
+        "알마티",
+        "차른 협곡과 지질학적 시간"
+      ]
+    },
+    "lunar-canyon-watercolor": {
+      "state": "guide",
+      "placement": "almaty:10:detail",
+      "headings": [
+        "알마티",
+        "차른 협곡과 지질학적 시간"
+      ]
+    },
     "uzbek-tilework-pencil": {
       "state": "guide",
       "placement": "comparative:0:0",
@@ -374,7 +398,7 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 122,
+  "decodedAssetUrls": 131,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
@@ -399,14 +423,12 @@
   "offlineAllGuideIllustrations": true,
   "offlineSamarkandHotel": true,
   "offlineArrivalDinner": true,
-  "cacheUpgradeFixture": "v15 cache name/current app → v16; old cache removed",
+  "cacheUpgradeFixture": "v15 cache name/current app → v19; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
-    "bukhara-poi-kalyan-watercolor-375.png",
-    "tashkent-minor-portrait-watercolor-375.png",
-    "cholponata-petroglyph-detail-pencil-375.png",
-    "samarkand-bibi-khanym-watercolor-375.png",
-    "bukhara-sitorai-pool-watercolor-375.png",
+    "charyn-canyon-watercolor-375.png",
+    "black-canyon-watercolor-375.png",
+    "lunar-canyon-watercolor-375.png",
     "economy-375.png",
     "education-375.png",
     "economy-390.png",
