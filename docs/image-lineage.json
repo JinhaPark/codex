@@ -58,9 +58,12 @@
               "sha256": "b43debc0fdc619d0be45538b846a0fdd489b7f12d511ab3bce548fa1c375f1dd"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-mountain-orchards-watercolor"
     },
     {
       "illustrationId": "bukhara-poi-kalyan-watercolor",
@@ -115,9 +118,12 @@
               "sha256": "70bb37c439d88a138bc3320f5817d0d52062d1f0d0cd26c39766991795ef3f1e"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-poi-kalyan-watercolor"
     },
     {
       "illustrationId": "autumn-birch-walk-watercolor",
@@ -172,9 +178,12 @@
               "sha256": "00ff9ee3f62209bb04be632add553614fa97032e5f60fb4752dae049d998e16c"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-autumn-birch-walk-watercolor"
     },
     {
       "illustrationId": "rukh-ordo-garden-pencil",
@@ -229,9 +238,12 @@
               "sha256": "e0133e239b4954593b479e878fad1bd842a5a903a2a0fcdcfb6731d868f89401"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil"
     },
     {
       "illustrationId": "uzbek-tilework-pencil",
@@ -286,9 +298,12 @@
               "sha256": "654778eb27601563c18fb002973480325871dbbb9bdf88cd54735f659a7b0448"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil"
     },
     {
       "illustrationId": "arabic-manuscript-pencil",
@@ -343,9 +358,12 @@
               "sha256": "bab3e111a7c4842abe6d1fd279200fe91ca2d2a74aefdf57ca81982fbc61e253"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-arabic-manuscript-pencil"
     },
     {
       "illustrationId": "street-classic-car-pencil",
@@ -400,9 +418,12 @@
               "sha256": "7bd33fd8e7447d93caadced82af119b4fffdd85cdf6e8cdda59a0adc30b4fb3e"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-street-classic-car-pencil"
     },
     {
       "illustrationId": "travel-steak-table-pencil",
@@ -457,9 +478,12 @@
               "sha256": "4d4a8720315054051c40c87ac0f5a3511b913f6d9cc9d950636e01d56c81be5a"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-travel-steak-table-pencil"
     },
     {
       "illustrationId": "travel-meal-tray-pencil",
@@ -514,9 +538,12 @@
               "sha256": "b5563f0865ef13bc0d1c89b1613c32ec69476c9de9082dab54666c38fb0c8dc2"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-travel-meal-tray-pencil"
     },
     {
       "illustrationId": "white-honey-jar-pencil",
@@ -571,9 +598,12 @@
               "sha256": "4615fcb4496893804127611a71a7d2cf513a4d6182c4b36934affaa611105a43"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-white-honey-jar-pencil"
     },
     {
       "illustrationId": "suusamyr-honey-pencil",
@@ -628,9 +658,12 @@
               "sha256": "4b5a88c672eb7908e8bd6c2bc42b987650a2b8659475e32ca483e3b116bbbb37"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-suusamyr-honey-pencil"
     },
     {
       "illustrationId": "bukhara-ark-walls-pencil",
@@ -685,9 +718,12 @@
               "sha256": "57f63323b9b307b6caaaae29bc47c06a67750494495da2ccbd4aa7cd4a9dec78"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-ark-walls-pencil"
     },
     {
       "illustrationId": "bukhara-kalyan-minaret-pencil",
@@ -742,9 +778,12 @@
               "sha256": "143cbb6c96e1257c083b23180cb92b7c87061d20cc75af61afd98a5799505bdc"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-kalyan-minaret-pencil"
     },
     {
       "illustrationId": "bukhara-market-sunset-watercolor",
@@ -799,9 +838,12 @@
               "sha256": "db17712a0d549368f70766286f576ebaeb3dbc04a3f37fecccc7f596af366c1e"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-market-sunset-watercolor"
     },
     {
       "illustrationId": "bukhara-spice-stall-pencil",
@@ -856,9 +898,12 @@
               "sha256": "ab5613978f72596ae1dde1ffdd1630acbd6e7e6429c958bf8e932d4a26ca8bac"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-spice-stall-pencil"
     },
     {
       "illustrationId": "lyabi-hauz-evening-watercolor",
@@ -913,9 +958,12 @@
               "sha256": "f20c37a881fa834bcacc05a389ddd001a1144b0789983d377f9b5843110c5c75"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-lyabi-hauz-evening-watercolor"
     },
     {
       "illustrationId": "lyabi-hauz-portal-watercolor",
@@ -970,9 +1018,12 @@
               "sha256": "a4897a95bf6181093eaa15fc8da87400965bb50d56a1d4ca5eba74a6687b9424"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-lyabi-hauz-portal-watercolor"
     },
     {
       "illustrationId": "registan-gilded-ceiling-pencil",
@@ -1027,9 +1078,12 @@
               "sha256": "b6a8218c499c7617b6c65c9119e6acee4648579af56168965298c7c18869db46"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-registan-gilded-ceiling-pencil"
     },
     {
       "illustrationId": "registan-travel-portrait-watercolor",
@@ -1076,9 +1130,12 @@
               "sha256": "1aefa3fc56ac03cf75ca11d3eacb83374e7f9f09afb6c7a7ae3b75a642d5c1dc"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-registan-travel-portrait-watercolor"
     },
     {
       "illustrationId": "samarkand-turquoise-dome-pencil",
@@ -1117,9 +1174,12 @@
               "sha256": "12e671a61258ccdac76123d8d98a279b4d4fc76c1f5d32e6755bfe9b09cbc6fd"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-turquoise-dome-pencil"
     },
     {
       "illustrationId": "cholponata-petroglyph-field-watercolor",
@@ -1166,9 +1226,12 @@
               "sha256": "4f7c6e815b6e054c260f5aa4dcc984857b92fc248aa4bff718e79a136204867b"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-petroglyph-field-watercolor"
     },
     {
       "illustrationId": "cholponata-balbal-pencil",
@@ -1207,9 +1270,12 @@
               "sha256": "7a9dae75556514d3d90cd7bd41f6df388cd82a154897f355a553582a3aa9409c"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-balbal-pencil"
     },
     {
       "illustrationId": "issyk-kul-cruise-tian-shan-watercolor",
@@ -1264,9 +1330,12 @@
               "sha256": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor"
     },
     {
       "illustrationId": "tashkent-minor-ceiling-pencil",
@@ -1321,9 +1390,12 @@
               "sha256": "e246ff2095b04a0b0e86682196395a0191c8b89404a352d5f28a137d7c47677e"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-minor-ceiling-pencil"
     },
     {
       "illustrationId": "zoroastrian-ossuary-pencil",
@@ -1378,9 +1450,12 @@
               "sha256": "3f5611a544264c7c8873ee17936a8f9b41d213fd2c76b3f1e360d07209273690"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-zoroastrian-ossuary-pencil"
     },
     {
       "illustrationId": "bukhara-samani-watercolor",
@@ -1435,9 +1510,12 @@
               "sha256": "d8c44af184cf80ea29f05637daf02d6fc71e818e12c9f78a90eccdfeaa53122a"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-samani-watercolor"
     },
     {
       "illustrationId": "aral-sea-exhibit-photo",
@@ -1492,9 +1570,12 @@
               "sha256": "2809c67b22d16213a5f5c1d1608198c61e4e440cc0ca554d91c6183fccfabd52"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-aral-sea-exhibit-photo"
     },
     {
       "illustrationId": "afrasiyab-envoys-pencil",
@@ -1549,9 +1630,12 @@
               "sha256": "8fe908215c38178eb734e81b1ab2055289963f84ee62adf0ad03cfa4f4093d3f"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-afrasiyab-envoys-pencil"
     },
     {
       "illustrationId": "ulughbeg-meridian-pencil",
@@ -1606,9 +1690,12 @@
               "sha256": "aa47e92b2866ca0147773b7a803b6e1dfd5a7edef1cd32ae222e0d5d759604ee"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-meridian-pencil"
     },
     {
       "illustrationId": "ulughbeg-year-exhibit-photo",
@@ -1663,9 +1750,12 @@
               "sha256": "99bf032a79991355741bc80d9708422ac1ed4523012ba756b43b4d17f7df9cc9"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-year-exhibit-photo"
     },
     {
       "illustrationId": "ulughbeg-statue-pencil",
@@ -1720,9 +1810,12 @@
               "sha256": "4f51d7ca3f4c40311e1191d2cea9294b915a20c67fcb0e7c6b83e99aaeca307e"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ulughbeg-statue-pencil"
     },
     {
       "illustrationId": "samarkand-gur-emir-watercolor",
@@ -1777,9 +1870,12 @@
               "sha256": "06639520bbb491bd6fce4061bfb5793009c8967e78b6ece42d22a329ac4079b2"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-gur-emir-watercolor"
     },
     {
       "illustrationId": "bukhara-chashma-ayub-watercolor",
@@ -1834,9 +1930,12 @@
               "sha256": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-chashma-ayub-watercolor"
     },
     {
       "illustrationId": "hotel-pool-garden-watercolor",
@@ -1891,9 +1990,12 @@
               "sha256": "ca69def9c815ba47a6b7d6a0c1d677d2cc512df7e16ce8a4fe3a329ad70c1740"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-hotel-pool-garden-watercolor"
     },
     {
       "illustrationId": "tashkent-amir-temur-watercolor",
@@ -1948,9 +2050,12 @@
               "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-amir-temur-watercolor"
     },
     {
       "illustrationId": "tashkent-independence-fountains-watercolor",
@@ -2005,9 +2110,12 @@
               "sha256": "9354d037a73017f2b23dc56c338273cde831d674061947f0195ff1c916999783"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-independence-fountains-watercolor"
     },
     {
       "illustrationId": "tashkent-minor-portrait-watercolor",
@@ -2046,9 +2154,12 @@
               "sha256": "348abeaaf5cfd1090c5e9639ce6be8d7a93bf2289dea243b87b182d754c68c2f"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-minor-portrait-watercolor"
     },
     {
       "illustrationId": "rukh-ordo-lakeside-watercolor",
@@ -2103,9 +2214,12 @@
               "sha256": "75d03fc818074fc4cf2ca72d76ccf61f0d70911bec1d2153e989ea00501f2b4b"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-rukh-ordo-lakeside-watercolor"
     },
     {
       "illustrationId": "ala-archa-valley-watercolor",
@@ -2160,9 +2274,12 @@
               "sha256": "edd8e7a1cda0661b3d5826faebb15d823dbb5f5095341cb3123128f72e06cba7"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ala-archa-valley-watercolor"
     },
     {
       "illustrationId": "hazrati-imam-portrait-watercolor",
@@ -2201,9 +2318,12 @@
               "sha256": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-hazrati-imam-portrait-watercolor"
     },
     {
       "illustrationId": "cholponata-petroglyph-detail-pencil",
@@ -2242,9 +2362,12 @@
               "sha256": "f30d35b00d2c2403e85c16328fdbd701e4731f61e9551fb4900c7880191fa357"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-cholponata-petroglyph-detail-pencil"
     },
     {
       "illustrationId": "tashkent-broadway-watercolor",
@@ -2283,9 +2406,12 @@
               "sha256": "d4e3c5a0d85cf82dc014aabb8ac420d90be7394952681024231c0e5c2a1ae2c2"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-tashkent-broadway-watercolor"
     },
     {
       "illustrationId": "ala-archa-summit-watercolor",
@@ -2332,9 +2458,12 @@
               "sha256": "c8184ee54cf177dd3c31e0e1774fa629165215d78a2a12480eb8b4a5667d6a58"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-ala-archa-summit-watercolor"
     },
     {
       "illustrationId": "bukhara-divan-begi-portal-pencil",
@@ -2389,9 +2518,12 @@
               "sha256": "c767ecf7475dd53d55f50ebc50d1298ddef7e36bbd2a60bb370ae01d8e5bdc46"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-divan-begi-portal-pencil"
     },
     {
       "illustrationId": "samarkand-bibi-khanym-watercolor",
@@ -2438,9 +2570,12 @@
               "sha256": "0d0cc7b79a8db60537b07d65445a486f7170fb7d16594dc51674c75cc8997ba3"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-samarkand-bibi-khanym-watercolor"
     },
     {
       "illustrationId": "bukhara-sitorai-pool-watercolor",
@@ -2495,9 +2630,14 @@
               "sha256": "c1e3bc546e267c4fe0089f45a5d6b95a585a895c228efc84f3da22fcc95189e3"
             }
           ],
-          "optimizeKey": null
+          "optimizeKey": null,
+          "lifecycle": "active"
         }
-      ]
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "legacy-bukhara-sitorai-pool-watercolor"
     }
-  ]
+  ],
+  "sourceRetentionPolicy": "hash-only-no-original-upload",
+  "lifecyclePolicy": "orchestrator-owned-active-archived-deletion-candidate-deleted"
 }
