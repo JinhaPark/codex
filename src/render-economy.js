@@ -8,11 +8,11 @@ export function formatEconomyNumber(value, divisor = 1, digits = 0) {
   if (!Number.isFinite(value)) return '자료 없음';
   return new Intl.NumberFormat('ko-KR', {minimumFractionDigits: digits, maximumFractionDigits: digits}).format(value / divisor);
 }
-export function renderSources(sources) {
+export function renderSources(sources, verifiedAt = '2026-10-18') {
   return `<details class="source-notes"><summary>출처와 기준일</summary><div class="bukhara-references">${sources.map(source => {
     const [name, url] = Array.isArray(source) ? source : [source.name, source.url];
     return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)} ↗</a>`;
-  }).join('')}</div><p>자료 확인: 2026-10-18. 발표연도와 통계 기준연도는 다를 수 있습니다.</p></details>`;
+  }).join('')}</div><p>자료 확인: ${escapeHtml(verifiedAt)}. 발표연도와 통계 기준연도는 다를 수 있습니다.</p></details>`;
 }
 export function renderFxNote() {
   return `<p class="data-note">원화 환산: NBKR ${fx.effectiveDate} 공식 환율을 교차 적용했습니다. 같은 원자료에 같은 환율을 적용한 명목 비교이며 현지 구매력이나 실제 환전액을 뜻하지 않습니다. <a href="${fx.urls[0]}" target="_blank" rel="noopener noreferrer">환율 출처 ↗</a></p>`;
