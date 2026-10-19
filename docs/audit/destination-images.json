@@ -322,10 +322,13 @@
     "visits": [
       "2026-10-19 알마티 → 차른 협곡 → 알마티"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
-    "requestNumber": 17
+    "classification": "확보",
+    "imageIds": [
+      "charyn-canyon-watercolor"
+    ],
+    "needed": "2026-10-19 첨부 사진 변환·통합 완료; 추가 사진 불필요",
+    "requestNumber": 17,
+    "photoAvailability": "processed-user-photo"
   },
   {
     "place": "루나 캐니언",
@@ -333,10 +336,13 @@
     "visits": [
       "2026-10-19 알마티 → 차른 협곡 → 알마티"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
-    "requestNumber": 18
+    "classification": "확보",
+    "imageIds": [
+      "lunar-canyon-watercolor"
+    ],
+    "needed": "2026-10-19 첨부 사진 변환·통합 완료; 추가 사진 불필요",
+    "requestNumber": 18,
+    "photoAvailability": "processed-user-photo"
   },
   {
     "place": "블랙 캐니언",
@@ -344,10 +350,13 @@
     "visits": [
       "2026-10-19 알마티 → 차른 협곡 → 알마티"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
-    "requestNumber": 19
+    "classification": "확보",
+    "imageIds": [
+      "black-canyon-watercolor"
+    ],
+    "needed": "2026-10-19 첨부 사진 변환·통합 완료; 추가 사진 불필요",
+    "requestNumber": 19,
+    "photoAvailability": "processed-user-photo"
   },
   {
     "place": "오이 카라가이",

@@ -1610,5 +1610,122 @@
     ],
     "width": 1200,
     "height": 800
+  },
+  {
+    "id": "charyn-canyon-watercolor",
+    "original": "IMG_9190.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 70388,
+        "quality": 88,
+        "file": "charyn-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 195870,
+        "quality": 88,
+        "file": "charyn-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 234828,
+        "quality": 76,
+        "file": "charyn-canyon-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:10:0",
+    "caption": "차른 협곡에는 붉은 퇴적층과 성곽을 닮은 절벽이 이어집니다.",
+    "alt": "붉은 수평 퇴적층의 절벽과 황토빛 구릉, 멀리 푸른 산 능선과 전경의 오솔길이 보이는 차른 협곡",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "id": "black-canyon-watercolor",
+    "original": "IMG_9223.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 68342,
+        "quality": 88,
+        "file": "black-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 190930,
+        "quality": 88,
+        "file": "black-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 225392,
+        "quality": 76,
+        "file": "black-canyon-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:10:1",
+    "caption": "블랙 캐니언에서는 어두운 암벽 너머로 완만한 황토빛 구릉이 펼쳐집니다.",
+    "alt": "그늘진 회갈색 암벽의 깊은 침식 골짜기 뒤로 둥근 황토빛 구릉과 푸른 하늘이 이어지는 블랙 캐니언",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "style": "watercolor",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "width": 1086,
+    "height": 1448,
+    "id": "lunar-canyon-watercolor",
+    "original": "IMG_9255.jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 128912,
+        "quality": 88,
+        "file": "lunar-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 247596,
+        "quality": 80,
+        "file": "lunar-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 245342,
+        "quality": 56,
+        "file": "lunar-canyon-watercolor-1086.webp"
+      }
+    ],
+    "placement": "almaty:10:detail",
+    "caption": "루나 캐니언의 밝은 퇴적층 아래로 강과 가을빛 수목이 이어집니다.",
+    "alt": "밝은 황토색 층상 절벽 아래로 푸른 강이 굽이치고 노란 가을 수목과 자갈톱이 이어지는 루나 캐니언",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
   }
 ]
