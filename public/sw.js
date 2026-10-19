@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v14-kazakhstan-deep-dives';
+const CACHE = 'ca26-pages-v15-kazakhstan-divan-begi';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

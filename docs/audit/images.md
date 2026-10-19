@@ -195,3 +195,15 @@ IMG_8908 기존1점 교체: samarkand-bibi-khanym-watercolor → samarkand-gur-e
 | travel-steak-table-pencil | 1200×900 → 1448×1086 | `day:4:dinner` | travel-steak-table-pencil-480.webp · 480×360 · 65,638B · q88<br>travel-steak-table-pencil-800.webp · 800×600 · 179,710B · q88<br>travel-steak-table-pencil-1200.webp · 1200×900 · 236,952B · q78 |
 
 이번4점의 표준본·최대본 모두250KB 이하. 메타데이터 제거·실제 디코딩·입력과 편집 대상 양 축 비확대·실제 수정본 비율의 픽셀 반올림 검증을 유지했다. 원본 및 수정PNG는 커밋하지 않는다. 전체 캡션에 제작 문구를 붙이지 않았다.
+
+## 2026-10-19 IMG_8860 · 나디르 디반베기
+
+사용자 사진1536×1152→내장 imagegen 색연필 변환1448×1086. 기존 장8의 도상 설명 문단1(`bukhara:8:1`)에1회 연결. 원본 구도와 새 두 마리·사슴·태양 문양 보존을 시각 확인했다. 승인된 다른 그림은 재생성하지 않았다. 원본JPEG와 생성PNG는 비공개 작업영역에만 보관한다.
+
+| 파일 | 크기 | 바이트 | 품질 |
+|---|---|---|---|
+| bukhara-divan-begi-portal-pencil-480.webp | 480×360 | 85,808 | 88 |
+| bukhara-divan-begi-portal-pencil-800.webp | 800×600 | 240,606 | 88 |
+| bukhara-divan-begi-portal-pencil-1200.webp | 1200×900 | 249,654 | 60 |
+
+세 변형 모두250KB 이하.800px 표준본은240,606bytes로 세부를 유지했다.1200px는249,654bytes/q60이며 모바일에서는 srcset으로 작은 변형도 선택된다. 별도 크롭·비율 변경·업스케일 없음. 신규 및 전체117개 파일의 디코딩·규격·비율·용량·메타데이터·유일성 검증은 verify-image-assets.py 결과를 따른다.
