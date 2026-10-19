@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-19T02:44:40.037Z",
+  "checkedAt": "2026-10-19T05:49:46.977Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 44,
+  "uniqueIllustrations": 46,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -155,6 +155,14 @@
         "11. 부하라 칸국과 에미르국: 궁정과 권력"
       ]
     },
+    "bukhara-sitorai-pool-watercolor": {
+      "state": "guide",
+      "placement": "bukhara:10:detail",
+      "headings": [
+        "부하라 도시사 심층 해설",
+        "11. 부하라 칸국과 에미르국: 궁정과 권력"
+      ]
+    },
     "bukhara-chashma-ayub-watercolor": {
       "state": "guide",
       "placement": "bukhara:14:1",
@@ -169,6 +177,14 @@
       "headings": [
         "사마르칸트",
         "소그드 상인과 세계의 교차로"
+      ]
+    },
+    "samarkand-bibi-khanym-watercolor": {
+      "state": "guide",
+      "placement": "samarkand:6:detail",
+      "headings": [
+        "사마르칸트",
+        "비비하눔 모스크의 야망과 구조"
       ]
     },
     "samarkand-gur-emir-watercolor": {
@@ -358,7 +374,7 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 117,
+  "decodedAssetUrls": 122,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
@@ -383,19 +399,20 @@
   "offlineAllGuideIllustrations": true,
   "offlineSamarkandHotel": true,
   "offlineArrivalDinner": true,
-  "cacheUpgradeFixture": "v13 cache name/current app → v14; old cache removed",
+  "cacheUpgradeFixture": "v15 cache name/current app → v16; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
     "bukhara-poi-kalyan-watercolor-375.png",
     "tashkent-minor-portrait-watercolor-375.png",
     "cholponata-petroglyph-detail-pencil-375.png",
+    "samarkand-bibi-khanym-watercolor-375.png",
+    "bukhara-sitorai-pool-watercolor-375.png",
     "economy-375.png",
     "education-375.png",
     "economy-390.png",
     "education-390.png",
     "economy-430.png",
-    "education-430.png",
-    "divan-begi-375.png"
+    "education-430.png"
   ],
   "limits": [
     "Local production build, not deployed PR",

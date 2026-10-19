@@ -1532,5 +1532,83 @@
         "file": "bukhara-divan-begi-portal-pencil-1200.webp"
       }
     ]
+  },
+  {
+    "id": "samarkand-bibi-khanym-watercolor",
+    "original": "IMG_9082.jpeg",
+    "placement": "samarkand:6:detail",
+    "caption": "사마르칸트 비비하눔 모스크 — 거대한 타일 아치와 미나레트",
+    "alt": "관람객 없이 보이는 비비하눔 모스크의 청색 타일 입구와 완전한 왼쪽 탑 상단, 푸른 하늘과 오른쪽 미나레트",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "framingEdit": "outpaint-top-and-clean-foreground",
+    "sourceKind": "user-supplied-travel-photo",
+    "style": "watercolor",
+    "generatedWidth": 1586,
+    "generatedHeight": 992,
+    "revision": "2026-10-19-bibi-mohi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 300,
+        "bytes": 56538,
+        "quality": 88,
+        "file": "samarkand-bibi-khanym-watercolor-480.webp"
+      },
+      {
+        "width": 590,
+        "height": 369,
+        "bytes": 87686,
+        "quality": 88,
+        "file": "samarkand-bibi-khanym-watercolor-590.webp"
+      }
+    ],
+    "width": 590,
+    "height": 369
+  },
+  {
+    "id": "bukhara-sitorai-pool-watercolor",
+    "original": "Harem of Sitorai Mokhi-Khosa Palace 01.jpg",
+    "placement": "bukhara:10:detail",
+    "caption": "부하라 시토라이 모히 호사 — 연못에 비친 궁전 건물",
+    "alt": "청록색 창과 아치 회랑이 있는 크림색 이층 건물과 작은 돔 탑, 연못 수면에 비친 건물과 나무",
+    "sourceWidth": 4290,
+    "sourceHeight": 2860,
+    "sourceKind": "wikimedia-commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harem_of_Sitorai_Mokhi-Khosa_Palace_01.jpg",
+    "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Harem_of_Sitorai_Mokhi-Khosa_Palace_01.jpg&oldid=1153097626",
+    "creator": "Bernard Gagnon",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Watercolor and colored-pencil style conversion; incidental visitors removed; resized and WebP encoded.",
+    "style": "watercolor",
+    "generatedWidth": 1536,
+    "generatedHeight": 1024,
+    "revision": "2026-10-19-bibi-mohi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 320,
+        "bytes": 50176,
+        "quality": 88,
+        "file": "bukhara-sitorai-pool-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 533,
+        "bytes": 143838,
+        "quality": 88,
+        "file": "bukhara-sitorai-pool-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "bytes": 208568,
+        "quality": 80,
+        "file": "bukhara-sitorai-pool-watercolor-1200.webp"
+      }
+    ],
+    "width": 1200,
+    "height": 800
   }
 ]

@@ -103,11 +103,13 @@
     "visits": [
       "2026-10-14 부하라 → 사마르칸트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "IMG_9073 인터넷 캡처 수채화·480/574WebP 준비 완료. 원본 출처·이용 조건 확인 대기이며 미게시; 사진 재요청 대신 원본 페이지 주소 필요",
+    "classification": "확보",
+    "imageIds": [
+      "bukhara-sitorai-pool-watercolor"
+    ],
+    "needed": "추가 사진 불필요; 2026-10-19 별도 PR 반영",
     "requestNumber": 3,
-    "photoAvailability": "candidate-prepared-source-review"
+    "photoAvailability": "licensed-cc0-replacement"
   },
   {
     "place": "레기스탄 광장",
@@ -130,10 +132,13 @@
     "visits": [
       "2026-10-15 사마르칸트 → 타슈켄트"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "IMG_8908은 구르에미르로 정정. 비비하눔 전경 또는 입구 사진 필요",
-    "requestNumber": 4
+    "classification": "확보",
+    "imageIds": [
+      "samarkand-bibi-khanym-watercolor"
+    ],
+    "needed": "추가 사진 불필요; 2026-10-19 별도 PR 반영",
+    "requestNumber": 4,
+    "photoAvailability": "processed-user-photo"
   },
   {
     "place": "아프라시압 박물관",
