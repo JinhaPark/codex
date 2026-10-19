@@ -1,0 +1,3299 @@
+{
+  "retrievedAt": "2026-10-19",
+  "indicators": {
+    "NY.GDP.PCAP.KD": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.PCAP.KD?date=1991:2024&format=json&per_page=200",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 200,
+          "total": 102,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 11872.7842626298,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2023",
+            "value": 11453.3952725363,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2022",
+            "value": 11058.3482413407,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2021",
+            "value": 10873.3915275276,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2020",
+            "value": 10565.0359816235,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2019",
+            "value": 10989.6840718388,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2018",
+            "value": 10670.2120148279,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2017",
+            "value": 10404.2718646317,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2016",
+            "value": 10151.423313302,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2015",
+            "value": 10196.1226255982,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2014",
+            "value": 10226.7100539683,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2013",
+            "value": 9959.72586930534,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2012",
+            "value": 9531.91477617058,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2011",
+            "value": 9223.3021336315,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2010",
+            "value": 8704.70655484556,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2009",
+            "value": 8218.39912556048,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2008",
+            "value": 8216.52181589585,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2007",
+            "value": 8036.87599811505,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2006",
+            "value": 7450.39687062615,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2005",
+            "value": 6787.4115548789,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2004",
+            "value": 6233.29439373307,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2003",
+            "value": 5724.43199248054,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2002",
+            "value": 5267.6990320263,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2001",
+            "value": 4822.52862802669,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2000",
+            "value": 4269.33016782791,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1999",
+            "value": 3899.65723139778,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1998",
+            "value": 3750.56494562659,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1997",
+            "value": 3728.96386519689,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1996",
+            "value": 3583.36908423331,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1995",
+            "value": 3498.51454364229,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1994",
+            "value": 3740.97810892024,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1993",
+            "value": 4223.1282023154,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1992",
+            "value": 4635.42154654073,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1991",
+            "value": 4910.15324119135,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 1423.58624650541,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2023",
+            "value": 1298.25724482211,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2022",
+            "value": 1212.17812721768,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2021",
+            "value": 1132.5546781282,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2020",
+            "value": 1093.32856461422,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2019",
+            "value": 1201.87701429721,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2018",
+            "value": 1175.0712778747,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2017",
+            "value": 1157.18275758067,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2016",
+            "value": 1128.3161612818,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2015",
+            "value": 1105.65193844261,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2014",
+            "value": 1088.58214229508,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2013",
+            "value": 1069.78404438716,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2012",
+            "value": 985.8472865972,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2011",
+            "value": 1005.4831781815,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2010",
+            "value": 962.764789828724,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2009",
+            "value": 981.220904665529,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2008",
+            "value": 966.409971184817,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2007",
+            "value": 900.02796489729,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2006",
+            "value": 837.138026647346,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2005",
+            "value": 820.709519437592,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2004",
+            "value": 831.482103944381,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2003",
+            "value": 786.350474964134,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2002",
+            "value": 742.44300111832,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2001",
+            "value": 749.423779561565,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2000",
+            "value": 718.342832397662,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1999",
+            "value": 689.414278205464,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1998",
+            "value": 675.058248147575,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1997",
+            "value": 671.25000816306,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1996",
+            "value": 619.667768615001,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1995",
+            "value": 587.298180667228,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1994",
+            "value": 627.220989930123,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1993",
+            "value": 784.564919201316,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1992",
+            "value": 928.31552055094,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1991",
+            "value": 1089.90005451003,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 4477.90745486742,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2023",
+            "value": 4281.20542121225,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2022",
+            "value": 4109.08421031655,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2021",
+            "value": 3951.99657327359,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2020",
+            "value": 3723.82133264406,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2019",
+            "value": 3733.50435754861,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2018",
+            "value": 3559.85436594803,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2017",
+            "value": 3425.78819696408,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2016",
+            "value": 3327.90932206401,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2015",
+            "value": 3172.89899391083,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2014",
+            "value": 2990.56339751192,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2013",
+            "value": 2823.00205379328,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2012",
+            "value": 2657.09909084172,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2011",
+            "value": 2512.68783806993,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2010",
+            "value": 2359.64199067641,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2009",
+            "value": 2228.0552685669,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2008",
+            "value": 2095.38214534409,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2007",
+            "value": 1951.57878907892,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2006",
+            "value": 1807.87328626177,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2005",
+            "value": 1704.33893207214,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2004",
+            "value": 1613.64273882937,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2003",
+            "value": 1520.35493285443,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2002",
+            "value": 1476.49258739973,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2001",
+            "value": 1437.5947280451,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2000",
+            "value": 1397.01202350998,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1999",
+            "value": 1362.51315204654,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1998",
+            "value": 1324.80194060935,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1997",
+            "value": 1290.28380529458,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1996",
+            "value": 1247.8810920149,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1995",
+            "value": 1250.27933587957,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1994",
+            "value": 1287.14935182537,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1993",
+            "value": 1387.10439786651,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1992",
+            "value": 1452.98873488236,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.KD",
+              "value": "GDP per capita (constant 2015 US$)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1991",
+            "value": 1677.00705207512,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+          }
+        ]
+      ]
+    },
+    "NY.GDP.PCAP.PP.KD": {
+      "url": "https://api.worldbank.org/v2/country/KAZ;UZB;KGZ/indicator/NY.GDP.PCAP.PP.KD?date=1991:2024&format=json&per_page=200",
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": 200,
+          "total": 102,
+          "sourceid": "2",
+          "lastupdated": "2026-10-08"
+        },
+        [
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2024",
+            "value": 35973.9633287017,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2023",
+            "value": 34703.2349286604,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2022",
+            "value": 33506.2614893237,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2021",
+            "value": 32945.8515725823,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2020",
+            "value": 32011.5491499004,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2019",
+            "value": 33298.2123695035,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2018",
+            "value": 32330.2274546567,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2017",
+            "value": 31524.4416339794,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2016",
+            "value": 30758.3227260598,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2015",
+            "value": 30893.7594851041,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2014",
+            "value": 30986.4379168995,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2013",
+            "value": 30177.4887221736,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2012",
+            "value": 28881.2417563728,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2011",
+            "value": 27946.1603432944,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2010",
+            "value": 26374.8407672795,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2009",
+            "value": 24901.3527260084,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2008",
+            "value": 24895.6645683245,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2007",
+            "value": 24351.3464102542,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2006",
+            "value": 22574.3429577665,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2005",
+            "value": 20565.5294470866,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2004",
+            "value": 18886.5811908122,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2003",
+            "value": 17344.752672995,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2002",
+            "value": 15960.8738450013,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2001",
+            "value": 14612.0290050498,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "2000",
+            "value": 12935.864368308,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1999",
+            "value": 11815.7732115429,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1998",
+            "value": 11364.0307809315,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1997",
+            "value": 11298.5805497095,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1996",
+            "value": 10857.4353898737,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1995",
+            "value": 10600.3302270095,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1994",
+            "value": 11334.9831283773,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1993",
+            "value": 12795.8746425372,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1992",
+            "value": 14045.1035780375,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KZ",
+              "value": "Kazakhstan"
+            },
+            "countryiso3code": "KAZ",
+            "date": "1991",
+            "value": 14877.5273541269,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2024",
+            "value": 7210.57669830499,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2023",
+            "value": 6575.77541290499,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2022",
+            "value": 6139.77788825006,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2021",
+            "value": 5736.47883415154,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2020",
+            "value": 5537.79547319377,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2019",
+            "value": 6087.60193826927,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2018",
+            "value": 5951.82876758606,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2017",
+            "value": 5861.22200040503,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2016",
+            "value": 5715.01041179003,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2015",
+            "value": 5600.2143342846,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2014",
+            "value": 5513.7544695252,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2013",
+            "value": 5418.54061993935,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2012",
+            "value": 4993.39431683528,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2011",
+            "value": 5092.85165751678,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2010",
+            "value": 4876.47964886483,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2009",
+            "value": 4969.96132720374,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2008",
+            "value": 4894.9427801376,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2007",
+            "value": 4558.71267894172,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2006",
+            "value": 4240.17017797554,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2005",
+            "value": 4156.95849230116,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2004",
+            "value": 4211.52248307857,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2003",
+            "value": 3982.92722017802,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2002",
+            "value": 3760.53239965257,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2001",
+            "value": 3795.89059344129,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "2000",
+            "value": 3638.46314292227,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1999",
+            "value": 3491.93773268741,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1998",
+            "value": 3419.22330736215,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1997",
+            "value": 3399.93427126665,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1996",
+            "value": 3138.66615671114,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1995",
+            "value": 2974.71163891294,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1994",
+            "value": 3176.92381882726,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1993",
+            "value": 3973.88323931033,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1992",
+            "value": 4701.99138098658,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "KG",
+              "value": "Kyrgyz Republic"
+            },
+            "countryiso3code": "KGZ",
+            "date": "1991",
+            "value": 5520.42979891313,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2024",
+            "value": 10997.1707291644,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2023",
+            "value": 10514.0955721447,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2022",
+            "value": 10091.3877869999,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2021",
+            "value": 9705.60054565692,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2020",
+            "value": 9145.23119844239,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2019",
+            "value": 9169.01147508351,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2018",
+            "value": 8742.5491991216,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2017",
+            "value": 8413.29975299494,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2016",
+            "value": 8172.9216949615,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2015",
+            "value": 7792.23605983713,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2014",
+            "value": 7344.44304405623,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2013",
+            "value": 6932.93371228586,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2012",
+            "value": 6525.4971525889,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2011",
+            "value": 6170.84149747534,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2010",
+            "value": 5794.98037704358,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2009",
+            "value": 5471.82013683888,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2008",
+            "value": 5145.99183378479,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2007",
+            "value": 4792.8290951141,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2006",
+            "value": 4439.90667205623,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2005",
+            "value": 4185.63947675734,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2004",
+            "value": 3962.90117061128,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2003",
+            "value": 3733.79819347394,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2002",
+            "value": 3626.07785614929,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2001",
+            "value": 3530.5496647712,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "2000",
+            "value": 3430.88370808896,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1999",
+            "value": 3346.1588710371,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1998",
+            "value": 3253.54493589925,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1997",
+            "value": 3168.77278928055,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1996",
+            "value": 3064.63712278537,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1995",
+            "value": 3070.52690445141,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1994",
+            "value": 3161.07497053576,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1993",
+            "value": 3406.55184062183,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1992",
+            "value": 3568.35538610457,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          },
+          {
+            "indicator": {
+              "id": "NY.GDP.PCAP.PP.KD",
+              "value": "GDP per capita, PPP (constant 2021 international $)"
+            },
+            "country": {
+              "id": "UZ",
+              "value": "Uzbekistan"
+            },
+            "countryiso3code": "UZB",
+            "date": "1991",
+            "value": 4118.51585848122,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+          }
+        ]
+      ]
+    }
+  }
+}
