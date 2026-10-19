@@ -3,12 +3,16 @@ import fs from 'node:fs';
 import test from 'node:test';
 
 const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
+const lineage = JSON.parse(fs.readFileSync(new URL('../docs/image-lineage.json', import.meta.url)));
 
 test('published illustration variants are complete WebP files with the recorded sizes', () => {
   assert.ok(artwork.length > 0);
   const expectedFiles = artwork.flatMap(art => art.variants.map(v => v.file)).sort();
   assert.equal(new Set(expectedFiles).size, expectedFiles.length);
-  assert.deepEqual(fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).sort(), expectedFiles);
+  const retainedFiles = lineage.images.flatMap(image => image.revisions
+    .filter(revision => ['archived', 'deletion-candidate'].includes(revision.lifecycle))
+    .flatMap(revision => revision.variants.map(v => v.file.replace(/^public\/illustrations\//, ''))));
+  assert.deepEqual(fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).sort(), [...new Set([...expectedFiles, ...retainedFiles])].sort());
   for (const art of artwork) {
     assert.ok(art.variants.length >= 1 && art.variants.length <= 3);
     assert.equal(new Set(art.variants.map(v => v.width)).size, art.variants.length);

@@ -494,8 +494,8 @@
       "sourceAvailability": "not-recovered",
       "sourceWidth": 1080,
       "sourceHeight": 1440,
-      "activeRevisionId": "legacy-travel-meal-tray-pencil",
-      "placement": "day:1:tip",
+      "activeRevisionId": null,
+      "placement": null,
       "revisions": [
         {
           "revisionId": "legacy-travel-meal-tray-pencil",
@@ -539,10 +539,14 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "사용자 요청으로 식판 일러스트를 가이드 게시에서 제외했습니다.",
+          "lifecycleChangedAt": "2026-10-19T17:02:48Z"
         }
       ],
-      "lifecycle": "active",
+      "lifecycle": "archived",
+      "lifecycleReason": "사용자 요청으로 식판 일러스트를 가이드 게시에서 제외했습니다.",
+      "lifecycleChangedAt": "2026-10-19T17:02:48Z",
       "lastPublishedRevisionId": "legacy-travel-meal-tray-pencil"
     },
     {

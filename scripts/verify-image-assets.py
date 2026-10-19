@@ -10,7 +10,18 @@ artwork = json.loads((ROOT / 'src/illustrations.json').read_text())
 asset_dir = ROOT / 'public/illustrations'
 expected = [v['file'] for a in artwork for v in a['variants']]
 assert len(expected) == len(set(expected))
-assert sorted(expected) == sorted(p.name for p in asset_dir.iterdir())
+lineage = json.loads((ROOT / 'docs/image-lineage.json').read_text())
+retained = [v for image in lineage['images'] for revision in image['revisions']
+            if revision['lifecycle'] in ('archived', 'deletion-candidate') for v in revision['variants']]
+assert sorted(set(expected) | {Path(v['file']).name for v in retained}) == sorted(p.name for p in asset_dir.iterdir())
+for variant in retained:
+    path = ROOT / variant['file']
+    raw = path.read_bytes()
+    assert len(raw) == variant['bytes'] and hashlib.sha256(raw).hexdigest() == variant['sha256'], path
+    with Image.open(path) as im:
+        im.load()
+        assert im.format == 'WEBP' and im.size == (variant['width'], variant['height']), path
+        assert not any(k in im.info for k in ('exif', 'xmp', 'icc_profile')), path
 hashes = set()
 for art in artwork:
     assert art['width'] <= art['sourceWidth']

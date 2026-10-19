@@ -4,8 +4,8 @@
     "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
     "style": "watercolor",
     "placement": "geography:1:0",
-    "caption": "설산 아래 가을빛 농경지",
-    "alt": "눈 덮인 산봉우리와 푸른 하늘 아래 주황빛 농경지와 마른 풀, 돌이 이어지는 풍경",
+    "caption": "텐산산맥 아래 가을빛 포도밭",
+    "alt": "눈 덮인 텐산산맥과 푸른 하늘 아래 가을빛 포도밭과 마른 풀, 돌이 이어지는 풍경",
     "sourceWidth": 1080,
     "sourceHeight": 1440,
     "width": 1080,
@@ -294,42 +294,6 @@
     "editInputWidth": 1200,
     "editInputHeight": 900,
     "revision": "2026-10-19-remove-people-and-arrival-dinner"
-  },
-  {
-    "id": "travel-meal-tray-pencil",
-    "original": "IMG_7B1EB00F-DC20-4F6C-9477-4C826E74FA78.jpeg",
-    "style": "colored-pencil",
-    "placement": "day:1:tip",
-    "caption": "깨가 뿌려진 갈색 반찬과 잎채소를 담은 식판",
-    "alt": "검은 식판에 담긴 깨가 뿌려진 갈색 반찬과 초록색 잎채소, 얇게 썬 마늘",
-    "sourceWidth": 1080,
-    "sourceHeight": 1440,
-    "width": 1080,
-    "height": 1440,
-    "variants": [
-      {
-        "width": 480,
-        "height": 640,
-        "bytes": 110564,
-        "quality": 84,
-        "file": "travel-meal-tray-pencil-480.webp"
-      },
-      {
-        "width": 800,
-        "height": 1067,
-        "bytes": 249360,
-        "quality": 80,
-        "file": "travel-meal-tray-pencil-800.webp"
-      },
-      {
-        "width": 1080,
-        "height": 1440,
-        "bytes": 299800,
-        "quality": 72,
-        "file": "travel-meal-tray-pencil-1080.webp"
-      }
-    ],
-    "captionProvenance": "그림에서 관찰되는 식재료의 색과 형태만 설명; 요리명·식당·촬영지는 미확인"
   },
   {
     "id": "white-honey-jar-pencil",
@@ -846,7 +810,7 @@
     "original": "IMG_8907.jpeg",
     "style": "colored-pencil",
     "placement": "history:0:2",
-    "caption": "유골함 전시 — 토제 용기와 내부 유골",
+    "caption": "조로아스터교 토제유골함",
     "alt": "가로로 놓인 갈색 토제 유골함 안에 두개골과 여러 뼈가 드러나 있는 박물관 전시",
     "sourceWidth": 1536,
     "sourceHeight": 1152,

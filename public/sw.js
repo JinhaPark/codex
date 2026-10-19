@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v19-canyon-illustrations';
+const CACHE = 'ca26-pages-v20-caption-and-selection';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
