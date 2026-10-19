@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v17-startup-loading';
+const CACHE = 'ca26-pages-v18-canyon-explanations';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
