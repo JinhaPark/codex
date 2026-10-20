@@ -1691,5 +1691,197 @@
     "alt": "밝은 황토색 층상 절벽 아래로 푸른 강이 굽이치고 노란 가을 수목과 자갈톱이 이어지는 루나 캐니언",
     "sourceKind": "user-travel-photo",
     "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "id": "almaty-arbat-watercolor",
+    "original": "IMG_9332.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 132604,
+        "quality": 88,
+        "file": "almaty-arbat-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 221196,
+        "quality": 76,
+        "file": "almaty-arbat-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 243748,
+        "quality": 48,
+        "file": "almaty-arbat-watercolor-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "placement": "almaty:9:0",
+    "caption": "알마티 아르바트 거리 — 가을 가로수와 보행로",
+    "alt": "가을 가로수와 색색의 현수막 사이로 보행로가 길게 이어지는 알마티 아르바트 거리",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-green-bazaar-watercolor",
+    "original": "IMG_9330.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 86908,
+        "quality": 88,
+        "file": "almaty-green-bazaar-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 220250,
+        "quality": 88,
+        "file": "almaty-green-bazaar-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 244090,
+        "quality": 68,
+        "file": "almaty-green-bazaar-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:8:0",
+    "caption": "알마티 그린 바자르 — 과일 매대와 시장 풍경",
+    "alt": "그린 바자르의 층층이 쌓인 과일과 멜론, 매대 사이를 오가는 상인과 손님",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-ascension-interior-pencil",
+    "original": "IMG_9304.jpeg",
+    "style": "colored-pencil",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1000,
+    "height": 1333,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 146100,
+        "quality": 88,
+        "file": "almaty-ascension-interior-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 248200,
+        "quality": 76,
+        "file": "almaty-ascension-interior-pencil-800.webp"
+      },
+      {
+        "width": 1000,
+        "height": 1333,
+        "bytes": 240354,
+        "quality": 48,
+        "file": "almaty-ascension-interior-pencil-1000.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "placement": "almaty:7:0",
+    "caption": "젠코프 승천 성당 — 금빛 성화벽과 샹들리에",
+    "alt": "젠코프 승천 성당 내부의 금빛 성화벽과 매달린 샹들리에, 청색과 붉은색 스테인드글라스",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-panfilov-flame-watercolor",
+    "original": "IMG_9297.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 84612,
+        "quality": 88,
+        "file": "almaty-panfilov-flame-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 214956,
+        "quality": 88,
+        "file": "almaty-panfilov-flame-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 235332,
+        "quality": 72,
+        "file": "almaty-panfilov-flame-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "editInputWidth": 1448,
+    "editInputHeight": 1086,
+    "placement": "almaty:6:0",
+    "caption": "판필로프 공원 — 영원의 불꽃과 추모의 벽",
+    "alt": "판필로프 공원의 추모 공간에서 타오르는 영원의 불꽃과 붉은 기념벽, 뒤편의 가을 숲",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "oi-qaragai-gondola-watercolor",
+    "original": "IMG_9271.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 64884,
+        "quality": 88,
+        "file": "oi-qaragai-gondola-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 176120,
+        "quality": 88,
+        "file": "oi-qaragai-gondola-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 249146,
+        "quality": 80,
+        "file": "oi-qaragai-gondola-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "day:8:tip",
+    "caption": "오이 카라가이 — 가을 숲 앞 곤돌라 승강장",
+    "alt": "오이 카라가이 표기가 있는 곤돌라와 승강장 구조물 뒤로 가을 산비탈이 보이는 풍경",
+    "sourceKind": "user-travel-photo"
   }
 ]

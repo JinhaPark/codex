@@ -364,9 +364,11 @@
     "visits": [
       "2026-10-20 알마티 → 귀국 항공편"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "부분 확보",
+    "imageIds": [
+      "oi-qaragai-gondola-watercolor"
+    ],
+    "needed": "곤돌라와 승강장 확보. 숲·산악 리조트 전경이나 케이블카에서 본 풍경은 선택 보완입니다.",
     "requestNumber": 20
   },
   {
@@ -375,9 +377,11 @@
     "visits": [
       "2026-10-20 알마티 → 귀국 항공편"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "almaty-panfilov-flame-watercolor"
+    ],
+    "needed": "영원의 불꽃과 추모 공간 확보. 공원 산책로 또는 전쟁 기념 조각상은 선택 보완입니다.",
     "requestNumber": 21
   },
   {
@@ -386,9 +390,11 @@
     "visits": [
       "2026-10-20 알마티 → 귀국 항공편"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "부분 확보",
+    "imageIds": [
+      "almaty-ascension-interior-pencil"
+    ],
+    "needed": "내부 확보. 색색의 돔과 목조 외관 전체가 보이는 사진은 선택 보완입니다.",
     "requestNumber": 22
   },
   {
@@ -397,9 +403,11 @@
     "visits": [
       "2026-10-20 알마티 → 귀국 항공편"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "almaty-green-bazaar-watercolor"
+    ],
+    "needed": "시장 내부 전경 확보. 추가 사진은 필수가 아닙니다.",
     "requestNumber": 23
   },
   {
@@ -408,9 +416,11 @@
     "visits": [
       "2026-10-20 알마티 → 귀국 항공편"
     ],
-    "classification": "누락",
-    "imageIds": [],
-    "needed": "장소가 식별되는 전경 또는 입구 사진",
+    "classification": "확보",
+    "imageIds": [
+      "almaty-arbat-watercolor"
+    ],
+    "needed": "거리 전경 확보. 추가 사진은 필수가 아닙니다.",
     "requestNumber": 24
   },
   {

@@ -54,7 +54,12 @@ rejects('a persisted label without a receipt is rejected', d => d.images.at(-1).
 rejects('unpublishing must remove manifest placement', d => d.images[0].lifecycle = 'archived', 'manifest-lineage-bijection');
 rejects('active assets cannot jump directly to deleted', d => d.images[0].lifecycle = 'deleted', 'illegal-lifecycle-transition');
 rejects('revision history cannot disappear', d => d.images[0].revisions = [], 'revision-tombstone-removed');
-rejects('completed recipe cannot be overwritten', d => d.images.at(-1).revisions[0].recipe.prompt += ' changed', 'revision-overwritten');
+rejects('completed recipe cannot be overwritten', d => {
+  // New image batches are absent from the baseline; mutate a completed baseline revision.
+  const before = previous.images.flatMap(i => i.revisions).findLast(r => r.recipe?.prompt);
+  const current = d.images.flatMap(i => i.revisions).find(r => r.revisionId === before.revisionId);
+  current.recipe.prompt += ' changed';
+}, 'revision-overwritten');
 rejects('original artifact uploads are forbidden', d => d.images[0].sourceArtifactRef = 'remote:original.jpeg', 'original-upload-forbidden');
 rejects('legacy exemption cannot be granted to a new revision', d => { const r = structuredClone(d.images[0].revisions[0]); r.revisionId += '-new'; r.lifecycle = 'archived'; d.images[0].revisions.push(r); }, 'new-legacy-bypass');
 
@@ -70,7 +75,7 @@ test('safe master receipt is accepted only as historical verification, with remo
   r.artifactRef = `private-master-v1:private-test:${r.outputSha256}`;
   r.masterAvailability = 'private-verified';
   r.masterCache = { schemaVersion: 1, backendId: 'private-test', sha256: r.outputSha256,
-    bytes: 123456, width: 1086, height: 1448, format: 'PNG', verifiedAt: '2026-10-20T00:00:00Z',
+    bytes: 123456, width: r.optimizationRecipe.generatedDimensions[0], height: r.optimizationRecipe.generatedDimensions[1], format: 'PNG', verifiedAt: '2026-10-20T00:00:00Z',
     verification: 'download-sha256-decode', retention: 'until-explicit-delete' };
   assert.deepEqual(run(data).errors, []);
   assert.ok(run(data).warnings.some(w => w.startsWith('master-remote-recheck-required:')));
