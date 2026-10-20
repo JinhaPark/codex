@@ -49,6 +49,8 @@ rejects('missing editing parent is rejected', d => d.images.at(-1).revisions[0].
 rejects('editing cycles are rejected', d => { const r = d.images.at(-1).revisions[0]; r.parentRevisionId = r.revisionId; }, 'parent-cycle');
 rejects('another source is not an editing parent', d => d.images.at(-1).revisions[0].parentRevisionId = d.images.at(-2).activeRevisionId, 'cross-source-edit-parent');
 rejects('unknown master availability must be explicit', d => delete d.images.at(-1).revisions[0].masterAvailability, 'master-availability-required');
+rejects('a remote URL alone cannot prove master persistence', d => d.images.at(-1).revisions[0].artifactRef = 'https://example.invalid/private.png?token=secret', 'master-receipt-schema');
+rejects('a persisted label without a receipt is rejected', d => d.images.at(-1).revisions[0].masterAvailability = 'private-verified', 'master-receipt-schema');
 rejects('unpublishing must remove manifest placement', d => d.images[0].lifecycle = 'archived', 'manifest-lineage-bijection');
 rejects('active assets cannot jump directly to deleted', d => d.images[0].lifecycle = 'deleted', 'illegal-lifecycle-transition');
 rejects('revision history cannot disappear', d => d.images[0].revisions = [], 'revision-tombstone-removed');
@@ -61,6 +63,22 @@ test('explicit legacy unknowns and unpersisted masters are notices, not errors',
   assert.deepEqual(result.errors, []);
   assert.ok(result.warnings.some(w => w.startsWith('legacy-history-unknown:')));
   assert.ok(result.warnings.some(w => w.startsWith('master-unpersisted:')));
+});
+
+test('safe master receipt is accepted only as historical verification, with remote recheck notice', () => {
+  const data = structuredClone(lineage), r = data.images.at(-1).revisions[0];
+  r.artifactRef = `private-master-v1:private-test:${r.outputSha256}`;
+  r.masterAvailability = 'private-verified';
+  r.masterCache = { schemaVersion: 1, backendId: 'private-test', sha256: r.outputSha256,
+    bytes: 123456, width: 1086, height: 1448, format: 'PNG', verifiedAt: '2026-10-20T00:00:00Z',
+    verification: 'download-sha256-decode', retention: 'until-explicit-delete' };
+  assert.deepEqual(run(data).errors, []);
+  assert.ok(run(data).warnings.some(w => w.startsWith('master-remote-recheck-required:')));
+  r.masterCache.signedUrl = 'https://example.invalid/secret';
+  assert.ok(run(data).errors.some(e => e.startsWith('master-receipt-schema:')));
+  delete r.masterCache.signedUrl;
+  r.masterCache.sha256 = '0'.repeat(64);
+  assert.ok(run(data).errors.some(e => e.startsWith('master-receipt-identity:')));
 });
 
 function archive(data, published) {

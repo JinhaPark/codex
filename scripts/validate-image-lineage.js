@@ -60,6 +60,28 @@ export function validateImageLineage({ manifest, lineage, readFile, previous, re
         if (!legacy) check(r.sourceId === image.sourceId, 'active-source-mismatch', at);
       }
       if (image.lifecycle === 'deleted') check(r.lifecycle === 'deleted', 'deleted-image-revision', at);
+      // Offline receipt validation is NOT a remote availability check. The cache
+      // tool must download/hash/decode on each reuse, including after this passes.
+      if (r.artifactRef != null || r.masterCache != null || r.masterAvailability === 'private-verified') {
+        const c = r.masterCache;
+        const keys = ['schemaVersion', 'backendId', 'sha256', 'bytes', 'width', 'height', 'format', 'verifiedAt', 'verification', 'retention'];
+        check(Boolean(c) && typeof c === 'object' && !Array.isArray(c) &&
+          Object.keys(c).length === keys.length && keys.every(k => Object.hasOwn(c, k)), 'master-receipt-schema', at);
+        check(!legacy && ['validated', 'approved'].includes(r.status) &&
+          ['style-transfer-and-cleanup', 'illustration-edit', 'illustration-generation'].includes(r.operation), 'master-receipt-provenance', at);
+        check(c?.schemaVersion === 1 && /^[a-z][a-z0-9-]{0,39}$/.test(c?.backendId || '') &&
+          hashPattern.test(c?.sha256 || '') && c?.sha256 === r.outputSha256, 'master-receipt-identity', at);
+        check(r.masterAvailability === 'private-verified' &&
+          r.artifactRef === `private-master-v1:${c?.backendId}:${r.outputSha256}`, 'master-receipt-reference', at);
+        check(c?.format === 'PNG' && Number.isInteger(c?.bytes) && c.bytes > 0 && c.bytes <= 64 * 1024 * 1024 &&
+          Number.isInteger(c?.width) && c.width > 0 && Number.isInteger(c?.height) && c.height > 0 &&
+          c.width * c.height <= 50000000, 'master-receipt-metadata', at);
+        check(c?.verification === 'download-sha256-decode' && c?.retention === 'until-explicit-delete' &&
+          typeof c?.verifiedAt === 'string' && Number.isFinite(Date.parse(c.verifiedAt)), 'master-receipt-verification', at);
+        const dimensions = r.optimizationRecipe?.generatedDimensions;
+        if (dimensions) check(equal(dimensions, [c?.width, c?.height]), 'master-receipt-dimensions', at);
+        warn('master-remote-recheck-required', at);
+      }
       if (legacy) {
         check(r.operation === 'legacy-publication-snapshot' && r.historyStatus === 'unknown' && r.parentRevisionId === null, 'legacy-marker', at);
         warn('legacy-history-unknown', at);

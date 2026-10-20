@@ -37,6 +37,7 @@ PR CI는 `github.event.pull_request.base.sha`, main push CI는 `github.event.bef
 - `legacy-verified`는 `legacy-publication-snapshot`, `historyStatus: unknown`, null 부모를 갖는 기존 이관 기록에만 사용합니다. `legacy-history-unknown` 알림을 출력하며 과거 해시·부모·시각 승인을 추정하지 않습니다. 기존 기준에 없는 revision에 이 상태를 새로 부여하면 실패합니다. 게시 WebP 해시·bytes 검사는 동일하게 수행합니다.
 - 생성 마스터의 `artifactRef: null`은 `masterAvailability`에 missing/unpersisted를 명시하면 `master-unpersisted` 알림으로 보고합니다. WebP 검증 성공은 생성 마스터 보존을 뜻하지 않습니다. 원격 마스터의 실제 접근 가능성은 이 오프라인 검사 범위 밖입니다.
 - 원본 `sourceArtifactRef`는 null이어야 합니다. 원본 JPEG·HEIC나 Base64 복사본을 생성·게시하지 않습니다.
+- 비공개 생성 마스터를 새로 보관할 때는 [비공개 마스터 캐시](private-master-cache.md)를 사용합니다. `private-verified`에는 안전한 `artifactRef`와 엄격한 `masterCache` 검증 기록이 필요합니다. 오프라인 CI는 기록의 형식·해시 대응만 검사하고 `master-remote-recheck-required`를 출력합니다. 실제 재사용은 매번 다운로드·SHA-256·디코딩 검증을 통과해야 합니다.
 - 참조 누락·순환·게시 불일치·SHA-256·bytes 불일치·불법 전환은 오류로 처리합니다. 오류 주입 fixture와 정상 archive/교체/삭제 fixture를 함께 검사하여 검증기 자체의 회귀도 확인합니다.
 
 ## 이번 검증 기준
