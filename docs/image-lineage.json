@@ -3046,6 +3046,797 @@
       "lifecycle": "active",
       "lifecycleChangedAt": "2026-10-19T13:53:11.448621+00:00",
       "lifecycleReason": "신규 변환본 검증 완료 후 가이드 배치에 등록했습니다."
+    },
+    {
+      "illustrationId": "almaty-arbat-watercolor",
+      "originalName": "IMG_9332.jpeg",
+      "sourceId": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0",
+      "sourceSha256": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "almaty-arbat-watercolor-r1-b2f1c83d7a8d",
+      "lastPublishedRevisionId": "almaty-arbat-watercolor-r1-b2f1c83d7a8d",
+      "placement": "almaty:9:0",
+      "revisions": [
+        {
+          "revisionId": "almaty-arbat-watercolor-r1-b2f1c83d7a8d",
+          "illustrationId": "almaty-arbat-watercolor",
+          "sourceId": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "name": "IMG_9332.jpeg",
+                "sha256": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0"
+              },
+              {
+                "role": "style-reference",
+                "name": "tashkent-amir-temur-watercolor-1200.webp",
+                "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
+              }
+            ],
+            "prompt": "Use case: style-transfer with precise-object-edit.\nAsset: one illustration for the existing Korean travel guide.\nInput 1 is the edit target IMG_9332.jpeg: Almaty Arbat pedestrian street. Input 2 is style reference only: existing Tashkent Amir Temur watercolor. Do not borrow its subject.\nPrimary request: transform only Input 1 into restrained transparent watercolor washes with fine colored-pencil architectural and foliage details, matching Input 2's natural clarity and delicate paper texture.\nFraming: exact portrait 3:4 aspect ratio, preserve the complete original composition and all four boundaries. No crop, outpainting, extra sky or border.\nKeep: original street vanishing point and paving pattern, tree-lined promenade with autumn foliage, storefront buildings, benches, black street lamps, colorful horizontal celebratory banners at their exact original heights, soft natural daylight. Keep only the small distant pedestrians around the far end of the street to preserve everyday street life. Preserve readable original banner lettering faithfully; if lettering is too small, retain its visual texture without inventing new words.\nRemove only: the large intrusive foreground pedestrians, the person with the yellow delivery backpack at lower left, the large gray-jacketed man and white-jacketed woman at lower right, the bicycle and close pedestrians around the near center. Reconstruct the existing paving locally where these people stood, following the original perspective. Gently simplify the many thin overhead utility/string wires, keeping minimal natural banner supports. Do not remove the actual street lamps or their poles.\nConstraints: preserve architecture, trees, relative proportions, physical perspective and source colors. No new buildings, monuments, signs, people, invented readable words, captions, watermark, or heavy saturation.",
+            "remove": [
+              "large foreground pedestrians and delivery backpack",
+              "near-center bicycle and close pedestrians",
+              "excess thin overhead utility/string wires"
+            ],
+            "preserve": [
+              "full portrait 3:4 framing",
+              "street perspective and paving",
+              "autumn trees and buildings",
+              "street lamps and benches",
+              "celebratory banners",
+              "small far-background pedestrians"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9332.jpeg",
+                "tashkent-amir-temur-watercolor-1200.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "35120023e8f6bd537fc7b0dfa1db0420cbb0473006ad23973b180f33a860a0b2",
+          "outputSha256": "b2f1c83d7a8de2f3de571bf2bbed81a514212a85f4f25fe14dea596f5e2e00a8",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "visualReview": "Compared source, generated master and 800px WebP. Large foreground people, bicycle and delivery bag removed; full 3:4 framing, street depth, trees, banners, lamps retained. Small distant pedestrians remain. Watercolor shifts leaf tones warmer and simplifies small signage; not an exact inscription record. No crop/outpaint, no added monument.",
+            "parentVisualReview": "원본과 800px 게시본을 직접 대조했습니다. 구도와 주요 피사체, 요청한 정리 범위 및 기존 화풍과의 일치를 확인했습니다. 작은 글자는 정확한 전사 자료가 아닙니다."
+          },
+          "createdAt": "2026-10-20T16:05:43.733018+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 132604,
+              "quality": 88,
+              "file": "public/illustrations/almaty-arbat-watercolor-480.webp",
+              "sha256": "7e1c973fa33dc36234cc4e658d9206b0522c0d3298d761f5cf71be92c0cbed97"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 221196,
+              "quality": 76,
+              "file": "public/illustrations/almaty-arbat-watercolor-800.webp",
+              "sha256": "50a54a1b94dd2e5bbb5236db6c0c1225c8223499c3dc27a2139637b822b84db0"
+            },
+            {
+              "width": 1086,
+              "height": 1448,
+              "bytes": 243748,
+              "quality": 48,
+              "file": "public/illustrations/almaty-arbat-watercolor-1086.webp",
+              "sha256": "f881010bbbc867b1476fad3d0d3e4a2b8449ba2aaf2ce87b29fc81179edcfbf9"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "b2f1c83d7a8de2f3de571bf2bbed81a514212a85f4f25fe14dea596f5e2e00a8",
+            "sourceDimensions": [
+              1152,
+              1536
+            ],
+            "generatedDimensions": [
+              1086,
+              1448
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "d18394449a4c6a44e1c024d301e3436c6f2cc10dbf05155445c81f0c90c9be2d",
+          "lifecycle": "active",
+          "lifecycleReason": "신규 변환본 검증 완료 후 기존 가이드에 한 번 배치했습니다.",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+          "lifecycleChangedAt": "2026-10-20T16:05:43.733018+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-20T16:05:43.733018+00:00",
+      "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
+    },
+    {
+      "illustrationId": "almaty-green-bazaar-watercolor",
+      "originalName": "IMG_9330.jpeg",
+      "sourceId": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05",
+      "sourceSha256": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "almaty-green-bazaar-watercolor-r1-ae2e91f5739a",
+      "lastPublishedRevisionId": "almaty-green-bazaar-watercolor-r1-ae2e91f5739a",
+      "placement": "almaty:8:0",
+      "revisions": [
+        {
+          "revisionId": "almaty-green-bazaar-watercolor-r1-ae2e91f5739a",
+          "illustrationId": "almaty-green-bazaar-watercolor",
+          "sourceId": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "name": "IMG_9330.jpeg",
+                "sha256": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05"
+              },
+              {
+                "role": "style-reference",
+                "name": "tashkent-amir-temur-watercolor-1200.webp",
+                "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
+              }
+            ],
+            "prompt": "Use case: style-transfer.\nAsset: one illustration for the existing Korean Central Asia travel guide.\nInput 1 is the edit target IMG_9330.jpeg, identified by the user as the Green Bazaar (Green Market) in Almaty. Input 2 is style reference only, an existing watercolor illustration. Do not borrow input 2's subject or composition.\nTransform input 1 into restrained transparent watercolor washes with fine colored-pencil details, natural clear colors and delicate paper grain matching the reference.\nFraming: preserve the exact landscape 4:3 source ratio and full uncropped composition, including all four edges. No crop, outpainting, or added space.\nKeep: the elevated viewpoint over fruit stalls; diagonal counter rows and their actual positions; piles of colorful fruit and melons; foreground chilled counters and scales; mezzanine structure, wood and metal panels, existing wall art; market vendors and shoppers in their original positions as integral everyday market life; original natural and interior lighting.\nDo not remove people wholesale, add extra people, or relocate stands. No visible intrusive fingers or window glare require removal.\nPreserve the meaning and visible shapes of existing signs without inventing new readable wording. Keep tiny unreadable text understated rather than adding false inscriptions.\nConstraints: retain source perspective, structural geometry, relative scale, patterned floor, produce arrangement and activity. No new buildings, objects, captions, decorative borders, or watermark. Make the watercolor treatment clear but restrained, not a photographic filter. Exact landscape 4:3 ratio.",
+            "remove": [],
+            "preserve": [
+              "source 4:3 full framing and perspective",
+              "fruit rows and produce arrangement",
+              "market vendors and shoppers as everyday life subject",
+              "mezzanine structure and wall art",
+              "existing sign meaning without invented readable wording"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9330.jpeg",
+                "tashkent-amir-temur-watercolor-1200.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "a776346df5ecb76e15dbd0f05518476f6f499f142bee4aa947e366bc39ea23eb",
+          "outputSha256": "ae2e91f5739ab365d705d7dc728513f51b424fb63727ff1ffb27f05cb4156b67",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "visualReview": "Generated image and 800px WebP inspected against source. Full framing, market geometry, produce stands, vendors and shoppers retained; subtle watercolor and pencil treatment matches guide. Tiny sign lettering remains illustrative and is not a transcription.",
+            "parentVisualReview": "원본과 800px 게시본을 직접 대조했습니다. 구도와 주요 피사체, 요청한 정리 범위 및 기존 화풍과의 일치를 확인했습니다. 작은 글자는 정확한 전사 자료가 아닙니다."
+          },
+          "createdAt": "2026-10-20T16:05:18.703387+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 86908,
+              "quality": 88,
+              "file": "public/illustrations/almaty-green-bazaar-watercolor-480.webp",
+              "sha256": "70c5644ff17598ac13d4e21874dc5ba8fb18d3b8ee8c5aff50fd9c1a6c5e3b18"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 220250,
+              "quality": 88,
+              "file": "public/illustrations/almaty-green-bazaar-watercolor-800.webp",
+              "sha256": "260507f7bbdb5c4ac023a6919b924adfde151c8ca45a89c61487c9768197fbc5"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 244090,
+              "quality": 68,
+              "file": "public/illustrations/almaty-green-bazaar-watercolor-1200.webp",
+              "sha256": "56177d913175563c1f20a55ee829527c07597f331faad9bef08327d3d5cfa0e2"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "ae2e91f5739ab365d705d7dc728513f51b424fb63727ff1ffb27f05cb4156b67",
+            "sourceDimensions": [
+              1536,
+              1152
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "cb9e17c5202aa5db0e9f609d6a5e2b6cebb1448159cbfbcde67cdb381126b190",
+          "lifecycle": "active",
+          "lifecycleReason": "신규 변환본 검증 완료 후 기존 가이드에 한 번 배치했습니다.",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+          "lifecycleChangedAt": "2026-10-20T16:05:18.703387+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-20T16:05:18.703387+00:00",
+      "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
+    },
+    {
+      "illustrationId": "almaty-ascension-interior-pencil",
+      "originalName": "IMG_9304.jpeg",
+      "sourceId": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f",
+      "sourceSha256": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1152,
+      "sourceHeight": 1536,
+      "activeRevisionId": "almaty-ascension-interior-pencil-r1-f67dd496229a",
+      "lastPublishedRevisionId": "almaty-ascension-interior-pencil-r1-f67dd496229a",
+      "placement": "almaty:7:0",
+      "revisions": [
+        {
+          "revisionId": "almaty-ascension-interior-pencil-r1-f67dd496229a",
+          "illustrationId": "almaty-ascension-interior-pencil",
+          "sourceId": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "sha256": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f"
+              },
+              {
+                "role": "style-reference",
+                "sha256": "0d0cc7b79a8db60537b07d65445a486f7170fb7d16594dc51674c75cc8997ba3"
+              }
+            ],
+            "prompt": "Use case: style-transfer with precise-object-edit.\nAsset: one architectural interior illustration for the existing Korean travel guide.\nInput 1: edit target IMG_9304.jpeg, user-identified Ascension Cathedral interior in Almaty.\nInput 2: style reference only, existing Bibi-Khanym watercolor/colored-pencil architectural illustration. Do not import its buildings or subject.\nPrimary request: transform Input 1 into a finely detailed colored-pencil illustration with restrained transparent watercolor washes and subtle paper grain, matching the existing guide.\nFraming: preserve exact portrait 3:4 ratio, all four boundaries and full source composition. No cropping, no outpainting, no added architecture.\nKeep: exact iconostasis arrangement and rows of religious icons, figures inside all paintings, central hanging chandelier and cross, upper stained-glass windows with red and blue borders, pale blue/cream walls, columns and moldings, gold altar ornament, lecterns, steps, existing railings, perspective and natural colored light.\nRemove only: all incidental visitors in the lower foreground, including heads, bodies, bags, arms, hands and the phone at the lower right. Reconstruct their small occluded floor and railing areas from neighboring visible geometry. Do not remove figures painted in icons or any sculpted ornament.\nConstraints: preserve proportions, window count, layout and identifiable ornaments; use fine controlled line work, natural gold and muted blue colors. No extra people, invented readable inscriptions, new ornaments, captions, border or watermark. Preserve the full portrait 3:4 framing.",
+            "remove": [
+              "incidental lower foreground visitors, bags, arms, hands and phone"
+            ],
+            "preserve": [
+              "portrait 3:4 full composition",
+              "iconostasis and religious figures in icons",
+              "hanging chandelier and cross",
+              "stained glass windows and colored natural light",
+              "columns, moldings, gold ornament, lecterns, railings and perspective"
+            ],
+            "style": "detailed colored-pencil with restrained transparent watercolor washes",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9304.jpeg",
+                "samarkand-bibi-khanym-watercolor-590.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "4eb73c62318a8e6b468d6024fb768ecddbd5fc95fb12d435cd816d2da9991a5b",
+          "outputSha256": "f67dd496229aeedbc2a21efc9ab4603ac3c94da953e219975a0a130eb833eaef",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "parentVisualReview": "원본과 800px 게시본을 직접 대조했습니다. 구도와 주요 피사체, 요청한 정리 범위 및 기존 화풍과의 일치를 확인했습니다. 작은 글자는 정확한 전사 자료가 아닙니다."
+          },
+          "createdAt": "2026-10-20T16:06:56.627641+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 640,
+              "bytes": 146100,
+              "quality": 88,
+              "file": "public/illustrations/almaty-ascension-interior-pencil-480.webp",
+              "sha256": "4e438fa64776697234e8eeba97f92053075b3efbf10b3094f6d96d42eb6112ce"
+            },
+            {
+              "width": 800,
+              "height": 1067,
+              "bytes": 248200,
+              "quality": 76,
+              "file": "public/illustrations/almaty-ascension-interior-pencil-800.webp",
+              "sha256": "0d57548cf4404072a7a05f6155cbf0a74c496a8680206869e58303a6997a0233"
+            },
+            {
+              "width": 1000,
+              "height": 1333,
+              "bytes": 240354,
+              "quality": 48,
+              "file": "public/illustrations/almaty-ascension-interior-pencil-1000.webp",
+              "sha256": "5a1db058e994010604736a7d896945d97196853d57740e38e1e66a779f034e32"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "f67dd496229aeedbc2a21efc9ab4603ac3c94da953e219975a0a130eb833eaef",
+            "sourceDimensions": [
+              1152,
+              1536
+            ],
+            "generatedDimensions": [
+              1086,
+              1448
+            ],
+            "widths": [
+              480,
+              800,
+              1000
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "b877f850eaeaf84e47a53eb18341a6503365ba8f816600e1eb6ee11632a72170",
+          "lifecycle": "active",
+          "lifecycleReason": "신규 변환본 검증 완료 후 기존 가이드에 한 번 배치했습니다.",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+          "lifecycleChangedAt": "2026-10-20T16:06:56.627641+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-20T16:06:56.627641+00:00",
+      "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
+    },
+    {
+      "illustrationId": "almaty-panfilov-flame-watercolor",
+      "originalName": "IMG_9297.jpeg",
+      "sourceId": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+      "sourceSha256": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "almaty-panfilov-flame-watercolor-r2-4aadd1b8741a",
+      "lastPublishedRevisionId": "almaty-panfilov-flame-watercolor-r2-4aadd1b8741a",
+      "placement": "almaty:6:0",
+      "revisions": [
+        {
+          "revisionId": "almaty-panfilov-flame-watercolor-r1-64188d5f4a27",
+          "illustrationId": "almaty-panfilov-flame-watercolor",
+          "sourceId": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "name": "IMG_9297.jpeg",
+                "sha256": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e"
+              },
+              {
+                "role": "style-reference",
+                "name": "tashkent-amir-temur-watercolor-1200.webp",
+                "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
+              }
+            ],
+            "prompt": "Use case: style-transfer with precise-object-edit.\nAsset: one illustration for the existing Korean Central Asia travel guide.\nInput 1 is the edit target IMG_9297.jpeg, identified by the user as the Eternal Flame in Panfilov Park, Almaty. Input 2 is style reference only, an existing watercolor illustration; do not borrow its subject.\nTransform input 1 into restrained transparent watercolor washes with fine colored-pencil detail, matching the reference's clear natural colors and delicate paper grain.\nFraming: preserve exact landscape 4:3 source ratio and full uncropped composition, including all four boundaries. No crop, no outpainting, no added sky.\nKeep: the orange eternal flame and metal wreath sculpture centered on polished dark stone; the long reddish stone memorial wall and its precise two-line Russian inscription; dense autumn trees; chain barriers and all their posts; natural late-day sunlight; real reflections of flame, inscription, trees and light on the polished stone.\nRemove only: incidental visitors at the extreme left edge including the cropped pointing arm; the two visitors near the right end of the memorial wall; the small turquoise lens-flare spot low in the foreground near the left of center. Fill these small areas with adjacent matching paving, stone or foliage.\nLettering: carefully preserve the source's existing Cyrillic letters and their placement, without replacing them with pseudo-text. The wall inscription reads 'ВЕЧНАЯ СЛАВА ПАВШИМ СМЕРТЬЮ ХРАБРЫХ' on the first line, and 'В БОРЬБЕ ЗА СВОБОДУ И НЕЗАВИСИМОСТЬ РОДИНЫ !' on the second; keep the central letters naturally obscured by the flame as in the source, do not reveal or invent hidden details.\nConstraints: retain source perspective, sculpture shape, wall geometry, natural reflections and chain geometry. Do not remove reflections or the barriers. No additional people, objects, ornaments, captions, borders or watermark. Exact landscape 4:3 aspect ratio.",
+            "remove": [
+              "incidental visitors at extreme left and right edges",
+              "small turquoise lens-flare fleck on foreground stone"
+            ],
+            "preserve": [
+              "exact source landscape 4:3 framing and perspective",
+              "eternal flame and metal wreath sculpture",
+              "memorial wall and existing Cyrillic inscription",
+              "natural reflections on polished stone",
+              "chain barriers and posts",
+              "autumn trees and sunlight"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9297.jpeg",
+                "tashkent-amir-temur-watercolor-1200.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "b68e388225eb4a5e824c6d52f9b40ae5ffac4208dc323915ca0bcd6ce91c36d1",
+          "outputSha256": "64188d5f4a2751859c3e156d04099e4089bd3d0843faa4f09e8044d096770a62",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master",
+          "status": "generated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "visualReview": "Main subject and inscription preserved; visitors removed. Tiny cyan lens-flare remained and was identified for targeted r2 correction."
+          },
+          "createdAt": null,
+          "observedAt": "2026-10-20T16:09:54.108118+00:00",
+          "variants": [],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "64188d5f4a2751859c3e156d04099e4089bd3d0843faa4f09e8044d096770a62",
+            "sourceDimensions": [
+              1536,
+              1152
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "538dea266ae0bd852e0a23cda304ae8a3efe09d1bb194bfbc54c72c45a60f3a5",
+          "optimizationStatus": "not-run",
+          "optimizationNote": "Planned recipe key only. Intermediate master was edited directly; no WebP encoding or publication occurred.",
+          "lifecycle": "archived",
+          "lifecycleReason": "렌즈플레어 잔여물을 정리한 r2의 실제 편집 입력으로 보존합니다.",
+          "lifecycleChangedAt": "2026-10-20T16:09:54.108118+00:00",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6"
+        },
+        {
+          "revisionId": "almaty-panfilov-flame-watercolor-r2-4aadd1b8741a",
+          "illustrationId": "almaty-panfilov-flame-watercolor",
+          "sourceId": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+          "parentRevisionId": "almaty-panfilov-flame-watercolor-r1-64188d5f4a27",
+          "historyStatus": "verified-edit-input",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+            "parentOutputSha256": "64188d5f4a2751859c3e156d04099e4089bd3d0843faa4f09e8044d096770a62",
+            "inputs": [
+              {
+                "role": "edit-target",
+                "name": "almaty-panfilov-flame-watercolor-r1.png",
+                "sha256": "64188d5f4a2751859c3e156d04099e4089bd3d0843faa4f09e8044d096770a62"
+              }
+            ],
+            "prompt": "Use case: precise-object-edit.\nInput 1 is the current approved-composition watercolor illustration of the Eternal Flame memorial in Panfilov Park.\nMake ONE tiny targeted correction only: remove the small bright cyan/turquoise lens-flare fleck on the top surface of the lowest foreground stone ledge, approximately x=493 y=1007 in this 1448x1086 image (about 34% from the left, 93% down). Replace just that tiny turquoise fleck with the surrounding gray mottled stone texture.\nPreserve absolutely all other pixels/appearance as closely as possible: full exact 4:3 composition, flame, metal wreath, memorial Cyrillic letters, foliage, sunlight, chain posts, chains and all natural reflections. Do not crop, outpaint, repaint broadly, alter text, add objects, or change the established watercolor-pencil style. The correction should be virtually imperceptible except that the turquoise lens-flare fleck is absent.",
+            "remove": [
+              "remaining small turquoise lens-flare fleck on foreground stone"
+            ],
+            "preserve": [
+              "exact source landscape 4:3 framing and perspective",
+              "eternal flame and metal wreath sculpture",
+              "memorial wall and existing Cyrillic inscription",
+              "natural reflections on polished stone",
+              "chain barriers and posts",
+              "autumn trees and sunlight"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "almaty-panfilov-flame-watercolor-r1.png"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "65e09ce36f6c62fe3799175bf7ab107cf24e8b684b9589e00f8a8c981c68a9c0",
+          "outputSha256": "4aadd1b8741aa3450f0441378bedf28c9883c8190ad338a5d8248021bcb5a353",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "visualReview": "Final generated image and 800px WebP inspected against source and r1. Cyan fleck removed; all incidental visitors absent. Flame, wreath, legible Cyrillic memorial wording, stone/tree/flame reflections, chain barriers, full composition and watercolor-pencil style retained. No new text added. Illustration is not a documentary transcription.",
+            "parentVisualReview": "원본과 800px 게시본을 직접 대조했습니다. 구도와 주요 피사체, 요청한 정리 범위 및 기존 화풍과의 일치를 확인했습니다. 작은 글자는 정확한 전사 자료가 아닙니다."
+          },
+          "createdAt": "2026-10-20T16:09:54.108118+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 84612,
+              "quality": 88,
+              "file": "public/illustrations/almaty-panfilov-flame-watercolor-480.webp",
+              "sha256": "dcab0ce79a1660876901714ff8d7370e3a1f5b8fb56f583ef6132ba1a3683dfd"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 214956,
+              "quality": 88,
+              "file": "public/illustrations/almaty-panfilov-flame-watercolor-800.webp",
+              "sha256": "ca72570c29948ad2af64ce706c48de37a93a882fe9b8df38d1535b498f9bdfb8"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 235332,
+              "quality": 72,
+              "file": "public/illustrations/almaty-panfilov-flame-watercolor-1200.webp",
+              "sha256": "069046d580f37e4484b5dd3d7061c8381d7488b505b9cf05e53485073767f2d0"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "4aadd1b8741aa3450f0441378bedf28c9883c8190ad338a5d8248021bcb5a353",
+            "sourceDimensions": [
+              1536,
+              1152
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "editInputDimensions": [
+              1448,
+              1086
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "cba56f3c8bd768b360fecf511bbeb9443ebf1304e27432d0f875805ce31a1f5e",
+          "lifecycle": "active",
+          "lifecycleReason": "신규 변환본 검증 완료 후 기존 가이드에 한 번 배치했습니다.",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+          "lifecycleChangedAt": "2026-10-20T16:09:54.108118+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-20T16:09:54.108118+00:00",
+      "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
+    },
+    {
+      "illustrationId": "oi-qaragai-gondola-watercolor",
+      "originalName": "IMG_9271.jpeg",
+      "sourceId": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49",
+      "sourceSha256": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only-no-original-upload",
+      "sourceWidth": 1536,
+      "sourceHeight": 1152,
+      "activeRevisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
+      "lastPublishedRevisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
+      "placement": "day:8:tip",
+      "revisions": [
+        {
+          "revisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
+          "illustrationId": "oi-qaragai-gondola-watercolor",
+          "sourceId": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49",
+          "parentRevisionId": null,
+          "historyStatus": "verified-direct-source-input",
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "sourceSha256": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49",
+            "parentOutputSha256": null,
+            "inputs": [
+              {
+                "role": "edit-target",
+                "name": "IMG_9271.jpeg",
+                "sha256": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49"
+              },
+              {
+                "role": "style-reference",
+                "name": "tashkent-amir-temur-watercolor-1200.webp",
+                "sha256": "c7bd0b7861d69da5178ea3021aa770288552a4e1db664a820bf32831af171ce2"
+              }
+            ],
+            "prompt": "Use case: style-transfer with precise-object-edit.\nAsset: one illustration for the existing Korean travel guide.\nInput 1 is edit target IMG_9271.jpeg, Oi-Qaragai mountain resort gondola boarding station. Input 2 is style reference only, existing Tashkent Amir Temur watercolor. Do not borrow any subject from Input 2.\nPrimary request: transform only Input 1 into restrained transparent watercolor washes and fine colored-pencil details. Maintain faithful mechanical and architectural shapes, natural color, subtle paper grain and clear travel-guide readability.\nFraming: exact landscape 4:3 aspect ratio. Preserve complete source composition and all four edges; no crop or outpainting.\nKeep: central black-and-silver gondola cabin and its curved glass, existing white emblem and the exact lettering \"OI-QARAGAI\" and \"MOUNTAIN RESORT\" on the cabin, original cabin number, dark seats, actual glass reflections of the station, overhead curved gray station machinery and suspension mechanism, cables and rails, wooden station building and its roof, blue sky and autumn forested hillside in the background, foreground wooden railing and its grain, gray platform and existing red queue barrier. Preserve existing signs including Doppelmayr if legible; never invent new words.\nRemove only: the incidental passengers standing/walking to the left of the gondola, including the people near the door and queue. Fill their small occluded areas with continuation of existing platform and wooden station surfaces. Do not remove mechanical components, queue barriers or handrails.\nConstraints: unchanged gondola shape, position, station geometry, perspective and relative proportions. Preserve real window reflections and natural sunlight; only remove obvious photographic glare if it obscures the scene. No new buildings, mountains, equipment, people, signs, captions, watermark or border. Avoid oversaturation.",
+            "remove": [
+              "incidental passengers left of gondola and near station door"
+            ],
+            "preserve": [
+              "full landscape 4:3 framing",
+              "gondola cabin shape and glass reflections",
+              "OI-QARAGAI lettering and emblem",
+              "station architecture and machinery",
+              "cables rails and barriers",
+              "autumn forest and sky",
+              "foreground wooden handrail"
+            ],
+            "style": "watercolor with fine colored-pencil detail",
+            "framing": "preserve",
+            "tool": "image_gen.imagegen",
+            "model": null,
+            "seed": null,
+            "settings": {
+              "referenced_image_paths": [
+                "IMG_9271.jpeg",
+                "tashkent-amir-temur-watercolor-1200.webp"
+              ],
+              "transparent_background": false
+            },
+            "editingRulesSha256": "d7da27d69fea14a8b9c8b1aab9ffde39549cad3b9413533700b0ac2fb3eb1fda"
+          },
+          "recipeKey": "d77989bb834c953bc64e7500e01265153e19f958f02e8d67a65b59b0fe70fbc2",
+          "outputSha256": "380173a80cd6319ac0c8a44f45fe9a9563c8a7d54a6b1db0318397cc8b17f110",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted-local-master; published WebP variants are recoverable from Git",
+          "status": "validated",
+          "validation": {
+            "decoded": true,
+            "aspectRatioPreserved": true,
+            "metadataFree": true,
+            "maxBytes": 250000,
+            "noUpscale": true,
+            "visualReview": "Compared source, generated master and 800px WebP. Incidental passengers removed; cabin, OI-QARAGAI lettering and emblem, station machinery, building, queue barrier, foreground wood rail, forest slope and full 4:3 framing retained. Real cabin glass reflections retained. No crop or outpainting.",
+            "parentVisualReview": "원본과 800px 게시본을 직접 대조했습니다. 구도와 주요 피사체, 요청한 정리 범위 및 기존 화풍과의 일치를 확인했습니다. 작은 글자는 정확한 전사 자료가 아닙니다."
+          },
+          "createdAt": "2026-10-20T16:08:23.777909+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 64884,
+              "quality": 88,
+              "file": "public/illustrations/oi-qaragai-gondola-watercolor-480.webp",
+              "sha256": "82e38a3fc29fbad352a52b0dea7106d6e2f896129dea369c585bde880bca6e26"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 176120,
+              "quality": 88,
+              "file": "public/illustrations/oi-qaragai-gondola-watercolor-800.webp",
+              "sha256": "52adcbec7d51218621dbdee697e80a9e8e3af49f77f851ff5f8ba51ae80e849d"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 249146,
+              "quality": 80,
+              "file": "public/illustrations/oi-qaragai-gondola-watercolor-1200.webp",
+              "sha256": "cfe9818dd5b974d30cbbb7df3b35f5374455fc6dd256c0f47f79eb483f284ad5"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "380173a80cd6319ac0c8a44f45fe9a9563c8a7d54a6b1db0318397cc8b17f110",
+            "sourceDimensions": [
+              1536,
+              1152
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "d004344f4f2a94f06374cfd8a9292a45b21efb2215a3ea587453172ec3041059"
+          },
+          "optimizeKey": "f6a1ba282707c3e5c65a73bc550cf234bee3a2faf36208e30957a0b4b00682d1",
+          "lifecycle": "active",
+          "lifecycleReason": "신규 변환본 검증 완료 후 기존 가이드에 한 번 배치했습니다.",
+          "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+          "lifecycleChangedAt": "2026-10-20T16:08:23.777909+00:00"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleChangedAt": "2026-10-20T16:08:23.777909+00:00",
+      "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checkedAt": "2026-10-19T17:36:50.436Z",
+  "checkedAt": "2026-10-20T16:12:19.832Z",
   "browser": "153.0.8010.0",
   "viewports": [
     375,
@@ -9,7 +9,7 @@
   ],
   "dayStatesPerViewport": 10,
   "tabCount": 4,
-  "uniqueIllustrations": 48,
+  "uniqueIllustrations": 53,
   "illustrationLocations": {
     "bukhara-market-sunset-watercolor": {
       "state": "day:1",
@@ -56,6 +56,13 @@
     "autumn-birch-walk-watercolor": {
       "state": "day:6",
       "placement": "day:6:tip",
+      "headings": [
+        "여행 관찰 포인트"
+      ]
+    },
+    "oi-qaragai-gondola-watercolor": {
+      "state": "day:8",
+      "placement": "day:8:tip",
       "headings": [
         "여행 관찰 포인트"
       ]
@@ -324,6 +331,38 @@
         "루흐 오르도 문화센터의 상징"
       ]
     },
+    "almaty-panfilov-flame-watercolor": {
+      "state": "guide",
+      "placement": "almaty:6:0",
+      "headings": [
+        "알마티",
+        "판필로프 공원과 전쟁 기억"
+      ]
+    },
+    "almaty-ascension-interior-pencil": {
+      "state": "guide",
+      "placement": "almaty:7:0",
+      "headings": [
+        "알마티",
+        "젠코프 승천 성당과 종교적 다양성"
+      ]
+    },
+    "almaty-green-bazaar-watercolor": {
+      "state": "guide",
+      "placement": "almaty:8:0",
+      "headings": [
+        "알마티",
+        "그린 바자르와 다문화 식문화"
+      ]
+    },
+    "almaty-arbat-watercolor": {
+      "state": "guide",
+      "placement": "almaty:9:0",
+      "headings": [
+        "알마티",
+        "아르바트 거리와 현대 도시 문화"
+      ]
+    },
     "charyn-canyon-watercolor": {
       "state": "guide",
       "placement": "almaty:10:0",
@@ -391,13 +430,13 @@
   },
   "captionsMatchManifest": true,
   "allIllustrationsCheckedAtEveryViewport": true,
-  "decodedAssetUrls": 128,
+  "decodedAssetUrls": 143,
   "duplicateIllustrationPlacements": [],
   "mapLinks": 40,
   "javascriptErrors": [],
   "narrativeWords": {
     "geography": 372,
-    "history": 1196,
+    "history": 1198,
     "resources": 358,
     "economy": 405,
     "education": 447
@@ -416,12 +455,15 @@
   "offlineAllGuideIllustrations": true,
   "offlineSamarkandHotel": true,
   "offlineArrivalDinner": true,
-  "cacheUpgradeFixture": "v15 cache name/current app → v21; old cache removed",
+  "offlineOiQaragai": true,
+  "cacheUpgradeFixture": "v15 cache name/current app → v22; old cache removed",
   "unrelatedOriginCachePreserved": true,
   "screenshots": [
-    "charyn-canyon-watercolor-375.png",
-    "black-canyon-watercolor-375.png",
-    "lunar-canyon-watercolor-375.png",
+    "oi-qaragai-gondola-watercolor-375.png",
+    "almaty-arbat-watercolor-375.png",
+    "almaty-green-bazaar-watercolor-375.png",
+    "almaty-ascension-interior-pencil-375.png",
+    "almaty-panfilov-flame-watercolor-375.png",
     "economy-375.png",
     "education-375.png",
     "economy-390.png",

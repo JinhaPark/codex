@@ -1,0 +1,244 @@
+{
+  "baseCommit": "8b47670122408057cb6adef4616f8db7dc939269",
+  "skillsCommit": "ae6a16a76c5ddfe119242dc7369a865819e44ec6",
+  "sourceRetention": "Originals used locally only; no original uploads",
+  "masterCacheProbe": "backend-unconfigured; no private persistence claim",
+  "processing": "Three asynchronous image workers, five distinct images; parent integrates shared files",
+  "images": [
+    {
+      "requestNumber": 24,
+      "place": "아르바트 거리",
+      "original": "IMG_9332.jpeg",
+      "illustrationId": "almaty-arbat-watercolor",
+      "placement": "almaty:9:0",
+      "classification": "확보",
+      "needed": "거리 전경 확보. 추가 사진은 필수가 아닙니다.",
+      "sourceSha256": "5fb78773f57e73d84c60ef71d07fd6487ebbf3d194d8ae22c134422d44a66ec0",
+      "sourceDimensions": [
+        1152,
+        1536
+      ],
+      "generatedDimensions": [
+        1086,
+        1448
+      ],
+      "revisionId": "almaty-arbat-watercolor-r1-b2f1c83d7a8d",
+      "recipeKey": "35120023e8f6bd537fc7b0dfa1db0420cbb0473006ad23973b180f33a860a0b2",
+      "optimizeKey": "d18394449a4c6a44e1c024d301e3436c6f2cc10dbf05155445c81f0c90c9be2d",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "bytes": 132604,
+          "quality": 88,
+          "file": "public/illustrations/almaty-arbat-watercolor-480.webp",
+          "sha256": "7e1c973fa33dc36234cc4e658d9206b0522c0d3298d761f5cf71be92c0cbed97"
+        },
+        {
+          "width": 800,
+          "height": 1067,
+          "bytes": 221196,
+          "quality": 76,
+          "file": "public/illustrations/almaty-arbat-watercolor-800.webp",
+          "sha256": "50a54a1b94dd2e5bbb5236db6c0c1225c8223499c3dc27a2139637b822b84db0"
+        },
+        {
+          "width": 1086,
+          "height": 1448,
+          "bytes": 243748,
+          "quality": 48,
+          "file": "public/illustrations/almaty-arbat-watercolor-1086.webp",
+          "sha256": "f881010bbbc867b1476fad3d0d3e4a2b8449ba2aaf2ce87b29fc81179edcfbf9"
+        }
+      ]
+    },
+    {
+      "requestNumber": 23,
+      "place": "그린 바자르",
+      "original": "IMG_9330.jpeg",
+      "illustrationId": "almaty-green-bazaar-watercolor",
+      "placement": "almaty:8:0",
+      "classification": "확보",
+      "needed": "시장 내부 전경 확보. 추가 사진은 필수가 아닙니다.",
+      "sourceSha256": "8fd20be03b7a588f03689ee02bc2782e547045937fea17681299ea46d0877d05",
+      "sourceDimensions": [
+        1536,
+        1152
+      ],
+      "generatedDimensions": [
+        1448,
+        1086
+      ],
+      "revisionId": "almaty-green-bazaar-watercolor-r1-ae2e91f5739a",
+      "recipeKey": "a776346df5ecb76e15dbd0f05518476f6f499f142bee4aa947e366bc39ea23eb",
+      "optimizeKey": "cb9e17c5202aa5db0e9f609d6a5e2b6cebb1448159cbfbcde67cdb381126b190",
+      "variants": [
+        {
+          "width": 480,
+          "height": 360,
+          "bytes": 86908,
+          "quality": 88,
+          "file": "public/illustrations/almaty-green-bazaar-watercolor-480.webp",
+          "sha256": "70c5644ff17598ac13d4e21874dc5ba8fb18d3b8ee8c5aff50fd9c1a6c5e3b18"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "bytes": 220250,
+          "quality": 88,
+          "file": "public/illustrations/almaty-green-bazaar-watercolor-800.webp",
+          "sha256": "260507f7bbdb5c4ac023a6919b924adfde151c8ca45a89c61487c9768197fbc5"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "bytes": 244090,
+          "quality": 68,
+          "file": "public/illustrations/almaty-green-bazaar-watercolor-1200.webp",
+          "sha256": "56177d913175563c1f20a55ee829527c07597f331faad9bef08327d3d5cfa0e2"
+        }
+      ]
+    },
+    {
+      "requestNumber": 22,
+      "place": "젠코프 승천 성당",
+      "original": "IMG_9304.jpeg",
+      "illustrationId": "almaty-ascension-interior-pencil",
+      "placement": "almaty:7:0",
+      "classification": "부분 확보",
+      "needed": "내부 확보. 색색의 돔과 목조 외관 전체가 보이는 사진은 선택 보완입니다.",
+      "sourceSha256": "d70ded4c2415fd7d565c59db12b5462c9681d6bc31d52b28609e80d4f863a29f",
+      "sourceDimensions": [
+        1152,
+        1536
+      ],
+      "generatedDimensions": [
+        1086,
+        1448
+      ],
+      "revisionId": "almaty-ascension-interior-pencil-r1-f67dd496229a",
+      "recipeKey": "4eb73c62318a8e6b468d6024fb768ecddbd5fc95fb12d435cd816d2da9991a5b",
+      "optimizeKey": "b877f850eaeaf84e47a53eb18341a6503365ba8f816600e1eb6ee11632a72170",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "bytes": 146100,
+          "quality": 88,
+          "file": "public/illustrations/almaty-ascension-interior-pencil-480.webp",
+          "sha256": "4e438fa64776697234e8eeba97f92053075b3efbf10b3094f6d96d42eb6112ce"
+        },
+        {
+          "width": 800,
+          "height": 1067,
+          "bytes": 248200,
+          "quality": 76,
+          "file": "public/illustrations/almaty-ascension-interior-pencil-800.webp",
+          "sha256": "0d57548cf4404072a7a05f6155cbf0a74c496a8680206869e58303a6997a0233"
+        },
+        {
+          "width": 1000,
+          "height": 1333,
+          "bytes": 240354,
+          "quality": 48,
+          "file": "public/illustrations/almaty-ascension-interior-pencil-1000.webp",
+          "sha256": "5a1db058e994010604736a7d896945d97196853d57740e38e1e66a779f034e32"
+        }
+      ]
+    },
+    {
+      "requestNumber": 21,
+      "place": "판필로프 공원",
+      "original": "IMG_9297.jpeg",
+      "illustrationId": "almaty-panfilov-flame-watercolor",
+      "placement": "almaty:6:0",
+      "classification": "확보",
+      "needed": "영원의 불꽃과 추모 공간 확보. 공원 산책로 또는 전쟁 기념 조각상은 선택 보완입니다.",
+      "sourceSha256": "6dde8aca064c8d009ee02a8f029cf40e2b3926b83c677ed040a217a1dbcdbf1e",
+      "sourceDimensions": [
+        1536,
+        1152
+      ],
+      "generatedDimensions": [
+        1448,
+        1086
+      ],
+      "revisionId": "almaty-panfilov-flame-watercolor-r2-4aadd1b8741a",
+      "recipeKey": "65e09ce36f6c62fe3799175bf7ab107cf24e8b684b9589e00f8a8c981c68a9c0",
+      "optimizeKey": "cba56f3c8bd768b360fecf511bbeb9443ebf1304e27432d0f875805ce31a1f5e",
+      "variants": [
+        {
+          "width": 480,
+          "height": 360,
+          "bytes": 84612,
+          "quality": 88,
+          "file": "public/illustrations/almaty-panfilov-flame-watercolor-480.webp",
+          "sha256": "dcab0ce79a1660876901714ff8d7370e3a1f5b8fb56f583ef6132ba1a3683dfd"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "bytes": 214956,
+          "quality": 88,
+          "file": "public/illustrations/almaty-panfilov-flame-watercolor-800.webp",
+          "sha256": "ca72570c29948ad2af64ce706c48de37a93a882fe9b8df38d1535b498f9bdfb8"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "bytes": 235332,
+          "quality": 72,
+          "file": "public/illustrations/almaty-panfilov-flame-watercolor-1200.webp",
+          "sha256": "069046d580f37e4484b5dd3d7061c8381d7488b505b9cf05e53485073767f2d0"
+        }
+      ]
+    },
+    {
+      "requestNumber": 20,
+      "place": "오이 카라가이",
+      "original": "IMG_9271.jpeg",
+      "illustrationId": "oi-qaragai-gondola-watercolor",
+      "placement": "day:8:tip",
+      "classification": "부분 확보",
+      "needed": "곤돌라와 승강장 확보. 숲·산악 리조트 전경이나 케이블카에서 본 풍경은 선택 보완입니다.",
+      "sourceSha256": "54f4b3852c035941b9bd99de1cc282fb8eff3be95de1fed2dd07bf17d1726d49",
+      "sourceDimensions": [
+        1536,
+        1152
+      ],
+      "generatedDimensions": [
+        1448,
+        1086
+      ],
+      "revisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
+      "recipeKey": "d77989bb834c953bc64e7500e01265153e19f958f02e8d67a65b59b0fe70fbc2",
+      "optimizeKey": "f6a1ba282707c3e5c65a73bc550cf234bee3a2faf36208e30957a0b4b00682d1",
+      "variants": [
+        {
+          "width": 480,
+          "height": 360,
+          "bytes": 64884,
+          "quality": 88,
+          "file": "public/illustrations/oi-qaragai-gondola-watercolor-480.webp",
+          "sha256": "82e38a3fc29fbad352a52b0dea7106d6e2f896129dea369c585bde880bca6e26"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "bytes": 176120,
+          "quality": 88,
+          "file": "public/illustrations/oi-qaragai-gondola-watercolor-800.webp",
+          "sha256": "52adcbec7d51218621dbdee697e80a9e8e3af49f77f851ff5f8ba51ae80e849d"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "bytes": 249146,
+          "quality": 80,
+          "file": "public/illustrations/oi-qaragai-gondola-watercolor-1200.webp",
+          "sha256": "cfe9818dd5b974d30cbbb7df3b35f5374455fc6dd256c0f47f79eb483f284ad5"
+        }
+      ]
+    }
+  ]
+}
