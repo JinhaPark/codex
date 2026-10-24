@@ -3,8 +3,8 @@
     "date": "2026-10-13",
     "places": {
       "부하라 아르크 성채": ["bukhara-ark-walls-pencil"],
-      "칼랸 미나레트": ["bukhara-poi-kalyan-watercolor", "bukhara-kalyan-minaret-pencil"],
-      "라비하우즈": ["lyabi-hauz-portal-watercolor", "lyabi-hauz-evening-watercolor"],
+      "칼랸 미나레트": ["bukhara-poi-kalyan-watercolor"],
+      "라비하우즈": ["lyabi-hauz-portal-watercolor"],
       "나디르 디반베기 마드라사": ["bukhara-divan-begi-portal-pencil"]
     },
     "extras": [

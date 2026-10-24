@@ -51,11 +51,12 @@ async function decodeFigure(page, figure) {
    await page.setViewportSize({width,height:812});await page.locator('[data-tab="days"]').click();
    for (const day of [1,2,5]) {
     await page.locator(`[data-day="${day}"]`).click();await fits(page,`focused itinerary ${day} at ${width}`);await artwork('day:'+day,false);
-    assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),day===1?1:0);
-    if(day===1) {await decodeFigure(page,page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));await page.screenshot({path:path.join(qa,`lyabi-hauz-oct13-${width}.png`)});}
+    assert.equal(await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').count(),day===1?1:0);
+    if(day===1) {assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),0);assert.equal(await page.locator('[data-illustration="bukhara-kalyan-minaret-pencil"]').count(),0);assert.equal(await page.locator('[data-illustration="bukhara-poi-kalyan-watercolor"]').count(),1);await decodeFigure(page,page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]'));await page.screenshot({path:path.join(qa,`lyabi-hauz-oct13-${width}.png`)});}
     if(day===5) {const figure=page.locator('[data-illustration="cholponata-balbal-pencil"]');assert.equal(await figure.locator('figcaption').textContent(),'촐폰아타 암각화 구역 — 발발 석상');await decodeFigure(page,figure);await page.screenshot({path:path.join(qa,`balbal-caption-${width}.png`)});}
    }
   }
+  await openArticle(page,base,'cities','bukhara-history');const evening=page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]');assert.equal(await evening.count(),1);await decodeFigure(page,evening);await page.screenshot({path:path.join(qa,'lyabi-hauz-guide-430.png')});
   assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,scope:'itinerary-only',viewports:[375,390,430],days:['2026-10-13','2026-10-14','2026-10-17'],javascriptErrors:errors}));return;
  }
  const articles = [];
@@ -144,19 +145,19 @@ async function decodeFigure(page, figure) {
  for(const art of manifest.filter(a=>a.purpose!=='site-banner')) {
   const states=seen.get(art.id)||[];
   const day=itineraryRefs.find(d=>[...Object.values(d.places).flat(),...d.extras.flatMap(g=>g.ids)].includes(art.id));
-  const expectedDay=day ? 'day:'+itinerary.days.findIndex(d=>d.date===day.date) : 'day:'+art.placement.split(':')[1];
-  assert.equal(states.filter(s=>s===expectedDay).length,1,art.id+' occurs once on the mapped day');
-  assert.equal(states.filter(s=>s.startsWith('day:')).length,1,art.id+' has no unintended itinerary duplicates');
-  assert.equal(states.length,art.placement.startsWith('day:')?1:2,art.id+' preserves one guide appearance and one authorized itinerary appearance');
+  const expectedDay=day ? 'day:'+itinerary.days.findIndex(d=>d.date===day.date) : art.placement.startsWith('day:') ? 'day:'+art.placement.split(':')[1] : null;
+  assert.equal(states.filter(s=>s===expectedDay).length,expectedDay ? 1 : 0,art.id+' occurs once on the mapped day');
+  assert.equal(states.filter(s=>s.startsWith('day:')).length,expectedDay ? 1 : 0,art.id+' has no unintended itinerary duplicates');
+  assert.equal(states.length,art.placement.startsWith('day:') || !expectedDay ? 1 : 2,art.id+' preserves one guide appearance and one authorized itinerary appearance');
  }
  assert.deepEqual([...seen.keys()].sort(),manifest.filter(a=>a.purpose!=='site-banner').map(a=>a.id).sort());
  for(const row of coverage) for(const id of row.imageIds) assert.ok(seen.has(id),row.place+' coverage');
  let decodedVariants=0;
  for(const art of manifest) for(const v of art.variants) {const dims=await page.evaluate(async url=>{const img=new Image();img.src=url;await img.decode();return [img.naturalWidth,img.naturalHeight];},base+'illustrations/'+v.file);assert.deepEqual(dims,[v.width,v.height]);decodedVariants++;}
  await page.locator('[data-tab="days"]').click();await page.locator('[data-day="1"]').click();
- assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),1);
- await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(qa,'lyabi-hauz-oct13-430.png')});
- await page.locator('[data-day="2"]').click();assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),0);
+ assert.equal(await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').count(),1);
+ await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(qa,'lyabi-hauz-oct13-430.png')});
+ await page.locator('[data-day="2"]').click();assert.equal(await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').count(),0);
  await page.locator('[data-day="5"]').click();const balbal=page.locator('[data-illustration="cholponata-balbal-pencil"]');assert.equal(await balbal.locator('figcaption').textContent(),'촐폰아타 암각화 구역 — 발발 석상');await decodeFigure(page,balbal);await page.screenshot({path:path.join(qa,'balbal-caption-430.png')});
  // User journey: list -> article -> section -> back -> reopen, tab switch and reload.
  await page.goto(base+'#guide/cities');await settle(page);await openArticle(page,base,'cities','bukhara-history');
@@ -187,9 +188,9 @@ async function decodeFigure(page, figure) {
  await sw.reload();await plainBanner(sw);
  const visited=[];
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all()){visited.push({id:await f.getAttribute('data-illustration'),article:id,category});await decodeFigure(sw,f);}}
- await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
+ await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-portal-watercolor"]'));
  await swContext.setOffline(true);await sw.reload();await plainBanner(sw);
- await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
+ await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-portal-watercolor"]'));
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all())await decodeFigure(sw,f);}
  await sw.locator('[data-guide-collapse]').click();await sw.locator('[data-guide-toc]').click();await sw.locator('[data-guide-jump]').last().click();await settle(sw);assert.ok(await sw.locator('[data-reader-section]').last().evaluate(n=>n.open));
  assert.deepEqual(errors,[]);

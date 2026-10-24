@@ -1,5 +1,7 @@
 # Itinerary illustration reuse and caption corrections
 
+Latest placement update: [Bukhara illustration selection](bukhara-illustration-placement.md). The record below describes the earlier integration; the Kalyan detail and Lyabi-Hauz evening views now appear only in the guide.
+
 ## Scope
 
 Base: `fd1deea793c20cbafaba21673eef64f79ebbc226` in JinhaPark/codex.
