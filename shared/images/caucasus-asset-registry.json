@@ -346,6 +346,102 @@
       "gitBlobSha": "310b77b18fbc3e0e5dd7fa354adb92aeb80d8f05",
       "placement": "caucasus:2026-05-08:destination:monastery-overlook-gorge",
       "sha256": null
+    },
+    {
+      "file": "caucasus-20260503-ananuri-overview-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260503-ananuri-overview-watercolor-1448.webp",
+      "date": "2026-05-03",
+      "subject": "ananuri-overview",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 508322,
+      "gitBlobSha": "5aa056bc85431d2c4797345f3d57f686384dc732",
+      "placement": "caucasus:2026-05-03:destination:ananuri",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260503-kazbegi-portrait-watercolor-1086.webp",
+      "sourceRootFile": "caucasus-20260503-kazbegi-portrait-watercolor-1086.webp",
+      "date": "2026-05-03",
+      "subject": "kazbegi-portrait",
+      "style": "watercolor",
+      "width": 1086,
+      "bytes": 460774,
+      "gitBlobSha": "76e124b10457728846e639c160179fb081b15dce",
+      "placement": "caucasus:2026-05-03:observation:kazbegi-portrait",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260503-monastery-fresco-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260503-monastery-fresco-watercolor-1448.webp",
+      "date": "2026-05-03",
+      "subject": "monastery-fresco",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 479326,
+      "gitBlobSha": "87ea6cbdbbe62c10701dbbccdc828ba0fbc035b8",
+      "placement": "caucasus:2026-05-03:observation:monastery-fresco",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260504-tbilisi-cablecar-station-watercolor-1086.webp",
+      "sourceRootFile": "caucasus-20260504-tbilisi-cablecar-station-watercolor-1086.webp",
+      "date": "2026-05-04",
+      "subject": "tbilisi-cablecar-station",
+      "style": "watercolor",
+      "width": 1086,
+      "bytes": 471294,
+      "gitBlobSha": "ab38261c6a6c2778f9bc3aa35af5a4d54ecc78ea",
+      "placement": "caucasus:2026-05-04:observation:tbilisi-cablecar-station",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260504-tbilisi-nightview-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260504-tbilisi-nightview-watercolor-1448.webp",
+      "date": "2026-05-04",
+      "subject": "tbilisi-nightview",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 486212,
+      "gitBlobSha": "d546d7edbd0f3377e2d2fbcc5a641737950d3cff",
+      "placement": "caucasus:2026-05-04:observation:tbilisi-nightview",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260505-haghpat-monastery-watercolor-1086.webp",
+      "sourceRootFile": "caucasus-20260505-haghpat-monastery-watercolor-1086.webp",
+      "date": "2026-05-05",
+      "subject": "haghpat-monastery",
+      "style": "watercolor",
+      "width": 1086,
+      "bytes": 515106,
+      "gitBlobSha": "99f1e81482a392cae0a028d244a41cd101b856b8",
+      "placement": "caucasus:2026-05-05:destination:haghpat",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260505-sevan-lake-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260505-sevan-lake-watercolor-1448.webp",
+      "date": "2026-05-05",
+      "subject": "sevan-lake",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 403762,
+      "gitBlobSha": "d4262d03635a076b8bd53c4c195c55094ddcd32f",
+      "placement": "caucasus:2026-05-05:destination:sevan-lake",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260505-sevan-monastery-watercolor-1086.webp",
+      "sourceRootFile": "caucasus-20260505-sevan-monastery-watercolor-1086.webp",
+      "date": "2026-05-05",
+      "subject": "sevan-monastery",
+      "style": "watercolor",
+      "width": 1086,
+      "bytes": 441170,
+      "gitBlobSha": "d1e267e622e97b6e7509c0792d8e8c0bdde2d70c",
+      "placement": "caucasus:2026-05-05:destination:sevan-monastery",
+      "sha256": null
     }
   ]
 }

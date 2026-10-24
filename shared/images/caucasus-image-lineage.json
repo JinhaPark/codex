@@ -1120,6 +1120,334 @@
           ]
         }
       ]
+    },
+    {
+      "illustrationId": "caucasus-20260503-ananuri-overview-watercolor",
+      "travelDate": "2026-05-03",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-03:destination:ananuri",
+      "activeRevisionId": "caucasus-20260503-ananuri-overview-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260503-ananuri-overview-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260503-ananuri-overview-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260503-ananuri-overview-watercolor-1448.webp",
+              "width": 1448,
+              "bytes": 508322,
+              "gitBlobSha": "5aa056bc85431d2c4797345f3d57f686384dc732",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260503-kazbegi-portrait-watercolor",
+      "travelDate": "2026-05-03",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-03:observation:kazbegi-portrait",
+      "activeRevisionId": "caucasus-20260503-kazbegi-portrait-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260503-kazbegi-portrait-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260503-kazbegi-portrait-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260503-kazbegi-portrait-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 460774,
+              "gitBlobSha": "76e124b10457728846e639c160179fb081b15dce",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260503-monastery-fresco-watercolor",
+      "travelDate": "2026-05-03",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-03:observation:monastery-fresco",
+      "activeRevisionId": "caucasus-20260503-monastery-fresco-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260503-monastery-fresco-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260503-monastery-fresco-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260503-monastery-fresco-watercolor-1448.webp",
+              "width": 1448,
+              "bytes": 479326,
+              "gitBlobSha": "87ea6cbdbbe62c10701dbbccdc828ba0fbc035b8",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260504-tbilisi-cablecar-station-watercolor",
+      "travelDate": "2026-05-04",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-04:observation:tbilisi-cablecar-station",
+      "activeRevisionId": "caucasus-20260504-tbilisi-cablecar-station-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260504-tbilisi-cablecar-station-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260504-tbilisi-cablecar-station-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260504-tbilisi-cablecar-station-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 471294,
+              "gitBlobSha": "ab38261c6a6c2778f9bc3aa35af5a4d54ecc78ea",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260504-tbilisi-nightview-watercolor",
+      "travelDate": "2026-05-04",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-04:observation:tbilisi-nightview",
+      "activeRevisionId": "caucasus-20260504-tbilisi-nightview-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260504-tbilisi-nightview-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260504-tbilisi-nightview-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260504-tbilisi-nightview-watercolor-1448.webp",
+              "width": 1448,
+              "bytes": 486212,
+              "gitBlobSha": "d546d7edbd0f3377e2d2fbcc5a641737950d3cff",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260505-haghpat-monastery-watercolor",
+      "travelDate": "2026-05-05",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-05:destination:haghpat",
+      "activeRevisionId": "caucasus-20260505-haghpat-monastery-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260505-haghpat-monastery-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260505-haghpat-monastery-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260505-haghpat-monastery-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 515106,
+              "gitBlobSha": "99f1e81482a392cae0a028d244a41cd101b856b8",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260505-sevan-lake-watercolor",
+      "travelDate": "2026-05-05",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-05:destination:sevan-lake",
+      "activeRevisionId": "caucasus-20260505-sevan-lake-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260505-sevan-lake-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260505-sevan-lake-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260505-sevan-lake-watercolor-1448.webp",
+              "width": 1448,
+              "bytes": 403762,
+              "gitBlobSha": "d4262d03635a076b8bd53c4c195c55094ddcd32f",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260505-sevan-monastery-watercolor",
+      "travelDate": "2026-05-05",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-05:destination:sevan-monastery",
+      "activeRevisionId": "caucasus-20260505-sevan-monastery-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260505-sevan-monastery-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260505-sevan-monastery-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260505-sevan-monastery-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 441170,
+              "gitBlobSha": "d1e267e622e97b6e7509c0792d8e8c0bdde2d70c",
+              "sha256": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
