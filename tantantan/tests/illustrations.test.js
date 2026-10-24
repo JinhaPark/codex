@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
 
-const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
-const lineage = JSON.parse(fs.readFileSync(new URL('../docs/image-lineage.json', import.meta.url)));
+const artwork = JSON.parse(fs.readFileSync(new URL('../../shared/images/illustrations.json', import.meta.url)));
+const lineage = JSON.parse(fs.readFileSync(new URL('../../shared/images/image-lineage.json', import.meta.url)));
+const caucasus = JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-asset-registry.json', import.meta.url)));
 
 test('published illustration variants are complete WebP files with the recorded sizes', () => {
   assert.ok(artwork.length > 0);
@@ -12,12 +13,12 @@ test('published illustration variants are complete WebP files with the recorded 
   const retainedFiles = lineage.images.flatMap(image => image.revisions
     .filter(revision => ['archived', 'deletion-candidate'].includes(revision.lifecycle))
     .flatMap(revision => revision.variants.map(v => v.file.replace(/^public\/illustrations\//, ''))));
-  assert.deepEqual(fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).sort(), [...new Set([...expectedFiles, ...retainedFiles])].sort());
+  assert.deepEqual(fs.readdirSync(new URL('../../shared/public/illustrations/', import.meta.url)).sort(), [...new Set([...expectedFiles, ...retainedFiles, ...caucasus.assets.map(a=>a.file)])].sort());
   for (const art of artwork) {
     assert.ok(art.variants.length >= 1 && art.variants.length <= 3);
     assert.equal(new Set(art.variants.map(v => v.width)).size, art.variants.length);
     for (const variant of art.variants) {
-      const bytes = fs.readFileSync(new URL(`../public/illustrations/${variant.file}`, import.meta.url));
+      const bytes = fs.readFileSync(new URL(`../../shared/public/illustrations/${variant.file}`, import.meta.url));
       assert.equal(bytes.length, variant.bytes, variant.file);
       assert.equal(bytes.toString('ascii', 0, 4), 'RIFF');
       assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
@@ -69,12 +70,12 @@ test('each subject has one editorial placement, Korean caption and descriptive K
   }
   assert.ok(!artwork.some(art => art.original === 'IMG_8981(1).jpeg'), 'Exclude the identical duplicate');
   assert.ok(!artwork.some(art => art.id === 'garden-eaves-watercolor'), 'Remove the requested garden photograph');
-  assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('garden-eaves-watercolor-')), 'Remove its published assets');
+  assert.ok(!fs.readdirSync(new URL('../../shared/public/illustrations/', import.meta.url)).some(name => name.startsWith('garden-eaves-watercolor-')), 'Remove its published assets');
 });
 
 test('shared renderer emits only the manifest caption', async () => {
   const source = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8')
-    .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
+    .replace("import illustrations from '../../shared/images/illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
     .replace("import itineraryIllustrations from './itinerary-illustrations.json';", `const itineraryIllustrations = ${fs.readFileSync(new URL('../src/itinerary-illustrations.json', import.meta.url), 'utf8')};`);
   const { renderIllustration } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
   for (const art of artwork) {
@@ -152,7 +153,7 @@ test('museum numeric and map panels stay documentary photographs', () => {
 
 test('removed tilework image is not published and corrected captions are retained', () => {
   assert.ok(!artwork.some(art => art.id === 'uzbek-tilework-pencil'));
-  assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('uzbek-tilework-pencil-')));
+  assert.ok(!fs.readdirSync(new URL('../../shared/public/illustrations/', import.meta.url)).some(name => name.startsWith('uzbek-tilework-pencil-')));
   assert.equal(artwork.find(a => a.id === 'tashkent-independence-fountains-watercolor').caption,
     '타슈켄트 독립광장 — 분수 너머 대통령 집무실');
   assert.equal(artwork.find(a => a.id === 'mountain-orchards-watercolor').placement, 'itinerary:2026-10-17:cholponata');

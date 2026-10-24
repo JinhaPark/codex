@@ -1,1 +1,1 @@
-import {defineConfig} from 'vite';export default defineConfig({base:'/codex/'});
+import {defineConfig} from 'vite';import {resolve} from 'node:path';export default defineConfig({base:'/codex/',publicDir:'shared/public',build:{rollupOptions:{input:{home:resolve('index.html'),tantantan:resolve('tantantan/index.html'),caucasus:resolve('caucasus/index.html')}}}});

@@ -348,7 +348,7 @@ def load_backend(config_path, repo):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('operation', choices=['probe', 'persist', 'lookup', 'restore'])
-    parser.add_argument('--repo', default=str(Path(__file__).resolve().parent.parent))
+    parser.add_argument('--repo', default=str(Path(__file__).resolve().parents[2]))
     parser.add_argument('--config', default=os.environ.get('IMAGE_MASTER_CACHE_CONFIG'))
     parser.add_argument('--revision')
     parser.add_argument('--input')
@@ -369,7 +369,7 @@ def main():
                 result['state'] = 'backend-probed'
             print(json.dumps(result))
             return 0
-        path = repo / 'docs/image-lineage.json'
+        path = repo / 'shared/images/image-lineage.json'
         baseline = path.read_bytes()
         lineage = json.loads(baseline)
         if args.operation == 'lookup':

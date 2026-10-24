@@ -1,0 +1,16 @@
+/* Share the existing typography, card language and editorial rhythm. */
+.caucasus-page .days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;overflow:visible;white-space:normal}
+.caucasus-page .days button{min-width:0;width:100%;padding:9px 1px;min-height:43px}
+.caucasus-page .days button small{font-size:.57rem;letter-spacing:-.045em;display:block;white-space:nowrap}
+.caucasus-page .days button strong{font-size:1rem}
+.caucasus-page .location-card{border-bottom:1px solid #e9e5da;padding:14px 0}
+.caucasus-page .location-card:last-child{border-bottom:0}
+.caucasus-page .location-card h4{font-size:1.05rem;margin:0 0 6px}
+.caucasus-page .location-card p{margin:0;color:#4c5657;line-height:1.8}
+.caucasus-page .note-label{font-size:.78rem;letter-spacing:.03em;color:#557d83;font-weight:700}
+.caucasus-page .tour-list{padding:0;list-style:none}
+.caucasus-page .tour-list li{padding:12px 0;border-bottom:1px solid #e8e3d6}
+.caucasus-page .tour-list li:last-child{border-bottom:0}
+.caucasus-page a{color:#226279}
+.caucasus-page .new-photos{font-size:.9rem;color:#607077}
+@media(min-width:700px){.caucasus-page .days{grid-template-columns:repeat(13,minmax(0,1fr))}}

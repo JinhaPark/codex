@@ -1,4 +1,4 @@
-import illustrations from './illustrations.json';
+import illustrations from '../../shared/images/illustrations.json';
 import itineraryIllustrations from './itinerary-illustrations.json';
 
 const escape = value => String(value).replace(/[&<>"']/g, character => ({

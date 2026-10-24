@@ -3,9 +3,9 @@ import fs from 'node:fs';
 import test from 'node:test';
 
 
-const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
-const lineage = JSON.parse(fs.readFileSync(new URL('../docs/image-lineage.json', import.meta.url)));
-const source = fs.readFileSync(new URL('../src/render-banner.js', import.meta.url), 'utf8').replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`);
+const artwork = JSON.parse(fs.readFileSync(new URL('../../shared/images/illustrations.json', import.meta.url)));
+const lineage = JSON.parse(fs.readFileSync(new URL('../../shared/images/image-lineage.json', import.meta.url)));
+const source = fs.readFileSync(new URL('../src/render-banner.js', import.meta.url), 'utf8').replace("import illustrations from '../../shared/images/illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`);
 const {renderBanner} = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 
 test('lake banner keeps readable HTML text and responsive priority artwork', () => {
@@ -29,6 +29,6 @@ test('retired map is unpublished while its history and archived WebPs remain', (
   assert.equal(image.lastPublishedRevisionId, 'silk-road-banner-watercolor-r5');
   for (const revision of image.revisions) {
     assert.equal(revision.lifecycle, 'archived');
-    for (const variant of revision.variants) assert.ok(fs.existsSync(new URL('../'+variant.file, import.meta.url)));
+    for (const variant of revision.variants) assert.ok(fs.existsSync(new URL('../../shared/'+variant.file, import.meta.url)));
   }
 });

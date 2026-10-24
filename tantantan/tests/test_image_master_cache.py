@@ -274,10 +274,10 @@ print(json.dumps(dict(ok=True, backendId='command-test', private=True, durable=T
         self.assertEqual(retrieve(saved, 'r1', backend), self.data)
 
     def test_cli_missing_backend_returns_safe_json_and_leaves_real_lineage_unchanged(self):
-        repo = Path(__file__).resolve().parents[1]
-        path = repo / 'docs/image-lineage.json'
+        repo = Path(__file__).resolve().parents[2]
+        path = repo / 'shared/images/image-lineage.json'
         before = path.read_bytes()
-        result = subprocess.run([sys.executable, str(repo / 'scripts/image_master_cache.py'), 'probe'],
+        result = subprocess.run([sys.executable, str(repo / 'tantantan/scripts/image_master_cache.py'), 'probe'],
                                 capture_output=True, env={k: v for k, v in os.environ.items() if k != 'IMAGE_MASTER_CACHE_CONFIG'})
         self.assertEqual(json.loads(result.stdout)['state'], 'backend-unconfigured')
         self.assertEqual(path.read_bytes(), before)
