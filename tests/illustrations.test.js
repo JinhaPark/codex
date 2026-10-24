@@ -31,6 +31,11 @@ test('published illustration variants are complete WebP files with the recorded 
         assert.equal(art.original, 'IMG_9082.jpeg');
         assert.equal(art.id, 'samarkand-bibi-khanym-watercolor');
         assert.ok(actualRatio < art.sourceWidth / art.sourceHeight, 'Requested sky extension adds vertical space');
+      } else if (art.framingEdit === 'panoramic-banner-redraw') {
+        assert.equal(art.id, 'silk-road-banner-watercolor');
+        assert.equal(art.placement, 'site:banner');
+        assert.equal(art.original, 'image(1).png');
+        assert.ok(Math.abs(actualRatio - 3) < .003, 'Explicitly requested panoramic banner');
       } else {
         assert.ok(Math.abs((actualRatio / (art.sourceWidth / art.sourceHeight)) - 1) < 0.003, 'Keep the original framing within generator canvas rounding');
       }

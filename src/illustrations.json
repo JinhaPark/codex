@@ -1797,5 +1797,45 @@
     "caption": "오이 카라가이 — 가을 숲 앞 곤돌라 승강장",
     "alt": "오이 카라가이 표기가 있는 곤돌라와 승강장 구조물 뒤로 가을 산비탈이 보이는 풍경",
     "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "silk-road-banner-watercolor",
+    "original": "image(1).png",
+    "style": "watercolor",
+    "sourceWidth": 1024,
+    "sourceHeight": 765,
+    "width": 1024,
+    "height": 341,
+    "variants": [
+      {
+        "width": 480,
+        "height": 160,
+        "bytes": 26890,
+        "quality": 88,
+        "file": "silk-road-banner-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 267,
+        "bytes": 72766,
+        "quality": 88,
+        "file": "silk-road-banner-watercolor-800.webp"
+      },
+      {
+        "width": 1024,
+        "height": 341,
+        "bytes": 112718,
+        "quality": 88,
+        "file": "silk-road-banner-watercolor-1024.webp"
+      }
+    ],
+    "generatedWidth": 2172,
+    "generatedHeight": 724,
+    "framingEdit": "panoramic-banner-redraw",
+    "placement": "site:banner",
+    "caption": "실크로드 교역로와 낙타 대상",
+    "alt": "푸른 바다와 모래빛 대륙 위로 교역로와 낙타 대상이 이어지는 실크로드 지도 그림",
+    "purpose": "site-banner",
+    "sourceKind": "user-supplied-illustration"
   }
 ]
