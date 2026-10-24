@@ -127,7 +127,8 @@ test('archive, candidate, deleted require audit, tombstones and real Git recover
 
 test('verified edit replacement archives its actual parent and switches publication atomically', () => {
   const data = structuredClone(lineage), published = structuredClone(manifest);
-  const image = data.images.at(-1), parent = image.revisions[0];
+  const image = data.images.at(-1);
+  const parent = image.revisions.find(r => r.revisionId === image.activeRevisionId);
   const child = structuredClone(parent);
   child.revisionId += '-edit';
   child.parentRevisionId = parent.revisionId;

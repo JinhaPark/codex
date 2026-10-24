@@ -1810,23 +1810,23 @@
       {
         "width": 480,
         "height": 160,
-        "bytes": 26890,
+        "bytes": 27590,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-480.webp"
+        "file": "silk-road-banner-r2-480.webp"
       },
       {
         "width": 800,
         "height": 267,
-        "bytes": 72766,
+        "bytes": 72492,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-800.webp"
+        "file": "silk-road-banner-r2-800.webp"
       },
       {
         "width": 1024,
         "height": 341,
-        "bytes": 112718,
+        "bytes": 113984,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-1024.webp"
+        "file": "silk-road-banner-r2-1024.webp"
       }
     ],
     "generatedWidth": 2172,
@@ -1834,7 +1834,7 @@
     "framingEdit": "panoramic-banner-redraw",
     "placement": "site:banner",
     "caption": "실크로드 교역로와 낙타 대상",
-    "alt": "푸른 바다와 모래빛 대륙 위로 교역로와 낙타 대상이 이어지는 실크로드 지도 그림",
+    "alt": "사마르칸트에서 네 방향으로 굵은 교역로가 뻗어나가고 오른쪽에 한반도와 제주도가 보이는 실크로드 지도 그림",
     "purpose": "site-banner",
     "sourceKind": "user-supplied-illustration"
   }
