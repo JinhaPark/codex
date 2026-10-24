@@ -92,7 +92,7 @@
 ## Validation and content quality
 
 - Read the actual commands in `package.json` and `.github/workflows/` before choosing checks.
-- Validate JavaScript, data, rendering, and service-worker changes with relevant tests, `npm test`, and `npm run build`. For documentation-only changes, review content, links, and the diff; do not add unnecessary tests.
+- For small JavaScript, data, rendering, or service-worker PRs, run affected checks and record deferred checks. Run the complete `npm test` suite and `npm run build`, plus required integration checks, on the integrated result when the user requests merging. For documentation-only PRs, review content, links, and the diff before opening; do not add unnecessary tests.
 - For image changes, use `tests/illustrations.test.js` and `scripts/verify-image-assets.py`. Check that Python, Pillow, and other required tools are available.
 - For UI or cache changes, use a real browser where possible to check mobile wrapping, contents navigation, accordions, image decoding, offline use, and cache transitions. `scripts/verify-browser.cjs` is an optional check requiring Playwright and Chromium.
 - Review obsolete cache names, asset counts, and runtime paths in scripts against the actual integrated state. Do not remove important checks merely to make tests pass.
@@ -121,3 +121,14 @@
 - An example request is: 'Read the latest main and AGENTS.md in JinhaPark/codex, then carry out the following change.'
 - Distinguish automatic instruction loading from explicitly reading AGENTS.md through the GitHub connector. Do not claim to apply instructions you have not read.
 - Treat the phone app as the request and review interface. Do not assume the user must install a local development environment.
+
+## Scoped work and deferred merge
+
+- Batch related small changes into one focused PR; reuse that PR for follow-ups to the same unfinished change. Reuse existing artifacts and validation evidence only when their inputs, relevant dependencies, tool versions, and check scope remain applicable; record the revision checked.
+- Before opening or updating a small-change PR, inspect the diff and run only checks needed for the affected files and behavior. Defer the complete test suite to an explicit user merge request. State checks run and deferred in the PR; never claim unperformed tests passed.
+- Keep the PR open until the user explicitly requests its merge. Do not enable auto-merge. A request for a previous change does not authorize this merge.
+- When merge is requested, refresh main and the PR head, resolve conflicts, run the complete repository test suite and required build/integration checks on the combined result, and merge only after they pass. Report unavailable checks or failures instead of merging an unverified result.
+- Skip unrelated full audits, repeated status polling, and extra image generation. Use a bounded status check when needed; repeat only for new evidence or an explicit request. These instructions do not disable existing CI or bypass required checks.
+- Interpret the following original user instruction subject to the deferred-merge rule above; “지정한 병합 단계” means stop at an open PR unless merge was explicitly requested:
+
+> 이번 요청 범위만 처리하세요. 기존 결과와 검증 기록을 재사용하고 변경된 부분만 확인하세요. 관련 없는 전체 감사, 반복 상태 조회, 추가 이미지 생성은 생략하세요. 필요한 검증을 마치면 지정한 병합 단계까지 진행하고 결과를 간결하게 보고하세요.
