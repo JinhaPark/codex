@@ -1171,7 +1171,7 @@
       "sourceArtifactRef": null,
       "sourceDimensions": null,
       "lifecycle": "active",
-      "placement": "caucasus:2026-05-03:observation:kazbegi-portrait",
+      "placement": "caucasus:2026-05-03:destination:gergeti-trinity-church",
       "activeRevisionId": "caucasus-20260503-kazbegi-portrait-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260503-kazbegi-portrait-watercolor-import-r1",
       "revisions": [
@@ -1212,7 +1212,7 @@
       "sourceArtifactRef": null,
       "sourceDimensions": null,
       "lifecycle": "active",
-      "placement": "caucasus:2026-05-03:observation:monastery-fresco",
+      "placement": "caucasus:2026-05-03:destination:gergeti-trinity-church",
       "activeRevisionId": "caucasus-20260503-monastery-fresco-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260503-monastery-fresco-watercolor-import-r1",
       "revisions": [
