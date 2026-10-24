@@ -77,7 +77,7 @@ test('all guide table-of-contents targets exist exactly once', () => {
 });
 
 test('deep dives render every paragraph, while existing cities and illustrations remain reachable', async () => {
-  const html = renderGuide([{ title: '안전 안내', body: '기존 안내 보존' }]);
+  const html = renderGuide();
   const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
   for (const { data } of entries) {
     assert.ok(html.includes(escape(data.intro)));
@@ -95,7 +95,7 @@ test('deep dives render every paragraph, while existing cities and illustrations
     for (const paragraph of paragraphs) assert.ok(html.includes(`<p>${escape(paragraph)}</p>`), 'Preserve Almaty text');
   }
   assert.match(html, /data-illustration="/);
-  assert.match(html, /기존 안내 보존/);
+
 });
 
 test('deep-dive source notes use their actual verification date', () => {
@@ -105,4 +105,18 @@ test('deep-dive source notes use their actual verification date', () => {
   for (const { data } of entries) for (const [, source] of data.sources) {
     assert.ok(html.includes(`href="${source.replaceAll('&', '&amp;')}"`), source);
   }
+});
+
+
+test('practical guidance moves to preparation with checkbox state preserved', async () => {
+  const { renderPreparation } = await import('../src/render-preparation.js');
+  const { essentials } = JSON.parse(fs.readFileSync(new URL('../src/itinerary.json', import.meta.url)));
+  const html = renderPreparation(essentials, ['여권', '수영복'], { 1: true });
+  const guide = renderGuide();
+  for (const item of essentials) {
+    assert.ok(html.includes(`<h3>${item.title}</h3><p>${item.body}</p>`));
+    assert.ok(!guide.includes(`<summary>${item.title}</summary>`));
+  }
+  assert.match(html, /data-check="0" ><span>여권/);
+  assert.match(html, /data-check="1" checked><span>수영복/);
 });
