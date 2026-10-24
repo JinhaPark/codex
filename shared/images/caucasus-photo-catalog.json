@@ -9,7 +9,7 @@
       "alt": "바쿠 구시가지의 돌탑과 배경에 보이는 현대식 유리 고층 건물",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:maiden-tower",
       "variants": [
         {
           "file": "caucasus-20260430-baku-maiden-tower-watercolor-1086.webp",
@@ -27,7 +27,7 @@
       "alt": "해안 너머로 유리 고층 건물과 원형 아치 건축물이 보이는 바쿠 전경",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:heydar-aliyev-center",
       "variants": [
         {
           "file": "caucasus-20260430-baku-waterfront-skyline-watercolor-1448.webp",
@@ -45,7 +45,7 @@
       "alt": "Gobustan 글씨와 다섯 인물 형상이 있는 고부스탄 조형물",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-entrance",
       "variants": [
         {
           "file": "caucasus-20260430-gobustan-entrance-sign-watercolor-1448.webp",
@@ -63,7 +63,7 @@
       "alt": "큰 바위와 암벽, 짧은 풀이 펼쳐진 고부스탄 지형",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-rock-landscape",
       "variants": [
         {
           "file": "caucasus-20260430-gobustan-rock-landscape-watercolor-1536.webp",
@@ -191,7 +191,7 @@
       "alt": "코카서스 산줄기와 앞쪽의 노란 꽃밭",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-05-02:observation:roadside-mountains",
       "variants": [
         {
           "file": "caucasus-20260502-route-mountains-yellow-fields-watercolor-1200.webp",
@@ -291,7 +291,7 @@
       "alt": "언덕에 자리한 시그나기 구시가지와 주변 구릉 및 산세",
       "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-05-02:destination:sighnaghi",
       "variants": [
         {
           "file": "caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",

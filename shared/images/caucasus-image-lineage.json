@@ -15,7 +15,7 @@
         1982
       ],
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:maiden-tower",
       "activeRevisionId": "caucasus-20260430-baku-maiden-tower-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260430-baku-maiden-tower-watercolor-import-r1",
       "revisions": [
@@ -65,7 +65,7 @@
         1440
       ],
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:heydar-aliyev-center",
       "activeRevisionId": "caucasus-20260430-baku-waterfront-skyline-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260430-baku-waterfront-skyline-watercolor-import-r1",
       "revisions": [
@@ -115,7 +115,7 @@
         1440
       ],
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-entrance",
       "activeRevisionId": "caucasus-20260430-gobustan-entrance-sign-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260430-gobustan-entrance-sign-watercolor-import-r1",
       "revisions": [
@@ -165,7 +165,7 @@
         750
       ],
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-rock-landscape",
       "activeRevisionId": "caucasus-20260430-gobustan-rock-landscape-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260430-gobustan-rock-landscape-watercolor-import-r1",
       "revisions": [
@@ -415,7 +415,7 @@
       "sourceArtifactRef": null,
       "sourceDimensions": null,
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-05-02:observation:roadside-mountains",
       "activeRevisionId": "caucasus-20260502-route-mountains-yellow-fields-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260502-route-mountains-yellow-fields-watercolor-import-r1",
       "revisions": [
@@ -631,7 +631,7 @@
       "sourceArtifactRef": null,
       "sourceDimensions": null,
       "lifecycle": "active",
-      "placement": null,
+      "placement": "caucasus:2026-05-02:destination:sighnaghi",
       "activeRevisionId": "caucasus-20260502-sighnaghi-panorama-watercolor-import-r1",
       "lastPublishedRevisionId": "caucasus-20260502-sighnaghi-panorama-watercolor-import-r1",
       "revisions": [
