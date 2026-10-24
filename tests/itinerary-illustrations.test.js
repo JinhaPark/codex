@@ -30,7 +30,7 @@ test('every guide illustration also has one explicit itinerary reference', () =>
     for (const place of Object.keys(day.places)) assert.ok(actual.placesKo.includes(place), place);
     assert.ok(referencedIds(day).every(id=>artwork.some(art=>art.id === id)));
   }
-  for (const art of artwork.filter(art=>!art.placement.startsWith('day:'))) {
+  for (const art of artwork.filter(art=>art.purpose !== 'site-banner' && !art.placement.startsWith('day:'))) {
     assert.ok(ids.includes(art.id), art.id);
     assert.ok(renderer.renderIllustration(art.placement).includes(`data-illustration="${art.id}"`), 'Canonical guide appearance remains available');
   }

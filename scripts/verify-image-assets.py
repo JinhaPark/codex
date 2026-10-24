@@ -29,6 +29,9 @@ for art in artwork:
     if art.get('framingEdit') == 'outpaint-top-and-clean-foreground':
         assert art['original'] == 'IMG_9082.jpeg' and art['id'] == 'samarkand-bibi-khanym-watercolor'
         assert actual_ratio < art['sourceWidth'] / art['sourceHeight']
+    elif art.get('framingEdit') == 'panoramic-banner-redraw':
+        assert art['id'] == 'silk-road-banner-watercolor' and art['placement'] == 'site:banner'
+        assert art['original'] == 'image(1).png' and abs(actual_ratio - 3) < .003
     else:
         assert abs(actual_ratio / (art['sourceWidth'] / art['sourceHeight']) - 1) < .003, art['id']
     assert art['height'] <= art['sourceHeight']
