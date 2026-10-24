@@ -135,7 +135,7 @@
       "sourceWidth": 1152,
       "sourceHeight": 1536,
       "activeRevisionId": "legacy-autumn-birch-walk-watercolor",
-      "placement": "day:6:tip",
+      "placement": "day:5:cholponata",
       "revisions": [
         {
           "revisionId": "legacy-autumn-birch-walk-watercolor",
@@ -1285,7 +1285,7 @@
       "sourceWidth": 370,
       "sourceHeight": 800,
       "activeRevisionId": "legacy-cholponata-balbal-pencil",
-      "placement": "day:5:places",
+      "placement": "cholponata:2:balbal",
       "revisions": [
         {
           "revisionId": "legacy-cholponata-balbal-pencil",
@@ -1921,14 +1921,14 @@
     },
     {
       "illustrationId": "bukhara-chashma-ayub-watercolor",
-      "originalName": "IMG_8877.jpeg",
-      "sourceId": null,
-      "sourceSha256": null,
+      "originalName": "bukhara-chashma-ayub-watercolor-1200.webp",
+      "sourceId": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85",
+      "sourceSha256": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85",
       "sourceArtifactRef": null,
-      "sourceAvailability": "not-recovered",
-      "sourceWidth": 1536,
-      "sourceHeight": 1152,
-      "activeRevisionId": "legacy-bukhara-chashma-ayub-watercolor",
+      "sourceAvailability": "hash-only",
+      "sourceWidth": 1200,
+      "sourceHeight": 900,
+      "activeRevisionId": "bukhara-chashma-ayub-watercolor-r1",
       "placement": "bukhara:14:1",
       "revisions": [
         {
@@ -1973,11 +1973,114 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "Replaced by a new edit of its verified published WebP; unavailable master was not recovered.",
+          "lifecycleChangedAt": "2026-10-24T11:15:47.381373+00:00"
+        },
+        {
+          "revisionId": "bukhara-chashma-ayub-watercolor-r1",
+          "illustrationId": "bukhara-chashma-ayub-watercolor",
+          "sourceId": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85",
+          "parentRevisionId": null,
+          "replacesRevisionId": "legacy-bukhara-chashma-ayub-watercolor",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "remove-four-foreground-people",
+            "sourceSha256": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85",
+            "parentOutputSha256": null,
+            "tool": "imagegen",
+            "model": null,
+            "prompt": "Use case: precise-object-edit. Edit target: the provided watercolor illustration of Bukhara Chashma Ayub. Remove exactly the FOUR large foreground people along the bottom center/right: (1) the man in a black coat and black hat at about x=495, (2) the closest person in a purple wide brimmed hat and pink top at bottom center, (3) the woman in a black coat and brown patterned hat at about x=680, (4) the man in a red jacket and navy cap at about x=805. Remove these four figures completely, including their clothing, bags and local cast shadows. Reconstruct only their occluded areas as continuous matching sunlit stone paving, with the same paving perspective, steps, color and watercolor texture as the adjacent ground. Preserve every smaller background person near the LEFT entrance, including the partially cropped person at the far left. Preserve all existing architecture exactly: conical roof and finial, domes, tower windows, detailed brick patterns, wall edges, arched openings, bench, trees, blue sky, perspective and original 4:3 composition. Keep the watercolor style and existing colors unchanged. Do not crop, reframe, add buildings, add people, text, a watermark or a border. Make only this targeted removal and local paving restoration.",
+            "transparentBackground": false,
+            "inputKind": "published-webp-derivative",
+            "inputRevisionId": "legacy-bukhara-chashma-ayub-watercolor",
+            "inputFile": "public/illustrations/bukhara-chashma-ayub-watercolor-1200.webp",
+            "inputSha256": "df65a168f988e2e992f3e43d0041df3b1456aa213e817c4ce38e3df7b0c79a85",
+            "originalPhotoName": "IMG_8877.jpeg",
+            "originalPhotoSha256": null,
+            "skillsCommit": "ca4b450c226118a1a318b8321cd6f403536c915c"
+          },
+          "recipeKey": "3f7548aa47e2f1f4652c4454eb700d95a9162f02c0e50f0cd43d6b3ade04e026",
+          "outputSha256": "981bbe7398fa7c31764a11ac5a2a5127d4962cc67b389a4b9907b4aecd1ffef9",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-edited-variant-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Removed the four large foreground visitors and local shadows; retained the smaller entrance group, conical roof, domes, bench and 4:3 framing. Minor generated paving texture changes."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T11:15:47.381373+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 360,
+              "bytes": 54768,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-chashma-ayub-clean-r1-480.webp",
+              "sha256": "fce13ea4aed8d0c98d46ab652462a74ccd3e408462575dfd408b00edfa1be2b4"
+            },
+            {
+              "width": 800,
+              "height": 600,
+              "bytes": 147130,
+              "quality": 88,
+              "file": "public/illustrations/bukhara-chashma-ayub-clean-r1-800.webp",
+              "sha256": "d6ffa5e8bf737c15079d5883eb3cc71a22f0aa153e496b7ca4804ac6b37ba3dd"
+            },
+            {
+              "width": 1200,
+              "height": 900,
+              "bytes": 225444,
+              "quality": 84,
+              "file": "public/illustrations/bukhara-chashma-ayub-clean-r1-1200.webp",
+              "sha256": "123af9f9810c25b3d4d53790f4a4492f1301d1515dcb390bbde7e7f342378a16"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "981bbe7398fa7c31764a11ac5a2a5127d4962cc67b389a4b9907b4aecd1ffef9",
+            "sourceDimensions": [
+              1200,
+              900
+            ],
+            "generatedDimensions": [
+              1448,
+              1086
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac"
+          },
+          "optimizeKey": "e6054cdb86b10031778e577718ced696d41a205dfb6569717ab15507037fa0a2",
+          "lifecycle": "active",
+          "lifecycleReason": "User-requested illustration correction after visual review.",
+          "skillsCommit": "ca4b450c226118a1a318b8321cd6f403536c915c"
         }
       ],
       "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-bukhara-chashma-ayub-watercolor"
+      "lastPublishedRevisionId": "bukhara-chashma-ayub-watercolor-r1",
+      "sourceProvenance": {
+        "kind": "published-webp-derivative",
+        "originalPhotoName": "IMG_8877.jpeg",
+        "originalPhotoSha256": null,
+        "inputRevisionId": "legacy-bukhara-chashma-ayub-watercolor"
+      }
     },
     {
       "illustrationId": "hotel-pool-garden-watercolor",
@@ -2325,14 +2428,14 @@
     },
     {
       "illustrationId": "hazrati-imam-portrait-watercolor",
-      "originalName": "IMG_9013.jpeg",
-      "sourceId": null,
-      "sourceSha256": null,
+      "originalName": "hazrati-imam-portrait-watercolor-370.webp",
+      "sourceId": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb",
+      "sourceSha256": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb",
       "sourceArtifactRef": null,
-      "sourceAvailability": "not-recovered",
+      "sourceAvailability": "hash-only",
       "sourceWidth": 370,
       "sourceHeight": 800,
-      "activeRevisionId": "legacy-hazrati-imam-portrait-watercolor",
+      "activeRevisionId": "hazrati-imam-portrait-watercolor-r1",
       "placement": "tashkent:7:detail",
       "revisions": [
         {
@@ -2361,11 +2464,96 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "Replaced by a new edit of its verified published WebP; unavailable master was not recovered.",
+          "lifecycleChangedAt": "2026-10-24T11:15:47.381373+00:00"
+        },
+        {
+          "revisionId": "hazrati-imam-portrait-watercolor-r1",
+          "illustrationId": "hazrati-imam-portrait-watercolor",
+          "sourceId": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb",
+          "parentRevisionId": null,
+          "replacesRevisionId": "legacy-hazrati-imam-portrait-watercolor",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "gate-edge-completion",
+            "sourceSha256": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb",
+            "parentOutputSha256": null,
+            "tool": "imagegen",
+            "model": null,
+            "prompt": "Use case: precise-object-edit. Edit target: the supplied published 370×800 portrait watercolor illustration of the Hazrati Imam gate. This is a minimal edge-outpainting task, not a new depiction. Extend the canvas a modest amount at the right, and only as much at left/top as necessary, so the entire existing outer gate facade, both outer pilasters and full horizontal cornice are visible with small sky/side margins. The current right outer pilaster/cornice is cut by the image edge; complete just that missing exterior edge in the same perspective and watercolor treatment, continuing the existing masonry and plinth naturally. Keep a tall portrait composition, modestly wider than the source. Preserve all existing image content and its proportions: the pointed arch and recessed doorway, open wooden door, tile panels and existing calligraphic marks, brickwork, lighting, blue watercolor sky, paved foreground and shadows. Do not crop, zoom, recompose, redesign, or replace the existing gate. New painted areas should be limited to the necessary edge completion and matching sky/ground extensions. Do not add people, buildings, domes, minarets, extra architectural features, invented legible inscriptions, labels, borders, or frames. The missing parts are generated completion of this published illustration; no claim of recovering an unavailable original/master.",
+            "transparentBackground": false,
+            "inputKind": "published-webp-derivative",
+            "inputRevisionId": "legacy-hazrati-imam-portrait-watercolor",
+            "inputFile": "public/illustrations/hazrati-imam-portrait-watercolor-370.webp",
+            "inputSha256": "9f7a6a9f01e8104459c37e812f282cc2a63436a03ebff7081c4050f81ff6abbb",
+            "originalPhotoName": "IMG_9013.jpeg",
+            "originalPhotoSha256": null,
+            "skillsCommit": "ca4b450c226118a1a318b8321cd6f403536c915c"
+          },
+          "recipeKey": "a34d1641cbca5a4cb9dfa8b9efa351d3ca17eebc8aeb0c09e8190f76566dffd5",
+          "outputSha256": "cdfc8ddab42de4d116dc50ab0699daa452af8b485a4c598e5abd3e74e2057857",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-edited-variant-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Complete outer gate fits with side margins; arch, open door, tile-panel arrangement, brick facade and portrait framing remain recognizable. Generated completion also re-rendered tile strokes and fine surfaces; not a measured architectural restoration."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T11:15:47.381373+00:00",
+          "variants": [
+            {
+              "width": 370,
+              "height": 800,
+              "bytes": 134860,
+              "quality": 88,
+              "file": "public/illustrations/hazrati-imam-complete-gate-r1-370.webp",
+              "sha256": "5db53d838724818d26121596b50bedb204ccd892fcbd3044521c6351804765fd"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "cdfc8ddab42de4d116dc50ab0699daa452af8b485a4c598e5abd3e74e2057857",
+            "sourceDimensions": [
+              370,
+              800
+            ],
+            "generatedDimensions": [
+              853,
+              1844
+            ],
+            "widths": [
+              370
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "outpaint",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac"
+          },
+          "optimizeKey": "1cce82250576404c8cc4d06500d40fa250bef12a5f594d5cd6226ea91807d6b9",
+          "lifecycle": "active",
+          "lifecycleReason": "User-requested illustration correction after visual review.",
+          "skillsCommit": "ca4b450c226118a1a318b8321cd6f403536c915c"
         }
       ],
       "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-hazrati-imam-portrait-watercolor"
+      "lastPublishedRevisionId": "hazrati-imam-portrait-watercolor-r1",
+      "sourceProvenance": {
+        "kind": "published-webp-derivative",
+        "originalPhotoName": "IMG_9013.jpeg",
+        "originalPhotoSha256": null,
+        "inputRevisionId": "legacy-hazrati-imam-portrait-watercolor"
+      }
     },
     {
       "illustrationId": "cholponata-petroglyph-detail-pencil",

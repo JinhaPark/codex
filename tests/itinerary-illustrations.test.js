@@ -20,7 +20,7 @@ function renderDate(date) {
     renderer.renderItineraryIllustrationExtras(date)].join('');
 }
 
-const guideOnly = new Set(['bukhara-kalyan-minaret-pencil','lyabi-hauz-evening-watercolor']);
+const guideOnly = new Set(['bukhara-kalyan-minaret-pencil','lyabi-hauz-evening-watercolor','arabic-manuscript-pencil']);
 
 test('guide illustrations have explicit itinerary references except the selected guide-only views', () => {
   assert.equal(new Set(references.map(day=>day.date)).size, references.length);
@@ -62,7 +62,7 @@ test('each date renders each illustration once with the original responsive asse
 });
 
 test('unconfirmed subjects stay in labeled reference groups instead of destination cards', () => {
-  const unconfirmed = ['mountain-orchards-watercolor','uzbek-tilework-pencil','arabic-manuscript-pencil','zoroastrian-ossuary-pencil','aral-sea-exhibit-photo'];
+  const unconfirmed = ['mountain-orchards-watercolor','uzbek-tilework-pencil','zoroastrian-ossuary-pencil','aral-sea-exhibit-photo'];
   for (const id of unconfirmed) {
     const day = references.find(day=>day.extras.some(group=>group.ids.includes(id)));
     assert.ok(day, id);

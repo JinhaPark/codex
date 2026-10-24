@@ -2,83 +2,182 @@
   {
     "date": "2026-10-13",
     "places": {
-      "부하라 아르크 성채": ["bukhara-ark-walls-pencil"],
-      "칼랸 미나레트": ["bukhara-poi-kalyan-watercolor"],
-      "라비하우즈": ["lyabi-hauz-portal-watercolor"],
-      "나디르 디반베기 마드라사": ["bukhara-divan-begi-portal-pencil"]
+      "부하라 아르크 성채": [
+        "bukhara-ark-walls-pencil"
+      ],
+      "칼랸 미나레트": [
+        "bukhara-poi-kalyan-watercolor"
+      ],
+      "라비하우즈": [
+        "lyabi-hauz-portal-watercolor"
+      ],
+      "나디르 디반베기 마드라사": [
+        "bukhara-divan-begi-portal-pencil"
+      ]
     },
     "extras": [
-      {"title": "부하라 시장 풍경", "ids": ["bukhara-spice-stall-pencil"]},
-      {"title": "역사 해설 참고 자료", "note": "아래 전시물의 촬영 박물관은 확인되지 않았습니다. 이날 방문지에서 촬영한 것으로 표시하지 않습니다.", "ids": ["zoroastrian-ossuary-pencil"]}
+      {
+        "title": "부하라 시장 풍경",
+        "ids": [
+          "bukhara-spice-stall-pencil"
+        ]
+      },
+      {
+        "title": "역사 해설 참고 자료",
+        "note": "아래 전시물의 촬영 박물관은 확인되지 않았습니다. 이날 방문지에서 촬영한 것으로 표시하지 않습니다.",
+        "ids": [
+          "zoroastrian-ossuary-pencil"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-14",
     "places": {
-      "이스마일 사마니 영묘": ["bukhara-samani-watercolor"],
-      "차슈마 아유브 영묘": ["bukhara-chashma-ayub-watercolor"],
-      "시토라이 모히 호사 궁전": ["bukhara-sitorai-pool-watercolor"]
+      "이스마일 사마니 영묘": [
+        "bukhara-samani-watercolor"
+      ],
+      "차슈마 아유브 영묘": [
+        "bukhara-chashma-ayub-watercolor"
+      ],
+      "시토라이 모히 호사 궁전": [
+        "bukhara-sitorai-pool-watercolor"
+      ]
     },
     "extras": []
   },
   {
     "date": "2026-10-15",
     "places": {
-      "레기스탄 광장": ["registan-travel-portrait-watercolor", "samarkand-turquoise-dome-pencil", "registan-gilded-ceiling-pencil"],
-      "비비하눔 모스크": ["samarkand-bibi-khanym-watercolor"],
-      "아프라시압 박물관": ["afrasiyab-envoys-pencil"],
-      "울루그벡 천문대": ["ulughbeg-meridian-pencil", "ulughbeg-year-exhibit-photo", "ulughbeg-statue-pencil"],
-      "구르에미르 영묘": ["samarkand-gur-emir-watercolor"]
+      "레기스탄 광장": [
+        "registan-travel-portrait-watercolor",
+        "samarkand-turquoise-dome-pencil",
+        "registan-gilded-ceiling-pencil"
+      ],
+      "비비하눔 모스크": [
+        "samarkand-bibi-khanym-watercolor"
+      ],
+      "아프라시압 박물관": [
+        "afrasiyab-envoys-pencil"
+      ],
+      "울루그벡 천문대": [
+        "ulughbeg-meridian-pencil",
+        "ulughbeg-year-exhibit-photo",
+        "ulughbeg-statue-pencil"
+      ],
+      "구르에미르 영묘": [
+        "samarkand-gur-emir-watercolor"
+      ]
     },
     "extras": [
-      {"title": "건축 해설 참고 그림", "note": "아래 타일 장식의 촬영 장소는 확인되지 않았습니다. 특정 방문지의 장식으로 단정하지 않고 함께 살펴봅니다.", "ids": ["uzbek-tilework-pencil"]},
-      {"title": "물과 환경 해설 참고 자료", "note": "아랄해 축소를 보여 주는 전시자료입니다. 촬영 전시관은 확인되지 않았으며, 아랄해 방문을 뜻하지 않습니다.", "ids": ["aral-sea-exhibit-photo"]}
+      {
+        "title": "건축 해설 참고 그림",
+        "note": "아래 타일 장식의 촬영 장소는 확인되지 않았습니다. 특정 방문지의 장식으로 단정하지 않고 함께 살펴봅니다.",
+        "ids": [
+          "uzbek-tilework-pencil"
+        ]
+      },
+      {
+        "title": "물과 환경 해설 참고 자료",
+        "note": "아랄해 축소를 보여 주는 전시자료입니다. 촬영 전시관은 확인되지 않았으며, 아랄해 방문을 뜻하지 않습니다.",
+        "ids": [
+          "aral-sea-exhibit-photo"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-16",
     "places": {
-      "타슈켄트 미노르 모스크": ["tashkent-minor-portrait-watercolor", "tashkent-minor-ceiling-pencil"],
-      "아미르 티무르 광장": ["tashkent-amir-temur-watercolor"],
-      "하즈라티 이맘 단지": ["hazrati-imam-portrait-watercolor"]
+      "타슈켄트 미노르 모스크": [
+        "tashkent-minor-portrait-watercolor",
+        "tashkent-minor-ceiling-pencil"
+      ],
+      "아미르 티무르 광장": [
+        "tashkent-amir-temur-watercolor"
+      ],
+      "하즈라티 이맘 단지": [
+        "hazrati-imam-portrait-watercolor"
+      ]
     },
     "extras": [
-      {"title": "타슈켄트 거리와 광장", "ids": ["tashkent-broadway-watercolor", "tashkent-independence-fountains-watercolor"]},
-      {"title": "종교·문화 해설 참고 자료", "note": "아래 필사본의 촬영 장소는 확인되지 않았습니다. 하즈라티 이맘 단지의 특정 소장품으로 단정하지 않고 함께 살펴봅니다.", "ids": ["arabic-manuscript-pencil"]}
+      {
+        "title": "타슈켄트 거리와 광장",
+        "ids": [
+          "tashkent-broadway-watercolor",
+          "tashkent-independence-fountains-watercolor"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-17",
     "places": {
-      "루흐 오르도 문화센터": ["rukh-ordo-lakeside-watercolor"],
-      "촐폰아타 암각화": ["cholponata-petroglyph-field-watercolor", "cholponata-petroglyph-detail-pencil"],
-      "이식쿨 호수": ["issyk-kul-cruise-tian-shan-watercolor"]
+      "루흐 오르도 문화센터": [
+        "rukh-ordo-lakeside-watercolor"
+      ],
+      "촐폰아타 암각화": [
+        "cholponata-petroglyph-field-watercolor",
+        "cholponata-petroglyph-detail-pencil",
+        "cholponata-balbal-pencil"
+      ],
+      "이식쿨 호수": [
+        "issyk-kul-cruise-tian-shan-watercolor"
+      ],
+      "촐폰아타": [
+        "autumn-birch-walk-watercolor"
+      ]
     },
     "extras": []
   },
   {
     "date": "2026-10-18",
-    "places": {"알라아르차 국립공원": ["ala-archa-valley-watercolor", "ala-archa-summit-watercolor"]},
+    "places": {
+      "알라아르차 국립공원": [
+        "ala-archa-valley-watercolor",
+        "ala-archa-summit-watercolor"
+      ]
+    },
     "extras": [
-      {"title": "톈산 산록의 풍경 참고 그림", "note": "톈산산맥 아래 포도밭을 보여 주는 그림입니다. 세부 촬영 장소와 날짜는 확인되지 않아 이날 방문지에 배정하지 않습니다.", "ids": ["mountain-orchards-watercolor"]}
+      {
+        "title": "톈산 산록의 풍경 참고 그림",
+        "note": "톈산산맥 아래 포도밭을 보여 주는 그림입니다. 세부 촬영 장소와 날짜는 확인되지 않아 이날 방문지에 배정하지 않습니다.",
+        "ids": [
+          "mountain-orchards-watercolor"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-19",
     "places": {
-      "차른 협곡": ["charyn-canyon-watercolor"],
-      "루나 캐니언": ["lunar-canyon-watercolor"],
-      "블랙 캐니언": ["black-canyon-watercolor"]
+      "차른 협곡": [
+        "charyn-canyon-watercolor"
+      ],
+      "루나 캐니언": [
+        "lunar-canyon-watercolor"
+      ],
+      "블랙 캐니언": [
+        "black-canyon-watercolor"
+      ]
     },
     "extras": []
   },
   {
     "date": "2026-10-20",
     "places": {
-      "판필로프 공원": ["almaty-panfilov-flame-watercolor"],
-      "젠코프 승천 성당": ["almaty-ascension-interior-pencil"],
-      "그린 바자르": ["almaty-green-bazaar-watercolor"],
-      "아르바트 거리": ["almaty-arbat-watercolor"]
+      "판필로프 공원": [
+        "almaty-panfilov-flame-watercolor"
+      ],
+      "젠코프 승천 성당": [
+        "almaty-ascension-interior-pencil"
+      ],
+      "그린 바자르": [
+        "almaty-green-bazaar-watercolor"
+      ],
+      "아르바트 거리": [
+        "almaty-arbat-watercolor"
+      ]
     },
     "extras": []
   }

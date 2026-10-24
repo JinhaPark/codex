@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "viewports": [
+    375,
+    390,
+    430
+  ],
+  "balbalUnderPetroglyphTimeLayers": true,
+  "threePetroglyphFigures": true,
+  "birchUnderCholponata": true,
+  "gateAndChashmaDecode": true,
+  "faminePopulationText": true,
+  "javascriptErrors": []
+}

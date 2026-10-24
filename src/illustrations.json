@@ -78,7 +78,7 @@
     "id": "autumn-birch-walk-watercolor",
     "original": "IMG_8995.jpeg",
     "style": "watercolor",
-    "placement": "day:6:tip",
+    "placement": "day:5:cholponata",
     "caption": "Karven Four Seasons 리조트의 자작나무길",
     "alt": "Karven Four Seasons 리조트 건물 옆 보행로에 자작나무가 노랗게 물든 풍경",
     "sourceWidth": 1152,
@@ -591,7 +591,7 @@
     "id": "cholponata-balbal-pencil",
     "original": "IMG_9007(1).jpeg",
     "style": "colored-pencil",
-    "placement": "day:5:places",
+    "placement": "cholponata:2:balbal",
     "caption": "촐폰아타 암각화 구역 — 발발 석상",
     "alt": "촐폰아타 암각화 구역에서 눈과 긴 코가 새겨진 발발 석상, 바위 들판과 산",
     "sourceWidth": 370,
@@ -767,8 +767,8 @@
     "original": "IMG_8881.jpeg",
     "style": "documentary-photo",
     "placement": "resources:0:1",
-    "caption": "아랄해 축소 전시 — 연도별 수면 지도와 드러난 호저. 정장 차림의 인물은 반기문 전 유엔 사무총장입니다.",
-    "alt": "1957·1982·2000·2017년 아랄해 지도와 수면 비교 영상, 마른 호저의 선박이 배치된 전시판",
+    "caption": "아랄해 축소 전시 — 연도별 수면 지도와 드러난 호수 바닥. 정장 차림의 인물은 반기문 전 유엔 사무총장입니다.",
+    "alt": "1957·1982·2000·2017년 아랄해 지도와 수면 비교 영상, 마른 호수 바닥의 선박이 배치된 전시판",
     "sourceWidth": 1536,
     "sourceHeight": 1152,
     "width": 1200,
@@ -987,40 +987,44 @@
   },
   {
     "id": "bukhara-chashma-ayub-watercolor",
-    "original": "IMG_8877.jpeg",
+    "original": "bukhara-chashma-ayub-watercolor-1200.webp",
     "style": "watercolor",
     "placement": "bukhara:14:1",
     "caption": "부하라 차슈마 아유브 — 원뿔형 지붕과 벽돌 외벽",
-    "alt": "원뿔형 지붕과 작은 돔이 솟은 긴 벽돌 건물, 앞쪽 포장길의 관람객과 오른쪽 벤치",
-    "sourceWidth": 1536,
-    "sourceHeight": 1152,
+    "alt": "원뿔형 지붕과 작은 돔이 솟은 긴 벽돌 건물, 앞쪽 포장길과 왼쪽 입구의 관람객, 오른쪽 벤치",
+    "sourceWidth": 1200,
+    "sourceHeight": 900,
     "width": 1200,
     "height": 900,
     "variants": [
       {
         "width": 480,
         "height": 360,
-        "bytes": 58750,
+        "bytes": 54768,
         "quality": 88,
-        "file": "bukhara-chashma-ayub-watercolor-480.webp"
+        "file": "bukhara-chashma-ayub-clean-r1-480.webp"
       },
       {
         "width": 800,
         "height": 600,
-        "bytes": 164510,
+        "bytes": 147130,
         "quality": 88,
-        "file": "bukhara-chashma-ayub-watercolor-800.webp"
+        "file": "bukhara-chashma-ayub-clean-r1-800.webp"
       },
       {
         "width": 1200,
         "height": 900,
-        "bytes": 248094,
-        "quality": 82,
-        "file": "bukhara-chashma-ayub-watercolor-1200.webp"
+        "bytes": 225444,
+        "quality": 84,
+        "file": "bukhara-chashma-ayub-clean-r1-1200.webp"
       }
     ],
     "generatedWidth": 1448,
-    "generatedHeight": 1086
+    "generatedHeight": 1086,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "sourceKind": "published-illustration-edit",
+    "revision": "bukhara-chashma-ayub-watercolor-r1"
   },
   {
     "id": "hotel-pool-garden-watercolor",
@@ -1238,7 +1242,7 @@
   },
   {
     "id": "hazrati-imam-portrait-watercolor",
-    "original": "IMG_9013.jpeg",
+    "original": "hazrati-imam-portrait-watercolor-370.webp",
     "style": "watercolor",
     "placement": "tashkent:7:detail",
     "caption": "타슈켄트 하즈라티 이맘 단지 — 타일 아치 입구",
@@ -1249,18 +1253,20 @@
     "height": 800,
     "variants": [
       {
-        "file": "hazrati-imam-portrait-watercolor-370.webp",
         "width": 370,
         "height": 800,
-        "bytes": 134368,
-        "quality": 88
+        "bytes": 134860,
+        "quality": 88,
+        "file": "hazrati-imam-complete-gate-r1-370.webp"
       }
     ],
     "generatedWidth": 853,
     "generatedHeight": 1844,
     "editInputWidth": 370,
     "editInputHeight": 800,
-    "revision": "2026-10-19-remove-people-and-arrival-dinner"
+    "revision": "hazrati-imam-portrait-watercolor-r1",
+    "sourceKind": "published-illustration-edit",
+    "framingEdit": "gate-edge-completion"
   },
   {
     "id": "cholponata-petroglyph-detail-pencil",
