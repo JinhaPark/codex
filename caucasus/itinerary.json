@@ -150,7 +150,10 @@
         },
         {
           "name": "셰키 옛 마을",
-          "description": "전통 가옥과 골목을 걷고 자유시간을 보냅니다."
+          "description": "전통 가옥과 골목을 걷고 자유시간을 보냅니다.",
+          "photoIds": [
+            "caucasus-20260501-sheki-street-watercolor"
+          ]
         }
       ],
       "photoObservations": [
