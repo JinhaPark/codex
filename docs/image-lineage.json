@@ -4747,6 +4747,119 @@
       "lifecycle": "archived",
       "lifecycleReason": "User rejected the generated geography and requested restoration of the original plain green banner.",
       "lifecycleChangedAt": "2026-10-24T10:30:31.320961+00:00"
+    },
+    {
+      "illustrationId": "issyk-kul-banner-watercolor",
+      "originalName": "issyk-kul-cruise-tian-shan-watercolor-1200.webp",
+      "sourceId": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9",
+      "sourceSha256": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only",
+      "sourceWidth": 1200,
+      "sourceHeight": 900,
+      "activeRevisionId": "issyk-kul-banner-watercolor-r1",
+      "placement": "site:banner",
+      "revisions": [
+        {
+          "revisionId": "issyk-kul-banner-watercolor-r1",
+          "illustrationId": "issyk-kul-banner-watercolor",
+          "sourceId": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9",
+          "parentRevisionId": null,
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "panoramic-lake-banner-redraw",
+            "sourceSha256": "3d63e5fcd1a39bb8ec6f36d94564b4f0926fa2735a7d36233f94d7b0b98a04e9",
+            "parentOutputSha256": null,
+            "tool": "imagegen",
+            "model": null,
+            "prompt": "Use case: precise-object-edit. Asset: panoramic watercolor background for an existing Korean Central Asia travel-journal website banner. Input image is the edit target: the existing watercolor view across Issyk-Kul lake towards the Tian Shan snowy ridge. Reframe and redraw it as a clean 3:1 horizontal panorama, preserving the recognizable relative shape and arrangement of the distant snow ridge, level water horizon, and the small wooded shore at the far right. Crop away the boat rail and wheel at the bottom right entirely. Keep the scenery continuous, with no invented prominent peak, island, building, people, map, paths, or labels. Retain restrained transparent watercolor texture, soften the oversaturated blue to muted lake teal and cool blue with pale warm ivory-blue sky, matching a cream-paper travel website. Composition: a quiet, uncluttered pale sky in approximately the upper 55% for an HTML title that will be overlaid later; mountain band across roughly 55–72% height; lake below. Full bleed to all four edges: no margins, borders, legend, lettering, title, watermark or frame. One finished wide image only.",
+            "inputKind": "published-webp-derivative",
+            "inputFile": "public/illustrations/issyk-kul-cruise-tian-shan-watercolor-1200.webp",
+            "inputIllustrationId": "issyk-kul-cruise-tian-shan-watercolor",
+            "inputRevisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor",
+            "originalPhotoSha256": null,
+            "transparentBackground": false,
+            "skillsCommit": "31edf9f48d151920314055859473bbcb0af7e66d"
+          },
+          "recipeKey": "2e18adac9b16a22ec3b41ffe767f85c423ca9e2eb20d94a9ce1bc73cf96ddc52",
+          "outputSha256": "bf4e459060133b6cc1bc31506cd6ca27d15d0e5ffe833aeadf0abb0b23b40db9",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-edited-variant-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Wide watercolor redraw of the selected lake view; boat rail removed, quiet pale sky for HTML text, distant ridge and right shore retained as recognizable motifs. Fine ridge shapes and water strokes are redrawn, not a measured geographic reconstruction."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T11:51:19.038250+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 14716,
+              "quality": 88,
+              "file": "public/illustrations/issyk-kul-banner-r1-480.webp",
+              "sha256": "18403672738beed3ac7cf60e007e726e867b7ed380a93e911e059bb1a3bbca2b"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 39804,
+              "quality": 88,
+              "file": "public/illustrations/issyk-kul-banner-r1-800.webp",
+              "sha256": "3609a480408be26eb26740093f0468c31cb7beb84adb9440e5cd793613337575"
+            },
+            {
+              "width": 1200,
+              "height": 400,
+              "bytes": 79514,
+              "quality": 88,
+              "file": "public/illustrations/issyk-kul-banner-r1-1200.webp",
+              "sha256": "71a683852144fadc702043610da1a437216b85deeadfbbb640baab9d45fd5c5f"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "bf4e459060133b6cc1bc31506cd6ca27d15d0e5ffe833aeadf0abb0b23b40db9",
+            "sourceDimensions": [
+              1200,
+              900
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1200
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "crop",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac"
+          },
+          "optimizeKey": "cb0a4a960909ebb9da720b35f7683b32647251bb760e13b2a897b41cd50fabf7",
+          "lifecycle": "active"
+        }
+      ],
+      "lifecycle": "active",
+      "lastPublishedRevisionId": "issyk-kul-banner-watercolor-r1",
+      "sourceProvenance": {
+        "kind": "published-webp-derivative",
+        "originalPhotoSha256": null,
+        "inputIllustrationId": "issyk-kul-cruise-tian-shan-watercolor",
+        "inputRevisionId": "legacy-issyk-kul-cruise-tian-shan-watercolor"
+      }
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",

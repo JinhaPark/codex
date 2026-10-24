@@ -36,6 +36,11 @@ test('published illustration variants are complete WebP files with the recorded 
         assert.equal(art.placement, 'site:banner');
         assert.equal(art.original, 'image(1).png');
         assert.ok(Math.abs(actualRatio - 3) < .003, 'Explicitly requested panoramic banner');
+      } else if (art.framingEdit === 'issyk-kul-banner-crop') {
+        assert.equal(art.id, 'issyk-kul-banner-watercolor');
+        assert.equal(art.original, 'issyk-kul-cruise-tian-shan-watercolor-1200.webp');
+        assert.equal(art.placement, 'site:banner');
+        assert.ok(Math.abs(actualRatio - 3) < .003);
       } else {
         assert.ok(Math.abs((actualRatio / (art.sourceWidth / art.sourceHeight)) - 1) < 0.003, 'Keep the original framing within generator canvas rounding');
       }

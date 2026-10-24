@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "viewports": [
+    {
+      "width": 375,
+      "titleFits": true,
+      "priority": "high"
+    },
+    {
+      "width": 390,
+      "titleFits": true,
+      "priority": "high"
+    },
+    {
+      "width": 430,
+      "titleFits": true,
+      "priority": "high"
+    },
+    {
+      "width": 1280,
+      "titleFits": true,
+      "priority": "high"
+    }
+  ],
+  "singleLineTitle": true,
+  "visitedBannerOffline": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local Chromium, not actual iPhone Safari",
+    "No deployment check"
+  ]
+}

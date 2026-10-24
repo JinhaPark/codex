@@ -32,6 +32,10 @@ for art in artwork:
     elif art.get('framingEdit') == 'panoramic-banner-redraw':
         assert art['id'] == 'silk-road-banner-watercolor' and art['placement'] == 'site:banner'
         assert art['original'] == 'image(1).png' and abs(actual_ratio - 3) < .003
+    elif art.get('framingEdit') == 'issyk-kul-banner-crop':
+        assert art['id'] == 'issyk-kul-banner-watercolor' and art['placement'] == 'site:banner'
+        assert art['original'] == 'issyk-kul-cruise-tian-shan-watercolor-1200.webp'
+        assert abs(actual_ratio - 3) < .003
     else:
         assert abs(actual_ratio / (art['sourceWidth'] / art['sourceHeight']) - 1) < .003, art['id']
     assert art['height'] <= art['sourceHeight']
