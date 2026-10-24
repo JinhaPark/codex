@@ -1,5 +1,7 @@
 import data from '../itinerary.json';
-import pendingPhotos from '../../shared/images/caucasus-photo-batch-20260501.json';
+import shekiPhotos from '../../shared/images/caucasus-photo-batch-20260501.json';
+import kakhetiPhotos from '../../shared/images/caucasus-photo-batch-20260502.json';
+const pendingPhotos = [...shekiPhotos, ...kakhetiPhotos];
 import {chapters} from './guide.js';
 import {escapeHtml as esc, mapSearchUrl as maps, formatTravelDate as date} from '../../shared/travel-utils.js';
 import '../../shared/style.css';
