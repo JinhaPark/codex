@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source = fs.readFileSync(new URL('../public/sw.js', import.meta.url), 'utf8');
-const current = 'ca26-pages-v30-border-porter-tip';
+const current = 'ca26-pages-v31-compact-shopping';
 function worker({ put = async () => {}, fetch = async () => new Response('network') } = {}) {
   const stores = new Map(), handlers = {};
   const caches = {
@@ -63,4 +63,30 @@ test('worker leaves requests outside its app path and non-GET requests alone', (
     { url: 'https://external.example/codex/', method: 'GET' },
     { url: 'https://example.github.io/codex/', method: 'POST' }
   ]) handlers.fetch({ request, respondWith: () => assert.fail('Unexpected interception') });
+});
+
+
+test('online navigation replaces stale HTML with the published document', async () => {
+  const { stores, handlers } = worker({ fetch: async () => new Response('latest page') });
+  stores.set(current, new Map([['/codex/', new Response('old page')]]));
+  let result;
+  const lifetimes = [];
+  handlers.fetch({ request: {url:'https://example.github.io/codex/', method:'GET', mode:'navigate'}, respondWith: p => { result = p; }, waitUntil: p => lifetimes.push(p) });
+  assert.equal(await (await result).text(), 'latest page');
+  await Promise.all(lifetimes);
+  assert.equal(await stores.get(current).get('/codex/').text(), 'latest page');
+});
+
+test('offline navigation preserves the saved page and cached assets avoid the network', async () => {
+  let requests = 0;
+  const { stores, handlers } = worker({ fetch: async () => { requests++; throw new Error('offline'); } });
+  const asset = 'https://example.github.io/codex/assets/app.js';
+  stores.set(current, new Map([['/codex/', new Response('saved page')], [asset, new Response('saved asset')]]));
+  let result;
+  const event = request => ({request, respondWith: p => { result = p; }, waitUntil: () => {}});
+  handlers.fetch(event({url:'https://example.github.io/codex/', method:'GET', mode:'navigate'}));
+  assert.equal(await (await result).text(), 'saved page');
+  handlers.fetch(event({url:asset, method:'GET'}));
+  assert.equal(await (await result).text(), 'saved asset');
+  assert.equal(requests, 1);
 });

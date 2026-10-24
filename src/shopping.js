@@ -29,13 +29,13 @@ const won = (amount, rate) => {
 };
 const price = (amount, rate, currency, approximate = false) => `<span class="shopping-local-price">${approximate ? '약 ' : ''}${number(amount)} ${currency}</span><span class="shopping-won">(${won(amount, rate)})</span>`;
 const number = n => new Intl.NumberFormat('ko-KR').format(n);
-const table = (caption, headings, rows, footer = '') => `<div class="shopping-table-scroll" tabindex="0" role="region" aria-label="${caption}"><table class="shopping-table"><caption>${caption}</caption><thead><tr>${headings.map(x => `<th scope="col">${x}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr><th scope="row">${row[0]}</th>${row.slice(1).map(x => `<td>${x}</td>`).join('')}</tr>`).join('')}</tbody>${footer}</table></div>`;
+const table = (caption, headings, rows, footer = '') => `<div class="shopping-table-scroll" tabindex="0" role="region" aria-label="${caption}"><table class="shopping-table" aria-label="${caption}"><thead><tr>${headings.map(x => `<th scope="col">${x}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr><th scope="row">${row[0]}</th>${row.slice(1).map(x => `<td>${x}</td>`).join('')}</tr>`).join('')}</tbody>${footer}</table></div>`;
 export function renderShopping() {
-  const rows = receipts.flatMap(r => r.items.map(([ko, original, size, count, unit]) => [`${ko}<span class="shopping-size">${size}</span><small lang="ru">${original}</small>`, price(unit, kztKrw, 'KZT')]));
+  const rows = receipts.flatMap(r => r.items.map(([ko, original, size, count, unit]) => [`${ko} <span class="shopping-size">(${size})</span>`, price(unit, kztKrw, 'KZT')]));
   rows.push(
-    ['수우사미르 산악 야생화꿀<span class="shopping-size">180g · 노란 뚜껑</span>', price(400, fx.kgsKrw, 'KGS', true)],
-    ['흰색 통 백꿀<span class="shopping-size">약 150~200mL 추정</span><small>중량·밀원 미확인</small>', price(500, fx.kgsKrw, 'KGS', true)],
-    ['큰 통 백꿀<span class="shopping-size">500mL · 일행 구매</span>', price(900, fx.kgsKrw, 'KGS', true)],
+    ['수우사미르 산악 야생화꿀 <span class="shopping-size">(180g)</span>', price(400, fx.kgsKrw, 'KGS', true)],
+    ['흰색 통 백꿀 <span class="shopping-size">(약 150~200mL 추정)</span>', price(500, fx.kgsKrw, 'KGS', true)],
+    ['큰 통 백꿀 <span class="shopping-size">(500mL)</span>', price(900, fx.kgsKrw, 'KGS', true)],
   );
-  return table('개당 구매 가격', ['품목', '가격 · 원화 환산'], rows);
+  return table('개당 구매 가격', ['품목', '가격'], rows);
 }
