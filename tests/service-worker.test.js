@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source = fs.readFileSync(new URL('../public/sw.js', import.meta.url), 'utf8');
-const current = 'ca26-pages-v38-plain-green-banner';
+const current = 'ca26-pages-v39-footer-trip-date';
 function worker({ put = async () => {}, fetch = async () => new Response('network') } = {}) {
   const stores = new Map(), handlers = {};
   const caches = {
