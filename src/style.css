@@ -148,3 +148,14 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 @media(prefers-reduced-motion:reduce){.reader-toc{scroll-behavior:auto}}
 
 .shopping-panel{min-width:0}.shopping-table-scroll{width:100%;min-width:0}.shopping-table{max-width:100%}.shopping-table th,.shopping-table td{min-width:0;padding:10px 6px}.shopping-size{display:inline;font-size:1rem;font-weight:400;color:#5b625a;overflow-wrap:anywhere}.shopping-table th[scope=row]{word-break:keep-all;overflow-wrap:anywhere}
+
+/* One continuous guide list with a single disclosure per article. */
+.guide-group{margin:30px 0}
+.guide-group-title{font-size:19px;margin-bottom:12px;color:#465c59}
+.guide-book.bukhara-chapter{padding:0;margin:12px 0}
+.guide-inline-body{padding:0 16px 20px;min-width:0}
+.guide-inline-body .bukhara-history{margin:16px 0 0}
+.guide-inline-body .reader-section{border:0;background:transparent;overflow:visible}
+.guide-inline-body .guide-inline-heading{font-size:19px;line-height:1.65;margin:25px 0 10px}
+.guide-inline-body .bukhara-chapter-body{padding:0}
+.guide-book>summary:focus-visible{outline:3px solid #17617a;outline-offset:-3px}
