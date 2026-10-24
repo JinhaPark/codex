@@ -1,21 +1,27 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
-import { renderBanner } from '../src/render-banner.js';
+
 
 const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
 const lineage = JSON.parse(fs.readFileSync(new URL('../docs/image-lineage.json', import.meta.url)));
+const source = fs.readFileSync(new URL('../src/render-banner.js', import.meta.url), 'utf8').replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`);
+const {renderBanner} = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 
-test('plain banner retains the title, dates, and countries as HTML without a map request', () => {
+test('lake banner keeps readable HTML text and responsive priority artwork', () => {
   const html = renderBanner();
   assert.equal((html.match(/<h1>/g)||[]).length, 1);
   for (const text of ['중앙아시아','탄탄탄','실크로드 여행기','2026.10.12','우즈베키스탄','키르기스스탄','카자흐스탄']) assert.ok(html.includes(text));
   assert.match(html, /<header class="site-banner">/);
-  assert.doesNotMatch(html, /<img|srcset|data-banner|site-title-line/);
+  assert.match(html, /class="banner-landscape"/);
+  assert.match(html, /srcset=/);
+  assert.match(html, /fetchpriority="high"/);
+  assert.match(html, /alt="" aria-hidden="true"/);
+  assert.doesNotMatch(html, /silk-road-banner|loading="lazy"/);
 });
 
 test('retired map is unpublished while its history and archived WebPs remain', () => {
-  assert.ok(!artwork.some(art=>art.purpose === 'site-banner' || art.id === 'silk-road-banner-watercolor'));
+  assert.ok(!artwork.some(art=>art.id === 'silk-road-banner-watercolor'));
   const image = lineage.images.find(item=>item.illustrationId === 'silk-road-banner-watercolor');
   assert.equal(image.lifecycle, 'archived');
   assert.equal(image.activeRevisionId, null);

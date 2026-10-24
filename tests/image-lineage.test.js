@@ -50,7 +50,7 @@ rejects('recorded byte count corruption is rejected', d => d.images[0].revisions
 rejects('path traversal is rejected before reading files', d => d.images[0].revisions[0].variants[0].file = '../private.webp', 'variant-path');
 rejects('missing editing parent is rejected', d => d.images.at(-1).revisions[0].parentRevisionId = 'missing', 'parent-missing');
 rejects('editing cycles are rejected', d => { const r = d.images.at(-1).revisions[0]; r.parentRevisionId = r.revisionId; }, 'parent-cycle');
-rejects('another source is not an editing parent', d => d.images.at(-1).revisions[0].parentRevisionId = d.images.at(-2).activeRevisionId, 'cross-source-edit-parent');
+rejects('another source is not an editing parent', d => d.images.at(-1).revisions[0].parentRevisionId = d.images.find(i => i.activeRevisionId && i.sourceId !== d.images.at(-1).sourceId).activeRevisionId, 'cross-source-edit-parent');
 rejects('unknown master availability must be explicit', d => delete d.images.at(-1).revisions[0].masterAvailability, 'master-availability-required');
 rejects('a remote URL alone cannot prove master persistence', d => d.images.at(-1).revisions[0].artifactRef = 'https://example.invalid/private.png?token=secret', 'master-receipt-schema');
 rejects('a persisted label without a receipt is rejected', d => d.images.at(-1).revisions[0].masterAvailability = 'private-verified', 'master-receipt-schema');

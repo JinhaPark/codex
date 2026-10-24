@@ -1,0 +1,13 @@
+# Issyk-Kul banner
+
+The user chose candidate 2, the existing watercolor view across Issyk-Kul towards the Tian Shan, then authorized cropping/resizing and redrawing for the website banner. The travel-photo-to-illustration skill was read at skills commit `31edf9f48d151920314055859473bbcb0af7e66d` and the built-in imagegen skill was used.
+
+One image generation produced a 2172 × 724 panorama. The boat rail was removed, the watercolor palette was softened, and quiet pale sky was reserved for the existing HTML title. The recognizable lake, distant snow ridge and right-side wooded shore remain, but individual ridge shapes and brush strokes are redrawn. This is decorative artwork, not a geographic reconstruction. The title remains accessible HTML and stays on one line; the decorative image has an empty alt attribute to avoid repeating the nearby title. Muted teal text and a subtle pale overlay match the site's cream background.
+
+The actual input was the verified 1200 × 900 published WebP, not an original photograph or recovered master. The banner is a new source-root revision with that input hash and source illustration/revision references. No unknown original hash or editing parent is invented. The original guide image stays published. The previous Silk Road map stays archived. Exact prompt, source/output hashes and optimization parameters are recorded in `docs/image-lineage.json`; only the 480/800/1200 px WebPs are committed. The generated master is explicitly marked unpersisted.
+
+The framing exception is limited to this banner ID, its exact source WebP and `site:banner` placement. Other aspect-ratio checks are preserved. Destination coverage accounts for the banner alongside the existing lake illustration. A pre-existing lineage negative test now selects an actual active image from a different source instead of assuming the penultimate image is active.
+
+Focused validation: 38 banner, illustration and lineage tests passed. All active image variants decoded, with verified dimensions, hashes and stripped metadata. The production build passed. Local Chromium checked 375, 390, 430 and 1280 px, image decoding, single-line title, overflow, JavaScript errors and offline reuse after visiting. Screenshot review confirmed title contrast and separation from the mountain band. Mobile cover framing requests enough source pixels to avoid enlarging a small selected variant.
+
+The service worker is unchanged: navigation refreshes online, while new revision-named image URLs use its existing cache behavior. Unvisited images are not guaranteed offline. Actual iPhone Safari and deployment verification were not performed. Full regression testing is deferred until merging is requested.

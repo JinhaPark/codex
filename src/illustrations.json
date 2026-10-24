@@ -1768,5 +1768,48 @@
     "caption": "오이 카라가이 — 가을 숲 앞 곤돌라 승강장",
     "alt": "오이 카라가이 표기가 있는 곤돌라와 승강장 구조물 뒤로 가을 산비탈이 보이는 풍경",
     "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "issyk-kul-banner-watercolor",
+    "original": "issyk-kul-cruise-tian-shan-watercolor-1200.webp",
+    "style": "watercolor",
+    "sourceWidth": 1200,
+    "sourceHeight": 900,
+    "width": 1200,
+    "height": 400,
+    "variants": [
+      {
+        "width": 480,
+        "height": 160,
+        "bytes": 14716,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 267,
+        "bytes": 39804,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 400,
+        "bytes": 79514,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-1200.webp"
+      }
+    ],
+    "generatedWidth": 2172,
+    "generatedHeight": 724,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "framingEdit": "issyk-kul-banner-crop",
+    "placement": "site:banner",
+    "purpose": "site-banner",
+    "caption": "이식쿨호와 톈산산맥",
+    "alt": "푸른 이식쿨호 너머로 톈산산맥의 설산과 오른쪽의 작은 숲이 이어지는 풍경",
+    "sourceKind": "published-illustration-edit",
+    "revision": "issyk-kul-banner-watercolor-r1"
   }
 ]

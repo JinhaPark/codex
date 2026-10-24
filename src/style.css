@@ -159,11 +159,14 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .guide-inline-body .guide-inline-heading{font-size:19px;line-height:1.65;margin:25px 0 10px}
 .guide-inline-body .bukhara-chapter-body{padding:0}
 .guide-book>summary:focus-visible{outline:3px solid #17617a;outline-offset:-3px}
-/* Restore the original plain green header and gold title accents. */
-.site-banner{background:#14313c;color:#fff;padding:52px max(24px,calc((100vw - 760px)/2)) 45px}
-.site-banner .eyebrow{color:#e6c98c;font-size:11px;letter-spacing:2px}
-.site-banner h1{font-family:inherit;font-size:clamp(43px,10vw,80px);font-weight:400;line-height:1;margin:20px 0}
-.site-banner h1 em{color:#e6c98c}
-.site-banner p{opacity:.8}
+/* Keep the title in the quiet sky above the lake panorama. */
+.site-banner{position:relative;isolation:isolate;overflow:hidden;min-height:300px;height:clamp(300px,28vw,400px);box-sizing:border-box;background:#d7e8ec;color:#14313c;padding:32px max(24px,calc((100vw - 760px)/2)) 24px}
+.banner-landscape{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 64%;z-index:-2}
+.site-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(247,242,232,.38),transparent 64%);z-index:-1;pointer-events:none}
+.banner-copy{position:relative;max-width:760px}
+.site-banner .eyebrow{color:#264752;font-size:11px;letter-spacing:1px}
+.site-banner h1{font-family:inherit;font-size:clamp(34px,8.8vw,72px);font-weight:500;line-height:1.15;margin:15px 0 10px;white-space:nowrap}
+.site-banner h1 em{color:#215865;font-style:normal}
+.site-banner p{color:#264752;opacity:1;font-size:13px;line-height:1.6;margin:0}
 
 .guide-inline-body p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:18px;line-height:1.9}
