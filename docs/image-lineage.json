@@ -3845,6 +3845,113 @@
       "lifecycle": "active",
       "lifecycleChangedAt": "2026-10-20T16:08:23.777909+00:00",
       "lifecycleReason": "신규 변환본 검증 후 등록했습니다."
+    },
+    {
+      "illustrationId": "silk-road-banner-watercolor",
+      "originalName": "image(1).png",
+      "sourceId": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+      "sourceSha256": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+      "sourceArtifactRef": null,
+      "sourceAvailability": "hash-only",
+      "sourceWidth": 1024,
+      "sourceHeight": 765,
+      "activeRevisionId": "silk-road-banner-watercolor-r1",
+      "lastPublishedRevisionId": "silk-road-banner-watercolor-r1",
+      "placement": "site:banner",
+      "revisions": [
+        {
+          "revisionId": "silk-road-banner-watercolor-r1",
+          "illustrationId": "silk-road-banner-watercolor",
+          "sourceId": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+          "parentRevisionId": null,
+          "operation": "style-transfer-and-cleanup",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "banner-redraw",
+            "sourceSha256": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+            "parentOutputSha256": null,
+            "prompt": "Use case: style-transfer and background asset edit.\nInput image: the attached Silk Road map illustration, edit target.\nCreate a polished, very wide panoramic website title-banner background, approximately 3:1 landscape, with artwork reaching all four edges. Preserve the recognizable broad map composition, muted blue seas, sand and ochre terrain, winding burgundy and amber trade-route lines, and small camel caravans from the reference. Redraw and recompose the map for this wide banner rather than showing a photographed page.\nRemove all outer paper margins, rectangular borders, legend/key box and its text, folds/creases, shadows, and the small decorative star at the lower right. Remove all text, place labels, letters, and numbers throughout the map so there is no tiny or garbled lettering. No title, caption, logo, watermark, frame, border, or inset box.\nUse restrained transparent watercolor washes and fine colored-pencil contours, warm ivory parchment tones, dusty slate-blue water, soft ochre and sand land, and subtle terracotta route accents. Avoid green-dominant washes. Maintain detailed but quiet map art through the center and right with small camel caravans near the center-right. Make the left third lighter and calmer, with faint coherent map detail and no large blank margin, because real HTML title text will overlay this area. Keep the result as one coherent illustrated map background, with no UI mockup or embedded typography. This is decorative travel-banner art, not a labeled or precise navigation map.",
+            "tool": "imagegen",
+            "model": null,
+            "transparentBackground": false,
+            "framing": "user-requested-panoramic-banner-redraw",
+            "outputRole": "decorative-unlabeled-background",
+            "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
+          },
+          "recipeKey": "49bb03e5371992c27de3861ecc398c8d1132b6d791813667e7150fd127c96b4b",
+          "outputSha256": "ab9062e8647a64ad200f9d21e541a0c0a16685be22425ce13d7a8769251f6693",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-responsive-webp-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Removed page margins, borders, legend, lettering, folds, and corner symbol; redrew a full-bleed decorative map at 3:1. No geographic precision claim."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T09:41:55.302348+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 26890,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-watercolor-480.webp",
+              "sha256": "a97070352114ce38426501bd15750fb4fe7a8ec93b39a8451913a442eecf9430"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 72766,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-watercolor-800.webp",
+              "sha256": "5615be005bf349b9e4ebd7b1ee26b8567d939a06699cb974913dad846afff5be"
+            },
+            {
+              "width": 1024,
+              "height": 341,
+              "bytes": 112718,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-watercolor-1024.webp",
+              "sha256": "575d180a575107e4836695006463be0acac96c7a61223f5ecd80fd7ad1dbe9b7"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "ab9062e8647a64ad200f9d21e541a0c0a16685be22425ce13d7a8769251f6693",
+            "sourceDimensions": [
+              1024,
+              765
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1024
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "crop",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0"
+          },
+          "optimizeKey": "08f9f6d2419fc21b46195ea0042a072d2e67512f5d9e3dc0ba7afafe5ee7ac71",
+          "lifecycle": "active",
+          "lifecycleReason": "Added the requested site banner after image review and asset validation.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
+        }
+      ],
+      "lifecycle": "active",
+      "lifecycleReason": "User requested a decorative Silk Road map banner."
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",
