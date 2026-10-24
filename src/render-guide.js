@@ -34,7 +34,7 @@ export function renderKazakhstanDeepDives() {
     <p><a href="#history-almaty">알마티 도시·유적 해설 이어 읽기</a></p>
   </section>`;
 }
-export function renderGuide(essentials = []) {
+export function renderGuide() {
   return `<h2>여행 해설</h2><p>여행길에서 만나는 풍경과 유적, 시장과 사람들의 생활을 함께 읽습니다. 궁금한 주제를 누르면 해설이 펼쳐지고, 아래에서는 도시별로 찾아보실 수 있습니다.</p>
     <nav class="guide-toc" aria-label="해설 목차"><a href="#geography">1. 지리·기후·생활양식</a><a href="#history">2. 역사</a><a href="#resources">3. 자원·에너지</a><a href="#economy">4. 경제</a><a href="#education">5. 교육</a><a href="#kazakhstan-deep-dives">카자흐스탄 심층 해설</a><a href="#city-guides">도시·유적 찾아보기</a></nav>
     <span id="central-asia-geography-climate"></span>${renderNarrative(geography, {core:true})}
@@ -47,6 +47,5 @@ export function renderGuide(essentials = []) {
     ${renderNarrative(bukhara, {id:'bukhara-history',placement:'bukhara'})}
     ${[samarkand,tashkent,bishkek,cholponata,almaty].map(city=>renderNarrative(city,{id:`history-${city.slug}`,placement:city.slug})).join('')}
     ${renderNarrative(comparative,{id:'architecture-comparative',placement:'comparative'})}
-    <section class="architecture-guide" id="architecture-guide"><h3>우즈베키스탄 이슬람 건축 유산</h3>${architecture.map(city=>`<details class="architecture-city"><summary><span class="city-name">${esc(city.city)} <small>${esc(city.en)}</small></span><span class="city-subtitle">${esc(city.subtitle)}</span></summary><div class="architecture-city-body"><p>${esc(city.intro)}</p>${renderIllustration(`architecture:${city.en}:intro`)}${city.sites.map(([name,en,description])=>`<div class="architecture-site"><h4>${esc(name)} <small>${esc(en)}</small></h4><p>${esc(description)}</p></div>`).join('')}</div></details>`).join('')}${renderSources([['UNESCO 사마르칸트','https://whc.unesco.org/en/list/603/'],['UNESCO 부하라','https://whc.unesco.org/en/list/602/']])}</section>
-    ${essentials.filter(e=>e.title!=='현지 여행 회화').map(e=>`<details><summary>${esc(e.title)}</summary><p>${esc(e.body)}</p></details>`).join('')}`;
+    <section class="architecture-guide" id="architecture-guide"><h3>우즈베키스탄 이슬람 건축 유산</h3>${architecture.map(city=>`<details class="architecture-city"><summary><span class="city-name">${esc(city.city)} <small>${esc(city.en)}</small></span><span class="city-subtitle">${esc(city.subtitle)}</span></summary><div class="architecture-city-body"><p>${esc(city.intro)}</p>${renderIllustration(`architecture:${city.en}:intro`)}${city.sites.map(([name,en,description])=>`<div class="architecture-site"><h4>${esc(name)} <small>${esc(en)}</small></h4><p>${esc(description)}</p></div>`).join('')}</div></details>`).join('')}${renderSources([['UNESCO 사마르칸트','https://whc.unesco.org/en/list/603/'],['UNESCO 부하라','https://whc.unesco.org/en/list/602/']])}</section>`;
 }
