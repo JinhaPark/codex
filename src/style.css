@@ -112,3 +112,34 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 @media(max-width:600px){.economy-table caption{display:block;width:100%}.education-table,.education-table tbody,.education-table tr{display:block}.education-table caption{display:block;width:100%}.education-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.education-table tr{border:1px solid #ddd8cf;border-radius:6px;margin:.65rem 0;padding:.5rem}.education-table th[scope=row]{display:block;width:auto!important;border:0}.education-table td{display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.5rem;text-align:left;border:0;padding:.35rem 0}.education-table td::before{content:attr(data-label);color:#65695f}.education-table{font-size:.9rem}}
 
 .shopping-table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2rem 0}.shopping-table{width:100%;min-width:580px;border-collapse:collapse;font-size:1rem;line-height:1.6;text-align:left}.shopping-table caption{text-align:left;font-weight:700;padding:.65rem 0}.shopping-table th,.shopping-table td{padding:.7rem .6rem;border-bottom:1px solid #ddd8cf;vertical-align:top}.shopping-table thead th{background:#e8eee9;white-space:nowrap}.shopping-table th[scope=row]{min-width:170px}.shopping-table small{display:block;font-size:.9rem;font-weight:400;color:#5b625a}.shopping-table td{font-variant-numeric:tabular-nums}.shopping-table tfoot{font-weight:700;background:#f6f8f6}.shopping-table-scroll:focus-visible{outline:2px solid #183e44;outline-offset:3px}
+
+/* Guide library and grouped reading. Main navigation styles never apply to the sheet. */
+.guide-categories{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+.guide-categories button,.reader-toolbar button,.reader-actions button,.reader-return,.reader-toc button{font:inherit;min-height:44px;border:1px solid #c9d4ce;border-radius:8px;padding:10px 12px;background:#fff;color:#193c43;text-align:left}
+.guide-categories button{font-size:15px}
+.guide-categories button[aria-pressed=true]{background:#193c43;color:#fff;border-color:#193c43}
+.guide-book{display:block;text-decoration:none;color:inherit;padding:22px 0;border-bottom:1px solid #d6dcd5}
+.guide-book h3{font-size:20px;margin:0 0 7px}
+.guide-book p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 10px;color:#465c59;font-size:16px;line-height:1.75}
+.guide-book span{font-size:14px;color:#17617a}
+.reader-toolbar{position:sticky;top:var(--guide-nav-height,56px);z-index:4;display:flex;justify-content:space-between;gap:8px;background:#f6f3ec;padding:8px 0;border-bottom:1px solid #d6dcd5}
+.reader-toolbar button{font-size:15px}
+.reader-actions{display:flex;justify-content:flex-end;gap:8px;padding-top:14px}
+.reader-actions button{background:none;font-size:14px}
+.reader-section{scroll-margin-top:125px;margin:0}
+.reader-subsection{padding:17px 0}
+.reader-subsection+.reader-subsection{border-top:1px solid #e0e8e1}
+.reader-subsection h4{font-size:19px;line-height:1.65;word-break:keep-all;margin:4px 0 12px;color:#193c43}
+.reader-subsection p{font-size:18px;line-height:1.9}
+.guide-reader>.bukhara-history>h2{font-size:26px}
+.reader-return{margin-top:24px}
+.reader-toc{position:fixed;inset:auto 0 0;width:min(100%,760px);max-width:100%;max-height:75dvh;margin:auto auto 0;padding:20px 18px max(22px,env(safe-area-inset-bottom));border:0;border-radius:18px 18px 0 0;color:#193c43;background:#f6f3ec;overscroll-behavior:contain}
+.reader-toc::backdrop{background:#102a35a0}
+.reader-toc-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.reader-toc-heading h2{font-size:22px;margin:0}
+[data-guide-toc-items]{display:grid;gap:8px}
+[data-guide-toc-items] button{line-height:1.65;word-break:keep-all}
+.guide-reader summary{min-height:44px}
+.guide-reader :focus-visible,.guide-library :focus-visible{outline:3px solid #997437;outline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){.reader-toc{scroll-behavior:auto}}
