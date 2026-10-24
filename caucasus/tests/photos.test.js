@@ -49,3 +49,24 @@ test('all photo placements resolve and optional activities are scoped',()=>{
  assert.ok(catalog.photos.every(p=>p.variants.length>0));
  assert.ok(catalog.photos.every(p=>p.variants.every(v=>registry.assets.some(a=>a.file===v.file))));
 });
+
+
+test('Caucasus migration ledger keeps immutable source references and valid publication pointers',()=>{
+ const ledger=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-image-lineage.json',import.meta.url)));
+ assert.equal(ledger.images.length,catalog.photos.length);
+ const byId=new Map(ledger.images.map(i=>[i.illustrationId,i]));
+ for(const photo of catalog.photos){
+  const image=byId.get(photo.id);assert.ok(image);
+  assert.equal(image.sourceArtifactRef,null);
+  assert.ok(image.sourceSha256===null||/^[a-f0-9]{64}$/.test(image.sourceSha256));
+  assert.equal(image.revisions.length,1);
+  assert.equal(image.revisions[0].recipeKey,null,'Never fabricate a visual cache hit');
+  assert.equal(image.revisions[0].variants.length,photo.variants.length);
+  if(photo.status==='candidate')assert.equal(image.activeRevisionId,null);
+  else assert.equal(image.activeRevisionId,image.revisions[0].revisionId);
+  for(const variant of image.revisions[0].variants){
+   const asset=registry.assets.find(a=>'shared/public/illustrations/'+a.file===variant.file);
+   assert.ok(asset);assert.equal(variant.gitBlobSha,asset.gitBlobSha);
+  }
+ }
+});
