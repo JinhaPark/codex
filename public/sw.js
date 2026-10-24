@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v30-border-porter-tip';
+const CACHE = 'ca26-pages-v31-compact-shopping';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
@@ -16,6 +16,18 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(ROOT)) return;
 
   event.respondWith(caches.open(CACHE).then(async cache => {
+    // Refresh the document online so an old cached page cannot hide published changes.
+    // Hashed assets keep their cache-first policy; offline navigation keeps the saved page.
+    if (request.mode === 'navigate') {
+      try {
+        const response = await fetch(request, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Navigation unavailable');
+        event.waitUntil(cache.put(ROOT, response.clone()).catch(() => {}));
+        return response;
+      } catch {
+        return (await cache.match(ROOT)) || (await cache.match(request)) || Response.error();
+      }
+    }
     const cached = await cache.match(request);
     if (cached) return cached;
     try {
