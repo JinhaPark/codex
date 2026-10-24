@@ -8,6 +8,7 @@ test('unconfirmed-date Caucasus photo derivatives remain unpublished',()=>{
  for(const item of pending.images){
   assert.equal(item.date,null);
   assert.equal(item.publicationStatus,'unpublished');
+  assert.equal(fs.existsSync(new URL('../../shared/public/illustrations/'+item.sourceRootFile,import.meta.url)),false,'Undated artwork must remain outside the public directory');
   const bytes=fs.readFileSync(new URL('../../'+item.path,import.meta.url));
   assert.equal(bytes.length,item.bytes);
   assert.equal(bytes.toString('ascii',0,4),'RIFF');
