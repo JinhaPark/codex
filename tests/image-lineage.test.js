@@ -35,7 +35,7 @@ function rejects(name, mutate, code) {
     assert.ok(run(data, published).errors.some(e => e.startsWith(`${code}:`)), code);
   });
 }
-rejects('missing lineage is rejected', d => d.images.pop(), 'manifest-without-lineage');
+rejects('missing lineage is rejected', d => d.images.splice(d.images.findIndex(i => i.lifecycle === 'active'), 1), 'manifest-without-lineage');
 rejects('duplicate image IDs are rejected', d => d.images.push(structuredClone(d.images[0])), 'duplicate-lineage-id');
 rejects('duplicate manifest IDs are rejected', (d, m) => m.push(structuredClone(m[0])), 'duplicate-manifest-id');
 rejects('missing active revision is rejected', d => d.images[0].activeRevisionId = 'missing', 'active-revision-missing');
@@ -127,7 +127,7 @@ test('archive, candidate, deleted require audit, tombstones and real Git recover
 
 test('verified edit replacement archives its actual parent and switches publication atomically', () => {
   const data = structuredClone(lineage), published = structuredClone(manifest);
-  const image = data.images.at(-1);
+  const image = data.images.findLast(i => i.lifecycle === 'active' && i.revisions.some(r => r.revisionId === i.activeRevisionId && r.recipe));
   const parent = image.revisions.find(r => r.revisionId === image.activeRevisionId);
   const child = structuredClone(parent);
   child.revisionId += '-edit';

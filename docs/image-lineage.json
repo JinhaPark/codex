@@ -3855,9 +3855,9 @@
       "sourceAvailability": "hash-only",
       "sourceWidth": 2048,
       "sourceHeight": 682,
-      "activeRevisionId": "silk-road-banner-watercolor-r5",
+      "activeRevisionId": null,
       "lastPublishedRevisionId": "silk-road-banner-watercolor-r5",
-      "placement": "site:banner",
+      "placement": null,
       "revisions": [
         {
           "revisionId": "silk-road-banner-watercolor-r1",
@@ -4520,13 +4520,15 @@
             "webpVersion": "1.6.0"
           },
           "optimizeKey": "ebb033b6e10f17602f90aa23b3d91c87ec72709fc68e5c2b4d5778da17026237",
-          "lifecycle": "active",
-          "lifecycleReason": "Aligned the highlighted principal road with the yellow route in the user-supplied city map.",
-          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
+          "lifecycle": "archived",
+          "lifecycleReason": "User rejected the generated geography and requested restoration of the original plain green banner.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+          "lifecycleChangedAt": "2026-10-24T10:30:31.320961+00:00"
         }
       ],
-      "lifecycle": "active",
-      "lifecycleReason": "Active banner now uses the user-preferred reference geography. Earlier source hashes remain in their revisions."
+      "lifecycle": "archived",
+      "lifecycleReason": "User rejected the generated geography and requested restoration of the original plain green banner.",
+      "lifecycleChangedAt": "2026-10-24T10:30:31.320961+00:00"
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",
