@@ -329,15 +329,15 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "archived",
-          "lifecycleChangedAt": "2026-10-24T12:31:26.757Z",
-          "lifecycleReason": "User requested complete removal of the blue geometric arch illustration; unpublish and archive before deletion."
+          "lifecycle": "deletion-candidate",
+          "lifecycleChangedAt": "2026-10-24T12:31:53.621Z",
+          "lifecycleReason": "No published manifest or itinerary renderer refers to this illustration; user explicitly requested complete source-tree removal."
         }
       ],
-      "lifecycle": "archived",
+      "lifecycle": "deletion-candidate",
       "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil",
-      "lifecycleChangedAt": "2026-10-24T12:31:26.757Z",
-      "lifecycleReason": "User requested complete removal of the blue geometric arch illustration; unpublish and archive before deletion.",
+      "lifecycleChangedAt": "2026-10-24T12:31:53.621Z",
+      "lifecycleReason": "No published manifest or itinerary renderer refers to this illustration; user explicitly requested complete source-tree removal.",
       "retirementAuthorization": "User requested full removal of this illustration from the codebase."
     },
     {
