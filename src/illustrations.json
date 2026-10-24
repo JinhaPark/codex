@@ -1810,23 +1810,23 @@
       {
         "width": 480,
         "height": 160,
-        "bytes": 24514,
+        "bytes": 24778,
         "quality": 88,
-        "file": "silk-road-banner-r3-reference-480.webp"
+        "file": "silk-road-banner-r4-reference-480.webp"
       },
       {
         "width": 800,
         "height": 267,
-        "bytes": 57032,
+        "bytes": 57002,
         "quality": 88,
-        "file": "silk-road-banner-r3-reference-800.webp"
+        "file": "silk-road-banner-r4-reference-800.webp"
       },
       {
         "width": 1024,
         "height": 341,
-        "bytes": 82126,
+        "bytes": 80288,
         "quality": 88,
-        "file": "silk-road-banner-r3-reference-1024.webp"
+        "file": "silk-road-banner-r4-reference-1024.webp"
       }
     ],
     "generatedWidth": 2172,
