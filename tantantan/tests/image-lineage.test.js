@@ -28,7 +28,11 @@ const run = (data = lineage, published = manifest, baseline = previous, reader =
   },
   readHistory: (commit, path) => {
     assert.match(commit || '', /^[a-f0-9]{40}$/);
-    return git(['show', `${commit}:${path}`]);
+    try { return git(['show', `${commit}:${path}`]); }
+    catch (error) {
+      if (path.startsWith('public/illustrations/')) return git(['show', `${commit}:shared/${path}`]);
+      throw error;
+    }
   },
 });
 

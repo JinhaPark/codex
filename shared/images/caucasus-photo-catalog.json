@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Caucasus published photo metadata referencing shared WebP objects",
+  "photos": [
+    {
+      "id": "caucasus-20260430-baku-maiden-tower-watercolor",
+      "date": "2026-04-30",
+      "caption": "바쿠 구시가지 — 메이든 타워 주변 석조 건축과 현대식 고층 건물",
+      "alt": "바쿠 구시가지의 돌탑과 배경에 보이는 현대식 유리 고층 건물",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-04-30:destination:maiden-tower",
+      "variants": [
+        {
+          "file": "caucasus-20260430-baku-maiden-tower-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 432920,
+          "gitBlobSha": "f2f0a576dfd1f89ae70decf78fd85f10d66debf8",
+          "sha256": "22d1b77f88b74d5e364e665e757d71ad22e1cf07c7f7088dae42b0da4a2cf2d9"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260430-baku-waterfront-skyline-watercolor",
+      "date": "2026-04-30",
+      "caption": "헤이다르 알리예프 센터에서 바라본 바쿠 시내와 해안 건축물",
+      "alt": "해안 너머로 유리 고층 건물과 원형 아치 건축물이 보이는 바쿠 전경",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-04-30:destination:heydar-aliyev-center",
+      "variants": [
+        {
+          "file": "caucasus-20260430-baku-waterfront-skyline-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 245000,
+          "gitBlobSha": "f3e8646519a2a505635db9660327871e264e8420",
+          "sha256": "9072ac9f06a0a39fa5e90e7fb4d1c3fa874b405db1653ec6bee1bddbcb2f6e09"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260430-gobustan-entrance-sign-watercolor",
+      "date": "2026-04-30",
+      "caption": "고부스탄 보호구역 — ‘Gobustan’ 안내 조형물과 사람 형상",
+      "alt": "Gobustan 글씨와 다섯 인물 형상이 있는 고부스탄 조형물",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-entrance",
+      "variants": [
+        {
+          "file": "caucasus-20260430-gobustan-entrance-sign-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 385910,
+          "gitBlobSha": "3e9c7fa2863906ff46094b54155b69b2a909af5e",
+          "sha256": "72d0f682724dab303abf4abc58099c1e6d3ac28f12b4175fca1c1c2982b813b0"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260430-gobustan-rock-landscape-watercolor",
+      "date": "2026-04-30",
+      "caption": "고부스탄 보호구역 — 바위가 흩어진 구릉과 암벽",
+      "alt": "큰 바위와 암벽, 짧은 풀이 펼쳐진 고부스탄 지형",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-04-30:destination:gobustan-rock-landscape",
+      "variants": [
+        {
+          "file": "caucasus-20260430-gobustan-rock-landscape-watercolor-1536.webp",
+          "width": 1536,
+          "bytes": 485036,
+          "gitBlobSha": "be95e6767a053f301d9ee021499e1103303f5771",
+          "sha256": "4ecd350826402996b3618070f0e213e28f1060c4a4b1858ec3c0ed28a1f2b865"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor",
+      "date": "2026-05-01",
+      "caption": "셰키 카라반사라이 — 돌 아케이드와 정원이 있는 중정",
+      "alt": "두 층의 돌 아케이드와 나무, 화단, 돌길이 펼쳐진 셰키 카라반사라이의 내부 중정",
+      "status": "ready-in-pr",
+      "sourceSha256": "4568c6d10ea71d17bcbac7c50039e31f7ac1050d4fdb0504df5667a368e17e83",
+      "placement": "caucasus:2026-05-01:destination:caravanserai",
+      "variants": [
+        {
+          "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-480.webp",
+          "width": 480,
+          "bytes": 103740,
+          "gitBlobSha": "b39a40d36877574731735cc9fad3035583e8e77a",
+          "sha256": "295fb1b053318cffc6ef056f50ea93cf17d28cee5d725717a8eb89687668773c"
+        },
+        {
+          "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-800.webp",
+          "width": 800,
+          "bytes": 238710,
+          "gitBlobSha": "c383cdf1e448c5cec410b92a2c378ee845e63298",
+          "sha256": "b6bf0d319ecb2dbbff04334cce70380612971bc7c81412156be407a6aee6a863"
+        },
+        {
+          "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp",
+          "width": 1087,
+          "bytes": 248984,
+          "gitBlobSha": "029d80e19ebd9772dd4ad83e0b42032520ddeb35",
+          "sha256": "a9b9d76861f1e8d36e17c76d08434c5e3acf81d993da86d4a00a17c40939cd7b"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260502-route-mountains-yellow-fields-watercolor",
+      "date": "2026-05-02",
+      "caption": "셰키에서 카헤티로 이동하던 길 — 코카서스 산맥과 노란 꽃밭",
+      "alt": "코카서스 산줄기와 앞쪽의 노란 꽃밭",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-02:observation:roadside-mountains",
+      "variants": [
+        {
+          "file": "caucasus-20260502-route-mountains-yellow-fields-watercolor-1200.webp",
+          "width": 1200,
+          "bytes": 209102,
+          "gitBlobSha": "47f1aff5f1dcbd778337473fdc00b133ce271a9c",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260502-kakheti-vineyard-watercolor",
+      "date": "2026-05-02",
+      "caption": "카헤티 와이너리 — 포도밭 너머로 이어지는 산줄기",
+      "alt": "봄나무와 울타리 너머로 포도나무 줄지어 선 밭, 작은 건물과 먼 산이 펼쳐진 카헤티의 풍경",
+      "status": "ready-in-pr",
+      "sourceSha256": "77e4de3174a2a56108a3d60a59c182ad643af21ae1b246de2fbf5d4c3a4287eb",
+      "placement": "caucasus:2026-05-02:destination:kakheti-winery:vineyard",
+      "variants": [
+        {
+          "file": "caucasus-20260502-kakheti-vineyard-watercolor-480.webp",
+          "width": 480,
+          "bytes": 36472,
+          "gitBlobSha": "be50b262ce686c053998bde563c0856892b00212",
+          "sha256": "3d5eaf544c7d8925789f42b141b5698fd6ffe7dc9fa52b700a7e660db5cbc57c"
+        },
+        {
+          "file": "caucasus-20260502-kakheti-vineyard-watercolor-800.webp",
+          "width": 800,
+          "bytes": 92730,
+          "gitBlobSha": "7e2e25f53f0f910d292539c12b58dc9edf56c5da",
+          "sha256": "ced8a761f2526e8bb597a5b76984b499850e0986c42b3286fcaca28c7ba34b1a"
+        },
+        {
+          "file": "caucasus-20260502-kakheti-vineyard-watercolor-1200.webp",
+          "width": 1200,
+          "bytes": 180660,
+          "gitBlobSha": "d87d0812c1595606b4539e44ee8908aaf976eabb",
+          "sha256": "9742e4fea7581aada730d4749e52785f12864c21fc25122980fa76d7be91882e"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260502-kakheti-winery-tanks-colored-pencil",
+      "date": "2026-05-02",
+      "caption": "카헤티 와이너리 — 스테인리스 발효·저장 탱크와 배관",
+      "alt": "와이너리 작업장에 금속 프레임과 배관을 따라 여러 개의 은빛 대형 탱크가 늘어서 있는 모습",
+      "status": "ready-in-pr",
+      "sourceSha256": "09cff74655a2e7ca08710323b463dc5f78316562586a8215a54db307e33e2c6a",
+      "placement": "caucasus:2026-05-02:destination:kakheti-winery:tanks",
+      "variants": [
+        {
+          "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-480.webp",
+          "width": 480,
+          "bytes": 30452,
+          "gitBlobSha": "9a0eb089de719ba60f4b054ed89be77bc52a2b05",
+          "sha256": "276612db5aca2efdd0497807ebb3b7267f84960d3713b81bc9fca11c55c2a449"
+        },
+        {
+          "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-800.webp",
+          "width": 800,
+          "bytes": 78700,
+          "gitBlobSha": "352f5209d53236f85bd6b8a4de3ecaa0d985725f",
+          "sha256": "2337d24bf96f6680a5dcffa00c8cd234c92852db0e0681cd2e6fc199ac783372"
+        },
+        {
+          "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-1200.webp",
+          "width": 1200,
+          "bytes": 156592,
+          "gitBlobSha": "ab1f48ba113f78c5203c8024346d250b95e5d945",
+          "sha256": "e786caf70803f477def127af121e8c10e478955fa6f6bf71dfe4a89d212fee2a"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260501-sheki-street-watercolor",
+      "date": "2026-05-01",
+      "caption": "셰키 구시가지의 거리 풍경",
+      "alt": "셰키 구시가의 건축과 거리 풍경",
+      "status": "candidate",
+      "sourceSha256": null,
+      "placement": null,
+      "variants": [
+        {
+          "file": "caucasus-20260501-sheki-street-watercolor-1200.webp",
+          "width": 1200,
+          "bytes": 304474,
+          "gitBlobSha": "06a59f980c306e857d72034b8b294b66334e7fb5",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260502-sighnaghi-panorama-watercolor",
+      "date": "2026-05-02",
+      "caption": "시그나기 — 구시가지와 주변 구릉",
+      "alt": "언덕에 자리한 시그나기 구시가지와 주변 구릉 및 산세",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-02:destination:sighnaghi",
+      "variants": [
+        {
+          "file": "caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",
+          "width": 480,
+          "bytes": 64922,
+          "gitBlobSha": "55ba29c4eefeb79ace9e971e9e5c7ef4839bf433",
+          "sha256": null
+        },
+        {
+          "file": "caucasus-20260502-sighnaghi-panorama-watercolor-800.webp",
+          "width": 800,
+          "bytes": 169878,
+          "gitBlobSha": "0623c782a83902e02d170fbc6647ab2d368359be",
+          "sha256": null
+        },
+        {
+          "file": "caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp",
+          "width": 1200,
+          "bytes": 240150,
+          "gitBlobSha": "322e898db5bd58c2f5f1f6345d997c9dc713fb52",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor",
+      "date": "2026-05-01",
+      "caption": "아제르바이잔 대통령 일함 알리예프 — 주원 선생님과 닮았다",
+      "alt": "나무가 있는 도로변의 아제르바이잔 국기와 일함 알리예프 초상 게시판. 왼쪽 보행자 표지판을 제거한 장면",
+      "status": "ready-in-pr",
+      "sourceSha256": "a78375a9419471aeefafd8df134c424257439fdfe9f4d41b7397951922978dfc",
+      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+      "variants": [
+        {
+          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 239016,
+          "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09",
+          "sha256": "d38525bf3104654ee9a760acea53b474f94bf416ad3cc8d4bfaee462456aea09"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260504-jvari-monastery-watercolor",
+      "date": "2026-05-04",
+      "caption": "즈바리 수도원",
+      "alt": "조지아 므츠헤타의 즈바리 수도원을 담은 여행 일러스트",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-04:destination:jvari-monastery",
+      "variants": [
+        {
+          "file": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 481646,
+          "gitBlobSha": "a598964b114c39b2524abb7fded4327a24d34107",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260507-vardzia-watercolor",
+      "date": "2026-05-07",
+      "caption": "바르드지아 — 절벽에 조성된 동굴 도시",
+      "alt": "조지아 바르드지아의 절벽과 암굴 도시를 담은 일러스트",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-07:destination:vardzia",
+      "variants": [
+        {
+          "file": "caucasus-20260507-vardzia-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 741920,
+          "gitBlobSha": "42ca51b274b8e37a536effbad65c73ea1811bb56",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260506-garni-basalt-columns-watercolor",
+      "date": "2026-05-06",
+      "caption": "가르니 주상절리 — 현무암 기둥으로 이루어진 협곡 절벽",
+      "alt": "아르메니아 가르니 협곡의 촘촘하게 배열된 현무암 주상절리",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-06:destination:garni-basalt-columns",
+      "variants": [
+        {
+          "file": "caucasus-20260506-garni-basalt-columns-watercolor-1447.webp",
+          "width": 1447,
+          "bytes": 503510,
+          "gitBlobSha": "902e1ef32b888b92c64c1c8b9ed69d73c4b3fb70",
+          "sha256": null
+        }
+      ]
+    }
+  ]
+}

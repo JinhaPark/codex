@@ -176,3 +176,11 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .days button{min-width:0;width:100%;padding:9px 0;gap:3px}
 .days button strong{font-size:clamp(13px,3.5vw,24px)}
 @media(max-width:600px){.days button small{display:none}}
+
+/* Tantantan date navigation: five columns x two rows on small screens. */
+@media(max-width:699px){
+  body:has(#app:not(.caucasus-page)) .days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;overflow:visible;padding-bottom:20px}
+  body:has(#app:not(.caucasus-page)) .days button{min-width:0;min-height:64px;padding:8px 2px;gap:3px}
+  body:has(#app:not(.caucasus-page)) .days button small{display:block;font-size:clamp(8px,2.7vw,11px);white-space:nowrap}
+  body:has(#app:not(.caucasus-page)) .days button strong{font-size:clamp(18px,5.2vw,22px)}
+}

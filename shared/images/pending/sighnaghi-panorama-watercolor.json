@@ -1,0 +1,57 @@
+{
+  "illustrationId": "sighnaghi-panorama-watercolor",
+  "source": {
+    "date": "2026-05-02",
+    "location": "Sighnaghi, Georgia",
+    "name": "image(20261024-140107).png",
+    "width": 1914,
+    "height": 1436,
+    "sha256": "ccff25f68f37026139ec7ce0a741569156833531a3c128fbbf7a981bd619198b",
+    "originalPhotoCommitted": false
+  },
+  "illustration": {
+    "style": "watercolor",
+    "width": 1448,
+    "height": 1086,
+    "sha256": "b8c040ce2c0531575642f0608d8f8652d99465023bee112c444b57b33a9cf720",
+    "caption": "시그나기 구시가지와 코카서스 산맥",
+    "alt": "숲이 우거진 언덕 위 붉은 지붕의 시그나기 마을과 뒤편의 코카서스 산맥",
+    "visualNote": "Snow and cloud details are artistically enhanced relative to the source photograph."
+  },
+  "variants": [
+    {
+      "width": 480,
+      "height": 360,
+      "bytes": 64922,
+      "sha256": "bdbe3fe1cbcdb81e000d0551691e0a823e495142fb0137388c0171bc99e98f05",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",
+      "gitBlobSha": "55ba29c4eefeb79ace9e971e9e5c7ef4839bf433"
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "bytes": 169878,
+      "sha256": "a9d70fc36fd66e04ae8f4cb7e9773c55c095cc22794a50a3ae20b0dbf3623fdb",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-800.webp",
+      "gitBlobSha": "0623c782a83902e02d170fbc6647ab2d368359be"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "bytes": 240150,
+      "sha256": "6e0618bcf284c34428b065d5c54bf955571aabd8eb067d162aff4696ac616261",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp",
+      "gitBlobSha": "322e898db5bd58c2f5f1f6345d997c9dc713fb52"
+    }
+  ],
+  "status": "integrated-in-main",
+  "placement": "caucasus:2026-05-02:destination:sighnaghi",
+  "note": "Historical source and generation metadata recovered from the original photo-edit batch. The three optimized WebP blobs are already published in shared/public/illustrations via PR #51 (merge commit 4302b302c4c9c8eb99dd9cd960066f6a986bed46). No additional image upload is needed. This file is an intake provenance record, not a second manifest or published image copy.",
+  "canonicalIllustrationId": "caucasus-20260502-sighnaghi-panorama-watercolor",
+  "assetPaths": [
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-800.webp",
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp"
+  ],
+  "verification": "Shared image registry byte counts, filenames, widths and Git blob IDs matched at PR preparation; this record does not duplicate the public assets."
+}

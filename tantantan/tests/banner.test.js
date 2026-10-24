@@ -29,6 +29,6 @@ test('retired map is unpublished while its history and archived WebPs remain', (
   assert.equal(image.lastPublishedRevisionId, 'silk-road-banner-watercolor-r5');
   for (const revision of image.revisions) {
     assert.equal(revision.lifecycle, 'archived');
-    for (const variant of revision.variants) assert.ok(fs.existsSync(new URL('../'+variant.file, import.meta.url)));
+    for (const variant of revision.variants) assert.ok(fs.existsSync(new URL('../../shared/'+variant.file, import.meta.url)));
   }
 });

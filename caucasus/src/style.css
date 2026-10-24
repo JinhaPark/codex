@@ -14,6 +14,3 @@
 .caucasus-page a{color:#226279}
 .caucasus-page .new-photos{font-size:.9rem;color:#607077}
 @media(min-width:700px){.caucasus-page .days{grid-template-columns:repeat(13,minmax(0,1fr))}}
-
-.caucasus-page .caucasus-illustration{margin:12px 0 16px;max-width:740px}
-.caucasus-page .caucasus-illustration img{display:block;width:100%;height:auto;border-radius:8px}
