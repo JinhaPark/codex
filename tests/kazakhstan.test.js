@@ -119,4 +119,11 @@ test('practical guidance moves to preparation with checkbox state preserved', as
   }
   assert.match(html, /data-check="0" ><span>여권/);
   assert.match(html, /data-check="1" checked><span>수영복/);
+  const charging = renderPreparation([], ['충전기와 보조배터리'], {0:true});
+  assert.match(charging, /돼지코\(변환 어댑터\)를 따로 준비하지 않으셔도 됩니다/);
+  assert.match(charging, /data-check="0" checked/);
+  const cards = renderPreparation([], ['결제 카드와 현금']);
+  assert.match(cards, /비자·마스터카드/);
+  assert.match(cards, /AMEX\(아멕스\)는 결제할 수 없습니다/);
+  assert.match(cards, /미국 달러\(USD\).*현지 환전소.*현지 통화로 환전/);
 });

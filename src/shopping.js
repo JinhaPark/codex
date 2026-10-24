@@ -27,16 +27,16 @@ const won = (amount, rate) => {
   const unit = amount * rate >= 1000 ? 100 : 10;
   return `약 ${number(Math.round(amount * rate / unit) * unit)}원`;
 };
-const price = (amount, rate) => `${number(amount)} (${won(amount, rate)})`;
+const price = (amount, rate, approximate = false) => `<span class="shopping-local-price">${approximate ? '약 ' : ''}${number(amount)}</span><span class="shopping-won">(${won(amount, rate)})</span>`;
 const number = n => new Intl.NumberFormat('ko-KR').format(n);
 const table = (caption, headings, rows, footer = '') => `<div class="shopping-table-scroll" tabindex="0" role="region" aria-label="${caption}"><table class="shopping-table"><caption>${caption}</caption><thead><tr>${headings.map(x => `<th scope="col">${x}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr><th scope="row">${row[0]}</th>${row.slice(1).map(x => `<td>${x}</td>`).join('')}</tr>`).join('')}</tbody>${footer}</table></div>`;
 export function renderReceiptShopping() {
-  return receipts.map(r => table(`${r.store} · 2026-10-20`, ['품목 · 영수증 표기', '개당 용량·중량', '개당 가격(KZT)'], r.items.map(([ko, original, size, count, unit]) => [`${ko}<small lang="ru">${original}</small>`, size, price(unit, kztKrw)]))).join('');
+  return receipts.map(r => table(`${r.store} · 2026-10-20`, ['품목', '개당 가격(KZT)'], r.items.map(([ko, original, size, count, unit]) => [`${ko}<span class="shopping-size">${size}</span><small lang="ru">${original}</small>`, price(unit, kztKrw)]))).join('');
 }
 export function renderHoneyShopping() {
-  return table('키르기스스탄 꿀 · 현장 구매 메모', ['제품', '용량·중량', '개당 가격(KGS)', '비고'], [
-    ['수우사미르 산악 야생화꿀', '180g', `약 ${price(400, fx.kgsKrw)}`, '노란 뚜껑'],
-    ['흰색 통 백꿀', '약 150~200mL 추정', `약 ${price(500, fx.kgsKrw)}`, '중량·밀원 미확인'],
-    ['큰 통 백꿀', '500mL', `약 ${price(900, fx.kgsKrw)}`, '일행 구매'],
+  return table('키르기스스탄 꿀 · 현장 구매 메모', ['품목', '개당 가격(KGS)'], [
+    ['수우사미르 산악 야생화꿀<span class="shopping-size">180g · 노란 뚜껑</span>', price(400, fx.kgsKrw, true)],
+    ['흰색 통 백꿀<span class="shopping-size">약 150~200mL 추정</span><small>중량·밀원 미확인</small>', price(500, fx.kgsKrw, true)],
+    ['큰 통 백꿀<span class="shopping-size">500mL · 일행 구매</span>', price(900, fx.kgsKrw, true)],
   ]);
 }
