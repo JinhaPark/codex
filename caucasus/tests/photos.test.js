@@ -55,7 +55,7 @@ test('all photo placements resolve and optional activities are scoped',()=>{
 test('Caucasus migration ledger keeps immutable source references and valid publication pointers',()=>{
  const ledger=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-image-lineage.json',import.meta.url)));
  const active=ledger.images.filter(i=>i.lifecycle==='active');
- assert.equal(active.length,catalog.photos.length);
+ assert.equal(active.length,catalog.photos.filter(photo=>photo.status!=='candidate').length);
  const archived=ledger.images.filter(i=>i.lifecycle==='archived');
  assert.ok(archived.some(i=>i.illustrationId==='caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo' && i.revisions[0].historyArtifactRef?.commitSha),'Prior publication is recoverable in Git history');
  assert.ok(archived.every(i=>i.activeRevisionId===null),'Archived images are not published');
