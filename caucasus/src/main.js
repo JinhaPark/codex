@@ -3,6 +3,7 @@ import shekiPhotos from '../../shared/images/caucasus-photo-batch-20260501.json'
 import kakhetiPhotos from '../../shared/images/caucasus-photo-batch-20260502.json';
 const pendingPhotos = [...shekiPhotos, ...kakhetiPhotos];
 import {chapters} from './guide.js';
+import uploadedAssets from '../../shared/images/caucasus-uploaded-webp-intake.json';
 import {escapeHtml as esc, mapSearchUrl as maps, formatTravelDate as date} from '../../shared/travel-utils.js';
 import '../../shared/style.css';
 import './style.css';
@@ -13,6 +14,13 @@ const shoppingItems=['아제르바이잔 마나트(AZN)','조지아 라리(GEL)'
 const checklist=['여권·여행 서류','여행자 보험','카드·현지 통화·유로','충전기와 보조배터리','편한 운동화','산악 지역용 외투','선글라스와 자외선 차단제','오프라인 지도','항공편·여권 유효기간 확인'];
 const reads=()=>{try{return JSON.parse(localStorage.getItem(storageKey)||'{}')}catch{return {}}};
 const safeUrl=s=>esc(maps(s));
+function renderPhotoFiles(files) {
+ return (files||[]).map(file=> {
+   const item=uploadedAssets.assets.find(x=>x.canonicalPath.endsWith('/'+file));
+   if(!item)return '';
+   return `<figure class="caucasus-illustration"><img loading="lazy" decoding="async" src="${import.meta.env.BASE_URL}illustrations/${encodeURIComponent(file)}" alt="${esc(file.replace(/^caucasus-(?:\\d{8}|undated)-/,'').replace(/-(?:watercolor|pencil|photo)-\\d+\\.webp$/,'').replace(/-/g,' '))}"></figure>`;
+ }).join('');
+}
 function renderPhotoNote(id) {
  const art=pendingPhotos.find(item=>item.id===id);
  return art? `<p class="photo-caption">${esc(art.caption)}</p>` : '';
@@ -26,8 +34,8 @@ function render(){
  <section><div class="eyebrow">${day+1}일차 · ${esc(d.country)}</div><h2>${esc(d.city)}</h2><p class="summary">${esc(d.summary)}</p>
  <article><h3>오늘의 일정</h3><p>${esc(d.summary)}</p></article>
  ${d.hotel&&d.hotel!=='—'?`<article><h3>숙소</h3><p>${d.hotel==='기내 숙박'?esc(d.hotel):`<a href="${safeUrl(d.hotel+', '+d.city)}" target="_blank" rel="noopener noreferrer">${esc(d.hotel)}</a>`}</p></article>`:''}
- <article><h3>방문지</h3>${d.places.map(p=>`<div class="location-card"><h4>${esc(p.name)}</h4><p>${esc(p.description)}</p>${(p.photoIds||[]).map(renderPhotoNote).join('')}</div>`).join('')}</article>
- ${d.photoObservations?.length?`<article><h3>현장 기록</h3>${d.photoObservations.map(p=>`<div class="location-card"><h4>${esc(p.title)}</h4><p>${esc(p.description)}</p>${renderPhotoNote(p.imageId)}</div>`).join('')}</article>`:''}
+ <article><h3>방문지</h3>${d.places.map(p=>`<div class="location-card"><h4>${esc(p.name)}</h4><p>${esc(p.description)}</p>${(p.photoIds||[]).map(renderPhotoNote).join('')}${renderPhotoFiles(p.photoFiles)}</div>`).join('')}</article>
+ ${d.photoObservations?.length?`<article><h3>현장 기록</h3>${d.photoObservations.map(p=>`<div class="location-card"><h4>${esc(p.title)}</h4><p>${esc(p.description)}</p>${renderPhotoNote(p.imageId)}${renderPhotoFiles(p.photoFiles)}</div>`).join('')}</article>`:''}
  ${tours.length?`<article><h3>참여한 선택관광</h3><ul class="tour-list">${tours.map(t=>`<li><strong>${esc(t.title)}</strong> · €${t.priceEUR}<p>${esc(t.summary)}</p></li>`).join('')}</ul></article>`:''}
  <article class="note"><h3>여행 기록</h3><p class="new-photos">해당 날짜의 사진과 현장 기록은 자료를 받는 대로 방문지에 연결합니다.</p></article></section>
  <div class="pager"><button data-prev ${day===0?'disabled':''}>← 이전 날</button><button data-next ${day===data.days.length-1?'disabled':''}>다음 날 →</button></div>`

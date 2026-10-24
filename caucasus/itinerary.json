@@ -247,6 +247,15 @@
       "optionalTourIds": [
         3,
         4
+      ],
+      "photoObservations": [
+        {
+          "title": "므츠헤타의 안개 낀 즈바리 수도원",
+          "description": "안개가 짙어 주변 배경이 거의 보이지 않았던 수도원입니다.",
+          "photoFiles": [
+            "caucasus-20260504-jvari-monastery-watercolor-1086.webp"
+          ]
+        }
       ]
     },
     {
@@ -288,7 +297,10 @@
         {
           "name": "가르니 주상절리",
           "description": "계곡 아래에 형성된 현무암 기둥을 관찰합니다.",
-          "optionalTourId": 1
+          "optionalTourId": 1,
+          "photoFiles": [
+            "caucasus-20260506-basalt-columns-watercolor-1447.webp"
+          ]
         },
         {
           "name": "게그하드 수도원",
@@ -320,7 +332,10 @@
       "places": [
         {
           "name": "바르드지아 동굴 도시",
-          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다."
+          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다.",
+          "photoFiles": [
+            "caucasus-20260507-vardzia-watercolor-1448.webp"
+          ]
         },
         {
           "name": "아할치헤 라바티 성",
@@ -337,11 +352,37 @@
       "places": [
         {
           "name": "보르조미 국립공원",
-          "description": "탄산 광천수로 알려진 보르조미의 자연휴양지를 방문합니다."
+          "description": "탄산 광천수로 알려진 보르조미의 자연휴양지를 방문합니다.",
+          "photoFiles": [
+            "caucasus-undated-borjomi-riverfront-watercolor-1086.webp"
+          ]
         },
         {
           "name": "모사메타 수도원",
           "description": "쿠타이시 인근의 수도원을 살펴봅니다."
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "보르조미 야외 운동시설",
+          "description": "공원에 설치된 운동기구와 조지아어 안내판입니다.",
+          "photoFiles": [
+            "caucasus-undated-borjomi-park-gym-watercolor-1448.webp"
+          ]
+        },
+        {
+          "title": "양고기 샤슬릭",
+          "description": "점심에 먹었던 양고기 샤슬릭과 곁들임 음식입니다. 하우스와인 사진은 없습니다.",
+          "photoFiles": [
+            "caucasus-undated-borjomi-lamb-shashlik-watercolor-1254.webp"
+          ]
+        },
+        {
+          "title": "수도원에서 내려다본 계곡",
+          "description": "울창한 산림 사이로 강이 흐르는 풍경입니다.",
+          "photoFiles": [
+            "caucasus-undated-monastery-overlook-gorge-watercolor-1086.webp"
+          ]
         }
       ]
     },
@@ -358,7 +399,10 @@
         },
         {
           "name": "바투미 불바르 공원",
-          "description": "해변을 따라 조성된 긴 산책로와 공원입니다."
+          "description": "해변을 따라 조성된 긴 산책로와 공원입니다.",
+          "photoFiles": [
+            "caucasus-undated-batumi-ali-nino-watercolor-1586.webp"
+          ]
         },
         {
           "name": "유럽 광장",
@@ -367,6 +411,22 @@
         {
           "name": "아르하비 해안",
           "description": "튀르키예 흑해 연안 마을에서 자유시간을 보냅니다."
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "바투미 해변의 빨간 구조물",
+          "description": "해안의 빨간 시설물과 자갈 해변 풍경입니다.",
+          "photoFiles": [
+            "caucasus-undated-batumi-beach-red-hut-watercolor-1086.webp"
+          ]
+        },
+        {
+          "title": "흑해 해질녘",
+          "description": "흑해 수평선 위로 남은 저녁빛입니다.",
+          "photoFiles": [
+            "caucasus-undated-black-sea-sunset-watercolor-1086.webp"
+          ]
         }
       ]
     },

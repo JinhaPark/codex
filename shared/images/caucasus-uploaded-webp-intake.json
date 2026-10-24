@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "purpose": "Caucasus user-uploaded derivative intake; no original photographs",
-  "assetCount": 21,
+  "assetCount": 32,
   "baseBranch": "feature/caucasus-multi-travel-workspaces",
-  "note": "Git Blob references are reused byte-for-byte. This intake record is not an image-generation cache hit or validation of source hash. Source mapping is pending provenance audit; central shared/images/image-lineage.json is not modified until source/output checks succeed.",
+  "note": "Uploaded approved derivatives are referenced through existing Git blob SHA, with no original-photo uploads. Source and revision hashes, dimensions and image decoding are pending verification; this is a staged intake record, not an asserted visual cache hit.",
   "assets": [
     {
       "uploadedPath": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1200.webp",
@@ -214,6 +214,204 @@
       "sha256": null,
       "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
       "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+      "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09",
+      "bytes": 239016,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+      "gitBlobSha": "a598964b114c39b2524abb7fded4327a24d34107",
+      "bytes": 481646,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-20260506-basalt-columns-watercolor-1447.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260506-basalt-columns-watercolor-1447.webp",
+      "gitBlobSha": "902e1ef32b888b92c64c1c8b9ed69d73c4b3fb70",
+      "bytes": 503510,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-20260507-vardzia-watercolor-1448.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260507-vardzia-watercolor-1448.webp",
+      "gitBlobSha": "42ca51b274b8e37a536effbad65c73ea1811bb56",
+      "bytes": 741920,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-batumi-ali-nino-watercolor-1586.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-batumi-ali-nino-watercolor-1586.webp",
+      "gitBlobSha": "16055bc2b4c0587be81c60ae94c7964d54436bf5",
+      "bytes": 630768,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-batumi-beach-red-hut-watercolor-1086.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-batumi-beach-red-hut-watercolor-1086.webp",
+      "gitBlobSha": "ed958df4afdf8778e2616d2da5cfbdab4e3ae660",
+      "bytes": 724304,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-black-sea-sunset-watercolor-1086.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-black-sea-sunset-watercolor-1086.webp",
+      "gitBlobSha": "725752d8c9095c0b3da15e4c46db597654cae887",
+      "bytes": 583648,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-borjomi-lamb-shashlik-watercolor-1254.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-borjomi-lamb-shashlik-watercolor-1254.webp",
+      "gitBlobSha": "e3f58d72d5365387330bffea45bf50872af26b11",
+      "bytes": 651382,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-borjomi-park-gym-watercolor-1448.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-borjomi-park-gym-watercolor-1448.webp",
+      "gitBlobSha": "7cb675af90133030f5d7bdfaab19590849f7d8aa",
+      "bytes": 851192,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-borjomi-riverfront-watercolor-1086.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-borjomi-riverfront-watercolor-1086.webp",
+      "gitBlobSha": "dab694c5594079ce5a73fe15b880cf1a4ab5c5e6",
+      "bytes": 793320,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
+    },
+    {
+      "uploadedPath": "caucasus-undated-monastery-overlook-gorge-watercolor-1086.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-undated-monastery-overlook-gorge-watercolor-1086.webp",
+      "gitBlobSha": "310b77b18fbc3e0e5dd7fa354adb92aeb80d8f05",
+      "bytes": 778522,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "Git blob and size confirmed; binary SHA-256, pixel dimensions and visual validation not verified",
+      "lifecycle": "staged-for-review",
+      "revision": {
+        "parentRevisionId": null,
+        "operation": "illustration-user-upload",
+        "recipeKey": null,
+        "outputSha256": null,
+        "status": "staged",
+        "userApproved": null
+      }
     }
   ]
 }
