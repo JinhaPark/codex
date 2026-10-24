@@ -127,7 +127,10 @@
       "places": [
         {
           "name": "카라반사라이",
-          "description": "대상들이 머물던 실크로드 숙소 건축을 살펴봅니다."
+          "description": "실크로드 상인들이 머물던 숙소 건물의 중정입니다. 석조 아케이드와 나무, 정원, 돌길이 어우러져 있습니다.",
+          "photoIds": [
+            "caucasus-20260501-sheki-caravanserai-courtyard-watercolor"
+          ]
         },
         {
           "name": "셰키 칸의 여름 궁전",
@@ -136,6 +139,18 @@
         {
           "name": "셰키 옛 마을",
           "description": "전통 가옥과 골목을 걷고 자유시간을 보냅니다."
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "점심 식당의 봄 정원",
+          "description": "셰키로 향하는 길에 점심을 먹었던 식당입니다. 나무와 초록빛 언덕이 펼쳐진 정원에서 기념사진을 남겼습니다.",
+          "imageId": "caucasus-20260501-sheki-lunch-garden-watercolor"
+        },
+        {
+          "title": "길가의 국기와 지도자 초상 게시판",
+          "description": "아제르바이잔 국기와 지도자 초상이 함께 있는 옥외 게시판입니다. 한국 코미디언을 떠올리게 했다는 여행자의 인상이 남아 있습니다.",
+          "imageId": "caucasus-20260501-azerbaijan-roadside-portrait-photo"
         }
       ]
     },

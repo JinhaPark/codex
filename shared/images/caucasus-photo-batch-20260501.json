@@ -1,0 +1,135 @@
+[
+  {
+    "id": "caucasus-20260501-sheki-lunch-garden-watercolor",
+    "original": "image(7).png",
+    "sourceSha256": "f9a9433ee8bc5adf8434ded0dfc68b730aa39ec4c87c9225f570112ce69e997b",
+    "sourceWidth": 1000,
+    "sourceHeight": 750,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "outputSha256": "159623ac25f1244ffebaae95738f852a73f8fd2afd93e2efe081c3796216bb9a",
+    "style": "watercolor",
+    "placement": "caucasus:2026-05-01:travel-observation:restaurant-garden",
+    "caption": "셰키로 가는 길, 점심 식당의 봄 정원",
+    "alt": "봄나무와 풀이 무성한 산자락의 식당 정원 돌길에 여행자가 서 있는 모습",
+    "generationId": "cb450c3e-c24f-4797-9f8a-6c14ac28dc48",
+    "status": "prepared-not-published",
+    "originalUploadForbidden": true,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 66744,
+        "quality": 85,
+        "sha256": "c6547a96cfd3a5f0e52a056caf7f52bdb151ed38744fe03826efd5c364ef8d77",
+        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 183202,
+        "quality": 85,
+        "sha256": "652a8dddb77b55f404d5f538c270a25bdf61dc47edbb259eb024a3907a12e2ea",
+        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp"
+      },
+      {
+        "width": 1000,
+        "height": 750,
+        "bytes": 247442,
+        "quality": 82,
+        "sha256": "0a29da3fbb3389fb439bcd89828a86d321e8fb67cee336db0754062454d51125",
+        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp"
+      }
+    ]
+  },
+  {
+    "id": "caucasus-20260501-azerbaijan-roadside-portrait-photo",
+    "original": "image(8).png",
+    "sourceSha256": "ce39054d05a1a8de8cc5146e07f25d017a23c1f1ac6f356602d842badf04ca8d",
+    "sourceWidth": 1920,
+    "sourceHeight": 1440,
+    "style": "documentary-photo",
+    "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+    "caption": "아제르바이잔 국기와 지도자 초상의 옥외 게시판",
+    "alt": "공원 앞 야외 게시판에 아제르바이잔 국기와 정장을 입은 지도자 초상이 함께 보이는 거리 풍경",
+    "status": "prepared-not-published",
+    "originalUploadForbidden": true,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 42560,
+        "quality": 85,
+        "sha256": "7d9e7b347b923880ea6f319075162add0c4a43182a1193c85186c88b8446ea98",
+        "file": "caucasus-20260501-azerbaijan-roadside-portrait-photo-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 104554,
+        "quality": 85,
+        "sha256": "a1f0a25e23f81d6022c4789ddd32f68ee528e92570184b53b88ea0fbb5764ddb",
+        "file": "caucasus-20260501-azerbaijan-roadside-portrait-photo-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 196740,
+        "quality": 85,
+        "sha256": "88f7bd671344dc80c56e85a7bfa0ebcbb9b0e25e067c083a203739797d525a11",
+        "file": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1200.webp"
+      },
+      {
+        "width": 1920,
+        "height": 1440,
+        "bytes": 233448,
+        "quality": 73,
+        "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc",
+        "file": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor",
+    "original": "image(9).png",
+    "sourceSha256": "4568c6d10ea71d17bcbac7c50039e31f7ac1050d4fdb0504df5667a368e17e83",
+    "sourceWidth": 1487,
+    "sourceHeight": 1982,
+    "generatedWidth": 1087,
+    "generatedHeight": 1447,
+    "outputSha256": "37582057dba5ca4752bbfb3a8a9247e55640cb2aaf492513774b43200a5be299",
+    "style": "watercolor",
+    "placement": "caucasus:2026-05-01:destination:caravanserai",
+    "caption": "셰키 카라반사라이 — 돌 아케이드와 정원이 있는 중정",
+    "alt": "두 층의 돌 아케이드와 나무, 화단, 돌길이 펼쳐진 셰키 카라반사라이의 내부 중정",
+    "generationId": "35da10c5-daca-4b04-82b1-091dcad4e3a0",
+    "status": "prepared-not-published",
+    "originalUploadForbidden": true,
+    "variants": [
+      {
+        "width": 480,
+        "height": 639,
+        "bytes": 103740,
+        "quality": 85,
+        "sha256": "295fb1b053318cffc6ef056f50ea93cf17d28cee5d725717a8eb89687668773c",
+        "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1065,
+        "bytes": 238710,
+        "quality": 82,
+        "sha256": "b6bf0d319ecb2dbbff04334cce70380612971bc7c81412156be407a6aee6a863",
+        "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-800.webp"
+      },
+      {
+        "width": 1087,
+        "height": 1447,
+        "bytes": 248984,
+        "quality": 64,
+        "sha256": "a9b9d76861f1e8d36e17c76d08434c5e3acf81d993da86d4a00a17c40939cd7b",
+        "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp"
+      }
+    ]
+  }
+]
