@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v24-shopping-krw';
+const CACHE = 'ca26-pages-v25-peanut-chocolate';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
