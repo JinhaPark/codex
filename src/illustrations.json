@@ -3,7 +3,7 @@
     "id": "mountain-orchards-watercolor",
     "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
     "style": "watercolor",
-    "placement": "geography:1:0",
+    "placement": "itinerary:2026-10-17:cholponata",
     "caption": "텐산산맥 아래 가을빛 포도밭",
     "alt": "눈 덮인 텐산산맥과 푸른 하늘 아래 가을빛 포도밭과 마른 풀, 돌이 이어지는 풍경",
     "sourceWidth": 1080,
@@ -109,41 +109,6 @@
       }
     ],
     "captionProvenance": "사용자가 제공한 숙소명과 수종"
-  },
-  {
-    "id": "uzbek-tilework-pencil",
-    "original": "IMG_8704.jpeg",
-    "style": "colored-pencil",
-    "placement": "comparative:0:0",
-    "caption": "아치와 벽면을 채운 청색 기하학 문양",
-    "alt": "청색과 황토색 타일이 첨두 아치와 벽면을 덮은 건축물 앞을 관람객이 걷는 모습",
-    "sourceWidth": 1334,
-    "sourceHeight": 750,
-    "width": 1200,
-    "height": 675,
-    "variants": [
-      {
-        "width": 480,
-        "height": 270,
-        "bytes": 48880,
-        "quality": 84,
-        "file": "uzbek-tilework-pencil-480.webp"
-      },
-      {
-        "width": 800,
-        "height": 450,
-        "bytes": 132338,
-        "quality": 84,
-        "file": "uzbek-tilework-pencil-800.webp"
-      },
-      {
-        "width": 1200,
-        "height": 675,
-        "bytes": 240056,
-        "quality": 82,
-        "file": "uzbek-tilework-pencil-1200.webp"
-      }
-    ]
   },
   {
     "id": "arabic-manuscript-pencil",
@@ -1108,8 +1073,8 @@
     "original": "IMG_8938.jpeg",
     "style": "watercolor",
     "placement": "tashkent:9:0",
-    "caption": "타슈켄트 독립광장 — 분수 너머 흰색 행정건물",
-    "alt": "가로로 뻗은 흰색 행정건물 앞의 분수 물줄기와 수조, 앞쪽 잔디와 작은 나무, 줄무늬 보도",
+    "caption": "타슈켄트 독립광장 — 분수 너머 대통령 집무실",
+    "alt": "가로로 뻗은 흰색 대통령 집무실 앞의 분수 물줄기와 수조, 앞쪽 잔디와 작은 나무, 줄무늬 보도",
     "sourceWidth": 1536,
     "sourceHeight": 1152,
     "width": 1200,
@@ -1764,7 +1729,7 @@
     ],
     "generatedWidth": 1448,
     "generatedHeight": 1086,
-    "placement": "day:8:tip",
+    "placement": "itinerary:2026-10-20:oi-qaragai",
     "caption": "오이 카라가이 — 가을 숲 앞 곤돌라 승강장",
     "alt": "오이 카라가이 표기가 있는 곤돌라와 승강장 구조물 뒤로 가을 산비탈이 보이는 풍경",
     "sourceKind": "user-travel-photo"

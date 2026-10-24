@@ -15,7 +15,7 @@
       "sourceWidth": 1080,
       "sourceHeight": 1440,
       "activeRevisionId": "legacy-mountain-orchards-watercolor",
-      "placement": "geography:1:0",
+      "placement": "itinerary:2026-10-17:cholponata",
       "revisions": [
         {
           "revisionId": "legacy-mountain-orchards-watercolor",
@@ -284,8 +284,8 @@
       "sourceAvailability": "not-recovered",
       "sourceWidth": 1334,
       "sourceHeight": 750,
-      "activeRevisionId": "legacy-uzbek-tilework-pencil",
-      "placement": "comparative:0:0",
+      "activeRevisionId": null,
+      "placement": null,
       "revisions": [
         {
           "revisionId": "legacy-uzbek-tilework-pencil",
@@ -329,11 +329,41 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "deleted",
+          "lifecycleChangedAt": "2026-10-24T12:32:16.999Z",
+          "lifecycleReason": "Explicit user request to remove the blue geometric arch illustration completely from the codebase; archived and deletion-candidate stages recorded.",
+          "retirementHistory": {
+            "archivedCommitSha": "468f27d09a7e62f5d5550b0a027851be2b9cd037",
+            "candidateCommitSha": "9e590a4de4ccc4e015f1f247f461847edf30aaf3"
+          },
+          "historyArtifactRef": {
+            "commitSha": "47ff537cc5cd6efa24d38d39d04baa42e5dbc689",
+            "variants": [
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-480.webp",
+                "sha256": "dc8c3aab15bd4ccf43d3cec844ac87d7c716b46e147f3ac0145fc10fa9d98e71"
+              },
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-800.webp",
+                "sha256": "1b1032addda278a371396a5b53ad0170ce7f76be87649434e3f8d1f6a87fae0b"
+              },
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-1200.webp",
+                "sha256": "654778eb27601563c18fb002973480325871dbbb9bdf88cd54735f659a7b0448"
+              }
+            ]
+          }
         }
       ],
-      "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil"
+      "lifecycle": "deleted",
+      "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil",
+      "lifecycleChangedAt": "2026-10-24T12:32:16.999Z",
+      "lifecycleReason": "Explicit user request to remove the blue geometric arch illustration completely from the codebase; archived and deletion-candidate stages recorded.",
+      "retirementAuthorization": "User requested full removal of this illustration from the codebase.",
+      "retirementHistory": {
+        "archivedCommitSha": "468f27d09a7e62f5d5550b0a027851be2b9cd037",
+        "candidateCommitSha": "9e590a4de4ccc4e015f1f247f461847edf30aaf3"
+      }
     },
     {
       "illustrationId": "arabic-manuscript-pencil",
@@ -3934,7 +3964,7 @@
       "sourceHeight": 1152,
       "activeRevisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
       "lastPublishedRevisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
-      "placement": "day:8:tip",
+      "placement": "itinerary:2026-10-20:oi-qaragai",
       "revisions": [
         {
           "revisionId": "oi-qaragai-gondola-watercolor-r1-380173a80cd6",
@@ -4282,8 +4312,8 @@
                     46.35
                   ],
                   [
-                    45.0,
-                    49.0
+                    45,
+                    49
                   ]
                 ],
                 "south_india": [
@@ -4343,7 +4373,7 @@
                   ],
                   [
                     88.2,
-                    39.0
+                    39
                   ],
                   [
                     94.66,
@@ -4362,7 +4392,7 @@
                     34.62
                   ],
                   [
-                    117.0,
+                    117,
                     36.65
                   ],
                   [

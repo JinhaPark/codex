@@ -133,7 +133,7 @@ test('summary-only tourist visits and unresolved places remain explicit', () => 
   for (const place of ['부하라 돔형 바자르', '브로드웨이 거리', '베르메트 야외 온천']) {
     assert.equal(rows.filter(r => r.place === place).length, 1, place);
   }
-  for (const id of ['mountain-orchards-watercolor','uzbek-tilework-pencil','arabic-manuscript-pencil']) {
+  for (const id of ['arabic-manuscript-pencil']) {
     assert.ok(!rows.some(r => r.classification === '확보' && r.imageIds.includes(id)));
   }
 });
@@ -147,4 +147,14 @@ test('museum numeric and map panels stay documentary photographs', () => {
     assert.equal(art.sourceKind, 'museum-panel-photo');
     assert.equal(art.generatedWidth, undefined, 'Do not synthesize numeric exhibits');
   }
+});
+
+
+test('removed tilework image is not published and corrected captions are retained', () => {
+  assert.ok(!artwork.some(art => art.id === 'uzbek-tilework-pencil'));
+  assert.ok(!fs.readdirSync(new URL('../public/illustrations/', import.meta.url)).some(name => name.startsWith('uzbek-tilework-pencil-')));
+  assert.equal(artwork.find(a => a.id === 'tashkent-independence-fountains-watercolor').caption,
+    '타슈켄트 독립광장 — 분수 너머 대통령 집무실');
+  assert.equal(artwork.find(a => a.id === 'mountain-orchards-watercolor').placement, 'itinerary:2026-10-17:cholponata');
+  assert.equal(artwork.find(a => a.id === 'oi-qaragai-gondola-watercolor').placement, 'itinerary:2026-10-20:oi-qaragai');
 });

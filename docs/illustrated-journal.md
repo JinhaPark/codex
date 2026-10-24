@@ -8,10 +8,9 @@
 
 | 원본 파일 | 게시용 파일 접두어 | 화풍 | 위치 | 캡션 |
 |---|---|---|---|---|
-| IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg | mountain-orchards-watercolor | 수채화 | 여행 해설 → 지리·기후 → 2. 키르기스스탄 산악지형 | 설산 앞 농경지와 전신주가 이어지는 산간 풍경 |
+| IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg | mountain-orchards-watercolor | 수채화 | 일정 → 6일차(10/17) → 촐폰아타 카드 | 텐산산맥 아래 가을빛 포도밭 |
 | IMG_8706.jpeg | bukhara-poi-kalyan-watercolor | 수채화 | 여행 해설 → 부하라 → 8. 샤이바니 왕조 | 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 |
 | IMG_8995.jpeg | autumn-birch-walk-watercolor | 수채화 | 일정 → 7일차(10/18) → 여행 관찰 포인트 | Karven Four Seasons 리조트의 자작나무길 |
-| IMG_8704.jpeg | uzbek-tilework-pencil | 색연필 | 여행 해설 → 이슬람 건축 비교사 → 타일·기하학 문양 문단 | 아치와 벽면을 채운 청색 기하학 문양 |
 | IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg | arabic-manuscript-pencil | 색연필 | 여행 해설 → 우즈베키스탄 심층 해설 → 종교 | 아랍 문자 필사본 — 검정·붉은 필기와 제본 |
 | IMG_8943.jpeg | street-classic-car-pencil | 색연필 | 일정 → 5일차(10/16) → 여행 관찰 포인트 | 타슈켄트 거리 — 모스크비치(Moskvich) 세단 |
 | IMG_8951.jpeg | travel-steak-table-pencil | 색연필 | 일정 → 5일차(10/16) → 방문지와 지도 | 비슈케크 SB bar — 토마호크 스테이크, 1인 한화 약 3만 원 |
@@ -36,9 +35,6 @@ KB는 1,000바이트 기준입니다. 원본 비율에 맞춰 크기를 정하�
 | autumn-birch-walk-watercolor-480.webp | 480 × 640 | 124.4 | 84 |
 | autumn-birch-walk-watercolor-800.webp | 800 × 1067 | 235.8 | 76 |
 | autumn-birch-walk-watercolor-1086.webp | 1086 × 1448 | 340.1 | 72 |
-| uzbek-tilework-pencil-480.webp | 480 × 270 | 48.9 | 84 |
-| uzbek-tilework-pencil-800.webp | 800 × 450 | 132.3 | 84 |
-| uzbek-tilework-pencil-1200.webp | 1200 × 675 | 240.1 | 82 |
 | arabic-manuscript-pencil-480.webp | 480 × 640 | 91.8 | 84 |
 | arabic-manuscript-pencil-800.webp | 800 × 1067 | 247.3 | 84 |
 | arabic-manuscript-pencil-1080.webp | 1080 × 1440 | 248.2 | 72 |

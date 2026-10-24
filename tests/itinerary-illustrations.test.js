@@ -62,7 +62,7 @@ test('each date renders each illustration once with the original responsive asse
 });
 
 test('unconfirmed subjects stay in labeled reference groups instead of destination cards', () => {
-  const unconfirmed = ['mountain-orchards-watercolor','uzbek-tilework-pencil','zoroastrian-ossuary-pencil','aral-sea-exhibit-photo'];
+  const unconfirmed = ['zoroastrian-ossuary-pencil','aral-sea-exhibit-photo'];
   for (const id of unconfirmed) {
     const day = references.find(day=>day.extras.some(group=>group.ids.includes(id)));
     assert.ok(day, id);
@@ -78,4 +78,18 @@ test('petroglyph area captions and alt text do not describe a museum', () => {
     assert.match(art.caption, /암각화 구역/);
   }
   assert.equal(artwork.find(art=>art.id === 'cholponata-balbal-pencil').caption, '촐폰아타 암각화 구역 — 발발 석상');
+});
+
+
+test('specific travel cards own the relocated illustrations without redundant reference groups', () => {
+  const samarkand = references.find(day => day.date === '2026-10-15');
+  assert.ok(!samarkand.extras.some(group => group.title === '건축 해설 참고 그림'));
+  assert.ok(!artwork.some(art => art.id === 'uzbek-tilework-pencil'));
+  const cholponata = references.find(day => day.date === '2026-10-17');
+  assert.ok(cholponata.places['촐폰아타'].includes('mountain-orchards-watercolor'));
+  assert.ok(idsIn(renderer.renderItineraryIllustrations('2026-10-17', '촐폰아타')).includes('mountain-orchards-watercolor'));
+  assert.ok(!references.find(day => day.date === '2026-10-18').extras.some(group => group.title.includes('톈산 산록')));
+  const almaty = references.find(day => day.date === '2026-10-20');
+  assert.deepEqual(almaty.places['오이 카라가이'], ['oi-qaragai-gondola-watercolor']);
+  assert.ok(idsIn(renderer.renderItineraryIllustrations('2026-10-20', '오이 카라가이')).includes('oi-qaragai-gondola-watercolor'));
 });
