@@ -65,18 +65,24 @@ async function decodeFigure(page, figure) {
   for (const link of await page.locator(`#guide-group-${category} + .guide-book-list [data-guide-inline]`).all()) articles.push({category,id:await link.getAttribute('data-guide-inline')});
  }
  assert.equal(articles.length,16);
- // The banner is a decorative header asset, not a destination figure.
- const banner = manifest.find(art=>art.purpose==='site-banner');assert.ok(banner);
+ // The original plain header has no decorative map or horizontal title scroller.
+ async function plainBanner(target) {
+  const header = target.locator('.site-banner');
+  assert.equal(await header.locator('img').count(),0);
+  assert.equal(await header.evaluate(n=>getComputedStyle(n).backgroundColor),'rgb(20, 49, 60)');
+  assert.equal(await header.evaluate(n=>getComputedStyle(n).backgroundImage),'none');
+  assert.match(await header.locator('h1').textContent(),/중앙아시아.*탄탄탄/);
+  assert.match(await header.textContent(),/2026.10.12/);
+  assert.match(await header.textContent(),/우즈베키스탄 · 키르기스스탄 · 카자흐스탄/);
+ }
+ assert.ok(!manifest.some(art=>art.purpose==='site-banner'));
  for (const width of [375,390,430,768,1280,1920]) {
   await page.setViewportSize({width,height:900});await page.locator('[data-tab="days"]').click();await page.evaluate(()=>scrollTo(0,0));await page.evaluate(()=>document.fonts.ready);
-  await page.locator('[data-banner]').evaluate(img=>img.decode());await fits(page,'banner '+width);
-  const layout=await page.locator('.site-title-line').evaluate(line=>({width:line.clientWidth,scroll:line.scrollWidth,nowrap:getComputedStyle(line).whiteSpace,heights:[...line.children].map(n=>n.getBoundingClientRect().height)}));
-  assert.equal(layout.nowrap,'nowrap');assert.ok(layout.heights[0]<60,'Single-line h1 at '+width);
-  if(width>=1280) assert.ok(layout.scroll<=layout.width+1,'Full title line fits desktop');
-  const first=await page.locator('.site-title-line h1').boundingBox();assert.ok(first.x>=0 && first.x+first.width<=width,'Main title remains visible at '+width);
-  if(width<=430) {await page.locator('.site-title-line').focus();await page.locator('.site-title-line').evaluate(n=>n.scrollLeft=n.scrollWidth);assert.ok(await page.locator('.site-title-line').evaluate(n=>n.scrollLeft>0),'Mobile metadata is reachable');await page.locator('.site-title-line').evaluate(n=>n.scrollLeft=0);}
-  await page.locator('.site-title-line').evaluate(n=>n.blur());await page.evaluate(()=>scrollTo(0,0));await settle(page);
-  await page.screenshot({path:path.join(qa,`banner-${width}.png`)});
+  await plainBanner(page);await fits(page,'plain banner '+width);
+  for (const selector of ['.site-banner h1','.site-banner .eyebrow','.site-banner p']) {
+   const box=await page.locator(selector).boundingBox();assert.ok(box.x>=0&&box.x+box.width<=width,selector+' visible at '+width);
+  }
+  await settle(page);await page.screenshot({path:path.join(qa,`banner-${width}.png`)});
  }
  if(process.argv.includes('--banner-only')) {assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,scope:'banner-only',viewports:[375,390,430,768,1280,1920],javascriptErrors:errors}));return;}
  await page.setViewportSize({width:375,height:812});
@@ -144,7 +150,7 @@ async function decodeFigure(page, figure) {
   assert.equal(states.length,art.placement.startsWith('day:')?1:2,art.id+' preserves one guide appearance and one authorized itinerary appearance');
  }
  assert.deepEqual([...seen.keys()].sort(),manifest.filter(a=>a.purpose!=='site-banner').map(a=>a.id).sort());
- for(const row of coverage) for(const id of row.imageIds) assert.ok(seen.has(id)||id===banner.id,row.place+' coverage');
+ for(const row of coverage) for(const id of row.imageIds) assert.ok(seen.has(id),row.place+' coverage');
  let decodedVariants=0;
  for(const art of manifest) for(const v of art.variants) {const dims=await page.evaluate(async url=>{const img=new Image();img.src=url;await img.decode();return [img.naturalWidth,img.naturalHeight];},base+'illustrations/'+v.file);assert.deepEqual(dims,[v.width,v.height]);decodedVariants++;}
  await page.locator('[data-tab="days"]').click();await page.locator('[data-day="1"]').click();
@@ -178,11 +184,11 @@ async function decodeFigure(page, figure) {
  await sw.evaluate(async()=>{const changed=new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true}));await(await navigator.serviceWorker.ready).update();await changed;});
  await sw.waitForFunction(async current=>{const keys=await caches.keys();return keys.includes(current)&&!keys.includes('ca26-pages-v27-shopping-preparation-tabs');},currentCache);
  assert.equal(await sw.evaluate(async()=>{const c=await caches.open('other-site-v1');return(await c.match('/other-site/')).text();}),'preserve me');
- await sw.reload();await sw.locator('[data-banner]').evaluate(img=>img.decode());
+ await sw.reload();await plainBanner(sw);
  const visited=[];
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all()){visited.push({id:await f.getAttribute('data-illustration'),article:id,category});await decodeFigure(sw,f);}}
  await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
- await swContext.setOffline(true);await sw.reload();await sw.locator('[data-banner]').evaluate(img=>img.decode());
+ await swContext.setOffline(true);await sw.reload();await plainBanner(sw);
  await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all())await decodeFigure(sw,f);}
  await sw.locator('[data-guide-collapse]').click();await sw.locator('[data-guide-toc]').click();await sw.locator('[data-guide-jump]').last().click();await settle(sw);assert.ok(await sw.locator('[data-reader-section]').last().evaluate(n=>n.open));

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T10:31:55.936Z",
+  "scope": "plain-banner-and-cache-only",
+  "browser": "153.0.8010.0",
+  "titleViewports": [
+    375,
+    390,
+    430,
+    768,
+    1280,
+    1920
+  ],
+  "plainBannerOfflineReload": true,
+  "mapImageRequests": 0,
+  "cacheUpgrade": "ca26-pages-v38-plain-green-banner",
+  "otherCachePreserved": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local Chromium, not an actual iPhone Safari or installed home-screen PWA",
+    "Cache upgrade uses current assets under the prior release cache name",
+    "Unrelated guide flows were not rerun for this banner restoration"
+  ]
+}
