@@ -293,9 +293,9 @@
       "date": "2026-05-04",
       "caption": "즈바리 수도원",
       "alt": "조지아 므츠헤타의 즈바리 수도원을 담은 여행 일러스트",
-      "status": "candidate",
+      "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-05-04:destination:jvari-monastery",
       "variants": [
         {
           "file": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",

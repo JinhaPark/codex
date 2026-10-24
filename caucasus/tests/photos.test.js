@@ -18,7 +18,7 @@ function decodeDimensions(bytes){
 }
 test('all uploaded WebP files are migrated intact and follow the naming rule',()=>{
  const files=fs.readdirSync(new URL('../../shared/public/illustrations/',import.meta.url));
- assert.equal(registry.assets.length,26);
+ assert.equal(registry.assets.length,24);
  const ids=new Set();
  for(const asset of registry.assets){
    assert.match(asset.file,/^caucasus-\d{8}-[a-z0-9-]+-(?:watercolor|colored-pencil|documentary-photo)-\d+\.webp$/);
@@ -35,7 +35,8 @@ test('all uploaded WebP files are migrated intact and follow the naming rule',()
   'caucasus-20260430-baku-maiden-tower-watercolor-1086.webp',
   'caucasus-20260430-gobustan-entrance-sign-watercolor-1448.webp',
   'caucasus-20260430-gobustan-rock-landscape-watercolor-1536.webp',
-  'caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1600.webp',
+  'caucasus-20260504-jvari-monastery-watercolor-1086.webp',
+  'caucasus-20260507-vardzia-watercolor-1448.webp',
   'caucasus-20260501-sheki-street-watercolor-1200.webp'
  ].sort(),'Track uploaded images still awaiting re-encoding to the skill\'s 250 KB budget');
 });
@@ -53,8 +54,17 @@ test('all photo placements resolve and optional activities are scoped',()=>{
 
 test('Caucasus migration ledger keeps immutable source references and valid publication pointers',()=>{
  const ledger=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-image-lineage.json',import.meta.url)));
- assert.equal(ledger.images.length,catalog.photos.length);
+ const active=ledger.images.filter(i=>i.lifecycle==='active');
+ assert.equal(active.length,catalog.photos.length);
+ const archived=ledger.images.filter(i=>i.lifecycle==='archived');
+ assert.ok(archived.some(i=>i.illustrationId==='caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo' && i.revisions[0].historyArtifactRef?.commitSha),'Prior publication is recoverable in Git history');
+ assert.ok(archived.every(i=>i.activeRevisionId===null),'Archived images are not published');
  const byId=new Map(ledger.images.map(i=>[i.illustrationId,i]));
+ assert.equal(catalog.photos.find(p=>p.id==='caucasus-20260501-azerbaijan-aliyev-portrait-watercolor')?.variants.length,1);
+ assert.ok(!registry.assets.some(a=>a.file.includes('aliyev-portrait-documentary-photo')),'Superseded Aliyev assets unpublished');
+ assert.equal(itinerary.days.find(d=>d.date==='2026-05-03').places.some(p=>p.name==='즈바리 수도원'),false);
+ const may4=itinerary.days.find(d=>d.date==='2026-05-04');
+ assert.ok(may4.places.some(p=>p.name==='즈바리 수도원' && p.photoIds.includes('caucasus-20260504-jvari-monastery-watercolor')));
  for(const photo of catalog.photos){
   const image=byId.get(photo.id);assert.ok(image);
   assert.equal(image.sourceArtifactRef,null);

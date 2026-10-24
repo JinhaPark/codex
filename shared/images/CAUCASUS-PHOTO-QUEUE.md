@@ -24,3 +24,10 @@ The root-level WebP uploads in GitHub main (26 files) are copied to the shared p
 ## Oversize import audit
 
 Five manually uploaded, already-published WebP blobs exceed the 250,000-byte target for optimized variants. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test records the five filenames and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.
+
+## Aliyev replacement and newly imported images (2026-10-25)
+
+- The updated May 1 Aliyev WebP replaces the prior documentary variants in active publication. The original publication is retained only in Git history with a concrete commit and Git object references. The exact new portrait caption is: “아제르바이잔 대통령 일함 알리예프 — 주원 선생님과 닮았다”.
+- The uploaded Jvari monastery WebP was taken as a user-supplied May 4 visit record. It is now attached to the May 4 itinerary; the May 3 Jvari stop is removed. Its 481,646-byte size exceeds the 250 KB target and should be optimized in a separate image pass.
+- The May 7 Vardzia WebP is attached to its destination. Its 741,920-byte size also exceeds the image-size target. No unrelated image was regenerated.
+- All three uploaded WebP blobs were reused by unchanged Git object SHA and relocated from repository root to shared/public/illustrations/.
