@@ -64,7 +64,8 @@ test('each subject has one editorial placement, Korean caption and descriptive K
 
 test('shared renderer emits only the manifest caption', async () => {
   const source = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8')
-    .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`);
+    .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
+    .replace("import itineraryIllustrations from './itinerary-illustrations.json';", `const itineraryIllustrations = ${fs.readFileSync(new URL('../src/itinerary-illustrations.json', import.meta.url), 'utf8')};`);
   const { renderIllustration } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
   for (const art of artwork) {
     const html = renderIllustration(art.placement);
