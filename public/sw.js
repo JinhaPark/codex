@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v34-silk-road-routes-korea';
+const CACHE = 'ca26-pages-v35-korea-reference';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

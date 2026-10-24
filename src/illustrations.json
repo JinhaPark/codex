@@ -1800,38 +1800,37 @@
   },
   {
     "id": "silk-road-banner-watercolor",
-    "original": "image(1).png",
+    "original": "Gemini_Generated_Image_g836heg836heg836.png",
     "style": "watercolor",
-    "sourceWidth": 1024,
-    "sourceHeight": 765,
+    "sourceWidth": 2048,
+    "sourceHeight": 682,
     "width": 1024,
     "height": 341,
     "variants": [
       {
         "width": 480,
         "height": 160,
-        "bytes": 27590,
+        "bytes": 24778,
         "quality": 88,
-        "file": "silk-road-banner-r2-480.webp"
+        "file": "silk-road-banner-r4-reference-480.webp"
       },
       {
         "width": 800,
         "height": 267,
-        "bytes": 72492,
+        "bytes": 57002,
         "quality": 88,
-        "file": "silk-road-banner-r2-800.webp"
+        "file": "silk-road-banner-r4-reference-800.webp"
       },
       {
         "width": 1024,
         "height": 341,
-        "bytes": 113984,
+        "bytes": 80288,
         "quality": 88,
-        "file": "silk-road-banner-r2-1024.webp"
+        "file": "silk-road-banner-r4-reference-1024.webp"
       }
     ],
     "generatedWidth": 2172,
     "generatedHeight": 724,
-    "framingEdit": "panoramic-banner-redraw",
     "placement": "site:banner",
     "caption": "실크로드 교역로와 낙타 대상",
     "alt": "사마르칸트에서 네 방향으로 굵은 교역로가 뻗어나가고 오른쪽에 한반도와 제주도가 보이는 실크로드 지도 그림",
