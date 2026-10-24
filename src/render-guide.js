@@ -62,7 +62,7 @@ export const guideEntries = [
   {id:'economy', category:'core', title:economy.title, intro:economy.intro, render:()=>renderEconomy()},
   {id:'education', category:'core', title:education.title, intro:education.intro, render:()=>renderEducation()},
   narrative(bukhara, 'bukhara-history', 'bukhara', 'cities'),
-  ...[samarkand,tashkent,bishkek,cholponata,almaty].map(city=>narrative(city, `history-${city.slug}`, city.slug, 'cities')),
+  ...[samarkand,tashkent,bishkek,cholponata,almaty].map(city=>narrative(city, `history-${city.slug}`, city.slug, 'cities', city.slug === 'cholponata' ? {chapterIllustrations:{2:'cholponata:2:balbal'}} : {})),
   {id:'architecture-comparative', category:'architecture', title:comparative.title, intro:comparative.intro, render:renderArchitecture},
   ...kazakhstanEssays.map(essay=>narrative({...essay, verifiedAt:'2026-10-19'}, essay.id, essay.id, 'kazakhstan')),
 ];
