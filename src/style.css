@@ -43,6 +43,12 @@ h3{font-size:18px;line-height:1.5;word-break:keep-all}
 p,li,summary,.destination-body p{line-height:1.85;overflow-wrap:break-word;word-break:keep-all}
 article{padding:clamp(17px,4.4vw,25px);margin:16px 0}
 .summary{font-size:16px;line-height:1.9}
+/* Keep all ten dates visible with comfortable touch targets on phones. */
+.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;overflow:visible;padding-bottom:20px}
+.days button{min-width:0;min-height:64px;padding:8px 3px;gap:3px}
+.days button small{font-size:11px;white-space:nowrap}
+.days button strong{font-size:22px;line-height:1.2}
+@media(min-width:700px){.days{grid-template-columns:repeat(10,minmax(0,1fr))}}
 nav{justify-content:flex-start;overscroll-behavior-x:contain}
 nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .destination-photo{min-height:0}
