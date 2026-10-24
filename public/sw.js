@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v38-plain-green-banner';
+const CACHE = 'ca26-pages-v39-footer-trip-date';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
