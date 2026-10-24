@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v27-shopping-preparation-tabs';
+const CACHE = 'ca26-pages-v28-grouped-guide-reader';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
