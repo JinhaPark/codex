@@ -160,9 +160,9 @@
           "imageId": "caucasus-20260501-sheki-lunch-garden-watercolor"
         },
         {
-          "title": "아제르바이잔 대통령 일함 알리예프 초상 게시판",
-          "description": "도로변 게시판에 아제르바이잔 국기와 일함 알리예프 대통령의 초상이 있습니다. 당시 주원 선생님과 닮았다는 이야기가 나왔습니다.",
-          "imageId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo"
+          "title": "아제르바이잔 대통령 일함 알리예프",
+          "description": "아제르바이잔 국기를 배경으로 일함 알리예프 대통령의 초상이 게시되어 있습니다.",
+          "imageId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor"
         }
       ]
     },
@@ -342,7 +342,10 @@
       "places": [
         {
           "name": "바르드지아 동굴 도시",
-          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다."
+          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다.",
+          "photoIds": [
+            "caucasus-20260507-vardzia-watercolor"
+          ]
         },
         {
           "name": "아할치헤 라바티 성",

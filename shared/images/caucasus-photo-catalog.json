@@ -75,52 +75,6 @@
       ]
     },
     {
-      "id": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo",
-      "date": "2026-05-01",
-      "caption": "아제르바이잔 대통령 일함 알리예프 초상 게시판 — 주원 선생님과 닮았다는 현장 인상",
-      "alt": "도로변 옥외 게시판에 아제르바이잔 국기와 일함 알리예프 대통령의 초상이 보이는 모습",
-      "status": "ready-in-pr",
-      "sourceSha256": "ce39054d05a1a8de8cc5146e07f25d017a23c1f1ac6f356602d842badf04ca8d",
-      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
-      "variants": [
-        {
-          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-480.webp",
-          "width": 480,
-          "bytes": 42560,
-          "gitBlobSha": "fbafa31cf0063be7e87aa8c9c8058da2deebac19",
-          "sha256": "7d9e7b347b923880ea6f319075162add0c4a43182a1193c85186c88b8446ea98"
-        },
-        {
-          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-800.webp",
-          "width": 800,
-          "bytes": 104554,
-          "gitBlobSha": "6d62690b4bb86fef1e2e8289249d2c03afc58d12",
-          "sha256": "a1f0a25e23f81d6022c4789ddd32f68ee528e92570184b53b88ea0fbb5764ddb"
-        },
-        {
-          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1200.webp",
-          "width": 1200,
-          "bytes": 196740,
-          "gitBlobSha": "f5b1ae7bce81ec94dc51da005b4638ed688c0f10",
-          "sha256": "88f7bd671344dc80c56e85a7bfa0ebcbb9b0e25e067c083a203739797d525a11"
-        },
-        {
-          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1600.webp",
-          "width": 1600,
-          "bytes": 280714,
-          "gitBlobSha": "b7ca8c09583f4e66cdbe077372af7e08842f667d",
-          "sha256": "9b8345795ecee703cb31dbf3d0e52df99adcf118743bb71d8df716ba3994db12"
-        },
-        {
-          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1920.webp",
-          "width": 1920,
-          "bytes": 233448,
-          "gitBlobSha": "99b7869d804ca0d6a266999b8247b8aefd0bdcd8",
-          "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc"
-        }
-      ]
-    },
-    {
       "id": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor",
       "date": "2026-05-01",
       "caption": "셰키 카라반사라이 — 돌 아케이드와 정원이 있는 중정",
@@ -312,6 +266,60 @@
           "width": 1200,
           "bytes": 240150,
           "gitBlobSha": "322e898db5bd58c2f5f1f6345d997c9dc713fb52",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor",
+      "date": "2026-05-01",
+      "caption": "아제르바이잔 대통령 일함 알리예프 — 주원 선생님과 닮았다",
+      "alt": "나무가 있는 도로변의 아제르바이잔 국기와 일함 알리예프 초상 게시판. 왼쪽 보행자 표지판을 제거한 장면",
+      "status": "ready-in-pr",
+      "sourceSha256": "a78375a9419471aeefafd8df134c424257439fdfe9f4d41b7397951922978dfc",
+      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+      "variants": [
+        {
+          "file": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 239016,
+          "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09",
+          "sha256": "d38525bf3104654ee9a760acea53b474f94bf416ad3cc8d4bfaee462456aea09"
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260504-jvari-monastery-watercolor",
+      "date": "2026-05-04",
+      "caption": "즈바리 수도원",
+      "alt": "조지아 므츠헤타의 즈바리 수도원을 담은 여행 일러스트",
+      "status": "candidate",
+      "sourceSha256": null,
+      "placement": null,
+      "variants": [
+        {
+          "file": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 481646,
+          "gitBlobSha": "a598964b114c39b2524abb7fded4327a24d34107",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260507-vardzia-watercolor",
+      "date": "2026-05-07",
+      "caption": "바르드지아 — 절벽에 조성된 동굴 도시",
+      "alt": "조지아 바르드지아의 절벽과 암굴 도시를 담은 일러스트",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-07:destination:vardzia",
+      "variants": [
+        {
+          "file": "caucasus-20260507-vardzia-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 741920,
+          "gitBlobSha": "42ca51b274b8e37a536effbad65c73ea1811bb56",
           "sha256": null
         }
       ]
