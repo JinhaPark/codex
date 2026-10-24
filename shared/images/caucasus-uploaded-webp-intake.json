@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Caucasus user-uploaded derivative intake; no original photographs",
+  "assetCount": 21,
+  "baseBranch": "feature/caucasus-multi-travel-workspaces",
+  "note": "Git Blob references are reused byte-for-byte. This intake record is not an image-generation cache hit or validation of source hash. Source mapping is pending provenance audit; central shared/images/image-lineage.json is not modified until source/output checks succeed.",
+  "assets": [
+    {
+      "uploadedPath": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1200.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-azerbaijan-roadside-portrait-photo-1200.webp",
+      "gitBlobSha": "f5b1ae7bce81ec94dc51da005b4638ed688c0f10",
+      "bytes": 196740,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1920.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-azerbaijan-roadside-portrait-photo-1920.webp",
+      "gitBlobSha": "99b7869d804ca0d6a266999b8247b8aefd0bdcd8",
+      "bytes": 233448,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-azerbaijan-roadside-portrait-photo-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-azerbaijan-roadside-portrait-photo-480.webp",
+      "gitBlobSha": "fbafa31cf0063be7e87aa8c9c8058da2deebac19",
+      "bytes": 42560,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-azerbaijan-roadside-portrait-photo-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-azerbaijan-roadside-portrait-photo-800.webp",
+      "gitBlobSha": "6d62690b4bb86fef1e2e8289249d2c03afc58d12",
+      "bytes": 104554,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp",
+      "gitBlobSha": "029d80e19ebd9772dd4ad83e0b42032520ddeb35",
+      "bytes": 248984,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-caravanserai-courtyard-watercolor-480.webp",
+      "gitBlobSha": "b39a40d36877574731735cc9fad3035583e8e77a",
+      "bytes": 103740,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-caravanserai-courtyard-watercolor-800.webp",
+      "gitBlobSha": "c383cdf1e448c5cec410b92a2c378ee845e63298",
+      "bytes": 238710,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp",
+      "gitBlobSha": "5d53b3043ef1837a8da2ece7578895877e8a7b5e",
+      "bytes": 247442,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-lunch-garden-watercolor-480.webp",
+      "gitBlobSha": "ff95a1f43320e9b22b98de2083cfa658f9e674be",
+      "bytes": 66744,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-lunch-garden-watercolor-800.webp",
+      "gitBlobSha": "65f5e2a515aec28021bf602a01a85a0f2d6497e2",
+      "bytes": 183202,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "caucasus-mountains-yellow-fields-2026-05-02-1200.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-mountain-yellow-fields-watercolor-1200.webp",
+      "gitBlobSha": "47f1aff5f1dcbd778337473fdc00b133ce271a9c",
+      "bytes": 209102,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-vineyard-watercolor-1200.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-vineyard-watercolor-1200.webp",
+      "gitBlobSha": "d87d0812c1595606b4539e44ee8908aaf976eabb",
+      "bytes": 180660,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-vineyard-watercolor-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-vineyard-watercolor-480.webp",
+      "gitBlobSha": "be50b262ce686c053998bde563c0856892b00212",
+      "bytes": 36472,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-vineyard-watercolor-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-vineyard-watercolor-800.webp",
+      "gitBlobSha": "7e2e25f53f0f910d292539c12b58dc9edf56c5da",
+      "bytes": 92730,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-winery-tanks-pencil-1200.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-winery-tanks-pencil-1200.webp",
+      "gitBlobSha": "ab1f48ba113f78c5203c8024346d250b95e5d945",
+      "bytes": 156592,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-winery-tanks-pencil-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-winery-tanks-pencil-480.webp",
+      "gitBlobSha": "9a0eb089de719ba60f4b054ed89be77bc52a2b05",
+      "bytes": 30452,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "kakheti-winery-tanks-pencil-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-kakheti-winery-tanks-pencil-800.webp",
+      "gitBlobSha": "352f5209d53236f85bd6b8a4de3ecaa0d985725f",
+      "bytes": 78700,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "sheki-street-2026-05-01-watercolor-candidate.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260501-sheki-street-watercolor-1200.webp",
+      "gitBlobSha": "06a59f980c306e857d72034b8b294b66334e7fb5",
+      "bytes": 304474,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "sighnaghi-panorama-watercolor-1200.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp",
+      "gitBlobSha": "322e898db5bd58c2f5f1f6345d997c9dc713fb52",
+      "bytes": 240150,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "sighnaghi-panorama-watercolor-480.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",
+      "gitBlobSha": "55ba29c4eefeb79ace9e971e9e5c7ef4839bf433",
+      "bytes": 64922,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    },
+    {
+      "uploadedPath": "sighnaghi-panorama-watercolor-800.webp",
+      "canonicalPath": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-800.webp",
+      "gitBlobSha": "0623c782a83902e02d170fbc6647ab2d368359be",
+      "bytes": 169878,
+      "sourceSha256": null,
+      "sha256": null,
+      "validation": "git-blob-present; content SHA-256 and image dimensions pending readback",
+      "lifecycle": "staged-for-review"
+    }
+  ]
+}

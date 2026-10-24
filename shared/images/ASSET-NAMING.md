@@ -1,0 +1,7 @@
+# Shared illustration naming and intake
+
+Canonical filenames: `caucasus-YYYYMMDD-place-subject-style-WIDTH.webp` in `shared/public/illustrations/`; use lowercase ASCII kebab-case and a factual date supplied by the traveler. Keep stable place and subject segments across responsive variants; `style` is `watercolor`, `pencil`, or `photo` (documentary), and WIDTH is the actual pixel width, not a guess. For existing assets with established names, retain IDs and avoid renames without references review.
+
+The coordinating agent owns final placement, the image manifest and lineage. The uploaded file may be moved by referencing its existing Git blob SHA, so no re-encoding or original-photo upload is necessary. Treat a filename's claimed width, date, style, or place as metadata to verify rather than proof. Log original uploaded filename, Git Blob SHA, actual SHA-256 after byte readback, byte count, dimensions, requested framing exception, source hash if available, and revision/visual recipe when known. Do not fabricate unknowns. Multiple widths represent one logical illustration; select active variants only after validation.
+
+`caucasus-uploaded-webp-intake.json` is an **intake ledger**, not the canonical edit cache or published image manifest. The shared `image-lineage.json` and `illustrations.json` are updated only after cross-checking the source/revision metadata and the browser-visible placement. No fake cache hit or manifest publication is allowed.
