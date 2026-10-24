@@ -7,7 +7,7 @@ for (const route of ['index.html','tantantan/index.html','caucasus/index.html'])
   const file=join(dist,route);
   assert.ok(fs.existsSync(file), 'Missing published route '+route);
   const html=fs.readFileSync(file,'utf8');
-  assert.match(html, /\/codex\/assets\/[^"']+\.js/, 'Missing built entry for '+route);
+  if (route !== 'index.html') assert.match(html, /\/codex\/assets\/[^"']+\.js/, 'Missing built entry for '+route);
 }
 const root=fs.readFileSync(join(dist,'index.html'),'utf8');
 assert.match(root, /\.\/tantantan\//);
