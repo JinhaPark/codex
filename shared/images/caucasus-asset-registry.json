@@ -89,42 +89,6 @@
       "sha256": "b6bf0d319ecb2dbbff04334cce70380612971bc7c81412156be407a6aee6a863"
     },
     {
-      "file": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp",
-      "sourceRootFile": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp",
-      "date": "2026-05-01",
-      "subject": "sheki-lunch-garden",
-      "style": "watercolor",
-      "width": 1000,
-      "bytes": 247442,
-      "gitBlobSha": "5d53b3043ef1837a8da2ece7578895877e8a7b5e",
-      "placement": null,
-      "sha256": "0a29da3fbb3389fb439bcd89828a86d321e8fb67cee336db0754062454d51125"
-    },
-    {
-      "file": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp",
-      "sourceRootFile": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp",
-      "date": "2026-05-01",
-      "subject": "sheki-lunch-garden",
-      "style": "watercolor",
-      "width": 480,
-      "bytes": 66744,
-      "gitBlobSha": "ff95a1f43320e9b22b98de2083cfa658f9e674be",
-      "placement": null,
-      "sha256": "c6547a96cfd3a5f0e52a056caf7f52bdb151ed38744fe03826efd5c364ef8d77"
-    },
-    {
-      "file": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp",
-      "sourceRootFile": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp",
-      "date": "2026-05-01",
-      "subject": "sheki-lunch-garden",
-      "style": "watercolor",
-      "width": 800,
-      "bytes": 183202,
-      "gitBlobSha": "65f5e2a515aec28021bf602a01a85a0f2d6497e2",
-      "placement": null,
-      "sha256": "652a8dddb77b55f404d5f538c270a25bdf61dc47edbb259eb024a3907a12e2ea"
-    },
-    {
       "file": "caucasus-20260502-route-mountains-yellow-fields-watercolor-1200.webp",
       "sourceRootFile": "caucasus-mountains-yellow-fields-2026-05-02-1200.webp",
       "date": "2026-05-02",

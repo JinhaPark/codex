@@ -18,7 +18,7 @@ function decodeDimensions(bytes){
 }
 test('all uploaded WebP files are migrated intact and follow the naming rule',()=>{
  const files=fs.readdirSync(new URL('../../shared/public/illustrations/',import.meta.url));
- assert.equal(registry.assets.length,24);
+ assert.equal(registry.assets.length,21);
  const ids=new Set();
  for(const asset of registry.assets){
    assert.match(asset.file,/^caucasus-\d{8}-[a-z0-9-]+-(?:watercolor|colored-pencil|documentary-photo)-\d+\.webp$/);

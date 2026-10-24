@@ -107,38 +107,6 @@
       ]
     },
     {
-      "id": "caucasus-20260501-sheki-lunch-garden-watercolor",
-      "date": "2026-05-01",
-      "caption": "셰키로 가는 길, 점심 식당의 봄 정원",
-      "alt": "봄나무와 풀이 무성한 산자락의 식당 정원 돌길에 여행자가 서 있는 모습",
-      "status": "ready-in-pr",
-      "sourceSha256": "f9a9433ee8bc5adf8434ded0dfc68b730aa39ec4c87c9225f570112ce69e997b",
-      "placement": "caucasus:2026-05-01:travel-observation:restaurant-garden",
-      "variants": [
-        {
-          "file": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp",
-          "width": 480,
-          "bytes": 66744,
-          "gitBlobSha": "ff95a1f43320e9b22b98de2083cfa658f9e674be",
-          "sha256": "c6547a96cfd3a5f0e52a056caf7f52bdb151ed38744fe03826efd5c364ef8d77"
-        },
-        {
-          "file": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp",
-          "width": 800,
-          "bytes": 183202,
-          "gitBlobSha": "65f5e2a515aec28021bf602a01a85a0f2d6497e2",
-          "sha256": "652a8dddb77b55f404d5f538c270a25bdf61dc47edbb259eb024a3907a12e2ea"
-        },
-        {
-          "file": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp",
-          "width": 1000,
-          "bytes": 247442,
-          "gitBlobSha": "5d53b3043ef1837a8da2ece7578895877e8a7b5e",
-          "sha256": "0a29da3fbb3389fb439bcd89828a86d321e8fb67cee336db0754062454d51125"
-        }
-      ]
-    },
-    {
       "id": "caucasus-20260502-route-mountains-yellow-fields-watercolor",
       "date": "2026-05-02",
       "caption": "셰키에서 카헤티로 이동하던 길 — 코카서스 산맥과 노란 꽃밭",
