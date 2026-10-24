@@ -368,7 +368,7 @@
       "width": 1086,
       "bytes": 460774,
       "gitBlobSha": "76e124b10457728846e639c160179fb081b15dce",
-      "placement": "caucasus:2026-05-03:observation:kazbegi-portrait",
+      "placement": "caucasus:2026-05-03:destination:gergeti-trinity-church",
       "sha256": null
     },
     {
@@ -380,7 +380,7 @@
       "width": 1448,
       "bytes": 479326,
       "gitBlobSha": "87ea6cbdbbe62c10701dbbccdc828ba0fbc035b8",
-      "placement": "caucasus:2026-05-03:observation:monastery-fresco",
+      "placement": "caucasus:2026-05-03:destination:gergeti-trinity-church",
       "sha256": null
     },
     {
