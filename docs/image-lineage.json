@@ -329,16 +329,41 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "deletion-candidate",
-          "lifecycleChangedAt": "2026-10-24T12:31:53.621Z",
-          "lifecycleReason": "No published manifest or itinerary renderer refers to this illustration; user explicitly requested complete source-tree removal."
+          "lifecycle": "deleted",
+          "lifecycleChangedAt": "2026-10-24T12:32:16.999Z",
+          "lifecycleReason": "Explicit user request to remove the blue geometric arch illustration completely from the codebase; archived and deletion-candidate stages recorded.",
+          "retirementHistory": {
+            "archivedCommitSha": "468f27d09a7e62f5d5550b0a027851be2b9cd037",
+            "candidateCommitSha": "9e590a4de4ccc4e015f1f247f461847edf30aaf3"
+          },
+          "historyArtifactRef": {
+            "commitSha": "47ff537cc5cd6efa24d38d39d04baa42e5dbc689",
+            "variants": [
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-480.webp",
+                "sha256": "dc8c3aab15bd4ccf43d3cec844ac87d7c716b46e147f3ac0145fc10fa9d98e71"
+              },
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-800.webp",
+                "sha256": "1b1032addda278a371396a5b53ad0170ce7f76be87649434e3f8d1f6a87fae0b"
+              },
+              {
+                "file": "public/illustrations/uzbek-tilework-pencil-1200.webp",
+                "sha256": "654778eb27601563c18fb002973480325871dbbb9bdf88cd54735f659a7b0448"
+              }
+            ]
+          }
         }
       ],
-      "lifecycle": "deletion-candidate",
+      "lifecycle": "deleted",
       "lastPublishedRevisionId": "legacy-uzbek-tilework-pencil",
-      "lifecycleChangedAt": "2026-10-24T12:31:53.621Z",
-      "lifecycleReason": "No published manifest or itinerary renderer refers to this illustration; user explicitly requested complete source-tree removal.",
-      "retirementAuthorization": "User requested full removal of this illustration from the codebase."
+      "lifecycleChangedAt": "2026-10-24T12:32:16.999Z",
+      "lifecycleReason": "Explicit user request to remove the blue geometric arch illustration completely from the codebase; archived and deletion-candidate stages recorded.",
+      "retirementAuthorization": "User requested full removal of this illustration from the codebase.",
+      "retirementHistory": {
+        "archivedCommitSha": "468f27d09a7e62f5d5550b0a027851be2b9cd037",
+        "candidateCommitSha": "9e590a4de4ccc4e015f1f247f461847edf30aaf3"
+      }
     },
     {
       "illustrationId": "arabic-manuscript-pencil",
