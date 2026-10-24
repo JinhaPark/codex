@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "viewports": [
+    {
+      "width": 320,
+      "rows": 2,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    },
+    {
+      "width": 375,
+      "rows": 2,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    },
+    {
+      "width": 390,
+      "rows": 2,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    },
+    {
+      "width": 430,
+      "rows": 2,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    },
+    {
+      "width": 768,
+      "rows": 1,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    },
+    {
+      "width": 1280,
+      "rows": 1,
+      "allTenFit": true,
+      "daySelectionWorks": true
+    }
+  ],
+  "javascriptErrors": [],
+  "limits": [
+    "Local Chromium, not actual iPhone Safari",
+    "No full test suite or deployment check"
+  ]
+}
+
