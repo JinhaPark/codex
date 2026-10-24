@@ -34,7 +34,7 @@ export function renderShopping() {
   const rows = receipts.flatMap(r => r.items.map(([ko, original, size, count, unit]) => [`${ko} <span class="shopping-size">(${size})</span>`, price(unit, kztKrw, 'KZT')]));
   rows.push(
     ['수우사미르 산악 야생화꿀 <span class="shopping-size">(180g)</span>', price(400, fx.kgsKrw, 'KGS', true)],
-    ['흰색 통 백꿀 <span class="shopping-size">(약 150~200mL 추정)</span>', price(500, fx.kgsKrw, 'KGS', true)],
+    ['백꿀 <span class="shopping-size">(200mL)</span>', price(500, fx.kgsKrw, 'KGS', true)],
     ['큰 통 백꿀 <span class="shopping-size">(500mL)</span>', price(900, fx.kgsKrw, 'KGS', true)],
   );
   return table('개당 구매 가격', ['품목', '가격'], rows);
