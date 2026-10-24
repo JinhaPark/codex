@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "byteLimit": 250000,
+  "scope": "Existing source-preserving WebP uploads; re-encode before closing each exception",
+  "files": [
+    {
+      "file": "caucasus-20260430-baku-maiden-tower-watercolor-1086.webp",
+      "bytes": 432920,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260430-gobustan-entrance-sign-watercolor-1448.webp",
+      "bytes": 385910,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260430-gobustan-rock-landscape-watercolor-1536.webp",
+      "bytes": 485036,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260501-sheki-street-watercolor-1200.webp",
+      "bytes": 304474,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+      "bytes": 481646,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260506-basalt-columns-watercolor-1447.webp",
+      "bytes": 503510,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260507-vardzia-watercolor-1448.webp",
+      "bytes": 741920,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260508-black-sea-sunset-watercolor-1086.webp",
+      "bytes": 583648,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260508-borjomi-lamb-shashlik-watercolor-1254.webp",
+      "bytes": 651382,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260508-borjomi-park-gym-watercolor-1448.webp",
+      "bytes": 851192,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260508-borjomi-riverfront-watercolor-1086.webp",
+      "bytes": 793320,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260508-monastery-overlook-gorge-watercolor-1086.webp",
+      "bytes": 778522,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260509-batumi-ali-nino-watercolor-1586.webp",
+      "bytes": 630768,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    },
+    {
+      "file": "caucasus-20260509-batumi-beach-red-hut-watercolor-1086.webp",
+      "bytes": 724304,
+      "reason": "User-uploaded illustration copied without re-encoding; scoped optimization pending"
+    }
+  ]
+}

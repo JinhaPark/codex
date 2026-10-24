@@ -18,7 +18,8 @@ function decodeDimensions(bytes){
 }
 test('all uploaded WebP files are migrated intact and follow the naming rule',()=>{
  const files=fs.readdirSync(new URL('../../shared/public/illustrations/',import.meta.url));
- assert.equal(registry.assets.length,catalog.photos.reduce((count,photo)=>count+photo.variants.length,0),'registry tracks every catalog variant');
+ const expectedFiles=catalog.photos.flatMap(photo=>photo.variants.map(v=>v.file)).sort();
+ assert.deepEqual(registry.assets.map(a=>a.file).sort(),expectedFiles,'Every catalog image variant must match the exact registry file');
  const ids=new Set();
  for(const asset of registry.assets){
    assert.match(asset.file,/^caucasus-\d{8}-[a-z0-9-]+-(?:watercolor|colored-pencil|documentary-photo)-\d+\.webp$/);
@@ -30,13 +31,15 @@ test('all uploaded WebP files are migrated intact and follow the naming rule',()
    if(asset.sha256)assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
    assert.ok(files.includes(asset.file));
  }
- const oversized=registry.assets.filter(asset=>asset.bytes>250000);
- for(const asset of oversized){
-   assert.ok(ids.has(asset.file),'Oversized asset must be registered and byte-verified: '+asset.file);
+ const exceptionList=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-oversize-exceptions.json',import.meta.url)));
+ assert.equal(exceptionList.byteLimit,250000);
+ const oversized=registry.assets.filter(a=>a.bytes>exceptionList.byteLimit).map(a=>a.file).sort();
+ assert.deepEqual(oversized,exceptionList.files.map(a=>a.file).sort(),'Oversize uploads must be explicitly listed for further optimization');
+ for(const exception of exceptionList.files){
+   const asset=registry.assets.find(a=>a.file===exception.file);
+   assert.ok(asset,exception.file);
+   assert.equal(asset.bytes,exception.bytes);
  }
- // Uploaded assets exceeding the optimization budget remain tracked rather than
- // being silently accepted as optimized or relying on an obsolete fixed list.
-
 });
 test('all photo placements resolve and optional activities are scoped',()=>{
  const known=new Set(catalog.photos.map(p=>p.id));
