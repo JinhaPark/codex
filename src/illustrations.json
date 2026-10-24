@@ -442,7 +442,7 @@
     "id": "lyabi-hauz-evening-watercolor",
     "original": "IMG_8853(1).jpeg",
     "style": "watercolor",
-    "placement": "day:2:places",
+    "placement": "day:1:lyabi-hauz",
     "caption": "부하라 라비하우즈 — 연못가 식탁과 저녁 분수",
     "alt": "라비하우즈 연못의 분수와 맞은편 건물, 앞쪽 나무 의자와 식탁, 방문객",
     "sourceWidth": 1536,
@@ -599,8 +599,8 @@
     "original": "IMG_9011(1).jpeg",
     "style": "watercolor",
     "placement": "cholponata:2:0",
-    "caption": "촐폰아타 암각화 야외박물관 — 바위 들판과 답사로",
-    "alt": "촐폰아타 암각화 야외박물관의 바위 들판과 마른 풀, 답사로의 방문객, 뒤편 산과 가을나무",
+    "caption": "촐폰아타 암각화 구역 — 바위 들판과 답사로",
+    "alt": "촐폰아타 암각화 구역의 바위 들판과 마른 풀, 답사로의 방문객, 뒤편 산과 가을나무",
     "sourceWidth": 800,
     "sourceHeight": 370,
     "width": 800,
@@ -627,8 +627,8 @@
     "original": "IMG_9007(1).jpeg",
     "style": "colored-pencil",
     "placement": "day:5:places",
-    "caption": "촐폰아타 암각화 야외박물관의 발발(Balbal) 인물 석상",
-    "alt": "촐폰아타 암각화 야외박물관에서 눈과 긴 코가 새겨진 발발 인물 석상, 바위 들판과 산",
+    "caption": "촐폰아타 암각화 구역 — 발발 석상",
+    "alt": "촐폰아타 암각화 구역에서 눈과 긴 코가 새겨진 발발 석상, 바위 들판과 산",
     "sourceWidth": 370,
     "sourceHeight": 800,
     "width": 370,
@@ -1800,41 +1800,40 @@
   },
   {
     "id": "silk-road-banner-watercolor",
-    "original": "image(1).png",
+    "original": "Gemini_Generated_Image_g836heg836heg836.png",
     "style": "watercolor",
-    "sourceWidth": 1024,
-    "sourceHeight": 765,
+    "sourceWidth": 2048,
+    "sourceHeight": 682,
     "width": 1024,
     "height": 341,
     "variants": [
       {
         "width": 480,
         "height": 160,
-        "bytes": 26890,
+        "bytes": 24778,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-480.webp"
+        "file": "silk-road-banner-r4-reference-480.webp"
       },
       {
         "width": 800,
         "height": 267,
-        "bytes": 72766,
+        "bytes": 57002,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-800.webp"
+        "file": "silk-road-banner-r4-reference-800.webp"
       },
       {
         "width": 1024,
         "height": 341,
-        "bytes": 112718,
+        "bytes": 80288,
         "quality": 88,
-        "file": "silk-road-banner-watercolor-1024.webp"
+        "file": "silk-road-banner-r4-reference-1024.webp"
       }
     ],
     "generatedWidth": 2172,
     "generatedHeight": 724,
-    "framingEdit": "panoramic-banner-redraw",
     "placement": "site:banner",
     "caption": "실크로드 교역로와 낙타 대상",
-    "alt": "푸른 바다와 모래빛 대륙 위로 교역로와 낙타 대상이 이어지는 실크로드 지도 그림",
+    "alt": "사마르칸트에서 네 방향으로 굵은 교역로가 뻗어나가고 오른쪽에 한반도와 제주도가 보이는 실크로드 지도 그림",
     "purpose": "site-banner",
     "sourceKind": "user-supplied-illustration"
   }

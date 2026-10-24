@@ -149,6 +149,16 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 
 .shopping-panel{min-width:0}.shopping-table-scroll{width:100%;min-width:0}.shopping-table{max-width:100%}.shopping-table th,.shopping-table td{min-width:0;padding:10px 6px}.shopping-size{display:inline;font-size:1rem;font-weight:400;color:#5b625a;overflow-wrap:anywhere}.shopping-table th[scope=row]{word-break:keep-all;overflow-wrap:anywhere}
 
+/* One continuous guide list with a single disclosure per article. */
+.guide-group{margin:30px 0}
+.guide-group-title{font-size:19px;margin-bottom:12px;color:#465c59}
+.guide-book.bukhara-chapter{padding:0;margin:12px 0}
+.guide-inline-body{padding:0 16px 20px;min-width:0}
+.guide-inline-body .bukhara-history{margin:16px 0 0}
+.guide-inline-body .reader-section{border:0;background:transparent;overflow:visible}
+.guide-inline-body .guide-inline-heading{font-size:19px;line-height:1.65;margin:25px 0 10px}
+.guide-inline-body .bukhara-chapter-body{padding:0}
+.guide-book>summary:focus-visible{outline:3px solid #17617a;outline-offset:-3px}
 /* Silk Road artwork and a readable, single-line title band. */
 .site-banner{position:relative;isolation:isolate;display:flex;align-items:flex-end;height:clamp(230px,25vw,360px);padding:0;background:#e6d3af;overflow:hidden;color:#263d49}
 .site-banner-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:56% 48%;z-index:-1}
@@ -158,4 +168,6 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .site-title-line h1 em{font-style:normal;color:#9b5037;font-weight:750}
 .site-title-line p{flex:none;margin:0;opacity:1;line-height:1.4;font-size:clamp(12px,1.1vw,16px);white-space:nowrap;color:#425663}
 .site-title-line:focus-visible{outline:2px solid #9b5037;outline-offset:3px}
-@media(max-width:600px){.site-banner{height:230px}.site-banner-art{object-position:68% 42%}.site-title-band{padding:14px 18px}.site-title-line{margin:0;gap:20px}.site-title-line h1{font-size:27px}.site-title-line p{font-size:13px}}
+@media(max-width:600px){.site-banner{height:230px}.site-banner-art{object-position:100% 42%}.site-title-band{padding:14px 18px}.site-title-line{margin:0;gap:20px}.site-title-line h1{font-size:27px}.site-title-line p{font-size:13px}}
+
+.guide-inline-body p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:18px;line-height:1.9}

@@ -44,13 +44,13 @@
 | bukhara-kalyan-minaret-pencil | `bukhara:4:1` | 색연필화 | 480×640 / 92.9; 800×1067 / 238.9; 1086×1448 / 261.3 | 부하라 칼랸 미나레트 — 벽돌로 만든 기하학 장식 띠 |
 | bukhara-market-sunset-watercolor | `day:1:places` | 수채화 | 480×360 / 44.5; 800×600 / 112.4; 1200×900 / 213.5 | 부하라 돔 시장 — 일몰 무렵의 광장 |
 | bukhara-spice-stall-pencil | `geography:1:1` | 색연필화 | 480×640 / 114.0; 800×1067 / 241.4; 1086×1448 / 278.7 | 부하라 향신료 가게 — 진열된 향신료와 차 시음 |
-| lyabi-hauz-evening-watercolor | `day:2:places` | 수채화 | 480×360 / 60.4; 800×600 / 155.0; 1200×900 / 239.9 | 부하라 라비하우즈 — 연못가 식탁과 저녁 분수 |
+| lyabi-hauz-evening-watercolor | `day:1:lyabi-hauz` | 수채화 | 480×360 / 60.4; 800×600 / 155.0; 1200×900 / 239.9 | 부하라 라비하우즈 — 연못가 식탁과 저녁 분수 |
 | lyabi-hauz-portal-watercolor | `bukhara:8:0` | 수채화 | 480×360 / 62.4; 800×600 / 162.7; 1200×900 / 230.7 | 부하라 라비하우즈 연못 — 분수와 아치형 입구 |
 | registan-gilded-ceiling-pencil | `comparative:0:6` | 색연필화 | 480×640 / 169.0; 800×1067 / 316.7; 1086×1448 / 484.4 | 레기스탄의 청색·금빛 천장 장식 |
 | registan-travel-portrait-watercolor | `samarkand:9:0` | 수채화 | 480×222 / 38.0; 800×370 / 101.4 | 레기스탄 광장 — 세 마드라사를 배경으로 |
 | samarkand-turquoise-dome-pencil | `architecture:Samarkand:intro` | 색연필화 | 370×800 / 131.6 | 레기스탄 — 나무 사이로 보이는 청록색 돔 |
-| cholponata-petroglyph-field-watercolor | `cholponata:2:0` | 수채화 | 480×222 / 39.9; 800×370 / 105.6 | 촐폰아타 암각화 야외박물관 — 바위 들판과 답사로 |
-| cholponata-balbal-pencil | `day:5:places` | 색연필화 | 370×800 / 124.2 | 촐폰아타 암각화 야외박물관의 발발(Balbal) 인물 석상 |
+| cholponata-petroglyph-field-watercolor | `cholponata:2:0` | 수채화 | 480×222 / 39.9; 800×370 / 105.6 | 촐폰아타 암각화 구역 — 바위 들판과 답사로 |
+| cholponata-balbal-pencil | `day:5:places` | 색연필화 | 370×800 / 124.2 | 촐폰아타 암각화 구역 — 발발 석상 |
 | issyk-kul-cruise-tian-shan-watercolor | `geography:2:0` | 수채화 | 480×360 / 37.1; 800×600 / 103.8; 1200×900 / 207.8 | 이식쿨호 유람선에서 바라본 톈산산맥의 설산 능선 |
 
 
