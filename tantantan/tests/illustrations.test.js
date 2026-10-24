@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const artwork = JSON.parse(fs.readFileSync(new URL('../../shared/images/illustrations.json', import.meta.url)));
 const lineage = JSON.parse(fs.readFileSync(new URL('../../shared/images/image-lineage.json', import.meta.url)));
+const caucasus = JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-asset-registry.json', import.meta.url)));
 
 test('published illustration variants are complete WebP files with the recorded sizes', () => {
   assert.ok(artwork.length > 0);
@@ -12,7 +13,7 @@ test('published illustration variants are complete WebP files with the recorded 
   const retainedFiles = lineage.images.flatMap(image => image.revisions
     .filter(revision => ['archived', 'deletion-candidate'].includes(revision.lifecycle))
     .flatMap(revision => revision.variants.map(v => v.file.replace(/^public\/illustrations\//, ''))));
-  assert.deepEqual(fs.readdirSync(new URL('../../shared/public/illustrations/', import.meta.url)).sort(), [...new Set([...expectedFiles, ...retainedFiles])].sort());
+  assert.deepEqual(fs.readdirSync(new URL('../../shared/public/illustrations/', import.meta.url)).sort(), [...new Set([...expectedFiles, ...retainedFiles, ...caucasus.assets.map(a=>a.file)])].sort());
   for (const art of artwork) {
     assert.ok(art.variants.length >= 1 && art.variants.length <= 3);
     assert.equal(new Set(art.variants.map(v => v.width)).size, art.variants.length);

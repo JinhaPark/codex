@@ -94,7 +94,10 @@
       "places": [
         {
           "name": "메이든 타워",
-          "description": "바쿠 구시가를 대표하는 탑의 외관을 둘러봅니다."
+          "description": "바쿠 구시가를 대표하는 탑의 외관을 둘러봅니다.",
+          "photoIds": [
+            "caucasus-20260430-baku-maiden-tower-watercolor"
+          ]
         },
         {
           "name": "쉬르반샤 궁전",
@@ -102,7 +105,10 @@
         },
         {
           "name": "헤이다르 알리예프 센터",
-          "description": "곡선이 돋보이는 현대 건축물의 외관을 감상합니다."
+          "description": "곡선이 돋보이는 현대 건축물의 외관을 감상합니다.",
+          "photoIds": [
+            "caucasus-20260430-baku-waterfront-skyline-watercolor"
+          ]
         },
         {
           "name": "불바르 공원",
@@ -110,11 +116,17 @@
         },
         {
           "name": "고부스탄 암각화",
-          "description": "선사시대 사람들이 남긴 바위그림을 관찰합니다."
+          "description": "선사시대 사람들이 남긴 바위그림을 관찰합니다.",
+          "photoIds": [
+            "caucasus-20260430-gobustan-rock-landscape-watercolor"
+          ]
         },
         {
           "name": "고부스탄 박물관",
-          "description": "암각화 지역의 역사와 선사 생활 문화를 소개하는 박물관입니다."
+          "description": "암각화 지역의 역사와 선사 생활 문화를 소개하는 박물관입니다.",
+          "photoIds": [
+            "caucasus-20260430-gobustan-entrance-sign-watercolor"
+          ]
         }
       ]
     },
@@ -150,7 +162,7 @@
         {
           "title": "아제르바이잔 대통령 일함 알리예프 초상 게시판",
           "description": "도로변 게시판에 아제르바이잔 국기와 일함 알리예프 대통령의 초상이 있습니다. 당시 주원 선생님과 닮았다는 이야기가 나왔습니다.",
-          "imageId": "caucasus-20260501-azerbaijan-roadside-portrait-photo"
+          "imageId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo"
         }
       ]
     },
@@ -165,17 +177,27 @@
           "name": "카헤티 와이너리",
           "description": "포도밭을 둘러보고 와이너리의 스테인리스 발효·저장 탱크를 살펴봤습니다. 조지아의 전통적인 크베브리 양조법과 현대식 설비를 비교해 볼 만한 장면입니다.",
           "photoIds": [
-            "kakheti-vineyard-watercolor",
-            "kakheti-winery-tanks-pencil"
+            "caucasus-20260502-kakheti-vineyard-watercolor",
+            "caucasus-20260502-kakheti-winery-tanks-colored-pencil"
           ]
         },
         {
           "name": "시그나기",
-          "description": "성벽과 구시가를 둘러보는 작은 언덕 도시입니다."
+          "description": "성벽과 구시가를 둘러보는 작은 언덕 도시입니다.",
+          "photoIds": [
+            "caucasus-20260502-sighnaghi-panorama-watercolor"
+          ]
         },
         {
           "name": "시그나기 미니버스",
           "description": "시그나기 구시가지 이동에 포함된 탑승 일정입니다."
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "카헤티로 이동하는 길",
+          "description": "차량에서 촬영한 산줄기와 노란 꽃밭입니다.",
+          "imageId": "caucasus-20260502-route-mountains-yellow-fields-watercolor"
         }
       ]
     },
