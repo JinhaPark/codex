@@ -29,10 +29,9 @@
 
 | 작품 | 최종 배치 키 | 화풍 | 파생본: 폭×높이 / KB | 캡션 |
 |---|---|---|---|---|
-| mountain-orchards-watercolor | `geography:1:0` | 수채화 | 480×640 / 103.2; 800×1067 / 237.3; 1080×1440 / 261.1 | 설산 아래 가을빛 농경지 |
+| mountain-orchards-watercolor | `itinerary:2026-10-17:cholponata` | 수채화 | 480×640 / 103.2; 800×1067 / 237.3; 1080×1440 / 261.1 | 텐산산맥 아래 가을빛 포도밭 |
 | bukhara-poi-kalyan-watercolor | `bukhara:7:1` | 수채화 | 480×270 / 53.4; 800×450 / 131.2; 1200×675 / 234.4 | 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 |
 | autumn-birch-walk-watercolor | `day:6:tip` | 수채화 | 480×640 / 124.4; 800×1067 / 235.8; 1086×1448 / 340.1 | Karven Four Seasons 리조트의 자작나무길 |
-| uzbek-tilework-pencil | `comparative:0:0` | 색연필화 | 480×270 / 48.9; 800×450 / 132.3; 1200×675 / 240.1 | 아치와 벽면을 채운 청색 기하학 문양 |
 | arabic-manuscript-pencil | `tashkent:7:0` | 색연필화 | 480×640 / 91.8; 800×1067 / 247.3; 1080×1440 / 248.2 | 아랍 문자 필사본 — 검정·붉은 필기와 제본 |
 | street-classic-car-pencil | `day:4:tip` | 색연필화 | 480×640 / 112.4; 800×1067 / 235.3; 1086×1448 / 317.0 | 타슈켄트 거리 — 모스크비치(Moskvich) 세단 |
 | travel-steak-table-pencil | `day:4:places` | 색연필화 | 480×360 / 54.6; 800×600 / 154.5; 1200×900 / 238.7 | 비슈케크 SB bar — 토마호크 스테이크, 1인 한화 약 3만 원 |
@@ -169,7 +168,7 @@ IMG_8908 기존1점 교체: samarkand-bibi-khanym-watercolor → samarkand-gur-e
 | ID · 원본 | 배치 · 캡션 | 입력 → 변환 | 파일 · 픽셀 · 바이트 · q |
 |---|---|---|---|
 | tashkent-amir-temur-watercolor · IMG_8939.jpeg | `tashkent:8:0` · 타슈켄트 아미르 티무르 광장 — 기마상과 호텔 우즈베키스탄 | 1536×1152 → 1448×1086 | tashkent-amir-temur-watercolor-480.webp · 480×360 · 76,462B · q88<br>tashkent-amir-temur-watercolor-800.webp · 800×600 · 201,176B · q88<br>tashkent-amir-temur-watercolor-1200.webp · 1200×900 · 241,270B · q76 |
-| tashkent-independence-fountains-watercolor · IMG_8938.jpeg | `tashkent:9:0` · 타슈켄트 독립광장 — 분수 너머 흰색 행정건물 | 1536×1152 → 1448×1086 | tashkent-independence-fountains-watercolor-480.webp · 480×360 · 74,686B · q88<br>tashkent-independence-fountains-watercolor-800.webp · 800×600 · 195,290B · q88<br>tashkent-independence-fountains-watercolor-1200.webp · 1200×900 · 232,884B · q76 |
+| tashkent-independence-fountains-watercolor · IMG_8938.jpeg | `tashkent:9:0` · 타슈켄트 독립광장 — 분수 너머 대통령 집무실 | 1536×1152 → 1448×1086 | tashkent-independence-fountains-watercolor-480.webp · 480×360 · 74,686B · q88<br>tashkent-independence-fountains-watercolor-800.webp · 800×600 · 195,290B · q88<br>tashkent-independence-fountains-watercolor-1200.webp · 1200×900 · 232,884B · q76 |
 | bukhara-poi-kalyan-watercolor · IMG_8800.jpeg | `bukhara:7:1` · 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 | 1536×1152 → 1448×1086 | bukhara-poi-kalyan-watercolor-480.webp · 480×360 · 45,506B · q88<br>bukhara-poi-kalyan-watercolor-800.webp · 800×600 · 118,266B · q88<br>bukhara-poi-kalyan-watercolor-1200.webp · 1200×900 · 229,986B · q88 |
 | tashkent-minor-portrait-watercolor · IMG_9014.jpeg | `tashkent:10:detail` · 타슈켄트 미노르 모스크 — 흰색 정면과 꽃밭 | 370×800 → 853×1844 | tashkent-minor-portrait-watercolor-370.webp · 370×800 · 125,014B · q88 |
 | rukh-ordo-lakeside-watercolor · IMG_8979.jpeg | `cholponata:9:detail` · 촐폰아타 루흐 오르도 — 호숫가 아치와 조각 정원 | 1536×1152 → 1448×1086 | rukh-ordo-lakeside-watercolor-480.webp · 480×360 · 54,562B · q88<br>rukh-ordo-lakeside-watercolor-800.webp · 800×600 · 138,656B · q88<br>rukh-ordo-lakeside-watercolor-1200.webp · 1200×900 · 234,490B · q86 |

@@ -71,13 +71,6 @@
     },
     "extras": [
       {
-        "title": "건축 해설 참고 그림",
-        "note": "아래 타일 장식의 촬영 장소는 확인되지 않았습니다. 특정 방문지의 장식으로 단정하지 않고 함께 살펴봅니다.",
-        "ids": [
-          "uzbek-tilework-pencil"
-        ]
-      },
-      {
         "title": "물과 환경 해설 참고 자료",
         "note": "아랄해 축소를 보여 주는 전시자료입니다. 촬영 전시관은 확인되지 않았으며, 아랄해 방문을 뜻하지 않습니다.",
         "ids": [
@@ -125,7 +118,8 @@
         "issyk-kul-cruise-tian-shan-watercolor"
       ],
       "촐폰아타": [
-        "autumn-birch-walk-watercolor"
+        "autumn-birch-walk-watercolor",
+        "mountain-orchards-watercolor"
       ]
     },
     "extras": []
@@ -138,15 +132,7 @@
         "ala-archa-summit-watercolor"
       ]
     },
-    "extras": [
-      {
-        "title": "톈산 산록의 풍경 참고 그림",
-        "note": "톈산산맥 아래 포도밭을 보여 주는 그림입니다. 세부 촬영 장소와 날짜는 확인되지 않아 이날 방문지에 배정하지 않습니다.",
-        "ids": [
-          "mountain-orchards-watercolor"
-        ]
-      }
-    ]
+    "extras": []
   },
   {
     "date": "2026-10-19",
@@ -166,6 +152,9 @@
   {
     "date": "2026-10-20",
     "places": {
+      "오이 카라가이": [
+        "oi-qaragai-gondola-watercolor"
+      ],
       "판필로프 공원": [
         "almaty-panfilov-flame-watercolor"
       ],
