@@ -481,13 +481,11 @@
     "needed": "식사 보조: 식탁 확보"
   },
   {
-    "place": "꿀 구입·향신료·식판·거리 차량",
+    "place": "향신료·거리 차량",
     "country": "보조 항목",
     "visits": [],
     "classification": "선택 사항",
     "imageIds": [
-      "white-honey-jar-pencil",
-      "suusamyr-honey-pencil",
       "bukhara-spice-stall-pencil",
       "street-classic-car-pencil"
     ],
