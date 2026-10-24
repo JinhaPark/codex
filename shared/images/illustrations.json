@@ -1,0 +1,1780 @@
+[
+  {
+    "id": "mountain-orchards-watercolor",
+    "original": "IMG_52F5BCD7-35DB-429B-A7BC-968163C82511.jpeg",
+    "style": "watercolor",
+    "placement": "itinerary:2026-10-17:cholponata",
+    "caption": "텐산산맥 아래 가을빛 포도밭",
+    "alt": "눈 덮인 텐산산맥과 푸른 하늘 아래 가을빛 포도밭과 마른 풀, 돌이 이어지는 풍경",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 103532,
+        "quality": 84,
+        "file": "mountain-orchards-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 249148,
+        "quality": 84,
+        "file": "mountain-orchards-watercolor-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 246802,
+        "quality": 74,
+        "file": "mountain-orchards-watercolor-1080.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-reflection-and-utility-removal"
+  },
+  {
+    "id": "bukhara-poi-kalyan-watercolor",
+    "original": "IMG_8800.jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:7:1",
+    "caption": "부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크",
+    "alt": "왼쪽 미리아랍 마드라사의 청록색 돔과 아치, 가운데 칼랸 미나레트, 오른쪽 칼랸 모스크의 돔과 낮은 지붕이 나란히 보이는 전경",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 45506,
+        "quality": 88,
+        "file": "bukhara-poi-kalyan-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 118266,
+        "quality": 88,
+        "file": "bukhara-poi-kalyan-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 229986,
+        "quality": 88,
+        "file": "bukhara-poi-kalyan-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086
+  },
+  {
+    "id": "autumn-birch-walk-watercolor",
+    "original": "IMG_8995.jpeg",
+    "style": "watercolor",
+    "placement": "day:5:cholponata",
+    "caption": "Karven Four Seasons 리조트의 자작나무길",
+    "alt": "Karven Four Seasons 리조트 건물 옆 보행로에 자작나무가 노랗게 물든 풍경",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 124352,
+        "quality": 84,
+        "file": "autumn-birch-walk-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 235842,
+        "quality": 76,
+        "file": "autumn-birch-walk-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 340092,
+        "quality": 72,
+        "file": "autumn-birch-walk-watercolor-1086.webp"
+      }
+    ],
+    "captionProvenance": "사용자가 제공한 숙소명과 수종"
+  },
+  {
+    "id": "arabic-manuscript-pencil",
+    "original": "IMG_CCB3F9C2-FF9E-4904-8198-27036C9E7AA7.jpeg",
+    "style": "colored-pencil",
+    "placement": "tashkent:7:0",
+    "caption": "아랍 문자 필사본 — 검정·붉은 필기와 제본",
+    "alt": "전시대 위에 펼쳐진 필사본의 누런 종이와 검정·붉은 아랍 문자 필기",
+    "sourceWidth": 1080,
+    "sourceHeight": 1440,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 91750,
+        "quality": 84,
+        "file": "arabic-manuscript-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 247306,
+        "quality": 84,
+        "file": "arabic-manuscript-pencil-800.webp"
+      },
+      {
+        "width": 1080,
+        "height": 1440,
+        "bytes": 248220,
+        "quality": 72,
+        "file": "arabic-manuscript-pencil-1080.webp"
+      }
+    ]
+  },
+  {
+    "id": "street-classic-car-pencil",
+    "original": "IMG_8943.jpeg",
+    "style": "colored-pencil",
+    "placement": "day:4:tip",
+    "caption": "타슈켄트 거리 — 모스크비치(Moskvich) 세단",
+    "alt": "버스 창문 너머로 내려다본 타슈켄트 가로수길의 크림색 모스크비치 세단",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 117134,
+        "quality": 84,
+        "file": "street-classic-car-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 233400,
+        "quality": 78,
+        "file": "street-classic-car-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 250172,
+        "quality": 58,
+        "file": "street-classic-car-pencil-1086.webp"
+      }
+    ],
+    "captionProvenance": "사용자가 제공한 촬영 도시 및 원본의 Москвич 배지; 세부 모델·연식 미확정",
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-window-reflection-cleanup"
+  },
+  {
+    "id": "travel-steak-table-pencil",
+    "original": "IMG_8951.jpeg",
+    "style": "colored-pencil",
+    "placement": "day:4:dinner",
+    "caption": "비슈케크 SB bar — 토마호크 스테이크와 샐러드",
+    "alt": "비슈케크 SB bar에서 먹은 토마호크 스테이크와 소스, 샐러드가 놓인 식탁",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "file": "travel-steak-table-pencil-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 65638,
+        "quality": 88
+      },
+      {
+        "file": "travel-steak-table-pencil-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 179710,
+        "quality": 88
+      },
+      {
+        "file": "travel-steak-table-pencil-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 236952,
+        "quality": 78
+      }
+    ],
+    "captionProvenance": "사용자가 제공한 식당·메뉴·당시 원화 환산 가격",
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "revision": "2026-10-19-remove-people-and-arrival-dinner"
+  },
+  {
+    "id": "bukhara-ark-walls-pencil",
+    "original": "IMG_8790(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:10:0",
+    "caption": "부하라 아르크 성채 — 벽돌 성벽과 돌출 보루",
+    "alt": "햇빛을 받은 아르크 성채의 둥근 벽돌 성벽과 돌출된 탑, 나무와 광장",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 69466,
+        "quality": 84,
+        "file": "bukhara-ark-walls-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 203148,
+        "quality": 84,
+        "file": "bukhara-ark-walls-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 270374,
+        "quality": 68,
+        "file": "bukhara-ark-walls-pencil-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-kalyan-minaret-pencil",
+    "original": "IMG_8818.jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:4:1",
+    "caption": "부하라 칼랸 미나레트 — 벽돌로 만든 기하학 장식 띠",
+    "alt": "벽돌 장식 띠의 칼랸 미나레트와 왼쪽 돔 건물, 오른쪽 청색 타일 입구, 앞쪽의 석재 광장",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 83948,
+        "quality": 84,
+        "file": "bukhara-kalyan-minaret-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 227260,
+        "quality": 84,
+        "file": "bukhara-kalyan-minaret-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 240660,
+        "quality": 74,
+        "file": "bukhara-kalyan-minaret-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-plaza-cleanup"
+  },
+  {
+    "id": "bukhara-market-sunset-watercolor",
+    "original": "IMG_8844(1).jpeg",
+    "style": "watercolor",
+    "placement": "day:1:places",
+    "caption": "부하라 돔 시장 — 일몰 무렵의 광장",
+    "alt": "돔형 시장과 멀리 보이는 미나레트 뒤로 노을이 비치고 사람들이 광장을 걷는 모습",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 44532,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 112358,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 213502,
+        "quality": 84,
+        "file": "bukhara-market-sunset-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "bukhara-spice-stall-pencil",
+    "original": "IMG_8852.jpeg",
+    "style": "colored-pencil",
+    "placement": "geography:1:1",
+    "caption": "부하라 향신료 가게 — 진열된 향신료와 차 시음",
+    "alt": "색색의 향신료 자루가 놓인 나무 진열대에서 찻주전자를 든 사람이 손님에게 차를 건네는 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 113988,
+        "quality": 84,
+        "file": "bukhara-spice-stall-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 241446,
+        "quality": 80,
+        "file": "bukhara-spice-stall-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 278668,
+        "quality": 68,
+        "file": "bukhara-spice-stall-pencil-1086.webp"
+      }
+    ]
+  },
+  {
+    "id": "lyabi-hauz-evening-watercolor",
+    "original": "IMG_8853(1).jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:8:detail",
+    "caption": "부하라 라비하우즈 — 연못가 식탁과 저녁 분수",
+    "alt": "라비하우즈 연못의 분수와 맞은편 건물, 앞쪽 나무 의자와 식탁, 방문객",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 60398,
+        "quality": 84,
+        "file": "lyabi-hauz-evening-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 154978,
+        "quality": 84,
+        "file": "lyabi-hauz-evening-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 239938,
+        "quality": 78,
+        "file": "lyabi-hauz-evening-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "lyabi-hauz-portal-watercolor",
+    "original": "IMG_8854.jpeg",
+    "style": "watercolor",
+    "placement": "day:1:lyabi-hauz",
+    "caption": "부하라 라비하우즈 연못 — 분수와 아치형 입구",
+    "alt": "부하라 라비하우즈 연못의 분수와 맞은편 타일 장식 아치형 입구, 연못가 식탁",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 62430,
+        "quality": 84,
+        "file": "lyabi-hauz-portal-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 162714,
+        "quality": 84,
+        "file": "lyabi-hauz-portal-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 230736,
+        "quality": 76,
+        "file": "lyabi-hauz-portal-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "registan-gilded-ceiling-pencil",
+    "original": "IMG_8931(2).jpeg",
+    "style": "colored-pencil",
+    "placement": "comparative:0:6",
+    "caption": "레기스탄의 청색·금빛 천장 장식",
+    "alt": "중앙의 둥근 청색 천장에 금빛 식물 문양과 별 모양 장식이 겹겹이 펼쳐진 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 169010,
+        "quality": 84,
+        "file": "registan-gilded-ceiling-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 316698,
+        "quality": 68,
+        "file": "registan-gilded-ceiling-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 484398,
+        "quality": 68,
+        "file": "registan-gilded-ceiling-pencil-1086.webp"
+      }
+    ],
+    "standardByteBudget": 350000,
+    "compressionNote": "복잡한 천장 문양을 보존하기 위해 800px 파일 약 317KB 허용"
+  },
+  {
+    "id": "registan-travel-portrait-watercolor",
+    "original": "IMG_9009(1).jpeg",
+    "style": "watercolor",
+    "placement": "samarkand:9:0",
+    "caption": "레기스탄 광장 — 세 마드라사를 배경으로",
+    "alt": "레기스탄의 세 마드라사와 돔, 미나레트를 배경으로 베이지색 옷과 검은 가방의 여행자가 서 있는 모습",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "width": 800,
+    "height": 370,
+    "variants": [
+      {
+        "width": 480,
+        "height": 222,
+        "bytes": 37978,
+        "quality": 84,
+        "file": "registan-travel-portrait-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 370,
+        "bytes": 101420,
+        "quality": 84,
+        "file": "registan-travel-portrait-watercolor-800.webp"
+      }
+    ]
+  },
+  {
+    "id": "samarkand-turquoise-dome-pencil",
+    "original": "IMG_9012.jpeg",
+    "style": "colored-pencil",
+    "placement": "architecture:Samarkand:intro",
+    "caption": "레기스탄 — 나무 사이로 보이는 청록색 돔",
+    "alt": "타일로 장식한 첨두 아치 위 청록색 돔과 앞쪽 나무, 목재 지지대, 돌바닥과 화분",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 131634,
+        "quality": 84,
+        "file": "samarkand-turquoise-dome-pencil-370.webp"
+      }
+    ]
+  },
+  {
+    "id": "cholponata-petroglyph-field-watercolor",
+    "original": "IMG_9011(1).jpeg",
+    "style": "watercolor",
+    "placement": "cholponata:2:0",
+    "caption": "촐폰아타 암각화 구역 — 바위 들판과 답사로",
+    "alt": "촐폰아타 암각화 구역의 바위 들판과 마른 풀, 답사로의 방문객, 뒤편 산과 가을나무",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "width": 800,
+    "height": 370,
+    "variants": [
+      {
+        "width": 480,
+        "height": 222,
+        "bytes": 39858,
+        "quality": 84,
+        "file": "cholponata-petroglyph-field-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 370,
+        "bytes": 105590,
+        "quality": 84,
+        "file": "cholponata-petroglyph-field-watercolor-800.webp"
+      }
+    ]
+  },
+  {
+    "id": "cholponata-balbal-pencil",
+    "original": "IMG_9007(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "cholponata:2:balbal",
+    "caption": "촐폰아타 암각화 구역 — 발발 석상",
+    "alt": "촐폰아타 암각화 구역에서 눈과 긴 코가 새겨진 발발 석상, 바위 들판과 산",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 124228,
+        "quality": 84,
+        "file": "cholponata-balbal-pencil-370.webp"
+      }
+    ],
+    "captionSources": [
+      "https://e-museum.kz/en/exhibit/68da7f7b36ce7968f-en/",
+      "https://commons.wikimedia.org/wiki/File:Petroglyph_Museum_of_Cholpon-Ata_02.jpg"
+    ]
+  },
+  {
+    "id": "issyk-kul-cruise-tian-shan-watercolor",
+    "original": "IMG_8980.jpeg",
+    "style": "watercolor",
+    "placement": "geography:2:0",
+    "caption": "이식쿨호 유람선에서 바라본 톈산산맥의 설산 능선",
+    "alt": "이식쿨호 유람선에서 본 푸른 호수와 수평선 너머 톈산산맥의 눈 덮인 능선, 오른쪽 호숫가",
+    "sourceWidth": 4032,
+    "sourceHeight": 3024,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 37134,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 103836,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 207794,
+        "quality": 84,
+        "file": "issyk-kul-cruise-tian-shan-watercolor-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "tashkent-minor-ceiling-pencil",
+    "original": "IMG_8936(1).jpeg",
+    "style": "colored-pencil",
+    "placement": "tashkent:10:0",
+    "caption": "타슈켄트 미노르 모스크 — 청색·금빛 원형 천장",
+    "alt": "청색과 금빛 방사형 문양의 돔 천장과 둘레의 흰 아치 창을 올려다본 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 145106,
+        "quality": 88,
+        "file": "tashkent-minor-ceiling-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 246158,
+        "quality": 76,
+        "file": "tashkent-minor-ceiling-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 353674,
+        "quality": 72,
+        "file": "tashkent-minor-ceiling-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "zoroastrian-ossuary-pencil",
+    "original": "IMG_8907.jpeg",
+    "style": "colored-pencil",
+    "placement": "history:0:2",
+    "caption": "조로아스터교 토제유골함",
+    "alt": "가로로 놓인 갈색 토제 유골함 안에 두개골과 여러 뼈가 드러나 있는 박물관 전시",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 32538,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 108298,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 234846,
+        "quality": 88,
+        "file": "zoroastrian-ossuary-pencil-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "originalWidth": 1152,
+    "originalHeight": 1536,
+    "sourceOrientation": "90-degrees-counterclockwise",
+    "revision": "2026-10-18-user-foreground-and-orientation-edit"
+  },
+  {
+    "id": "bukhara-samani-watercolor",
+    "original": "IMG_8866.jpeg",
+    "style": "watercolor",
+    "placement": "bukhara:3:0",
+    "caption": "부하라 이스마일 사마니 영묘 — 돔과 벽돌 장식",
+    "alt": "중앙 돔과 촘촘한 벽돌 장식의 이스마일 사마니 영묘 앞에 관람객과 붉은 꽃밭이 있는 모습",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 141644,
+        "quality": 88,
+        "file": "bukhara-samani-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 234312,
+        "quality": 78,
+        "file": "bukhara-samani-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 308382,
+        "quality": 72,
+        "file": "bukhara-samani-watercolor-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "aral-sea-exhibit-photo",
+    "original": "IMG_8881.jpeg",
+    "style": "documentary-photo",
+    "placement": "resources:0:1",
+    "caption": "아랄해 축소 전시 — 연도별 수면 지도와 드러난 호수 바닥. 정장 차림의 인물은 반기문 전 유엔 사무총장입니다.",
+    "alt": "1957·1982·2000·2017년 아랄해 지도와 수면 비교 영상, 마른 호수 바닥의 선박이 배치된 전시판",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 42072,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 99582,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 187840,
+        "quality": 88,
+        "file": "aral-sea-exhibit-photo-1200.webp"
+      }
+    ],
+    "sourceKind": "museum-panel-photo"
+  },
+  {
+    "id": "afrasiyab-envoys-pencil",
+    "original": "IMG_8902.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:1:0",
+    "caption": "아프라시압 벽화 — 깃털 관모의 인물들",
+    "alt": "갈색과 푸른 안료가 남은 훼손된 아프라시압 벽화의 인물 윤곽과 깃털 관모, 오른쪽 격자",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 71852,
+        "quality": 88,
+        "file": "afrasiyab-envoys-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 198606,
+        "quality": 88,
+        "file": "afrasiyab-envoys-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 238290,
+        "quality": 76,
+        "file": "afrasiyab-envoys-pencil-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "revision": "2026-10-18-feather-trace-clarity"
+  },
+  {
+    "id": "ulughbeg-meridian-pencil",
+    "original": "IMG_8890.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:8:0",
+    "caption": "울루그벡 천문대 — 지하 자오선 관측기의 곡선 눈금",
+    "alt": "벽돌 아치 아래 깊은 도랑으로 내려가는 곡선 석재 눈금과 계단, 끝쪽의 밝은 아치 창",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 134374,
+        "quality": 88,
+        "file": "ulughbeg-meridian-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 233042,
+        "quality": 78,
+        "file": "ulughbeg-meridian-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 307292,
+        "quality": 72,
+        "file": "ulughbeg-meridian-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "ulughbeg-year-exhibit-photo",
+    "original": "IMG_8893.jpeg",
+    "style": "documentary-photo",
+    "placement": "samarkand:8:1",
+    "caption": "울루그벡 천문대 전시 — 행성 운동과 1년 길이 비교",
+    "alt": "천문서 표제면과 행성 연간 운동, 1년 길이, 황도 경사를 비교한 수치표가 있는 세로 전시판",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1152,
+    "height": 1536,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 26556,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 71050,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-800.webp"
+      },
+      {
+        "width": 1152,
+        "height": 1536,
+        "bytes": 149614,
+        "quality": 88,
+        "file": "ulughbeg-year-exhibit-photo-1152.webp"
+      }
+    ],
+    "sourceKind": "museum-panel-photo"
+  },
+  {
+    "id": "ulughbeg-statue-pencil",
+    "original": "IMG_8889.jpeg",
+    "style": "colored-pencil",
+    "placement": "samarkand:8:2",
+    "caption": "사마르칸트 울루그벡 동상 — 앉은 모습과 명판",
+    "alt": "청색 타일 벽 앞의 앉아 있는 울루그벡 동상과 이름이 새겨진 받침대, 주변의 포장 바닥",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 126350,
+        "quality": 88,
+        "file": "ulughbeg-statue-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 248376,
+        "quality": 82,
+        "file": "ulughbeg-statue-pencil-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 272028,
+        "quality": 72,
+        "file": "ulughbeg-statue-pencil-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-user-foreground-and-orientation-edit"
+  },
+  {
+    "id": "samarkand-gur-emir-watercolor",
+    "original": "IMG_8908.jpeg",
+    "style": "watercolor",
+    "placement": "samarkand:7:0",
+    "caption": "사마르칸트 구르에미르 영묘 — 세로 주름 돔과 미나레트",
+    "alt": "세로 주름과 청록색 타일로 덮인 큰 돔, 오른쪽의 기하학 무늬 미나레트와 아치형 외벽, 앞쪽 벽돌 담장",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "samarkand-gur-emir-watercolor-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 112368,
+        "quality": 88
+      },
+      {
+        "file": "samarkand-gur-emir-watercolor-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 231904,
+        "quality": 84
+      },
+      {
+        "file": "samarkand-gur-emir-watercolor-1086.webp",
+        "width": 1086,
+        "height": 1448,
+        "bytes": 241080,
+        "quality": 74
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "revision": "2026-10-18-gur-emir-identification-foreground-cleanup"
+  },
+  {
+    "id": "bukhara-chashma-ayub-watercolor",
+    "original": "bukhara-chashma-ayub-watercolor-1200.webp",
+    "style": "watercolor",
+    "placement": "bukhara:14:1",
+    "caption": "부하라 차슈마 아유브 — 원뿔형 지붕과 벽돌 외벽",
+    "alt": "원뿔형 지붕과 작은 돔이 솟은 긴 벽돌 건물, 앞쪽 포장길과 왼쪽 입구의 관람객, 오른쪽 벤치",
+    "sourceWidth": 1200,
+    "sourceHeight": 900,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 54768,
+        "quality": 88,
+        "file": "bukhara-chashma-ayub-clean-r1-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 147130,
+        "quality": 88,
+        "file": "bukhara-chashma-ayub-clean-r1-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 225444,
+        "quality": 84,
+        "file": "bukhara-chashma-ayub-clean-r1-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "sourceKind": "published-illustration-edit",
+    "revision": "bukhara-chashma-ayub-watercolor-r1"
+  },
+  {
+    "id": "hotel-pool-garden-watercolor",
+    "original": "IMG_8888.jpeg",
+    "style": "watercolor",
+    "placement": "day:2:hotel",
+    "caption": "사마르칸트 숙소 — 객실에서 내려다본 수영장과 정원",
+    "alt": "객실에서 내려다본 직사각형 파란 수영장과 붙어 있는 원형 풀, 흰 의자와 파라솔, 나무와 정원",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 140664,
+        "quality": 88,
+        "file": "hotel-pool-garden-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 235746,
+        "quality": 78,
+        "file": "hotel-pool-garden-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 303800,
+        "quality": 72,
+        "file": "hotel-pool-garden-watercolor-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448
+  },
+  {
+    "id": "tashkent-amir-temur-watercolor",
+    "original": "IMG_8939.jpeg",
+    "style": "watercolor",
+    "placement": "tashkent:8:0",
+    "caption": "타슈켄트 아미르 티무르 광장 — 기마상과 호텔 우즈베키스탄",
+    "alt": "오른쪽 티무르 기마상과 붉은 받침대, 왼쪽 호텔 우즈베키스탄의 격자 외벽과 나무, 광장의 포장 바닥",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "file": "tashkent-amir-temur-watercolor-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 73644,
+        "quality": 88
+      },
+      {
+        "file": "tashkent-amir-temur-watercolor-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 185012,
+        "quality": 88
+      },
+      {
+        "file": "tashkent-amir-temur-watercolor-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 249014,
+        "quality": 80
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "revision": "2026-10-19-remove-people-and-arrival-dinner"
+  },
+  {
+    "id": "tashkent-independence-fountains-watercolor",
+    "original": "IMG_8938.jpeg",
+    "style": "watercolor",
+    "placement": "tashkent:9:0",
+    "caption": "타슈켄트 독립광장 — 분수 너머 대통령 집무실",
+    "alt": "가로로 뻗은 흰색 대통령 집무실 앞의 분수 물줄기와 수조, 앞쪽 잔디와 작은 나무, 줄무늬 보도",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 74686,
+        "quality": 88,
+        "file": "tashkent-independence-fountains-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 195290,
+        "quality": 88,
+        "file": "tashkent-independence-fountains-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 232884,
+        "quality": 76,
+        "file": "tashkent-independence-fountains-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086
+  },
+  {
+    "id": "tashkent-minor-portrait-watercolor",
+    "original": "IMG_9014.jpeg",
+    "style": "watercolor",
+    "placement": "tashkent:10:detail",
+    "caption": "타슈켄트 미노르 모스크 — 흰색 정면과 꽃밭",
+    "alt": "흰색 모스크의 높은 문양 아치와 양옆 첨탑, 앞쪽의 꽃밭과 잔디",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "file": "tashkent-minor-portrait-watercolor-370.webp",
+        "width": 370,
+        "height": 800,
+        "bytes": 139086,
+        "quality": 88
+      }
+    ],
+    "generatedWidth": 853,
+    "generatedHeight": 1844,
+    "editInputWidth": 370,
+    "editInputHeight": 800,
+    "revision": "2026-10-19-remove-people-and-arrival-dinner"
+  },
+  {
+    "id": "rukh-ordo-lakeside-watercolor",
+    "original": "IMG_8979.jpeg",
+    "style": "watercolor",
+    "placement": "cholponata:9:detail",
+    "caption": "촐폰아타 루흐 오르도 — 호숫가 아치와 조각 정원",
+    "alt": "종이 매달린 아치와 잔디 위 돌 조각, 키 큰 나무 너머로 이식쿨 호수와 눈 덮인 산맥이 보이는 정원",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 54562,
+        "quality": 88,
+        "file": "rukh-ordo-lakeside-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 138656,
+        "quality": 88,
+        "file": "rukh-ordo-lakeside-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 234490,
+        "quality": 86,
+        "file": "rukh-ordo-lakeside-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086
+  },
+  {
+    "id": "ala-archa-valley-watercolor",
+    "original": "IMG_9019.jpeg",
+    "style": "watercolor",
+    "placement": "bishkek:10:0",
+    "caption": "알라아르차 국립공원 — 숲 너머의 계곡과 설산",
+    "alt": "낙엽 진 가는 나뭇가지와 짙은 침엽수 너머로 계곡 양쪽의 바위산과 눈 덮인 능선이 보이는 풍경",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 79722,
+        "quality": 88,
+        "file": "ala-archa-valley-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 218558,
+        "quality": 88,
+        "file": "ala-archa-valley-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 252638,
+        "quality": 72,
+        "file": "ala-archa-valley-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086
+  },
+  {
+    "id": "hazrati-imam-portrait-watercolor",
+    "original": "hazrati-imam-portrait-watercolor-370.webp",
+    "style": "watercolor",
+    "placement": "tashkent:7:detail",
+    "caption": "타슈켄트 하즈라티 이맘 단지 — 타일 아치 입구",
+    "alt": "큰 벽돌 아치와 청색 타일 문양, 그 아래 출입문과 앞쪽의 포장 바닥",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 134860,
+        "quality": 88,
+        "file": "hazrati-imam-complete-gate-r1-370.webp"
+      }
+    ],
+    "generatedWidth": 853,
+    "generatedHeight": 1844,
+    "editInputWidth": 370,
+    "editInputHeight": 800,
+    "revision": "hazrati-imam-portrait-watercolor-r1",
+    "sourceKind": "published-illustration-edit",
+    "framingEdit": "gate-edge-completion"
+  },
+  {
+    "id": "cholponata-petroglyph-detail-pencil",
+    "original": "IMG_9057.jpeg",
+    "style": "colored-pencil",
+    "placement": "cholponata:2:detail",
+    "caption": "촐폰아타 암각화 — 활과 뿔 달린 동물의 새김선",
+    "alt": "큰 바위 표면에 활을 든 사람과 긴 뿔의 동물로 보이는 옅은 새김선이 있으며 뒤로 마른 풀과 산이 보이는 모습",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 149964,
+        "quality": 88,
+        "file": "cholponata-petroglyph-detail-pencil-370.webp"
+      }
+    ],
+    "generatedWidth": 853,
+    "generatedHeight": 1844
+  },
+  {
+    "id": "tashkent-broadway-watercolor",
+    "original": "IMG_9059.jpeg",
+    "style": "watercolor",
+    "placement": "tashkent:11:detail",
+    "caption": "타슈켄트 브로드웨이 거리 — 나무와 샹들리에 장식",
+    "alt": "나무 사이 보행거리 위의 큰 샹들리에 장식과 색색의 천, 양옆 작은 가판대와 멀리 걷는 사람들",
+    "sourceWidth": 370,
+    "sourceHeight": 800,
+    "width": 370,
+    "height": 800,
+    "variants": [
+      {
+        "width": 370,
+        "height": 800,
+        "bytes": 152274,
+        "quality": 88,
+        "file": "tashkent-broadway-watercolor-370.webp"
+      }
+    ],
+    "generatedWidth": 853,
+    "generatedHeight": 1844
+  },
+  {
+    "id": "ala-archa-summit-watercolor",
+    "original": "IMG_9064.jpeg",
+    "style": "watercolor",
+    "placement": "bishkek:10:detail",
+    "caption": "알라아르차 케이블카 상부에서 본 설산",
+    "alt": "그늘진 바위 능선 사이로 눈이 쌓인 봉우리와 산허리의 구름이 보이는 가로로 긴 산악 풍경",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "width": 800,
+    "height": 369,
+    "variants": [
+      {
+        "width": 480,
+        "height": 222,
+        "bytes": 29706,
+        "quality": 88,
+        "file": "ala-archa-summit-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 369,
+        "bytes": 78628,
+        "quality": 88,
+        "file": "ala-archa-summit-watercolor-800.webp"
+      }
+    ],
+    "generatedWidth": 1846,
+    "generatedHeight": 852
+  },
+  {
+    "id": "bukhara-divan-begi-portal-pencil",
+    "original": "IMG_8860.jpeg",
+    "style": "colored-pencil",
+    "placement": "bukhara:8:1",
+    "caption": "부하라 나디르 디반베기 마드라사 — 새·사슴·태양 문양",
+    "alt": "비스듬히 올려다본 나디르 디반베기 입구의 아치와 청색 타일 위 새 두 마리, 사슴과 태양 문양",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "revision": "2026-10-19-divan-begi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 85808,
+        "quality": 88,
+        "file": "bukhara-divan-begi-portal-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 240606,
+        "quality": 88,
+        "file": "bukhara-divan-begi-portal-pencil-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 249654,
+        "quality": 60,
+        "file": "bukhara-divan-begi-portal-pencil-1200.webp"
+      }
+    ]
+  },
+  {
+    "id": "samarkand-bibi-khanym-watercolor",
+    "original": "IMG_9082.jpeg",
+    "placement": "samarkand:6:detail",
+    "caption": "사마르칸트 비비하눔 모스크 — 거대한 타일 아치와 미나레트",
+    "alt": "관람객 없이 보이는 비비하눔 모스크의 청색 타일 입구와 완전한 왼쪽 탑 상단, 푸른 하늘과 오른쪽 미나레트",
+    "sourceWidth": 800,
+    "sourceHeight": 370,
+    "framingEdit": "outpaint-top-and-clean-foreground",
+    "sourceKind": "user-supplied-travel-photo",
+    "style": "watercolor",
+    "generatedWidth": 1586,
+    "generatedHeight": 992,
+    "revision": "2026-10-19-bibi-mohi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 300,
+        "bytes": 56538,
+        "quality": 88,
+        "file": "samarkand-bibi-khanym-watercolor-480.webp"
+      },
+      {
+        "width": 590,
+        "height": 369,
+        "bytes": 87686,
+        "quality": 88,
+        "file": "samarkand-bibi-khanym-watercolor-590.webp"
+      }
+    ],
+    "width": 590,
+    "height": 369
+  },
+  {
+    "id": "bukhara-sitorai-pool-watercolor",
+    "original": "Harem of Sitorai Mokhi-Khosa Palace 01.jpg",
+    "placement": "bukhara:10:detail",
+    "caption": "부하라 시토라이 모히 호사 — 연못에 비친 궁전 건물",
+    "alt": "청록색 창과 아치 회랑이 있는 크림색 이층 건물과 작은 돔 탑, 연못 수면에 비친 건물과 나무",
+    "sourceWidth": 4290,
+    "sourceHeight": 2860,
+    "sourceKind": "wikimedia-commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harem_of_Sitorai_Mokhi-Khosa_Palace_01.jpg",
+    "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Harem_of_Sitorai_Mokhi-Khosa_Palace_01.jpg&oldid=1153097626",
+    "creator": "Bernard Gagnon",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Watercolor and colored-pencil style conversion; incidental visitors removed; resized and WebP encoded.",
+    "style": "watercolor",
+    "generatedWidth": 1536,
+    "generatedHeight": 1024,
+    "revision": "2026-10-19-bibi-mohi",
+    "variants": [
+      {
+        "width": 480,
+        "height": 320,
+        "bytes": 50176,
+        "quality": 88,
+        "file": "bukhara-sitorai-pool-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 533,
+        "bytes": 143838,
+        "quality": 88,
+        "file": "bukhara-sitorai-pool-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "bytes": 208568,
+        "quality": 80,
+        "file": "bukhara-sitorai-pool-watercolor-1200.webp"
+      }
+    ],
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "id": "charyn-canyon-watercolor",
+    "original": "IMG_9190.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 70388,
+        "quality": 88,
+        "file": "charyn-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 195870,
+        "quality": 88,
+        "file": "charyn-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 234828,
+        "quality": 76,
+        "file": "charyn-canyon-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:10:0",
+    "caption": "차른 협곡에는 붉은 퇴적층과 성곽을 닮은 절벽이 이어집니다.",
+    "alt": "붉은 수평 퇴적층의 절벽과 황토빛 구릉, 멀리 푸른 산 능선과 전경의 오솔길이 보이는 차른 협곡",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "id": "black-canyon-watercolor",
+    "original": "IMG_9223.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 68342,
+        "quality": 88,
+        "file": "black-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 190930,
+        "quality": 88,
+        "file": "black-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 225392,
+        "quality": 76,
+        "file": "black-canyon-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:10:1",
+    "caption": "블랙 캐니언에서는 어두운 암벽 너머로 완만한 황토빛 구릉이 펼쳐집니다.",
+    "alt": "그늘진 회갈색 암벽의 깊은 침식 골짜기 뒤로 둥근 황토빛 구릉과 푸른 하늘이 이어지는 블랙 캐니언",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "style": "watercolor",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "width": 1086,
+    "height": 1448,
+    "id": "lunar-canyon-watercolor",
+    "original": "IMG_9255.jpeg",
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 128912,
+        "quality": 88,
+        "file": "lunar-canyon-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 247596,
+        "quality": 80,
+        "file": "lunar-canyon-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 245342,
+        "quality": 56,
+        "file": "lunar-canyon-watercolor-1086.webp"
+      }
+    ],
+    "placement": "almaty:10:detail",
+    "caption": "루나 캐니언의 밝은 퇴적층 아래로 강과 가을빛 수목이 이어집니다.",
+    "alt": "밝은 황토색 층상 절벽 아래로 푸른 강이 굽이치고 노란 가을 수목과 자갈톱이 이어지는 루나 캐니언",
+    "sourceKind": "user-travel-photo",
+    "revision": "2026-10-19-canyon-r1"
+  },
+  {
+    "id": "almaty-arbat-watercolor",
+    "original": "IMG_9332.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 132604,
+        "quality": 88,
+        "file": "almaty-arbat-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 221196,
+        "quality": 76,
+        "file": "almaty-arbat-watercolor-800.webp"
+      },
+      {
+        "width": 1086,
+        "height": 1448,
+        "bytes": 243748,
+        "quality": 48,
+        "file": "almaty-arbat-watercolor-1086.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "placement": "almaty:9:0",
+    "caption": "알마티 아르바트 거리 — 가을 가로수와 보행로",
+    "alt": "가을 가로수와 색색의 현수막 사이로 보행로가 길게 이어지는 알마티 아르바트 거리",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-green-bazaar-watercolor",
+    "original": "IMG_9330.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 86908,
+        "quality": 88,
+        "file": "almaty-green-bazaar-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 220250,
+        "quality": 88,
+        "file": "almaty-green-bazaar-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 244090,
+        "quality": 68,
+        "file": "almaty-green-bazaar-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "almaty:8:0",
+    "caption": "알마티 그린 바자르 — 과일 매대와 시장 풍경",
+    "alt": "그린 바자르의 층층이 쌓인 과일과 멜론, 매대 사이를 오가는 상인과 손님",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-ascension-interior-pencil",
+    "original": "IMG_9304.jpeg",
+    "style": "colored-pencil",
+    "sourceWidth": 1152,
+    "sourceHeight": 1536,
+    "width": 1000,
+    "height": 1333,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "bytes": 146100,
+        "quality": 88,
+        "file": "almaty-ascension-interior-pencil-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 1067,
+        "bytes": 248200,
+        "quality": 76,
+        "file": "almaty-ascension-interior-pencil-800.webp"
+      },
+      {
+        "width": 1000,
+        "height": 1333,
+        "bytes": 240354,
+        "quality": 48,
+        "file": "almaty-ascension-interior-pencil-1000.webp"
+      }
+    ],
+    "generatedWidth": 1086,
+    "generatedHeight": 1448,
+    "placement": "almaty:7:0",
+    "caption": "젠코프 승천 성당 — 금빛 성화벽과 샹들리에",
+    "alt": "젠코프 승천 성당 내부의 금빛 성화벽과 매달린 샹들리에, 청색과 붉은색 스테인드글라스",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "almaty-panfilov-flame-watercolor",
+    "original": "IMG_9297.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 84612,
+        "quality": 88,
+        "file": "almaty-panfilov-flame-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 214956,
+        "quality": 88,
+        "file": "almaty-panfilov-flame-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 235332,
+        "quality": 72,
+        "file": "almaty-panfilov-flame-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "editInputWidth": 1448,
+    "editInputHeight": 1086,
+    "placement": "almaty:6:0",
+    "caption": "판필로프 공원 — 영원의 불꽃과 추모의 벽",
+    "alt": "판필로프 공원의 추모 공간에서 타오르는 영원의 불꽃과 붉은 기념벽, 뒤편의 가을 숲",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "oi-qaragai-gondola-watercolor",
+    "original": "IMG_9271.jpeg",
+    "style": "watercolor",
+    "sourceWidth": 1536,
+    "sourceHeight": 1152,
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "width": 480,
+        "height": 360,
+        "bytes": 64884,
+        "quality": 88,
+        "file": "oi-qaragai-gondola-watercolor-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "bytes": 176120,
+        "quality": 88,
+        "file": "oi-qaragai-gondola-watercolor-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 900,
+        "bytes": 249146,
+        "quality": 80,
+        "file": "oi-qaragai-gondola-watercolor-1200.webp"
+      }
+    ],
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "placement": "itinerary:2026-10-20:oi-qaragai",
+    "caption": "오이 카라가이 — 가을 숲 앞 곤돌라 승강장",
+    "alt": "오이 카라가이 표기가 있는 곤돌라와 승강장 구조물 뒤로 가을 산비탈이 보이는 풍경",
+    "sourceKind": "user-travel-photo"
+  },
+  {
+    "id": "issyk-kul-banner-watercolor",
+    "original": "issyk-kul-cruise-tian-shan-watercolor-1200.webp",
+    "style": "watercolor",
+    "sourceWidth": 1200,
+    "sourceHeight": 900,
+    "width": 1200,
+    "height": 400,
+    "variants": [
+      {
+        "width": 480,
+        "height": 160,
+        "bytes": 14716,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-480.webp"
+      },
+      {
+        "width": 800,
+        "height": 267,
+        "bytes": 39804,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-800.webp"
+      },
+      {
+        "width": 1200,
+        "height": 400,
+        "bytes": 79514,
+        "quality": 88,
+        "file": "issyk-kul-banner-r1-1200.webp"
+      }
+    ],
+    "generatedWidth": 2172,
+    "generatedHeight": 724,
+    "editInputWidth": 1200,
+    "editInputHeight": 900,
+    "framingEdit": "issyk-kul-banner-crop",
+    "placement": "site:banner",
+    "purpose": "site-banner",
+    "caption": "이식쿨호와 톈산산맥",
+    "alt": "푸른 이식쿨호 너머로 톈산산맥의 설산과 오른쪽의 작은 숲이 이어지는 풍경",
+    "sourceKind": "published-illustration-edit",
+    "revision": "issyk-kul-banner-watercolor-r1"
+  }
+]

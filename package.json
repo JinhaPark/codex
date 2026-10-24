@@ -1,10 +1,10 @@
 {
-  "name": "central-asia-companion",
-  "version": "1.0.0",
+  "name": "travel-companions",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/*.test.js",
+    "test": "node --test tantantan/tests/*.test.js caucasus/tests/*.test.js",
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview"

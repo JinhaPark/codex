@@ -1,0 +1,17 @@
+{
+  "name": "Central Asia Travel Companion",
+  "short_name": "Central Asia",
+  "start_url": "/codex/tantantan/",
+  "scope": "/codex/tantantan/",
+  "display": "standalone",
+  "background_color": "#f7f4ed",
+  "theme_color": "#142e39",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

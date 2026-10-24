@@ -1,0 +1,102 @@
+[
+  {
+    "id": "caucasus-20260502-kakheti-vineyard-watercolor",
+    "original": "image(20261024-135502).png",
+    "sourceSha256": "77e4de3174a2a56108a3d60a59c182ad643af21ae1b246de2fbf5d4c3a4287eb",
+    "sourceWidth": 1914,
+    "sourceHeight": 1436,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "generatedCompositeSha256": "a6a3ffefc4d49d66a788284167a07c8c18fe6da537eb055545392cd5a1fdb3d0",
+    "generatedCrop": [
+      0,
+      0,
+      1448,
+      523
+    ],
+    "style": "watercolor",
+    "placement": "caucasus:2026-05-02:destination:kakheti-winery:vineyard",
+    "caption": "카헤티 와이너리 — 포도밭 너머로 이어지는 산줄기",
+    "alt": "봄나무와 울타리 너머로 포도나무 줄지어 선 밭, 작은 건물과 먼 산이 펼쳐진 카헤티의 풍경",
+    "generationId": "260e4591-03e5-4820-be50-ecf910028e27",
+    "framingEdit": "panoramic-panel-extracted-from-generated-diptych",
+    "status": "prepared-in-pr",
+    "originalUploadForbidden": true,
+    "variants": [
+      {
+        "file": "caucasus-20260502-kakheti-vineyard-watercolor-480.webp",
+        "width": 480,
+        "height": 173,
+        "bytes": 36472,
+        "quality": 82,
+        "sha256": "3d5eaf544c7d8925789f42b141b5698fd6ffe7dc9fa52b700a7e660db5cbc57c"
+      },
+      {
+        "file": "caucasus-20260502-kakheti-vineyard-watercolor-800.webp",
+        "width": 800,
+        "height": 289,
+        "bytes": 92730,
+        "quality": 82,
+        "sha256": "ced8a761f2526e8bb597a5b76984b499850e0986c42b3286fcaca28c7ba34b1a"
+      },
+      {
+        "file": "caucasus-20260502-kakheti-vineyard-watercolor-1200.webp",
+        "width": 1200,
+        "height": 433,
+        "bytes": 180660,
+        "quality": 82,
+        "sha256": "9742e4fea7581aada730d4749e52785f12864c21fc25122980fa76d7be91882e"
+      }
+    ]
+  },
+  {
+    "id": "caucasus-20260502-kakheti-winery-tanks-colored-pencil",
+    "original": "image(20261024-135507).png",
+    "sourceSha256": "09cff74655a2e7ca08710323b463dc5f78316562586a8215a54db307e33e2c6a",
+    "sourceWidth": 1914,
+    "sourceHeight": 1436,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "generatedCompositeSha256": "a6a3ffefc4d49d66a788284167a07c8c18fe6da537eb055545392cd5a1fdb3d0",
+    "generatedCrop": [
+      0,
+      533,
+      1448,
+      1086
+    ],
+    "style": "colored-pencil",
+    "placement": "caucasus:2026-05-02:destination:kakheti-winery:tanks",
+    "caption": "카헤티 와이너리 — 스테인리스 발효·저장 탱크와 배관",
+    "alt": "와이너리 작업장에 금속 프레임과 배관을 따라 여러 개의 은빛 대형 탱크가 늘어서 있는 모습",
+    "generationId": "260e4591-03e5-4820-be50-ecf910028e27",
+    "framingEdit": "panoramic-panel-extracted-from-generated-diptych",
+    "status": "prepared-in-pr",
+    "originalUploadForbidden": true,
+    "variants": [
+      {
+        "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-480.webp",
+        "width": 480,
+        "height": 183,
+        "bytes": 30452,
+        "quality": 82,
+        "sha256": "276612db5aca2efdd0497807ebb3b7267f84960d3713b81bc9fca11c55c2a449"
+      },
+      {
+        "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-800.webp",
+        "width": 800,
+        "height": 306,
+        "bytes": 78700,
+        "quality": 82,
+        "sha256": "2337d24bf96f6680a5dcffa00c8cd234c92852db0e0681cd2e6fc199ac783372"
+      },
+      {
+        "file": "caucasus-20260502-kakheti-winery-tanks-colored-pencil-1200.webp",
+        "width": 1200,
+        "height": 458,
+        "bytes": 156592,
+        "quality": 82,
+        "sha256": "e786caf70803f477def127af121e8c10e478955fa6f6bf71dfe4a89d212fee2a"
+      }
+    ]
+  }
+]
