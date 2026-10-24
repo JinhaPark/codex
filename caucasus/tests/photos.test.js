@@ -26,7 +26,7 @@ test('all uploaded WebP files are migrated intact and follow the naming rule',()
    assert.ok(!ids.has(asset.file), 'duplicate asset '+asset.file);ids.add(asset.file);
    const bytes=fs.readFileSync(new URL('../../shared/public/illustrations/'+asset.file,import.meta.url));
    assert.equal(bytes.length,asset.bytes);
-   assert.equal(decodeDimensions(bytes)[0],asset.width);
+   assert.equal(decodeDimensions(bytes)[0],asset.width,`Incorrect stored WebP width for ${asset.file}`);
    assert.equal(createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex'),asset.gitBlobSha);
    if(asset.sha256)assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
    assert.ok(files.includes(asset.file));
