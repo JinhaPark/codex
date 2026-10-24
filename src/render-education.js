@@ -8,7 +8,7 @@ const row = (name,value,note) => `<tr><th scope="row">${esc(name)}</th><td data-
 export function renderEducation() {
  return `<section class="bukhara-history guide-section" id="education" data-core-section="education"><h3>${education.title}</h3><p class="bukhara-intro">${education.intro}</p>
  <div class="bukhara-chapters">${renderNumberedSections(education.chapters, 'education', ([, paragraphs]) => paragraphs.map(p=>`<p>${esc(p)}</p>`).join(''))}</div>
- <details class="data-details"><summary>등록금·생활비 계산과 자료의 조건</summary><div class="bukhara-chapter-body">
+ <details class="data-details" open data-guide-default-open><summary>등록금·생활비 계산과 자료의 조건</summary><div class="bukhara-chapter-body">
  <p>금액은 읽기 쉽게 반올림했으며 10만 원 미만은 소수 첫째 자리까지 표시합니다.</p>
  <p>환산 기준일 ${esc(fx.effectiveDate)} · 키르기스 중앙은행 고시 교차환율. 원화 환산은 현지 구매력 비교가 아닙니다. 등록금과 임금은 학년도·모집단이 다릅니다.</p>
  <div class="table-scroll"><table class="education-table"><caption>대학별 연간 등록금과 전국 평균 월급 대비 규모</caption><thead><tr><th>대학·전공</th><th>만 원/년</th><th>평균 월급 개월분·조건</th></tr></thead><tbody>${d.tuition.map(t=>row(`${t.school} ${t.major}`,`${won(t.annualKgs)}만 원/년`,`${tuitionWageMonths(t.annualKgs).toFixed(1)}개월 · ${t.year} ${t.scope}`)).join('')}</tbody></table></div>

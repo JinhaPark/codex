@@ -20,3 +20,11 @@ Validation:
 - Focused Chromium checks passed at 375, 390 and 430px for October 13, 14 and 17; the two removed views are absent from October 13 and the selected first views remain.
 - The evening illustration appears once in Bukhara history and decodes successfully. Screenshots were inspected with a Korean font loaded. No horizontal overflow or JavaScript errors were observed.
 - Actual iPhone Safari and offline revalidation were not performed for this placement-only update. Existing offline behavior remains limited to previously visited assets.
+
+## Follow-up: separate the Lyabi-Hauz views by tab
+
+At main `dcae338086fe5f1dd45375828e731e32937d0270`, the user requested that the Bukhara guide retain only the evening table-and-fountain view of Lyabi-Hauz, because the portal-and-fountain view is already in the itinerary. This supersedes the earlier table's statement that both views remain in the guide.
+
+Keep `lyabi-hauz-evening-watercolor` at `bukhara:8:detail`. Move the portal view's canonical placement from `bukhara:8:0` to `day:1:lyabi-hauz`, updating the matching lineage placement. Its existing October 13 itinerary ID reference is unchanged. No image is retired, regenerated, re-encoded, or deleted; all revisions, hashes, sizes, and captions remain unchanged.
+
+The image skill and its integration and cache references were read at skills commit `ca4b450c226118a1a318b8321cd6f403536c915c`. Focused browser validation checks that the Bukhara guide shows the evening view once and the October 13 itinerary shows the portal view once, without the opposite Lyabi-Hauz view in either location.
