@@ -239,15 +239,15 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "archived",
-          "lifecycleReason": "User explicitly requested complete removal; the lakeside illustration remains published.",
-          "lifecycleChangedAt": "2026-10-24T11:17:42.383191+00:00"
+          "lifecycle": "deletion-candidate",
+          "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
+          "lifecycleChangedAt": "2026-10-24T12:01:00Z"
         }
       ],
-      "lifecycle": "archived",
+      "lifecycle": "deletion-candidate",
       "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil",
-      "lifecycleReason": "User explicitly requested complete removal; the lakeside illustration remains published.",
-      "lifecycleChangedAt": "2026-10-24T11:17:42.383191+00:00",
+      "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
+      "lifecycleChangedAt": "2026-10-24T12:01:00Z",
       "retirementAuthorization": "Explicit user request to remove this illustration completely from the codebase."
     },
     {
