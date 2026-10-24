@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T07:39:44.657Z",
+  "browser": "153.0.8010.0",
+  "viewports": [
+    375,
+    390,
+    430
+  ],
+  "articles": 16,
+  "dayStates": 10,
+  "coarseSectionsMax": 4,
+  "images": 51,
+  "decodedVariants": 137,
+  "mapLinks": 40,
+  "narrativeWords": {
+    "geography": 372,
+    "history": 1198,
+    "resources": 358,
+    "economy": 405,
+    "education": 447
+  },
+  "readingPositionBackTabReload": true,
+  "tocOpensAndClearsStickyBars": true,
+  "escapeClosesDialog": true,
+  "storageUnavailable": true,
+  "legacyLinks": true,
+  "checklistPersistence": true,
+  "fxFixture": true,
+  "voiceFallback": true,
+  "offlineAllArticlesAndVisitedGuideImages": true,
+  "cacheUpgrade": "ca26-pages-v28-grouped-guide-reader",
+  "otherCachePreserved": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local production build in Chromium, not an actual iPhone Safari or installed home-screen PWA",
+    "Live FX service not tested; deterministic fixture used",
+    "Cache upgrade uses current app with old cache name, not historical deployed bytes",
+    "Unvisited images are not guaranteed offline"
+  ],
+  "sourceBase": "43a1e648fcedba65be17e27a97cc0e12d72ffa27",
+  "unitTests": {
+    "passed": 71,
+    "failed": 0
+  },
+  "build": "passed",
+  "visualReview": "Korean-font screenshots of library, Bukhara grouped reader, and Almaty contents sheet inspected at 430px"
+}

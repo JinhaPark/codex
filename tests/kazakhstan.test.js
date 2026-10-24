@@ -28,7 +28,7 @@ const entries = await Promise.all(modules.map(async ([id, title]) => {
   const { default: data } = await import(`../src/${id}.js`);
   return { id, title, data };
 }));
-const { renderGuide, renderKazakhstanDeepDives } = await loadGuide();
+const { renderGuide, renderKazakhstanDeepDives, guideEntries } = await loadGuide();
 
 for (const { id, title, data } of entries) {
   test(`${id}: independently readable narrative has paragraphs and public sources`, () => {
@@ -51,38 +51,36 @@ for (const { id, title, data } of entries) {
   });
 }
 
-test('five core explanations keep their order; three deep dives sit before cities', () => {
-  const html = renderGuide();
-  assert.deepEqual([...html.matchAll(/data-core-section="([^"]+)"/g)].map(match => match[1]),
-    ['geography', 'history', 'resources', 'economy', 'education']);
-  const group = html.indexOf('id="kazakhstan-deep-dives"');
-  const education = html.indexOf('id="education"');
-  const cities = html.indexOf('id="city-guides"');
-  assert.ok(education < group && group < cities, 'Kazakhstan is a separate group after core education');
-  let previous = group;
-  for (const { id } of entries) {
-    const position = html.indexOf(`id="${id}"`);
-    assert.ok(previous < position && position < cities, `${id} is in narrative order`);
-    previous = position;
+test('five core explanations keep their order; Kazakhstan remains a separate category', () => {
+  assert.deepEqual(guideEntries.filter(e=>e.category === 'core').map(e=>e.id), ['geography','history','resources','economy','education']);
+  assert.deepEqual(guideEntries.filter(e=>e.category === 'kazakhstan').map(e=>e.id), entries.map(e=>e.id));
+  const html = guideEntries.filter(e=>e.category === 'core').map(e=>renderGuide({article:e.id})).join('');
+  assert.deepEqual([...html.matchAll(/data-core-section="([^"]+)"/g)].map(m=>m[1]), ['geography','history','resources','economy','education']);
+});
+
+test('each guide catalog link routes to a unique, independently readable article', () => {
+  const ids = guideEntries.map(e=>e.id);
+  assert.equal(new Set(ids).size, ids.length);
+  for (const category of ['core','cities','kazakhstan']) {
+    const html = renderGuide({category});
+    assert.doesNotMatch(html, /data-guide-article=/);
+    for (const entry of guideEntries.filter(e=>e.category === category)) {
+      assert.ok(html.includes(`href="#guide/${category}/${entry.id}"`));
+      const article = renderGuide({article:entry.id});
+      assert.ok(article.includes(`id="${entry.id}"`));
+      const targets = [...article.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+      assert.equal(new Set(targets).size, targets.length, entry.id);
+    }
   }
 });
 
-test('all guide table-of-contents targets exist exactly once', () => {
-  const html = renderGuide();
-  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
-  assert.equal(new Set(ids).size, ids.length, 'No duplicate anchor IDs');
-  const targetIds = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
-  for (const target of targetIds) assert.equal(ids.filter(id => id === target).length, 1, target);
-  for (const { id } of entries) assert.ok(targetIds.includes(id), `${id} is reachable from the contents`);
-});
-
 test('deep dives render every paragraph, while existing cities and illustrations remain reachable', async () => {
-  const html = renderGuide();
+  const html = guideEntries.map(e=>renderGuide({article:e.id})).join('');
   const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
   for (const { data } of entries) {
     assert.ok(html.includes(escape(data.intro)));
     for (const [heading, paragraphs] of data.chapters) {
-      assert.ok(html.includes(`<summary>${escape(heading)}</summary>`));
+      assert.ok(html.includes(`<h4>${escape(heading)}</h4>`));
       for (const paragraph of paragraphs) assert.ok(html.includes(`<p>${escape(paragraph)}</p>`), heading);
     }
   }
