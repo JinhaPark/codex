@@ -19,12 +19,12 @@ import kazakhstanPoliticalEconomy from './kazakhstan-political-economy.js';
 import kazakhstanSociety from './kazakhstan-society.js';
 import { renderIllustration, renderIllustratedParagraphs } from './illustrations.js';
 
-function renderNarrative(data, {id = data.id, placement = data.id, core = false} = {}) {
+function renderNarrative(data, {id = data.id, placement = data.id, core = false, chapterIllustrations = {}} = {}) {
   return `<section class="bukhara-history${core ? ' core-section' : ''}" id="${esc(id)}" ${core ? `data-core-section="${esc(data.id)}"` : ''}>
     <h3>${esc(data.title)}</h3><p class="bukhara-intro">${esc(data.intro)}</p>
     <div class="bukhara-chapters">${renderNumberedSections(data.chapters, placement, ([, body], i) => {
       const paragraphs = Array.isArray(body) ? body : body.split(/\n\s*\n/);
-      return `${renderIllustratedParagraphs(paragraphs, placement, i)}${renderIllustration(`${placement}:${i}:detail`)}`;
+      return `${renderIllustratedParagraphs(paragraphs, placement, i)}${renderIllustration(`${placement}:${i}:detail`)}${chapterIllustrations[i] ? renderIllustration(chapterIllustrations[i]) : ''}`;
     })}</div>${data.notes?.length ? `<details class="source-notes"><summary>수치와 해석의 근거 더 보기</summary>${data.notes.map(note => `<p>${esc(note)}</p>`).join('')}</details>` : ''}${renderSources(data.sources || [], data.verifiedAt)}</section>`;
 }
 const kazakhstanEssays = [kazakhstanHistory, kazakhstanPoliticalEconomy, kazakhstanSociety];
@@ -38,10 +38,18 @@ export function renderKazakhstanDeepDives() {
   </section>`;
 }
 function renderArchitecture() {
-  return `<section class="architecture-guide" id="architecture-guide"><h3>우즈베키스탄 이슬람 건축 유산</h3>${architecture.map((city, i)=>`<details class="architecture-city reader-section" data-reader-section id="architecture-section-${i + 1}"${i === 0 ? ' open' : ''}><summary><span class="city-name">${i + 1}. ${esc(city.city)} <small>${esc(city.en)}</small></span><span class="city-subtitle">${esc(city.subtitle)}</span></summary><div class="architecture-city-body"><p>${esc(city.intro)}</p>${renderIllustration(`architecture:${city.en}:intro`)}${city.sites.map(([name,en,description])=>`<div class="architecture-site"><h4>${esc(name)} <small>${esc(en)}</small></h4><p>${esc(description)}</p></div>`).join('')}</div></details>`).join('')}${renderSources([['UNESCO 사마르칸트','https://whc.unesco.org/en/list/603/'],['UNESCO 부하라','https://whc.unesco.org/en/list/602/']])}</section>`;
+  const combined = {
+    ...comparative,
+    chapters:[...comparative.chapters, ['사마르칸트와 부하라의 건축 유산', architecture.map(city=>city.intro)]],
+    sources:[...comparative.sources, ['UNESCO 부하라', 'https://whc.unesco.org/en/list/602/']],
+  };
+  return renderNarrative(combined, {
+    id:'architecture-comparative', placement:'comparative',
+    chapterIllustrations:{1:'architecture:Samarkand:intro'},
+  });
 }
 export const guideCategories = [
-  {id:'core', title:'종합 해설'}, {id:'cities', title:'도시·유적'}, {id:'kazakhstan', title:'카자흐스탄 심층'},
+  {id:'core', title:'종합 해설'}, {id:'cities', title:'도시·유적'}, {id:'architecture', title:'이슬람 건축'}, {id:'kazakhstan', title:'카자흐스탄 심층'},
 ];
 const narrative = (data, id, placement, category, extra = {}) => ({
   id, category, title:data.title, intro:data.intro,
@@ -55,12 +63,11 @@ export const guideEntries = [
   {id:'education', category:'core', title:education.title, intro:education.intro, render:()=>renderEducation()},
   narrative(bukhara, 'bukhara-history', 'bukhara', 'cities'),
   ...[samarkand,tashkent,bishkek,cholponata,almaty].map(city=>narrative(city, `history-${city.slug}`, city.slug, 'cities')),
-  narrative(comparative, 'architecture-comparative', 'comparative', 'cities'),
-  {id:'architecture-guide', category:'cities', title:'우즈베키스탄 이슬람 건축 유산', intro:'도시별 건축 유산과 유적의 특징을 살펴봅니다.', render:renderArchitecture},
+  {id:'architecture-comparative', category:'architecture', title:comparative.title, intro:comparative.intro, render:renderArchitecture},
   ...kazakhstanEssays.map(essay=>narrative({...essay, verifiedAt:'2026-10-19'}, essay.id, essay.id, 'kazakhstan')),
 ];
 export function renderGuide({category = 'core', article = ''} = {}) {
-  const entry = guideEntries.find(e=>e.id === article);
+  const entry = guideEntries.find(e=>e.id === (article === 'architecture-guide' ? 'architecture-comparative' : article));
   if (entry) return `<div class="guide-reader" data-guide-article="${esc(entry.id)}">
     <div class="reader-toolbar"><button type="button" data-guide-list>← 해설 목록</button><button type="button" data-guide-toc>이 글의 목차</button></div>
     <div class="reader-actions"><button type="button" data-guide-expand>전체 펼치기</button><button type="button" data-guide-collapse>전체 접기</button></div>

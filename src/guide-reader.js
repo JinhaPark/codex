@@ -5,10 +5,10 @@ export function parseGuideRoute(hash, entries) {
   const parts = hash.replace(/^#/, '').split('/');
   if (parts[0] === 'tab' && validTabs.includes(parts[1])) return {tab:parts[1]};
   if (parts[0] === 'guide') {
-    const entry = entries.find(e=>e.id === parts[2]);
-    return {tab:'guide', category:entry?.category || (['core','cities','kazakhstan'].includes(parts[1]) ? parts[1] : 'core'), article:entry?.id || '', section:parts[3] || ''};
+    const entry = entries.find(e=>e.id === (parts[2] === 'architecture-guide' ? 'architecture-comparative' : parts[2]));
+    return {tab:'guide', category:entry?.category || (['core','cities','architecture','kazakhstan'].includes(parts[1]) ? parts[1] : 'core'), article:entry?.id || '', section:parts[3] || ''};
   }
-  const aliases = {'central-asia-geography-climate':'geography','silk-road-introduction':'history','central-asia-power-datacenters':'resources','central-asia-economy':'economy'};
+  const aliases = {'central-asia-geography-climate':'geography','silk-road-introduction':'history','central-asia-power-datacenters':'resources','central-asia-economy':'economy','architecture-guide':'architecture-comparative'};
   const id = aliases[parts[0]] || parts[0];
   const entry = entries.find(e=>e.id === id);
   if (entry) return {tab:'guide', category:entry.category, article:entry.id, section:''};
@@ -21,7 +21,7 @@ export function createGuideReader({root, entries, onNavigate}) {
   if (!saved || typeof saved !== 'object' || Array.isArray(saved)) saved = {};
   const memory = {positions:{}, opens:{}};
   for (const key of ['positions', 'opens']) if (saved[key] && typeof saved[key] === 'object' && !Array.isArray(saved[key])) memory[key] = saved[key];
-  let state = {tab:'guide', category:['core','cities','kazakhstan'].includes(saved.category) ? saved.category : 'core', article:'', section:''};
+  let state = {tab:'guide', category:['core','cities','architecture','kazakhstan'].includes(saved.category) ? saved.category : 'core', article:'', section:''};
   const initial = parseGuideRoute(location.hash, entries);
   if (initial) state = {...state, ...initial};
   let url = location.href, timer, restoreFrame, positionFrame, restoring = false, mountSerial = 0;
