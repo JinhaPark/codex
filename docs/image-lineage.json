@@ -239,16 +239,41 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "deletion-candidate",
-          "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
-          "lifecycleChangedAt": "2026-10-24T11:22:42Z"
+          "lifecycle": "deleted",
+          "lifecycleReason": "Explicit user-authorized removal after archival and reference review; recoverable from Git history.",
+          "lifecycleChangedAt": "2026-10-24T11:23:36.653180+00:00",
+          "retirementHistory": {
+            "archivedCommitSha": "90375cc08ae0cbfdca5f97fe6406c25f22929509",
+            "candidateCommitSha": "5189f10e66c40071175f927f54db82de6f4ad0cd"
+          },
+          "historyArtifactRef": {
+            "commitSha": "741257837cd36f3225b5820f2f25ed0ed11b2326",
+            "variants": [
+              {
+                "file": "public/illustrations/rukh-ordo-garden-pencil-480.webp",
+                "sha256": "257a6e37c720181a98153b6334e632070e7eb0fc6df71c0a58a3526bb535c4eb"
+              },
+              {
+                "file": "public/illustrations/rukh-ordo-garden-pencil-800.webp",
+                "sha256": "a15551b84b61c6a85f8488769f5d50fa6a42e1d6fc388366ebefa32091ae8a70"
+              },
+              {
+                "file": "public/illustrations/rukh-ordo-garden-pencil-1086.webp",
+                "sha256": "e0133e239b4954593b479e878fad1bd842a5a903a2a0fcdcfb6731d868f89401"
+              }
+            ]
+          }
         }
       ],
-      "lifecycle": "deletion-candidate",
+      "lifecycle": "deleted",
       "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil",
-      "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
-      "lifecycleChangedAt": "2026-10-24T11:22:42Z",
-      "retirementAuthorization": "Explicit user request to remove this illustration completely from the codebase."
+      "lifecycleReason": "Explicit user-authorized removal after archival and reference review; recoverable from Git history.",
+      "lifecycleChangedAt": "2026-10-24T11:23:36.653170+00:00",
+      "retirementAuthorization": "Explicit user request to remove this illustration completely from the codebase.",
+      "retirementHistory": {
+        "archivedCommitSha": "90375cc08ae0cbfdca5f97fe6406c25f22929509",
+        "candidateCommitSha": "5189f10e66c40071175f927f54db82de6f4ad0cd"
+      }
     },
     {
       "illustrationId": "uzbek-tilework-pencil",
