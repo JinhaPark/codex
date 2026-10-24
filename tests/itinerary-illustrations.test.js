@@ -20,7 +20,9 @@ function renderDate(date) {
     renderer.renderItineraryIllustrationExtras(date)].join('');
 }
 
-test('every guide illustration also has one explicit itinerary reference', () => {
+const guideOnly = new Set(['bukhara-kalyan-minaret-pencil','lyabi-hauz-evening-watercolor']);
+
+test('guide illustrations have explicit itinerary references except the selected guide-only views', () => {
   assert.equal(new Set(references.map(day=>day.date)).size, references.length);
   const ids = references.flatMap(referencedIds);
   assert.equal(new Set(ids).size, ids.length, 'One itinerary appearance per shared illustration');
@@ -31,17 +33,20 @@ test('every guide illustration also has one explicit itinerary reference', () =>
     assert.ok(referencedIds(day).every(id=>artwork.some(art=>art.id === id)));
   }
   for (const art of artwork.filter(art=>art.purpose !== 'site-banner' && !art.placement.startsWith('day:'))) {
-    assert.ok(ids.includes(art.id), art.id);
+    assert.equal(ids.includes(art.id), !guideOnly.has(art.id), art.id);
     assert.ok(renderer.renderIllustration(art.placement).includes(`data-illustration="${art.id}"`), 'Canonical guide appearance remains available');
   }
 });
 
-test('Lyabi-Hauz evening moves from October 14 to October 13 without replacing the market image', () => {
-  const id = 'lyabi-hauz-evening-watercolor';
-  assert.ok(idsIn(renderDate('2026-10-13')).includes(id));
-  assert.ok(!idsIn(renderDate('2026-10-14')).includes(id));
-  assert.ok(idsIn(renderDate('2026-10-13')).includes('bukhara-market-sunset-watercolor'));
-  assert.equal(artwork.find(art=>art.id === id).placement, 'day:1:lyabi-hauz');
+test('Bukhara itinerary keeps only the first Kalyan and Lyabi-Hauz illustrations', () => {
+ const day=references.find(d=>d.date==='2026-10-13');
+ assert.deepEqual(day.places['칼랸 미나레트'],['bukhara-poi-kalyan-watercolor']);
+ assert.deepEqual(day.places['라비하우즈'],['lyabi-hauz-portal-watercolor']);
+ const ids=idsIn(renderDate('2026-10-13'));
+ for(const id of guideOnly) assert.ok(!ids.includes(id),id);
+ assert.ok(ids.includes('bukhara-market-sunset-watercolor'));
+ assert.equal(artwork.find(art=>art.id==='lyabi-hauz-evening-watercolor').placement,'bukhara:8:detail');
+ assert.ok(renderer.renderIllustration('bukhara:8:detail').includes('lyabi-hauz-evening-watercolor'));
 });
 
 test('each date renders each illustration once with the original responsive asset and caption', () => {
