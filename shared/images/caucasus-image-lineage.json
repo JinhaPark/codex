@@ -214,9 +214,9 @@
         1920,
         1440
       ],
-      "lifecycle": "active",
-      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
-      "activeRevisionId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-import-r1",
+      "lifecycle": "archived",
+      "placement": null,
+      "activeRevisionId": null,
       "lastPublishedRevisionId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-import-r1",
       "revisions": [
         {
@@ -231,7 +231,7 @@
           "optimizeKey": null,
           "artifactRef": null,
           "status": "legacy-verified",
-          "lifecycle": "active",
+          "lifecycle": "archived",
           "masterAvailability": "unpersisted",
           "validation": {
             "gitBlobShaVerified": true,
@@ -274,9 +274,44 @@
               "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc",
               "gitBlobSha": "99b7869d804ca0d6a266999b8247b8aefd0bdcd8"
             }
-          ]
+          ],
+          "historyArtifactRef": {
+            "commitSha": "800acfcfc039d5811e259fe4aca6f6bf0b53c57b",
+            "variants": [
+              {
+                "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-480.webp",
+                "sha256": "7d9e7b347b923880ea6f319075162add0c4a43182a1193c85186c88b8446ea98",
+                "gitBlobSha": "fbafa31cf0063be7e87aa8c9c8058da2deebac19"
+              },
+              {
+                "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-800.webp",
+                "sha256": "a1f0a25e23f81d6022c4789ddd32f68ee528e92570184b53b88ea0fbb5764ddb",
+                "gitBlobSha": "6d62690b4bb86fef1e2e8289249d2c03afc58d12"
+              },
+              {
+                "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1200.webp",
+                "sha256": "88f7bd671344dc80c56e85a7bfa0ebcbb9b0e25e067c083a203739797d525a11",
+                "gitBlobSha": "f5b1ae7bce81ec94dc51da005b4638ed688c0f10"
+              },
+              {
+                "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1600.webp",
+                "sha256": "9b8345795ecee703cb31dbf3d0e52df99adcf118743bb71d8df716ba3994db12",
+                "gitBlobSha": "b7ca8c09583f4e66cdbe077372af7e08842f667d"
+              },
+              {
+                "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1920.webp",
+                "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc",
+                "gitBlobSha": "99b7869d804ca0d6a266999b8247b8aefd0bdcd8"
+              }
+            ]
+          },
+          "lifecycleReason": "Superseded by edited user-uploaded watercolor image",
+          "lifecycleChangedAt": "2026-10-25T01:14:00+09:00"
         }
-      ]
+      ],
+      "lifecycleReason": "Superseded by edited user-uploaded watercolor image",
+      "lifecycleChangedAt": "2026-10-25T01:14:00+09:00",
+      "replacedByIllustrationId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor"
     },
     {
       "illustrationId": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor",
@@ -611,6 +646,148 @@
               "bytes": 240150,
               "sha256": null,
               "gitBlobSha": "322e898db5bd58c2f5f1f6345d997c9dc713fb52"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor",
+      "travelDate": "2026-05-01",
+      "originalName": "IMG_7196.jpg",
+      "sourceId": "a78375a9419471aeefafd8df134c424257439fdfe9f4d41b7397951922978dfc",
+      "sourceSha256": "a78375a9419471aeefafd8df134c424257439fdfe9f4d41b7397951922978dfc",
+      "sourceArtifactRef": null,
+      "sourceDimensions": [
+        1914,
+        1436
+      ],
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+      "activeRevisionId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-import-r1",
+      "replacesIllustrationId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "style-transfer-and-sign-removal",
+          "historyStatus": "partially-reconstructed-from-user-provided-source",
+          "generatedMasterSha256": "5db08ff9a9667b5a4f1f8448f8d95e38332d56c0988296f6e586210d5a6d9583",
+          "generatedDimensions": [
+            1448,
+            1086
+          ],
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "masterAvailability": "unpersisted",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": true,
+            "fullRecipeRecovered": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+              "width": 1448,
+              "height": 1086,
+              "bytes": 239016,
+              "sha256": "d38525bf3104654ee9a760acea53b474f94bf416ad3cc8d4bfaee462456aea09",
+              "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260504-jvari-monastery-watercolor",
+      "travelDate": "2026-05-04",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-04:destination:jvari-monastery",
+      "activeRevisionId": "caucasus-20260504-jvari-monastery-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260504-jvari-monastery-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260504-jvari-monastery-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-prepared-webp",
+          "historyStatus": "source-provenance-unknown",
+          "generatedMasterSha256": null,
+          "generatedDimensions": null,
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "masterAvailability": "unpersisted",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "fullRecipeRecovered": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+              "width": 1086,
+              "height": 1448,
+              "bytes": 481646,
+              "sha256": null,
+              "gitBlobSha": "a598964b114c39b2524abb7fded4327a24d34107"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260507-vardzia-watercolor",
+      "travelDate": "2026-05-07",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-07:destination:vardzia",
+      "activeRevisionId": "caucasus-20260507-vardzia-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260507-vardzia-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260507-vardzia-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-prepared-webp",
+          "historyStatus": "source-provenance-unknown",
+          "generatedMasterSha256": null,
+          "generatedDimensions": null,
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "masterAvailability": "unpersisted",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "fullRecipeRecovered": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260507-vardzia-watercolor-1448.webp",
+              "width": 1448,
+              "height": 1086,
+              "bytes": 741920,
+              "sha256": null,
+              "gitBlobSha": "42ca51b274b8e37a536effbad65c73ea1811bb56"
             }
           ]
         }

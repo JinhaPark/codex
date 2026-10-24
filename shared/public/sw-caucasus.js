@@ -1,5 +1,5 @@
 const ROOT='/codex/caucasus/';
-const CACHE='ca26-caucasus-v2';
+const CACHE='ca26-caucasus-v3';
 const PREFIX='ca26-caucasus-';
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.add(ROOT)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

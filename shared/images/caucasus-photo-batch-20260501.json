@@ -6,10 +6,10 @@
     "sourceWidth": 1920,
     "sourceHeight": 1440,
     "style": "documentary-photo",
-    "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+    "placement": null,
     "caption": "아제르바이잔 대통령 일함 알리예프 초상 게시판 — 주원 선생님과 닮았다는 현장 인상",
     "alt": "도로변 옥외 게시판에 아제르바이잔 국기와 일함 알리예프 대통령의 초상이 보이는 모습",
-    "status": "prepared-in-pr",
+    "status": "archived-replaced",
     "originalUploadForbidden": true,
     "variants": [
       {
@@ -44,7 +44,8 @@
         "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc",
         "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1920.webp"
       }
-    ]
+    ],
+    "replacedByIllustrationId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor"
   },
   {
     "id": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor",
@@ -86,6 +87,34 @@
         "quality": 64,
         "sha256": "a9b9d76861f1e8d36e17c76d08434c5e3acf81d993da86d4a00a17c40939cd7b",
         "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp"
+      }
+    ]
+  },
+  {
+    "id": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor",
+    "original": "IMG_7196.jpg",
+    "sourceSha256": "a78375a9419471aeefafd8df134c424257439fdfe9f4d41b7397951922978dfc",
+    "sourceWidth": 1914,
+    "sourceHeight": 1436,
+    "generatedWidth": 1448,
+    "generatedHeight": 1086,
+    "generatedMasterSha256": "5db08ff9a9667b5a4f1f8448f8d95e38332d56c0988296f6e586210d5a6d9583",
+    "style": "watercolor",
+    "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+    "caption": "아제르바이잔 대통령 일함 알리예프 — 주원 선생님과 닮았다",
+    "alt": "나무가 있는 도로변의 아제르바이잔 국기와 일함 알리예프 초상 게시판. 왼쪽 보행자 표지판을 제거한 장면",
+    "status": "ready-in-pr",
+    "originalUploadForbidden": true,
+    "replacesImageId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo",
+    "editDescription": "Remove only left blue pedestrian crossing sign and its support; retain the original portrait board, flag, vegetation and perspective.",
+    "variants": [
+      {
+        "file": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 239016,
+        "sha256": "d38525bf3104654ee9a760acea53b474f94bf416ad3cc8d4bfaee462456aea09",
+        "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09"
       }
     ]
   }

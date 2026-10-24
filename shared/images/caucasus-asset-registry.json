@@ -53,66 +53,6 @@
       "sha256": "4ecd350826402996b3618070f0e213e28f1060c4a4b1858ec3c0ed28a1f2b865"
     },
     {
-      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1600.webp",
-      "sourceRootFile": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1600.webp",
-      "date": "2026-05-01",
-      "subject": "azerbaijan-aliyev-portrait",
-      "style": "documentary-photo",
-      "width": 1600,
-      "bytes": 280714,
-      "gitBlobSha": "b7ca8c09583f4e66cdbe077372af7e08842f667d",
-      "placement": null,
-      "sha256": "9b8345795ecee703cb31dbf3d0e52df99adcf118743bb71d8df716ba3994db12"
-    },
-    {
-      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1200.webp",
-      "sourceRootFile": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1200.webp",
-      "date": "2026-05-01",
-      "subject": "azerbaijan-aliyev-portrait",
-      "style": "documentary-photo",
-      "width": 1200,
-      "bytes": 196740,
-      "gitBlobSha": "f5b1ae7bce81ec94dc51da005b4638ed688c0f10",
-      "placement": null,
-      "sha256": "88f7bd671344dc80c56e85a7bfa0ebcbb9b0e25e067c083a203739797d525a11"
-    },
-    {
-      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-1920.webp",
-      "sourceRootFile": "caucasus-20260501-azerbaijan-roadside-portrait-photo-1920.webp",
-      "date": "2026-05-01",
-      "subject": "azerbaijan-aliyev-portrait",
-      "style": "documentary-photo",
-      "width": 1920,
-      "bytes": 233448,
-      "gitBlobSha": "99b7869d804ca0d6a266999b8247b8aefd0bdcd8",
-      "placement": null,
-      "sha256": "d84621d5d1df851505d711eb90697e5e12f3ab51374dd7de73446356800df6bc"
-    },
-    {
-      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-480.webp",
-      "sourceRootFile": "caucasus-20260501-azerbaijan-roadside-portrait-photo-480.webp",
-      "date": "2026-05-01",
-      "subject": "azerbaijan-aliyev-portrait",
-      "style": "documentary-photo",
-      "width": 480,
-      "bytes": 42560,
-      "gitBlobSha": "fbafa31cf0063be7e87aa8c9c8058da2deebac19",
-      "placement": null,
-      "sha256": "7d9e7b347b923880ea6f319075162add0c4a43182a1193c85186c88b8446ea98"
-    },
-    {
-      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo-800.webp",
-      "sourceRootFile": "caucasus-20260501-azerbaijan-roadside-portrait-photo-800.webp",
-      "date": "2026-05-01",
-      "subject": "azerbaijan-aliyev-portrait",
-      "style": "documentary-photo",
-      "width": 800,
-      "bytes": 104554,
-      "gitBlobSha": "6d62690b4bb86fef1e2e8289249d2c03afc58d12",
-      "placement": null,
-      "sha256": "a1f0a25e23f81d6022c4789ddd32f68ee528e92570184b53b88ea0fbb5764ddb"
-    },
-    {
       "file": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp",
       "sourceRootFile": "caucasus-20260501-sheki-caravanserai-courtyard-watercolor-1087.webp",
       "date": "2026-05-01",
@@ -274,6 +214,42 @@
       "bytes": 169878,
       "gitBlobSha": "0623c782a83902e02d170fbc6647ab2d368359be",
       "placement": null
+    },
+    {
+      "file": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor-1448.webp",
+      "date": "2026-05-01",
+      "subject": "azerbaijan-aliyev-portrait",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 239016,
+      "gitBlobSha": "ef66b3bbeb446001d82eeaebcaefce8957c44d09",
+      "placement": "caucasus:2026-05-01:travel-observation:roadside-portrait-board",
+      "sha256": "d38525bf3104654ee9a760acea53b474f94bf416ad3cc8d4bfaee462456aea09"
+    },
+    {
+      "file": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+      "sourceRootFile": "caucasus-20260504-jvari-monastery-watercolor-1086.webp",
+      "date": "2026-05-04",
+      "subject": "jvari-monastery",
+      "style": "watercolor",
+      "width": 1086,
+      "bytes": 481646,
+      "gitBlobSha": "a598964b114c39b2524abb7fded4327a24d34107",
+      "placement": "caucasus:2026-05-04:destination:jvari-monastery",
+      "sha256": null
+    },
+    {
+      "file": "caucasus-20260507-vardzia-watercolor-1448.webp",
+      "sourceRootFile": "caucasus-20260507-vardzia-watercolor-1448.webp",
+      "date": "2026-05-07",
+      "subject": "vardzia",
+      "style": "watercolor",
+      "width": 1448,
+      "bytes": 741920,
+      "gitBlobSha": "42ca51b274b8e37a536effbad65c73ea1811bb56",
+      "placement": "caucasus:2026-05-07:destination:vardzia",
+      "sha256": null
     }
   ]
 }

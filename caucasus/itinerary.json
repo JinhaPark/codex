@@ -155,9 +155,9 @@
       ],
       "photoObservations": [
         {
-          "title": "아제르바이잔 대통령 일함 알리예프 초상 게시판",
-          "description": "도로변 게시판에 아제르바이잔 국기와 일함 알리예프 대통령의 초상이 있습니다. 당시 주원 선생님과 닮았다는 이야기가 나왔습니다.",
-          "imageId": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo"
+          "title": "아제르바이잔 대통령 일함 알리예프",
+          "description": "아제르바이잔 국기를 배경으로 일함 알리예프 대통령의 초상이 게시되어 있습니다.",
+          "imageId": "caucasus-20260501-azerbaijan-aliyev-portrait-watercolor"
         }
       ]
     },
@@ -208,10 +208,6 @@
           "description": "므츠헤타에 있는 조지아 정교회의 주요 성당입니다."
         },
         {
-          "name": "즈바리 수도원",
-          "description": "므츠헤타를 내려다보는 언덕에 자리한 수도원입니다."
-        },
-        {
           "name": "아나누리 성채",
           "description": "호수 가까이에 있는 방어용 성채와 교회 건축을 살펴봅니다."
         },
@@ -229,9 +225,16 @@
       "date": "2026-05-04",
       "country": "조지아",
       "city": "구다우리 · 트빌리시",
-      "summary": "트빌리시의 구시가지와 주요 명소를 둘러보고, 저녁에는 선택한 공연과 연장투어를 즐깁니다.",
+      "summary": "구다우리에서 트빌리시로 돌아오는 길에 즈바리 수도원을 방문한 뒤 구시가지와 주요 명소를 둘러봅니다. 저녁에는 선택한 공연과 연장투어를 즐깁니다.",
       "hotel": "Ramada by Wyndham",
       "places": [
+        {
+          "name": "즈바리 수도원",
+          "description": "므츠헤타를 내려다보는 언덕에 자리한 수도원입니다.",
+          "photoIds": [
+            "caucasus-20260504-jvari-monastery-watercolor"
+          ]
+        },
         {
           "name": "조지아 연대기 기념비",
           "description": "조지아 역사를 기념하는 대형 조형물을 방문합니다."
@@ -337,7 +340,10 @@
       "places": [
         {
           "name": "바르드지아 동굴 도시",
-          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다."
+          "description": "절벽을 파서 만든 복합 동굴 거주·종교 공간을 둘러봅니다.",
+          "photoIds": [
+            "caucasus-20260507-vardzia-watercolor"
+          ]
         },
         {
           "name": "아할치헤 라바티 성",
