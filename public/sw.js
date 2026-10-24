@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v28-mobile-shopping-table';
+const CACHE = 'ca26-pages-v29-mobile-shopping-table';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
