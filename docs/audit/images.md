@@ -32,7 +32,6 @@
 | mountain-orchards-watercolor | `geography:1:0` | 수채화 | 480×640 / 103.2; 800×1067 / 237.3; 1080×1440 / 261.1 | 설산 아래 가을빛 농경지 |
 | bukhara-poi-kalyan-watercolor | `bukhara:7:1` | 수채화 | 480×270 / 53.4; 800×450 / 131.2; 1200×675 / 234.4 | 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 |
 | autumn-birch-walk-watercolor | `day:6:tip` | 수채화 | 480×640 / 124.4; 800×1067 / 235.8; 1086×1448 / 340.1 | Karven Four Seasons 리조트의 자작나무길 |
-| rukh-ordo-garden-pencil | `cholponata:9:0` | 색연필화 | 480×640 / 128.2; 800×1067 / 245.6; 1086×1448 / 385.5 | 촐폰아타 루흐 오르도 문화센터의 조각 정원 |
 | uzbek-tilework-pencil | `comparative:0:0` | 색연필화 | 480×270 / 48.9; 800×450 / 132.3; 1200×675 / 240.1 | 아치와 벽면을 채운 청색 기하학 문양 |
 | arabic-manuscript-pencil | `tashkent:7:0` | 색연필화 | 480×640 / 91.8; 800×1067 / 247.3; 1080×1440 / 248.2 | 아랍 문자 필사본 — 검정·붉은 필기와 제본 |
 | street-classic-car-pencil | `day:4:tip` | 색연필화 | 480×640 / 112.4; 800×1067 / 235.3; 1086×1448 / 317.0 | 타슈켄트 거리 — 모스크비치(Moskvich) 세단 |

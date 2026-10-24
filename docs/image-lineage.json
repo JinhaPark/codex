@@ -194,8 +194,8 @@
       "sourceAvailability": "not-recovered",
       "sourceWidth": 1152,
       "sourceHeight": 1536,
-      "activeRevisionId": "legacy-rukh-ordo-garden-pencil",
-      "placement": "cholponata:9:0",
+      "activeRevisionId": null,
+      "placement": null,
       "revisions": [
         {
           "revisionId": "legacy-rukh-ordo-garden-pencil",
@@ -239,11 +239,16 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "User explicitly requested complete removal; the lakeside illustration remains published.",
+          "lifecycleChangedAt": "2026-10-24T11:17:42.383191+00:00"
         }
       ],
-      "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil"
+      "lifecycle": "archived",
+      "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil",
+      "lifecycleReason": "User explicitly requested complete removal; the lakeside illustration remains published.",
+      "lifecycleChangedAt": "2026-10-24T11:17:42.383191+00:00",
+      "retirementAuthorization": "Explicit user request to remove this illustration completely from the codebase."
     },
     {
       "illustrationId": "uzbek-tilework-pencil",
