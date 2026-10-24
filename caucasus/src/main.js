@@ -23,7 +23,7 @@ function renderPhotoNote(id) {
 }
 function render(){
  const d=data.days[day], tours=data.optionalTours.filter(t=>(d.optionalTourIds||[]).includes(t.id));
- root.innerHTML=`<header class="site-banner" style="background:linear-gradient(145deg,#1b3c48,#5d7e77)"><div class="banner-copy"><div class="eyebrow">코카서스 여행기 · 2026.4.29—5.11</div><h1>코카서스 <em>3국 13일</em></h1><p>아제르바이잔 · 조지아 · 아르메니아</p><p style="margin-top:12px"><a href="../" style="color:#fff">← 여행 선택</a></p></div></header>
+ root.innerHTML=`<header class="site-banner" style="background:linear-gradient(145deg,#1b3c48,#5d7e77)"><div class="banner-copy"><div class="eyebrow">코카서스 여행기 · 2026.4.29—5.11</div><h1>코카서스 <em>3국 13일</em></h1><p>아제르바이잔 · 조지아 · 아르메니아</p></div></header>
  <nav aria-label="여행 메뉴">${[['days','일정'],['guide','여행 해설'],['shopping','쇼핑'],['list','준비']].map(([k,n])=>`<button data-tab="${k}" class="${tab===k?'active':''}">${n}</button>`).join('')}</nav>
  <main>${tab==='days'?`
  <div class="days" aria-label="날짜 선택">${data.days.map((x,i)=>`<button type="button" data-day="${i}" class="${day===i?'selected':''}" title="${esc(date(x.date))} ${esc(x.city)}" aria-label="${i+1}일차 ${esc(date(x.date))}" ${day===i?'aria-current="date"':''}><small>${x.date.slice(5).replace('-','/')}</small><strong>${i+1}</strong></button>`).join('')}</div>
