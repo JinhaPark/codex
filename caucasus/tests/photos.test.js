@@ -18,7 +18,8 @@ function decodeDimensions(bytes){
 }
 test('all uploaded WebP files are migrated intact and follow the naming rule',()=>{
  const files=fs.readdirSync(new URL('../../shared/public/illustrations/',import.meta.url));
- assert.equal(registry.assets.length,21);
+ const referenced=catalog.photos.flatMap(photo=>photo.variants.map(v=>v.file)).sort();
+ assert.deepEqual(registry.assets.map(asset=>asset.file).sort(),referenced,'Registry must match every published catalogue variant');
  const ids=new Set();
  for(const asset of registry.assets){
    assert.match(asset.file,/^caucasus-\d{8}-[a-z0-9-]+-(?:watercolor|colored-pencil|documentary-photo)-\d+\.webp$/);
@@ -30,15 +31,16 @@ test('all uploaded WebP files are migrated intact and follow the naming rule',()
    if(asset.sha256)assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
    assert.ok(files.includes(asset.file));
  }
- const oversized=registry.assets.filter(asset=>asset.bytes>250000).map(a=>a.file).sort();
- assert.deepEqual(oversized,[
-  'caucasus-20260430-baku-maiden-tower-watercolor-1086.webp',
-  'caucasus-20260430-gobustan-entrance-sign-watercolor-1448.webp',
-  'caucasus-20260430-gobustan-rock-landscape-watercolor-1536.webp',
-  'caucasus-20260504-jvari-monastery-watercolor-1086.webp',
-  'caucasus-20260507-vardzia-watercolor-1448.webp',
-  'caucasus-20260501-sheki-street-watercolor-1200.webp'
- ].sort(),'Track uploaded images still awaiting re-encoding to the skill\'s 250 KB budget');
+ const exceptions=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-oversize-exceptions.json',import.meta.url)));
+ assert.equal(exceptions.byteLimit,250000);
+ const oversized=registry.assets.filter(asset=>asset.bytes>exceptions.byteLimit).map(a=>a.file).sort();
+ const approved=exceptions.files.map(a=>a.file).sort();
+ assert.deepEqual(oversized,approved,'Every oversize published derivative must be explicitly registered');
+ for(const exception of exceptions.files){
+   const asset=registry.assets.find(a=>a.file===exception.file);
+   assert.ok(asset,exception.file);
+   assert.equal(asset.bytes,exception.bytes);
+ }
 });
 test('all photo placements resolve and optional activities are scoped',()=>{
  const known=new Set(catalog.photos.map(p=>p.id));

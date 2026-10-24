@@ -29,7 +29,7 @@ Caucasus content is initially transcribed from the user's printed itinerary; sub
 
 ## Publishing and verification
 
-The repository root contains only the two-journey landing page. The root-level WebP uploads were moved to `shared/public/illustrations/` using their Git blob SHAs; no originals were added. `shared/images/caucasus-asset-registry.json` records each file's prior root name, new standardized filename, byte count and content-identifying Git blob SHA. `shared/images/caucasus-photo-catalog.json` links the shared files to the appropriate travel day and captions. Five files exceeding the 250 KB optimization budget are documented as exceptions awaiting re-encoding. `caucasus/tests/photos.test.js` verifies uploaded WebP files and their hashes.
+The repository root contains only the two-journey landing page. The root-level WebP uploads were moved to `shared/public/illustrations/` using their Git blob SHAs; no originals were added. `shared/images/caucasus-asset-registry.json` records each file's prior root name, new standardized filename, byte count and content-identifying Git blob SHA. `shared/images/caucasus-photo-catalog.json` links the shared files to the appropriate travel day and captions. Existing files exceeding the 250 KB optimization target are tracked explicitly in `shared/images/caucasus-oversize-exceptions.json`; they require a separate lossless-to-content-compliant re-encoding review. `caucasus/tests/photos.test.js` verifies uploaded WebP files and their hashes.
 
 ```sh
 npm test

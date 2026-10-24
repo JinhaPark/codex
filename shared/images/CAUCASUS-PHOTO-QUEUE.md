@@ -22,7 +22,7 @@ The root-level WebP uploads in GitHub main (26 files) are copied to the shared p
 
 ## Oversize import audit
 
-Five manually uploaded, already-published WebP blobs exceed the 250,000-byte target for optimized variants. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test records the five filenames and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.
+Published WebP blobs that exceed the 250,000-byte target are listed in `shared/images/caucasus-oversize-exceptions.json`. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test checks the current allowlist and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.
 
 ## Aliyev replacement and newly imported images (2026-10-25)
 
