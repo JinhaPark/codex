@@ -168,6 +168,6 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .site-title-line h1 em{font-style:normal;color:#9b5037;font-weight:750}
 .site-title-line p{flex:none;margin:0;opacity:1;line-height:1.4;font-size:clamp(12px,1.1vw,16px);white-space:nowrap;color:#425663}
 .site-title-line:focus-visible{outline:2px solid #9b5037;outline-offset:3px}
-@media(max-width:600px){.site-banner{height:230px}.site-banner-art{object-position:68% 42%}.site-title-band{padding:14px 18px}.site-title-line{margin:0;gap:20px}.site-title-line h1{font-size:27px}.site-title-line p{font-size:13px}}
+@media(max-width:600px){.site-banner{height:230px}.site-banner-art{object-position:100% 42%}.site-title-band{padding:14px 18px}.site-title-line{margin:0;gap:20px}.site-title-line h1{font-size:27px}.site-title-line p{font-size:13px}}
 
 .guide-inline-body p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:18px;line-height:1.9}

@@ -5,6 +5,8 @@ const fs = require('node:fs'), path = require('node:path'), http = require('node
 const {chromium} = require('playwright');
 const repo = path.resolve(__dirname, '..'), qa = path.resolve(repo, '../qa-guide-reader');
 const manifest = JSON.parse(fs.readFileSync(path.join(repo, 'src/illustrations.json')));
+const itineraryRefs = JSON.parse(fs.readFileSync(path.join(repo, 'src/itinerary-illustrations.json')));
+const itinerary = JSON.parse(fs.readFileSync(path.join(repo, 'src/itinerary.json')));
 const coverage = JSON.parse(fs.readFileSync(path.join(repo, 'docs/audit/destination-images.json')));
 const currentCache = fs.readFileSync(path.join(repo, 'public/sw.js'), 'utf8').match(/const CACHE = '([^']+)'/)[1];
 const mime = {'.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.css':'text/css; charset=utf-8', '.webp':'image/webp', '.json':'application/json', '.svg':'image/svg+xml'};
@@ -43,11 +45,24 @@ async function decodeFigure(page, figure) {
  }
  const page = await context.newPage(), errors = [], seen = new Map(), maps = new Set();
  page.on('pageerror', e=>errors.push(e.message));await page.goto(base);await page.evaluate(()=>document.fonts.ready);
+ // A focused path for date-placement and caption edits, without rerunning unrelated flows.
+ if (process.argv.includes('--itinerary-only')) {
+  for (const width of [375,390,430]) {
+   await page.setViewportSize({width,height:812});await page.locator('[data-tab="days"]').click();
+   for (const day of [1,2,5]) {
+    await page.locator(`[data-day="${day}"]`).click();await fits(page,`focused itinerary ${day} at ${width}`);await artwork('day:'+day,false);
+    assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),day===1?1:0);
+    if(day===1) {await decodeFigure(page,page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));await page.screenshot({path:path.join(qa,`lyabi-hauz-oct13-${width}.png`)});}
+    if(day===5) {const figure=page.locator('[data-illustration="cholponata-balbal-pencil"]');assert.equal(await figure.locator('figcaption').textContent(),'촐폰아타 암각화 구역 — 발발 석상');await decodeFigure(page,figure);await page.screenshot({path:path.join(qa,`balbal-caption-${width}.png`)});}
+   }
+  }
+  assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,scope:'itinerary-only',viewports:[375,390,430],days:['2026-10-13','2026-10-14','2026-10-17'],javascriptErrors:errors}));return;
+ }
  const articles = [];
  await page.locator('[data-tab="guide"]').click();
  for (const category of ['core','cities','kazakhstan']) {
-  await page.locator(`[data-guide-category="${category}"]`).click();
-  for (const link of await page.locator('[data-guide-open]').all()) articles.push({category,id:await link.getAttribute('data-guide-open')});
+  
+  for (const link of await page.locator(`#guide-group-${category} + .guide-book-list [data-guide-inline]`).all()) articles.push({category,id:await link.getAttribute('data-guide-inline')});
  }
  assert.equal(articles.length,16);
  // The banner is a decorative header asset, not a destination figure.
@@ -66,7 +81,10 @@ async function decodeFigure(page, figure) {
  if(process.argv.includes('--banner-only')) {assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,scope:'banner-only',viewports:[375,390,430,768,1280,1920],javascriptErrors:errors}));return;}
  await page.setViewportSize({width:375,height:812});
  async function artwork(state, record) {
-  for (const f of await page.locator('[data-illustration]').all()) {
+  const allFigures = await page.locator('[data-illustration]').all();
+  const stateIds = await page.locator('[data-illustration]').evaluateAll(nodes=>nodes.map(n=>n.dataset.illustration));
+  assert.equal(new Set(stateIds).size,stateIds.length,state+' has no duplicate figures');
+  for (const f of allFigures) {
    const id = await f.getAttribute('data-illustration'), art = manifest.find(a=>a.id===id);assert.ok(art,id);
    if(record) seen.set(id,[...(seen.get(id)||[]),state]);
    assert.equal(await f.locator('figcaption').textContent(),art.caption);
@@ -117,16 +135,28 @@ async function decodeFigure(page, figure) {
   await page.locator('[data-tab="list"]').click();await fits(page,'preparation '+width);
  }
  assert.ok(Object.entries(narrativeWords).every(([id,n])=>id==='history'||narrativeWords.history>n));
- assert.deepEqual([...seen].filter(([,states])=>states.length!==1),[],'Unique illustration locations across article/day/tab states');
+ for(const art of manifest.filter(a=>a.purpose!=='site-banner')) {
+  const states=seen.get(art.id)||[];
+  const day=itineraryRefs.find(d=>[...Object.values(d.places).flat(),...d.extras.flatMap(g=>g.ids)].includes(art.id));
+  const expectedDay=day ? 'day:'+itinerary.days.findIndex(d=>d.date===day.date) : 'day:'+art.placement.split(':')[1];
+  assert.equal(states.filter(s=>s===expectedDay).length,1,art.id+' occurs once on the mapped day');
+  assert.equal(states.filter(s=>s.startsWith('day:')).length,1,art.id+' has no unintended itinerary duplicates');
+  assert.equal(states.length,art.placement.startsWith('day:')?1:2,art.id+' preserves one guide appearance and one authorized itinerary appearance');
+ }
  assert.deepEqual([...seen.keys()].sort(),manifest.filter(a=>a.purpose!=='site-banner').map(a=>a.id).sort());
  for(const row of coverage) for(const id of row.imageIds) assert.ok(seen.has(id)||id===banner.id,row.place+' coverage');
  let decodedVariants=0;
  for(const art of manifest) for(const v of art.variants) {const dims=await page.evaluate(async url=>{const img=new Image();img.src=url;await img.decode();return [img.naturalWidth,img.naturalHeight];},base+'illustrations/'+v.file);assert.deepEqual(dims,[v.width,v.height]);decodedVariants++;}
+ await page.locator('[data-tab="days"]').click();await page.locator('[data-day="1"]').click();
+ assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),1);
+ await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(qa,'lyabi-hauz-oct13-430.png')});
+ await page.locator('[data-day="2"]').click();assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),0);
+ await page.locator('[data-day="5"]').click();const balbal=page.locator('[data-illustration="cholponata-balbal-pencil"]');assert.equal(await balbal.locator('figcaption').textContent(),'촐폰아타 암각화 구역 — 발발 석상');await decodeFigure(page,balbal);await page.screenshot({path:path.join(qa,'balbal-caption-430.png')});
  // User journey: list -> article -> section -> back -> reopen, tab switch and reload.
- await page.goto(base+'#guide/cities');await settle(page);await page.locator('[data-guide-open="bukhara-history"]').click();await settle(page);
+ await page.goto(base+'#guide/cities');await settle(page);await openArticle(page,base,'cities','bukhara-history');
  await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').nth(2).click();await page.locator('[data-reader-section]').nth(2).scrollIntoViewIfNeeded();await page.evaluate(()=>scrollBy(0,150));
  const before=await page.evaluate(()=>scrollY);
- await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-category="cities"]').getAttribute('aria-pressed'),'true');
+ await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-inline]').count(),16);
  await page.goBack();await settle(page);assert.ok(await page.locator('[data-reader-section]').nth(2).evaluate(n=>n.open));assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Back restores reading position');
  await page.locator('[data-tab="list"]').click();await page.locator('[data-check="0"]').check();await page.locator('[data-tab="guide"]').click();await settle(page);
  assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Tab switch restores reading position');
@@ -137,7 +167,7 @@ async function decodeFigure(page, figure) {
  await page.locator('[data-guide-toc]').click();await page.locator('[data-guide-jump]').last().click();await settle(page);
  await page.locator('[data-guide-toc]').click();await page.screenshot({path:path.join(qa,'toc-430.png')});await page.keyboard.press('Escape');
  await page.goto(base+'#guide/cities');await settle(page);await page.screenshot({path:path.join(qa,'library-430.png')});
- await page.locator('[data-guide-open="bukhara-history"]').click();await settle(page);await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').first().click();await page.evaluate(()=>scrollTo(0,document.querySelector('main').offsetTop-60));await page.screenshot({path:path.join(qa,'bukhara-430.png')});
+ await openArticle(page,base,'cities','bukhara-history');await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').first().click();await page.evaluate(()=>scrollTo(0,document.querySelector('main').offsetTop-60));await page.screenshot({path:path.join(qa,'bukhara-430.png')});
  // Large text, keyboard focus and blocked/corrupt storage keep the reader usable.
  await page.addStyleTag({content:'.guide-reader p,.guide-reader h4,.guide-book p{font-size:36px!important}.guide-reader summary{font-size:32px!important}'});await fits(page,'large text');
  await page.goto(base+'#history-almaty');assert.equal(await page.locator('[data-guide-article]').getAttribute('data-guide-article'),'history-almaty');
@@ -151,10 +181,12 @@ async function decodeFigure(page, figure) {
  await sw.reload();await sw.locator('[data-banner]').evaluate(img=>img.decode());
  const visited=[];
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all()){visited.push({id:await f.getAttribute('data-illustration'),article:id,category});await decodeFigure(sw,f);}}
+ await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
  await swContext.setOffline(true);await sw.reload();await sw.locator('[data-banner]').evaluate(img=>img.decode());
+ await sw.locator('[data-tab="days"]').click();await sw.locator('[data-day="1"]').click();await decodeFigure(sw,sw.locator('[data-illustration="lyabi-hauz-evening-watercolor"]'));
  for(const {id,category} of articles) {await openArticle(sw,base,category,id);for(const f of await sw.locator('[data-illustration]').all())await decodeFigure(sw,f);}
  await sw.locator('[data-guide-collapse]').click();await sw.locator('[data-guide-toc]').click();await sw.locator('[data-guide-jump]').last().click();await settle(sw);assert.ok(await sw.locator('[data-reader-section]').last().evaluate(n=>n.open));
  assert.deepEqual(errors,[]);
- const result={passed:true,checkedAt:new Date().toISOString(),browser:await browser.version(),viewports:[375,390,430],articles:articles.length,dayStates:10,coarseSectionsMax:4,images:seen.size,bannerResponsiveAndOffline:true,titleViewports:[375,390,430,768,1280,1920],decodedVariants,mapLinks:maps.size,narrativeWords,readingPositionBackTabReload:true,tocOpensAndClearsStickyBars:true,escapeClosesDialog:true,storageUnavailable:true,legacyLinks:true,checklistPersistence:true,fxFixture:true,voiceFallback:true,offlineAllArticlesAndVisitedGuideImages:true,cacheUpgrade:currentCache,otherCachePreserved:true,javascriptErrors:errors,limits:['Local production build in Chromium, not an actual iPhone Safari or installed home-screen PWA','Live FX service not tested; deterministic fixture used','Cache upgrade uses current app with old cache name, not historical deployed bytes','Unvisited images are not guaranteed offline']};
+ const result={passed:true,checkedAt:new Date().toISOString(),browser:await browser.version(),viewports:[375,390,430],articles:articles.length,dayStates:10,coarseSectionsMax:4,images:seen.size,itineraryMappedIllustrations:itineraryRefs.flatMap(d=>[...Object.values(d.places).flat(),...d.extras.flatMap(g=>g.ids)]).length,lyabiHauzOnOctober13:true,balbalAreaCaption:true,decodedVariants,mapLinks:maps.size,narrativeWords,readingPositionBackTabReload:true,tocOpensAndClearsStickyBars:true,escapeClosesDialog:true,storageUnavailable:true,legacyLinks:true,checklistPersistence:true,fxFixture:true,voiceFallback:true,offlineAllArticlesAndVisitedGuideImages:true,cacheUpgrade:currentCache,otherCachePreserved:true,javascriptErrors:errors,limits:['Local production build in Chromium, not an actual iPhone Safari or installed home-screen PWA','Live FX service not tested; deterministic fixture used','Cache upgrade uses current app with old cache name, not historical deployed bytes','Unvisited images are not guaranteed offline']};
  fs.writeFileSync(path.join(qa,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
