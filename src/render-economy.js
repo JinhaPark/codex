@@ -39,8 +39,7 @@ export function renderKumtor(data = kumtor) {
     <dt>매출/GDP · 부가가치 기여율 아님</dt><dd>약 ${formatEconomyNumber(revenueToGdpPct(data), 1, 1)}%</dd>
     <dt>세금·의무납부금</dt><dd>약 ${money(data.taxesMandatoryPaymentsUsd, 1e8, 0)}억 원</dd>
     <dt>실적 발표에 포함된 배당액</dt><dd>약 ${money(data.reportedDividendUsd, 1e8, 0)}억 원</dd></dl>
-    <p>${escapeHtml(data.dividendNote)} GDP는 ${escapeHtml(data.gdpStatus)}입니다. 회사 실적 발표는 2026-03-13, 감사·배당 발표는 2026-04-09입니다.</p>
-    <p>매출은 중간투입 비용을 차감하기 전 판매수입이며 수출액과도 같지 않습니다. 2025년 금 산업의 비교 가능한 확정 부가가치 기여율은 확인하지 못했습니다.</p>
+    <p>배당은 발표액, GDP는 IMF의 2025년 추계입니다.</p>
   </details>`;
 }
 export function renderEconomy(data = economy) {
