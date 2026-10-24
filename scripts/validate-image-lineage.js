@@ -9,7 +9,7 @@ const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
 // Pure validation: callers supply byte readers; no mutation, network or image generation.
-export function validateImageLineage({ manifest, lineage, readFile, previous, readHistory }) {
+export function validateImageLineage({ manifest, lineage, readFile, previous, readHistory, isAncestor }) {
   const errors = [], warnings = [];
   const check = (ok, code, at) => { if (!ok) errors.push(`${code}: ${at}`); };
   const warn = (code, at) => warnings.push(`${code}: ${at}`);
@@ -158,20 +158,44 @@ export function validateImageLineage({ manifest, lineage, readFile, previous, re
   }
   if (previous) {
     const transitions = { active: ['active', 'archived'], archived: ['archived', 'active', 'deletion-candidate'], 'deletion-candidate': ['deletion-candidate', 'archived', 'deleted'], deleted: ['deleted'] };
-    const transition = (old, next, at) => {
-      check(transitions[old.lifecycle]?.includes(next.lifecycle), 'illegal-lifecycle-transition', at);
+    // A PR can contain several real retirement commits. Verify their snapshots
+    // and ancestry instead of treating the PR's base-to-head diff as one step.
+    const retirementVerified = (old, next, id, revisionId) => {
+      const proof = next.retirementHistory;
+      if (!proof || typeof readHistory !== 'function' || typeof isAncestor !== 'function') return false;
+      const {archivedCommitSha, candidateCommitSha} = proof;
+      if (![archivedCommitSha, candidateCommitSha].every(s => /^[a-f0-9]{40}$/.test(s || '')) || archivedCommitSha === candidateCommitSha) return false;
+      try {
+        if (!isAncestor(archivedCommitSha, candidateCommitSha) || !isAncestor(candidateCommitSha, 'HEAD')) return false;
+        const snapshots = [archivedCommitSha, candidateCommitSha].map(sha => JSON.parse(readHistory(sha, 'docs/image-lineage.json')));
+        const records = snapshots.map(snapshot => snapshot.images.find(image => image.illustrationId === id));
+        if (records.some(image => !image || image.activeRevisionId !== null || image.placement !== null)) return false;
+        const stages = records.map(image => revisionId ? image.revisions.find(r => r.revisionId === revisionId) : image);
+        if (!stages[0] || !stages[1] || stages[0].lifecycle !== 'archived' || stages[1].lifecycle !== 'deletion-candidate') return false;
+        const sequence = [old, ...stages, next];
+        const time = item => Date.parse(item.lifecycleChangedAt);
+        if (sequence.slice(1).some(item => !item.lifecycleReason?.trim() || !Number.isFinite(time(item)))) return false;
+        if (!(time(stages[0]) < time(stages[1]) && time(stages[1]) < time(next))) return false;
+        if (Number.isFinite(time(old)) && time(old) >= time(stages[0])) return false;
+        const keys = revisionId ? ['revisionId', 'sourceId', 'parentRevisionId', 'outputSha256', 'variants', 'recipeKey', 'optimizeKey'] : ['illustrationId', 'sourceId', 'lastPublishedRevisionId'];
+        return stages.every(stage => keys.every(key => equal(stage[key], old[key]))) && keys.every(key => equal(next[key], old[key]));
+      } catch { return false; }
+    };
+    const transition = (old, next, at, id, revisionId) => {
+      check(transitions[old.lifecycle]?.includes(next.lifecycle) ||
+        (['active', 'archived'].includes(old.lifecycle) && next.lifecycle === 'deleted' && retirementVerified(old, next, id, revisionId)), 'illegal-lifecycle-transition', at);
       if (old.lifecycle !== next.lifecycle) check(Boolean(next.lifecycleReason?.trim()) && Number.isFinite(Date.parse(next.lifecycleChangedAt)) && next.lifecycleChangedAt !== old.lifecycleChangedAt, 'lifecycle-audit-required', at);
     };
     for (const old of previous.images) {
       const next = byId.get(old.illustrationId);
       check(Boolean(next), 'image-tombstone-removed', old.illustrationId);
       if (!next) continue;
-      transition(old, next, old.illustrationId);
+      transition(old, next, old.illustrationId, old.illustrationId);
       for (const before of old.revisions) {
         const after = next.revisions.find(r => r.revisionId === before.revisionId);
         check(Boolean(after), 'revision-tombstone-removed', before.revisionId);
         if (!after) continue;
-        transition(before, after, before.revisionId);
+        transition(before, after, before.revisionId, old.illustrationId, before.revisionId);
         // Preserve completed history; lifecycle/recovery annotations may evolve.
         const immutable = ['parentRevisionId', 'sourceId', 'illustrationId', 'operation', 'recipe', 'recipeKey', 'outputSha256', 'variants', 'optimizeKey', 'optimizationRecipe', 'createdAt', 'historyStatus'];
         if (publishable.includes(before.status)) check(after.status === before.status || (before.status === 'validated' && after.status === 'approved'), 'completed-status-regressed', before.revisionId);

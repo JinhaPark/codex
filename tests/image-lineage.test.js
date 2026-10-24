@@ -14,6 +14,9 @@ const base = process.env.IMAGE_LINEAGE_BASE || 'HEAD';
 const previous = JSON.parse(git(['show', `${base}:docs/image-lineage.json`]));
 const run = (data = lineage, published = manifest, baseline = previous, reader = read) => validateImageLineage({
   lineage: data, manifest: published, previous: baseline, readFile: reader,
+  isAncestor: (before, after) => {
+    try { git(['merge-base', '--is-ancestor', before, after]); return true; } catch { return false; }
+  },
   readHistory: (commit, path) => {
     assert.match(commit || '', /^[a-f0-9]{40}$/);
     return git(['show', `${commit}:${path}`]);
@@ -144,4 +147,38 @@ test('verified edit replacement archives its actual parent and switches publicat
   parent.lifecycle = 'archived';
   child.recipe.parentOutputSha256 = '0'.repeat(64);
   assert.ok(run(data, published).errors.some(e => e.startsWith('parent-output-hash:')));
+});
+
+test('multi-commit retirement requires actual ordered ancestor snapshots', () => {
+  const data = structuredClone(lineage);
+  const image = data.images.find(i => i.retirementHistory);
+  assert.ok(image, 'The retired image carries its intermediate Git commits');
+  const proof = image.retirementHistory;
+  const retirementPrevious = JSON.parse(git(['show', `${image.revisions[0].historyArtifactRef.commitSha}:docs/image-lineage.json`]));
+  for (const change of [
+    () => { delete image.retirementHistory; },
+    () => { image.retirementHistory = {archivedCommitSha: proof.candidateCommitSha, candidateCommitSha: proof.archivedCommitSha}; },
+    () => { image.retirementHistory = {...proof, candidateCommitSha: '0'.repeat(40)}; },
+  ]) {
+    change();
+    assert.ok(run(data, manifest, retirementPrevious).errors.some(e => e.startsWith('illegal-lifecycle-transition:')));
+  }
+});
+
+test('retirement snapshot evidence cannot change image identity or keep a placement', () => {
+  const image = lineage.images.find(i => i.retirementHistory);
+  const retirementPrevious = JSON.parse(git(['show', `${image.revisions[0].historyArtifactRef.commitSha}:docs/image-lineage.json`]));
+  for (const mutate of [i => {i.placement = 'still-published';}, i => {i.sourceId = '0'.repeat(64);}]) {
+    const result = validateImageLineage({lineage, manifest, previous:retirementPrevious, readFile:read,
+      isAncestor: () => true,
+      readHistory: (commit, path) => {
+        const bytes = git(['show', `${commit}:${path}`]);
+        if (path !== 'docs/image-lineage.json') return bytes;
+        const snapshot = JSON.parse(bytes);
+        mutate(snapshot.images.find(i => i.illustrationId === image.illustrationId));
+        return Buffer.from(JSON.stringify(snapshot));
+      },
+    });
+    assert.ok(result.errors.some(e => e.startsWith('illegal-lifecycle-transition:')));
+  }
 });

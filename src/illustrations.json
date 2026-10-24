@@ -111,41 +111,6 @@
     "captionProvenance": "사용자가 제공한 숙소명과 수종"
   },
   {
-    "id": "rukh-ordo-garden-pencil",
-    "original": "IMG_8981.jpeg",
-    "style": "colored-pencil",
-    "placement": "cholponata:9:0",
-    "caption": "촐폰아타 루흐 오르도 문화센터의 조각 정원",
-    "alt": "촐폰아타 루흐 오르도 문화센터의 산과 키 큰 나무, 종이 걸린 정자와 종교 건물, 조각",
-    "sourceWidth": 1152,
-    "sourceHeight": 1536,
-    "width": 1086,
-    "height": 1448,
-    "variants": [
-      {
-        "width": 480,
-        "height": 640,
-        "bytes": 128224,
-        "quality": 84,
-        "file": "rukh-ordo-garden-pencil-480.webp"
-      },
-      {
-        "width": 800,
-        "height": 1067,
-        "bytes": 245614,
-        "quality": 74,
-        "file": "rukh-ordo-garden-pencil-800.webp"
-      },
-      {
-        "width": 1086,
-        "height": 1448,
-        "bytes": 385512,
-        "quality": 72,
-        "file": "rukh-ordo-garden-pencil-1086.webp"
-      }
-    ]
-  },
-  {
     "id": "uzbek-tilework-pencil",
     "original": "IMG_8704.jpeg",
     "style": "colored-pencil",
