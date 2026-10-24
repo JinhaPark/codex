@@ -212,7 +212,10 @@
         },
         {
           "name": "아나누리 성채",
-          "description": "호수 가까이에 있는 방어용 성채와 교회 건축을 살펴봅니다."
+          "description": "호수 가까이에 있는 방어용 성채와 교회 건축을 살펴봅니다.",
+          "photoIds": [
+            "caucasus-20260503-ananuri-overview-watercolor"
+          ]
         },
         {
           "name": "게르게티 츠민다 사메바 교회",
@@ -221,6 +224,18 @@
         {
           "name": "러시아·조지아 우정 기념비",
           "description": "대코카서스 산악 도로변의 전망 지점입니다."
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "카즈베기 산악지대에서 촬영한 인물 사진",
+          "description": "카즈베기 산악지대에서 촬영한 인물 사진을(를) 담은 여행 사진입니다.",
+          "imageId": "caucasus-20260503-kazbegi-portrait-watercolor"
+        },
+        {
+          "title": "방문한 수도원 내부의 성화",
+          "description": "방문한 수도원 내부의 성화을(를) 담은 여행 사진입니다.",
+          "imageId": "caucasus-20260503-monastery-fresco-watercolor"
         }
       ]
     },
@@ -270,6 +285,18 @@
       "optionalTourIds": [
         3,
         4
+      ],
+      "photoObservations": [
+        {
+          "title": "트빌리시 케이블카 승강장",
+          "description": "트빌리시 케이블카 승강장을(를) 담은 여행 사진입니다.",
+          "imageId": "caucasus-20260504-tbilisi-cablecar-station-watercolor"
+        },
+        {
+          "title": "트빌리시 야경",
+          "description": "트빌리시 야경을(를) 담은 여행 사진입니다.",
+          "imageId": "caucasus-20260504-tbilisi-nightview-watercolor"
+        }
       ]
     },
     {
@@ -281,15 +308,24 @@
       "places": [
         {
           "name": "하흐파트 수도원",
-          "description": "아르메니아 중세 종교 건축을 보여주는 세계유산 수도원입니다."
+          "description": "아르메니아 중세 종교 건축을 보여주는 세계유산 수도원입니다.",
+          "photoIds": [
+            "caucasus-20260505-haghpat-monastery-watercolor"
+          ]
         },
         {
           "name": "세반 수도원",
-          "description": "세반 호수 주변의 아르메니아 기독교 유적입니다."
+          "description": "세반 호수 주변의 아르메니아 기독교 유적입니다.",
+          "photoIds": [
+            "caucasus-20260505-sevan-monastery-watercolor"
+          ]
         },
         {
           "name": "세반 호수",
-          "description": "고지대에 펼쳐진 큰 담수호의 경치를 감상합니다."
+          "description": "고지대에 펼쳐진 큰 담수호의 경치를 감상합니다.",
+          "photoIds": [
+            "caucasus-20260505-sevan-lake-watercolor"
+          ]
         }
       ]
     },

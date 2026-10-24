@@ -435,6 +435,150 @@
           "sha256": null
         }
       ]
+    },
+    {
+      "id": "caucasus-20260503-ananuri-overview-watercolor",
+      "date": "2026-05-03",
+      "caption": "아나누리 성채",
+      "alt": "아나누리 성채",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-03:destination:ananuri",
+      "variants": [
+        {
+          "file": "caucasus-20260503-ananuri-overview-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 508322,
+          "gitBlobSha": "5aa056bc85431d2c4797345f3d57f686384dc732",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260503-kazbegi-portrait-watercolor",
+      "date": "2026-05-03",
+      "caption": "카즈베기 산악지대에서 촬영한 인물 사진",
+      "alt": "카즈베기 산악지대에서 촬영한 인물 사진",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-03:observation:kazbegi-portrait",
+      "variants": [
+        {
+          "file": "caucasus-20260503-kazbegi-portrait-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 460774,
+          "gitBlobSha": "76e124b10457728846e639c160179fb081b15dce",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260503-monastery-fresco-watercolor",
+      "date": "2026-05-03",
+      "caption": "방문한 수도원 내부의 성화",
+      "alt": "방문한 수도원 내부의 성화",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-03:observation:monastery-fresco",
+      "variants": [
+        {
+          "file": "caucasus-20260503-monastery-fresco-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 479326,
+          "gitBlobSha": "87ea6cbdbbe62c10701dbbccdc828ba0fbc035b8",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260504-tbilisi-cablecar-station-watercolor",
+      "date": "2026-05-04",
+      "caption": "트빌리시 케이블카 승강장",
+      "alt": "트빌리시 케이블카 승강장",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-04:observation:tbilisi-cablecar-station",
+      "variants": [
+        {
+          "file": "caucasus-20260504-tbilisi-cablecar-station-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 471294,
+          "gitBlobSha": "ab38261c6a6c2778f9bc3aa35af5a4d54ecc78ea",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260504-tbilisi-nightview-watercolor",
+      "date": "2026-05-04",
+      "caption": "트빌리시 야경",
+      "alt": "트빌리시 야경",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-04:observation:tbilisi-nightview",
+      "variants": [
+        {
+          "file": "caucasus-20260504-tbilisi-nightview-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 486212,
+          "gitBlobSha": "d546d7edbd0f3377e2d2fbcc5a641737950d3cff",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260505-haghpat-monastery-watercolor",
+      "date": "2026-05-05",
+      "caption": "하흐파트 수도원",
+      "alt": "하흐파트 수도원",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-05:destination:haghpat",
+      "variants": [
+        {
+          "file": "caucasus-20260505-haghpat-monastery-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 515106,
+          "gitBlobSha": "99f1e81482a392cae0a028d244a41cd101b856b8",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260505-sevan-lake-watercolor",
+      "date": "2026-05-05",
+      "caption": "세반 호수 풍경",
+      "alt": "세반 호수 풍경",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-05:destination:sevan-lake",
+      "variants": [
+        {
+          "file": "caucasus-20260505-sevan-lake-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 403762,
+          "gitBlobSha": "d4262d03635a076b8bd53c4c195c55094ddcd32f",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260505-sevan-monastery-watercolor",
+      "date": "2026-05-05",
+      "caption": "세반 수도원",
+      "alt": "세반 수도원",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-05:destination:sevan-monastery",
+      "variants": [
+        {
+          "file": "caucasus-20260505-sevan-monastery-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 441170,
+          "gitBlobSha": "d1e267e622e97b6e7509c0792d8e8c0bdde2d70c",
+          "sha256": null
+        }
+      ]
     }
   ]
 }
