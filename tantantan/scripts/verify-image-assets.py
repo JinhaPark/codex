@@ -6,11 +6,11 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-artwork = json.loads((ROOT / 'src/illustrations.json').read_text())
-asset_dir = ROOT / 'public/illustrations'
+artwork = json.loads((ROOT.parent / 'shared/images/illustrations.json').read_text())
+asset_dir = ROOT.parent / 'shared/public/illustrations'
 expected = [v['file'] for a in artwork for v in a['variants']]
 assert len(expected) == len(set(expected))
-lineage = json.loads((ROOT / 'docs/image-lineage.json').read_text())
+lineage = json.loads((ROOT.parent / 'shared/images/image-lineage.json').read_text())
 retained = [v for image in lineage['images'] for revision in image['revisions']
             if revision['lifecycle'] in ('archived', 'deletion-candidate') for v in revision['variants']]
 assert sorted(set(expected) | {Path(v['file']).name for v in retained}) == sorted(p.name for p in asset_dir.iterdir())

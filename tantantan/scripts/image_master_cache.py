@@ -369,7 +369,7 @@ def main():
                 result['state'] = 'backend-probed'
             print(json.dumps(result))
             return 0
-        path = repo / 'docs/image-lineage.json'
+        path = repo / 'shared/images/image-lineage.json'
         baseline = path.read_bytes()
         lineage = json.loads(baseline)
         if args.operation == 'lookup':

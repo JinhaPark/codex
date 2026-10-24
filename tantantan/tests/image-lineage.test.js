@@ -5,13 +5,22 @@ import test from 'node:test';
 import { validateImageLineage } from '../scripts/validate-image-lineage.js';
 
 const root = new URL('../', import.meta.url);
-const read = path => fs.readFileSync(new URL(path, root));
+const projectRoot = new URL('../../', import.meta.url);
+const read = path => {
+  if (path === 'docs/image-lineage.json') return fs.readFileSync(new URL('shared/images/image-lineage.json', projectRoot));
+  if (path === 'src/illustrations.json') return fs.readFileSync(new URL('shared/images/illustrations.json', projectRoot));
+  if (path.startsWith('public/illustrations/')) return fs.readFileSync(new URL('shared/' + path, projectRoot));
+  return fs.readFileSync(new URL(path, root));
+};
 const lineage = JSON.parse(read('docs/image-lineage.json'));
 const manifest = JSON.parse(read('src/illustrations.json'));
 const git = args => execFileSync('git', args, { cwd: root, maxBuffer: 10 * 1024 * 1024 });
 const base = process.env.IMAGE_LINEAGE_BASE || 'HEAD';
 // Fail closed if the configured baseline cannot be loaded (CI checks out full history).
-const previous = JSON.parse(git(['show', `${base}:docs/image-lineage.json`]));
+const previous = JSON.parse((() => {
+  try { return git(['show', `${base}:shared/images/image-lineage.json`]); }
+  catch { return git(['show', `${base}:docs/image-lineage.json`]); }
+})());
 const run = (data = lineage, published = manifest, baseline = previous, reader = read) => validateImageLineage({
   lineage: data, manifest: published, previous: baseline, readFile: reader,
   isAncestor: (before, after) => {

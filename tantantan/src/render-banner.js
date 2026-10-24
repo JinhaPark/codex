@@ -1,4 +1,4 @@
-import illustrations from './illustrations.json';
+import illustrations from '../../shared/images/illustrations.json';
 
 export function renderBanner() {
   const art = illustrations.find(item => item.id === 'issyk-kul-banner-watercolor');

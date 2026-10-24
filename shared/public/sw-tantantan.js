@@ -1,6 +1,6 @@
-const CACHE = 'ca26-pages-v43-itinerary-artwork-cleanup';
-const CACHE_PREFIX = 'ca26-pages-';
-const ROOT = '/codex/';
+const CACHE = 'ca26-tantantan-v1';
+const CACHE_PREFIX = 'ca26-tantantan-';
+const ROOT = '/codex/tantantan/';
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.add(ROOT)).then(() => self.skipWaiting()));
@@ -13,7 +13,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const request = event.request;
   const url = new URL(request.url);
-  if (request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(ROOT)) return;
+  if (request.method !== 'GET' || url.origin !== self.location.origin || !(url.pathname.startsWith(ROOT) || url.pathname.startsWith('/codex/assets/') || url.pathname.startsWith('/codex/illustrations/'))) return;
 
   event.respondWith(caches.open(CACHE).then(async cache => {
     // Refresh the document online so an old cached page cannot hide published changes.
