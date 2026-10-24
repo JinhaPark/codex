@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T10:26:51.819Z",
+  "scope": "banner-and-cache-only",
+  "browser": "153.0.8010.0",
+  "titleViewports": [
+    375,
+    390,
+    430,
+    768,
+    1280,
+    1920
+  ],
+  "bannerOfflineReload": true,
+  "cacheUpgrade": "ca26-pages-v37-main-silk-road",
+  "otherCachePreserved": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local Chromium, not an actual iPhone Safari or installed home-screen PWA",
+    "Cache upgrade uses current assets under the prior release cache name",
+    "Unrelated guide flows were not rerun for this image-only follow-up"
+  ]
+}

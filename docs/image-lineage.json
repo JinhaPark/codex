@@ -3855,8 +3855,8 @@
       "sourceAvailability": "hash-only",
       "sourceWidth": 2048,
       "sourceHeight": 682,
-      "activeRevisionId": "silk-road-banner-watercolor-r4",
-      "lastPublishedRevisionId": "silk-road-banner-watercolor-r4",
+      "activeRevisionId": "silk-road-banner-watercolor-r5",
+      "lastPublishedRevisionId": "silk-road-banner-watercolor-r5",
       "placement": "site:banner",
       "revisions": [
         {
@@ -4423,8 +4423,105 @@
             "webpVersion": "1.6.0"
           },
           "optimizeKey": "14896829d1ec47d0c4596739c88064252e7f1aa0cbb32fb04216782fe71f7b8e",
+          "lifecycle": "archived",
+          "lifecycleReason": "Retained as the editing parent after alignment with the labeled principal-route reference.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+          "lifecycleChangedAt": "2026-10-24T10:21:26.085179+00:00"
+        },
+        {
+          "revisionId": "silk-road-banner-watercolor-r5",
+          "illustrationId": "silk-road-banner-watercolor",
+          "sourceId": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+          "parentRevisionId": "silk-road-banner-watercolor-r4",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "principal-route-reference-alignment",
+            "sourceSha256": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+            "parentOutputSha256": "7a15f182153a5f03c0a802a7dd48f4e106553195e90ac6a40a9ceec406691648",
+            "prompt": "Use case: precise-object-edit / route correction.\nImage 1 is the EDIT TARGET: the current full-bleed panoramic watercolor Silk Road banner. Image 2 is the USER'S LABELED ROUTE REFERENCE. In image 2, the continuous YELLOW line is the principal west-east Silk Road to reproduce as the thick deep wine/magenta road in image 1. The printed yellow route, not the other purple southern routes or dashed regional routes, determines the principal road. Compare the city dots and labels carefully.\nPreserve image 1's geography and every coastline EXACTLY, especially the user's approved Korean east coast, its scale, China, Japan, Jeju, all sea gaps, terrain colors, and 3:1 framing. Keep its two central camel caravans. No broad geographical redraw.\nCorrect the thick west-to-east route in image 1 so it follows image 2's yellow main-line CITY ORDER and terrain corridor: Rome across Anatolia, northern Iran via the Ecbatana/Hamadan and Rey corridor, onward through northeastern Iran and the oasis corridor to Bukhara and Samarkand; then east through the Ferghana/Kashgar connection, along the NORTHERN EDGE of the Tarim/Taklamakan basin via Kucha (Kuqa), Turfan (Turpan), then Dunhuang; southeast down the Hexi corridor through Lanzhou toward Xi'an; then the reference's northern continuation to the existing Chinese endpoint. Use the yellow line's topology including its northern Tarim arc and the southeast turn at Dunhuang. Adapt to image 1's coherent geography rather than copying image 2's distorted paper framing. The current large eastbound swoop south across the Tibetan/Himalayan region is WRONG for this highlighted main route: erase that old thick stroke and restore matching terrain there; do not leave a duplicate thick southern route. Retain only faint subordinate trails there if already present. Likewise align the western main stroke with the yellow reference rather than a different purple southern route. Keep the Samarkand hub unmistakable and connected.\nThe principal route must be one continuous thick, elegant deep wine/magenta stroke with a narrow ivory edge, clearly dominant over secondary faint thin trails. Keep the existing northward Russian-region branch and southward India branch bold and meeting at Samarkand, recoloring them consistently if necessary; no new bold branches. Keep the approved China-to-Korea connection as EXACTLY ONE small evenly spaced wine/magenta DOTTED path between its two circles, with no forks, duplicate arcs, spiky extensions, or continuation beyond either node.\nNo yellow highlighted route in the output. No city labels, letters, title, legend, borders, paper margins, decorative goods, symbols, logos, or watermarks. This is the existing banner with corrected principal route alignment, not a new map style.",
+            "tool": "imagegen",
+            "model": null,
+            "transparentBackground": false,
+            "framing": "preserve-user-reference-panorama",
+            "outputRole": "decorative-unlabeled-background",
+            "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+            "additionalReference": {
+              "originalName": "Gemini_Generated_Image_r85hq5r85hq5r85h.png",
+              "sourceSha256": "2ebc1cfb4a0d33b0e46d836881a4c6d56291fea26fdffa114bdf4fd985e6efe9",
+              "sourceAvailability": "hash-only",
+              "role": "User-supplied labeled map: yellow principal route is the visual benchmark for the bold west-east stroke."
+            }
+          },
+          "recipeKey": "0f7007cc6cbc42a80025ff3a7d3fe9d0602ca2be1e93c98d4fcc58e1af09ca79",
+          "outputSha256": "9fb69f039de304da9deb9449860464c3d9bbd1bc2781fc1c359c8ce76b6acf50",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-responsive-webp-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Compared the provided yellow principal route with the bold stroke: northern Iran and Samarkand westward connection, northern Tarim/Kucha/Turpan arc, Dunhuang and southeast Hexi/Xian continuation. Removed the previously dominant southern eastern sweep. Retained the preferred Korean coastline and single dotted China-Korea connection. Schematic alignment, not surveyed route coordinates."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T10:21:26.085179+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 25434,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r5-480.webp",
+              "sha256": "9d98291df24e18736a815a2217799637161495f523ea0c2a0c04b04f11de4dbd"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 59578,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r5-800.webp",
+              "sha256": "b91213352a336657f8782eb827bec1237922df17dfc5fa64b358269ccbaa5bed"
+            },
+            {
+              "width": 1024,
+              "height": 341,
+              "bytes": 85422,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r5-1024.webp",
+              "sha256": "fc95e0e0dc56185d8893f0323f7539abc2059ce9cbc2a276e6a68a58f4d04b7a"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "9fb69f039de304da9deb9449860464c3d9bbd1bc2781fc1c359c8ce76b6acf50",
+            "sourceDimensions": [
+              2048,
+              682
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1024
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0"
+          },
+          "optimizeKey": "ebb033b6e10f17602f90aa23b3d91c87ec72709fc68e5c2b4d5778da17026237",
           "lifecycle": "active",
-          "lifecycleReason": "Published one clean dotted connection between the Chinese and Korean endpoints, without branches or extensions.",
+          "lifecycleReason": "Aligned the highlighted principal road with the yellow route in the user-supplied city map.",
           "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
         }
       ],
