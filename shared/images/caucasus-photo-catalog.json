@@ -291,6 +291,150 @@
           "sha256": null
         }
       ]
+    },
+    {
+      "id": "caucasus-20260506-basalt-columns-watercolor",
+      "date": "2026-05-06",
+      "caption": "가르니 협곡을 이루는 육각형 현무암 주상절리",
+      "alt": "가르니 협곡을 이루는 육각형 현무암 주상절리",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-06:destination:basalt-columns",
+      "variants": [
+        {
+          "file": "caucasus-20260506-basalt-columns-watercolor-1447.webp",
+          "width": 1447,
+          "bytes": 503510,
+          "gitBlobSha": "902e1ef32b888b92c64c1c8b9ed69d73c4b3fb70",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260509-batumi-ali-nino-watercolor",
+      "date": "2026-05-09",
+      "caption": "바투미 해안가의 알리와 니노 조각상",
+      "alt": "바투미 해안가의 알리와 니노 조각상",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-09:destination:batumi-ali-nino",
+      "variants": [
+        {
+          "file": "caucasus-20260509-batumi-ali-nino-watercolor-1586.webp",
+          "width": 1586,
+          "bytes": 630768,
+          "gitBlobSha": "16055bc2b4c0587be81c60ae94c7964d54436bf5",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260509-batumi-beach-red-hut-watercolor",
+      "date": "2026-05-09",
+      "caption": "바투미 자갈 해변의 붉은 구조물과 사람들",
+      "alt": "바투미 자갈 해변의 붉은 구조물과 사람들",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-09:destination:batumi-beach-red-hut",
+      "variants": [
+        {
+          "file": "caucasus-20260509-batumi-beach-red-hut-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 724304,
+          "gitBlobSha": "ed958df4afdf8778e2616d2da5cfbdab4e3ae660",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260508-black-sea-sunset-watercolor",
+      "date": "2026-05-08",
+      "caption": "흑해 해안에 남은 해질녘 붉은 빛과 수평선",
+      "alt": "흑해 해안에 남은 해질녘 붉은 빛과 수평선",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-08:observation:black-sea-sunset",
+      "variants": [
+        {
+          "file": "caucasus-20260508-black-sea-sunset-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 583648,
+          "gitBlobSha": "725752d8c9095c0b3da15e4c46db597654cae887",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260508-borjomi-lamb-shashlik-watercolor",
+      "date": "2026-05-08",
+      "caption": "점심에 먹은 양고기 샤슬릭과 식탁",
+      "alt": "점심에 먹은 양고기 샤슬릭과 식탁",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-08:observation:borjomi-lamb-shashlik",
+      "variants": [
+        {
+          "file": "caucasus-20260508-borjomi-lamb-shashlik-watercolor-1254.webp",
+          "width": 1254,
+          "bytes": 651382,
+          "gitBlobSha": "e3f58d72d5365387330bffea45bf50872af26b11",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260508-borjomi-park-gym-watercolor",
+      "date": "2026-05-08",
+      "caption": "보르조미 공원의 야외 운동시설과 조지아어 안내문",
+      "alt": "보르조미 공원의 야외 운동시설과 조지아어 안내문",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-08:observation:borjomi-park-gym",
+      "variants": [
+        {
+          "file": "caucasus-20260508-borjomi-park-gym-watercolor-1448.webp",
+          "width": 1448,
+          "bytes": 851192,
+          "gitBlobSha": "7cb675af90133030f5d7bdfaab19590849f7d8aa",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260508-borjomi-riverfront-watercolor",
+      "date": "2026-05-08",
+      "caption": "보르조미 공원의 하천과 계곡 풍경",
+      "alt": "보르조미 공원의 하천과 계곡 풍경",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-08:destination:borjomi-riverfront",
+      "variants": [
+        {
+          "file": "caucasus-20260508-borjomi-riverfront-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 793320,
+          "gitBlobSha": "dab694c5594079ce5a73fe15b880cf1a4ab5c5e6",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "caucasus-20260508-monastery-overlook-gorge-watercolor",
+      "date": "2026-05-08",
+      "caption": "수도원에서 내려다본 숲과 계곡",
+      "alt": "수도원에서 내려다본 숲과 계곡",
+      "status": "ready-in-pr",
+      "sourceSha256": null,
+      "placement": "caucasus:2026-05-08:destination:monastery-overlook-gorge",
+      "variants": [
+        {
+          "file": "caucasus-20260508-monastery-overlook-gorge-watercolor-1086.webp",
+          "width": 1086,
+          "bytes": 778522,
+          "gitBlobSha": "310b77b18fbc3e0e5dd7fa354adb92aeb80d8f05",
+          "sha256": null
+        }
+      ]
     }
   ]
 }

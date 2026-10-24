@@ -308,7 +308,10 @@
         {
           "name": "가르니 주상절리",
           "description": "계곡 아래에 형성된 현무암 기둥을 관찰합니다.",
-          "optionalTourId": 1
+          "optionalTourId": 1,
+          "photoIds": [
+            "caucasus-20260506-basalt-columns-watercolor"
+          ]
         },
         {
           "name": "게그하드 수도원",
@@ -360,11 +363,34 @@
       "places": [
         {
           "name": "보르조미 국립공원",
-          "description": "탄산 광천수로 알려진 보르조미의 자연휴양지를 방문합니다."
+          "description": "탄산 광천수로 알려진 보르조미의 자연휴양지를 방문합니다.",
+          "photoIds": [
+            "caucasus-20260508-borjomi-riverfront-watercolor"
+          ]
         },
         {
           "name": "모사메타 수도원",
-          "description": "쿠타이시 인근의 수도원을 살펴봅니다."
+          "description": "쿠타이시 인근의 수도원을 살펴봅니다.",
+          "photoIds": [
+            "caucasus-20260508-monastery-overlook-gorge-watercolor"
+          ]
+        }
+      ],
+      "photoObservations": [
+        {
+          "title": "흑해 해안에 남은 해질녘 붉은 빛",
+          "description": "흑해 해안에 남은 해질녘 붉은 빛과 수평선입니다.",
+          "imageId": "caucasus-20260508-black-sea-sunset-watercolor"
+        },
+        {
+          "title": "점심에 먹은 양고기 샤슬릭",
+          "description": "점심에 먹은 양고기 샤슬릭과 식탁입니다.",
+          "imageId": "caucasus-20260508-borjomi-lamb-shashlik-watercolor"
+        },
+        {
+          "title": "보르조미 공원의 야외 운동시설",
+          "description": "보르조미 공원의 야외 운동시설과 조지아어 안내문입니다.",
+          "imageId": "caucasus-20260508-borjomi-park-gym-watercolor"
         }
       ]
     },
@@ -381,7 +407,11 @@
         },
         {
           "name": "바투미 불바르 공원",
-          "description": "해변을 따라 조성된 긴 산책로와 공원입니다."
+          "description": "해변을 따라 조성된 긴 산책로와 공원입니다.",
+          "photoIds": [
+            "caucasus-20260509-batumi-ali-nino-watercolor",
+            "caucasus-20260509-batumi-beach-red-hut-watercolor"
+          ]
         },
         {
           "name": "유럽 광장",

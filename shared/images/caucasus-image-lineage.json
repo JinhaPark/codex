@@ -792,6 +792,334 @@
           ]
         }
       ]
+    },
+    {
+      "illustrationId": "caucasus-20260506-basalt-columns-watercolor",
+      "travelDate": "2026-05-06",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-06:destination:basalt-columns",
+      "activeRevisionId": "caucasus-20260506-basalt-columns-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260506-basalt-columns-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260506-basalt-columns-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260506-basalt-columns-watercolor-1447.webp",
+              "width": 1447,
+              "bytes": 503510,
+              "gitBlobSha": "902e1ef32b888b92c64c1c8b9ed69d73c4b3fb70",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260509-batumi-ali-nino-watercolor",
+      "travelDate": "2026-05-09",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-09:destination:batumi-ali-nino",
+      "activeRevisionId": "caucasus-20260509-batumi-ali-nino-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260509-batumi-ali-nino-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260509-batumi-ali-nino-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260509-batumi-ali-nino-watercolor-1586.webp",
+              "width": 1586,
+              "bytes": 630768,
+              "gitBlobSha": "16055bc2b4c0587be81c60ae94c7964d54436bf5",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260509-batumi-beach-red-hut-watercolor",
+      "travelDate": "2026-05-09",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-09:destination:batumi-beach-red-hut",
+      "activeRevisionId": "caucasus-20260509-batumi-beach-red-hut-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260509-batumi-beach-red-hut-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260509-batumi-beach-red-hut-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260509-batumi-beach-red-hut-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 724304,
+              "gitBlobSha": "ed958df4afdf8778e2616d2da5cfbdab4e3ae660",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260508-black-sea-sunset-watercolor",
+      "travelDate": "2026-05-08",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-08:observation:black-sea-sunset",
+      "activeRevisionId": "caucasus-20260508-black-sea-sunset-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260508-black-sea-sunset-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260508-black-sea-sunset-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260508-black-sea-sunset-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 583648,
+              "gitBlobSha": "725752d8c9095c0b3da15e4c46db597654cae887",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260508-borjomi-lamb-shashlik-watercolor",
+      "travelDate": "2026-05-08",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-08:observation:borjomi-lamb-shashlik",
+      "activeRevisionId": "caucasus-20260508-borjomi-lamb-shashlik-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260508-borjomi-lamb-shashlik-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260508-borjomi-lamb-shashlik-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260508-borjomi-lamb-shashlik-watercolor-1254.webp",
+              "width": 1254,
+              "bytes": 651382,
+              "gitBlobSha": "e3f58d72d5365387330bffea45bf50872af26b11",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260508-borjomi-park-gym-watercolor",
+      "travelDate": "2026-05-08",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-08:observation:borjomi-park-gym",
+      "activeRevisionId": "caucasus-20260508-borjomi-park-gym-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260508-borjomi-park-gym-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260508-borjomi-park-gym-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260508-borjomi-park-gym-watercolor-1448.webp",
+              "width": 1448,
+              "bytes": 851192,
+              "gitBlobSha": "7cb675af90133030f5d7bdfaab19590849f7d8aa",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260508-borjomi-riverfront-watercolor",
+      "travelDate": "2026-05-08",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-08:destination:borjomi-riverfront",
+      "activeRevisionId": "caucasus-20260508-borjomi-riverfront-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260508-borjomi-riverfront-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260508-borjomi-riverfront-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260508-borjomi-riverfront-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 793320,
+              "gitBlobSha": "dab694c5594079ce5a73fe15b880cf1a4ab5c5e6",
+              "sha256": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "illustrationId": "caucasus-20260508-monastery-overlook-gorge-watercolor",
+      "travelDate": "2026-05-08",
+      "originalName": null,
+      "sourceId": null,
+      "sourceSha256": null,
+      "sourceArtifactRef": null,
+      "sourceDimensions": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-08:destination:monastery-overlook-gorge",
+      "activeRevisionId": "caucasus-20260508-monastery-overlook-gorge-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260508-monastery-overlook-gorge-watercolor-import-r1",
+      "revisions": [
+        {
+          "revisionId": "caucasus-20260508-monastery-overlook-gorge-watercolor-import-r1",
+          "parentRevisionId": null,
+          "operation": "import-user-provided-illustration-webp",
+          "historyStatus": "source-provenance-unverified",
+          "recipe": null,
+          "recipeKey": null,
+          "optimizeKey": null,
+          "artifactRef": null,
+          "status": "legacy-verified",
+          "lifecycle": "active",
+          "validation": {
+            "gitBlobShaVerified": true,
+            "sha256Available": false,
+            "imageDecodeVerified": false
+          },
+          "variants": [
+            {
+              "file": "shared/public/illustrations/caucasus-20260508-monastery-overlook-gorge-watercolor-1086.webp",
+              "width": 1086,
+              "bytes": 778522,
+              "gitBlobSha": "310b77b18fbc3e0e5dd7fa354adb92aeb80d8f05",
+              "sha256": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
