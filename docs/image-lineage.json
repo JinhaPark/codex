@@ -558,8 +558,8 @@
       "sourceAvailability": "not-recovered",
       "sourceWidth": 1080,
       "sourceHeight": 1440,
-      "activeRevisionId": "legacy-white-honey-jar-pencil",
-      "placement": "shopping:honey:white",
+      "activeRevisionId": null,
+      "placement": null,
       "revisions": [
         {
           "revisionId": "legacy-white-honey-jar-pencil",
@@ -603,11 +603,15 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "쇼핑 영역을 가격표만 표시하도록 변경",
+          "lifecycleChangedAt": "2026-10-24T07:25:21.151787Z"
         }
       ],
-      "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-white-honey-jar-pencil"
+      "lifecycle": "archived",
+      "lastPublishedRevisionId": "legacy-white-honey-jar-pencil",
+      "lifecycleReason": "쇼핑 영역을 가격표만 표시하도록 변경",
+      "lifecycleChangedAt": "2026-10-24T07:25:21.151787Z"
     },
     {
       "illustrationId": "suusamyr-honey-pencil",
@@ -618,8 +622,8 @@
       "sourceAvailability": "not-recovered",
       "sourceWidth": 1080,
       "sourceHeight": 1440,
-      "activeRevisionId": "legacy-suusamyr-honey-pencil",
-      "placement": "shopping:honey:yellow",
+      "activeRevisionId": null,
+      "placement": null,
       "revisions": [
         {
           "revisionId": "legacy-suusamyr-honey-pencil",
@@ -663,11 +667,15 @@
             }
           ],
           "optimizeKey": null,
-          "lifecycle": "active"
+          "lifecycle": "archived",
+          "lifecycleReason": "쇼핑 영역을 가격표만 표시하도록 변경",
+          "lifecycleChangedAt": "2026-10-24T07:25:21.151787Z"
         }
       ],
-      "lifecycle": "active",
-      "lastPublishedRevisionId": "legacy-suusamyr-honey-pencil"
+      "lifecycle": "archived",
+      "lastPublishedRevisionId": "legacy-suusamyr-honey-pencil",
+      "lifecycleReason": "쇼핑 영역을 가격표만 표시하도록 변경",
+      "lifecycleChangedAt": "2026-10-24T07:25:21.151787Z"
     },
     {
       "illustrationId": "bukhara-ark-walls-pencil",
