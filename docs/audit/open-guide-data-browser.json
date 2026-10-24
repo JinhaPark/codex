@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T10:58:38.375Z",
+  "viewports": [
+    375,
+    390,
+    430
+  ],
+  "firstOpen": true,
+  "reopenParent": true,
+  "manualClose": true,
+  "legacyReaderReload": true,
+  "otherDisclosuresUnchanged": true,
+  "bukharaEveningGuideOnly": true,
+  "lyabiPortalItineraryOnly": true,
+  "visitedIllustrationsOffline": true,
+  "cacheUpgrade": "ca26-pages-v42-open-guide-data",
+  "otherCachePreserved": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local Chromium, not actual iPhone Safari",
+    "Cache fixture uses current assets under the prior cache name",
+    "Unvisited images are not guaranteed offline"
+  ]
+}

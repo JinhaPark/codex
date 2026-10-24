@@ -76,7 +76,12 @@ export function createGuideReader({root, entries, onNavigate}) {
     clearTimeout(timer);timer = setTimeout(save, 180);
     cancelAnimationFrame(positionFrame);positionFrame = requestAnimationFrame(updatePosition);
   }, {passive:true});
-  root.addEventListener('toggle', e => {if (e.target.matches('.guide-reader details, [data-guide-inline]') && e.target.isConnected) {clearTimeout(timer);timer = setTimeout(save, 180);}}, true);
+  root.addEventListener('toggle', e => {
+    if (e.target.matches('[data-guide-inline]') && e.target.isConnected && e.target.open) {
+      for (const detail of e.target.querySelectorAll('[data-guide-default-open]')) detail.open = true;
+    }
+    if (e.target.matches('.guide-reader details, [data-guide-inline]') && e.target.isConnected) {clearTimeout(timer);timer = setTimeout(save, 180);}
+  }, true);
   function mount() {
     cancelAnimationFrame(restoreFrame);
     const serial = ++mountSerial;
@@ -85,7 +90,7 @@ export function createGuideReader({root, entries, onNavigate}) {
     const key = currentKey();
     root.style.setProperty('--guide-nav-height', `${root.querySelector('nav[aria-label="여행 메뉴"]').getBoundingClientRect().height}px`);
     const details = [...root.querySelectorAll('.guide-reader details, [data-guide-inline]')];
-    if (Array.isArray(memory.opens[key])) details.forEach((d,i)=>{if (typeof memory.opens[key][i] === 'boolean') d.open = memory.opens[key][i];});
+    if (Array.isArray(memory.opens[key])) details.forEach((d,i)=>{if (d.matches('[data-guide-default-open]')) d.open = true; else if (typeof memory.opens[key][i] === 'boolean') d.open = memory.opens[key][i];});
     const toc = root.querySelector('[data-guide-toc-items]');
     if (toc) {
       for (const section of root.querySelectorAll('[data-reader-section]')) {

@@ -51,7 +51,7 @@ export function renderEconomy(data = economy) {
   return `<section class="bukhara-history core-section" id="economy" data-core-section="economy">
     <span id="central-asia-economy"></span><h3>${escapeHtml(data.title)}</h3><p class="bukhara-intro">${escapeHtml(data.intro)}</p>
     <div class="bukhara-chapters">${renderNumberedSections(data.chapters, 'economy', ([, paragraphs]) => paragraphs.map(p => `<p>${escapeHtml(p)}</p>`).join(''))}</div>
-    <details class="data-details"><summary>세 나라의 규모 한눈에 보기 · ${metadata.year}년</summary>
+    <details class="data-details" open data-guide-default-open><summary>세 나라의 규모 한눈에 보기 · ${metadata.year}년</summary>
     <table class="economy-table"><caption>${metadata.year}년 3국 경제 비교 · 세계은행 WDI</caption>
       <thead><tr><th scope="col">국가</th><th scope="col">인구<br>(만 명)</th><th scope="col">명목 GDP<br>(조 원)</th><th scope="col">1인당 GDP<br>(만 원/명)</th><th scope="col">송금 수입/GDP<br>(%)</th><th scope="col">주요 산업·상품</th></tr></thead>
       <tbody>${countries.map(renderCountryRow).join('')}</tbody></table>

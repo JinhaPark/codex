@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v41-aral-sea-caption';
+const CACHE = 'ca26-pages-v42-open-guide-data';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 
