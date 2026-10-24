@@ -17,14 +17,14 @@ test('banner keeps the title and trip metadata as accessible HTML instead of bak
   assert.doesNotMatch(html, /loading="lazy"|figcaption/);
 });
 
-test('banner uses the audited responsive redraw and only that image receives the new framing exception', () => {
+test('banner uses audited responsive artwork and preserves its reference proportions', () => {
   const banners = artwork.filter(art=>art.purpose === 'site-banner');
   assert.equal(banners.length,1);
   const banner = banners[0];
   assert.equal(banner.id,'silk-road-banner-watercolor');
   assert.equal(banner.placement,'site:banner');
-  assert.equal(banner.framingEdit,'panoramic-banner-redraw');
-  assert.equal(artwork.filter(art=>art.framingEdit === banner.framingEdit).length,1);
+  assert.ok(Math.abs((banner.width / banner.height) / (banner.sourceWidth / banner.sourceHeight) - 1) < .003);
+  assert.equal(banner.framingEdit,undefined);
   for (const variant of banner.variants) {
     assert.ok(renderBanner().includes(variant.file));
     assert.ok(variant.width<=banner.sourceWidth && variant.height<=banner.sourceHeight);

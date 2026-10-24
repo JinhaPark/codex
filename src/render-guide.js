@@ -67,8 +67,15 @@ export function renderGuide({category = 'core', article = ''} = {}) {
     ${entry.render().replace('<h3>', '<h2>').replace('</h3>', '</h2>')}<button type="button" class="reader-return" data-guide-list>← 해설 목록으로</button>
     <dialog class="reader-toc" aria-labelledby="reader-toc-title"><div class="reader-toc-heading"><h2 id="reader-toc-title">이 글의 목차</h2><button type="button" data-guide-close aria-label="목차 닫기">닫기</button></div><div data-guide-toc-items></div></dialog>
   </div>`;
-  if (!guideCategories.some(c=>c.id === category)) category = 'core';
-  return `<div class="guide-library"><h2>여행 해설</h2><p>읽고 싶은 해설을 고르세요. 글 안에서는 큰 번호 섹션별로 펼쳐 읽으실 수 있습니다.</p>
-    <div class="guide-categories" role="group" aria-label="해설 분류">${guideCategories.map(c=>`<button type="button" data-guide-category="${c.id}" aria-pressed="${category === c.id}">${c.title}</button>`).join('')}</div>
-    <div class="guide-book-list">${guideEntries.filter(e=>e.category === category).map(e=>`<a class="guide-book" href="#guide/${e.category}/${e.id}" data-guide-open="${e.id}"><h3>${esc(e.title)}</h3><p>${esc(e.intro)}</p><span>해설 읽기 →</span></a>`).join('')}</div></div>`;
+  return `<div class="guide-library"><h2>여행 해설</h2><p>제목을 누르면 이 페이지에서 해설 전체를 펼쳐 읽으실 수 있습니다.</p>
+    ${guideCategories.map(group=>`<section class="guide-group" aria-labelledby="guide-group-${group.id}"><h3 id="guide-group-${group.id}" class="guide-group-title">${esc(group.title)}</h3>
+      <div class="guide-book-list">${guideEntries.filter(item=>item.category === group.id).map(item=>`<details class="guide-book bukhara-chapter" data-guide-inline="${esc(item.id)}"><summary>${esc(item.title)}</summary><div class="guide-inline-body">${renderInlineArticle(item)}</div></details>`).join('')}</div>
+    </section>`).join('')}</div>`;
+}
+function renderInlineArticle(entry) {
+  // A single disclosure reveals every numbered section; preserve source disclosures.
+  return entry.render().replace(/<h3>[^<]*<\/h3>/, '').replace(
+    /<details ([^>]*\bdata-reader-section[^>]*)><summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g,
+    (_, attributes, title, body) => `<section ${attributes.replace(/\sopen\b/, '').replace('data-reader-section', 'data-inline-section')}><h3 class="guide-inline-heading">${title}</h3>${body}</section>`
+  );
 }

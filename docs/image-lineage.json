@@ -927,7 +927,7 @@
       "sourceWidth": 1536,
       "sourceHeight": 1152,
       "activeRevisionId": "legacy-lyabi-hauz-evening-watercolor",
-      "placement": "day:2:places",
+      "placement": "day:1:lyabi-hauz",
       "revisions": [
         {
           "revisionId": "legacy-lyabi-hauz-evening-watercolor",
@@ -3848,15 +3848,15 @@
     },
     {
       "illustrationId": "silk-road-banner-watercolor",
-      "originalName": "image(1).png",
-      "sourceId": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
-      "sourceSha256": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+      "originalName": "Gemini_Generated_Image_g836heg836heg836.png",
+      "sourceId": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+      "sourceSha256": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
       "sourceArtifactRef": null,
       "sourceAvailability": "hash-only",
-      "sourceWidth": 1024,
-      "sourceHeight": 765,
-      "activeRevisionId": "silk-road-banner-watercolor-r1",
-      "lastPublishedRevisionId": "silk-road-banner-watercolor-r1",
+      "sourceWidth": 2048,
+      "sourceHeight": 682,
+      "activeRevisionId": "silk-road-banner-watercolor-r4",
+      "lastPublishedRevisionId": "silk-road-banner-watercolor-r4",
       "placement": "site:banner",
       "revisions": [
         {
@@ -3945,13 +3945,491 @@
             "webpVersion": "1.6.0"
           },
           "optimizeKey": "08f9f6d2419fc21b46195ea0042a072d2e67512f5d9e3dc0ba7afafe5ee7ac71",
+          "lifecycle": "archived",
+          "lifecycleReason": "Replaced by r2 to emphasize Samarkand connections and correct the Korean coastline.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+          "lifecycleChangedAt": "2026-10-24T09:59:30.450609+00:00"
+        },
+        {
+          "revisionId": "silk-road-banner-watercolor-r2",
+          "illustrationId": "silk-road-banner-watercolor",
+          "sourceId": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+          "parentRevisionId": "silk-road-banner-watercolor-r1",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "banner-route-emphasis-and-geography-correction",
+            "sourceSha256": "0156db27950a3e6ee9d6e5c6868bfdffdb11fb877b2a96f8e10fb2e4a0e94752",
+            "parentOutputSha256": "ab9062e8647a64ad200f9d21e541a0c0a16685be22425ce13d7a8769251f6693",
+            "prompt": "Edit the existing Silk Road website banner, using all three inputs with distinct roles.\nImage 1: current banner artwork; preserve its transparent watercolor and fine colored-pencil style, warm ivory/ochre terrain, dusty blue water, and small camel caravans.\nImage 2: authoritative geographic layout and route-emphasis guide. Use THIS map's coastline geometry, scale, projection, framing, and the position of its central Samarkand hub, instead of the inaccurate geography of image 1. Keep the entire roughly 3:1 panoramic canvas. Do not stretch or reshape countries to fit the canvas.\nImage 3: accurate close-up reference for the Korean peninsula. Preserve that recognizable north-up peninsula silhouette, its connection to the continent in the north, rugged western coast, smoother eastern coast, southern islands, Jeju to the southwest, and sea gaps separating it from Japan. Korea must be present in full in the right-hand portion of the panorama at the same geographic scale as image 2, with room around it; do not crop, fatten, elongate, mirror, merge, or arbitrarily enlarge Korea. Keep Japan separate. Do not add modern political borders.\nRedraw image 2's land/water geometry with the artistic finish of image 1. Add restrained watercolor mountains and terrain only within the correct land areas, without changing the coasts.\nEmphasize exactly four branching regional trade-network directions from the Samarkand dot shown in image 2: north toward the Volga/Russian region, south toward northern India, west through West Asia and the Mediterranean toward Rome, east through Central Asia and China toward the Korean peninsula. Follow the approximate path shapes and endpoints in image 2. These are illustrative regional connections, not four measured direct roads operating in one historical period. Use conspicuous but elegant dark terracotta/burgundy strokes about four times thicker than any remaining secondary trails, with soft narrow ivory edging. Keep the common Samarkand junction clearly marked by one slightly larger dot. The route toward Korea must actually reach the Korean peninsula; retain water separation.\nKeep other trail lines faint and subordinate so the four highlighted connections are immediately legible at website-banner size. Retain a few small camel caravans near Central Asia without covering the hub or Korean coastline.\nNo text, city labels, letters, numbers, legend, decorative frame, border, paper margins, folds, logo, watermark, title, UI, or inset map. The finished image must fill all four edges. Keep the same sophisticated watercolor palette and the wide website-banner purpose.",
+            "tool": "imagegen",
+            "model": null,
+            "transparentBackground": false,
+            "framing": "user-requested-panoramic-banner-redraw",
+            "outputRole": "decorative-unlabeled-background",
+            "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+            "geographicReference": {
+              "source": "https://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip",
+              "sourceSha256": "0b8e670cf80dce9cbebe2a193bc44ba5602758c22e1fa603980553646d7ff162",
+              "license": "public-domain",
+              "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+              "projection": "Mercator with equal x/y projected scale",
+              "routesAre": "schematic regional network directions, not measured historical itineraries",
+              "routeWaypoints": {
+                "west_rome": [
+                  [
+                    66.9758,
+                    39.6547
+                  ],
+                  [
+                    64.42,
+                    39.77
+                  ],
+                  [
+                    61.83,
+                    37.66
+                  ],
+                  [
+                    59.6,
+                    36.3
+                  ],
+                  [
+                    51.43,
+                    35.6
+                  ],
+                  [
+                    48.51,
+                    34.8
+                  ],
+                  [
+                    44.4,
+                    33.3
+                  ],
+                  [
+                    36.3,
+                    33.5
+                  ],
+                  [
+                    36.2,
+                    36.2
+                  ],
+                  [
+                    32.5,
+                    38.5
+                  ],
+                  [
+                    28.97,
+                    41.01
+                  ],
+                  [
+                    22.94,
+                    40.64
+                  ],
+                  [
+                    19.4,
+                    41.3
+                  ],
+                  [
+                    16.9,
+                    41.1
+                  ],
+                  [
+                    12.4964,
+                    41.9028
+                  ]
+                ],
+                "north_volga": [
+                  [
+                    66.9758,
+                    39.6547
+                  ],
+                  [
+                    64.42,
+                    39.77
+                  ],
+                  [
+                    60.63,
+                    41.55
+                  ],
+                  [
+                    57.5,
+                    45.7
+                  ],
+                  [
+                    53.7,
+                    47.1
+                  ],
+                  [
+                    48.04,
+                    46.35
+                  ],
+                  [
+                    45.0,
+                    49.0
+                  ]
+                ],
+                "south_india": [
+                  [
+                    66.9758,
+                    39.6547
+                  ],
+                  [
+                    67.28,
+                    37.22
+                  ],
+                  [
+                    66.9,
+                    36.76
+                  ],
+                  [
+                    69.17,
+                    34.56
+                  ],
+                  [
+                    71.52,
+                    34.01
+                  ],
+                  [
+                    72.8,
+                    33.74
+                  ],
+                  [
+                    74.34,
+                    31.55
+                  ],
+                  [
+                    77.21,
+                    28.61
+                  ]
+                ],
+                "east_korea": [
+                  [
+                    66.9758,
+                    39.6547
+                  ],
+                  [
+                    69.3,
+                    41.31
+                  ],
+                  [
+                    71.78,
+                    40.38
+                  ],
+                  [
+                    75.99,
+                    39.47
+                  ],
+                  [
+                    79.94,
+                    37.11
+                  ],
+                  [
+                    88.2,
+                    39.0
+                  ],
+                  [
+                    94.66,
+                    40.14
+                  ],
+                  [
+                    103.83,
+                    36.06
+                  ],
+                  [
+                    108.94,
+                    34.34
+                  ],
+                  [
+                    112.45,
+                    34.62
+                  ],
+                  [
+                    117.0,
+                    36.65
+                  ],
+                  [
+                    120.75,
+                    37.81
+                  ],
+                  [
+                    126.6,
+                    37.4
+                  ],
+                  [
+                    129.22,
+                    35.86
+                  ]
+                ]
+              }
+            },
+            "referenceImages": [
+              {
+                "role": "continental-layout",
+                "sha256": "f5d1ec7881195252af0d39881b3942fcd1a204605b3390ffc689cafab2ca4198"
+              },
+              {
+                "role": "korean-coastline",
+                "sha256": "210f98facd9c424b77a6b6c495f2b21e6a2951823e27e8d75e735a7796501737"
+              }
+            ]
+          },
+          "recipeKey": "346c6e8425dea26e6fe2b628b0ec8ac5703c3c9c70181616cd172880e937fc52",
+          "outputSha256": "c04877f3b6dbec70424894e6795bc8c13bb41e96f206b1914105f0a19b5713b2",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-responsive-webp-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Four thick terracotta branches meet at Samarkand. Korean peninsula is north-up, attached to the continent, with Jeju southwest and Japan separated by water. Natural Earth references guide recognizable coasts; route strokes are schematic connections including sea crossings, not measured itineraries or contemporaneous direct roads."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T09:59:30.450609+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 27590,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r2-480.webp",
+              "sha256": "62fdfe1a123e88e9955d09074a322df5d3f591395c2647c10e96afb80a63a732"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 72492,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r2-800.webp",
+              "sha256": "3dee71bf75e1eb7c709ae84ecc372209c2a4e8f371d38edf9b392fe00ba45918"
+            },
+            {
+              "width": 1024,
+              "height": 341,
+              "bytes": 113984,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r2-1024.webp",
+              "sha256": "a930799fb1563538143fec3b102c5fa84513e413582d8b08ad5bbc2895ae391e"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "c04877f3b6dbec70424894e6795bc8c13bb41e96f206b1914105f0a19b5713b2",
+            "sourceDimensions": [
+              1024,
+              765
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1024
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "crop",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0"
+          },
+          "optimizeKey": "ae4176cdd6e20895c3943e0d0212514f55ab7dba4bf8b46288712b7b1d80e491",
+          "lifecycle": "archived",
+          "lifecycleReason": "Replaced by a cleanup of the user-preferred Korean coastline reference.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+          "lifecycleChangedAt": "2026-10-24T10:12:05.067102+00:00"
+        },
+        {
+          "revisionId": "silk-road-banner-watercolor-r3",
+          "illustrationId": "silk-road-banner-watercolor",
+          "sourceId": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+          "parentRevisionId": null,
+          "replacesRevisionId": "silk-road-banner-watercolor-r2",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "user-preferred-coastline-preserving-cleanup",
+            "sourceSha256": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+            "parentOutputSha256": null,
+            "prompt": "Use case: precise-object-edit.\nEDIT TARGET: the user-supplied panoramic Silk Road map in this single input. The user specifically prefers THIS Korean peninsula coastline and its scale. Preserve the entire original geography exactly as drawn, especially Korea's EAST COAST: retain the exact coastal curve, diagonal orientation, north-to-south taper, southern tip, relative width and length, adjacent Chinese coastline, Jeju, and relationship to Japan. Do not redraw, reinterpret, smooth out, widen, shorten, move or reshape any coast. Keep this input's 3:1 composition and relative scale. Keep its existing warm ivory/ochre watercolor land, muted blue seas, mountain shading, thick terracotta four-direction Samarkand routes (including its eastbound route), small city dots, secondary dotted trails, and the two main camel caravans in Central Asia.\nMake only these cleanup edits: remove the trade-goods illustrations (necklace and gold in the west, silk scroll and tea/ceramic containers in the east, spice sacks near India), the bear at the top, and the extra tiny caravan immediately north of Korea. Fill these small areas with coherent matching terrain and trails, without changing nearby coastlines or roads. Remove the small white four-point corner symbol at the lower right, restoring the same ocean texture there. No new icons, no text, no legend, no frame, no border or paper margin. Do not perform a full redraw or change the Korean peninsula. Preserve the Korean eastern coastline from this input faithfully; this is the benchmark requested by the user. Keep the complete peninsula unobstructed and the four bold main connections clearly visible.",
+            "tool": "imagegen",
+            "model": null,
+            "transparentBackground": false,
+            "framing": "preserve-user-reference-panorama",
+            "outputRole": "decorative-unlabeled-background",
+            "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
+          },
+          "recipeKey": "bd83c039009837071958cfdb0888bff6be2d5a5e707b3d49d32cb5ad1eb8a98d",
+          "outputSha256": "26e1d800ad542da29782832400cb39ea73dd0ace51ef9613d516fcfea3458ff6",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-responsive-webp-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "Used the supplied Gemini illustration as the actual edit input to retain its preferred East Asian and Korean east-coast geometry, proportions, orientation, and scale. Removed merchandise and animal icons and the corner symbol while retaining four network directions. Decorative generated map, not survey accuracy."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T10:12:05.067102+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 24514,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r3-reference-480.webp",
+              "sha256": "f424444f18441342a88a4052792cfb75006d2e5ba8cd92e0bd913995d05e3f11"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 57032,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r3-reference-800.webp",
+              "sha256": "7ca894454f5d88934f195e7b9b0823c8d2c95e3dc8678aa7e4ac85c833314f3e"
+            },
+            {
+              "width": 1024,
+              "height": 341,
+              "bytes": 82126,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r3-reference-1024.webp",
+              "sha256": "3b722e3a0d7c192ba3fc7ba2fb7763f60a4c9fdd51944671d3fde9568692f679"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "26e1d800ad542da29782832400cb39ea73dd0ace51ef9613d516fcfea3458ff6",
+            "sourceDimensions": [
+              2048,
+              682
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1024
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0"
+          },
+          "optimizeKey": "c491c2f9e305e299a8cfad165f26e6878a6559d65794b11f756155e165dd06ec",
+          "lifecycle": "archived",
+          "lifecycleReason": "Retained as the editing parent after the user requested cleanup of duplicate China-Korea dotted lines.",
+          "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd",
+          "lifecycleChangedAt": "2026-10-24T10:16:07.538444+00:00"
+        },
+        {
+          "revisionId": "silk-road-banner-watercolor-r4",
+          "illustrationId": "silk-road-banner-watercolor",
+          "sourceId": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+          "parentRevisionId": "silk-road-banner-watercolor-r3",
+          "operation": "illustration-edit",
+          "recipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "operation": "single-dotted-china-korea-connection",
+            "sourceSha256": "c4d7c305cc3c2fa6e205b0aa6915bad4f939835c89c49fabc1b43a1d678bf7ee",
+            "parentOutputSha256": "26e1d800ad542da29782832400cb39ea73dd0ace51ef9613d516fcfea3458ff6",
+            "prompt": "Use case: precise-object-edit. Edit ONLY the red dotted China-to-Korea connection in this existing panoramic Silk Road map. Preserve all geography EXACTLY, especially the Korean east coastline and proportions, Jeju, adjacent Chinese and Japanese coasts. Preserve the map's exact framing, watercolor colors, mountain texture, two central camel caravans, thick terracotta west/north/south/east Samarkand branches, and all distant routes unchanged.\nIn the upper-right East Asian area, the bold eastbound main route ends at a small red circle in northeastern China (roughly 77% across the canvas, 38% down). A red circle on the west-central Korean peninsula (roughly 86% across, 42% down) is the Korean endpoint. There are currently MULTIPLE competing red dotted arcs and stray spiky offshoots around these two endpoints. Remove ALL of those competing red dotted arcs, forks, and stray extensions in this local China/Korea connection area. Replace them with EXACTLY ONE clean, restrained red dotted path from the Chinese endpoint circle to the Korean endpoint circle, following one gentle northward arc around the northern shore of the Yellow Sea and then south into Korea, on the existing land. Keep this a single path made of small evenly spaced red dots. It must touch both existing endpoint circles, terminate precisely at those circles, and have no extra segments, fork, parallel duplicate, spikes, arrowheads, or dots continuing beyond either endpoint. Restore matching terrain in the cleared areas without changing any coastline. Do not add a solid China-Korea line or a second dashed path. No other changes, no text, no new symbols, no borders or margins.",
+            "tool": "imagegen",
+            "model": null,
+            "transparentBackground": false,
+            "framing": "preserve-user-reference-panorama",
+            "outputRole": "decorative-unlabeled-background",
+            "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
+          },
+          "recipeKey": "9a7decff95b32025d27388fd19f23b0ca5906e801b01f0221875b9da9aba294f",
+          "outputSha256": "7a15f182153a5f03c0a802a7dd48f4e106553195e90ac6a40a9ceec406691648",
+          "artifactRef": null,
+          "masterAvailability": "unpersisted",
+          "status": "validated",
+          "validation": {
+            "scope": "visual-review-and-responsive-webp-decode",
+            "visualReview": {
+              "passed": true,
+              "notes": "One evenly spaced red dotted path connects the Chinese and Korean endpoint circles, with no duplicate arcs, spiky offshoots, or extensions beyond either node. The preferred Korean east-coast silhouette and neighboring geography remain visually consistent."
+            },
+            "metadataFree": true
+          },
+          "createdAt": "2026-10-24T10:16:07.538444+00:00",
+          "variants": [
+            {
+              "width": 480,
+              "height": 160,
+              "bytes": 24778,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r4-reference-480.webp",
+              "sha256": "e73031e8ab010c3ee3719aa0be3124dcb70933de699339c420c9b0e9a30bd92b"
+            },
+            {
+              "width": 800,
+              "height": 267,
+              "bytes": 57002,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r4-reference-800.webp",
+              "sha256": "d3224e3b58290eb72454efdadd44d83aef380e3e286fc99d97fc61cc0506d171"
+            },
+            {
+              "width": 1024,
+              "height": 341,
+              "bytes": 80288,
+              "quality": 88,
+              "file": "public/illustrations/silk-road-banner-r4-reference-1024.webp",
+              "sha256": "bd6c42d7e5a730b5ba616bf9c6af972e85fd0b3c044f08bfc2c29050b416c82c"
+            }
+          ],
+          "optimizationRecipe": {
+            "cacheVersion": "travel-photo-cache-v1",
+            "outputSha256": "7a15f182153a5f03c0a802a7dd48f4e106553195e90ac6a40a9ceec406691648",
+            "sourceDimensions": [
+              2048,
+              682
+            ],
+            "generatedDimensions": [
+              2172,
+              724
+            ],
+            "widths": [
+              480,
+              800,
+              1024
+            ],
+            "qualityStart": 88,
+            "qualityFloor": 48,
+            "qualityStep": 4,
+            "maxBytes": 250000,
+            "framing": "preserve",
+            "metadataPolicy": "strip EXIF XMP ICCP",
+            "scriptSha256": "43d4305d97ae59d894f9eb630c9e454dd745d677f114963dd69d375fa95812ac",
+            "pillowVersion": "12.3.0",
+            "webpVersion": "1.6.0"
+          },
+          "optimizeKey": "14896829d1ec47d0c4596739c88064252e7f1aa0cbb32fb04216782fe71f7b8e",
           "lifecycle": "active",
-          "lifecycleReason": "Added the requested site banner after image review and asset validation.",
+          "lifecycleReason": "Published one clean dotted connection between the Chinese and Korean endpoints, without branches or extensions.",
           "skillsCommit": "856e4c8666c89d3ff1836dce6678e2806fe678fd"
         }
       ],
       "lifecycle": "active",
-      "lifecycleReason": "User requested a decorative Silk Road map banner."
+      "lifecycleReason": "Active banner now uses the user-preferred reference geography. Earlier source hashes remain in their revisions."
     }
   ],
   "sourceRetentionPolicy": "hash-only-no-original-upload",

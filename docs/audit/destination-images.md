@@ -19,7 +19,7 @@ Pages Actions [39142365237](https://github.com/JinhaPark/codex/actions/runs/3914
 
 ## 여행지별 현황표
 
-표의 배치 키는 실제 렌더러 호출 키다. `day:N`은 0부터 시작하므로 일정 3일차 → 방문지와 지도 (`day:2:places`)는 3일차 방문지 아래다.
+The placement column records each image's canonical editorial location. Additional itinerary appearances reuse the same image through `src/itinerary-illustrations.json`. Day indexes start at zero: `day:1:lyabi-hauz` identifies October 13 (day 2), where the evening illustration appears in the Lyabi-Hauz destination card.
 `bukhara`·`samarkand`·`cholponata`·`tashkent`는 여행 해설 → 도시·유적, `geography`는 지리·기후·생활양식,
 `comparative`는 건축 비교, 여행 해설 → 우즈베키스탄 이슬람 건축 유산 → 사마르칸트 Samarkand청색 타일의 도시 (`architecture:Samarkand:intro`)는 건축 유산 → 사마르칸트다. 각 절을 펼쳐 접근한다.
 
@@ -29,7 +29,7 @@ Pages Actions [39142365237](https://github.com/JinhaPark/codex/actions/runs/3914
 | 우즈베키스탄 | 2026-10-12 인천 → 타슈켄트 | 타슈켄트 국제공항 | 없음 (확정 대응 없음) | 대응 그림 없음 | 선택 사항 | 이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님 |
 | 우즈베키스탄 | 2026-10-13 타슈켄트 → 부하라 | 부하라 아르크 성채 | bukhara-ark-walls-pencil — 부하라 아르크 성채 — 벽돌 성벽과 돌출 보루 | 여행 해설 → 부하라 도시사 심층 해설 → 11. 부하라 칸국과 에미르국: 궁정과 권력 (`bukhara:10:0`) | 확보 | 없음 |
 | 우즈베키스탄 | 2026-10-13 타슈켄트 → 부하라 | 칼랸 미나레트 | bukhara-kalyan-minaret-pencil — 부하라 칼랸 미나레트 — 벽돌로 만든 기하학 장식 띠<br>bukhara-poi-kalyan-watercolor — 부하라 포이칼랸 — 미리아랍 마드라사와 칼랸 미나레트·모스크 | 여행 해설 → 부하라 도시사 심층 해설 → 5. 카라한 왕조와 칼랸 미나레트 (`bukhara:4:1`)<br>여행 해설 → 부하라 도시사 심층 해설 → 8. 샤이바니 왕조: 오늘날 옛 시가지의 골격 (`bukhara:7:1`) | 확보 | 없음 |
-| 우즈베키스탄 | 2026-10-13 타슈켄트 → 부하라 | 라비하우즈 | lyabi-hauz-evening-watercolor — 부하라 라비하우즈 — 연못가 식탁과 저녁 분수<br>lyabi-hauz-portal-watercolor — 부하라 라비하우즈 연못 — 분수와 아치형 입구 | 일정 3일차 → 방문지와 지도 (`day:2:places`)<br>여행 해설 → 부하라 도시사 심층 해설 → 9. 17세기 라비하우즈: 물·상업·교육의 만남 (`bukhara:8:0`) | 확보 | 없음 |
+| 우즈베키스탄 | 2026-10-13 타슈켄트 → 부하라 | 라비하우즈 | lyabi-hauz-evening-watercolor — 부하라 라비하우즈 — 연못가 식탁과 저녁 분수<br>lyabi-hauz-portal-watercolor — 부하라 라비하우즈 연못 — 분수와 아치형 입구 | 일정 2일차 → 라비하우즈 (`day:1:lyabi-hauz`)<br>여행 해설 → 부하라 도시사 심층 해설 → 9. 17세기 라비하우즈: 물·상업·교육의 만남 (`bukhara:8:0`) | 확보 | 없음 |
 | 우즈베키스탄 | 2026-10-13 타슈켄트 → 부하라 | 나디르 디반베기 마드라사 | bukhara-divan-begi-portal-pencil — 부하라 나디르 디반베기 마드라사 — 새·사슴·태양 문양 | 여행 해설 → 부하라 → 9. 17세기 라비하우즈: 물·상업·교육의 만남 (`bukhara:8:1`) | 확보 | IMG_8860 새·사슴·태양 문양 확인. 추가 사진 불필요 |
 | 우즈베키스탄 | 2026-10-14 부하라 → 사마르칸트 | 이스마일 사마니 영묘 | bukhara-samani-watercolor — 부하라 이스마일 사마니 영묘 — 돔과 벽돌 장식 | 여행 해설 → 부하라 도시사 심층 해설 → 4. 사만 왕조: 부하라의 첫 번째 황금기 (`bukhara:3:0`) | 확보 | 사진 추가 반영 완료; 실제 표시 위치는 최신 현황표 참조 |
 | 우즈베키스탄 | 2026-10-14 부하라 → 사마르칸트 | 차슈마 아유브 영묘 | bukhara-chashma-ayub-watercolor — 부하라 차슈마 아유브 — 원뿔형 지붕과 벽돌 외벽 | 여행 해설 → 부하라 도시사 심층 해설 → 15. 현장에서 읽는 부하라: 하루 답사법 (`bukhara:14:1`) | 확보 | 사진 추가 반영 완료 |
@@ -44,7 +44,7 @@ Pages Actions [39142365237](https://github.com/JinhaPark/codex/actions/runs/3914
 | 우즈베키스탄 | 2026-10-16 타슈켄트 → 비슈케크 | 하즈라티 이맘 단지 | hazrati-imam-portrait-watercolor — 타슈켄트 하즈라티 이맘 단지 — 타일 아치 입구 | 여행 해설 → 타슈켄트 → 하즈라티 이맘과 종교 학문 (`tashkent:7:detail`) | 부분 확보 | 추가 사진은 선택 보완. 기존 입구 사진 표시 완료 |
 | 우즈베키스탄 → 키르기스스탄 | 2026-10-16 타슈켄트 → 비슈케크 | 마나스 국제공항 | 없음 (확정 대응 없음) | 대응 그림 없음 | 선택 사항 | 이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님 |
 | 키르기스스탄 | 2026-10-17 비슈케크 → 촐폰아타 | 루흐 오르도 문화센터 | rukh-ordo-garden-pencil — 촐폰아타 루흐 오르도 문화센터의 조각 정원<br>rukh-ordo-lakeside-watercolor — 촐폰아타 루흐 오르도 — 호숫가 아치와 조각 정원 | 여행 해설 → 촐폰아타 → 루흐 오르도 문화센터의 상징 (`cholponata:9:0`)<br>여행 해설 → 촐폰아타 → 루흐 오르도 문화센터의 상징 (`cholponata:9:detail`) | 부분 확보 | 추가 사진은 선택 보완. 기존 입구·정원 사진 표시 완료 |
-| 키르기스스탄 | 2026-10-17 비슈케크 → 촐폰아타 | 촐폰아타 암각화 | cholponata-petroglyph-field-watercolor — 촐폰아타 암각화 야외박물관 — 바위 들판과 답사로<br>cholponata-balbal-pencil — 촐폰아타 암각화 야외박물관의 발발(Balbal) 인물 석상<br>cholponata-petroglyph-detail-pencil — 촐폰아타 암각화 — 활과 뿔 달린 동물의 새김선 | 여행 해설 → 촐폰아타 → 암각화의 시간층 (`cholponata:2:0`)<br>일정 6일차 → 방문지와 지도 (`day:5:places`)<br>여행 해설 → 촐폰아타 → 암각화의 시간층 (`cholponata:2:detail`) | 확보 | 바위의 사람·뿔 달린 동물형 새김선 근접 확보. 개별 바위의 연대·장면 해석은 확정하지 않음 |
+| 키르기스스탄 | 2026-10-17 비슈케크 → 촐폰아타 | 촐폰아타 암각화 | cholponata-petroglyph-field-watercolor — 촐폰아타 암각화 구역 — 바위 들판과 답사로<br>cholponata-balbal-pencil — 촐폰아타 암각화 구역 — 발발 석상<br>cholponata-petroglyph-detail-pencil — 촐폰아타 암각화 — 활과 뿔 달린 동물의 새김선 | 여행 해설 → 촐폰아타 → 암각화의 시간층 (`cholponata:2:0`)<br>일정 6일차 → 방문지와 지도 (`day:5:places`)<br>여행 해설 → 촐폰아타 → 암각화의 시간층 (`cholponata:2:detail`) | 확보 | 바위의 사람·뿔 달린 동물형 새김선 근접 확보. 개별 바위의 연대·장면 해석은 확정하지 않음 |
 | 키르기스스탄 | 2026-10-17 비슈케크 → 촐폰아타 | 이식쿨 호수 | issyk-kul-cruise-tian-shan-watercolor — 이식쿨호 유람선에서 바라본 톈산산맥의 설산 능선 | 여행 해설 → 1. 지리·기후·생활양식 → 이식쿨과 알마티의 서로 다른 산록 (`geography:2:0`) | 확보 | 없음 |
 | 키르기스스탄 | 2026-10-17 비슈케크 → 촐폰아타 | 촐폰아타 | 없음 (확정 대응 없음) | 대응 그림 없음 | 선택 사항 | 이동 지점·포괄 도시 항목: 필수 사진 요청 대상 아님 |
 | 키르기스스탄 | 2026-10-18 촐폰아타 → 알마티 | 알라아르차 국립공원 | ala-archa-valley-watercolor — 알라아르차 국립공원 — 숲 너머의 계곡과 설산<br>ala-archa-summit-watercolor — 알라아르차 케이블카 상부에서 본 설산 | 여행 해설 → 비슈케크 → 알라아르차: 수도 옆의 산악 자연 (`bishkek:10:0`)<br>여행 해설 → 비슈케크 → 알라아르차: 수도 옆의 산악 자연 (`bishkek:10:detail`) | 확보 | 트레킹 계곡과 케이블카 상부 조망 확보; 봉우리 고유명·고도는 추정하지 않음 |

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T09:28:05.829Z",
+  "browser": "153.0.8010.0",
+  "viewports": [
+    375,
+    390,
+    430
+  ],
+  "articles": 16,
+  "dayStates": 10,
+  "coarseSectionsMax": 4,
+  "images": 51,
+  "lyabiHauzOnOctober13": true,
+  "balbalAreaCaption": true,
+  "decodedVariants": 137,
+  "mapLinks": 40,
+  "narrativeWords": {
+    "geography": 372,
+    "history": 1198,
+    "resources": 358,
+    "economy": 405,
+    "education": 447
+  },
+  "readingPositionBackTabReload": true,
+  "tocOpensAndClearsStickyBars": true,
+  "escapeClosesDialog": true,
+  "storageUnavailable": true,
+  "legacyLinks": true,
+  "checklistPersistence": true,
+  "fxFixture": true,
+  "voiceFallback": true,
+  "offlineAllArticlesAndVisitedGuideImages": true,
+  "cacheUpgrade": "ca26-pages-v32-itinerary-illustrations",
+  "otherCachePreserved": true,
+  "javascriptErrors": [],
+  "limits": [
+    "Local production build in Chromium, not an actual iPhone Safari or installed home-screen PWA",
+    "Live FX service not tested; deterministic fixture used",
+    "Cache upgrade uses current app with old cache name, not historical deployed bytes",
+    "Unvisited images are not guaranteed offline"
+  ],
+  "itineraryMappedIllustrations": 44,
+  "sourceBase": "fd1deea793c20cbafaba21673eef64f79ebbc226",
+  "unitTests": {
+    "passed": 78,
+    "failed": 0
+  },
+  "build": "passed",
+  "assetFilesChanged": false,
+  "guideImagesReused": 43,
+  "canonicalPlacementMoved": "lyabi-hauz-evening-watercolor: day:2:places -> day:1:lyabi-hauz"
+}
