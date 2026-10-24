@@ -7,6 +7,7 @@
 - `caucasus/` contains the April 29–May 11, 2026 Caucasus itinerary (13 days), notes and tests.
 - `shared/public/illustrations/` stores every published illustration for both journeys. Do not upload raw user photographs or create redundant image copies.
 - `shared/images/illustrations.json` is the canonical illustration manifest; `shared/images/image-lineage.json` records image lifecycle history. Historical revision paths can refer to their original repository location; preserve those references as immutable evidence.
+- Name all new Caucasus WebP assets `caucasus-YYYYMMDD-place-subject-style-WIDTH.webp`. Use the verified capture date, lowercase kebab-case place/subject, the actual rendering style (for example `watercolor`, `colored-pencil`, `documentary-photo`), and the actual decoded image width in pixels. Record any renamed filenames consistently in manifests and image lineage; never guess date or location or rename historical revision references.
 - `shared/style.css` and `shared/travel-utils.js` are shared website presentation resources. Keep travel-specific itineraries and browser storage separated.
 - Build the three HTML entrypoints with Vite, using `shared/public` as the static public directory. Deploy the root selector at `/codex/`, the older guide at `/codex/tantantan/`, and the new guide at `/codex/caucasus/`.
 - Only explicitly attended optional tours belong in the Caucasus itinerary. Currently the recorded tour IDs are 1, 3, and 4. Do not add other activities from the printed optional-tour list.
