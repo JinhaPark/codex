@@ -59,14 +59,14 @@ test('five core explanations keep their order; Kazakhstan remains a separate cat
   assert.deepEqual([...html.matchAll(/data-core-section="([^"]+)"/g)].map(m=>m[1]), ['geography','history','resources','economy','education']);
 });
 
-test('each guide catalog link routes to a unique, independently readable article', () => {
+test('each inline guide also preserves a unique, independently readable article', () => {
   const ids = guideEntries.map(e=>e.id);
   assert.equal(new Set(ids).size, ids.length);
   for (const category of ['core','cities','kazakhstan']) {
     const html = renderGuide({category});
     assert.doesNotMatch(html, /data-guide-article=/);
     for (const entry of guideEntries.filter(e=>e.category === category)) {
-      assert.ok(html.includes(`href="#guide/${category}/${entry.id}"`));
+      assert.ok(html.includes(`data-guide-inline="${entry.id}"`));
       const article = renderGuide({article:entry.id});
       assert.ok(article.includes(`id="${entry.id}"`));
       const targets = [...article.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
@@ -125,4 +125,18 @@ test('practical guidance moves to preparation with checkbox state preserved', as
   assert.match(cards, /비자·마스터카드/);
   assert.match(cards, /AMEX\(아멕스\)는 결제할 수 없습니다/);
   assert.match(cards, /미국 달러\(USD\).*현지 환전소.*현지 통화로 환전/);
+});
+
+test('one continuous list reveals complete articles without nested chapter disclosures', async()=>{
+ const html = renderGuide({category:'cities'});
+ assert.equal((html.match(/data-guide-inline=/g)||[]).length, guideEntries.length);
+ assert.ok(!html.includes('data-guide-category='));
+ assert.ok(!html.includes('data-guide-open='));
+ const bukhara = html.split('data-guide-inline="bukhara-history"')[1].split('data-guide-inline=')[0];
+ for (const title of ['1. 오아시스와 이슬람 도시의 형성','2. 정복과 옛 시가지의 성장','3. 신앙·권력과 근현대의 변화','4. 현장에서 읽는 부하라','출처와 기준일']) assert.ok(bukhara.includes(title), title);
+ assert.ok(!bukhara.includes('data-reader-section'));
+ assert.ok(bukhara.includes('bukhara-samani-watercolor'));
+ assert.ok(html.indexOf('guide-group-core') < html.indexOf('guide-group-cities'));
+ assert.ok(html.indexOf('guide-group-cities') < html.indexOf('guide-group-kazakhstan'));
+ assert.ok(renderGuide({article:'bukhara-history'}).includes('data-guide-article="bukhara-history"'));
 });

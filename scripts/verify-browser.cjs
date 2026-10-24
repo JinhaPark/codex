@@ -61,8 +61,8 @@ async function decodeFigure(page, figure) {
  const articles = [];
  await page.locator('[data-tab="guide"]').click();
  for (const category of ['core','cities','kazakhstan']) {
-  await page.locator(`[data-guide-category="${category}"]`).click();
-  for (const link of await page.locator('[data-guide-open]').all()) articles.push({category,id:await link.getAttribute('data-guide-open')});
+  
+  for (const link of await page.locator(`#guide-group-${category} + .guide-book-list [data-guide-inline]`).all()) articles.push({category,id:await link.getAttribute('data-guide-inline')});
  }
  assert.equal(articles.length,16);
  // The banner is a decorative header asset, not a destination figure.
@@ -153,10 +153,10 @@ async function decodeFigure(page, figure) {
  await page.locator('[data-day="2"]').click();assert.equal(await page.locator('[data-illustration="lyabi-hauz-evening-watercolor"]').count(),0);
  await page.locator('[data-day="5"]').click();const balbal=page.locator('[data-illustration="cholponata-balbal-pencil"]');assert.equal(await balbal.locator('figcaption').textContent(),'촐폰아타 암각화 구역 — 발발 석상');await decodeFigure(page,balbal);await page.screenshot({path:path.join(qa,'balbal-caption-430.png')});
  // User journey: list -> article -> section -> back -> reopen, tab switch and reload.
- await page.goto(base+'#guide/cities');await settle(page);await page.locator('[data-guide-open="bukhara-history"]').click();await settle(page);
+ await page.goto(base+'#guide/cities');await settle(page);await openArticle(page,base,'cities','bukhara-history');
  await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').nth(2).click();await page.locator('[data-reader-section]').nth(2).scrollIntoViewIfNeeded();await page.evaluate(()=>scrollBy(0,150));
  const before=await page.evaluate(()=>scrollY);
- await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-category="cities"]').getAttribute('aria-pressed'),'true');
+ await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-inline]').count(),16);
  await page.goBack();await settle(page);assert.ok(await page.locator('[data-reader-section]').nth(2).evaluate(n=>n.open));assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Back restores reading position');
  await page.locator('[data-tab="list"]').click();await page.locator('[data-check="0"]').check();await page.locator('[data-tab="guide"]').click();await settle(page);
  assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Tab switch restores reading position');
@@ -167,7 +167,7 @@ async function decodeFigure(page, figure) {
  await page.locator('[data-guide-toc]').click();await page.locator('[data-guide-jump]').last().click();await settle(page);
  await page.locator('[data-guide-toc]').click();await page.screenshot({path:path.join(qa,'toc-430.png')});await page.keyboard.press('Escape');
  await page.goto(base+'#guide/cities');await settle(page);await page.screenshot({path:path.join(qa,'library-430.png')});
- await page.locator('[data-guide-open="bukhara-history"]').click();await settle(page);await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').first().click();await page.evaluate(()=>scrollTo(0,document.querySelector('main').offsetTop-60));await page.screenshot({path:path.join(qa,'bukhara-430.png')});
+ await openArticle(page,base,'cities','bukhara-history');await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').first().click();await page.evaluate(()=>scrollTo(0,document.querySelector('main').offsetTop-60));await page.screenshot({path:path.join(qa,'bukhara-430.png')});
  // Large text, keyboard focus and blocked/corrupt storage keep the reader usable.
  await page.addStyleTag({content:'.guide-reader p,.guide-reader h4,.guide-book p{font-size:36px!important}.guide-reader summary{font-size:32px!important}'});await fits(page,'large text');
  await page.goto(base+'#history-almaty');assert.equal(await page.locator('[data-guide-article]').getAttribute('data-guide-article'),'history-almaty');

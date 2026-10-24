@@ -30,15 +30,14 @@ export function createGuideReader({root, entries, onNavigate}) {
   const currentKey = () => {
     const article = root.querySelector('[data-guide-article]');
     if (article) return `article:${article.dataset.guideArticle}`;
-    const category = root.querySelector('[data-guide-category][aria-pressed="true"]');
-    return category ? `list:${category.dataset.guideCategory}` : '';
+    return root.querySelector('.guide-library') ? 'list:all' : '';
   };
   function save() {
     if (restoring) return;
     const key = currentKey();
     if (!key) return;
     memory.positions[key] = scrollY;
-    if (key.startsWith('article:')) memory.opens[key] = [...root.querySelectorAll('.guide-reader details')].map(d=>d.open);
+    memory.opens[key] = [...root.querySelectorAll('.guide-reader details, [data-guide-inline]')].map(d=>d.open);
     persist();
   }
   function hashFor(next) {
@@ -77,7 +76,7 @@ export function createGuideReader({root, entries, onNavigate}) {
     clearTimeout(timer);timer = setTimeout(save, 180);
     cancelAnimationFrame(positionFrame);positionFrame = requestAnimationFrame(updatePosition);
   }, {passive:true});
-  root.addEventListener('toggle', e => {if (e.target.matches('.guide-reader details') && e.target.isConnected) {clearTimeout(timer);timer = setTimeout(save, 180);}}, true);
+  root.addEventListener('toggle', e => {if (e.target.matches('.guide-reader details, [data-guide-inline]') && e.target.isConnected) {clearTimeout(timer);timer = setTimeout(save, 180);}}, true);
   function mount() {
     cancelAnimationFrame(restoreFrame);
     const serial = ++mountSerial;
@@ -85,7 +84,7 @@ export function createGuideReader({root, entries, onNavigate}) {
     root.dataset.guideRestoring = 'true';
     const key = currentKey();
     root.style.setProperty('--guide-nav-height', `${root.querySelector('nav[aria-label="여행 메뉴"]').getBoundingClientRect().height}px`);
-    const details = [...root.querySelectorAll('.guide-reader details')];
+    const details = [...root.querySelectorAll('.guide-reader details, [data-guide-inline]')];
     if (Array.isArray(memory.opens[key])) details.forEach((d,i)=>{if (typeof memory.opens[key][i] === 'boolean') d.open = memory.opens[key][i];});
     const toc = root.querySelector('[data-guide-toc-items]');
     if (toc) {
