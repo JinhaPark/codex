@@ -12,9 +12,9 @@ const modules = [
 // Only its existing illustration JSON import is inlined; all rendering stays intact.
 async function loadGuide() {
   const illustrationUrl = new URL('../src/illustrations.js', import.meta.url);
-  const artwork = JSON.parse(fs.readFileSync(new URL('../src/illustrations.json', import.meta.url)));
+  const artwork = JSON.parse(fs.readFileSync(new URL('../../shared/images/illustrations.json', import.meta.url)));
   const illustrationSource = fs.readFileSync(illustrationUrl, 'utf8')
-    .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
+    .replace("import illustrations from '../../shared/images/illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
     .replace("import itineraryIllustrations from './itinerary-illustrations.json';", `const itineraryIllustrations = ${fs.readFileSync(new URL('../src/itinerary-illustrations.json', import.meta.url), 'utf8')};`);
   const illustrationModule = `data:text/javascript;base64,${Buffer.from(illustrationSource).toString('base64')}`;
   const guideUrl = new URL('../src/render-guide.js', import.meta.url);

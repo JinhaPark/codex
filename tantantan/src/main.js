@@ -57,7 +57,7 @@ root.querySelectorAll('[data-speak]').forEach(row=>{const play=()=>speakUzbek(tr
 root.querySelectorAll('[data-check]').forEach(b=>b.onchange=()=>{let x=checks();x[b.dataset.check]=b.checked;localStorage.setItem('central-asia-checks',JSON.stringify(x))});
 }
 render();dispatchEvent(new Event('guide:ready'));addEventListener('online',render);addEventListener('offline',render);
-if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw-tantantan.js').catch(()=>{}));
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw-tantantan.js',{scope:import.meta.env.BASE_URL+'tantantan/'}).catch(()=>{}));
 
 // Public exchange-rate data, no API key. Do not silently use stale estimates.
 function showFx(){

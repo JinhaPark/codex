@@ -1,4 +1,17 @@
-# AGENTS.md — Central Asia Travel Guide
+# AGENTS.md — Travel Companions
+
+## Workspace topology (authoritative)
+
+- Repository root `index.html` selects between two independently rendered travel companions.
+- `tantantan/` contains the original October 2026 Central Asia guide, editorial material, research, tests and project scripts.
+- `caucasus/` contains the April 29–May 11, 2026 Caucasus itinerary (13 days), notes and tests.
+- `shared/public/illustrations/` stores every published illustration for both journeys. Do not upload raw user photographs or create redundant image copies.
+- `shared/images/illustrations.json` is the canonical illustration manifest; `shared/images/image-lineage.json` records image lifecycle history. Historical revision paths can refer to their original repository location; preserve those references as immutable evidence.
+- `shared/style.css` and `shared/travel-utils.js` are shared website presentation resources. Keep travel-specific itineraries and browser storage separated.
+- Build the three HTML entrypoints with Vite, using `shared/public` as the static public directory. Deploy the root selector at `/codex/`, the older guide at `/codex/tantantan/`, and the new guide at `/codex/caucasus/`.
+- Only explicitly attended optional tours belong in the Caucasus itinerary. Currently the recorded tour IDs are 1, 3, and 4. Do not add other activities from the printed optional-tour list.
+- Printed documents may contain private phone numbers and names; do not put these into the public website, static assets, or data files.
+- During incremental editing, reuse existing verification records and test the affected scope. Full tests are deferred until the user requests final merging.
 
 ## Scope and priorities
 

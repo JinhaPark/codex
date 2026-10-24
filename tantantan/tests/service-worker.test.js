@@ -43,7 +43,7 @@ test('guide requests use only the current guide cache and keep cache writes aliv
   let finishPut;
   const pendingPut = new Promise(resolve => { finishPut = resolve; });
   const { stores, handlers } = worker({ put: () => pendingPut });
-  const request = { url: 'https://example.github.io/codex/tantantan/assets/app.js', method: 'GET' };
+  const request = { url: 'https://example.github.io/codex/assets/app.js', method: 'GET' };
   stores.set('other-site-v1', new Map([[request.url, new Response('unrelated')]]));
   let response;
   const lifetimes = [];
@@ -80,7 +80,7 @@ test('online navigation replaces stale HTML with the published document', async 
 test('offline navigation preserves the saved page and cached assets avoid the network', async () => {
   let requests = 0;
   const { stores, handlers } = worker({ fetch: async () => { requests++; throw new Error('offline'); } });
-  const asset = 'https://example.github.io/codex/tantantan/assets/app.js';
+  const asset = 'https://example.github.io/codex/assets/app.js';
   stores.set(current, new Map([['/codex/tantantan/', new Response('saved page')], [asset, new Response('saved asset')]]));
   let result;
   const event = request => ({request, respondWith: p => { result = p; }, waitUntil: () => {}});

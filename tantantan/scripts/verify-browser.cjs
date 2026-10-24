@@ -3,20 +3,20 @@
  * Screenshots and results go outside the repository, never into the production bundle. */
 const fs = require('node:fs'), path = require('node:path'), http = require('node:http'), assert = require('node:assert/strict');
 const {chromium} = require('playwright');
-const repo = path.resolve(__dirname, '..'), qa = path.resolve(repo, '../qa-guide-reader');
-const manifest = JSON.parse(fs.readFileSync(path.join(repo, 'src/illustrations.json')));
+const repo = path.resolve(__dirname, '..'), project = path.resolve(repo, '..'), qa = path.resolve(project, '../qa-guide-reader');
+const manifest = JSON.parse(fs.readFileSync(path.join(project, 'shared/images/illustrations.json')));
 const itineraryRefs = JSON.parse(fs.readFileSync(path.join(repo, 'src/itinerary-illustrations.json')));
 const itinerary = JSON.parse(fs.readFileSync(path.join(repo, 'src/itinerary.json')));
 const coverage = JSON.parse(fs.readFileSync(path.join(repo, 'docs/audit/destination-images.json')));
-const currentCache = fs.readFileSync(path.join(repo, 'public/sw.js'), 'utf8').match(/const CACHE = '([^']+)'/)[1];
+const currentCache = fs.readFileSync(path.join(project, 'shared/public/sw-tantantan.js'), 'utf8').match(/const CACHE = '([^']+)'/)[1];
 const mime = {'.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.css':'text/css; charset=utf-8', '.webp':'image/webp', '.json':'application/json', '.svg':'image/svg+xml'};
 fs.mkdirSync(qa, {recursive:true});
 let fixture = false, browser;
 const server = http.createServer((req,res)=>{
  const route = decodeURIComponent(req.url.split('?')[0]);
- let file = path.resolve(repo, 'dist', route.replace(/^\/codex\//, '') || 'index.html');
+ let file = path.resolve(project, 'dist', route.replace(/^\/codex\//, '') || 'index.html');
  if (route.startsWith('/qa-fonts/')) file = path.resolve(repo, '../qa-runtime/node_modules/@fontsource/noto-sans-kr/files', path.basename(route));
- if ((!route.startsWith('/qa-fonts/') && (!route.startsWith('/codex/') || !file.startsWith(path.join(repo, 'dist')+path.sep))) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {res.writeHead(404);res.end();return;}
+ if ((!route.startsWith('/qa-fonts/') && (!route.startsWith('/codex/') || !file.startsWith(path.join(project, 'dist')+path.sep))) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {res.writeHead(404);res.end();return;}
  let bytes = fs.readFileSync(file);
  if (fixture && file.endsWith('/sw.js')) bytes = Buffer.from(bytes.toString().replace(currentCache, 'ca26-pages-v27-shopping-preparation-tabs'));
  res.writeHead(200, {'Content-Type':mime[path.extname(file)] || 'application/octet-stream','Cache-Control':'no-store'});res.end(bytes);
@@ -35,7 +35,7 @@ async function decodeFigure(page, figure) {
  return figure.locator('img').evaluate(async n=>{await n.decode();const r=n.getBoundingClientRect();return {naturalWidth:n.naturalWidth,naturalHeight:n.naturalHeight,width:r.width,height:r.height,attributeWidth:+n.getAttribute('width'),attributeHeight:+n.getAttribute('height'),src:n.currentSrc,lazy:n.loading,alt:n.alt};});
 }
 (async()=>{
- await new Promise(r=>server.listen(0,'127.0.0.1',r));const base = `http://127.0.0.1:${server.address().port}/codex/`;
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));const base = `http://127.0.0.1:${server.address().port}/codex/tantantan/`;
  browser = await chromium.launch({headless:true, ...(process.env.QA_CHROMIUM ? {executablePath:process.env.QA_CHROMIUM} : {}), args:['--no-sandbox','--disable-dev-shm-usage']});
  const context = await browser.newContext({viewport:{width:375,height:812},isMobile:true,hasTouch:true,serviceWorkers:'block'});
  await context.route('https://latest.currency-api.pages.dev/**',r=>r.fulfill({contentType:'application/json',body:JSON.stringify({date:'2026-10-17',krw:{uzs:10,kgs:.0656,kzt:.4}})}));
@@ -153,7 +153,7 @@ async function decodeFigure(page, figure) {
  assert.deepEqual([...seen.keys()].sort(),manifest.filter(a=>a.purpose!=='site-banner').map(a=>a.id).sort());
  for(const row of coverage) for(const id of row.imageIds) assert.ok(seen.has(id),row.place+' coverage');
  let decodedVariants=0;
- for(const art of manifest) for(const v of art.variants) {const dims=await page.evaluate(async url=>{const img=new Image();img.src=url;await img.decode();return [img.naturalWidth,img.naturalHeight];},base+'illustrations/'+v.file);assert.deepEqual(dims,[v.width,v.height]);decodedVariants++;}
+ for(const art of manifest) for(const v of art.variants) {const dims=await page.evaluate(async url=>{const img=new Image();img.src=url;await img.decode();return [img.naturalWidth,img.naturalHeight];},base.replace('/tantantan/', '/')+'illustrations/'+v.file);assert.deepEqual(dims,[v.width,v.height]);decodedVariants++;}
  await page.locator('[data-tab="days"]').click();await page.locator('[data-day="1"]').click();
  assert.equal(await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').count(),1);
  await page.locator('[data-illustration="lyabi-hauz-portal-watercolor"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(qa,'lyabi-hauz-oct13-430.png')});

@@ -15,7 +15,7 @@ retained = [v for image in lineage['images'] for revision in image['revisions']
             if revision['lifecycle'] in ('archived', 'deletion-candidate') for v in revision['variants']]
 assert sorted(set(expected) | {Path(v['file']).name for v in retained}) == sorted(p.name for p in asset_dir.iterdir())
 for variant in retained:
-    path = ROOT / variant['file']
+    path = ROOT.parent / 'shared' / variant['file']
     raw = path.read_bytes()
     assert len(raw) == variant['bytes'] and hashlib.sha256(raw).hexdigest() == variant['sha256'], path
     with Image.open(path) as im:

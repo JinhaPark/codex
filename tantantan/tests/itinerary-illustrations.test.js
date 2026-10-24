@@ -3,11 +3,11 @@ import fs from 'node:fs';
 import test from 'node:test';
 
 const read = path => JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
-const artwork = read('../src/illustrations.json');
+const artwork = read('../../shared/images/illustrations.json');
 const itinerary = read('../src/itinerary.json');
 const references = read('../src/itinerary-illustrations.json');
 const source = fs.readFileSync(new URL('../src/illustrations.js', import.meta.url), 'utf8')
-  .replace("import illustrations from './illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
+  .replace("import illustrations from '../../shared/images/illustrations.json';", `const illustrations = ${JSON.stringify(artwork)};`)
   .replace("import itineraryIllustrations from './itinerary-illustrations.json';", `const itineraryIllustrations = ${JSON.stringify(references)};`);
 const renderer = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 const idsIn = html => [...html.matchAll(/data-illustration="([^"]+)"/g)].map(m=>m[1]);
