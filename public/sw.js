@@ -1,4 +1,4 @@
-const CACHE = 'ca26-pages-v37-main-silk-road';
+const CACHE = 'ca26-pages-v38-plain-green-banner';
 const CACHE_PREFIX = 'ca26-pages-';
 const ROOT = '/codex/';
 

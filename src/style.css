@@ -159,15 +159,11 @@ nav button{padding:15px 16px;font-size:14px;min-height:48px}
 .guide-inline-body .guide-inline-heading{font-size:19px;line-height:1.65;margin:25px 0 10px}
 .guide-inline-body .bukhara-chapter-body{padding:0}
 .guide-book>summary:focus-visible{outline:3px solid #17617a;outline-offset:-3px}
-/* Silk Road artwork and a readable, single-line title band. */
-.site-banner{position:relative;isolation:isolate;display:flex;align-items:flex-end;height:clamp(230px,25vw,360px);padding:0;background:#e6d3af;overflow:hidden;color:#263d49}
-.site-banner-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:56% 48%;z-index:-1}
-.site-title-band{width:100%;padding:18px clamp(18px,3vw,48px);background:#faf5e9f2;border-top:1px solid #dacbb2}
-.site-title-line{display:flex;align-items:baseline;gap:clamp(16px,2.2vw,36px);width:fit-content;max-width:100%;margin:auto;overflow-x:auto;white-space:nowrap;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#b99d76 transparent;padding:3px 0 5px}
-.site-title-line h1{flex:none;margin:0;font-family:inherit;font-size:clamp(25px,2.6vw,40px);font-weight:650;line-height:1.3;letter-spacing:-.05em;white-space:nowrap}
-.site-title-line h1 em{font-style:normal;color:#9b5037;font-weight:750}
-.site-title-line p{flex:none;margin:0;opacity:1;line-height:1.4;font-size:clamp(12px,1.1vw,16px);white-space:nowrap;color:#425663}
-.site-title-line:focus-visible{outline:2px solid #9b5037;outline-offset:3px}
-@media(max-width:600px){.site-banner{height:230px}.site-banner-art{object-position:100% 42%}.site-title-band{padding:14px 18px}.site-title-line{margin:0;gap:20px}.site-title-line h1{font-size:27px}.site-title-line p{font-size:13px}}
+/* Restore the original plain green header and gold title accents. */
+.site-banner{background:#14313c;color:#fff;padding:52px max(24px,calc((100vw - 760px)/2)) 45px}
+.site-banner .eyebrow{color:#e6c98c;font-size:11px;letter-spacing:2px}
+.site-banner h1{font-family:inherit;font-size:clamp(43px,10vw,80px);font-weight:400;line-height:1;margin:20px 0}
+.site-banner h1 em{color:#e6c98c}
+.site-banner p{opacity:.8}
 
 .guide-inline-body p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:18px;line-height:1.9}
