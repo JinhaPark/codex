@@ -348,7 +348,7 @@ def load_backend(config_path, repo):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('operation', choices=['probe', 'persist', 'lookup', 'restore'])
-    parser.add_argument('--repo', default=str(Path(__file__).resolve().parent.parent))
+    parser.add_argument('--repo', default=str(Path(__file__).resolve().parents[2]))
     parser.add_argument('--config', default=os.environ.get('IMAGE_MASTER_CACHE_CONFIG'))
     parser.add_argument('--revision')
     parser.add_argument('--input')
