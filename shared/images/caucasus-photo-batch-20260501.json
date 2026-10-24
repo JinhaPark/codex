@@ -1,48 +1,5 @@
 [
   {
-    "id": "caucasus-20260501-sheki-lunch-garden-watercolor",
-    "original": "image(7).png",
-    "sourceSha256": "f9a9433ee8bc5adf8434ded0dfc68b730aa39ec4c87c9225f570112ce69e997b",
-    "sourceWidth": 1000,
-    "sourceHeight": 750,
-    "generatedWidth": 1448,
-    "generatedHeight": 1086,
-    "outputSha256": "159623ac25f1244ffebaae95738f852a73f8fd2afd93e2efe081c3796216bb9a",
-    "style": "watercolor",
-    "placement": "caucasus:2026-05-01:travel-observation:restaurant-garden",
-    "caption": "셰키로 가는 길, 점심 식당의 봄 정원",
-    "alt": "봄나무와 풀이 무성한 산자락의 식당 정원 돌길에 여행자가 서 있는 모습",
-    "generationId": "cb450c3e-c24f-4797-9f8a-6c14ac28dc48",
-    "status": "prepared-in-pr",
-    "originalUploadForbidden": true,
-    "variants": [
-      {
-        "width": 480,
-        "height": 360,
-        "bytes": 66744,
-        "quality": 85,
-        "sha256": "c6547a96cfd3a5f0e52a056caf7f52bdb151ed38744fe03826efd5c364ef8d77",
-        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-480.webp"
-      },
-      {
-        "width": 800,
-        "height": 600,
-        "bytes": 183202,
-        "quality": 85,
-        "sha256": "652a8dddb77b55f404d5f538c270a25bdf61dc47edbb259eb024a3907a12e2ea",
-        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-800.webp"
-      },
-      {
-        "width": 1000,
-        "height": 750,
-        "bytes": 247442,
-        "quality": 82,
-        "sha256": "0a29da3fbb3389fb439bcd89828a86d321e8fb67cee336db0754062454d51125",
-        "file": "caucasus-20260501-sheki-lunch-garden-watercolor-1000.webp"
-      }
-    ]
-  },
-  {
     "id": "caucasus-20260501-azerbaijan-aliyev-portrait-documentary-photo",
     "original": "image(8).png",
     "sourceSha256": "ce39054d05a1a8de8cc5146e07f25d017a23c1f1ac6f356602d842badf04ca8d",
