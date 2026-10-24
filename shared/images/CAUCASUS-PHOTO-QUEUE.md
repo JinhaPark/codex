@@ -20,3 +20,7 @@ Both records are `prepared-in-pr`. Source images and generated PNG were committe
 ## Uploaded WebP migration (2026-10-24)
 
 The root-level WebP uploads in GitHub main (26 files) are copied to the shared public illustration store using unchanged Git blob IDs. Non-standard filenames are normalized to `caucasus-YYYYMMDD-place-subject-style-WIDTH.webp`. The root copies are omitted from the migration branch and will be removed from the active tree only when the PR merges. The image catalog records the former root file, Git blob SHA and byte count. A filename-based width does not replace a full decoded-image test. Additional user-uploaded images for Baku, Gobustan, Sheki street, Georgian mountain road and Sighnaghi have been registered; editorial placement is separate from asset migration.
+
+## Oversize import audit
+
+Five manually uploaded, already-published WebP blobs exceed the 250,000-byte target for optimized variants. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test records the five filenames and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.

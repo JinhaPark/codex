@@ -29,6 +29,7 @@ jobs:
         env:
           IMAGE_LINEAGE_BASE: ${{ github.event.before || github.sha }}
       - run: npm run build
+      - run: node scripts/verify-travel-build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
