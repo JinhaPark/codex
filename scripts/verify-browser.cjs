@@ -60,11 +60,11 @@ async function decodeFigure(page, figure) {
  }
  const articles = [];
  await page.locator('[data-tab="guide"]').click();
- for (const category of ['core','cities','kazakhstan']) {
+ for (const category of ['core','cities','architecture','kazakhstan']) {
   
   for (const link of await page.locator(`#guide-group-${category} + .guide-book-list [data-guide-inline]`).all()) articles.push({category,id:await link.getAttribute('data-guide-inline')});
  }
- assert.equal(articles.length,16);
+ assert.equal(articles.length,15);
  // The banner is a decorative header asset, not a destination figure.
  const banner = manifest.find(art=>art.purpose==='site-banner');assert.ok(banner);
  for (const width of [375,390,430,768,1280,1920]) {
@@ -156,7 +156,7 @@ async function decodeFigure(page, figure) {
  await page.goto(base+'#guide/cities');await settle(page);await openArticle(page,base,'cities','bukhara-history');
  await page.locator('[data-guide-collapse]').click();await page.locator('[data-reader-section] > summary').nth(2).click();await page.locator('[data-reader-section]').nth(2).scrollIntoViewIfNeeded();await page.evaluate(()=>scrollBy(0,150));
  const before=await page.evaluate(()=>scrollY);
- await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-inline]').count(),16);
+ await page.locator('[data-guide-list]').first().click();await settle(page);assert.equal(await page.locator('[data-guide-inline]').count(),15);
  await page.goBack();await settle(page);assert.ok(await page.locator('[data-reader-section]').nth(2).evaluate(n=>n.open));assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Back restores reading position');
  await page.locator('[data-tab="list"]').click();await page.locator('[data-check="0"]').check();await page.locator('[data-tab="guide"]').click();await settle(page);
  assert.ok(Math.abs(await page.evaluate(()=>scrollY)-before)<3,'Tab switch restores reading position');

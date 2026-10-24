@@ -62,7 +62,7 @@ test('five core explanations keep their order; Kazakhstan remains a separate cat
 test('each inline guide also preserves a unique, independently readable article', () => {
   const ids = guideEntries.map(e=>e.id);
   assert.equal(new Set(ids).size, ids.length);
-  for (const category of ['core','cities','kazakhstan']) {
+  for (const category of ['core','cities','architecture','kazakhstan']) {
     const html = renderGuide({category});
     assert.doesNotMatch(html, /data-guide-article=/);
     for (const entry of guideEntries.filter(e=>e.category === category)) {
@@ -85,7 +85,7 @@ test('deep dives render every paragraph, while existing cities and illustrations
       for (const paragraph of paragraphs) assert.ok(html.includes(`<p>${escape(paragraph)}</p>`), heading);
     }
   }
-  for (const id of ['bukhara-history', 'history-samarkand', 'history-tashkent', 'history-bishkek', 'history-cholponata', 'history-almaty', 'architecture-comparative', 'architecture-guide']) {
+  for (const id of ['bukhara-history', 'history-samarkand', 'history-tashkent', 'history-bishkek', 'history-cholponata', 'history-almaty', 'architecture-comparative']) {
     assert.ok(html.includes(`id="${id}"`), id);
   }
   const { default: almaty } = await import('../src/history-almaty.js');
@@ -139,4 +139,19 @@ test('one continuous list reveals complete articles without nested chapter discl
  assert.ok(html.indexOf('guide-group-core') < html.indexOf('guide-group-cities'));
  assert.ok(html.indexOf('guide-group-cities') < html.indexOf('guide-group-kazakhstan'));
  assert.ok(renderGuide({article:'bukhara-history'}).includes('data-guide-article="bukhara-history"'));
+});
+
+test('Islamic architecture has one category and article without repeated destination listings',()=>{
+ const html=renderGuide();
+ assert.ok(html.includes('id="guide-group-architecture"'));
+ assert.equal(guideEntries.filter(e=>e.category==='architecture').length,1);
+ assert.equal(guideEntries.find(e=>e.id==='bukhara-history').title,'부하라');
+ const article=renderGuide({article:'architecture-comparative'});
+ assert.ok(article.includes('재료에서 공간으로'));
+ assert.ok(article.includes('사마르칸트와 부하라의 건축 유산'));
+ assert.ok(article.includes('architecture:Samarkand:intro') || article.includes('data-illustration='));
+ assert.ok(!article.includes('class="architecture-site"'));
+ assert.ok(!article.includes('Registan Square'));
+ assert.ok(!article.includes('Po-i-Kalyan'));
+ assert.equal(renderGuide({article:'architecture-guide'}),article);
 });
