@@ -7,7 +7,7 @@
     "width": 1914,
     "height": 1436,
     "sha256": "ccff25f68f37026139ec7ce0a741569156833531a3c128fbbf7a981bd619198b",
-    "uploaded": false
+    "originalPhotoCommitted": false
   },
   "illustration": {
     "style": "watercolor",
@@ -23,22 +23,31 @@
       "width": 480,
       "height": 360,
       "bytes": 64922,
-      "sha256": "bdbe3fe1cbcdb81e000d0551691e0a823e495142fb0137388c0171bc99e98f05"
+      "sha256": "bdbe3fe1cbcdb81e000d0551691e0a823e495142fb0137388c0171bc99e98f05",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-480.webp"
     },
     {
       "width": 800,
       "height": 600,
       "bytes": 169878,
-      "sha256": "a9d70fc36fd66e04ae8f4cb7e9773c55c095cc22794a50a3ae20b0dbf3623fdb"
+      "sha256": "a9d70fc36fd66e04ae8f4cb7e9773c55c095cc22794a50a3ae20b0dbf3623fdb",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-800.webp"
     },
     {
       "width": 1200,
       "height": 900,
       "bytes": 240150,
-      "sha256": "6e0618bcf284c34428b065d5c54bf955571aabd8eb067d162aff4696ac616261"
+      "sha256": "6e0618bcf284c34428b065d5c54bf955571aabd8eb067d162aff4696ac616261",
+      "file": "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp"
     }
   ],
-  "status": "pending-binary-upload",
-  "placement": "caucasus:2026-05-02:sighnaghi",
-  "note": "The three WebP files have been generated locally but are not yet present in the GitHub tree. Do not register as published in the canonical illustration manifest or render this image until verified uploads exist."
+  "status": "integrated-in-main",
+  "placement": "caucasus:2026-05-02:destination:sighnaghi",
+  "note": "Historical source and generation metadata recovered from the original photo-edit batch. The three optimized WebP blobs are already published in shared/public/illustrations via PR #51 (merge commit 4302b302c4c9c8eb99dd9cd960066f6a986bed46). No additional image upload is needed. This file is an intake provenance record, not a second manifest or published image copy.",
+  "canonicalIllustrationId": "caucasus-20260502-sighnaghi-panorama-watercolor",
+  "assetPaths": [
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-480.webp",
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-800.webp",
+    "shared/public/illustrations/caucasus-20260502-sighnaghi-panorama-watercolor-1200.webp"
+  ]
 }
