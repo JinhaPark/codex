@@ -241,13 +241,13 @@
           "optimizeKey": null,
           "lifecycle": "deletion-candidate",
           "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
-          "lifecycleChangedAt": "2026-10-24T12:01:00Z"
+          "lifecycleChangedAt": "2026-10-24T11:22:42Z"
         }
       ],
       "lifecycle": "deletion-candidate",
       "lastPublishedRevisionId": "legacy-rukh-ordo-garden-pencil",
       "lifecycleReason": "Reference review found no remaining publication or editing-parent use; explicit removal requested.",
-      "lifecycleChangedAt": "2026-10-24T12:01:00Z",
+      "lifecycleChangedAt": "2026-10-24T11:22:42Z",
       "retirementAuthorization": "Explicit user request to remove this illustration completely from the codebase."
     },
     {
