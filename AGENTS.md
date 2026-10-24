@@ -1,103 +1,123 @@
-# AGENTS.md — 중앙아시아 여행 가이드 작업 규칙
+# AGENTS.md — Central Asia Travel Guide
 
-## 적용 범위와 기본 원칙
-- 이 파일은 저장소 전체에 적용한다. 사용자의 현재 요청과 상위 시스템 지침이 우선한다.
-- 사용자에게 한국어 존댓말로 설명하고, Git 초보자도 이해할 수 있게 결과와 다음 단계를 간결하게 보고한다.
-- 사용자에게 제시하는 초안·최종 원고와 사이트에 새로 작성하거나 수정하는 여행 해설·관광지 설명·캡션·안내 문구도 한국어 존댓말(합니다·입니다체)로 통일한다. 설명문이라는 이유로 한다·이다체를 사용하지 않는다. 직접 인용·고유명사·원문 제목은 보존하며, 사용자가 특정 문체를 명시한 경우에는 그 요청을 따른다.
-- 원고를 전달하거나 커밋하기 전에 문장 종결 표현을 검토하고, 같은 원고 안에서 존댓말과 한다·이다체가 섞이지 않았는지 확인한다. 기존 전체 콘텐츠의 문체 일괄 변경은 별도 요청 없이 수행하지 않는다.
-- 저장소: https://github.com/JinhaPark/codex
-- 배포 사이트: https://jinhapark.github.io/codex/
-- 기존 Vite·JavaScript 구조를 유지하고 요청과 무관한 원고·이미지·일정·회화·환율 기능을 변경하지 않는다.
-- 이 파일은 작업 지침이며 권한을 부여하거나 플랫폼의 보안·승인 설정을 대체하지 않는다.
+## Scope and priorities
 
-## 독자와 원고의 성격
-- 독자는 한국에서 교육받은 고학력의 한국인이며, 주된 여행 연령층은 30대~70대다. 배경지식과 지적 호기심을 존중하되 중앙아시아 전공 지식까지 전제하지 않는다. 낯선 개념은 처음 나올 때 짧게 풀어 쓴다.
-- 사이트는 여행일지와 가이드북이다. 여행 동선, 현장에서 본 풍경·건축·음식·생활에서 질문을 시작해 역사와 사회의 맥락으로 이어간다. 경제 브리핑·투자 보고서·학술 검토 메모처럼 쓰지 않는다. 사용자가 제공하지 않은 방문 경험이나 감상을 실제 체험처럼 만들어 쓰지 않는다.
-- 역사에서는 한국 독자가 배운 역사와 연결해 시간감각과 문제의식을 제공한다. 고구려의 대외관계, 고려의 몽골 침입 경험, 세종 시대의 천문학, 고려인의 강제이주 등이 관련된 대목에서 도움이 될 수 있다. 비교는 이해를 돕는 범위에서만 사용하며 현지인의 경험과 역사적 주체성을 중심에 둔다.
-- 한국사의 사건·제도와 중앙아시아의 사례를 동일시하거나, 외형의 유사성만으로 혈연·기원·직접 교류를 주장하지 않는다. 식민 지배·강제이주·산업화·독립의 공통 질문을 짚되 시기와 제도의 차이를 함께 설명한다. 한국과의 관련성을 모든 문단에 억지로 넣지 않는다.
+- These instructions apply throughout this repository. The user's current request and higher-priority system instructions take precedence.
+- Explain work to the user in polite Korean. Report outcomes and next steps clearly enough for a Git beginner to follow.
+- Use polite Korean endings such as 합니다 and 입니다 for travel essays, destination descriptions, captions, and interface guidance, including drafts. Do not switch to 한다 or 이다 merely because a passage is explanatory. Preserve direct quotations, proper names, and original titles; follow any writing style explicitly requested by the user.
+- Review sentence endings before delivering or committing Korean copy. Do not rewrite the style of unrelated existing content without a separate request.
+- Repository: https://github.com/JinhaPark/codex
+- Published site: https://jinhapark.github.io/codex/
+- Preserve the existing Vite and JavaScript architecture. Do not change unrelated essays, images, itineraries, phrasebook features, or currency conversion.
+- This file defines working conventions. It does not grant access or override platform security and approval controls.
 
-## 한국어 문체·숫자·읽기 흐름
-- 본문·초안·캡션의 완결 문장은 합니다·입니다체로 쓴다. 제목·표의 항목·짧은 사진 캡션은 자연스러운 명사형을 허용하며 직접 인용과 외국어 회화 원문은 보존한다.
-- 번역투, 추상명사 나열, 불필요한 피동문을 피한다. 누가 무엇을 하는지 밝히고 일상적인 한국어 동사를 쓴다. 예: ‘가정과 기업의 통신·데이터 연결을 판매합니다’ → ‘가정과 기업에 전화·인터넷 서비스를 제공합니다’, ‘고용과 수출을 만듭니다’ → ‘일자리를 늘리고 제품을 수출합니다’.
-- 한 문단에서 하나의 중심 내용을 전개한다. 현장의 모습 → 배경과 원인 → 그곳에서 눈여겨볼 점이 자연스럽게 이어지도록 쓰되 매번 같은 틀을 반복하지 않는다. 문장·문단 사이에는 앞 내용을 받는 연결을 두고, 짧은 사실을 병렬로 나열하거나 접속어만 기계적으로 덧붙이지 않는다.
-- ‘구분해야 합니다’, ‘단정하지 않습니다’ 같은 검증 지시를 본문에 반복하지 않는다. 독자가 오해하기 쉬운 핵심 한계는 해당 설명에 자연스럽게 남기고, 상세한 정의·집계 조건·계산식은 출처나 접힌 근거 영역으로 옮긴다. 불확실성을 지워 단정적으로 바꾸지 않는다.
-- 숫자는 여행자가 규모를 이해하는 데 필요한 만큼만 제시한다. 인구·금액·비율은 ‘약’, ‘안팎’, 범위와 적절한 반올림을 활용하고 본문에서는 불필요한 소수점과 긴 자릿수를 피한다. 작은 비율이 반올림으로 0처럼 보이면 ‘0.1% 미만’처럼 표시한다.
-- 원자료·계산용 값은 정밀도를 보존하고 화면 표시만 다듬는다. 기준연도·단위·명목/실질/PPP 및 매출/부가가치의 차이는 유지한다. 항공편·시각·날짜·환율 계산·전시판 인용 등 정확한 값 자체가 필요한 경우에는 임의로 반올림하지 않는다.
-- 휴대폰에서 긴 문장, 문단 간격, 글자 크기와 줄바꿈을 확인한다. 특히 작은 화면에서 본문을 더 작은 글자로 줄이지 않는다. 전문성을 유지하면서도 여행 중 읽을 수 있는 호흡으로 다듬는다.
-- 원고 검토는 종결어미 치환이나 금칙어 검색으로 끝내지 않는다. 도입부터 결말까지 직접 읽어 번역투, 반복, 문단 연결, 한국 독자에게 필요한 설명과 현장 관찰의 연결을 확인한다.
+## Language for GitHub and engineering work
 
-## 작업 시작과 브랜치 전략
-- 먼저 이 파일과 관련 코드·기록을 읽고 최신 기본 브랜치, 작업 폴더의 변경 상태, 관련 열린 PR을 확인한다.
-- 대화 기록에 나온 커밋·배포·파일 상태를 최신 사실로 가정하지 않는다.
-- 세션마다 자동으로 새 브랜치나 PR을 만들지 않는다. 독립적인 결과물이나 수정 목적별로 나눈다.
-- 같은 미완료 작업의 후속 요청이면 기존 작업 브랜치와 PR을 재사용한다.
-- 새 독립 작업이나 이미 병합된 작업의 후속 수정은 최신 기본 브랜치에서 새 작업 브랜치를 만든다.
-- feature/<주제>, fix/<주제>, docs/<주제>, images/<주제>처럼 목적이 드러나는 이름을 쓴다. 같은 이름이 있으면 상태를 확인하고 충돌 없는 이름을 정한다.
-- 사용자의 미커밋 변경을 지우거나 무관한 파일을 커밋하지 않는다. 파일 경로를 명시해 stage하고 diff를 검토한다.
-- 병렬 에이전트는 사용자 요청이나 적용 지침이 허용하고 실제 기능이 있을 때만 사용한다. 작업 파일을 분리하고 필요하면 별도 worktree를 사용한다. 브랜치만으로 폴더·실행환경까지 격리되는 것은 아니다.
-- 서브에이전트가 공유 렌더러·스타일·동일 원고를 동시에 수정하지 않도록 담당 범위를 정한다.
+- Use natural, standard English for new or edited code identifiers, code comments, commit messages, pull request titles and descriptions, issue text, and engineering documentation, including AGENTS.md.
+- Use established English terms such as `word`, `paragraph`, `section`, and `reading position`. Do not invent English-looking terms by romanizing Korean words or translating Korean expressions literally.
+- Preserve established proper names, official terms, currency names, external API contracts, and existing storage keys when compatibility requires them. Explain genuinely necessary local-language quotations in context.
+- Keep the travel guide's content and interface in natural, polite Korean. Keep direct communication with the user in Korean unless the user requests another language.
+- Do not insert unrelated languages or scripts into user-facing replies, titles, code, or documentation. If suggesting a session title, use clear Korean unless the user asks otherwise.
+- Review language as part of the final diff review. Prefer precise, familiar wording to unnecessary jargon, abbreviations, or literal translations.
 
-## GitHub 연결 기능과 터미널의 역할
-- 원격 저장소 조회·브랜치 생성·파일 게시·PR 생성·상태 확인·병합에는 사용 가능한 연결된 GitHub 앱/커넥터 기능을 우선 사용한다.
-- 터미널은 작업 폴더 편집, clone/fetch, 이력·diff 확인, 로컬 커밋, 테스트·빌드에 사용할 수 있다. 사용자가 휴대폰에서 터미널을 직접 조작하도록 요구하지 않는다.
-- Git CLI에 원격 쓰기 인증이 없으면 같은 push를 반복하거나 인증 토큰을 찾아 우회하지 않는다. 연결된 GitHub 기능을 사용하고 제약을 간단히 설명한다.
-- API로 커밋을 게시할 때는 정확한 기준 SHA와 파일 내용으로 tree를 구성하고 로컬 검증본과 원격 tree의 일치를 확인한다.
-- 원격 브랜치를 갱신할 때 예상 head SHA를 확인한다. 다른 작업의 커밋을 덮어쓰거나 사용자 승인 없이 강제 push하지 않는다.
-- 사용할 수 없는 연결 기능·백그라운드 실행·서브에이전트를 사용했다고 주장하지 않는다.
+## Audience and editorial purpose
 
-## 작업공간·캐시·재현성
-- 원격 임시 작업 폴더가 새 세션이나 장기 비활동 후에도 유지된다고 가정하지 않는다.
-- 이어서 작업할 때 GitHub의 실제 브랜치·파일을 확인하고 필요하면 다시 가져온다. 대화 요약은 파일 원본을 대체하지 않는다.
-- 중요한 코드·완성 원고·연구 노트·필요한 원자료는 저장소의 적절한 경로에 커밋한다.
-- node_modules/, dist/, 임시 로그·스크린샷·다운로드·QA 전용 폰트·실행환경은 커밋하지 않는다. 공개용 최적화 이미지와 보존할 연구 원자료는 목적을 확인해 명시적으로 추가한다.
-- 의존성은 package.json을 기준으로 설치하고 배포 결과물은 빌드로 재생성한다. 설정을 요청 없이 대규모 변경하지 않는다.
-- 사이트의 실제 캐시 정책은 public/sw.js를 읽어 판단한다. Work 폴더, 대화 문맥, GitHub 저장소, 방문자 브라우저 캐시를 구분한다.
-- 현재 서비스워커는 /codex/의 동일 출처 GET에 cache-first 정책을 사용한다. 처음에는 시작 페이지만 저장하고 요청된 자산을 추가 저장하므로 미방문 이미지의 오프라인 사용을 보장하지 않는다.
-- 서비스워커 동작은 보존한다. 새 배포에 캐시 갱신이 필요하면 기존 main과 병렬 PR의 이름을 확인해 충돌 없는 새 버전을 정하고 관련 테스트·브라우저 fixture도 일치시킨다.
-- 이전 앱 캐시만 정리하고 다른 사이트 캐시는 보존한다. 캐시 이름은 영구 규칙으로 하드코딩하지 말고 매번 실제 파일을 확인한다.
+- Readers are highly educated Koreans educated in Korea, primarily ages 30–70. Respect their knowledge and curiosity without assuming expertise in Central Asian studies. Briefly explain unfamiliar concepts on first use.
+- The site is a travel journal and guidebook. Begin with questions prompted by landscapes, buildings, food, everyday life, and the travel route, then connect them to history and society. Do not write it as an economic briefing, investment report, or academic review memo. Do not invent personal experiences or impressions the user has not supplied.
+- Where useful, connect history to references Korean readers know: Goguryeo's foreign relations, the Mongol invasions of Goryeo, astronomy under King Sejong, and the forced relocation of ethnic Koreans. Use comparisons to aid understanding while keeping local experiences and historical agency central.
+- Do not equate Korean and Central Asian events or institutions, or infer ancestry, origins, or direct exchange from superficial similarities. Discuss shared questions about colonial rule, displacement, industrialization, and independence while explaining differences in period and institutions. Do not force a Korean connection into every paragraph.
 
-## 여행 사진 변환 스킬과 이력 캐시
-- 여행 사진 정리·수채화/색연필화·재편집·모바일 최적화·배치에는 [travel-photo-to-illustration](https://github.com/JinhaPark/skills/blob/main/travel-photo-to-illustration/SKILL.md)을 먼저 읽고 사용한다. 편집 세부 규칙을 이 파일에 중복하지 않는다. 설치된 스킬이 없으면 연결된 GitHub 기능으로 본문과 참조 문서를 읽는다.
-- 캐시·이력·비동기 병렬 처리의 상세 규칙은 해당 스킬의 [cache-and-parallel.md](https://github.com/JinhaPark/skills/blob/main/travel-photo-to-illustration/references/cache-and-parallel.md)를 따른다. 작업 기록에는 실제 읽은 skills 커밋 SHA를 남긴다. 스킬 파일을 읽기만 한 경우 자동 설치했다고 설명하지 않는다.
-- `docs/image-lineage.json`에서 원본 SHA-256 → 부모가 있는 수정 revision → WebP별 해시·게시 위치를 추적한다. 원본 JPEG/HEIC 및 Base64/복사본은 GitHub나 별도 원격 보관소에 업로드하지 않는다. 원본은 작업공간에서 해시만 계산하며 수정된 일러스트와 필요한 중간 수정본만 보존한다. 공개 대응표에는 안전한 참조만 둔다. 미확인 과거 이력·원본 해시는 null로 남기고 추정하지 않는다.
-- 시각 편집 키와 리사이즈/인코딩 키를 분리한다. 파일·해시·검증 상태를 확인하여 기존 결과를 재사용하고 바뀐 단계만 실행한다. 캡션/배치 변경으로 그림을 재생성하지 않는다. 이 대응표는 서비스워커 캐시나 원본 백업을 대체하지 않는다.
-- 생성 마스터의 저장·조회·복원은 [비공개 마스터 캐시](docs/private-master-cache.md)와 `scripts/image_master_cache.py`의 계약을 따른다. 운영 백엔드의 비공개·권한·보존 정책을 확인하기 전에는 활성화하지 않는다. 원본의 PNG 정규화 사본도 저장 금지이며, 오케스트레이터가 실제 생성 출력과 시각 검토를 확인해야 한다. 시험 디렉터리 왕복 성공을 영속 보관이라고 쓰지 않는다.
-- `private-verified`는 저장 당시 검증 기록일 뿐이다. 재사용마다 실제 다운로드·해시·디코딩을 확인하고 실패하면 기존 게시 WebP를 유지한다. WebP 변환·확대를 마스터 복구로 기록하지 않는다. 공용 lineage 갱신은 오케스트레이터만 수행하고 동시 변경은 다시 읽어 조정한다.
-- 여러 독립 이미지의 미처리 작업은 기능이 제공되면 비동기 서브에이전트로 병렬 할당한다. 같은 이미지의 연속 수정은 순차 처리한다. 이미지별 출력 경로를 분리하고 부모 에이전트만 대응표·manifest·감사표·서비스워커를 통합한다. 중복 키의 생성과 공용 파일 동시 쓰기를 금지한다. 기능·동시 호출 제약이 있으면 가능한 범위와 실제 수행 방식을 기록한다.
+## Korean prose, numbers, and reading flow
 
-## 이미지 CRUD와 관리 책임
-- 저장소의 오케스트레이션 에이전트가 공용 이미지의 등록·게시·교체·사용 중단·정리를 단독 관리한다. 스킬은 상세 절차를 제공하며 이미지 담당 서브에이전트는 자기 결과와 검증 기록만 반환한다.
-- lifecycle(active/archived/deletion-candidate/deleted)는 생성·검증 상태와 구분한다. 교체는 새 revision을 검증한 뒤 게시 포인터를 전환하고 이전 revision을 보관한다. 다른 원본으로 교체할 때 편집 부모와 교체 관계를 구분한다.
-- 사용 중단은 배치 해제와 archived 전환으로 처리한다. 즉시 파일을 지우지 않는다. 캐시·편집 이력·사용 상태를 근거 없이 삭제하지 않는다.
-- 정리는 manifest·실제 렌더러·활성 revision·편집 부모·진행 작업·열린 PR의 참조를 확인한 뒤 별도 정리 PR로 수행한다. 현재 정책 수정은 이미지 삭제 승인이 아니다.
-- 교체된 공개 WebP는 실제 존재하는 Git 커밋·파일 경로·해시를 복원 참조로 기록하고 Git 이력으로 보관할 수 있다. 삭제 후에도 tombstone과 부모 관계를 유지한다. 작업 트리 제거와 Git 이력 완전 삭제를 구분하고, 이력 재작성은 별도 명시적 요청 없이 하지 않는다.
+- Use polite Korean for complete sentences in body text, drafts, and captions. Natural noun phrases are acceptable for headings, table labels, and short captions. Preserve direct quotations and original phrasebook text.
+- Avoid literal translations, strings of abstract nouns, and unnecessary passive voice. State who does what using ordinary Korean verbs. For example, prefer '가정과 기업에 전화·인터넷 서비스를 제공합니다' to '가정과 기업의 통신·데이터 연결을 판매합니다', and '일자리를 늘리고 제품을 수출합니다' to '고용과 수출을 만듭니다'.
+- Develop one main idea per paragraph. Connect observations, background, causes, and points to notice without repeating a rigid template. Make sentences and paragraphs build on one another; do not rely on disconnected facts or mechanically inserted transitions.
+- Do not repeatedly insert verification instructions such as '구분해야 합니다' or '단정하지 않습니다' into the narrative. Explain important limitations naturally where misunderstandings could arise. Put detailed definitions, counting rules, and formulas in sources or collapsed evidence sections. Do not remove uncertainty merely to make a statement sound definite.
+- Show enough numerical detail to convey scale. Use approximations, ranges, and sensible rounding for population, money, and percentages. Avoid excessive decimal places or long numbers in prose. If a small percentage would round to zero, display a threshold such as '0.1% 미만'.
+- Preserve precision in source data and calculation inputs; round only presentation values. Retain reference years, units, and distinctions between nominal, real, and PPP values, and between sales and value added. Do not arbitrarily round exact flight details, times, dates, currency calculations, or quoted exhibition figures.
+- Check long sentences, paragraph spacing, font sizes, and line breaks on phones. Do not shrink body text to make it fit a narrow screen. Keep the writing informed and readable while traveling.
+- Do not reduce editorial review to replacing sentence endings or searching for prohibited words. Read the whole passage to assess repetition, transitions, natural Korean, necessary context, and the connection between interpretation and observation.
 
-## 검증과 콘텐츠 품질
-- package.json과 .github/workflows/의 실제 명령을 먼저 확인한다.
-- JavaScript·데이터·렌더링·서비스워커 변경은 관련 테스트와 npm test, npm run build로 검증한다. 문서만 변경한 경우에는 내용·링크·diff 검토를 기본으로 하며 불필요한 테스트를 추가하지 않는다.
-- 이미지 변경은 tests/illustrations.test.js와 scripts/verify-image-assets.py의 검사를 활용한다. Python/Pillow 등 필요한 도구의 사용 가능 여부를 확인한다.
-- UI·캐시 변경은 가능하면 실제 브라우저에서 모바일 줄바꿈·목차·아코디언·이미지 디코딩·오프라인·캐시 전환을 확인한다. scripts/verify-browser.cjs는 별도 Playwright·Chromium이 필요한 선택 검사다.
-- 스크립트에 오래된 캐시명·자산 수·실행환경 경로가 남아 있으면 실제 통합 상태에 맞게 검토한다. 테스트를 통과시키기 위해 중요한 검증을 제거하지 않는다.
-- 기존 5개 종합 해설의 순서와 도시·유적 해설을 보존한다. 카자흐스탄 심층 해설 3개는 별도 영역이며 기존 5개 번호 체계에 포함하지 않는다.
-- 통계는 기준연도·단위·정의·출처를 표시한다. 명목·실질·PPP, 매출·부가가치, FDI 총유입·순유입·잔액을 구분한다.
-- 역사적 해석과 검증된 사실을 구분하고, 자동 테스트를 통계·역사 사실의 진실성 검증이라고 설명하지 않는다.
-- 그림의 출처·이용 조건을 확인하고 필요한 표기를 보존한다. 캡션에 '사진을 바탕으로 그린' 등의 제작 방식 문구를 추가하지 않는다.
-- 기존 숫자·지도 전시판은 데이터가 변형되지 않도록 documentary-photo로 유지한다.
-- 실행하지 못한 검사와 남은 불확실성을 명시한다. 테스트·브라우저·배포를 실제 확인 없이 통과했다고 보고하지 않는다.
+## Starting work and choosing a branch
 
-## PR·병합·배포
-- 기본 흐름은 작업 브랜치 → 관련 검증 → 커밋·원격 게시 → PR이다.
-- PR에는 변경 목적·범위·검증 결과·제한사항을 작성한다. 같은 작업의 후속 수정으로 중복 PR을 만들지 않는다.
-- 사용자가 해당 작업의 병합을 요청했을 때 병합한다. 과거의 다른 작업에 대한 병합 승인을 새 작업의 상시 승인으로 확대하지 않는다.
-- 사용자가 병합·배포까지 명시했으면 그 범위에서 진행하고 같은 승인을 다시 요구하지 않는다.
-- 병합 전에 최신 기본 브랜치와 PR head·검사 결과·충돌을 확인한다. 충돌은 양쪽 작업의 의도를 보존해 해결하고 통합본을 다시 검증한다.
-- 기본 병합 방식은 merge commit으로 이력을 보존한다. 다른 방식을 사용자가 지정하면 따른다.
-- 캐시명·이미지 manifest·감사표 충돌에서 한쪽 파일 전체를 선택해 다른 변경을 유실하지 않는다. 실제 통합본을 검사하고 검사 기록을 합성해 통과를 꾸미지 않는다.
-- main에 반영하면 현재 GitHub Actions 설정에 따라 테스트·빌드·Pages 배포가 자동 실행된다. 병합 전에 그 영향을 알고 진행한다.
-- 병합 요청을 완료할 때 해당 main 커밋의 CI·배포 결과를 확인한다. 원격 파일 게시, PR 검사 성공, 병합, 배포 성공, 공개 사이트 확인을 서로 구분해 보고한다.
-- 최종 보고에는 변경 요약, 브랜치·커밋·PR 링크, 검증 결과, 병합·배포 여부와 남은 확인 사항을 포함한다.
+- Read this file and relevant code and records first. Check the latest default branch, local working tree, and related open pull requests.
+- Do not treat commit IDs, deployment status, or file contents from conversation history as current facts.
+- Do not create a branch or pull request automatically for every session. Organize them by independent change or deliverable.
+- Reuse the existing branch and pull request for follow-up work on the same unfinished change.
+- Start a new branch from the latest default branch for an independent change or follow-up to an already merged change.
+- Use descriptive names such as `feature/<topic>`, `fix/<topic>`, `docs/<topic>`, or `images/<topic>`. If a name exists, inspect its status and choose an unused name when necessary.
+- Do not discard the user's uncommitted changes or commit unrelated files. Stage explicit paths and review the diff.
+- Use parallel agents only when the user or applicable instructions authorize them and the functionality is available. Divide files between agents and use separate worktrees when needed. Branches alone do not isolate directories or execution environments.
+- Do not let agents edit shared renderers, styles, or the same manuscript simultaneously.
 
-## 휴대폰에서 새 작업을 시작할 때
-- 새 채팅의 시작 요청 예: 'JinhaPark/codex의 최신 main과 AGENTS.md를 먼저 읽고 아래 작업을 진행해주세요.'
-- Codex의 자동 지침 로딩과 GitHub 커넥터를 통한 명시적 파일 읽기는 구분한다. 읽지 않은 지침을 적용했다고 주장하지 않는다.
-- 휴대폰 앱은 요청과 검토 창으로 사용할 수 있다. 사용자가 로컬 개발환경을 설치해야 한다고 가정하지 않는다.
+## GitHub connector and terminal responsibilities
+
+- Prefer connected GitHub app or connector tools for remote reads, branch creation, publishing files, creating pull requests, checking status, and merging.
+- The terminal may be used for local editing, clone/fetch, history and diff inspection, local commits, tests, and builds. Do not require the user to operate a terminal on their phone.
+- If Git CLI lacks remote write authentication, do not repeatedly retry pushes or search for tokens as a workaround. Use the connected GitHub tools and briefly explain any limitation.
+- When publishing commits through the API, construct the tree from the exact base SHA and file contents. Verify that the remote tree matches the locally validated tree.
+- Check the expected head SHA before updating a remote branch. Do not overwrite another change or force-push without authorization.
+- Do not claim to have used unavailable connector features, background execution, or agents.
+
+## Workspace, caches, and reproducibility
+
+- Do not assume temporary remote directories survive a new session or extended inactivity.
+- When resuming, inspect the actual GitHub branches and files and fetch them again if needed. Conversation summaries do not replace source files.
+- Commit important code, finished writing, research notes, and necessary source material to appropriate repository paths.
+- Do not commit `node_modules/`, `dist/`, temporary logs, screenshots, downloads, QA-only fonts, or runtime installations. Explicitly stage optimized public images and research sources that need preservation.
+- Install dependencies from `package.json` and regenerate deployment output with the build. Do not make unrelated large configuration changes.
+- Read `public/sw.js` before describing the site's cache policy. Distinguish the Work directory, conversation context, Git repository, and visitor's browser cache.
+- The current service worker uses cache-first handling for same-origin GET requests under `/codex/`. It initially caches the entry page, then stores requested assets. It does not guarantee offline access to images never visited.
+- Preserve service-worker behavior. When a release needs a new cache version, inspect main and concurrent pull requests, choose a unique version, and update related tests and browser fixtures consistently.
+- Delete only obsolete caches for this app, preserving unrelated site caches. Read the actual current cache name instead of treating a historical name as a permanent rule.
+
+## Travel image skill and revision cache
+
+- Before organizing, illustrating, editing, optimizing, or placing travel photos, read and use [travel-photo-to-illustration](https://github.com/JinhaPark/skills/blob/main/travel-photo-to-illustration/SKILL.md). Do not duplicate its detailed editing rules here. If the skill is not installed, read it and its references through the connected GitHub tools.
+- Follow [cache-and-parallel.md](https://github.com/JinhaPark/skills/blob/main/travel-photo-to-illustration/references/cache-and-parallel.md) for revision caching and asynchronous parallel processing. Record the skills commit SHA actually read. Reading a skill does not mean it has been installed.
+- Use `docs/image-lineage.json` to track original SHA-256 hashes, edited revisions with parents, and each WebP's hashes and published placement. Do not upload original JPEG/HEIC files, Base64 copies, or other original copies to GitHub or another remote store. Compute only their hashes in the workspace. Preserve edited illustrations and necessary intermediate edits. Keep public references safe and leave unknown historical data and original hashes null rather than guessing.
+- Separate visual-edit cache keys from resize/encoding keys. Check files, hashes, and validation state before reusing output, and rerun only changed stages. Caption or placement edits do not require regenerating artwork. The lineage mapping is neither the service-worker cache nor an original-photo backup.
+- Follow [private master cache](docs/private-master-cache.md) and `scripts/image_master_cache.py` for generated-master storage, retrieval, and recovery. Do not enable a backend before verifying privacy, access, and retention policies. Normalized PNG copies of originals are also prohibited. The coordinating agent must inspect actual generated output and its visual review. A successful local directory round trip does not establish durable storage.
+- Treat `private-verified` as a historical verification record. Recheck download, hash, and decoding on every reuse; retain the published WebP if recovery fails. Do not label WebP conversion or enlargement as master recovery. Only the coordinating agent updates public lineage, rereading shared state before resolving concurrent changes.
+- When authorized and supported, assign independent unprocessed images to asynchronous agents. Process sequential edits of the same image in order. Give each image a separate output path; only the parent agent integrates lineage, manifests, audits, and service-worker changes. Prevent duplicate generation for the same key and concurrent writes to shared files. Record actual methods and limitations when functionality or concurrency is restricted.
+
+## Image lifecycle and ownership
+
+- The repository's coordinating agent alone registers, publishes, replaces, retires, and cleans up shared images. The skill supplies procedures; image agents return their own output and validation records.
+- Keep lifecycle states (`active`, `archived`, `deletion-candidate`, `deleted`) separate from generation and validation status. Validate a replacement revision before switching the publication pointer, then archive its predecessor. Distinguish the editing parent from the image being replaced when the source changes.
+- Retire an image by removing its placement and marking it archived. Do not immediately delete files or discard cache, editing history, or usage records without evidence.
+- Before cleanup, inspect references in manifests, actual renderers, active revisions, editing parents, ongoing work, and open pull requests. Make cleanup a separate pull request. Updating policy does not authorize image deletion.
+- Replaced public WebPs may be preserved in Git history with real commit, path, and hash recovery references. Keep tombstones and parent relationships after removal. Distinguish removal from the working tree from permanent history deletion; do not rewrite history without explicit authorization.
+
+## Validation and content quality
+
+- Read the actual commands in `package.json` and `.github/workflows/` before choosing checks.
+- Validate JavaScript, data, rendering, and service-worker changes with relevant tests, `npm test`, and `npm run build`. For documentation-only changes, review content, links, and the diff; do not add unnecessary tests.
+- For image changes, use `tests/illustrations.test.js` and `scripts/verify-image-assets.py`. Check that Python, Pillow, and other required tools are available.
+- For UI or cache changes, use a real browser where possible to check mobile wrapping, contents navigation, accordions, image decoding, offline use, and cache transitions. `scripts/verify-browser.cjs` is an optional check requiring Playwright and Chromium.
+- Review obsolete cache names, asset counts, and runtime paths in scripts against the actual integrated state. Do not remove important checks merely to make tests pass.
+- Preserve the order of the five core essays and the city and landmark explanations. Keep the three Kazakhstan deep dives separate from the five core numbers.
+- Display reference years, units, definitions, and sources for statistics. Distinguish nominal, real, and PPP values; sales and value added; and gross FDI inflows, net inflows, and stocks.
+- Distinguish historical interpretation from verified facts. Do not describe automated tests as verification of historical or statistical truth.
+- Check image sources and usage conditions and retain required attribution. Do not add production-method captions such as '사진을 바탕으로 그린'.
+- Preserve exhibition numbers and map panels as documentary photos rather than transforming their factual content.
+- State which checks could not be run and what remains uncertain. Do not report browser checks, tests, or deployments as successful without actual verification.
+
+## Pull requests, merging, and deployment
+
+- The default workflow is a working branch, relevant validation, a commit and remote publication, then a pull request.
+- Describe the final purpose, scope, validation, and limitations in each pull request. Do not create duplicate pull requests for follow-up work on the same change.
+- Merge when the user requests merging that change. Do not extend approval for an earlier, unrelated change to every future change.
+- If merging and deployment are explicitly authorized, proceed within that scope without asking again.
+- Before merging, check the latest default branch, pull request head, checks, and conflicts. Resolve conflicts while preserving both changes' intent, then validate the integrated result.
+- Preserve history with a merge commit by default unless the user specifies another method.
+- Do not resolve cache-name, image-manifest, or audit conflicts by accepting an entire file and losing other changes. Validate the actual integrated files; never combine records to imply checks that did not run.
+- Changes merged into main automatically trigger tests, build, and Pages deployment under the current GitHub Actions configuration. Account for that effect before merging.
+- When completing a merge request, verify CI and deployment for the resulting main commit. Distinguish remote publication, pull request checks, merging, successful deployment, and checking the public site.
+- Report the change, branch/commit/pull request links, validation results, merge and deployment status, and remaining checks.
+
+## Starting work from a phone
+
+- An example request is: 'Read the latest main and AGENTS.md in JinhaPark/codex, then carry out the following change.'
+- Distinguish automatic instruction loading from explicitly reading AGENTS.md through the GitHub connector. Do not claim to apply instructions you have not read.
+- Treat the phone app as the request and review interface. Do not assume the user must install a local development environment.
