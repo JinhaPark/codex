@@ -119,10 +119,9 @@
 
 ## Pull requests, merging, and deployment
 
-- The default workflow is a working branch, relevant validation, a commit and remote publication, then a pull request.
+- The default workflow is a working branch, dependency-scoped validation, a commit and remote publication, a pull request, and prompt merge after required checks pass.
 - Describe the final purpose, scope, validation, and limitations in each pull request. Do not create duplicate pull requests for follow-up work on the same change.
-- Merge when the user requests merging that change. Do not extend approval for an earlier, unrelated change to every future change.
-- If merging and deployment are explicitly authorized, proceed within that scope without asking again.
+- Merge focused changes promptly after their required scoped checks pass, unless the user asks for review before merge or a required check blocks it. Do not enable auto-merge as a substitute for verifying the current head and checks.
 - Before merging, check the latest default branch, pull request head, checks, and conflicts. Resolve conflicts while preserving both changes' intent, then rerun the relevant checks only when the base, inputs, or affected dependencies changed.
 - Preserve history with a merge commit by default unless the user specifies another method.
 - Do not resolve cache-name, image-manifest, or audit conflicts by accepting an entire file and losing other changes. Validate the actual integrated files; never combine records to imply checks that did not run.
@@ -136,13 +135,13 @@
 - Distinguish automatic instruction loading from explicitly reading AGENTS.md through the GitHub connector. Do not claim to apply instructions you have not read.
 - Treat the phone app as the request and review interface. Do not assume the user must install a local development environment.
 
-## Scoped work and deferred merge
+## Scoped work and prompt merge
 
 - Batch related small changes into one focused PR; reuse that PR for follow-ups to the same unfinished change. Reuse existing artifacts and validation evidence only when their inputs, relevant dependencies, tool versions, and check scope remain applicable; record the revision checked.
 - Before opening or updating a small-change PR, inspect the diff and run only checks needed for the affected files and behavior. State the dependency-based scope and the checks actually run; identify broader checks as not applicable or deferred only when they are relevant. Never claim unperformed tests passed.
-- Keep the PR open until the user explicitly requests its merge. Do not enable auto-merge. A request for a previous change does not authorize this merge.
+- After the required scoped checks pass, open the PR and merge it promptly unless the user asks to review it first or a required check blocks it. Do not enable auto-merge.
 - When merge is requested, refresh main and the PR head, resolve conflicts, and rerun relevant checks only if the base, inputs, or affected dependencies changed. A merge request does not expand test scope by itself. Run the complete repository suite and broad build or integration checks only for cross-guide shared-runtime changes or when no narrower dependency boundary is defensible. Report unavailable required checks or failures instead of merging an unverified result.
 - Skip unrelated full audits, repeated status polling, and extra image generation. Use a bounded status check when needed; repeat only for new evidence or an explicit request. These instructions do not disable existing CI or bypass required checks.
-- Interpret the following original user instruction subject to the deferred-merge rule above; “지정한 병합 단계” means stop at an open PR unless merge was explicitly requested:
+- Interpret the following original user instruction using the dependency-scoped validation and prompt-merge rules above:
 
 > 이번 요청 범위만 처리하세요. 기존 결과와 검증 기록을 재사용하고 변경된 부분만 확인하세요. 관련 없는 전체 감사, 반복 상태 조회, 추가 이미지 생성은 생략하세요. 필요한 검증을 마치면 지정한 병합 단계까지 진행하고 결과를 간결하게 보고하세요.
