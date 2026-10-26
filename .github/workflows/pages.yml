@@ -1,15 +1,29 @@
 name: Deploy GitHub Pages
+
 on:
   push:
     branches: [main]
+    paths:
+      - "index.html"
+      - "package.json"
+      - "package-lock.json"
+      - "vite.config.js"
+      - "scripts/**"
+      - "shared/**"
+      - "tantantan/**"
+      - "caucasus/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,23 +31,67 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Classify changed dependency scopes
+        id: scope
+        shell: bash
+        run: |
+          base="${{ github.event.before }}"
+          head="${{ github.sha }}"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$base" =~ ^0+$ ]]; then
+            tantantan=true
+            caucasus=true
+          else
+            tantantan=false
+            caucasus=false
+            while IFS= read -r path; do
+              case "$path" in
+                tantantan/*)
+                  tantantan=true
+                  ;;
+                caucasus/*)
+                  caucasus=true
+                  ;;
+                shared/*|scripts/*|index.html|package.json|package-lock.json|vite.config.js|.github/workflows/pages.yml)
+                  tantantan=true
+                  caucasus=true
+                  ;;
+              esac
+            done < <(git diff --name-only "$base" "$head")
+          fi
+          echo "tantantan=$tantantan" >> "$GITHUB_OUTPUT"
+          echo "caucasus=$caucasus" >> "$GITHUB_OUTPUT"
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
       - run: npm install
+
       - uses: actions/setup-python@v5
+        if: steps.scope.outputs.tantantan == 'true'
         with:
-          python-version: '3.12'
-      - run: python -m pip install -r tantantan/scripts/requirements-image-cache.txt
-      - run: npm test
+          python-version: "3.12"
+      - name: Install Tantantan image test dependencies
+        if: steps.scope.outputs.tantantan == 'true'
+        run: python -m pip install -r tantantan/scripts/requirements-image-cache.txt
+
+      - name: Test Tantantan
+        if: steps.scope.outputs.tantantan == 'true'
+        run: node --test tantantan/tests/*.test.js
         env:
           IMAGE_LINEAGE_BASE: ${{ github.event.before || github.sha }}
+
+      - name: Test Caucasus
+        if: steps.scope.outputs.caucasus == 'true'
+        run: node --test caucasus/tests/*.test.js
+
       - run: npm run build
       - run: node scripts/verify-travel-build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
   deploy:
     environment:
       name: github-pages
