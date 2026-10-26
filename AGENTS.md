@@ -125,7 +125,7 @@
 - Before merging, check the latest default branch, pull request head, checks, and conflicts. Resolve conflicts while preserving both changes' intent, then rerun the relevant checks only when the base, inputs, or affected dependencies changed.
 - Preserve history with a merge commit by default unless the user specifies another method.
 - Do not resolve cache-name, image-manifest, or audit conflicts by accepting an entire file and losing other changes. Validate the actual integrated files; never combine records to imply checks that did not run.
-- Changes merged into main automatically trigger tests, build, and Pages deployment under the current GitHub Actions configuration. Account for that effect before merging.
+- Site-affecting changes merged into main trigger dependency-scoped tests, a complete site build, and Pages deployment. Documentation-only policy changes do not trigger site validation or deployment.
 - When completing a merge request, verify CI and deployment for the resulting main commit. Distinguish remote publication, pull request checks, merging, successful deployment, and checking the public site.
 - Report the change, branch/commit/pull request links, validation results, merge and deployment status, and remaining checks.
 
