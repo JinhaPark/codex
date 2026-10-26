@@ -12,7 +12,7 @@
 - Build the three HTML entrypoints with Vite, using `shared/public` as the static public directory. Deploy the root selector at `/codex/`, the older guide at `/codex/tantantan/`, and the new guide at `/codex/caucasus/`.
 - Only explicitly attended optional tours belong in the Caucasus itinerary. Currently the recorded tour IDs are 1, 3, and 4. Do not add other activities from the printed optional-tour list.
 - Printed documents may contain private phone numbers and names; do not put these into the public website, static assets, or data files.
-- During incremental editing, reuse existing verification records and test the affected scope. Full tests are deferred until the user requests final merging.
+- Reuse valid verification records and test the affected dependency surface at every stage. A commit or merge request does not widen test scope by itself; run the complete suite only for broad shared-runtime changes or when no narrower boundary is defensible.
 
 ## Scope and priorities
 
@@ -106,7 +106,7 @@
 ## Validation and content quality
 
 - Read the actual commands in `package.json` and `.github/workflows/` before choosing checks.
-- For small JavaScript, data, rendering, or service-worker PRs, run affected checks and record deferred checks. Run the complete `npm test` suite and `npm run build`, plus required integration checks, on the integrated result when the user requests merging. For documentation-only PRs, review content, links, and the diff before opening; do not add unnecessary tests.
+- Choose checks from the changed dependency surface. Documentation-only changes require content, link, and diff review. Content or data changes require their focused validators; image changes require the applicable asset and manifest checks; shared renderer, style, service-worker, or entrypoint changes require affected tests and a build when generated output can change. A commit or merge request does not expand this scope. Run the complete `npm test` suite, all builds, and broad integration checks only for cross-guide shared-runtime changes or when no narrower dependency boundary is defensible.
 - For image changes, use `tantantan/tests/illustrations.test.js`, `caucasus/tests/photos.test.js`, and `tantantan/scripts/verify-image-assets.py`. Check that Python, Pillow, and other required tools are available.
 - For UI or cache changes, use a real browser where possible to check mobile wrapping, contents navigation, accordions, image decoding, offline use, and cache transitions. `scripts/verify-browser.cjs` is an optional check requiring Playwright and Chromium.
 - Review obsolete cache names, asset counts, and runtime paths in scripts against the actual integrated state. Do not remove important checks merely to make tests pass.
@@ -119,11 +119,10 @@
 
 ## Pull requests, merging, and deployment
 
-- The default workflow is a working branch, relevant validation, a commit and remote publication, then a pull request.
+- The default workflow is a working branch, dependency-scoped validation, a commit and remote publication, a pull request, and prompt merge after required checks pass.
 - Describe the final purpose, scope, validation, and limitations in each pull request. Do not create duplicate pull requests for follow-up work on the same change.
-- Merge when the user requests merging that change. Do not extend approval for an earlier, unrelated change to every future change.
-- If merging and deployment are explicitly authorized, proceed within that scope without asking again.
-- Before merging, check the latest default branch, pull request head, checks, and conflicts. Resolve conflicts while preserving both changes' intent, then validate the integrated result.
+- Merge focused changes promptly after their required scoped checks pass, unless the user asks for review before merge or a required check blocks it. Do not enable auto-merge as a substitute for verifying the current head and checks.
+- Before merging, check the latest default branch, pull request head, checks, and conflicts. Resolve conflicts while preserving both changes' intent, then rerun the relevant checks only when the base, inputs, or affected dependencies changed.
 - Preserve history with a merge commit by default unless the user specifies another method.
 - Do not resolve cache-name, image-manifest, or audit conflicts by accepting an entire file and losing other changes. Validate the actual integrated files; never combine records to imply checks that did not run.
 - Changes merged into main automatically trigger tests, build, and Pages deployment under the current GitHub Actions configuration. Account for that effect before merging.
@@ -136,13 +135,13 @@
 - Distinguish automatic instruction loading from explicitly reading AGENTS.md through the GitHub connector. Do not claim to apply instructions you have not read.
 - Treat the phone app as the request and review interface. Do not assume the user must install a local development environment.
 
-## Scoped work and deferred merge
+## Scoped work and prompt merge
 
 - Batch related small changes into one focused PR; reuse that PR for follow-ups to the same unfinished change. Reuse existing artifacts and validation evidence only when their inputs, relevant dependencies, tool versions, and check scope remain applicable; record the revision checked.
-- Before opening or updating a small-change PR, inspect the diff and run only checks needed for the affected files and behavior. Defer the complete test suite to an explicit user merge request. State checks run and deferred in the PR; never claim unperformed tests passed.
-- Keep the PR open until the user explicitly requests its merge. Do not enable auto-merge. A request for a previous change does not authorize this merge.
-- When merge is requested, refresh main and the PR head, resolve conflicts, run the complete repository test suite and required build/integration checks on the combined result, and merge only after they pass. Report unavailable checks or failures instead of merging an unverified result.
+- Before opening or updating a small-change PR, inspect the diff and run only checks needed for the affected files and behavior. State the dependency-based scope and the checks actually run; identify broader checks as not applicable or deferred only when they are relevant. Never claim unperformed tests passed.
+- After the required scoped checks pass, open the PR and merge it promptly unless the user asks to review it first or a required check blocks it. Do not enable auto-merge.
+- When merge is requested, refresh main and the PR head, resolve conflicts, and rerun relevant checks only if the base, inputs, or affected dependencies changed. A merge request does not expand test scope by itself. Run the complete repository suite and broad build or integration checks only for cross-guide shared-runtime changes or when no narrower dependency boundary is defensible. Report unavailable required checks or failures instead of merging an unverified result.
 - Skip unrelated full audits, repeated status polling, and extra image generation. Use a bounded status check when needed; repeat only for new evidence or an explicit request. These instructions do not disable existing CI or bypass required checks.
-- Interpret the following original user instruction subject to the deferred-merge rule above; “지정한 병합 단계” means stop at an open PR unless merge was explicitly requested:
+- Interpret the following original user instruction using the dependency-scoped validation and prompt-merge rules above:
 
 > 이번 요청 범위만 처리하세요. 기존 결과와 검증 기록을 재사용하고 변경된 부분만 확인하세요. 관련 없는 전체 감사, 반복 상태 조회, 추가 이미지 생성은 생략하세요. 필요한 검증을 마치면 지정한 병합 단계까지 진행하고 결과를 간결하게 보고하세요.
