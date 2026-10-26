@@ -557,10 +557,10 @@
       "sourceSha256": null,
       "sourceArtifactRef": null,
       "sourceDimensions": null,
-      "lifecycle": "archived",
-      "placement": null,
-      "activeRevisionId": null,
-      "lastPublishedRevisionId": null,
+      "lifecycle": "active",
+      "placement": "caucasus:2026-05-01:destination:sheki-old-town",
+      "activeRevisionId": "caucasus-20260501-sheki-street-watercolor-import-r1",
+      "lastPublishedRevisionId": "caucasus-20260501-sheki-street-watercolor-import-r1",
       "revisions": [
         {
           "revisionId": "caucasus-20260501-sheki-street-watercolor-import-r1",
@@ -573,8 +573,8 @@
           "recipeKey": null,
           "optimizeKey": null,
           "artifactRef": null,
-          "status": "candidate-unreviewed",
-          "lifecycle": "archived",
+          "status": "legacy-verified",
+          "lifecycle": "active",
           "masterAvailability": "unpersisted",
           "validation": {
             "gitBlobShaVerified": true,
