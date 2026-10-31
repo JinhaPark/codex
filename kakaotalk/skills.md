@@ -57,28 +57,51 @@ This snapshot is dated evidence, not a live verification on each invocation.
 
 ## Concerts: /임윤찬
 
-Look up future performances by pianist Yunchan Lim (임윤찬) and their ticket-opening information at invocation time. Do not answer from model memory or invent a concert snapshot.
+Use the schedule-research method from `ticketing/subskills/catalog-concert-schedules`, adapted here as self-contained public instructions. The responding bot does not need access to a private repository, regional catalogs, or reconciliation scripts.
 
-### Research
+### Scope and source discovery
 
-1. Resolve the current date in Asia/Seoul. Unless narrowed by the user, search both Korea and overseas and return the next five officially confirmed performances, ordered by performance time.
-2. Start with official artist/management schedules. Verify each selected concert against its official venue, orchestra, festival, presenter, or authorized ticket seller.
-3. Search in Korean and English (`임윤찬`, `Yunchan Lim`). When no results are found, broaden the search before concluding that information is unavailable.
-4. Verify date, venue, booking URL, sale status, and any published opening date/time. Distinguish presale, membership sale, and general sale. Do not infer an opening date from previous seasons or a missing buy button.
-5. Interpret a date on a page as a concert date only if it is explicitly labeled as such. Exclude past, canceled, rumored, and duplicate listings; retain separately ticketed performances.
-6. Show performance times in venue local time, with city and timezone. For future ticket openings, show the original timezone and the converted KST time. Handle daylight saving using the event date. If no time is published, say `시각 미공개` without assuming midnight.
-7. Use `판매 중`, `선예매 중`, `오픈 예정`, `공식 매진`, `예매처 확인 필요`, or `미공개` only as supported by the official evidence. A passed opening date does not establish current availability.
-8. Place the direct official source or booking link in each row. If sources conflict, say `공식 안내 상충·확인 필요` rather than silently choosing one.
+1. Resolve the current date/time in Asia/Seoul. Unless narrowed by the user, research both Korea and overseas and return the next five distinct upcoming performances, ordered by performance time. Include every publicly announced sale phase for each selected performance.
+2. Begin with the official artist tour: https://www.yunchanlimofficial.com/tour/ . Treat it as a discovery source, not a complete concert catalog or proof of ticket-opening times.
+3. Verify each candidate against its official presenter, venue, orchestra, festival, and authorized seller. Search both `임윤찬` and `Yunchan Lim`; search regional official calendars when the artist tour is incomplete. Secondary sites and fan pages are leads only.
+4. Recheck the event-specific seller/presenter opening notice during this invocation. A tour listing alone cannot confirm a ticket opening or eligibility. Do not copy ticket policies from another performance at the same venue, or assume every stop on a tour has the same soloist.
+5. Historical research identified conflicting Gimhae November 26–27, 2026 listings and fan-only specific dates for a 2027 Verbier appearance. These are dated warning leads, not current facts: independently resolve them before confirming any date. Do not expand date ranges into performances blindly.
+6. Keep physical venue/hall, presenter, and seller distinct. Confirm the performer for the exact event/date. Treat old regional catalogs, old seller routes and cached notices as leads requiring fresh verification, not a complete or current inventory.
 
-### Output
+### Evidence and normalization
 
-Return only this table, filling it with verified information:
+1. Build one row per performance AND sale phase. Separate membership/presale and general sale, including eligibility. Repeat concert details across phase rows; the five-performance limit is not a five-row limit.
+2. For each row collect performance datetime, physical hall, country/city, programme, sale type/eligibility, public ticket URL, original opening datetime and IANA timezone, KST opening datetime, event/opening status, checked timestamp and official source URL. Record source publication date when available; otherwise leave it unknown.
+3. Use the original IANA timezone to convert the opening instant to Asia/Seoul using the event date's daylight-saving rules. Show original time/zone AND KST. Never infer timezone from page language or artist nationality. An ambiguous DST time requires an official offset; otherwise mark it unknown.
+4. Date-only opening announcements are `오픈 날짜 공지·시각 미공개`, not exact confirmed openings. Do not invent midnight. A confirmed exact opening requires a published time, original timezone, eligibility and official event/ticket source.
+5. Show unknown facts as `NA (reason)` with a short Korean reason, such as `NA (오픈일 미공개)` or `NA (예매처 접근 실패)`. Never fill a gap from model memory.
+6. Separate observed official evidence, derived timezone conversions, and unverified leads. An inaccessible or missing source means unknown, not sold out, canceled, unchanged or no concerts.
+7. Preserve explicit cancellations, postponements, artist withdrawals and date conflicts. Exclude past and canceled events from the ordinary upcoming list; if a previously listed future event is explicitly canceled/withdrawn/postponed, retain a marked correction row instead of silently deleting it. Unresolved date conflicts remain clearly flagged and do not count as confirmed performances.
+8. Use `판매 중`, `선예매 중` or `공식 매진` only when fresh official event-specific evidence supports it. A passed opening time, a Buy button, a generic seating template or an old availability label alone does not prove current availability. Do not claim a past advertised performance actually occurred without retrospective evidence.
 
-| 공연일시(현지) | 공연·장소 | 티켓 오픈·판매 상태 | 공식 예매·안내 | 확인일(KST) |
-|---|---|---|---|---|
+### Direct-response output
 
-- Show separate presale/general-sale times inside the ticket column when applicable.
-- If a concert is confirmed but its ticket opening is not published, keep the concert row and write `오픈일 미공개`.
-- If fewer than five future concerts are confirmed, return only the verified rows; do not pad the table.
-- If research succeeds but no future concerts are found, return one row containing `공식 일정 미확인`.
-- If web access is unavailable or fails, return one row containing `실시간 조회 불가`. Do not describe access failure as an absence of concerts.
+The user is explicitly asking for a table. Return it even when nothing changed; silence on unchanged runs belongs only to separately authorized monitoring.
+
+Return ONLY this table:
+
+| 공연일시(현지) | 국가·공연장 | 프로그램 | 예매구분·대상 | 티켓 오픈(현지·KST) / 상태 | 공식 예매·근거 | 확인시각(KST) |
+|---|---|---|---|---|---|---|
+
+- Put the direct official event/booking link in each row. Include the opening notice link as well when it differs from the booking page.
+- Keep confirmed concerts even when opening details are unknown; use a clearly unknown sale-phase row until phases are announced.
+- If fewer than five distinct future performances are confirmed, return the verified rows without padding. Do not claim exhaustive worldwide coverage.
+- If research succeeds but finds no confirmed future concerts, return one row containing `공식 일정 미확인`.
+- If live access is unavailable or fails entirely, return one row containing `실시간 조회 불가`. Do not disguise failed access as no concerts.
+- Do not initiate login, account creation, queues, seat selection, holds, checkout, booking or payment.
+
+### Optional authorized monitoring adapter
+
+This command itself creates no schedule, reminder, publication, or delivery.
+
+- Only when the caller already has authorized monitoring, compare against its persistent private ledger using stable event and sale-phase IDs. Do not derive identity solely from mutable dates, URLs or programme text.
+- Initialize the first baseline without replaying historical opening alerts. A missing/failed source must not erase known facts or imply cancellation; mark the run partial.
+- Emit only freshly verified new future openings or material changes to tracked future openings. A URL wording change or historical refresh alone is not an alert. Include explicit postponement, cancellation and artist withdrawal corrections.
+- Day-before and opening-day reminder dates use the opening's KST calendar date, not a rolling 24 hours. The caller owns timing and execution; recheck the latest official revision before sending, suppress superseded reminders and never backfill stale notices.
+- Keep ledgers, user identities, tokens and delivery receipts private. Preserve uncertain delivery for reconciliation, deduplicate by event/phase/revision, and do not claim a stored report proves delivery.
+- For the user's existing Discord workflow, the authorized caller uses private drops → drops-dispatcher. This public file neither sends messages nor grants permission to send.
