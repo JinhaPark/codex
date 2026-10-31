@@ -40,12 +40,18 @@ class SourceSelectionTests(unittest.TestCase):
         self.assertEqual(source["id"], "correct")
         self.assertEqual(offsets, [0, 7091])
 
-    def test_broadcast_start_before_19_is_clipped(self):
+    def test_wednesday_starts_at_18(self):
         source, offsets = probe.select_video("연합", [video(
             "early", "2026-10-28T13:00:00Z", start="2026-10-28T09:00:00Z",
             end="2026-10-28T13:00:00Z")], self.now)
-        self.assertEqual(offsets, [3600, 10800])
+        self.assertEqual(offsets, [0, 10800])
         self.assertEqual(source["id"], "early")
+
+    def test_other_weekdays_start_at_19(self):
+        _, offsets = probe.select_video("연합", [video(
+            "early", "2026-10-29T13:00:00Z", start="2026-10-29T09:00:00Z",
+            end="2026-10-29T13:00:00Z")], self.now)
+        self.assertEqual(offsets, [3600, 10800])
 
     def test_yonhap_uses_broadcast_date_instead_of_reupload_order(self):
         items = [

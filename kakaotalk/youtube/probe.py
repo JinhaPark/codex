@@ -76,7 +76,7 @@ def select_video(keyword, videos, now):
         end = instant(live["actualEndTime"]).astimezone(KST)
         if start.weekday() >= 5 or end > now or end <= start:
             continue
-        window_start = datetime.combine(start.date(), time(19), KST)
+        window_start = datetime.combine(start.date(), time(18 if start.weekday() == 2 else 19), KST)
         window_end = datetime.combine(start.date(), time(21), KST)
         allowed_start, allowed_end = max(start, window_start), min(end, window_end)
         if allowed_start < allowed_end:
@@ -110,7 +110,7 @@ def discover(keyword, key, now):
 
 
 def clip_segments(segments, offsets):
-    # Drop boundary-crossing segments rather than include words outside 19:00–21:00.
+    # Drop boundary-crossing segments rather than include words outside the window.
     return [s for s in segments if s.get("text", "").strip() and
             (offsets is None or (s["start"] >= offsets[0] and
              s["start"] + s["duration"] <= offsets[1]))]

@@ -7,7 +7,8 @@ There is no recurring schedule.
 
 - `공병호`: latest published, non-running video among the channel's latest 50 uploads.
 - `연합`: latest completed Infomax Live broadcast among 25 search matches whose
-  actual broadcast times overlap Monday–Friday 19:00–21:00 Asia/Seoul.
+  actual broadcast times overlap Wednesday 18:00–21:00 or other weekdays
+  19:00–21:00 Asia/Seoul.
   An edited upload without actual broadcast timestamps does not qualify.
 - Only fully contained caption segments inside the permitted time interval are
   retained for Yonhap; boundary-crossing segments are dropped. Short overlaps
