@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-10-31",
+  "month": "2026-11",
+  "source_url": "https://momos.co.kr/shop_view?idx=2548",
+  "lineup": [
+    {
+      "week": "1주차",
+      "coffee": "에티오피아 샨타웨네 74158 무산소 내추럴",
+      "ship_date": "2026-11-05"
+    },
+    {
+      "week": "2주차",
+      "coffee": "에티오피아 보체사 74158 무산소 내추럴",
+      "ship_date": "2026-11-12"
+    },
+    {
+      "week": "3주차",
+      "coffee": "업데이트 예정",
+      "ship_date": null
+    },
+    {
+      "week": "4주차",
+      "coffee": "업데이트 예정",
+      "ship_date": null
+    }
+  ]
+}
