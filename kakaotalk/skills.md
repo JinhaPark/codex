@@ -1,11 +1,11 @@
 # KakaoTalk ready replies
 
-Read the matching section and return only its Markdown table.
-- `/커피` or `/도모`: return the coffee table.
-- `/임윤찬`: return the concert table; omit past performances.
+Read the matching section and return only its Markdown table. A slash is optional; ignore an initial bot mention and surrounding whitespace.
+- `커피`, `도모`, `/커피`, or `/도모`: return the coffee table.
+- `임윤찬` or `/임윤찬`: return the concert table; omit past performances.
 - Do not search, use OCR, open links, or add facts or explanations. Preserve verification dates and unknown values. If no matching data remains, reply `저장된 자료 없음`.
 
-## /커피 · /도모
+## 커피 · 도모
 
 Checked: 2026-10-31 KST. Lineup: 2026-11. Dates are dispatch dates.
 
@@ -16,7 +16,7 @@ Checked: 2026-10-31 KST. Lineup: 2026-11. Dates are dispatch dates.
 | 2026년 11월 3주차 | 업데이트 예정 | 미정 |
 | 2026년 11월 4주차 | 업데이트 예정 | 미정 |
 
-## /임윤찬
+## 임윤찬
 
 Checked: 2026-10-31 KST. Stored upcoming public-sale concerts; invitation-only events are excluded. Availability is not live.
 
