@@ -1,13 +1,14 @@
 # KakaoTalk ready replies
 
 Return only the matching ready-reply text below, preserving blank lines and short labeled lines. Ignore an initial bot mention and surrounding whitespace; a slash is optional.
-- `커피`, `도모`, `/커피`, `/도모`: return the coffee reply.
+- `도모`, `커피`, `/도모`, `/커피`: return the coffee reply.
 - `임윤찬`, `/임윤찬`: return the concert reply; omit past performance blocks.
 - `공병호`, `/공병호`: return the Gong reply.
-- `연합`, `/연합`: return the Yonhap reply.
+- `연합`, `연합뉴스`, `인포맥스`, `/연합`, `/연합뉴스`, `/인포맥스`: return the Yonhap reply.
+- If several keywords are requested, return each matching reply once in the requested order; aliases share one reply.
 - Never use tables, pipe separators, code blocks or extra explanations. Do not search, use OCR, open links or invent facts. Keep the original check date. If no matching data remains, reply `저장된 자료 없음`.
 
-## 커피 · 도모
+## 도모 · 커피
 
 <!-- coffee-reply:start -->
 모모스 11월 정기구독
