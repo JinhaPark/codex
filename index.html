@@ -41,8 +41,8 @@
     </main>
     <footer class="footer"><span>JP</span><small>© 2026</small></footer>
   </div>
-  <dialog id="system-note" aria-labelledby="system-title"><div class="top"><span class="tag">SYSTEM AI</span><button class="close" type="button" aria-label="Patent Reviewer 노트 닫기">닫기 ×</button></div><h2 id="system-title">Patent Reviewer</h2><p>특허 원문과 번역문을 대조하고, 용어와 문맥의 일관성을 검토합니다.</p><p>용어 수정의 영향을 받는 구간을 확인해 검토를 이어갑니다.</p></dialog>
-  <dialog id="quant-note" aria-labelledby="quant-title"><div class="top"><span class="tag">QUANT</span><button class="close" type="button" aria-label="현금흐름 노트 닫기">닫기 ×</button></div><h2 id="quant-title">Agent Alpha</h2><p>기업의 현금창출력과 재무위험을 함께 살펴보는 리서치 워크플로입니다.</p><p>다모다란 방식의 DCF와 부실확률 조정을 중심으로, 비교기업·가정·출처를 정리하고 이후 결과를 대조합니다.</p></dialog>
+  <dialog id="system-note" aria-labelledby="system-title"><div class="top"><span class="tag">SYSTEM AI</span><button class="close" type="button" aria-label="Patent Reviewer 노트 닫기">닫기 ×</button></div><h2 id="system-title">Patent Reviewer</h2><p>AI 기반 특허번역 검토 프로젝트입니다.</p></dialog>
+  <dialog id="quant-note" aria-labelledby="quant-title"><div class="top"><span class="tag">QUANT</span><button class="close" type="button" aria-label="Agent Alpha 노트 닫기">닫기 ×</button></div><h2 id="quant-title">Agent Alpha</h2><p>재무제표와 가격을 참고한 중장기 평균회귀(mean reversion) 전략과 단기 모멘텀 퀀트 전략을 조합합니다.</p></dialog>
   <script>
     document.querySelectorAll('[data-dialog]').forEach(button=>{
       const dialog=document.getElementById(button.dataset.dialog);
