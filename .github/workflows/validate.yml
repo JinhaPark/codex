@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "patentlinter/**"
       - "package.json"
       - "package-lock.json"
       - "vite.config.js"

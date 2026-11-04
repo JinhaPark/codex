@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="통계물리학 연구와 특허 번역 검수 실무 경험을 바탕으로 설계한 PatentLinter 아키텍처 회고: GraphRAG, DSPy, 상태 머신과 인간 승인 경계에 관하여.">
+  <title>엔지니어링 고민과 아키텍처 설계 과정 — PatentLinter</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:#243e35;background:#f5f2e9;font-synthesis:weight;--ink:#243e35;--muted:#647168;--line:#d9ddd2;--card:#faf9f4;--accent:#b65f32}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}::selection{background:#ead9c6}h1,h2,h3,p,figure{margin:0}
+    .wrap{max-width:1040px;width:calc(100% - 80px);margin:auto}.skip{position:fixed;top:-100px;left:16px;padding:12px;background:var(--ink);color:#fff;z-index:10}.skip:focus{top:12px}
+    .header{display:flex;align-items:center;justify-content:space-between;min-height:84px;border-bottom:1px solid var(--line);gap:18px}.brand{font:28px/1 Georgia,"Times New Roman",serif;letter-spacing:-.7px}.back{font-size:12px;letter-spacing:.02em;color:var(--muted);padding:12px 0}.back:hover{color:var(--accent)}
+    main{padding-bottom:60px}.eyebrow{font-size:11px;letter-spacing:.15em;color:var(--accent);font-weight:700;text-transform:uppercase}.hero{display:grid;grid-template-columns:minmax(0,1fr) 225px;gap:60px;padding:78px 0 60px;border-bottom:1px solid var(--line)}.hero h1{font-size:clamp(32px,4.2vw,51px);line-height:1.31;letter-spacing:-.055em;font-weight:600;word-break:keep-all;margin:17px 0 20px}.hero .dek{font-size:16px;line-height:1.95;color:#4d6055;word-break:keep-all;max-width:55ch}.hero-aside{border-left:1px solid var(--line);padding-left:25px;display:flex;flex-direction:column;justify-content:flex-end}.hero-aside .meta{font-size:10px;letter-spacing:.12em;color:var(--accent);margin-bottom:13px;font-weight:700}.hero-aside p{font-family:Georgia,"Noto Serif KR",serif;font-size:22px;line-height:1.55;letter-spacing:-.035em}.hero-aside .hint{font-family:inherit;font-size:11px;color:var(--muted);margin-top:22px;line-height:1.6;letter-spacing:0}
+    .content,.article-section,.diagram-section,.subdiagram,.lab,.lab-item{min-width:0;max-width:100%} .article-section{display:grid;grid-template-columns:190px minmax(0,1fr);gap:42px;padding:49px 0;border-bottom:1px solid var(--line)}.section-no{font:36px/1 Georgia,serif;color:var(--accent)}.section-label{font-size:10px;font-weight:650;letter-spacing:.10em;color:var(--muted);margin-top:13px}.content h2{font-size:clamp(22px,2.5vw,28px);letter-spacing:-.04em;line-height:1.5;font-weight:600;word-break:keep-all;margin-bottom:19px}.content p{font-size:15px;color:#42564a;line-height:2;word-break:keep-all;margin-bottom:17px}.content p:last-child{margin-bottom:0}.content strong{color:var(--ink)}.accent-line{border-left:3px solid var(--accent);padding:1px 0 1px 20px;margin:23px 0;font-size:17px;line-height:1.8;letter-spacing:-.02em;color:var(--ink);font-weight:600;word-break:keep-all}
+    .triad{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:26px}.mini{padding:18px 16px;background:var(--card);border:1px solid var(--line);min-height:130px}.mini h3{font-size:13px;letter-spacing:.025em;font-weight:700;margin-bottom:11px}.mini p{font-size:12px;line-height:1.8;margin:0;color:var(--muted)}
+    .diagram-section{padding:48px 0;border-bottom:1px solid var(--line)}.diagram-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:18px}.diagram-head h2{font-size:24px;font-weight:600;letter-spacing:-.045em}.diagram-head span{font-size:11px;color:var(--muted)}.diagram-frame{background:var(--card);border:1px solid var(--line);padding:18px;overflow:hidden}.diagram-scroll{overflow-x:auto;max-width:100%;width:100%;scrollbar-width:thin}.diagram-scroll img{display:block;width:100%;min-width:790px;height:auto}.scroll-hint{display:none}.diagram-section figcaption{color:var(--muted);font-size:12px;line-height:1.8;margin-top:13px}.diagram-caption-flag{color:var(--accent);font-weight:650}.legend{display:flex;gap:17px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:17px}.legend i{display:inline-block;width:24px;height:8px;border-top:2px solid var(--ink);vertical-align:middle;margin-right:6px}.legend i.dashed{border-top:2px dashed var(--accent)}
+    .figure-links{display:flex;gap:22px;margin-top:11px;font-size:12px;color:var(--accent);text-underline-offset:4px}.figure-links a{text-decoration:underline} .subdiagram{margin-top:20px} .subdiagram .label-mini{font-size:11px;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-bottom:11px}.subdiagram img{width:100%;height:auto;display:block} .subdiagram .subcaption{font-size:12px;line-height:1.8;color:var(--muted);margin-top:9px}
+    .lab{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:27px}.lab-item{border:1px solid var(--line);background:var(--card);padding:21px}.lab-item span{display:block;font-size:10px;font-weight:700;letter-spacing:.07em;color:var(--accent);margin-bottom:10px}.lab-item h3{font-size:16px;font-weight:600;line-height:1.45;margin-bottom:12px}.lab-item p{font-size:13px;line-height:1.85;margin:0}
+    .note{margin-top:25px;font-size:12px;line-height:1.95;color:var(--muted);padding:17px 19px;border:1px solid var(--line);background:#f8f7f1}.note strong{color:var(--ink)}
+    footer{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:26px 0 42px;font-size:11px;color:var(--muted)}footer a{text-decoration:underline;text-underline-offset:3px}footer span{font-family:Georgia,serif}
+    @media(max-width:740px){.wrap{width:calc(100% - 36px)}.header{min-height:68px}.brand{font-size:23px}.hero{grid-template-columns:1fr;padding:50px 0 40px;gap:28px}.hero h1{font-size:34px;max-width:15ch}.hero .dek{font-size:14px}.hero-aside{border-left:3px solid var(--accent);padding-left:15px}.hero-aside p{font-size:17px}.hero-aside .hint{margin-top:7px}.article-section{grid-template-columns:minmax(0,1fr);gap:13px;padding:36px 0}.section-label{display:inline-block;margin:0 0 0 11px}.section-no{font-size:24px}.content h2{font-size:23px;margin-bottom:15px}.content p{font-size:14px;line-height:1.94}.accent-line{font-size:16px}.triad{grid-template-columns:1fr;gap:9px}.mini{min-height:0;padding:15px}.mini h3{margin-bottom:6px}.diagram-section{padding:37px 0}.diagram-head{display:block}.diagram-head h2{font-size:22px}.diagram-head span{display:block;margin-top:7px}.diagram-frame{padding:10px}.diagram-scroll img{min-width:900px}.scroll-hint{display:block;font-size:11px;color:var(--muted);margin-top:10px}.lab{grid-template-columns:minmax(0,1fr)}.lab-item{padding:18px}.legend{font-size:11px}footer{align-items:flex-start}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div class="wrap">
+  <header class="header"><a class="brand" href="../" aria-label="Jinha Park 홈으로">Jinha Park</a><a class="back" href="../">← Projects</a></header>
+  <main id="main">
+    <div class="hero">
+      <div><p class="eyebrow">Engineering notes / PatentLinter</p><h1>엔지니어링 고민과<br>아키텍처 설계 과정</h1><p class="dek">통신 특허 번역 검수 실무를 경험하며 마주한 화두는 명확했습니다. AI 시대에 휴먼 리뷰어의 과중한 업무 부담을 어떻게 실질적으로 덜어주면서도, 용어 불일치로 인한 금반언 등 치명적인 법적 리스크를 안전하게 관리할 수 있을까요? PatentLinter를 설계하며 얻은 기록입니다.</p></div>
+      <aside class="hero-aside"><span class="meta">DESIGN JOURNAL · 2026</span><p>From string matching<br>to evidence-grounded<br>AI judgment.</p><p class="hint">특허 번역 검수 실무 · 복잡계 연구 배경</p></aside>
+    </div>
+    <section class="article-section" id="problem" aria-labelledby="problem-title">
+      <div><span class="section-no">01</span><span class="section-label">THE FAILURE</span></div>
+      <div class="content">
+        <h2 id="problem-title">금반언 리스크와 리뷰어의 부담: 문자열 및 로컬 모델의 한계</h2>
+        <p>통신 특허 국내 출원 번역 감수 실무를 수행하며 가장 경계했던 지점은 번역어의 불일치로 인한 법적 리스크, 특히 심사 과정에서 심사관이나 출원인에게 불리하게 작용하는 <strong>금반언</strong>의 위험이었습니다. 특허 번역 검수는 단순한 어휘 매칭을 넘어, 청구범위와 명세서 전반의 기술적 의미와 법적 관계를 엄격히 일치시켜야 하는 고도의 작업입니다.</p>
+        <p>근본적으로 특허 번역이 이토록 까다로운 이유는, 한국어와 영어의 유창한 언어 능력을 갖추는 것만으로는 턱없이 부족하기 때문입니다. 해당 기술 분야의 심도 있는 기술적 전문성과 청구범위의 권리경계를 다루는 리걸 마인드가 동시에 요구되는데, 이 세 가지 교집합을 모두 충족하는 전문 인력을 안정적으로 확보하고 일관된 품질을 유지하는 것은 실무 현장에서 늘 거대한 병목이었습니다.</p>
+        <p>초기에는 정규식(Regex)과 기계적인 Jaccard 유사도, 그리고 Sentence-Transformer 기반의 의미적 임베딩(Semantic Embedding) 유사도를 결합하여 접근했습니다. 그러나 표현이 달라도 동일한 기술적 개념일 수 있고, 임베딩 공간에서 거리가 가까워도 부정어나 조건 하나로 권리범위가 완전히 뒤집히는 특허 언어의 특성상 단순한 유사도 측정은 오탐과 누락을 반복할 뿐이었습니다. 무엇보다 리뷰어의 과중한 피로도를 덜어주기에는 역부족이었습니다.</p>
+        <div class="triad" aria-label="규칙 기반 접근의 역할과 한계">
+          <div class="mini"><h3>Regex</h3><p>형식과 특정 표기의 존재는 확인하지만, 표현의 적절성이나 의미까지 판단하지는 못합니다.</p></div>
+          <div class="mini"><h3>Jaccard & Embedding</h3><p>어휘 일치와 벡터 유사도를 수치화하지만, 부정·조건·청구범위의 미묘한 논리적 차이를 보장하지 못합니다.</p></div>
+        </div>
+        <p style="margin-top: 17px;">초기에는 온프레미스 기반의 로컬 모델 조합을 검토했습니다. 번역과 검수 과정을 단편적이고 반복적인, 좁은 범위(Narrow-scoped)의 서브 태스크들의 조합으로 환원할 수 있을 것이란 나이브한 접근이었습니다. 그러나 언어에는 <strong>문서 전반을 아우르는 거시적 맥락</strong>이 존재하며, 특히 기존 기술 사양과 선행 문헌의 전체적인 흐름을 고려해 번역과 표현이 유기적으로 달라져야 합니다. 규칙 기반 방식이나 세분화된 세부 태스크의 단순 조합만으로는 이러한 광범위한 맥락을 담아내기에 근본적인 한계가 있었습니다.</p>
+        <p>또한 기술의 진화에 따른 용어 변화, 특허 명세서 작성자(Drafter) 및 번역가 저마다의 서술 스타일을 로컬 모델의 파인튜닝만으로 학습하고 적응시키는 것도 벅찼습니다. 결국 기계적인 방식이나 로컬 모델로는 특허 언어의 광범위한 언어적 변이와 거대 맥락을 감당하기 어렵다는 결론에 이르렀습니다.</p>
+        <div class="accent-line">버린 것은 도구 자체가 아니라, 좁은 범위의 서브 태스크 조각에 의미 판단을 온전히 맡기던 설계였습니다.</div>
+        <p>오히려 비용 효율적이면서도 강력한 범용 추론 능력을 갖춘 OpenAI, Gemini, Claude 계열의 Closed Model을 활용하되, 이를 구조화된 파이프라인과 그래프 기반 맥락으로 통제하는 것이 훨씬 합리적이고 적응력 있는 접근법임을 확인할 수 있었습니다. 기계적 탐색은 후보 발견과 변경 범위 통제에 남기고, 해석이 필요한 판단은 검증된 Closed Model 기반의 근거 제시와 전문가 핸드오프 구조로 분리했습니다.</p>
+      </div>
+    </section>
+    <section class="article-section" id="boundary" aria-labelledby="boundary-title">
+      <div><span class="section-no">02</span><span class="section-label">THE BOUNDARY</span></div>
+      <div class="content">
+        <h2 id="boundary-title">모델에는 해석을, 시스템에는 통제를 맡겼습니다.</h2>
+        <p>물리학적인 관점에서 LLM은 본질적으로 확률적 앵무새(Stochastic Parrot)에 가깝고, 프롬프트와 맥락 주입은 그 출력이 원하는 방향으로 정렬(Align)되도록 가하는 외부 장(External Field)에 비유할 수 있습니다. 이 확률적 실체들이 정형화된 워크플로를 따라 예측 가능한 결과를 도출하도록 유도하고, 구체적인 특허 검수 상황에 맞게 형태를 다듬어가는(Re-shaping) 과정이 곧 오케스트레이션입니다.</p>
+        <p>이를 구현하기 위해 원문 명세서를 세그먼트와 기술 용어의 관계 그래프로 구성하고, 그래프의 구조와 출처를 엄격히 고정했습니다. GraphRAG는 질문과 관련된 문맥을 찾아오고, DSPy 모듈은 검색 계획·근거 추출·검토 단계를 나누어 처리합니다. LLM API 호출은 승인과 비용의 경계 안에 두어, 모델이 번역의 의미와 용어 선택에 관한 <strong>근거 있는 제안</strong>을 하되 원문 그래프를 임의로 수정하거나 전문가의 최종 승인을 대신하지 못하도록 설계했습니다.</p>
+        <p>승인된 용어나 세그먼트가 변경될 때도 전체 문서를 다시 처리하지 않습니다. 그래프가 가리키는 영향 범위만 선별하고 수정 가능한 영역을 제한해 재검토합니다. 불확실한 경우 무조건 통과시키는 대신 <strong>NEEDS_REVIEW</strong> 상태로 남기는 것이 이 아키텍처의 중요한 원칙입니다.</p>
+      </div>
+    </section>
+    <figure class="diagram-section" id="architecture" aria-labelledby="architecture-title">
+      <div class="diagram-head"><h2 id="architecture-title">Architecture · 상태 전이와 판단 경계</h2><span>Public abstraction · 상세 구현 비공개</span></div>
+      <div class="diagram-frame"><div class="diagram-scroll"><img src="./architecture.svg" width="1200" height="500" alt="문서 세그먼트화에서 원문 그래프, GraphRAG, DSPy, LLM 판단, 인간 승인으로 이어지는 흐름. 근거가 부족하면 제한된 재검색을 수행하며, 실패나 불확실한 결과는 NEEDS_REVIEW로 종료됩니다. pydantic-graph의 목표 상태 머신은 별도 그림에 표시합니다."></div></div><p class="scroll-hint">다이어그램을 좌우로 움직여 전체 흐름을 볼 수 있습니다. ↔</p>
+      <div class="legend"><span><i></i>기존 모듈 및 채택한 설계 원칙</span><span><i class="dashed"></i>목표 오케스트레이션 · 검증 과제</span></div>
+      <figcaption><span class="diagram-caption-flag">구현 범위 구분:</span> DSPy 검색·판단 모듈과 Pydantic 기반 입력/출력 검증은 실제 개발 코드에 반영되어 있습니다. 아래 <strong>pydantic-graph 상태 머신은 목표 설계</strong>이며, 자동 프롬프트 최적화나 실서비스 검증 완료를 의미하지 않습니다.</figcaption>
+      <div class="subdiagram" aria-label="목표 Pydantic Graph 상태 머신 다이어그램"><p class="label-mini">TARGET DESIGN · pydantic-graph 상태 전이</p><div class="diagram-frame"><div class="diagram-scroll"><img src="./state-machine.svg" width="1200" height="305" alt="목표 상태 머신: SUBMITTED에서 검증 후 RETRIEVING, REVIEWING, WAITING_APPROVAL을 거쳐 승인 시 SUCCEEDED. 근거 부족일 때에만 제한적으로 RETRIEVING으로 돌아가며 거절 또는 불확실성이 있으면 NEEDS_REVIEW로 종료합니다."></div></div><p class="subcaption">실행 상태와 추론 결과를 명확히 분리하기 위한 목표 설계입니다. pydantic-graph를 활용한 실제 운영 전환과 영속 체크포인트 구현은 완료된 상태가 아닙니다.</p></div>
+    </figure>
+    <section class="article-section" id="experiments" aria-labelledby="experiments-title">
+      <div><span class="section-no">03</span><span class="section-label">THE EXPERIMENT</span></div>
+      <div class="content">
+        <h2 id="experiments-title">완벽한 실패의 정의란 없습니다: 평가 설계의 딜레마</h2>
+        <p>코딩 문제처럼 테스트 코드가 통과하느냐 마느냐로 판정할 수 있는 이진(Binary)의 세계와 달리, 번역의 영역에는 명확한 흑백 논리의 '완벽한 실패'란 존재하지 않습니다. 무엇이 치명적인 오역이고 어디까지가 용인 가능한 표현의 변이인지, 특허 문맥 속에서 그 경계를 칼로 베듯 나누기란 불가능에 가까웠습니다.</p>
+        <p>사전에 완벽한 기준을 정립할 수 없는 이유는, 실무 아키텍처의 원칙(Principle)이란 결국 휴먼 인 더 루프(HITL) 피드백 루프를 거치며 경험적으로(Empirically) 결정되고 그에 맞춰 일관성(Coherent) 있게 다듬어져 가기 때문입니다. 단일 지표(Accuracy)에 기댈 수 없기에 모호한 실패 양상들을 헤아리며 평가 함수를 다듬었고, 복잡한 규칙을 하나의 프롬프트에 누적하는 대신 문제를 계획(Planner) → 관련성 평가(Reranker) → 근거 추출(Extractor) → 검토(Reviewer) 단계로 쪼개어 역할별 책임을 분리했습니다.</p>
+        <div class="lab">
+          <div class="lab-item"><span>EXPERIMENTAL LESSON</span><h3>정답률보다 실패 유형을 먼저 정의합니다.</h3><p>표현의 유창함과 별개로 핵심 사실 누락, 원문 인용의 정합성, 허위 확신에 대한 방어와 적절한 판단 보류를 각각 평가해야 합니다. API 비용과 지연 시간도 함께 측정해야 최적화의 실효성이 있습니다.</p></div>
+          <div class="lab-item"><span>NEXT VALIDATION</span><h3>최적화 데이터와 평가 데이터를 분리합니다.</h3><p>소규모 실패 사례를 유형별로 수집하되, 동일 문서나 인접 세그먼트가 학습과 평가에 중복 노출되지 않도록 분리한 뒤 후보 프롬프트를 비교할 계획입니다. MIPROv2 같은 옵티마이저의 개선 효과를 이 프로젝트에서 완벽히 입증했다고 단정하지는 않습니다.</p></div>
+        </div>
+        <div class="subdiagram" aria-label="DSPy 프롬프트 평가 및 실험안"><p class="label-mini">EXPERIMENT DESIGN · 실험 설계안</p><div class="diagram-frame"><div class="diagram-scroll"><img src="./dspy-evaluation.svg" width="1200" height="210" alt="비공개 평가 사례를 방지하기 위해 ..."></div></div></div>
+      </div>
+    </section>
+    <section class="article-section" id="lessons" aria-labelledby="lessons-title">
+      <div><span class="section-no">04</span><span class="section-label">THE LESSON</span></div>
+      <div class="content">
+        <h2 id="lessons-title">무엇을 자동화하지 않을지 결정하는 일</h2>
+        <p>특허 번역 검수 실무와 복잡계 네트워크 연구를 거치며 깨달은 점은, 좋은 AI 아키텍처란 더 강력한 모델 하나에 기대는 것이 아니라 <strong>어떤 지식은 구조로 고정하고 어떤 판단은 맥락에 맡길지</strong> 그 경계를 정교하게 긋는 데 있다는 것입니다. 그래프는 출처와 관계를 지탱하고, LLM은 의미적 모호성을 검토하며, 타입과 상태 전이는 모델의 동작을 통제합니다.</p>
+        <p>법적 타당성, 번역의 자연스러움, 기술적 정확성은 각각 변리사, 번역 전문가, 기술 전문가의 최종 확인(Sign-off)을 거쳐야 합니다. PatentLinter의 본질적인 목적은 전문가들이 번역 검수 과정에서 마주하는 반복적이고 소모적인 기계적 업무를 덜어주고, 보다 고차원적이고 핵심적인 분석에 집중할 수 있도록 돕는 데 있습니다.</p>
+        <p>현재 검증된 검색 기능과 오프라인 참조 구현을 바탕으로 이 경계를 구체화하고 있습니다. 다만 AI가 제시하는 복잡한 검토 제안과 근거를 인간 전문가가 가장 직관적이고 피로감 없이 처리할 수 있도록, HITL(Human-in-the-Loop) 상호작용의 인터페이스와 워크플로를 어떻게 설계하고 제공할 것인가는 앞으로 본격적으로 파고들어야 할 핵심 방법론적 과제로 남아 있습니다. 기계가 반복적인 검토를 지탱하고 사람이 고차원적 판단에 집중하는 구조 속에서, 시스템은 비로소 실무의 신뢰할 수 있는 도구로 완성됩니다.</p>
+      </div>
+    </section>
+  </main>
+  <footer><span>JP</span><a href="../">Back to projects</a></footer>
+</div>
+</body>
+</html>
