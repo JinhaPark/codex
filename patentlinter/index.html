@@ -61,9 +61,8 @@
     </section>
     <figure class="diagram-section" id="architecture" aria-labelledby="architecture-title">
       <div class="diagram-head"><h2 id="architecture-title">Architecture · 상태 전이와 판단 경계</h2><span>Public abstraction · 상세 구현 비공개</span></div>
-      <div class="diagram-frame"><div class="diagram-scroll"><img src="./architecture.svg" width="1200" height="500" alt="문서 세그먼트화에서 원문 그래프, GraphRAG, DSPy, LLM 판단, 인간 승인으로 이어지는 흐름. 근거가 부족하면 제한된 재검색을 수행하며, 실패나 불확실한 결과는 NEEDS_REVIEW로 종료됩니다. pydantic-graph의 목표 상태 머신은 별도 그림에 표시합니다."></div></div><p class="scroll-hint">다이어그램을 좌우로 움직여 전체 흐름을 볼 수 있습니다. ↔</p>
+      <div class="diagram-frame"><div class="diagram-scroll"><img src="./architecture.svg" width="1200" height="500" alt="문서 세그먼트화에서 원문 그래프, GraphRAG, DSPy, LLM 판단, 인간 승인으로 이어지는 흐름. 근거가 부족하면 제한된 재검색을 수행하며, 실패나 불확실한 결과는 NEEDS_REVIEW로 종료됩니다."></div></div><p class="scroll-hint">다이어그램을 좌우로 움직여 전체 흐름을 볼 수 있습니다. ↔</p>
       <div class="legend"><span><i></i>기존 모듈 및 채택한 설계 원칙</span><span><i class="dashed"></i>목표 오케스트레이션 · 검증 과제</span></div>
-      <div class="subdiagram" aria-label="목표 Pydantic Graph 상태 머신 다이어그램"><p class="label-mini">TARGET DESIGN · pydantic-graph 상태 전이</p><div class="diagram-frame"><div class="diagram-scroll"><img src="./state-machine.svg" width="1200" height="305" alt="목표 상태 머신: SUBMITTED에서 검증 후 RETRIEVING, REVIEWING, WAITING_APPROVAL을 거쳐 승인 시 SUCCEEDED. 근거 부족일 때에만 제한적으로 RETRIEVING으로 돌아가며 거절 또는 불확실성이 있으면 NEEDS_REVIEW로 종료합니다."></div></div></div>
     </figure>
     <section class="article-section" id="experiments" aria-labelledby="experiments-title">
       <div><span class="section-no">03</span><span class="section-label">THE EXPERIMENT</span></div>
