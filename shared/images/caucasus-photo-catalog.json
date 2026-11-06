@@ -193,9 +193,9 @@
       "date": "2026-05-01",
       "caption": "셰키 구시가지의 거리 풍경",
       "alt": "셰키 구시가의 건축과 거리 풍경",
-      "status": "candidate",
+      "status": "ready-in-pr",
       "sourceSha256": null,
-      "placement": null,
+      "placement": "caucasus:2026-05-01:destination:sheki-old-town",
       "variants": [
         {
           "file": "caucasus-20260501-sheki-street-watercolor-1200.webp",
