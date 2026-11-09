@@ -9,6 +9,12 @@ for (const route of ['index.html','tantantan/index.html','caucasus/index.html'])
   const html=fs.readFileSync(file,'utf8');
   if (route !== 'index.html') assert.match(html, /\/codex\/assets\/[^"']+\.js/, 'Missing built entry for '+route);
 }
+for (const route of ['blog/index.html','blog/20261109-temporal.html']) {
+  const file=join(dist,route);
+  assert.ok(fs.existsSync(file), 'Missing published blog route '+route);
+}
+const blogIndex=fs.readFileSync(join(dist,'blog/index.html'),'utf8');
+assert.match(blogIndex, /\.\/20261109-temporal\.html/, 'Blog index must link to its article');
 const root=fs.readFileSync(join(dist,'index.html'),'utf8');
 assert.match(root, /\.\/tantantan\//);
 assert.match(root, /\.\/caucasus\//);
