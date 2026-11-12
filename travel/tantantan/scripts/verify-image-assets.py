@@ -7,8 +7,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 artwork = json.loads((ROOT.parent / 'shared/images/illustrations.json').read_text())
+caucasus = json.loads((ROOT.parent / 'shared/images/caucasus-asset-registry.json').read_text())
 asset_dir = ROOT.parent / 'shared/public/illustrations'
-expected = [v['file'] for a in artwork for v in a['variants']]
+expected = [v['file'] for a in artwork for v in a['variants']] + [a['file'] for a in caucasus['assets']]
 assert len(expected) == len(set(expected))
 lineage = json.loads((ROOT.parent / 'shared/images/image-lineage.json').read_text())
 retained = [v for image in lineage['images'] for revision in image['revisions']

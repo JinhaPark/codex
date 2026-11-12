@@ -11,7 +11,7 @@ on:
       - "package-lock.json"
       - "vite.config.js"
       - "scripts/**"
-      - "shared/**"
+      - "travel/**"
       - "tantantan/**"
       - "caucasus/**"
       - ".github/workflows/pages.yml"
@@ -48,13 +48,17 @@ jobs:
             caucasus=false
             while IFS= read -r path; do
               case "$path" in
-                tantantan/*)
+                travel/tantantan/*)
                   tantantan=true
                   ;;
-                caucasus/*)
+                travel/caucasus/*)
                   caucasus=true
                   ;;
-                shared/*|scripts/*|index.html|package.json|package-lock.json|vite.config.js|.github/workflows/pages.yml)
+                tantantan/*|caucasus/*)
+                  tantantan=true
+                  caucasus=true
+                  ;;
+                travel/shared/*|scripts/*|index.html|package.json|package-lock.json|vite.config.js|.github/workflows/pages.yml)
                   tantantan=true
                   caucasus=true
                   ;;
@@ -75,17 +79,17 @@ jobs:
           python-version: "3.12"
       - name: Install Tantantan image test dependencies
         if: steps.scope.outputs.tantantan == 'true'
-        run: python -m pip install -r tantantan/scripts/requirements-image-cache.txt
+        run: python -m pip install -r travel/tantantan/scripts/requirements-image-cache.txt
 
       - name: Test Tantantan
         if: steps.scope.outputs.tantantan == 'true'
-        run: node --test tantantan/tests/*.test.js
+        run: node --test travel/tantantan/tests/*.test.js
         env:
           IMAGE_LINEAGE_BASE: ${{ github.event.before || github.sha }}
 
       - name: Test Caucasus
         if: steps.scope.outputs.caucasus == 'true'
-        run: node --test caucasus/tests/*.test.js
+        run: node --test travel/caucasus/tests/*.test.js
 
       - run: npm run build
       - run: node scripts/verify-build.mjs

@@ -1,8 +1,8 @@
 {
   "name": "Caucasus Travel Companion 2026",
   "short_name": "Caucasus",
-  "start_url": "/codex/caucasus/",
-  "scope": "/codex/caucasus/",
+  "start_url": "/codex/travel/caucasus/",
+  "scope": "/codex/travel/caucasus/",
   "display": "standalone",
   "background_color": "#f7f4ed",
   "theme_color": "#142e39",

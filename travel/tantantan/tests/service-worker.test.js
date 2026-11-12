@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source = fs.readFileSync(new URL('../../shared/public/sw-tantantan.js', import.meta.url), 'utf8');
-const current = 'ca26-tantantan-v1';
+const current = 'ca26-tantantan-v2';
 function worker({ put = async () => {}, fetch = async () => new Response('network') } = {}) {
   const stores = new Map(), handlers = {};
   const caches = {
@@ -60,31 +60,31 @@ test('worker leaves requests outside its app path and non-GET requests alone', (
   const { handlers } = worker();
   for (const request of [
     { url: 'https://example.github.io/other/', method: 'GET' },
-    { url: 'https://external.example/codex/tantantan/', method: 'GET' },
-    { url: 'https://example.github.io/codex/tantantan/', method: 'POST' }
+    { url: 'https://external.example/codex/travel/tantantan/', method: 'GET' },
+    { url: 'https://example.github.io/codex/travel/tantantan/', method: 'POST' }
   ]) handlers.fetch({ request, respondWith: () => assert.fail('Unexpected interception') });
 });
 
 
 test('online navigation replaces stale HTML with the published document', async () => {
   const { stores, handlers } = worker({ fetch: async () => new Response('latest page') });
-  stores.set(current, new Map([['/codex/tantantan/', new Response('old page')]]));
+  stores.set(current, new Map([['/codex/travel/tantantan/', new Response('old page')]]));
   let result;
   const lifetimes = [];
-  handlers.fetch({ request: {url:'https://example.github.io/codex/tantantan/', method:'GET', mode:'navigate'}, respondWith: p => { result = p; }, waitUntil: p => lifetimes.push(p) });
+  handlers.fetch({ request: {url:'https://example.github.io/codex/travel/tantantan/', method:'GET', mode:'navigate'}, respondWith: p => { result = p; }, waitUntil: p => lifetimes.push(p) });
   assert.equal(await (await result).text(), 'latest page');
   await Promise.all(lifetimes);
-  assert.equal(await stores.get(current).get('/codex/tantantan/').text(), 'latest page');
+  assert.equal(await stores.get(current).get('/codex/travel/tantantan/').text(), 'latest page');
 });
 
 test('offline navigation preserves the saved page and cached assets avoid the network', async () => {
   let requests = 0;
   const { stores, handlers } = worker({ fetch: async () => { requests++; throw new Error('offline'); } });
   const asset = 'https://example.github.io/codex/assets/app.js';
-  stores.set(current, new Map([['/codex/tantantan/', new Response('saved page')], [asset, new Response('saved asset')]]));
+  stores.set(current, new Map([['/codex/travel/tantantan/', new Response('saved page')], [asset, new Response('saved asset')]]));
   let result;
   const event = request => ({request, respondWith: p => { result = p; }, waitUntil: () => {}});
-  handlers.fetch(event({url:'https://example.github.io/codex/tantantan/', method:'GET', mode:'navigate'}));
+  handlers.fetch(event({url:'https://example.github.io/codex/travel/tantantan/', method:'GET', mode:'navigate'}));
   assert.equal(await (await result).text(), 'saved page');
   handlers.fetch(event({url:asset, method:'GET'}));
   assert.equal(await (await result).text(), 'saved asset');

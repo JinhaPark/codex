@@ -14,12 +14,13 @@ const read = path => {
 };
 const lineage = JSON.parse(read('docs/image-lineage.json'));
 const manifest = JSON.parse(read('src/illustrations.json'));
-const git = args => execFileSync('git', args, { cwd: root, maxBuffer: 10 * 1024 * 1024 });
+const git = args => execFileSync('git', args, { cwd: root, maxBuffer: 10 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
 const base = process.env.IMAGE_LINEAGE_BASE || 'HEAD';
 // Fail closed if the configured baseline cannot be loaded (CI checks out full history).
 const previous = JSON.parse((() => {
-  try { return git(['show', `${base}:shared/images/image-lineage.json`]); }
-  catch { return git(['show', `${base}:docs/image-lineage.json`]); }
+  try { return git(['show', `${base}:travel/shared/images/image-lineage.json`]); }
+  catch { try { return git(['show', `${base}:shared/images/image-lineage.json`]); }
+    catch { return git(['show', `${base}:docs/image-lineage.json`]); } }
 })());
 const run = (data = lineage, published = manifest, baseline = previous, reader = read) => validateImageLineage({
   lineage: data, manifest: published, previous: baseline, readFile: reader,
@@ -30,7 +31,10 @@ const run = (data = lineage, published = manifest, baseline = previous, reader =
     assert.match(commit || '', /^[a-f0-9]{40}$/);
     try { return git(['show', `${commit}:${path}`]); }
     catch (error) {
-      if (path.startsWith('public/illustrations/')) return git(['show', `${commit}:shared/${path}`]);
+      if (path.startsWith('public/illustrations/')) {
+        try { return git(['show', `${commit}:travel/shared/${path}`]); }
+        catch { return git(['show', `${commit}:shared/${path}`]); }
+      }
       throw error;
     }
   },

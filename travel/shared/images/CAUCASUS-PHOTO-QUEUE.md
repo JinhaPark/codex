@@ -5,7 +5,7 @@ The May 1, 2026 group retains the roadside president portrait board and the Shek
 - Roadside portrait board: documentary photo with unmodified flag and portrait. Avoid asserting the depicted person's identity from the image.
 - Sheki caravanserai courtyard: watercolor, incidental visitors removed, preserve arcade and garden.
 
-Responsive WebP variants are registered in `shared/public/illustrations/` and displayed through the Caucasus photo catalog. The removed garden illustration no longer has a published asset, manifest record or itinerary section. 
+Responsive WebP variants are registered in `travel/shared/public/illustrations/` and displayed through the Caucasus photo catalog. The removed garden illustration no longer has a published asset, manifest record or itinerary section.
 
 ## May 2, 2026 — Kakheti vineyard and winery
 
@@ -14,7 +14,7 @@ Two user-supplied photographs were converted to transparent watercolor/colored-p
 - Vineyard rows with a foreground tree and distant mountains: `kakheti-vineyard-watercolor`.
 - Stainless-steel wine fermentation/storage tanks: `kakheti-winery-tanks-pencil`.
 
-Both records are `prepared-in-pr`. Source images and generated PNG were committed; prepared WebP files have been hash-checked and remain in the user's downloadable batch package. Do not publish broken links or mark them active until the six exact WebP bytes are uploaded to `shared/public/illustrations/` and verified.
+Both records are `prepared-in-pr`. Source images and generated PNG were committed; prepared WebP files have been hash-checked and remain in the user's downloadable batch package. Do not publish broken links or mark them active until the six exact WebP bytes are uploaded to `travel/shared/public/illustrations/` and verified.
 
 ## Uploaded WebP migration (2026-10-24)
 
@@ -22,7 +22,7 @@ The root-level WebP uploads in GitHub main (26 files) are copied to the shared p
 
 ## Oversize import audit
 
-Published WebP blobs that exceed the 250,000-byte target are listed in `shared/images/caucasus-oversize-exceptions.json`. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test checks the current allowlist and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.
+Published WebP blobs that exceed the 250,000-byte target are listed in `travel/shared/images/caucasus-oversize-exceptions.json`. This migration preserves their exact content and Git identities instead of silently replacing artwork. The dedicated image test checks the current allowlist and will fail on untracked oversize additions. Re-encoding should be completed in a dedicated image-optimization pass, with updated source-to-output hashes and revised Git blobs; do not report the five as fully budget-compliant until that happens.
 
 ## Aliyev replacement and newly imported images (2026-10-25)
 

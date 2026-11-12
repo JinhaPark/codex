@@ -1,6 +1,6 @@
-const CACHE = 'ca26-tantantan-v1';
+const CACHE = 'ca26-tantantan-v2';
 const CACHE_PREFIX = 'ca26-tantantan-';
-const ROOT = '/codex/tantantan/';
+const ROOT = '/codex/travel/tantantan/';
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.add(ROOT)).then(() => self.skipWaiting()));
