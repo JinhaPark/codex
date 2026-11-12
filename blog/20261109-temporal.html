@@ -34,6 +34,7 @@
     .content pre{background:var(--card);border:1px solid var(--line);padding:18px;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;line-height:1.6;margin:20px 0}
     .content code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.9em;background:#f2efe6;padding:2px 6px;border-radius:3px}
     .content pre code{background:transparent;padding:0}
+    .workflow-diagram{margin:24px 0}.workflow-diagram .diagram-frame{background:var(--card);border:1px solid var(--line);padding:12px;overflow:hidden}.workflow-diagram .diagram-scroll{overflow-x:auto;max-width:100%;width:100%;scrollbar-width:thin}.workflow-diagram img{display:block;width:100%;min-width:790px;height:auto}.workflow-diagram figcaption{color:var(--muted);font-size:12px;line-height:1.8;margin-top:10px}
     table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;background:var(--card)}
     th,td{border:1px solid var(--line);padding:12px 16px;text-align:left;line-height:1.6}
     th{background:#f0eee4;font-weight:600}
@@ -277,9 +278,9 @@ milestones:
               <td>Token budgets and caching</td>
             </tr>
             <tr>
-              <td>Pending human approvals</td>
+              <td>Pending user or delegated Architect approvals</td>
               <td>Durable waiting for approval events</td>
-              <td>Authentication and authorization</td>
+              <td>Verify approver identity and delegated authority</td>
             </tr>
             <tr>
               <td>Evolving workflows</td>
@@ -289,6 +290,12 @@ milestones:
           </tbody>
         </table>
 
+        <p>Two separate runs show what the current workflow evidence does and does not establish:</p>
+        <figure class="workflow-diagram" aria-labelledby="workflow-diagram-caption">
+          <div class="diagram-frame"><div class="diagram-scroll"><img src="./temporal-workflow-sequence.svg" width="940" height="1240" alt="Two sequence diagrams. In the completed document task, the Architect approves proposal r2, Temporal dispatches application r3, an application step updates a README and roadmap in one Git commit, and a receipt records applied with zero provider calls. A later receipt lookup is reported but not independently confirmed. In a separate experiment, Temporal sends one model request; the provider returns a syntax-checked 803-byte candidate after using 5,398 input and 752 output tokens. Review and application remain pending, with no source write or commit." /></div></div>
+          <figcaption id="workflow-diagram-caption">The first run completed without a provider call; this does not prove a paid call was avoided. The separate model experiment used tokens but did not reach application.</figcaption>
+        </figure>
+        <p>An operation lock and context journal are intended to let repeated requests observe the original operation, while an advisory writer lock covers participating kit writers. These controls do not cover every caller, and comparative token and cost savings have not been measured.</p>
         <p>The distinction between coordination and execution becomes particularly important during recovery. Suppose an implementation worker successfully creates a Git commit but terminates before reporting completion. A naïve retry could launch another coding session and produce redundant changes. A recovery-aware Activity instead inspects the existing branch, worktree, commit history, and task identifier before deciding whether another execution attempt is necessary. <strong>Temporal coordinates the retry; Git provides the evidence needed to reconcile it safely.</strong></p>
         <p>The same principle applies to CI failures. Repeatedly running an unchanged test suite may consume resources without advancing development when the underlying failure is deterministic. A reliable workflow should distinguish transient infrastructure errors from implementation defects, applying bounded retries to the former while escalating the latter for agent-driven diagnosis and correction. Likewise, expensive LLM operations require explicit concurrency limits, caching, and usage budgets rather than indiscriminate retries.</p>
         <p>The objective is not to automate every technical decision or eliminate the possibility of failure. It is to <strong>make the execution surrounding agent decisions durable, observable, and recoverable</strong>, while preserving clear responsibility for code correctness, security verification, and human authorization.</p>

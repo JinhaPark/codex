@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 1240" role="img" aria-labelledby="title desc">
+  <title id="title">Two Temporal workflow examples shown as sequence diagrams</title>
+  <desc id="desc">The first sequence shows an approved document task proceeding through Temporal to an application step and Git, producing a receipt with zero provider calls. A reported later receipt lookup is marked as not independently confirmed. The second, separate sequence shows a model request producing a syntax-checked candidate that remains pending review and application.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52675b"/>
+    </marker>
+    <marker id="return-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b65f32"/>
+    </marker>
+    <style>
+      .bg{fill:#faf9f4}.panel{fill:#fffefa;stroke:#d9ddd2;stroke-width:2}.head{font:700 24px system-ui,sans-serif;fill:#243e35}.sub{font:16px system-ui,sans-serif;fill:#647168}.actor{fill:#f0eee4;stroke:#bfc8bd;stroke-width:2}.actorText{font:600 16px system-ui,sans-serif;fill:#243e35;text-anchor:middle}.life{stroke:#aeb9af;stroke-width:2;stroke-dasharray:7 7}.msg{stroke:#52675b;stroke-width:2.5;marker-end:url(#arrow)}.ret{stroke:#b65f32;stroke-width:2.5;stroke-dasharray:8 6;marker-end:url(#return-arrow)}.label{font:16px system-ui,sans-serif;fill:#243e35}.labelSmall{font:14px system-ui,sans-serif;fill:#647168}.note{fill:#edf3ec;stroke:#aebfad;stroke-width:1.5}.noteWarn{fill:#f8eee6;stroke:#dfc2ae;stroke-width:1.5}.noteText{font:600 16px system-ui,sans-serif;fill:#243e35}.noteSub{font:14px system-ui,sans-serif;fill:#52675b}.divider{stroke:#d9ddd2;stroke-width:2}
+    </style>
+  </defs>
+  <rect class="bg" width="940" height="1240" rx="14"/>
+
+  <rect class="panel" x="18" y="18" width="904" height="588" rx="12"/>
+  <text class="head" x="42" y="56">1. Completed document workflow</text>
+  <text class="sub" x="42" y="82">A real document update completed without a model call.</text>
+
+  <rect class="actor" x="26" y="105" width="148" height="54" rx="8"/><text class="actorText" x="100" y="138">Architect</text>
+  <rect class="actor" x="216" y="105" width="148" height="54" rx="8"/><text class="actorText" x="290" y="129"><tspan x="290">Temporal</tspan><tspan x="290" dy="18">workflow</tspan></text>
+  <rect class="actor" x="406" y="105" width="148" height="54" rx="8"/><text class="actorText" x="480" y="129"><tspan x="480">Application</tspan><tspan x="480" dy="18">step</tspan></text>
+  <rect class="actor" x="596" y="105" width="148" height="54" rx="8"/><text class="actorText" x="670" y="138">Git</text>
+  <rect class="actor" x="786" y="105" width="148" height="54" rx="8"/><text class="actorText" x="860" y="129"><tspan x="860">Workflow</tspan><tspan x="860" dy="18">receipt</tspan></text>
+  <path class="life" d="M100 159V485 M290 159V485 M480 159V485 M670 159V485 M860 159V485"/>
+
+  <path class="msg" d="M100 190H290"/><text class="label" x="111" y="181">Approve exact r2 proposal</text>
+  <path class="msg" d="M290 235H480"/><text class="label" x="301" y="226">Dispatch r3 application</text>
+  <path class="msg" d="M480 280H670"/><text class="label" x="491" y="271">Update two documents</text>
+  <path class="ret" d="M670 325H480"/><text class="label" x="492" y="316">One commit recorded</text>
+  <path class="ret" d="M480 370H290"/><text class="label" x="301" y="361">Applied</text>
+  <path class="msg" d="M290 415H860"/><text class="label" x="449" y="406">Receipt: 0 provider calls · model N/A</text>
+  <path class="msg" d="M100 460H290"/><text class="label" x="111" y="451">Later query</text>
+  <path class="ret" d="M290 485H100"/><text class="labelSmall" x="112" y="506">Original receipt returned*</text>
+  <rect class="note" x="42" y="530" width="856" height="54" rx="8"/>
+  <text class="noteText" x="62" y="551">README + roadmap changed together. This task used no provider call.</text>
+  <text class="noteSub" x="62" y="571">*Re-query was reported, not independently confirmed. This does not prove paid credits were saved.</text>
+
+  <rect class="panel" x="18" y="626" width="904" height="596" rx="12"/>
+  <text class="head" x="42" y="664">2. Separate provider-response experiment</text>
+  <text class="sub" x="42" y="690">This was a different task; its candidate was not applied.</text>
+
+  <rect class="actor" x="26" y="713" width="148" height="54" rx="8"/><text class="actorText" x="100" y="746">Architect</text>
+  <rect class="actor" x="276" y="713" width="148" height="54" rx="8"/><text class="actorText" x="350" y="737"><tspan x="350">Temporal</tspan><tspan x="350" dy="18">workflow</tspan></text>
+  <rect class="actor" x="526" y="713" width="148" height="54" rx="8"/><text class="actorText" x="600" y="746">Provider</text>
+  <rect class="actor" x="776" y="713" width="148" height="54" rx="8"/><text class="actorText" x="850" y="737"><tspan x="850">Candidate</tspan><tspan x="850" dy="18">artifact</tspan></text>
+  <path class="life" d="M100 767V1067 M350 767V1067 M600 767V1067 M850 767V1067"/>
+
+  <path class="msg" d="M100 810H350"/><text class="label" x="111" y="801">Start experiment</text>
+  <path class="msg" d="M350 865H600"/><text class="label" x="361" y="856">One model request</text>
+  <path class="ret" d="M600 920H850"/><text class="label" x="611" y="911">Provider response</text>
+  <path class="msg" d="M850 965h38v30h-38"/><text class="label" x="600" y="958">Candidate created and syntax-checked</text>
+  <rect class="noteWarn" x="42" y="1090" width="856" height="104" rx="8"/>
+  <text class="noteText" x="62" y="1114">5,398 input + 752 output tokens · candidate 803 bytes, syntax-checked.</text>
+  <text class="noteSub" x="62" y="1140">No source write or commit; independent review/application pending.</text>
+  <text class="noteSub" x="62" y="1166">Monetary cost is unknown. Comparative credit savings are unmeasured.</text>
+</svg>
