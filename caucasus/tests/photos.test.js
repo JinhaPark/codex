@@ -53,6 +53,19 @@ test('all photo placements resolve and optional activities are scoped',()=>{
 });
 
 
+test('itinerary images must be published and active to render',()=>{
+ const ledger=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-image-lineage.json',import.meta.url)));
+ const photos=new Map(catalog.photos.map(photo=>[photo.id,photo]));
+ const active=new Set(ledger.images.filter(image=>image.lifecycle==='active' && image.activeRevisionId).map(image=>image.illustrationId));
+ for(const day of itinerary.days){
+  const references=[...day.places.flatMap(place=>place.photoIds||[]),...(day.photoObservations||[]).map(note=>note.imageId)];
+  for(const id of references){
+   assert.ok(photos.has(id) && photos.get(id).status!=='candidate',day.date+' '+id+' is hidden by the renderer');
+   assert.ok(active.has(id),day.date+' '+id+' is not active in the image lineage');
+  }
+ }
+});
+
 test('Caucasus migration ledger keeps immutable source references and valid publication pointers',()=>{
  const ledger=JSON.parse(fs.readFileSync(new URL('../../shared/images/caucasus-image-lineage.json',import.meta.url)));
  const active=ledger.images.filter(i=>i.lifecycle==='active');
