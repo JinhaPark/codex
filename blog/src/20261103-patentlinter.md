@@ -33,7 +33,7 @@ LLM API 호출은 승인과 비용의 경계 안에 두어, 모델이 번역의 
 
 ## 아키텍처 설계
 
-![PatentLinter architecture](../patentlinter/architecture.svg)
+![PatentLinter architecture](../images/patentlinter-architecture.svg)
 
 ## 평가 기준은 어떻게 만들어지는가
 

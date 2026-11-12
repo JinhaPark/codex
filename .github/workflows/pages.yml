@@ -88,7 +88,7 @@ jobs:
         run: node --test caucasus/tests/*.test.js
 
       - run: npm run build
-      - run: node scripts/verify-travel-build.mjs
+      - run: node scripts/verify-build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
