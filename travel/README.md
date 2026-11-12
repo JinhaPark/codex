@@ -1,6 +1,6 @@
 # Travel Companions
 
-Mobile-first travel journals for [Central Asia Tantantan](https://jinhapark.github.io/codex/travel/tantantan/) (October 12–21, 2026) and [Caucasus](https://jinhapark.github.io/codex/travel/caucasus/) (April 29–May 11, 2026). The [portfolio home page](https://jinhapark.github.io/codex/) links to both guides and the other projects in this repository. The previous guide URLs remain as redirects.
+Mobile-first travel journals for [Central Asia Tantantan](https://jinhapark.github.io/codex/travel/tantantan/) (October 12–21, 2026) and [Caucasus](https://jinhapark.github.io/codex/travel/caucasus/) (April 29–May 11, 2026). These are the canonical GitHub Pages URLs and the only published entrypoints for the travel guides. The [portfolio home page](https://jinhapark.github.io/codex/) links to both guides and the other projects in this repository.
 
 ## Repository Layout
 
@@ -12,7 +12,7 @@ Paths in this section are relative to this `travel/` directory unless they begin
 - `shared/images/`: Tantantan illustration manifest and lineage, plus Caucasus asset registry, photo catalog, and lineage records
 - `shared/style.css` and `shared/travel-utils.js`: shared travel-site styles and browser utilities
 - `shared/public/`: PWA assets, manifests, and separate service workers for each journey
-- `../scripts/verify-build.mjs`: checks built home, travel, and blog routes, navigation links, PWA files, redirects, and published Caucasus image sizes against the registry
+- `../scripts/verify-build.mjs`: checks built home, canonical travel, and blog routes, navigation links, PWA files, and published Caucasus image sizes against the registry
 - `../vite.config.js` and `../.github/workflows/pages.yml`: site entrypoints, build, and Pages deployment configuration
 
 ## Travel Companion Image Policy and Verification
