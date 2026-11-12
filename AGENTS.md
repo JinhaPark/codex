@@ -1,15 +1,18 @@
-# AGENTS.md — Travel Companions
+# AGENTS.md — Personal Portfolio, Blog, and Travel Guides
 
 ## Workspace topology (authoritative)
 
-- Repository root `index.html` selects between two independently rendered travel companions.
+- Root `index.html` is the personal homepage, not a travel-only selector. Projects contains PatentLinter (link to `blog/20261103-patentlinter.html`) and Alpha Agent (an inline `quant-note` dialog, not a separate deployed app). Travel links independently to `tantantan/` and `caucasus/`.
+- `blog/index.html` is the Multiagent Architecture article index. Dated editorial pages include `blog/20261103-patentlinter.html` and `blog/20261109-temporal.html`. Editorial descriptions are not proof of an operational deployment.
+- `patentlinter/index.html` is a separate Vite entrypoint; inspect its current compatibility/redirect behavior before changing it.
+- Homepage work owns portfolio presentation, cards, navigation, and associated links; blog work owns article index, dated posts, and editorial metadata; each travel guide owns its own itineraries, content, images, and browser interactions. Preserve these boundaries and change only the requested area.
 - `tantantan/` contains the original October 2026 Central Asia guide, editorial material, research, tests and project scripts.
 - `caucasus/` contains the April 29–May 11, 2026 Caucasus itinerary (13 days), notes and tests.
 - `shared/public/illustrations/` stores every published illustration for both journeys. Do not upload raw user photographs or create redundant image copies.
 - `shared/images/illustrations.json` and `shared/images/image-lineage.json` retain the original Tantantan manifest and revision history. Caucasus files and Git blob proofs are registered in `shared/images/caucasus-asset-registry.json` and editorial placements/captions in `shared/images/caucasus-photo-catalog.json`. Historical revision paths can refer to their original repository location; preserve those references as immutable evidence.
 - Name all new Caucasus WebP assets `caucasus-YYYYMMDD-place-subject-style-WIDTH.webp`. Use the verified capture date, lowercase kebab-case place/subject, the actual rendering style (for example `watercolor`, `colored-pencil`, `documentary-photo`), and the actual decoded image width in pixels. Record any renamed filenames consistently in manifests and image lineage; never guess date or location or rename historical revision references.
 - `shared/style.css` and `shared/travel-utils.js` are shared website presentation resources. Keep travel-specific itineraries and browser storage separated.
-- Build the three HTML entrypoints with Vite, using `shared/public` as the static public directory. Deploy the root selector at `/codex/`, the older guide at `/codex/tantantan/`, and the new guide at `/codex/caucasus/`.
+- Use `vite.config.js` as the source of truth for Vite HTML entrypoints, with `shared/public` as the static public directory. The deployment includes `/codex/` for the portfolio, `/codex/blog/` for the article index and dated posts, `/codex/tantantan/` and `/codex/caucasus/` for separate travel guides, plus a PatentLinter compatibility entrypoint. Do not assume only three HTML entrypoints.
 - Only explicitly attended optional tours belong in the Caucasus itinerary. Currently the recorded tour IDs are 1, 3, and 4. Do not add other activities from the printed optional-tour list.
 - Printed documents may contain private phone numbers and names; do not put these into the public website, static assets, or data files.
 - Reuse valid verification records and test the affected dependency surface at every stage. A commit or merge request does not widen test scope by itself; run the complete suite only for broad shared-runtime changes or when no narrower boundary is defensible.
@@ -22,7 +25,7 @@
 - Review sentence endings before delivering or committing Korean copy. Do not rewrite the style of unrelated existing content without a separate request.
 - Repository: https://github.com/JinhaPark/codex
 - Published site: https://jinhapark.github.io/codex/
-- Preserve the existing Vite and JavaScript architecture. Do not change unrelated essays, images, itineraries, phrasebook features, or currency conversion.
+- Preserve the existing Vite and JavaScript architecture. Do not change unrelated portfolio cards, blog articles, travel essays, images, itineraries, phrasebook features, or currency conversion.
 - This file defines working conventions. It does not grant access or override platform security and approval controls.
 
 ## Language for GitHub and engineering work
@@ -34,14 +37,14 @@
 - Do not insert unrelated languages or scripts into user-facing replies, titles, code, or documentation. If suggesting a session title, use clear Korean unless the user asks otherwise.
 - Review language as part of the final diff review. Prefer precise, familiar wording to unnecessary jargon, abbreviations, or literal translations.
 
-## Audience and editorial purpose
+## Travel audience and editorial purpose
 
 - Readers are highly educated Koreans educated in Korea, primarily ages 30–70. Respect their knowledge and curiosity without assuming expertise in Central Asian studies. Briefly explain unfamiliar concepts on first use.
-- The site is a travel journal and guidebook. Begin with questions prompted by landscapes, buildings, food, everyday life, and the travel route, then connect them to history and society. Do not write it as an economic briefing, investment report, or academic review memo. Do not invent personal experiences or impressions the user has not supplied.
+- The following editorial rules govern the travel journals, not the portfolio homepage or technical blog. Begin travel writing with questions prompted by landscapes, buildings, food, everyday life, and the travel route, then connect them to history and society. Do not write it as an economic briefing, investment report, or academic review memo. Do not invent personal experiences or impressions the user has not supplied.
 - Where useful, connect history to references Korean readers know: Goguryeo's foreign relations, the Mongol invasions of Goryeo, astronomy under King Sejong, and the forced relocation of ethnic Koreans. Use comparisons to aid understanding while keeping local experiences and historical agency central.
 - Do not equate Korean and Central Asian events or institutions, or infer ancestry, origins, or direct exchange from superficial similarities. Discuss shared questions about colonial rule, displacement, industrialization, and independence while explaining differences in period and institutions. Do not force a Korean connection into every paragraph.
 
-## Korean prose, numbers, and reading flow
+## Travel Korean prose, numbers, and reading flow
 
 - Use polite Korean for complete sentences in body text, drafts, and captions. Natural noun phrases are acceptable for headings, table labels, and short captions. Preserve direct quotations and original phrasebook text.
 - Avoid literal translations, strings of abstract nouns, and unnecessary passive voice. State who does what using ordinary Korean verbs. For example, prefer '가정과 기업에 전화·인터넷 서비스를 제공합니다' to '가정과 기업의 통신·데이터 연결을 판매합니다', and '일자리를 늘리고 제품을 수출합니다' to '고용과 수출을 만듭니다'.
@@ -106,7 +109,7 @@
 ## Validation and content quality
 
 - Read the actual commands in `package.json` and `.github/workflows/` before choosing checks.
-- Choose checks from the changed dependency surface. Documentation-only changes require content, link, and diff review. Content or data changes require their focused validators; image changes require the applicable asset and manifest checks; shared renderer, style, service-worker, or entrypoint changes require affected tests and a build when generated output can change. A commit or merge request does not expand this scope. Run the complete `npm test` suite, all builds, and broad integration checks only for cross-guide shared-runtime changes or when no narrower dependency boundary is defensible.
+- Choose checks from the changed dependency surface. Documentation-only changes require content, link, and diff review, checking referenced portfolio cards, blog pages, and travel paths against the current implementation. Content or data changes require their focused validators; image changes require the applicable asset and manifest checks; shared renderer, style, service-worker, or entrypoint changes require affected tests and a build when generated output can change. A commit or merge request does not expand this scope. Run the complete `npm test` suite, all builds, and broad integration checks only for cross-guide shared-runtime changes or when no narrower dependency boundary is defensible.
 - For image changes, use `tantantan/tests/illustrations.test.js`, `caucasus/tests/photos.test.js`, and `tantantan/scripts/verify-image-assets.py`. Check that Python, Pillow, and other required tools are available.
 - For UI or cache changes, use a real browser where possible to check mobile wrapping, contents navigation, accordions, image decoding, offline use, and cache transitions. `scripts/verify-browser.cjs` is an optional check requiring Playwright and Chromium.
 - Review obsolete cache names, asset counts, and runtime paths in scripts against the actual integrated state. Do not remove important checks merely to make tests pass.
