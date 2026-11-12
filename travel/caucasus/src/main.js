@@ -45,4 +45,4 @@ function render(){
  root.querySelector('[data-next]')?.addEventListener('click',()=>{day++;render()});
  root.querySelectorAll('[data-check]').forEach(b=>b.onchange=()=>{const state=reads();state[b.dataset.check]=b.checked;localStorage.setItem(storageKey,JSON.stringify(state))});
 }
-render();if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw-caucasus.js',{scope:import.meta.env.BASE_URL+'caucasus/'}).catch(()=>{}));
+render();if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw-caucasus.js',{scope:import.meta.env.BASE_URL+'travel/caucasus/'}).catch(()=>{}));
