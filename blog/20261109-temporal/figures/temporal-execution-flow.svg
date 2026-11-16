@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1485" viewBox="0 0 760 1485" role="img" aria-labelledby="flow-title flow-desc">
+<title id="flow-title">From a request to accepted evidence</title>
+<desc id="flow-desc">The Architect plans work; a drafting Worker prepares a job order; the Architect accepts or revises it; the execution owner acknowledges it and submits through a supported adapter. A Temporal server dispatches tasks to an already-running execution Worker and records its Activity result. Separately, Codex Goal continuation resumes the Architect, who queries original Workflow and Run evidence and accepts or revises the result before the next draft.</desc>
+<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#335e85"/></marker></defs>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#172c43}.heading{font-size:28px;font-weight:700}.lane{font-size:18px;font-weight:700;fill:#47637e}.title{font-size:20px;font-weight:700}.body{font-size:18px}.note{font-size:17px;fill:#475d75}.label{font-size:16px;fill:#335e85;paint-order:stroke fill;stroke:#f7f9fc;stroke-width:5px}.arrow{fill:none;stroke:#335e85;stroke-width:2.4;marker-end:url(#head);stroke-linejoin:round}</style>
+<rect width="760" height="1485" fill="#f7f9fc"/>
+<text x="30" y="45" class="heading">From a request to accepted evidence</text>
+<text x="30" y="77" class="note">Planning, execution, and continuation have separate owners.</text>
+<text x="30" y="120" class="lane">PLAN AND AUTHORIZE</text>
+<rect x="50" y="145" width="300" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="177" class="title">01 · Request</text>
+<text x="68" y="208" class="body">Goal + roadmap</text>
+<text x="68" y="233" class="body">Scoped finish line</text>
+<rect x="410" y="145" width="300" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="428" y="177" class="title">02 · Architect plan</text>
+<text x="428" y="208" class="body">Checks + scope</text>
+<text x="428" y="233" class="body">Bounded task</text>
+<path d="M350 205H402" class="arrow"/>
+<rect x="410" y="320" width="300" height="120" rx="12" fill="#eaf0ff" stroke="#bbc9da" stroke-width="2"/>
+<text x="428" y="352" class="title">03 · Drafting Worker</text>
+<text x="428" y="383" class="body">Job-order draft</text>
+<text x="428" y="408" class="body">No self-approval</text>
+<path d="M560 265V312" class="arrow"/>
+<rect x="50" y="320" width="300" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="352" class="title">04 · Architect</text>
+<text x="68" y="383" class="body">Accept the order</text>
+<text x="68" y="408" class="body">or revise the draft</text>
+<path d="M410 380H358" class="arrow"/>
+<path d="M200 320V290H560V312" class="arrow" stroke-dasharray="6 5"/>
+<text x="310" y="283" class="label">revise draft</text>
+<rect x="50" y="495" width="300" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="527" class="title">05 · Execution owner</text>
+<text x="68" y="558" class="body">ACK approved order</text>
+<text x="68" y="583" class="body">before effects</text>
+<rect x="410" y="495" width="300" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="428" y="527" class="title">06 · Submit adapter</text>
+<text x="428" y="558" class="body">Supported route</text>
+<text x="428" y="583" class="body">Original Workflow / Run</text>
+<path d="M200 440V487" class="arrow"/>
+<path d="M350 555H402" class="arrow"/>
+<text x="30" y="675" class="lane">EXECUTE AND RECORD</text>
+<rect x="410" y="700" width="300" height="155" rx="12" fill="#e3f3ef" stroke="#bbc9da" stroke-width="2"/>
+<text x="428" y="732" class="title">07 + 09 · Server</text>
+<text x="428" y="763" class="body">Records Workflow / Run</text>
+<text x="428" y="788" class="body">Coordinates task queues</text>
+<text x="428" y="813" class="body">Records Activity result</text>
+<rect x="50" y="700" width="300" height="155" rx="12" fill="#eaf0ff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="732" class="title">08 · Execution Worker</text>
+<text x="68" y="763" class="body">Already running; polls queue</text>
+<text x="68" y="788" class="body">Executes registered Activity</text>
+<text x="68" y="813" class="body">Reports result to server</text>
+<path d="M560 615V692" class="arrow"/>
+<path d="M410 760H358" class="arrow"/>
+<text x="364" y="745" class="label">task</text>
+<path d="M350 817H402" class="arrow"/>
+<text x="357" y="843" class="label">result</text>
+<path d="M710 810H735V1205H718" class="arrow" stroke-dasharray="6 5"/>
+<text x="30" y="925" class="lane">CONTINUE AND ACCEPT · CODEX-DRIVEN</text>
+<rect x="50" y="955" width="660" height="120" rx="12" fill="#fff2d9" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="987" class="title">10 · Codex Goal continuation</text>
+<text x="68" y="1018" class="body">When active, idle and within budget</text>
+<text x="68" y="1043" class="body">Resumes Architect reasoning</text>
+<rect x="50" y="1145" width="660" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="1177" class="title">11 · Architect query</text>
+<text x="68" y="1208" class="body">Retrieve original Workflow / Run evidence</text>
+<text x="68" y="1233" class="body">Compare actual artifacts with the acceptance contract</text>
+<path d="M380 1075V1137" class="arrow"/>
+<text x="475" y="1128" class="label">evidence read by query</text>
+<rect x="50" y="1335" width="660" height="120" rx="12" fill="#ffffff" stroke="#bbc9da" stroke-width="2"/>
+<text x="68" y="1367" class="title">12 · Architect decision</text>
+<text x="68" y="1398" class="body">Accept or revise the result</text>
+<text x="68" y="1423" class="body">Then prepare the next bounded draft</text>
+<path d="M380 1265V1327" class="arrow"/>
+<path d="M50 1395H12V300H460V312" class="arrow" stroke-dasharray="6 5"/>
+</svg>
