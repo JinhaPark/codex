@@ -34,11 +34,13 @@
     .content pre{background:var(--card);border:1px solid var(--line);padding:18px;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;line-height:1.6;margin:20px 0}
     .content code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.9em;background:#f2efe6;padding:2px 6px;border-radius:3px}
     .content pre code{background:transparent;padding:0}
-    .workflow-diagram{margin:24px 0}.workflow-diagram .diagram-frame{background:var(--card);border:1px solid var(--line);padding:12px;overflow:hidden}.workflow-diagram .diagram-scroll{overflow-x:auto;max-width:100%;width:100%;scrollbar-width:thin}.workflow-diagram img{display:block;width:100%;min-width:790px;height:auto}.workflow-diagram figcaption{color:var(--muted);font-size:12px;line-height:1.8;margin-top:10px}
+    .workflow-diagram{margin:24px 0}.workflow-diagram .diagram-frame{background:var(--card);border:1px solid var(--line);padding:12px;overflow:hidden}.workflow-diagram .diagram-scroll{overflow-x:visible;max-width:100%;width:100%}.workflow-diagram img{display:block;width:100%;max-width:100%;min-width:0;height:auto}.workflow-diagram.ui-capture img{min-width:0}.workflow-diagram.execution-flow img{min-width:0;width:100%}.workflow-diagram figcaption{color:var(--muted);font-size:12px;line-height:1.8;margin-top:10px}
+    .coordination-capture{width:100%;max-width:560px;margin:32px auto 40px}.coordination-capture img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px}.coordination-capture figcaption{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.8}.workflow-diagram.reporting-flow img{min-width:0;width:100%}
     table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;background:var(--card)}
     th,td{border:1px solid var(--line);padding:12px 16px;text-align:left;line-height:1.6}
     th{background:#f0eee4;font-weight:600}
     footer{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:26px 0 42px;font-size:11px;color:var(--muted)}footer a{text-decoration:underline;text-underline-offset:3px}footer span{font-family:Georgia,serif}
+    @media(min-width:741px){.workflow-diagram.execution-flow{width:100%;max-width:640px;margin-left:auto;margin-right:auto}}
     @media(max-width:740px){.wrap{width:calc(100% - 36px)}.header{min-height:68px}.brand{font-size:23px}.hero{grid-template-columns:1fr;padding:50px 0 40px;gap:28px}.hero h1{font-size:28px}.article-section{grid-template-columns:minmax(0,1fr);gap:13px;padding:36px 0}.section-label{display:inline-block;margin:0 0 0 11px}.section-no{font-size:24px}}
   </style>
 </head>
@@ -53,7 +55,7 @@
         <h1>Beyond the Architect–Worker Model: Durable Orchestration for AI-Driven Development</h1>
         <p class="dek"><em>Decoupling probabilistic agent reasoning from deterministic execution control with Temporal.</em></p>
         <p class="dek" style="margin-top:16px">The Architect–Worker model provides an effective foundation for agent-assisted software development by separating high-level planning and technical judgment from delegated implementation. Yet as development workflows grow in complexity, the limitations of conversation-driven orchestration become increasingly apparent. Worker interruptions, overlapping assignments, failed CI runs, and incomplete handoffs repeatedly force the Architect to reconstruct execution histories, reconcile repository states, and determine where work can safely resume. Meanwhile, accumulating instructions, diagnostic logs, and intermediate reports consume valuable context, increasing the frequency of compaction and the risk of losing critical information. These recurring failures reveal a fundamental question: <strong>How can multi-agent development orchestration become more reliable, efficient, and responsive without sacrificing the autonomy of individual agents?</strong></p>
-        <p class="dek" style="margin-top:16px">The diagnosis points to an architectural weakness rather than a deficiency in agent capability: <strong>execution coordination and state management remain coupled to the transient context of LLM conversations</strong>. Better prompts, larger context windows, or more sophisticated agent memory may alleviate individual symptoms, but they do not independently provide durable task ownership, recovery, or execution continuity. This motivated an exploration of <strong>Temporal as a durable orchestration layer</strong> for the existing Architect–Worker system. By separating probabilistic reasoning from deterministic workflow control, the proposed architecture allows agents to retain responsibility for planning and implementation while Temporal manages execution histories, dependencies, and retry coordination. The objective is not to replace intelligent agents with deterministic infrastructure, but to establish a more dependable foundation on which their collaboration can operate.</p>
+        <p class="dek" style="margin-top:16px">The diagnosis points to an architectural weakness rather than a deficiency in agent capability: <strong>execution coordination and state management remain coupled to the transient context of LLM conversations</strong>. Better prompts, larger context windows, or more sophisticated agent memory may alleviate individual symptoms, but they do not independently provide durable task ownership, recovery, or execution continuity. This motivated an exploration of <strong>Temporal as a durable orchestration layer</strong> for the existing Architect–Worker system. Building on that foundation, we propose a reusable integration layer, temporal-agent-kit, that connects Codex instructions, structured work orders, and result acceptance with Temporal’s execution model. The aim is to make interrupted work recoverable, help prevent duplicate assignments, and reduce the conversational overhead of routine coordination by exchanging concise MCP acknowledgements and references and reading only the relevant portions of reports and logs, so the Architect can focus on planning and technical judgment and Workers on implementation.</p>
       </div>
       <aside class="hero-aside">
         <span class="meta">PUBLISHED · NOV 9, 2026</span>
@@ -62,360 +64,118 @@
       </aside>
     </div>
 
+    <figure class="coordination-capture" aria-labelledby="coordination-capture-caption">
+      <img src="./20261109-temporal/images/mcp-coordination-redacted.webp" width="1640" height="2048" alt="A Codex conversation containing acknowledgements, progress reports, and cross-session coordination messages, with identifying details selectively blurred." loading="lazy" />
+      <figcaption id="coordination-capture-caption">Acknowledgements, progress reports, and coordination messages accumulating in a conversation. Identifying details are blurred.</figcaption>
+    </figure>
+
     <section class="article-section" id="section-1">
-      <div><span class="section-no">01</span><span class="section-label">ARCHITECTURAL PRINCIPLES</span></div>
+      <div><span class="section-no">01</span><span class="section-label">INTEGRATION ARCHITECTURE</span></div>
       <div class="content">
-        <h2>Separating Reasoning, Execution, and Evidence</h2>
-        <p>The limitations of conversation-driven orchestration suggest that reliable multi-agent development requires more than effective delegation. It requires explicit ownership of three distinct concerns: technical reasoning, execution state, and verifiable development artifacts. When these responsibilities overlap, recovery becomes ambiguous, operational histories accumulate in conversational context, and agents are repeatedly required to reconstruct information that should persist independently of their sessions.</p>
-        <p>The proposed architecture establishes three complementary boundaries, assigning each responsibility to a dedicated system component:</p>
-        <ul>
-          <li><strong>AI Agents — The Probabilistic Reasoning Layer:</strong> Operating through dedicated Codex Desktop sessions, Architect and implementation agents interpret requirements, establish development plans, generate and review code, and resolve technical uncertainties. Their autonomy is preserved, while routine execution tracking is delegated to infrastructure rather than another supervisory agent.</li>
-          <li><strong>Temporal — The Durable Execution Layer:</strong> Manages workflow lifecycles, task dependencies, scheduling, timers, retries, and execution histories. Its deterministic orchestration model provides continuity across process failures and agent-session interruptions without attempting to reproduce the probabilistic reasoning performed by the agents themselves.</li>
-          <li><strong>Git — The Authoritative Code Ledger:</strong> Maintains the versioned history of source code, branches, commits, and changes. It provides durable evidence of development outcomes, enabling interrupted operations to be reconciled against existing artifacts rather than blindly repeated. CI and other verification systems complement this record by establishing whether changes satisfy their acceptance criteria.</li>
-        </ul>
-        <p>These boundaries distinguish <strong>decision-making authority, execution coordination, and evidence of completed work</strong>. Temporal determines when and under what conditions activities should proceed; agents determine how technical problems should be addressed; and Git preserves the resulting code changes. None of these components independently guarantees end-to-end correctness. Their reliability emerges from explicit interfaces, verifiable artifacts, and recovery policies that reconcile external side effects with recorded workflow state.</p>
-        <p>By removing routine coordination from the Architect's conversational context, this separation is intended to reduce redundant reporting, preserve execution continuity across sessions, and reserve reasoning capacity for decisions that require technical judgment. It also avoids introducing an additional supervisory LLM, whose own state and availability would create further coordination requirements.</p>
-        <p>The governing principle is straightforward: <strong>Temporal remembers what happened; Git records what changed; the Architect determines what should happen next.</strong></p>
+        <h2>Introducing temporal-agent-kit</h2>
+<p>temporal-agent-kit packages durable orchestration as a Codex skill and a set of execution adapters. The skill brings structured work orders and supported execution tools into an existing project. It also lets the Architect retrieve and evaluate results while preserving the project’s instructions and approval boundaries. Supplied adapters cover basic coding and document tasks; additional adapters connect operations specific to the project. The architecture separates agent responsibilities from durable execution, with development artifacts providing evidence for acceptance.</p>
+<p>The kit connects two complementary layers:</p>
+<ul>
+<li>
+<p><strong>AI Agents — The Probabilistic Reasoning Layer.</strong> The Architect and Workers act under project instructions, using the tools and context available in their respective execution environments.</p>
+<ul>
+<li><p><strong>The Architect</strong> works through a Codex Desktop session to interpret requirements, establish development plans, dynamically assign work, and evaluate results for acceptance.</p></li>
+<li>
+<p><strong>Workers</strong> generate and review code, implement delegated tasks, and resolve technical uncertainties within their assigned scope. A <strong>Codex Session Worker</strong> performs this work within a Codex conversation session, using its project instructions, conversational context, and available tools.</p>
+<p>A <strong>CLI Worker</strong> carries out an approved development assignment through a coding agent running from the command line. Like a Session Worker, it uses its available tools to inspect files, make changes, and respond to execution feedback within the assigned scope.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Temporal — The Durable Execution Layer.</strong> Temporal manages workflow lifecycles, task dependencies, scheduling, timers, retries, and execution histories. Its durable execution model supports continuity across process failures without attempting to reproduce the probabilistic reasoning performed by the agents themselves.</p>
+</li>
+</ul>
+<p>These boundaries distinguish <strong>decision-making authority, execution coordination, and evidence of completed work</strong>. Their connection depends on explicit contracts: an assignment identifies the authorized work, an execution result records its outcome, and artifact references support the acceptance decision. Neither layer independently guarantees end-to-end correctness. Their reliability depends on interfaces and recovery policies that check changes made outside Temporal against its execution records.</p>
+<p>Agents still acknowledge one another’s messages and exchange concise status updates and references through MCP. They use those references to locate retained reports and logs, reading the portions relevant to the task into their conversational contexts. This reporting policy is intended to reduce redundant communication and leave more context available for each agent’s assigned work. It also avoids introducing an additional supervisory LLM, whose own state and availability would create further coordination requirements.</p>
+<p>The governing principle is straightforward: <strong>Temporal provides durable execution and execution traceability; the Architect plans and evaluates; Workers implement; the kit connects that history to the agents’ work orders, artifacts, and acceptance decisions.</strong></p>
       </div>
     </section>
 
     <section class="article-section" id="section-2">
-      <div><span class="section-no">02</span><span class="section-label">MECHANICS</span></div>
+      <div><span class="section-no">02</span><span class="section-label">INTEGRATION KIT</span></div>
       <div class="content">
-        <h2>How Temporal Works: The Mechanics of Durable Execution</h2>
-        <p>Conventional orchestration scripts often maintain execution state in process memory, local files, or application-managed checkpoints. While adequate for short-lived tasks, these approaches become increasingly fragile when development workflows span multiple agents, repository changes, CI runs, and approvals owned by the user or delegated to the Architect. Temporal addresses this limitation through <strong>durable execution based on event histories and task queues</strong>, preserving workflow progression independently of any continuously running application process. Its purpose is not to make LLM behavior deterministic, but to establish a recoverable coordination layer around inherently nondeterministic development activities.</p>
-
-        <h3>Workflows and Activities: Separating Control from Execution</h3>
-        <p>Temporal's programming model distinguishes between two complementary abstractions:</p>
-        <ul>
-          <li><strong>Workflows — Deterministic Coordination:</strong> Workflows define dependencies, conditional branches, timers, and execution sequences. Their code must remain compatible with Temporal's replay mechanism, excluding arbitrary external API calls, filesystem modifications, and other nondeterministic operations except through SDK-supported deterministic mechanisms.</li>
-          <li><strong>Activities — External Execution:</strong> Activities perform operations involving external systems, including LLM invocations, coding-agent execution, Git modifications, CI runs, and database writes. They may fail, time out, or be retried according to explicit execution policies.</li>
-        </ul>
-        <p>This separation establishes a fundamental boundary: <strong>Workflows determine which operations should occur and under what conditions; Activities perform those operations.</strong> It allows deterministic coordination to govern development processes even when individual agents produce probabilistic results.</p>
-
-        <h3>Code Replay, Activity Retry, and Their Limits</h3>
-        <p>Temporal's recovery mechanism relies on <strong>event-history replay rather than conventional process snapshots</strong>. Snapshot-based approaches restore previously captured application state, often requiring additional mechanisms to recover subsequent progress. Temporal instead maintains an ordered history of significant workflow events, including Activity completions, timers, and external signals. When a workflow worker loses its in-memory state, another compatible worker deterministically re-executes the workflow code against this history. The Temporal SDK supplies previously recorded outcomes, restoring the workflow's logical control state without repeating completed Activities.</p>
-        <p>This reconstruction involves no inference or reproduction of an agent's reasoning. An LLM-driven coding task may depend on probabilistic model outputs, evolving conversational context, repository state, and external tool responses that cannot be reproduced from command histories alone. Temporal preserves the recorded outcomes of completed Activities, not the reasoning trajectories that produced them. <strong>Temporal provides deterministic control over the execution of probabilistic agents, not deterministic control over the agents' reasoning.</strong></p>
-        <p>Two distinct mechanisms govern recovery. <strong>Workflow Replay</strong> reconstructs orchestration state after a workflow worker restart or cache loss, without inherently repeating completed external operations. <strong>Activity Retry</strong>, by contrast, reattempts an Activity following a failure or timeout under its configured retry policy. Because a retried Activity may repeat external side effects, operations involving Git, databases, or LLM agents require idempotency and explicit state reconciliation. These mechanisms are independent: workflow replay does not necessarily trigger Activity retries, and Activity retries do not inherently require workflow replay.</p>
-
-        <h3>A Concrete Recovery Sequence</h3>
-        <p>Consider an Architect delegating a feature implementation to a coding agent, followed by automated testing and review.</p>
-        <ol>
-          <li><strong>Planning and implementation.</strong> The Architect completes a planning Activity, whose result is recorded by Temporal. An implementation Activity then invokes a coding agent, which modifies source files and creates Git commit <code>abc123</code>.</li>
-          <li><strong>Failure before acknowledgment.</strong> The Activity worker crashes after creating the commit but before Temporal records successful completion. The code change exists, yet the Activity's outcome remains unconfirmed.</li>
-          <li><strong>Activity Retry.</strong> Following the applicable timeout and retry policy, Temporal schedules another attempt. This is a retry of the external operation, not a replay of the workflow's control state.</li>
-          <li><strong>External reconciliation.</strong> Before invoking the coding agent again, the Activity inspects the stable task identifier, repository branch, existing commits, and persisted job records. It verifies that commit <code>abc123</code> satisfies the assignment and returns that reference instead of repeating the LLM-driven work.</li>
-          <li><strong>Durable continuation.</strong> Temporal records the successful Activity result, and the workflow advances to testing and review without requiring the Architect to reconstruct the agent's previous actions.</li>
-          <li><strong>Workflow Replay.</strong> If the workflow worker subsequently restarts, a compatible worker reconstructs its control state from event history. Previously completed planning and implementation Activities are not executed again, and an already-running testing Activity need not restart merely because the workflow worker was interrupted.</li>
-        </ol>
-        <p>The example illustrates the complementary roles of the recovery mechanisms: <strong>Activity Retry reattempts unconfirmed work, Workflow Replay restores coordination state, and external reconciliation verifies what actually happened outside Temporal.</strong> The reconciliation logic belongs to the application; Temporal does not independently inspect Git or determine whether an interrupted agent completed its assignment.</p>
-
-        <h3>Recovery Matrix</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Failure scenario</th>
-              <th>Recovery mechanism</th>
-              <th>Expected behavior</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Workflow worker crashes</td>
-              <td><strong>Workflow Replay</strong></td>
-              <td>Reconstruct control state without repeating completed Activities.</td>
-            </tr>
-            <tr>
-              <td>Activity fails before external side effects</td>
-              <td><strong>Activity Retry</strong></td>
-              <td>Re-execute according to the retry policy.</td>
-            </tr>
-            <tr>
-              <td>Activity commits to Git, then crashes</td>
-              <td><strong>Retry + Reconciliation</strong></td>
-              <td>Verify the existing commit before repeating work.</td>
-            </tr>
-            <tr>
-              <td>Activity worker crashes</td>
-              <td><strong>Activity Retry</strong></td>
-              <td>Retry after the applicable timeout.</td>
-            </tr>
-            <tr>
-              <td>Temporal Server restarts</td>
-              <td><strong>Durable Persistence</strong></td>
-              <td>Restore service state from persistent storage.</td>
-            </tr>
-            <tr>
-              <td>Architect session terminates</td>
-              <td><strong>Workflow Continuity + Handoff</strong></td>
-              <td>Preserve progress independently of the conversation.</td>
-            </tr>
-            <tr>
-              <td>User approval or delegated Architect approval is pending</td>
-              <td><strong>Durable Wait + Signal/Update</strong></td>
-              <td>Resume after the user approves or the Architect records an approval within authority delegated by the user.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Why Replay Still Matters</h3>
-        <p>The limitations of Activity execution clarify rather than diminish the significance of Workflow Replay. Unlike a standalone snapshot, Temporal's event history provides an ordered record from which compatible workflow code can reconstruct established decisions, completed Activities, and outstanding dependencies. Snapshot-based architectures can achieve similar guarantees when supplemented with event logs and transactional recovery mechanisms; Temporal's advantage lies in integrating these capabilities into its programming and execution model.</p>
-        <p>For agent-assisted development, the broader significance is <strong>continuity of coordination without continuity of reasoning sessions</strong>. A workflow spanning multiple coding agents, CI runs, user approvals or approvals delegated to the Architect, and interrupted sessions can retain its operational state without requiring any individual conversation to remain active. Completed work can be recognized, unresolved operations can be retried or reconciled, and the Architect can concentrate on decisions rather than reconstructing execution history.</p>
-        <p>Temporal does not reproduce how an agent reached a conclusion. <strong>It preserves the execution context necessary to act on that conclusion and move the development process forward.</strong></p>
+        <h2>Building More Resilient Architect–Worker Workflows</h2>
+<p>The <strong>Architect</strong> dynamically assigns development work to Session Workers or CLI Workers. These assignments are expressed through a structured <strong>work order</strong> identifying the task, inputs, permitted actions, dependencies, expected output, acceptance criteria, and recovery policy. The supported execution tools receive JSON; the important property is the agreement the work order carries between preparation, approval, execution, and acceptance. A drafting Worker prepares the proposed order under the Architect’s direction, while the Architect retains the decision to approve or revise it.</p>
+<p>The kit implements these contracts through reusable <strong>adapters</strong> and Codex project configuration. The adapters connect agents’ approved work orders to Temporal, providing ways to execute tasks, read their results, and check existing work after an interruption. Each adapter checks the execution and result requirements it supports; projects and provider owners retain their own policies and operational authority. References to Git commits, check reports, and other saved outputs provide evidence of the work performed. Codex-side configuration makes the corresponding instructions and tools available to the session. The objective is to make interrupted work easier to check and resume, so later decisions depend less on reconstructing conversational history.</p>
+<p>The kit relies on <strong>Temporal</strong> to retain the identity and progress of an approved development task. The kit connects the approved task to a <strong>Workflow</strong> on the <strong>Temporal Server</strong> and retains its namespace and <strong><a href="https://docs.temporal.io/workflow-execution/workflowid-runid">Workflow ID</a></strong>, together with the <strong>Run ID</strong> of that particular execution. This gives later inspection a stable starting point: the same assigned work remains identifiable even when the command that submitted it or the session following it is interrupted.</p>
+<p>Adopting the kit gives a project a shared path from an approved work order to an execution result that can be inspected. For a CLI Worker, a supported adapter starts the selected coding agent’s CLI from a Temporal Activity and retains references to the process and its results. The SDK <strong><a href="https://docs.temporal.io/workers">Temporal Worker</a></strong> executes the registered Workflow and Activity code behind that connection. When the Architect resumes, it inspects the original run and saved artifacts before deciding whether to accept the result and assign the next task. Project-specific adapters provide the operations a project needs while preserving its permissions and operating policies.</p>
       </div>
     </section>
 
     <section class="article-section" id="section-3">
-      <div><span class="section-no">03</span><span class="section-label">TEMPORAL ARCHITECTURE</span></div>
+      <div><span class="section-no">03</span><span class="section-label">RECOVERY AND OBSERVATION</span></div>
       <div class="content">
-        <h2>Inside Temporal: Execution State, Task Queues, and Workers</h2>
-        <p>Temporal separates durable workflow coordination from application-level execution. The Temporal Server maintains execution histories, manages workflow state, and coordinates task delivery, while independently deployed workers execute workflow definitions and Activities through the server's APIs. This separation allows workflows to survive individual worker failures without requiring the server itself to execute application logic.</p>
-
-        <h3>The Temporal Server</h3>
-        <p>A self-hosted Temporal deployment comprises several cooperating services with distinct responsibilities:</p>
-        <ul>
-          <li><strong>Frontend Service — API Access:</strong> Provides the primary gRPC interface for clients and workers, handling workflow requests, Queries, Signals, Updates, and worker communication.</li>
-          <li><strong>History Service — Workflow State Management:</strong> Coordinates workflow state transitions and maintains execution histories through the persistence layer, enabling durable recovery.</li>
-          <li><strong>Matching Service — Task Distribution:</strong> Matches pending workflow and Activity tasks with workers polling the corresponding task queues, decoupling scheduling from worker availability.</li>
-          <li><strong>Persistence Layer — Durable Storage:</strong> Stores execution histories, workflow state, and service metadata. Production deployments typically use supported databases such as PostgreSQL or MySQL, while local development may use lighter storage configurations.</li>
-        </ul>
-        <p>Together, these components maintain execution continuity independently of application processes. <strong>The Temporal Server coordinates and persists workflow state but does not execute application-defined Workflows or Activities</strong>; those responsibilities belong to Temporal Workers.</p>
-
-        <h3>Temporal Workers: Where Application Logic Executes</h3>
-        <p>Temporal Workers are long-running processes that poll task queues and execute registered workflow and Activity implementations. <strong>Workflow Workers</strong> execute deterministic orchestration logic and may cache workflow state in memory to reduce replay overhead. When this state is lost, compatible workers can reconstruct it from the recorded event history. <strong>Activity Workers</strong>, by contrast, perform external operations such as invoking LLMs, modifying Git repositories, running tests, or interacting with APIs. Their side effects, resource consumption, and retry behavior require explicit safeguards.</p>
-        <p>A single Python worker process can host both Workflows and Activities, although separate task queues and worker pools may be introduced when workloads require independent scaling or isolation. This division establishes a clear operational boundary: <strong>the server preserves execution state, workers execute application logic, and external systems retain authority over their artifacts and side effects.</strong></p>
-
-        <h3>Implications for Agent-Assisted Development</h3>
-        <p>In the proposed Automation project integration, Python Temporal Workers would coordinate existing Codex Desktop agents through narrowly scoped execution adapters rather than replacing their established development environments. Activities would dispatch or monitor bounded assignments, collect structured results, and retain references to Git commits, CI reports, and other durable artifacts. The agents would remain responsible for reasoning and implementation, while adapters enforce execution permissions, resource limits, and recovery policies.</p>
-        <p>The architecture also permits incremental scaling. Coding, testing, CI monitoring, and review could eventually operate through separate worker pools, but such distribution is not an initial requirement. A host-managed Temporal Server and a small number of Python workers should provide a sufficient starting point for evaluating reliability and context efficiency. <strong>The objective is not to distribute agent execution indiscriminately, but to establish a durable coordination layer that remains independent of individual agents and their conversational sessions.</strong></p>
+        <h2>How Durable Execution Supports Recovery</h2>
+<p>The Web UI makes these execution records visible. The <strong>Workflows</strong> view lists executions by status, <strong>Workflow ID</strong>, and <strong>Run ID</strong>; opening an execution reveals its Timeline and Event History. The <strong>Workers</strong> view concerns the SDK execution processes. For tasks run through the kit, these records help locate the original execution before comparing its result with files, reports, and other outputs.</p>
+<figure class="workflow-diagram ui-capture" aria-labelledby="workflows-ui-caption">
+  <div class="diagram-frame"><img src="./20261109-temporal/images/temporal-workflows-ui.png" width="1280" height="720" alt="Temporal Web UI Workflows list showing execution statuses, Workflow IDs, Run IDs, and navigation to Workers." loading="lazy" /></div>
+  <figcaption id="workflows-ui-caption">The Workflows view identifies recorded executions; Timeline and Event History are available within each execution.</figcaption>
+</figure>
+<p>For operations that support retrieving existing results, the kit looks up the original execution using these identifiers. When a command checking progress ends or a response is lost, the kit checks that execution and its saved evidence. A completed result that matches the approved task can be returned without repeating the work. If the records are incomplete or disagree, they remain available for further checking; a timeout while checking progress does not authorize another model request or file modification. Comparing file hashes and checking the task’s output requirements help establish whether the recorded result matches the actual outputs.</p>
+<p>The result is <strong>continuity of coordination without continuity of reasoning sessions</strong>. Retained execution records give the Architect a basis for evaluating an outcome without reconstructing its history from the conversation. The same task identity connects submission, later inspection, and evidence-based acceptance; the next sections show how that connection is used in a project.</p>
+<p>Temporal supplies the underlying execution mechanism: its server retains history and coordinates task queues, which Temporal Worker processes poll to execute registered code. Workflows define control flow, while Activities perform the operations. Workflow replay reconstructs a Workflow’s progress from recorded history after a failure, allowing coordination to resume; Activity retry reattempts an operation when its policy permits. For an interrupted operation, the adapter must still check existing results and changes made outside Temporal before the work is repeated.</p>
       </div>
     </section>
 
     <section class="article-section" id="section-4">
-      <div><span class="section-no">04</span><span class="section-label">DECLARATIVE ORCHESTRATION</span></div>
+      <div><span class="section-no">04</span><span class="section-label">EXECUTION AND ACCEPTANCE</span></div>
       <div class="content">
-        <h2>Temporal as an Execution Backend for a Recipe DSL</h2>
-        <p>Although Temporal provides durable workflow orchestration, encoding every development procedure as a dedicated Python workflow would introduce unnecessary coupling between task definitions and execution infrastructure. A more flexible approach is to retain a <strong>declarative Recipe DSL</strong> that describes development milestones, dependencies, execution policies, and approval requirements, while Temporal serves as the durable execution backend. This separation allows development procedures to evolve independently of their underlying orchestration implementation.</p>
-
-        <h3>Declarative Workflow Definition</h3>
-        <p>A simplified development recipe might take the following form:</p>
-        <pre><code>name: automation-development
-version: "1.0"
-
-milestones:
-  - id: plan
-    agent: automation-architect
-    action: define-bounded-tasks
-
-  - id: implement
-    agent: dev-worker
-    action: implement-and-commit
-    depends_on: [plan]
-
-  - id: verify
-    agent: review-worker
-    action: run-targeted-tests-and-review
-    depends_on: [implement]
-
-  - id: security-gate
-    action: run-security-scans
-    tools: [ruff, bandit, trivy, gitleaks]
-    depends_on: [verify]
-    on_failure: block-merge
-
-  - id: merge
-    action: merge-verified-pr
-    depends_on: [security-gate]
-    requires_approval: true</code></pre>
-        <p>The recipe specifies the intended development process without prescribing how each agent or tool must execute its assignment. Here, implementation follows planning and validation follows implementation. Before the workflow concludes, the user must approve, or the Architect must approve within authority delegated by the user. Other recipes may introduce earlier approval gates when security-sensitive operations, repository permissions, or infrastructure changes require authorization before execution; the user approves those decisions unless that authority has been explicitly delegated to the Architect.</p>
-
-        <h3>Execution and Agent Integration</h3>
-        <p>The proposed architecture uses a <strong>reusable recipe interpreter implemented as a Temporal Workflow</strong>, avoiding the need to write a separate workflow implementation for every development procedure. When an Architect submits a recipe, the system validates its schema, dependencies, task references, and permissions, then associates the validated definition with a stable workflow identifier and an immutable recipe version or snapshot. The workflow schedules Activities according to the dependency graph, records their outcomes, and advances milestones as their prerequisites are satisfied. For approval gates, it can wait durably for an authorized Signal or Update from the user or from the Architect acting within authority delegated by the user, without keeping an agent process active.</p>
-        <p>The Codex Desktop integration provides the interface to this execution layer. Authorized Architect sessions can inspect workflow progress through Temporal's MCP interface and initiate controlled operations through Python tools backed by the Temporal SDK. This separation avoids introducing another persistent supervisory agent: Temporal maintains execution state, while the existing Architect remains responsible for planning and decisions. At the time of this design, the official Temporal MCP implementation is read-only and pre-release, so workflow submission, recording an approval from the user or an Architect with delegated authority, and cancellation are assigned to a separate authorized interface.</p>
-        <p>The declarative approach does not eliminate the need for application-level safeguards. The recipe interpreter must validate acyclic dependencies, enforce concurrency limits, maintain stable task identities, and handle retry policies and recipe-version compatibility. Temporal supplies the durable execution primitives but does not automatically enforce the semantics of a custom DSL. With these responsibilities explicitly defined, the result is a reusable coordination model in which <strong>development procedures remain declarative, execution remains durable, and agent reasoning remains independent of the workflow infrastructure</strong>.</p>
+        <h2>Closing the Coordination Loop</h2>
+<p><strong>Temporal SDK and Codex integration limitations:</strong> The <a href="https://docs.temporal.io/develop/python/workflows/message-passing">Temporal Python SDK</a> supports both reading Workflow state and changing execution, while project instructions, tool context, and approval decisions belong to the Codex-side workflow. Where agents have read-only inspection tools, carrying out approved changes requires a separate supported execution path. Applying a document revision prepared in a session requires passing the approved content, target paths, and permissions to the code that changes the files. When the Architect returns, it needs a way to retrieve the result and decide what happens next. These connections belong to the integration between the two systems.</p>
+<p><strong>Kit approach:</strong> We propose bridging these interfaces through reusable <strong>adapters</strong>, Codex project configuration, and shared rules for retrieving and checking results. For the document revision, an adapter connects the approved content and expected file state to the code that applies the change, records the resulting outputs, and returns evidence for acceptance. Project-specific operations can be added through further adapters, while the Architect continues to plan and evaluate work and Workers carry out implementation.</p>
+<p>A <strong>Goal</strong> keeps the Architect’s approved objective available across turns so the Architect can return to checking the original execution and deciding what comes next. Codex can continue when the session is idle, the Goal remains active, and budget is available, as described in the <a href="https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex">official Goal guide</a>. When Codex continues, the Architect retrieves the original execution and evaluates its evidence before deciding the next step. The kit uses this continuation to retrieve the recorded result; completion in Temporal remains separate from continuation in Codex. An explicit handoff preserves the execution reference when continuation is unavailable.</p>
+<p>A roadmap Goal can make that responsibility explicit:</p>
+<pre><code class="language-text">/goal Complete the approved [Project] roadmap. Review and approve
+Worker job-order drafts, then assign execution through Temporal.
+On continuation, inspect the original Workflow/Run results and
+evidence, and assign the next ready task. Commit each accepted
+stage; preserve authority boundaries and uncertain execution records.
+Finish when every scoped milestone has accepted evidence and its
+authorized commit.
+</code></pre>
+<p>Replace [Project] with the target project name. The approved roadmap defines the scope, while the user retains any authority not delegated to the Architect. Within that scope, the Architect connects accepted results to the next ready assignment. The following diagram brings preparation, execution, continuation, and acceptance together as one cycle.</p>
+<figure id="execution-flow" class="workflow-diagram execution-flow" aria-label="Proposed execution and acceptance loop"><div class="diagram-frame"><div class="diagram-scroll"><img src="./20261109-temporal/figures/temporal-execution-flow.svg" width="760" height="1485" alt="A request passes through planning, a job-order draft, approval, execution-owner acknowledgement, and supported submission. Temporal records execution by a running Worker. Codex Goal continuation resumes the Architect, who queries the original Workflow and Run, accepts or revises the evidence, and prepares the next draft." /></div></div></figure>
+<p>A successful submission establishes that work was requested; a completed execution records its reported outcome; acceptance requires comparison with the actual artifacts and agreed criteria. An accepted result can make the next task ready for assignment, while an uncertain result retains its original Workflow and Run identities for further checking. The Goal carries the objective forward; each consequential action stays within the approved work order.</p>
+<p>Before issuing the next order, the Architect compares the request with planned, active, and completed work. A related request can then be linked to an existing assignment instead of becoming a second order with a new identity. For adapters that support resubmitting an approved order under the same identity, the original execution is checked before further work; the Architect determines whether differently expressed requests belong to the same task. Together, these responsibilities connect durable execution to the decisions that keep the development workflow moving.</p>
       </div>
     </section>
 
     <section class="article-section" id="section-5">
-      <div><span class="section-no">05</span><span class="section-label">DEVELOPER CI</span></div>
+      <div><span class="section-no">05</span><span class="section-label">DEVELOPMENT EXAMPLES</span></div>
       <div class="content">
-        <h2>Where Durable Execution Improves Agent-Assisted Development</h2>
-        <p>Traditional CI systems are designed to execute predefined build, test, and deployment procedures. Agent-assisted development introduces a broader coordination challenge involving probabilistic reasoning, evolving implementation plans, asynchronous worker execution, and human intervention. A coding agent may produce an incomplete change, a reviewer may request architectural revisions, or a worker may terminate after committing code but before reporting completion. The challenge is therefore not merely to restart failed commands, but to <strong>recover the development process without losing verified progress or unnecessarily repeating completed work</strong>.</p>
-        <p>Temporal provides a durable foundation for addressing these challenges by separating workflow coordination from agent execution. However, its guarantees concern orchestration rather than the correctness of external operations. The following distinctions clarify both its contributions and the responsibilities that remain with the surrounding development system.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Recurring difficulty</th>
-              <th>Temporal's contribution</th>
-              <th>Remaining responsibility</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Architect context loss</td>
-              <td>Durable milestone execution state</td>
-              <td>Agent memory and handoffs</td>
-            </tr>
-            <tr>
-              <td>Interrupted workers</td>
-              <td>Activity retries and recovery coordination</td>
-              <td>Worktree and job reconciliation</td>
-            </tr>
-            <tr>
-              <td>Duplicate assignments</td>
-              <td>Stable workflow and task identifiers</td>
-              <td>Ownership and idempotency</td>
-            </tr>
-            <tr>
-              <td>Repeated CI failures</td>
-              <td>Explicit failure branches and retry policies</td>
-              <td>Diagnosis and corrective changes</td>
-            </tr>
-            <tr>
-              <td>Expensive LLM operations</td>
-              <td>Scheduling and concurrency controls</td>
-              <td>Token budgets and caching</td>
-            </tr>
-            <tr>
-              <td>Pending user or delegated Architect approvals</td>
-              <td>Durable waiting for approval events</td>
-              <td>Verify approver identity and delegated authority</td>
-            </tr>
-            <tr>
-              <td>Evolving workflows</td>
-              <td>Workflow versioning mechanisms</td>
-              <td>Compatible recipe and code migrations</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>Two separate runs show what the current workflow evidence does and does not establish:</p>
-        <figure class="workflow-diagram" aria-labelledby="workflow-diagram-caption">
-          <div class="diagram-frame"><div class="diagram-scroll"><img src="./temporal-workflow-sequence.svg" width="940" height="1240" alt="Two sequence diagrams. In the completed document task, the Architect approves proposal r2, Temporal dispatches application r3, an application step updates a README and roadmap in one Git commit, and a receipt records applied with zero provider calls. A later receipt lookup is reported but not independently confirmed. In a separate experiment, Temporal sends one model request; the provider returns a syntax-checked 803-byte candidate after using 5,398 input and 752 output tokens. Review and application remain pending, with no source write or commit." /></div></div>
-          <figcaption id="workflow-diagram-caption">The first run completed without a provider call; this does not prove a paid call was avoided. The separate model experiment used tokens but did not reach application.</figcaption>
+        <h2>Preserving Progress and Reducing Conversational Overhead</h2>
+<p>The examples below show how supported adapters handle approved development work, interrupted communication, and Temporal Worker replacement. Completed work remains identifiable through its original execution and saved outputs, while agents use concise messages and references to continue coordinating the task.</p>
+<p>Consider an approved roadmap update affecting both the roadmap and the project overview. The document adapter applies the approved content to those two files and returns an execution receipt. The Architect compares that receipt with the actual changes and the recorded commit before accepting the work. The result is a completed document change whose content, execution record, and acceptance can be checked together.</p>
+<p>A source change can finish even when the local process waiting for its result stops unexpectedly. The Architect can inspect the original Temporal execution, its saved result, any failure records, and the files’ hashes. If that evidence proves the assignment’s acceptance criteria were met, the Architect can accept the existing changes without applying them again. In the diagram, “Check original execution” is this later confirmation of what has already been done.</p>
+<figure class="workflow-diagram" aria-label="Result acceptance after a caller failure">
+          <div class="diagram-frame"><div class="diagram-scroll"><img src="./20261109-temporal/figures/temporal-workflow-sequence.svg" width="940" height="740" alt="Source files are updated before the process requesting the change stops unexpectedly. The Architect checks the original Temporal execution, compares the files’ hashes with the recorded values, and accepts the changes without applying them again." /></div></div>
         </figure>
-        <p>An operation lock and context journal are intended to let repeated requests observe the original operation, while an advisory writer lock covers participating kit writers. These controls do not cover every caller, and comparative token and cost savings have not been measured.</p>
-        <p>The distinction between coordination and execution becomes particularly important during recovery. Suppose an implementation worker successfully creates a Git commit but terminates before reporting completion. A naïve retry could launch another coding session and produce redundant changes. A recovery-aware Activity instead inspects the existing branch, worktree, commit history, and task identifier before deciding whether another execution attempt is necessary. <strong>Temporal coordinates the retry; Git provides the evidence needed to reconcile it safely.</strong></p>
-        <p>The same principle applies to CI failures. Repeatedly running an unchanged test suite may consume resources without advancing development when the underlying failure is deterministic. A reliable workflow should distinguish transient infrastructure errors from implementation defects, applying bounded retries to the former while escalating the latter for agent-driven diagnosis and correction. Likewise, expensive LLM operations require explicit concurrency limits, caching, and usage budgets rather than indiscriminate retries.</p>
-        <p>The objective is not to automate every technical decision or eliminate the possibility of failure. It is to <strong>make the execution surrounding agent decisions durable, observable, and recoverable</strong>, while preserving clear responsibility for code correctness, security verification, and human authorization.</p>
+<p>For completed model-backed work, an execution adapter supporting original-result retrieval can return the saved result to a later process without another model call. The Architect checks the saved execution record and any required review and verification evidence before accepting or reusing it. A revised assignment remains a new piece of approved work rather than a reason to replay the old request.</p>
+<p>A Temporal Worker can stop while a task launched by its Activity continues in a separate process. In an adapter supporting this recovery, a replacement Worker uses the saved task identity to locate that process and inspect its result. The original Workflow run can then finish without launching that task again. The records preserve the connection between the original assignment, the continuing task, and the replacement Worker.</p>
+<h3>Keeping Routine Messages Concise</h3>
+<p>During this work, agents still need to acknowledge instructions and tell one another where to find results. For routine coordination, agents can send an ACK, a short status update, or a reference to the original execution and its outputs. The receiving agent follows the reference and reads the report or log excerpts relevant to its task. Those excerpts enter its conversational context; the complete report remains available for further reading.</p>
+<figure class="workflow-diagram reporting-flow" aria-label="Selective reporting through ACKs and references">
+  <div class="diagram-frame"><img src="./20261109-temporal/figures/selective-reporting.svg" width="760" height="550" alt="A Worker sends ACK, status, and references while retaining execution state in Temporal and detailed evidence in artifacts and Git. The Architect reads the original run and retrieves selected evidence." loading="lazy" /></div>
+</figure>
+<p>The content of the work still determines how much discussion is needed. A change in scope, a question about correctness, or contradictory evidence calls for an explanation, not just a reference. The Architect evaluates those issues before accepting the result. An ACK confirms receipt or agreement to carry out the stated assignment; it does not approve a proposal or prove that the work is complete. Keeping orders and result records consistent remains part of the coordination work.</p>
+<p>The objective is to <strong>make the execution surrounding agent decisions durable, observable, and recoverable</strong>, while preserving responsibility for code correctness and authorized acceptance. Approved content produces a traceable result, an interrupted caller can return to existing work, and agents read the evidence needed for their next action. The Architect uses that evidence to decide whether to accept the work, request a revision, or clarify what remains uncertain.</p>
+<p>These examples describe supported ways to preserve work and reduce repeated reporting. They do not establish a measured reduction in total context tokens, compaction, or cost across a full development cycle. That comparison must include the messages agents still exchange and the evidence they read, as well as the work needed to maintain the records.</p>
       </div>
     </section>
 
     <section class="article-section" id="section-6">
-      <div><span class="section-no">06</span><span class="section-label">SYSTEM ARCHITECTURE</span></div>
-      <div class="content">
-        <h2>Durable Orchestration Without Conversational Overhead</h2>
-        <p>The existing Codex Desktop environment follows an Architect–Worker model, in which a project-level Architect oversees planning, task decomposition, and technical decisions while specialized workers undertake implementation, testing, and review. This separation has proven effective for organizing agent-assisted development. Its principal limitation, however, lies in the coordination between these roles: execution progress, intermediate reports, and recovery decisions remain closely coupled to individual conversational sessions.</p>
-        <p>The architectural reform described in this section is <strong>a proposed extension of that existing system, rather than a description of a completed Temporal deployment</strong>. The current environment already includes sandboxed Codex Desktop agent sessions on an Arch Linux host, Python virtual environments, non-root Git execution, bwrap isolation, and systemd-managed services. The Temporal CLI and Python SDK have also been installed. What remains to be implemented and verified is the host-managed Temporal Server with durable persistence, Python Temporal Workers, and the interfaces connecting Temporal to the existing agents.</p>
-        <p>The proposed architecture preserves the established agent hierarchy while introducing Temporal as an independent orchestration layer. The Architect would retain authority over planning, delegation, and technical decisions, while implementation workers would continue performing bounded development tasks. Temporal would assume responsibility for durable workflow progression, task scheduling, and recovery coordination.</p>
-        <p>The central objective extends beyond execution reliability. By externalizing operational state and communication, the reform seeks to <strong>decouple the continuity of development workflows from the continuity of agent conversations</strong>. Routine worker reports, retry events, and diagnostic logs would no longer need to accumulate in the Architect's conversational context. Instead, the Architect could retrieve concise, decision-relevant information when necessary.</p>
-
-        <h3>System Boundaries: State, Data, Communication, and Failure</h3>
-        <p>The architecture is easiest to reason about when each kind of state has a clear owner, each artifact has a defined home, and every cross-component action follows an explicit interface. These boundaries describe the proposed integration, not a completed Temporal deployment.</p>
-        <table>
-          <thead><tr><th>Concern</th><th>Owner or location</th><th>Boundary and behavior</th></tr></thead>
-          <tbody>
-            <tr><td>Goals and delegated authority</td><td>User; specific decisions may be delegated to the Architect</td><td>The user sets project goals and approval limits. The Architect coordinates within delegated authority.</td></tr>
-            <tr><td>Intent and technical decisions</td><td>Architect; durable decisions recorded with the workflow or project record</td><td>The Architect decides whether to accept a proposed work order or result. The Drafter proposes but cannot authorize or dispatch.</td></tr>
-            <tr><td>Workflow state</td><td>Temporal event history and workflow state</td><td>Records accepted assignments, dependencies, progress, acknowledgments, pending decisions, and execution outcomes.</td></tr>
-            <tr><td>Source changes</td><td>Git repository</td><td>Branches and commits remain authoritative; Temporal stores references and supports reconciliation before uncertain work is repeated.</td></tr>
-            <tr><td>Test and review evidence</td><td>CI systems and artifact storage</td><td>Evidence remains with the systems that produce it; workflow records retain stable references and useful summaries.</td></tr>
-            <tr><td>Agent communication</td><td>Authorized adapters and tools</td><td>Read access may use Temporal MCP; state-changing operations use permission-checked tools and the SDK. Workers return structured acknowledgments, results, and artifact references.</td></tr>
-            <tr><td>Process failure</td><td>Temporal recovery and application-level reconciliation</td><td>Replay restores coordination state; retries follow reviewed policy; adapters check external state before repeating side effects. Pending decisions wait for an authorized invocation or explicit return.</td></tr>
-            <tr><td>Component boundaries</td><td>Recipes, Workflows, Activities, and adapters</td><td>Recipes express intent; Workflows interpret dependencies and gates; Activities perform external operations; adapters connect agents and tools through replaceable interfaces.</td></tr>
-          </tbody>
-        </table>
-        <p>This division keeps <strong>authority, orchestration state, and work evidence</strong> distinct. Temporal records workflow progression, but it is not the source of project authority, source code, or test truth. A workflow can point to a commit or CI report without taking ownership of it.</p>
-        <p>Modularity follows the same rule: each component exposes a small contract and can evolve behind it. A worker adapter can change how an assignment reaches a Codex session without changing recipe semantics or durable workflow history. Recipe and Workflow changes still need versioning and compatibility handling so running executions can continue or migrate predictably.</p>
-
-        <h3>Component Responsibilities and Boundaries</h3>
-        <p>The target architecture assigns explicit responsibilities to the following components. The Architect–Worker hierarchy and existing development tools are already in use; the Temporal infrastructure and integration interfaces represent the planned additions.</p>
-        <ul>
-          <li><strong>Temporal Server — Durable Coordination (Proposed):</strong> The server would maintain workflow execution histories, task queues, timers, and persistent orchestration state. Operating independently of agent sessions, it would coordinate workflow scheduling and recovery without executing application-specific Activities or interpreting agent decisions.</li>
-          <li><strong>Python Temporal Workers — Workflow Execution (Proposed):</strong> Workers would poll designated task queues, execute deterministic workflow code, and perform Activities that interact with development tools through narrowly scoped adapters. Nondeterministic operations—including LLM invocations, Git modifications, and external API calls—would remain outside deterministic workflow logic.</li>
-          <li><strong>Temporal MCP and Python Tools — Agent Interfaces (Proposed):</strong> MCP would provide authorized Codex sessions with selective read access to workflow histories, execution status, and diagnostics. Separate permission-checked Python tools would expose state-changing operations through the Temporal SDK. These interfaces would not constitute autonomous agents or implicitly establish bidirectional messaging between Codex sessions.</li>
-          <li><strong>Automation Architect — Project Orchestration and Technical Judgment (Existing Role, Extended Interface):</strong> The Architect is the project's single active coordinator: it defines priorities and boundaries, directs delegation, evaluates results, and decides the next authorized action. It may make decisions and approvals on the user's behalf only within delegated authority; the user retains project goals and approvals not delegated. Within that authority, the Architect may accept results and integrate shared changes. It would also initiate and inspect Temporal workflows through authorized tools.</li>
-          <li><strong>Drafter — Work-Order Preparation (Proposed):</strong> Acting under the Architect's direction, the Drafter turns intent and boundaries into proposed work orders with task order, dependencies, and acceptance criteria. This reduces routine preparation and preserves the Architect's context and responsiveness for decisions, approvals, reports, acknowledgments, and conversations. A draft cannot authorize or dispatch work; the Architect decides on the exact revision.</li>
-          <li><strong>Implementation Workers — Bounded Development Execution (Existing Role, Extended Interface):</strong> Specialized agents already perform coding, testing, and review within sandboxed Codex Desktop environments. The proposed integration would introduce structured assignments with stable task identifiers, explicit acceptance criteria, and durable artifact references. Recovery would rely on reconciling existing work rather than reproducing interrupted agent reasoning.</li>
-          <li><strong>Git and CI — Authoritative Development Evidence (Existing Infrastructure):</strong> Git maintains the versioned record of source changes, while CI provides evidence of build and test outcomes. Temporal would store references to these artifacts rather than replace their authority. Before retrying interrupted operations, Activities would reconcile recorded task state against existing commits, branches, external job identifiers, and test results.</li>
-        </ul>
-        <p>The target topology deliberately excludes a dedicated Temporal Agent. Introducing another LLM-based supervisory component would add coordination overhead without necessarily improving reliability. Instead, the existing Architect would retain decision-making authority, while Temporal and its Python workers would maintain execution independently of any particular chat session.</p>
-
-        <h3>Authority and the Durable Work Cycle</h3>
-        <p>The user owns project goals and approval authority, delegating specific decisions to the Architect as needed. The Architect is the single active Orchestrator and acts on the user's behalf only within that delegation. To keep it responsive, the Drafter prepares work-order proposals under its direction. Temporal persists assignments and dependencies, dispatches only an order the Architect accepted at its exact revision, collects acknowledgments and results, schedules reviews, preserves pending decisions, and recovers interrupted execution under the reviewed retry and reconciliation policy. Neither the Drafter nor Temporal can invent work or authority.</p>
-        <p>The cycle is: the Architect sets intent and boundaries; the Drafter proposes an order; the Architect records <strong>ACCEPT</strong>, <strong>REVISE</strong>, or <strong>WAIT_EXTERNAL</strong> for that exact revision; Temporal dispatches an accepted order; the Worker reports; and the Architect decides the next authorized action. Pending decisions require a supported invocation or explicit return; the Architect must not rely on memory to resume durable work.</p>
-
-        <h3>Communication Flow</h3>
-        <p>
-          The architecture separates read-only workflow inspection
-          from state-changing operations through two communication paths:
-        </p>
-
-        <pre><code>Read:  Codex Agent → Temporal MCP Server → Temporal Server
-
-Write: Codex Agent → Python Tool → Temporal Python SDK
-                                → gRPC → Temporal Server</code></pre>
-
-        <p>
-          The MCP interface provides authorized agents with access to
-          workflow histories, execution status, and diagnostics.
-          State-changing operations—including workflow submission,
-          recording an approval from the user or an Architect with delegated
-          authority, and cancellation—are handled through controlled
-          Python tools using the Temporal SDK, which communicates with
-          the server over gRPC.
-        </p>
-
-        <p>
-          This separation preserves explicit authorization boundaries
-          without requiring agents to implement low-level communication
-          protocols or maintain workflow execution state themselves.
-        </p>
-
-        <h3>Deployment and Security Boundaries</h3>
-        <p>The planned integration would preserve the existing Python virtual environments, non-root Git execution, bwrap sandboxing, and systemd-managed services. The Temporal Server is intended to run as persistent infrastructure on the Arch Linux host, while Codex agents remain isolated within their established sandboxed execution environments.</p>
-        <p>Communication across this boundary would require explicitly authorized interfaces, without granting agents unrestricted access to host filesystems, credentials, or privileged services. Temporal API access would likewise need to be controlled, since workflow submission, signaling, and cancellation can affect other running tasks.</p>
-        <p>The intended separation is therefore between <strong>durable orchestration infrastructure, probabilistic agent execution, and the security boundaries governing their interaction</strong>.</p>
-
-        <h3>Reference Implementation Structure</h3>
-        <p>The Temporal integration could be organized as a modular component within the existing Automation project:</p>
-        <pre><code>project/
-├── recipes/
-│   └── dev-workflow.yaml
-├── orchestration/
-│   └── temporal/
-│       ├── workflows.py
-│       ├── activities.py
-│       ├── worker.py
-│       ├── client.py
-│       └── mcp_adapter.py
-├── agents/
-│   ├── architect_adapter.py
-│   └── worker_adapter.py
-└── tests/
-    └── test_dev_workflow.py</code></pre>
-        <p>This directory structure is illustrative and has not been verified against the existing repository. Its purpose is to keep workflow definitions, execution adapters, agent integrations, and tests independently maintainable while preserving established domain skills and declarative recipes.</p>
-
-        <h3>Selective Context Injection</h3>
-        <p>The separation of execution state from conversational context is ultimately realized through the system's reporting policy.</p>
-        <p>In the existing conversation-driven orchestration model, the Architect may receive worker instructions, intermediate results, retry notifications, and diagnostic outputs. As development complexity increases, this accumulation consumes context disproportionately to the decisions being made, requiring frequent compaction and introducing opportunities for information loss.</p>
-        <p>Under the proposed architecture, operational records would remain in their respective systems: Temporal would retain workflow execution histories, Git would preserve code changes, and CI or artifact storage would retain test results and diagnostic logs. The Architect would receive compact summaries containing task identifiers, completion status, relevant artifact references, and unresolved issues.</p>
-        <p>Detailed information would be retrieved selectively when an exception, architectural decision, or verification requirement warranted further inspection. Routine progress monitoring could rely on structured state queries rather than repeated LLM-driven polling or conversational reports.</p>
-        <p>This approach would not eliminate the need for agent memory or session handoffs. Temporal preserves <strong>what happened during workflow execution</strong>, while project memory retains <strong>why particular architectural decisions were made</strong>, together with enduring constraints and accumulated technical knowledge. These functions would remain complementary.</p>
-        <p>The expected outcome is a development system in which the Architect's context becomes a deliberately managed resource rather than a repository for operational history. <strong>Temporal would maintain continuity of execution; the Architect would maintain continuity of judgment.</strong></p>
-      </div>
-    </section>
-
-    <section class="article-section" id="section-7">
-      <div><span class="section-no">07</span><span class="section-label">CONCLUSION</span></div>
+      <div><span class="section-no">06</span><span class="section-label">CONCLUSION</span></div>
       <div class="content">
         <h2>Toward Durable Agent-Assisted Software Engineering</h2>
-        <p>The evolution from standalone AI agents to coordinated development systems reveals an architectural challenge that advances in model capability alone cannot resolve. The Architect–Worker model provides an effective division of cognitive labor, but reliable collaboration requires more than capable reasoning and delegated execution. It demands persistent task ownership, recoverable execution state, verifiable outcomes, and clearly defined boundaries between decision-making and operational control. Without these foundations, increasingly capable agents risk becoming components of an increasingly fragile system.</p>
-        <p>Temporal offers a promising approach by <strong>decoupling workflow continuity from the continuity of individual agent sessions</strong>. Its durable execution model allows deterministic orchestration to coordinate inherently probabilistic development activities, while Git and external artifacts provide evidence of work performed. The objective is not to constrain agent autonomy or reproduce their reasoning trajectories, but to establish an execution framework in which interruptions can be recovered, completed work can be reconciled, and coordination no longer depends on the Architect's conversational memory.</p>
-        <p>Nevertheless, <strong>durable orchestration should not be mistaken for end-to-end execution correctness</strong>. Temporal cannot reproduce nondeterministic LLM decisions, guarantee exactly-once execution of external side effects, or independently determine whether an interrupted coding agent has completed its assignment. These responsibilities remain with application-level mechanisms, including idempotent operations, persistent artifact references, Git state reconciliation, and explicit acceptance criteria. Nor does Temporal inherently provide agent communication, semantic task decomposition, or intelligent exception handling; these capabilities must be supplied by the existing agents and their integration adapters. Workflow durability therefore establishes a foundation for reliability rather than eliminating the need for careful system design.</p>
-        <p>The Automation project serves as the initial testbed for this architectural reform. Rather than pursuing comprehensive autonomy from the outset, the implementation will focus on measurable objectives: recovery from worker interruptions, prevention of duplicate development work, reduced orchestration overhead, and more selective use of the Architect's context. These benefits remain hypotheses to be validated through implementation, controlled failure testing, and operational observation—not guarantees conferred by adopting Temporal alone.</p>
-        <p>Ultimately, <strong>the next step toward reliable agent-assisted software engineering may lie less in making agents more intelligent than in making the systems coordinating them more dependable</strong>. By separating probabilistic reasoning from durable execution control, the proposed architecture aims to preserve the flexibility of autonomous agents while introducing the continuity, accountability, and operational discipline required for sustained software development. The result is a shift from conversations that coordinate work toward infrastructure that preserves its progress—allowing agents to concentrate on the decisions that warrant their intelligence.</p>
+        <p>The evolution from standalone AI agents to coordinated development systems reveals an architectural challenge that advances in model capability alone cannot resolve. temporal-agent-kit addresses this challenge through a reusable workflow that connects project instructions and approved work orders to execution adapters and the results the Architect evaluates. These connections support <strong>decoupling workflow continuity from the continuity of individual agent sessions</strong>: an assignment retains its identity, recorded progress, and supporting evidence when the conversation or the process observing it is interrupted.</p>
+        <p>Within this architecture, durable orchestration should not be mistaken for end-to-end execution correctness. Recovery policies must account for external effects, and acceptance must remain grounded in actual artifacts and agreed criteria. The kit makes these responsibilities explicit when work is approved, executed, and checked. Its adapters connect recorded outcomes to project-specific checks, while the Architect retains technical judgment and responsibility for deciding whether the work satisfies its assignment. This allows recoverability and correctness to be evaluated together without treating a completed execution as sufficient evidence of a completed development task.</p>
+        <p>For readers adopting this workflow, the practical starting point is a task with a clearly defined scope and permissions in their own project. With the skill installed and project configuration in place, a supplied coding or document adapter can carry out an approved work order. The first cycle connects that order to its recorded execution, checks the resulting artifacts, and returns the evidence for acceptance. Additional adapters extend this pattern to project-specific operations. The kit makes this workflow reusable across projects, allowing each project to concentrate on the work being authorized and the evidence required to accept it.</p>
+        <p>Ultimately, model intelligence and dependable coordination are complementary foundations for reliable agent-assisted software engineering. The pursuit of more capable models remains important; in the meantime, development teams need to put the models available today to work robustly and effectively. For sensitive work in finance and patents, teams may prefer to rely entirely on orchestrated local LLMs. Whether models run locally or through a hosted service, separating reasoning from execution control helps preserve the progress and evidence needed to continue work across interruptions. temporal-agent-kit applies this separation to the Architect–Worker workflow, so the Architect can plan and evaluate work and Workers can implement it without having to reconstruct the execution history from conversation alone.</p>
       </div>
     </section>
   </main>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 740" role="img" aria-labelledby="title desc">
+  <title id="title">Accepting completed work after a caller failure</title>
+  <desc id="desc">Source changes completed before a local caller terminated abnormally. The Architect later inspected the original Temporal execution, compared source fingerprints with the retained result, and accepted the existing changes without repeating the modification. This illustrates an Architect-reported case whose application report and artifact hashes were checked. It does not specify when the caller failed relative to internal Workflow messages.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#52675b"/></marker>
+    <marker id="return-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#b65f32"/></marker>
+    <style>
+      .bg{fill:#faf9f4}.panel{fill:#fffefa;stroke:#d9ddd2;stroke-width:2}.head{font:700 24px system-ui,sans-serif;fill:#243e35}.sub{font:16px system-ui,sans-serif;fill:#647168}.actor{fill:#f0eee4;stroke:#bfc8bd;stroke-width:2}.actorText{font:600 16px system-ui,sans-serif;fill:#243e35;text-anchor:middle}.life{fill:none;stroke:#aeb9af;stroke-width:2;stroke-dasharray:7 7}.msg{fill:none;stroke:#52675b;stroke-width:2.5;marker-end:url(#arrow)}.ret{fill:none;stroke:#b65f32;stroke-width:2.5;stroke-dasharray:8 6;marker-end:url(#return-arrow)}.label{font:16px system-ui,sans-serif;fill:#243e35;paint-order:stroke fill;stroke:#fffefa;stroke-width:5px;stroke-linejoin:round}.failure{fill:#fbf1e9;stroke:#c88a65;stroke-width:2}.failureText{font:600 16px system-ui,sans-serif;fill:#9b4c28;text-anchor:middle}.accepted{fill:#edf3eb;stroke:#b2c4b2;stroke-width:2}.acceptText{font:600 18px system-ui,sans-serif;fill:#243e35;text-anchor:middle}.acceptSub{font:16px system-ui,sans-serif;fill:#52675b;text-anchor:middle}
+    </style>
+  </defs>
+  <rect class="bg" width="940" height="740" rx="14"/>
+  <rect class="panel" x="18" y="18" width="904" height="704" rx="12"/>
+  <text class="head" x="42" y="56">Accepting completed work after a caller failure</text>
+  <text class="sub" x="42" y="82">The source change completed; the Architect later checked the original result.</text>
+
+  <rect class="actor" x="50" y="105" width="220" height="54" rx="8"/>
+  <text class="actorText" x="160" y="138">Architect</text>
+  <rect class="actor" x="360" y="105" width="220" height="54" rx="8"/>
+  <text class="actorText" x="470" y="129"><tspan x="470">Original Temporal</tspan><tspan x="470" dy="18">execution</tspan></text>
+  <rect class="actor" x="670" y="105" width="220" height="54" rx="8"/>
+  <text class="actorText" x="780" y="138">Source files</text>
+  <path class="life" d="M160 159V580 M470 159V580 M780 159V580"/>
+
+  <path class="msg" d="M470 215H780"/>
+  <text class="label" x="490" y="197">Source changes completed</text>
+
+  <rect class="failure" x="42" y="253" width="316" height="54" rx="8"/>
+  <text class="failureText" x="200" y="286">Local caller exits abnormally</text>
+
+  <path class="msg" d="M160 365H470"/>
+  <text class="label" x="178" y="347">Check original execution</text>
+  <path class="ret" d="M470 425H160"/>
+  <text class="label" x="178" y="407">Existing result + references</text>
+  <path class="msg" d="M160 485H780"/>
+  <text class="label" x="345" y="467">Compare source fingerprints</text>
+  <path class="ret" d="M780 545H160"/>
+  <text class="label" x="393" y="527">Matching artifacts</text>
+
+  <rect class="accepted" x="42" y="595" width="856" height="100" rx="10"/>
+  <text class="acceptText" x="470" y="635">Architect accepts the existing changes</text>
+  <text class="acceptSub" x="470" y="665">The source modification is not repeated.</text>
+</svg>
