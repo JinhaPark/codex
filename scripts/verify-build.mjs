@@ -12,11 +12,13 @@ for (const route of ['index.html','travel/tantantan/index.html','travel/caucasus
 for (const route of ['tantantan/index.html','caucasus/index.html']) {
   assert.ok(!fs.existsSync(join(dist,route)), 'Duplicate top-level travel route must not be published: '+route);
 }
-for (const route of ['blog/index.html','blog/20261109-temporal.html','blog/20261103-patentlinter.html']) {
+for (const route of ['blog/index.html','blog/20261119-singlecall.html','blog/20261109-temporal.html','blog/20261103-patentlinter.html']) {
   const file=join(dist,route);
   assert.ok(fs.existsSync(file), 'Missing published blog route '+route);
 }
 const blogIndex=fs.readFileSync(join(dist,'blog/index.html'),'utf8');
+assert.match(blogIndex, /\.\/20261119-singlecall\.html/, 'Blog index must link to Single-Call');
+assert.ok(blogIndex.indexOf('20261119-singlecall.html') < blogIndex.indexOf('20261109-temporal.html'), 'Newest article first');
 assert.match(blogIndex, /\.\/20261109-temporal\.html/, 'Blog index must link to its article');
 assert.match(blogIndex, /\.\/20261103-patentlinter\.html/, 'Blog index must link to PatentLinter');
 assert.ok(blogIndex.indexOf('20261109-temporal.html') < blogIndex.indexOf('20261103-patentlinter.html'), 'Newest article first');

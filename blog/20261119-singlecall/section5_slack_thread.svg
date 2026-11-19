@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" width="100%" height="100%" role="img" aria-labelledby="title desc">
+  <title id="title">Section 5: generated Slack-style conversation</title>
+  <desc id="desc">A fictional generated Apollo software and hardware integration conversation, styled as a Slack channel thread. Displayed times are invented for the scenario, not historical timestamps.</desc>
+  <defs>
+    <style>
+      .canvas { fill: #f5f5f5; }
+      .window { fill: #fff; stroke: #d1d2d3; stroke-width: 1; }
+      .sidebar { fill: #3f0e40; }
+      .sidebar-text { font: 13px Arial, sans-serif; fill: #ead7eb; }
+      .muted { font: 12px Arial, sans-serif; fill: #616061; }
+      .title { font: 700 16px Arial, sans-serif; fill: #1d1c1d; }
+      .name { font: 700 14px Arial, sans-serif; fill: #1d1c1d; }
+      .time { font: 11px Arial, sans-serif; fill: #616061; }
+      .body { font: 13px Arial, sans-serif; fill: #1d1c1d; }
+      .rule { stroke: #e8e8e8; stroke-width: 1; }
+      .thread-link { stroke: #d8d8d8; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="canvas" width="700" height="850" />
+  <rect class="window" x="12" y="12" width="676" height="826" rx="10" />
+
+  <!-- Workspace sidebar -->
+  <rect class="sidebar" x="12" y="12" width="210" height="826" rx="10" />
+  <rect fill="#3f0e40" x="212" y="12" width="10" height="826" />
+  <text x="36" y="50" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">Apollo Program</text>
+  <text class="sidebar-text" x="36" y="96" font-weight="700">Channels</text>
+  <text class="sidebar-text" x="36" y="130">#  general</text>
+  <rect x="24" y="144" width="184" height="34" rx="5" fill="#1164a3" />
+  <text x="36" y="166" font-family="Arial, sans-serif" font-size="13" fill="#fff" font-weight="700">#  software-hardware</text>
+  <text class="sidebar-text" x="36" y="198">   -integration</text>
+  <text class="sidebar-text" x="36" y="232">#  mission-techniques</text>
+  <text class="sidebar-text" x="36" y="266">#  program-updates</text>
+  <text class="sidebar-text" x="36" y="318" font-weight="700">Direct messages</text>
+  <circle cx="45" cy="348" r="5" fill="#2bac76" />
+  <text class="sidebar-text" x="58" y="353">Margaret Hamilton</text>
+  <circle cx="45" cy="380" r="5" fill="#2bac76" />
+  <text class="sidebar-text" x="58" y="385">Bill Tindall</text>
+
+  <!-- Channel header -->
+  <text class="title" x="248" y="50"># software-hardware-integration</text>
+  <text class="muted" x="248" y="73">Apollo 11 · 3 members</text>
+  <text class="muted" x="248" y="89">Generated scenario following the proposed email</text>
+  <line class="rule" x1="222" y1="101" x2="688" y2="101" />
+  <rect x="248" y="111" width="84" height="25" rx="12" fill="#fff" stroke="#d1d2d3" />
+  <text class="muted" x="266" y="128" font-weight="700">Tuesday</text>
+
+  <!-- Channel messages -->
+  <line class="thread-link" x1="274" y1="178" x2="274" y2="660" />
+
+  <g>
+    <rect x="248" y="149" width="38" height="38" rx="7" fill="#4a6fa5" />
+    <text x="267" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">MH</text>
+    <text class="name" x="298" y="164">Margaret Hamilton</text>
+    <text class="time" x="433" y="164">09:12</text>
+    <text class="body" x="298" y="188">Stripped as agreed. Eldon's optimization is underway.</text>
+  </g>
+
+  <g>
+    <rect x="248" y="231" width="38" height="38" rx="7" fill="#d28b36" />
+    <text x="267" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">BT</text>
+    <text class="name" x="298" y="246">Bill Tindall</text>
+    <text class="time" x="384" y="246">09:18</text>
+    <text class="body" x="298" y="270">I've pushed the hardware teams. Can we see the</text>
+    <text class="body" x="298" y="289">code for the 'Timing Registry' now?</text>
+  </g>
+
+  <g>
+    <rect x="248" y="326" width="38" height="38" rx="7" fill="#d28b36" />
+    <text x="267" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">BT</text>
+    <text class="name" x="298" y="341">Bill Tindall</text>
+    <text class="time" x="384" y="341">09:27</text>
+    <text class="body" x="298" y="365">The project is not a research lab, Margaret.</text>
+    <text class="body" x="298" y="384">I need the registry now to verify the</text>
+    <text class="body" x="298" y="403">'Mission Techniques' compliance.</text>
+  </g>
+
+  <g>
+    <rect x="248" y="435" width="38" height="38" rx="7" fill="#4a6fa5" />
+    <text x="267" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">MH</text>
+    <text class="name" x="298" y="450">Margaret Hamilton</text>
+    <text class="time" x="433" y="450">09:31</text>
+    <text class="body" x="298" y="474">Requesting the registry before the module</text>
+    <text class="body" x="298" y="493">is linked is premature and unproductive.</text>
+    <text class="body" x="298" y="512">We are following the agreed scope.</text>
+  </g>
+
+  <g>
+    <rect x="248" y="544" width="38" height="38" rx="7" fill="#d28b36" />
+    <text x="267" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">BT</text>
+    <text class="name" x="298" y="559">Bill Tindall</text>
+    <text class="time" x="384" y="559">09:38</text>
+    <text class="body" x="298" y="583">I am flagging this thread to George Low.</text>
+    <text class="body" x="298" y="602">If the registry is not provided for technical</text>
+    <text class="body" x="298" y="621">audit by EOD, I will initiate the fallback to</text>
+    <text class="body" x="298" y="640">cut the restart features to save the schedule.</text>
+  </g>
+
+  <line class="rule" x1="248" y1="667" x2="688" y2="667" />
+  <text class="muted" x="248" y="690" font-weight="700">THREAD VIEW</text>
+  <rect x="248" y="704" width="414" height="42" rx="7" fill="#fff" stroke="#c9c9c9" />
+  <text class="muted" x="266" y="730">Message #software-hardware-integration</text>
+</svg>

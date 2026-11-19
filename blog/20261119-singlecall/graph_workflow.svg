@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1300" role="img" aria-labelledby="title description">
+  <title id="title">Meeting analysis in a single call</title>
+  <desc id="description">Nine recipe nodes ordered by their dependencies. Arrows show the main flow. Additional dependencies appear as Also reads labels within each receiving node. A dashed outer box groups the runtime inputs: the transcript is required and the previous summary is optional. A second dashed outer box identifies the political risk scenario and social expert diagnosis as extensions to Denis Rothman’s example. The transcript feeds substantive content; the previous summary also feeds new developments. Dashed circular self-loops represent optional auditing and, if needed, revision of the draft within the same model response, not additional API calls.</desc>
+  <defs>
+    <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.5 1.5L8 5L1.5 8.5" fill="none" stroke="#52675b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="revision-arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 1.5L7.5 5L2 8.5" fill="none" stroke="#d47b2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>
+      .background{fill:#faf9f4}.panel{fill:#fffefa;stroke:#d9ddd2;stroke-width:1.5}
+      .heading{font:700 26px system-ui,sans-serif;fill:#243e35}.subtitle{font:16px system-ui,sans-serif;fill:#647168}
+      .runtime-group{fill:none;stroke:#aeb9af;stroke-width:1.5;stroke-dasharray:6 5}.input-note{font:13px system-ui,sans-serif;fill:#647168;text-anchor:middle}
+      .input{fill:#f0eee4;stroke:#bfc8bd;stroke-width:1.5}.input-label{font:600 18px system-ui,sans-serif;fill:#52675b;text-anchor:middle}
+      .node{fill:#fffefa;stroke:#bfc8bd;stroke-width:1.5}.stage{fill:#f0eee4;stroke:#bfc8bd;stroke-width:1.5}
+      .simulation{fill:#fcf3e8;stroke:#dbb58e;stroke-width:1.5}.terminal{fill:#edf3eb;stroke:#b2c4b2;stroke-width:1.5}
+      .label{font:600 20px system-ui,sans-serif;fill:#243e35;text-anchor:middle}.detail{font:16px system-ui,sans-serif;fill:#52675b;text-anchor:middle}
+      .flow{fill:none;stroke:#52675b;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#flow-arrow)}
+      .branch{fill:none;stroke:#52675b;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round}
+      .revision{fill:none;stroke:#d47b2c;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4 3;marker-end:url(#revision-arrow)}
+      .legend{font:15px system-ui,sans-serif;fill:#647168}
+    </style>
+  </defs>
+  <rect class="background" width="760" height="1300" rx="14"/>
+  <rect class="panel" x="18" y="18" width="724" height="1264" rx="12"/>
+  <text class="heading" x="44" y="57">Meeting analysis in a single call</text>
+  <text class="subtitle" x="44" y="84">Arrows show the main flow; nodes list additional inputs.</text>
+
+  <!-- Runtime inputs -->
+  <rect class="runtime-group" x="248" y="114" width="488" height="118" rx="10"/>
+  <text class="subtitle" x="268" y="139">Runtime inputs</text>
+  <g id="input-transcript" data-input="transcript">
+    <rect class="input" x="268" y="154" width="224" height="58" rx="9"/>
+    <text class="input-label" x="380" y="190">Transcript</text>
+  </g>
+  <g id="input-prev-summary" data-input="prev_summary">
+    <rect class="input" x="548" y="154" width="168" height="58" rx="9"/>
+    <text class="input-label" x="632" y="181">Previous summary</text>
+    <text class="input-note" x="632" y="202">Optional</text>
+  </g>
+
+  <!-- Extensions to the baseline example; keep the label clear of the incoming arrow. -->
+  <rect id="extensions-boundary" class="runtime-group" x="130" y="754" width="500" height="326" rx="10"/>
+  <text id="extensions-label" class="subtitle" x="610" y="777" text-anchor="end"><tspan x="610">Extensions to</tspan><tspan x="610" dy="21">Denis Rothman’s example</tspan></text>
+
+  <!-- Main dependencies. Extra recipe dependencies are named on receiving nodes. -->
+  <g class="flow">
+    <path data-from="transcript" data-to="substantive_content" d="M380 212V250"/>
+    <path data-from="prev_summary" data-to="new_info" d="M632 212V390"/>
+    <path data-from="substantive_content" data-to="implicit_threads" d="M380 324V355H148V390"/>
+    <path data-from="substantive_content" data-to="novel_solutions" d="M380 324V390"/>
+    <path data-from="substantive_content" data-to="new_info" d="M380 324V355H570V390"/>
+    <path data-from="implicit_threads" data-to="summary_table" d="M148 470V504H334V538"/>
+    <path data-from="novel_solutions" data-to="summary_table" d="M380 470V538"/>
+    <path data-from="new_info" data-to="summary_table" d="M612 470V504H426V538"/>
+    <path data-from="summary_table" data-to="follow_up_email" d="M380 612V666"/>
+    <path data-from="follow_up_email" data-to="political_risk_simulation" d="M380 740V816"/>
+    <path data-from="political_risk_simulation" data-to="social_expert_diagnosis" d="M380 922V964"/>
+    <path data-from="social_expert_diagnosis" data-to="review_evaluation" d="M380 1058V1102"/>
+  </g>
+  <g id="substantive_content" data-node="substantive_content" data-depends-on="">
+    <rect class="stage" x="268" y="250" width="224" height="74" rx="10"/>
+    <text class="label" x="380" y="282">Substantive content</text>
+    <path class="revision" d="M468.5 293.5A7.5 7.5 0 1 1 462.005 297.25"/>
+  </g>
+  <g id="implicit_threads" data-node="implicit_threads" data-depends-on="substantive_content">
+    <rect class="node" x="44" y="390" width="208" height="80" rx="10"/>
+    <text class="label" x="148" y="422">Implicit threads</text>
+    <path class="revision" d="M228.5 439.5A7.5 7.5 0 1 1 222.005 443.25"/>
+  </g>
+  <g id="novel_solutions" data-node="novel_solutions" data-depends-on="substantive_content">
+    <rect class="node" x="276" y="390" width="208" height="80" rx="10"/>
+    <text class="label" x="380" y="422">Novel solutions</text>
+    <path class="revision" d="M460.5 439.5A7.5 7.5 0 1 1 454.005 443.25"/>
+  </g>
+  <g id="new_info" data-node="new_info" data-depends-on="substantive_content">
+    <rect class="node" x="508" y="390" width="208" height="80" rx="10"/>
+    <text class="label" x="612" y="422">New developments</text>
+    <path class="revision" d="M692.5 439.5A7.5 7.5 0 1 1 686.005 443.25"/>
+  </g>
+  <g id="summary_table" data-node="summary_table" data-depends-on="new_info implicit_threads novel_solutions">
+    <rect class="stage" x="268" y="538" width="224" height="74" rx="10"/>
+    <text class="label" x="380" y="570">Summary table</text>
+    <path class="revision" d="M468.5 581.5A7.5 7.5 0 1 1 462.005 585.25"/>
+  </g>
+  <g id="follow_up_email" data-node="follow_up_email" data-depends-on="summary_table">
+    <rect class="node" x="150" y="666" width="460" height="74" rx="10"/>
+    <text class="label" x="380" y="698">Follow-up email</text>
+    <path class="revision" d="M586.5 709.5A7.5 7.5 0 1 1 580.005 713.25"/>
+  </g>
+  <g id="political_risk_simulation" data-node="political_risk_simulation" data-depends-on="follow_up_email implicit_threads summary_table">
+    <rect class="simulation" x="150" y="816" width="460" height="106" rx="10"/>
+    <text class="label" x="380" y="851">Political risk scenario</text>
+    <text class="detail" x="380" y="880">Also reads: Implicit threads · Summary table</text>
+    <path class="revision" d="M586.5 891.5A7.5 7.5 0 1 1 580.005 895.25"/>
+  </g>
+  <g id="social_expert_diagnosis" data-node="social_expert_diagnosis" data-depends-on="political_risk_simulation implicit_threads">
+    <rect class="simulation" x="150" y="964" width="460" height="94" rx="10"/>
+    <text class="label" x="380" y="999">Social expert diagnosis</text>
+    <text class="detail" x="380" y="1028">Also reads: Implicit threads</text>
+    <path class="revision" d="M586.5 1027.5A7.5 7.5 0 1 1 580.005 1031.25"/>
+  </g>
+  <g id="review_evaluation" data-node="review_evaluation" data-depends-on="follow_up_email implicit_threads summary_table political_risk_simulation social_expert_diagnosis">
+    <rect class="terminal" x="150" y="1102" width="460" height="116" rx="10"/>
+    <text class="label" x="380" y="1137">Final review</text>
+    <text class="detail" x="380" y="1166">Also reads: Follow-up email · Summary table</text>
+    <text class="detail" x="380" y="1189">Implicit threads · Political risk scenario</text>
+    <path class="revision" d="M586.5 1187.5A7.5 7.5 0 1 1 580.005 1191.25"/>
+  </g>
+  <g aria-label="Revision loop legend">
+    <path class="revision" d="M56 1243A8.5 8.5 0 1 1 48.639 1247.25"/>
+    <text class="legend" x="80" y="1257">Dashed loops: optional audit, with revision if needed.</text>
+  </g>
+</svg>
