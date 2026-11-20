@@ -4,7 +4,7 @@
 
 - Root `index.html` is the personal homepage, not a travel-only selector. The Projects section links PatentLinter to `blog/20261103-patentlinter.html` and presents Alpha Agent through an inline `quant-note` dialog; it is not a separate deployed app. Travel links to the guides under `travel/`.
 - `blog/index.html` is the Multiagent Architecture article index. Dated editorial pages include `blog/20261103-patentlinter.html` and `blog/20261109-temporal.html`. Article descriptions are not proof of an operational deployment.
-- `patentlinter/index.html` is a separate Vite entrypoint; inspect its current compatibility or redirect behavior before changing it.
+- `blog/20261103-patentlinter.html` is the canonical PatentLinter article entrypoint, published at `/codex/blog/20261103-patentlinter.html`. The legacy `/codex/patentlinter/` route is retired and has no redirect.
 - Homepage work owns portfolio presentation, cards, navigation and links; blog work owns the article index, dated posts and editorial metadata; each travel guide owns its itineraries, content, images and browser interactions. Preserve these boundaries and change only the requested area and its dependencies.
 - `travel/tantantan/` contains the original October 2026 Central Asia guide, editorial material, research, tests and project scripts.
 - `travel/caucasus/` contains the April 29–May 11, 2026 Caucasus itinerary (13 days), notes and tests.
@@ -12,7 +12,7 @@
 - `travel/shared/images/illustrations.json` and `travel/shared/images/image-lineage.json` retain the original Tantantan manifest and revision history. Caucasus files and Git blob proofs are registered in `travel/shared/images/caucasus-asset-registry.json` and editorial placements/captions in `travel/shared/images/caucasus-photo-catalog.json`. Historical revision paths can refer to their original repository location; preserve those references as immutable evidence.
 - Name all new Caucasus WebP assets `caucasus-YYYYMMDD-place-subject-style-WIDTH.webp`. Use the verified capture date, lowercase kebab-case place/subject, the actual rendering style (for example `watercolor`, `colored-pencil`, `documentary-photo`), and the actual decoded image width in pixels. Record any renamed filenames consistently in manifests and image lineage; never guess date or location or rename historical revision references.
 - `travel/shared/style.css` and `travel/shared/travel-utils.js` are shared website presentation resources. Keep travel-specific itineraries and browser storage separated.
-- Use `vite.config.js` as the source of truth for Vite entrypoints, with `travel/shared/public` as the travel static directory. Deploy the portfolio at `/codex/`, the blog index and dated posts under `/codex/blog/`, and the guides only at `/codex/travel/tantantan/` and `/codex/travel/caucasus/`. Keep each travel guide's canonical HTML entrypoint under `travel/`; do not add duplicate top-level guide entrypoints. Keep the PatentLinter compatibility entrypoint as configured; do not assume only three HTML entrypoints.
+- Use `vite.config.js` as the source of truth for Vite entrypoints, with `travel/shared/public` as the travel static directory. Deploy the portfolio at `/codex/`, the blog index and dated posts under `/codex/blog/`, and the guides only at `/codex/travel/tantantan/` and `/codex/travel/caucasus/`. Keep each travel guide's canonical HTML entrypoint under `travel/`; do not add duplicate top-level guide entrypoints. Do not assume a fixed number of HTML entrypoints.
 - Only explicitly attended optional tours belong in the Caucasus itinerary. Currently the recorded tour IDs are 1, 3, and 4. Do not add other activities from the printed optional-tour list.
 - Printed documents may contain private phone numbers and names; do not put these into the public website, static assets, or data files.
 - Reuse valid verification records and test the affected dependency surface at every stage. A commit or merge request does not widen test scope by itself; run the complete suite only for broad shared-runtime changes or when no narrower boundary is defensible.
@@ -24,7 +24,8 @@
 - Use polite Korean endings such as 합니다 and 입니다 for travel essays, destination descriptions, captions, and interface guidance, including drafts. Do not switch to 한다 or 이다 merely because a passage is explanatory. Preserve direct quotations, proper names, and original titles; follow any writing style explicitly requested by the user.
 - Review sentence endings before delivering or committing Korean copy. Do not rewrite the style of unrelated existing content without a separate request.
 - Repository: https://github.com/JinhaPark/codex
-- Published site: https://jinhapark.github.io/codex/
+- Permanent public entry URL: https://jinhapark.github.io/codex/
+- Preserve this entry URL across site reorganizations and hosting changes. If content moves, keep the entry URL working through an appropriate landing page or redirect, and update its links to the current content.
 - Preserve the existing Vite and JavaScript architecture. Do not change unrelated essays, images, itineraries, phrasebook features, or currency conversion.
 - This file defines working conventions. It does not grant access or override platform security and approval controls.
 
